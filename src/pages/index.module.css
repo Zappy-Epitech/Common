@@ -1,0 +1,577 @@
+/* ─── Hero ──────────────────────────────────────────────────────────────────── */
+
+.heroBanner {
+    padding: 5rem 0 4rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Subtle dot-grid overlay on the hero */
+.heroDots {
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(
+        circle,
+        rgba(255, 255, 255, 0.15) 1.5px,
+        transparent 1.5px
+    );
+    background-size: 28px 28px;
+    pointer-events: none;
+}
+
+.heroLogo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1.25rem;
+    filter: drop-shadow(0 4px 16px rgba(0, 0, 0, 0.25));
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.heroTitle {
+    font-size: 3.5rem !important;
+    letter-spacing: -0.5px;
+}
+
+.heroSubtitle {
+    font-size: 1.2rem !important;
+    max-width: 560px;
+    margin: 0 auto 1.5rem !important;
+    opacity: 0.9;
+}
+
+.heroBadges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.badge {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    border-radius: 999px;
+    padding: 0.2rem 0.85rem;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    backdrop-filter: blur(4px);
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+    .heroTitle {
+        font-size: 2.4rem !important;
+    }
+
+    .heroBanner {
+        padding: 3rem 1.5rem;
+    }
+}
+
+/* ─── Components Section ────────────────────────────────────────────────────── */
+
+.componentsSection {
+    padding: 4.5rem 0;
+}
+
+.sectionTitle {
+    font-size: 2rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.sectionSubtitle {
+    color: var(--ifm-color-emphasis-600);
+    margin-bottom: 2.5rem !important;
+    font-size: 1rem;
+}
+
+.componentCol {
+    padding: 0.75rem;
+}
+
+.componentCard {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1.75rem;
+    border-radius: 12px;
+    border: 1px solid var(--ifm-color-emphasis-200);
+    background: var(--ifm-background-surface-color);
+    text-decoration: none !important;
+    color: var(--ifm-font-color-base) !important;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+    border-top: 4px solid var(--card-accent, var(--ifm-color-primary));
+    position: relative;
+    overflow: hidden;
+}
+
+.componentCard::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        color-mix(
+            in srgb,
+            var(--card-accent, var(--ifm-color-primary)) 6%,
+            transparent
+        ),
+        transparent 60%
+    );
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+}
+
+.componentCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+    border-color: var(--card-accent, var(--ifm-color-primary));
+    text-decoration: none !important;
+}
+
+.componentCard:hover::before {
+    opacity: 1;
+}
+
+.cardBadge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 8px;
+    background: color-mix(
+        in srgb,
+        var(--card-accent, var(--ifm-color-primary)) 12%,
+        transparent
+    );
+    border: 1px solid
+        color-mix(
+            in srgb,
+            var(--card-accent, var(--ifm-color-primary)) 22%,
+            transparent
+        );
+    color: var(--card-accent, var(--ifm-color-primary));
+    font-weight: 800;
+    font-size: 0.72rem;
+    font-family: var(--ifm-font-family-monospace);
+    letter-spacing: 0.5px;
+    margin-bottom: 1.1rem;
+}
+
+.cardTitle {
+    font-size: 1.3rem !important;
+    margin-bottom: 0.6rem !important;
+}
+
+.cardDescription {
+    font-size: 0.9rem;
+    color: var(--ifm-color-emphasis-700);
+    flex: 1;
+    line-height: 1.6;
+    margin-bottom: 1rem !important;
+}
+
+.cardTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 1.25rem;
+}
+
+.tag {
+    background: color-mix(
+        in srgb,
+        var(--card-accent, var(--ifm-color-primary)) 12%,
+        transparent
+    );
+    color: var(--card-accent, var(--ifm-color-primary));
+    border-radius: 999px;
+    padding: 0.15rem 0.65rem;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
+.cardArrow {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--card-accent, var(--ifm-color-primary));
+    margin-top: auto;
+}
+
+/* ─── README Window ─────────────────────────────────────────────────────────── */
+
+.readmeSection {
+    padding: 2rem 0 5rem;
+    background: var(--ifm-background-surface-color);
+}
+
+.readmeWindow {
+    border-radius: 12px;
+    border: 1px solid var(--ifm-color-emphasis-200);
+    overflow: hidden;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* macOS-style title bar */
+.windowBar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    background: var(--ifm-color-emphasis-100);
+    border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.windowTitle {
+    margin-left: 0.5rem;
+    font-family: var(--ifm-font-family-monospace);
+    font-size: 0.82rem;
+    color: var(--ifm-color-emphasis-600);
+}
+
+/* Content area */
+.readmeBody {
+    padding: 2.5rem 3rem;
+    background: var(--ifm-background-color);
+}
+
+@media screen and (max-width: 768px) {
+    .readmeBody {
+        padding: 1.5rem 1.25rem;
+    }
+}
+
+.readmeH1 {
+    font-size: 2.4rem !important;
+    margin-bottom: 1rem !important;
+    border-bottom: 2px solid var(--ifm-color-emphasis-200);
+    padding-bottom: 0.75rem;
+}
+
+.readmeQuote {
+    border-left: 4px solid var(--ifm-color-primary);
+    margin: 0 0 2rem;
+    padding: 0.75rem 1.25rem;
+    background: color-mix(in srgb, var(--ifm-color-primary) 6%, transparent);
+    border-radius: 0 8px 8px 0;
+    font-size: 1.05rem;
+    color: var(--ifm-font-color-base);
+    font-style: normal;
+}
+
+/* Architecture boxes */
+.archRow {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 1.5rem 0 2rem;
+    flex-wrap: wrap;
+}
+
+.archBox {
+    flex: 1;
+    min-width: 180px;
+    padding: 1.1rem 1.25rem;
+    border-radius: 10px;
+    border: 1px solid var(--ifm-color-emphasis-200);
+    border-top: 3px solid var(--box-color, var(--ifm-color-primary));
+    background: var(--ifm-background-surface-color);
+}
+
+.archBox p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--ifm-color-emphasis-700);
+    line-height: 1.5;
+}
+
+.archBoxTitle {
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: var(--box-color, var(--ifm-color-primary));
+}
+
+.archArrow {
+    font-size: 1.5rem;
+    color: var(--ifm-color-emphasis-400);
+    flex-shrink: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .archRow {
+        flex-direction: column;
+    }
+
+    .archArrow {
+        transform: rotate(90deg);
+    }
+}
+
+/* Commands grid */
+.commandGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 0.6rem;
+    margin: 1rem 0 2rem;
+}
+
+.commandItem {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 0.75rem;
+    background: var(--ifm-background-surface-color);
+    border-radius: 6px;
+    border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.commandName {
+    font-size: 0.8rem;
+    white-space: nowrap;
+    color: var(--ifm-color-primary);
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.commandDesc {
+    font-size: 0.82rem;
+    color: var(--ifm-color-emphasis-700);
+}
+
+/* Resources */
+.resourceGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin: 1rem 0 2rem;
+}
+
+.resourceChip {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.35rem 0.85rem;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--chip-color) 12%, transparent);
+    border: 1px solid color-mix(in srgb, var(--chip-color) 35%, transparent);
+}
+
+.resourceDot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--chip-color);
+    flex-shrink: 0;
+}
+
+.resourceChip code {
+    font-size: 0.82rem;
+    background: none;
+    padding: 0;
+    color: var(--ifm-font-color-base);
+    font-weight: 600;
+    border: none;
+}
+
+.resourceDensity {
+    font-size: 0.75rem;
+    color: var(--chip-color);
+    font-weight: 600;
+    opacity: 0.85;
+    flex-shrink: 0;
+}
+
+/* Command table */
+.commandTable {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.88rem;
+    margin: 0 !important;
+}
+
+.commandTable th {
+    background: var(--ifm-color-emphasis-100);
+    padding: 0.6rem 0.9rem;
+    text-align: center;
+    font-size: 0.8rem;
+    letter-spacing: 0.3px;
+    color: var(--ifm-color-emphasis-700);
+    border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.commandTable td {
+    padding: 0.55rem 0.9rem;
+    text-align: center;
+    border-bottom: 1px solid var(--ifm-color-emphasis-100);
+    vertical-align: middle;
+}
+
+.commandTable td:nth-child(2) {
+    text-align: left;
+}
+
+.commandTable tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.commandTable tbody tr:hover {
+    background: var(--ifm-background-surface-color);
+}
+
+/* Elevation table */
+.tableWrapper {
+    overflow-x: auto;
+    margin: 1rem 0 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.elevationTable {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.88rem;
+    margin: 0 !important;
+}
+
+.elevationTable th {
+    background: var(--ifm-color-emphasis-100);
+    padding: 0.6rem 0.9rem;
+    text-align: center;
+    font-size: 0.8rem;
+    letter-spacing: 0.3px;
+    color: var(--ifm-color-emphasis-700);
+    border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.elevationTable td {
+    padding: 0.55rem 0.9rem;
+    text-align: center;
+    border-bottom: 1px solid var(--ifm-color-emphasis-100);
+}
+
+.elevationTable tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.elevationTable tbody tr:hover {
+    background: var(--ifm-background-surface-color);
+}
+
+.elevationTable tbody tr:last-child {
+    background: color-mix(in srgb, var(--ifm-color-primary) 6%, transparent);
+}
+
+/* Code block */
+.codeBlock {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--ifm-color-emphasis-200);
+    margin: 1rem 0 1.5rem;
+}
+
+.codeHeader {
+    background: var(--ifm-color-emphasis-100);
+    padding: 0.4rem 1rem;
+    border-bottom: 1px solid var(--ifm-color-emphasis-200);
+    display: flex;
+    align-items: center;
+}
+
+.codeLang {
+    font-family: var(--ifm-font-family-monospace);
+    font-size: 0.75rem;
+    color: var(--ifm-color-emphasis-500);
+}
+
+.codePre {
+    margin: 0 !important;
+    padding: 1.25rem 1.5rem !important;
+    background: var(--ifm-code-background) !important;
+    font-size: 0.85rem !important;
+    overflow-x: auto;
+    border-radius: 0 !important;
+}
+
+/* Flags grid */
+.flagsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 0.6rem;
+    margin: 0 0 2rem;
+}
+
+.flagItem {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 0.75rem;
+    background: var(--ifm-background-surface-color);
+    border-radius: 6px;
+    border: 1px solid var(--ifm-color-emphasis-200);
+    font-size: 0.85rem;
+}
+
+.flagItem code {
+    font-size: 0.8rem;
+    color: var(--ifm-color-primary);
+    font-weight: 600;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.flagItem span {
+    color: var(--ifm-color-emphasis-700);
+    font-size: 0.82rem;
+}
+
+/* Victory box */
+.victoryBox {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.25rem 1.5rem;
+    border-radius: 10px;
+    border: 1px solid var(--ifm-color-primary);
+    background: color-mix(in srgb, var(--ifm-color-primary) 8%, transparent);
+    margin-top: 1rem;
+}
+
+.victoryBox p {
+    margin: 0;
+    line-height: 1.65;
+}
