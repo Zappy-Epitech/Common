@@ -4,3 +4,6 @@
 [submodule "ai"]
 	path = ai
 	url = git@github.com:Zappy-Epitech/AI.git
+[submodule "gui"]
+	path = gui
+	url = git@github.com:Zappy-Epitech/GUI.git
