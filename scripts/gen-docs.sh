@@ -43,8 +43,35 @@ else
     DOC_SRC="$SERVER_DIR/target/doc"
     if [ -d "$DOC_SRC" ]; then
         mkdir -p "$STATIC_API/server"
-        cp -r "$DOC_SRC/." "$STATIC_API/server/"
+        cp -r "$DOC_SRC"/. "$STATIC_API/server/"
         ok "Rust docs  →  static/api/server/"
+
+        # cargo doc does not always generate a root index.html.
+        # If missing, detect the crate directory and create a redirect.
+        if [ ! -f "$STATIC_API/server/index.html" ]; then
+            CRATE_DIR=$(find "$STATIC_API/server" -maxdepth 2 -name "index.html" \
+                | xargs -I{} dirname {} \
+                | xargs -I{} basename {} \
+                | grep -v '^\.' | head -1 || true)
+            if [ -n "$CRATE_DIR" ]; then
+                cat > "$STATIC_API/server/index.html" << EOF
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="0;URL=$CRATE_DIR/index.html">
+    <title>$CRATE_DIR — API Reference</title>
+  </head>
+  <body>
+    <p>Redirecting to <a href="$CRATE_DIR/index.html">$CRATE_DIR documentation</a>…</p>
+  </body>
+</html>
+EOF
+                ok "Created index.html redirect  →  $CRATE_DIR/"
+            else
+                warn "Could not detect crate directory — /api/server/ may return 404."
+            fi
+        fi
     else
         err "cargo doc succeeded but target/doc/ was not found."
     fi
