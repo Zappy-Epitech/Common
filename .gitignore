@@ -8,9 +8,6 @@
 .docusaurus
 .cache-loader
 
-# Generated API docs (produced by bun run docs:api)
-/static/api/
-
 # Misc
 .DS_Store
 .env.local
