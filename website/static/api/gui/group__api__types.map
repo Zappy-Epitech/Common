@@ -1,0 +1,12 @@
+<map id="API types" name="API types">
+<area shape="rect" id="Node000001" title=" " alt="" coords="107,199,189,225"/>
+<area shape="rect" id="Node000006" href="$group__builtin__components.html" title=" " alt="" coords="403,5,550,45"/>
+<area shape="rect" id="Node000007" href="$group__components.html" title=" " alt="" coords="425,70,529,95"/>
+<area shape="rect" id="Node000008" href="$group__entities.html" title=" " alt="" coords="441,122,512,147"/>
+<area shape="rect" id="Node000003" href="$group__function__types.html" title=" " alt="" coords="416,171,537,197"/>
+<area shape="rect" id="Node000005" href="$group__misc__types.html" title=" " alt="" coords="399,221,554,246"/>
+<area shape="rect" id="Node000010" href="$group__observers.html" title=" " alt="" coords="433,270,521,295"/>
+<area shape="rect" id="Node000009" href="$group__queries.html" title="Functions for working with ecs_term_t and ecs_query_t." alt="" coords="441,325,513,350"/>
+<area shape="rect" id="Node000004" href="$group__query__types.html" title=" " alt="" coords="389,374,564,399"/>
+<area shape="rect" id="Node000002" href="$group__core.html" title=" " alt="" coords="5,199,57,225"/>
+</map>

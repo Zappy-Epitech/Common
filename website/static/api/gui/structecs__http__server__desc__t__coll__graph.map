@@ -1,0 +1,9 @@
+<map id="ecs_http_server_desc_t" name="ecs_http_server_desc_t">
+<area shape="rect" id="Node000001" title=" " alt="" coords="94,196,269,221"/>
+<area shape="rect" id="Node000002" href="$structecs__http__request__t.html" title=" " alt="" coords="109,108,254,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,147,184,195,179,195,179,147"/>
+<area shape="rect" id="Node000003" href="$structecs__http__key__value__t.html" title=" " alt="" coords="5,5,168,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="109,39,173,106,169,110,105,42"/>
+<area shape="rect" id="Node000004" href="$structecs__http__connection__t.html" title=" " alt="" coords="193,5,359,31"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="258,42,194,110,190,106,254,39"/>
+</map>

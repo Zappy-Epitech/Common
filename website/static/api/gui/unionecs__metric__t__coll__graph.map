@@ -1,0 +1,8 @@
+<map id="ecs_metric_t" name="ecs_metric_t">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,181,111,207"/>
+<area shape="rect" id="Node000002" href="$structecs__gauge__t.html" title=" " alt="" coords="7,5,109,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="56,45,52,80,51,119,59,181,53,181,46,119,47,79,51,44"/>
+<area shape="rect" id="Node000003" href="$structecs__counter__t.html" title=" " alt="" coords="106,93,218,119"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="84,37,150,91,146,95,81,41"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="139,129,74,183,70,179,136,125"/>
+</map>

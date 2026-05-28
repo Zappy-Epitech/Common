@@ -1,0 +1,9 @@
+<map id="ecs_query_t" name="ecs_query_t">
+<area shape="rect" id="Node000001" title=" " alt="" coords="55,211,155,236"/>
+<area shape="rect" id="Node000002" href="$structecs__header__t.html" title=" " alt="" coords="5,123,113,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,159,101,209,96,211,70,162"/>
+<area shape="rect" id="Node000003" href="$structecs__term__t.html" title=" " alt="" coords="137,123,232,148"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="167,160,118,212,114,208,163,156"/>
+<area shape="rect" id="Node000004" href="$structecs__term__ref__t.html" title=" " alt="" coords="125,5,244,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="187,44,187,123,182,123,182,44"/>
+</map>

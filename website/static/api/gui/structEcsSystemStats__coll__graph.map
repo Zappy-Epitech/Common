@@ -1,0 +1,28 @@
+<map id="EcsSystemStats" name="EcsSystemStats">
+<area shape="rect" id="Node000001" title=" " alt="" coords="32,387,159,412"/>
+<area shape="rect" id="Node000002" href="$structEcsStatsHeader.html" title=" " alt="" coords="5,299,129,324"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,336,94,385,89,387,73,338"/>
+<area shape="rect" id="Node000003" href="$structecs__map__t.html" title=" " alt="" coords="153,299,245,324"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="177,335,111,388,108,384,173,331"/>
+<area shape="rect" id="Node000004" href="$structecs__bucket__t.html" title=" " alt="" coords="103,196,210,221"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="155,235,155,255,160,274,169,286,181,296,178,300,165,290,156,276,150,255,150,235"/>
+<area shape="rect" id="Node000005" href="$structecs__bucket__entry__t.html" title=" " alt="" coords="83,108,230,133"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="159,147,159,195,154,195,154,147"/>
+<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="245,112,257,120,248,128,230,131,230,126,246,123,251,121,242,117"/>
+<area shape="rect" id="Node000006" href="$structecs__allocator__t.html" title=" " alt="" coords="294,196,414,221"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="300,228,261,248,231,274,209,300,205,297,227,270,258,243,297,223"/>
+<area shape="rect" id="Node000010" href="$structecs__sparse__t.html" title=" " alt="" coords="401,299,507,324"/>
+<area shape="poly" id="edge14_Node000010_Node000006" title=" " alt="" coords="338,234,329,254,328,264,332,273,346,287,363,296,401,306,400,311,361,301,343,291,328,276,323,265,323,253,333,231"/>
+<area shape="rect" id="Node000007" href="$structecs__block__allocator__t.html" title=" " alt="" coords="357,108,519,133"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="419,145,368,197,364,194,415,141"/>
+<area shape="poly" id="edge15_Node000010_Node000007" title=" " alt="" coords="456,145,461,157,473,215,467,275,461,299,456,298,462,274,467,216,455,158,451,147"/>
+<area shape="rect" id="Node000008" href="$structecs__block__allocator__chunk__header__t.html" title=" " alt="" coords="227,5,377,45"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="342,51,423,106,420,110,339,55"/>
+<area shape="poly" id="edge9_Node000008_Node000008" title=" " alt="" coords="392,16,404,25,396,34,378,37,377,32,393,29,399,26,389,20"/>
+<area shape="rect" id="Node000009" href="$structecs__block__allocator__block__t.html" title=" " alt="" coords="459,5,609,45"/>
+<area shape="poly" id="edge10_Node000007_Node000009" title=" " alt="" coords="507,57,452,110,448,106,503,53"/>
+<area shape="poly" id="edge11_Node000009_Node000009" title=" " alt="" coords="624,16,636,25,628,34,610,37,609,32,625,29,631,26,621,20"/>
+<area shape="poly" id="edge12_Node000006_Node000010" title=" " alt="" coords="434,290,395,247,367,224,371,220,399,243,438,286"/>
+<area shape="rect" id="Node000011" href="$structecs__vec__t.html" title=" " alt="" coords="609,196,696,221"/>
+<area shape="poly" id="edge13_Node000010_Node000011" title=" " alt="" coords="619,230,478,301,475,296,616,225"/>
+</map>

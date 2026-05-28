@@ -1,0 +1,11 @@
+<map id="ecs_stack_t" name="ecs_stack_t">
+<area shape="rect" id="Node000001" title=" " alt="" coords="25,108,123,133"/>
+<area shape="rect" id="Node000003" href="$structecs__stack__cursor__t.html" title=" " alt="" coords="5,196,151,221"/>
+<area shape="poly" id="edge6_Node000003_Node000001" title=" " alt="" coords="41,143,28,157,27,163,28,171,39,184,52,194,49,198,35,187,24,173,21,163,24,154,37,139"/>
+<area shape="rect" id="Node000002" href="$structecs__stack__page__t.html" title=" " alt="" coords="53,5,191,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,43,94,56,83,83,78,108,73,107,78,82,89,53,98,40"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="205,8,213,12,217,18,209,27,191,30,190,25,207,22,212,18,210,16,203,13"/>
+<area shape="poly" id="edge5_Node000003_Node000002" title=" " alt="" coords="147,40,155,54,167,87,173,115,170,143,155,174,141,188,124,198,121,194,138,184,150,170,164,141,167,115,162,88,150,56,143,42"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="74,182,72,134,77,133,79,182"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="166,200,177,209,169,216,151,219,151,214,167,211,172,209,163,205"/>
+</map>

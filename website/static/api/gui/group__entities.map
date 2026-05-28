@@ -1,0 +1,12 @@
+<map id="Entities" name="Entities">
+<area shape="rect" id="Node000004" href="$group__adding__removing.html" title=" " alt="" coords="346,5,497,31"/>
+<area shape="rect" id="Node000010" href="$group__api__types.html" title=" " alt="" coords="380,55,463,80"/>
+<area shape="rect" id="Node000002" href="$group__core.html" title=" " alt="" coords="5,179,57,204"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="107,179,177,204"/>
+<area shape="rect" id="Node000003" href="$group__creating__entities.html" title=" " alt="" coords="346,104,497,129"/>
+<area shape="rect" id="Node000005" href="$group__enabling__disabling.html" title=" " alt="" coords="343,153,500,179"/>
+<area shape="rect" id="Node000008" href="$group__entity__info.html" title=" " alt="" coords="349,203,493,228"/>
+<area shape="rect" id="Node000006" href="$group__getting.html" title=" " alt="" coords="347,252,495,277"/>
+<area shape="rect" id="Node000007" href="$group__liveliness.html" title=" " alt="" coords="357,301,486,327"/>
+<area shape="rect" id="Node000009" href="$group__paths.html" title=" " alt="" coords="366,351,477,376"/>
+</map>

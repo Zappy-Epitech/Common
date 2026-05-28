@@ -1,0 +1,22 @@
+<map id="Units." name="Units.">
+<area shape="rect" id="Node000002" href="$group__c__addons.html" title=" " alt="" coords="5,425,76,451"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="124,425,184,451"/>
+<area shape="rect" id="Node000008" href="$group__c__addons__units__amount.html" title=" " alt="" coords="269,5,342,31"/>
+<area shape="rect" id="Node000017" href="$group__c__addons__units__angle.html" title=" " alt="" coords="276,55,335,80"/>
+<area shape="rect" id="Node000020" href="$group__c__addons__units__color.html" title=" " alt="" coords="277,104,333,129"/>
+<area shape="rect" id="Node000015" href="$group__c__addons__units__data.html" title=" " alt="" coords="279,153,332,179"/>
+<area shape="rect" id="Node000016" href="$group__c__addons__units__datarate.html" title=" " alt="" coords="262,203,349,228"/>
+<area shape="rect" id="Node000004" href="$group__c__addons__units__duration.html" title=" " alt="" coords="266,252,345,277"/>
+<area shape="rect" id="Node000007" href="$group__c__addons__units__electric__Current.html" title=" " alt="" coords="244,301,367,327"/>
+<area shape="rect" id="Node000010" href="$group__c__addons__units__force.html" title=" " alt="" coords="277,351,334,376"/>
+<area shape="rect" id="Node000018" href="$group__c__addons__units__frequency.html" title=" " alt="" coords="261,400,350,425"/>
+<area shape="rect" id="Node000011" href="$group__c__addons__units__length.html" title=" " alt="" coords="272,449,339,475"/>
+<area shape="rect" id="Node000009" href="$group__c__addons__units__luminous__intensity.html" title=" " alt="" coords="232,499,379,524"/>
+<area shape="rect" id="Node000006" href="$group__c__addons__units__mass.html" title=" " alt="" coords="277,548,333,573"/>
+<area shape="rect" id="Node000003" href="$group__c__addons__units__prefixes.html" title=" " alt="" coords="269,597,342,623"/>
+<area shape="rect" id="Node000012" href="$group__c__addons__units__pressure.html" title=" " alt="" coords="266,647,345,672"/>
+<area shape="rect" id="Node000013" href="$group__c__addons__units__speed.html" title=" " alt="" coords="274,696,337,721"/>
+<area shape="rect" id="Node000014" href="$group__c__addons__units__temperature.html" title=" " alt="" coords="253,745,357,771"/>
+<area shape="rect" id="Node000005" href="$group__c__addons__units__time.html" title=" " alt="" coords="278,795,333,820"/>
+<area shape="rect" id="Node000019" href="$group__c__addons__units__uri.html" title=" " alt="" coords="285,844,326,869"/>
+</map>

@@ -1,0 +1,33 @@
+<map id="flecs_hashmap_iter_t" name="flecs_hashmap_iter_t">
+<area shape="rect" id="Node000001" title=" " alt="" coords="159,485,319,511"/>
+<area shape="rect" id="Node000002" href="$structecs__map__iter__t.html" title=" " alt="" coords="66,397,187,423"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,429,225,483,222,487,151,433"/>
+<area shape="rect" id="Node000003" href="$structecs__map__t.html" title=" " alt="" coords="178,299,270,324"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="204,336,140,399,136,395,201,332"/>
+<area shape="rect" id="Node000004" href="$structecs__bucket__t.html" title=" " alt="" coords="81,196,188,221"/>
+<area shape="poly" id="edge16_Node000002_Node000004" title=" " alt="" coords="131,235,120,299,120,324,128,397,122,397,115,324,115,298,126,234"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="138,235,143,255,153,273,168,286,186,296,183,301,165,291,149,276,138,257,133,236"/>
+<area shape="rect" id="Node000005" href="$structecs__bucket__entry__t.html" title=" " alt="" coords="5,108,152,133"/>
+<area shape="poly" id="edge17_Node000002_Node000005" title=" " alt="" coords="77,147,72,196,76,256,90,313,108,362,123,396,118,398,103,364,85,315,70,257,67,196,72,146"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="96,143,129,194,125,197,91,146"/>
+<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="167,112,179,120,170,128,152,131,152,126,168,123,173,121,164,117"/>
+<area shape="rect" id="Node000006" href="$structecs__allocator__t.html" title=" " alt="" coords="287,196,407,221"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="281,229,253,247,236,273,228,299,223,298,231,271,249,243,278,224"/>
+<area shape="rect" id="Node000010" href="$structecs__sparse__t.html" title=" " alt="" coords="393,299,500,324"/>
+<area shape="poly" id="edge14_Node000010_Node000006" title=" " alt="" coords="331,234,321,254,321,264,325,273,339,287,355,296,394,306,393,311,353,301,335,291,320,276,316,265,316,253,326,231"/>
+<area shape="rect" id="Node000007" href="$structecs__block__allocator__t.html" title=" " alt="" coords="331,108,493,133"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="397,146,358,197,354,194,393,143"/>
+<area shape="poly" id="edge15_Node000010_Node000007" title=" " alt="" coords="433,143,441,156,455,200,460,245,460,275,454,299,449,298,455,274,455,245,450,201,436,158,429,146"/>
+<area shape="rect" id="Node000008" href="$structecs__block__allocator__chunk__header__t.html" title=" " alt="" coords="201,5,351,45"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="316,51,397,106,394,110,313,55"/>
+<area shape="poly" id="edge9_Node000008_Node000008" title=" " alt="" coords="366,16,378,25,370,34,352,37,351,32,367,29,373,26,363,20"/>
+<area shape="rect" id="Node000009" href="$structecs__block__allocator__block__t.html" title=" " alt="" coords="433,5,583,45"/>
+<area shape="poly" id="edge10_Node000007_Node000009" title=" " alt="" coords="481,57,426,110,422,106,477,53"/>
+<area shape="poly" id="edge11_Node000009_Node000009" title=" " alt="" coords="598,16,610,25,602,34,584,37,583,32,599,29,605,26,595,20"/>
+<area shape="poly" id="edge12_Node000006_Node000010" title=" " alt="" coords="427,290,387,247,360,224,364,220,391,243,431,286"/>
+<area shape="rect" id="Node000011" href="$structecs__vec__t.html" title=" " alt="" coords="602,196,689,221"/>
+<area shape="poly" id="edge13_Node000010_Node000011" title=" " alt="" coords="604,229,561,248,466,301,464,296,559,243,602,224"/>
+<area shape="rect" id="Node000012" href="$structecs__hm__bucket__t.html" title=" " alt="" coords="402,348,537,373"/>
+<area shape="poly" id="edge19_Node000012_Node000011" title=" " alt="" coords="636,235,623,256,606,277,579,300,549,320,496,350,493,345,546,316,575,296,602,273,618,253,631,232"/>
+<area shape="poly" id="edge18_Node000001_Node000012" title=" " alt="" coords="439,383,260,488,257,483,436,378"/>
+</map>

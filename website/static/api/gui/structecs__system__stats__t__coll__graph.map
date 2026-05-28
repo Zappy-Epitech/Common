@@ -1,0 +1,13 @@
+<map id="ecs_system_stats_t" name="ecs_system_stats_t">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,387,156,412"/>
+<area shape="rect" id="Node000002" href="$unionecs__metric__t.html" title=" " alt="" coords="28,181,133,207"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,220,75,268,74,324,81,386,76,387,69,324,69,268,74,220"/>
+<area shape="rect" id="Node000005" href="$structecs__query__stats__t.html" title=" " alt="" coords="161,299,299,324"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="108,213,217,297,214,301,105,217"/>
+<area shape="rect" id="Node000003" href="$structecs__gauge__t.html" title=" " alt="" coords="29,5,132,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="79,45,75,80,74,119,81,181,76,181,69,119,69,79,73,44"/>
+<area shape="rect" id="Node000004" href="$structecs__counter__t.html" title=" " alt="" coords="129,93,241,119"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="107,37,172,91,169,95,103,41"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="162,129,96,183,93,179,159,125"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="199,333,102,389,100,384,197,329"/>
+</map>

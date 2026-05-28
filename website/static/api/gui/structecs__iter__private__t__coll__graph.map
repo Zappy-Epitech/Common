@@ -1,0 +1,37 @@
+<map id="ecs_iter_private_t" name="ecs_iter_private_t">
+<area shape="rect" id="Node000001" title=" " alt="" coords="831,166,969,191"/>
+<area shape="rect" id="Node000002" href="$structecs__query__iter__t.html" title=" " alt="" coords="559,67,688,93"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="702,92,755,105,808,123,848,143,881,164,879,168,845,147,806,128,753,110,701,97"/>
+<area shape="rect" id="Node000003" href="$structecs__var__t.html" title=" " alt="" coords="307,7,391,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="405,24,527,47,587,65,586,70,526,52,404,30"/>
+<area shape="rect" id="Node000004" href="$structecs__table__range__t.html" title=" " alt="" coords="20,7,160,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="174,17,307,17,307,23,174,23"/>
+<area shape="rect" id="Node000005" href="$structecs__vec__t.html" title=" " alt="" coords="306,67,393,93"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="407,77,558,77,558,83,407,83"/>
+<area shape="rect" id="Node000006" href="$structecs__query__op__profile__t.html" title=" " alt="" coords="264,117,435,142"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="444,112,526,97,563,90,564,95,527,103,445,117"/>
+<area shape="rect" id="Node000007" href="$structecs__page__iter__t.html" title=" " alt="" coords="561,117,685,142"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="699,138,807,156,843,163,842,169,806,161,698,143"/>
+<area shape="rect" id="Node000008" href="$structecs__worker__iter__t.html" title=" " alt="" coords="555,166,691,191"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="705,176,830,176,830,181,705,181"/>
+<area shape="rect" id="Node000009" href="$structecs__each__iter__t.html" title=" " alt="" coords="562,215,685,241"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="698,214,806,196,842,189,843,194,807,201,699,220"/>
+<area shape="rect" id="Node000010" href="$structecs__table__cache__iter__t.html" title=" " alt="" coords="264,207,435,233"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="449,220,562,224,562,229,449,226"/>
+<area shape="rect" id="Node000011" href="$structecs__table__cache__hdr__t.html" title=" " alt="" coords="5,231,175,257"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="188,232,264,225,264,231,189,238"/>
+<area shape="poly" id="edge11_Node000011_Node000011" title=" " alt="" coords="64,216,72,208,90,205,105,207,114,213,117,223,112,232,107,230,111,222,110,216,103,212,90,210,75,213,68,220"/>
+<area shape="rect" id="Node000012" href="$structecs__table__record__t.html" title=" " alt="" coords="277,257,421,282"/>
+<area shape="poly" id="edge13_Node000012_Node000011" title=" " alt="" coords="189,251,199,252,277,260,277,265,198,257,188,256"/>
+<area shape="poly" id="edge12_Node000009_Node000012" title=" " alt="" coords="435,256,526,243,561,237,562,242,527,248,435,261"/>
+<area shape="rect" id="Node000013" href="$structecs__stack__cursor__t.html" title=" " alt="" coords="551,314,696,339"/>
+<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="662,305,805,231,877,189,879,194,808,236,664,310"/>
+<area shape="poly" id="edge15_Node000013_Node000013" title=" " alt="" coords="597,299,605,291,623,287,639,290,648,296,650,306,646,315,641,313,645,305,644,299,637,295,623,293,608,295,601,303"/>
+<area shape="rect" id="Node000015" href="$structecs__stack__t.html" title=" " alt="" coords="851,347,949,373"/>
+<area shape="poly" id="edge20_Node000015_Node000013" title=" " alt="" coords="710,331,807,341,851,348,850,354,806,347,709,336"/>
+<area shape="rect" id="Node000014" href="$structecs__stack__page__t.html" title=" " alt="" coords="281,366,418,391"/>
+<area shape="poly" id="edge16_Node000013_Node000014" title=" " alt="" coords="430,361,555,337,556,342,431,366"/>
+<area shape="poly" id="edge17_Node000014_Node000014" title=" " alt="" coords="324,351,332,343,349,339,364,342,374,348,376,358,371,367,367,365,371,357,369,351,362,347,349,345,334,347,328,355"/>
+<area shape="poly" id="edge19_Node000015_Node000014" title=" " alt="" coords="432,377,551,379,623,380,696,379,850,364,851,369,696,384,623,385,551,384,432,383"/>
+<area shape="poly" id="edge18_Node000013_Node000015" title=" " alt="" coords="837,367,780,367,720,361,685,353,654,342,655,337,686,348,720,356,780,362,837,362"/>
+</map>

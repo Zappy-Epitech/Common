@@ -1,0 +1,11 @@
+<map id="Entity API" name="Entity API">
+<area shape="rect" id="Node000004" href="$group__flecs__c__adding__removing.html" title=" " alt="" coords="301,5,451,31"/>
+<area shape="rect" id="Node000003" href="$group__flecs__c__creation__deletion.html" title=" " alt="" coords="301,55,451,80"/>
+<area shape="rect" id="Node000008" href="$group__flecs__c__enable__disable.html" title=" " alt="" coords="297,104,455,129"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="164,153,249,179"/>
+<area shape="rect" id="Node000009" href="$group__flecs__c__entity__names.html" title=" " alt="" coords="321,153,431,179"/>
+<area shape="rect" id="Node000005" href="$group__flecs__c__getting__setting.html" title=" " alt="" coords="309,203,443,228"/>
+<area shape="rect" id="Node000007" href="$group__flecs__c__has.html" title=" " alt="" coords="305,252,447,277"/>
+<area shape="rect" id="Node000006" href="$group__flecs__c__singletons.html" title=" " alt="" coords="331,301,421,327"/>
+<area shape="rect" id="Node000002" href="$group__flecs__c__type__safe.html" title=" " alt="" coords="5,153,116,179"/>
+</map>

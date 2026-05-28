@@ -1,0 +1,19 @@
+<map id="EcsWorldMemory" name="EcsWorldMemory">
+<area shape="rect" id="Node000001" title=" " alt="" coords="373,195,508,220"/>
+<area shape="rect" id="Node000002" href="$structecs__entities__memory__t.html" title=" " alt="" coords="17,5,192,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="207,17,280,32,317,45,351,64,383,94,409,130,427,166,438,193,433,195,422,168,404,133,379,98,348,68,315,50,279,37,206,23"/>
+<area shape="rect" id="Node000003" href="$structecs__component__memory__t.html" title=" " alt="" coords="5,55,204,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="218,80,285,97,351,124,375,139,397,158,431,192,427,196,394,162,372,144,348,128,283,102,217,85"/>
+<area shape="rect" id="Node000004" href="$structecs__component__index__memory__t.html" title=" " alt="" coords="21,105,188,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="203,137,275,151,350,170,411,192,409,197,349,175,274,157,202,142"/>
+<area shape="rect" id="Node000005" href="$structecs__query__memory__t.html" title=" " alt="" coords="23,169,186,195"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="200,186,373,200,373,205,199,192"/>
+<area shape="rect" id="Node000006" href="$structecs__table__memory__t.html" title=" " alt="" coords="25,219,184,244"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="198,231,272,229,349,223,386,217,387,223,350,229,272,234,198,236"/>
+<area shape="rect" id="Node000007" href="$structecs__table__histogram__t.html" title=" " alt="" coords="20,268,189,293"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="203,276,275,268,349,251,386,236,419,218,421,222,389,241,350,257,276,273,204,281"/>
+<area shape="rect" id="Node000008" href="$structecs__misc__memory__t.html" title=" " alt="" coords="27,317,183,343"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="197,329,273,319,312,309,348,294,374,278,396,257,429,219,433,222,400,261,377,282,351,299,313,314,274,324,197,334"/>
+<area shape="rect" id="Node000009" href="$structecs__allocator__memory__t.html" title=" " alt="" coords="13,367,196,392"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="209,383,281,374,316,363,348,346,380,318,405,282,422,247,433,219,438,221,427,249,409,285,384,321,351,351,318,368,282,379,210,388"/>
+</map>

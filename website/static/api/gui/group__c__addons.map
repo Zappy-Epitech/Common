@@ -1,0 +1,21 @@
+<map id="Addons" name="Addons">
+<area shape="rect" id="Node000002" href="$group__c.html" title=" " alt="" coords="5,400,61,425"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="109,400,180,425"/>
+<area shape="rect" id="Node000012" href="$group__c__addons__alerts.html" title=" " alt="" coords="285,5,345,31"/>
+<area shape="rect" id="Node000004" href="$group__c__addons__app.html" title=" " alt="" coords="291,55,338,80"/>
+<area shape="rect" id="Node000016" href="$group__c__addons__doc.html" title=" " alt="" coords="291,104,338,129"/>
+<area shape="rect" id="Node000005" href="$group__c__addons__http.html" title=" " alt="" coords="289,153,340,179"/>
+<area shape="rect" id="Node000013" href="$group__c__addons__json.html" title=" " alt="" coords="290,203,339,228"/>
+<area shape="rect" id="Node000003" href="$group__c__addons__log.html" title=" " alt="" coords="292,252,337,277"/>
+<area shape="rect" id="Node000017" href="$group__c__addons__meta.html" title=" " alt="" coords="287,301,342,327"/>
+<area shape="rect" id="Node000011" href="$group__c__addons__metrics.html" title=" " alt="" coords="279,351,350,376"/>
+<area shape="rect" id="Node000019" href="$group__c__addons__module.html" title=" " alt="" coords="279,400,350,425"/>
+<area shape="rect" id="Node000018" href="$group__c__addons__os__api__impl.html" title=" " alt="" coords="228,449,401,475"/>
+<area shape="rect" id="Node000008" href="$group__c__addons__pipeline.html" title=" " alt="" coords="277,499,352,524"/>
+<area shape="rect" id="Node000006" href="$group__c__addons__rest.html" title=" " alt="" coords="289,548,340,573"/>
+<area shape="rect" id="Node000015" href="$group__c__addons__script.html" title=" " alt="" coords="267,597,363,623"/>
+<area shape="rect" id="Node000010" href="$group__c__addons__stats.html" title=" " alt="" coords="287,647,342,672"/>
+<area shape="rect" id="Node000009" href="$group__c__addons__system.html" title=" " alt="" coords="279,696,350,721"/>
+<area shape="rect" id="Node000007" href="$group__c__addons__timer.html" title=" " alt="" coords="285,745,345,771"/>
+<area shape="rect" id="Node000014" href="$group__c__addons__units.html" title=" " alt="" coords="285,795,345,820"/>
+</map>
