@@ -12,10 +12,13 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-COMMON_DIR="$(dirname "$SCRIPT_DIR")"
-SERVER_DIR="$COMMON_DIR/server"
-GUI_DIR="$COMMON_DIR/gui"
-STATIC_API="$COMMON_DIR/static/api"
+WEBSITE_DIR="$(dirname "$SCRIPT_DIR")"
+ROOT_DIR="$(dirname "$WEBSITE_DIR")"
+
+SERVER_DIR="$ROOT_DIR/server"
+GUI_DIR="$ROOT_DIR/gui"
+AI_DIR="$ROOT_DIR/ai"
+STATIC_API="$WEBSITE_DIR/static/api"
 
 # ── Colour helpers ────────────────────────────────────────────────────────────
 GREEN='\033[0;32m'; YELLOW='\033[1;33m'; RED='\033[0;31m'; BOLD='\033[1m'; NC='\033[0m'
@@ -103,8 +106,19 @@ fi
 
 # ── AI — language-dependent ───────────────────────────────────────────────────
 title "AI (free language)"
-warn "No doc generator configured yet."
-warn "Add the appropriate tool to this script once the AI language is chosen."
+
+if [ ! -f "$AI_DIR/Doxyfile" ]; then
+    warn "ai/Doxyfile not found — skipping."
+elif ! command -v doxygen >/dev/null 2>&1; then
+    err "doxygen not found."
+else
+    echo "  Running doxygen for AI..."
+    (
+        cd "$AI_DIR"
+        doxygen Doxyfile 2>&1 | grep -v "^$" | sed 's/^/    /'
+    )
+    ok "Doxygen AI docs  →  static/api/ai/"
+fi
 
 title "Done"
 echo "  API docs are available in static/api/ and will be served at /api/"

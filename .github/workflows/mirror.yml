@@ -1,0 +1,57 @@
+name: Push to mirror
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  mirror:
+    name: Prepare and Push Mirror
+    runs-on: ubuntu-latest
+    if: github.repository == 'Zappy-Epitech/Common'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+          token: ${{ secrets.COMMON_TOKEN }}
+
+      - name: Flatten Submodules
+        run: |
+          rm -f .gitmodules
+
+          for module in ai gui server docs/doxygen-awesome; do
+            if [ -d "$module" ]; then
+              echo "Flattening $module..."
+              git rm --cached "$module"
+              rm -rf "$module/.git"
+            fi
+          done
+
+          rm -rf .git/modules
+
+      - name: Clean up for Epitech
+        run: |
+          rm -rf .github
+
+      - name: Push to Mirror
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          mkdir -p ~/.ssh
+          echo "${{ secrets.GIT_SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+
+          TEMP_DIR=$(mktemp -d)
+          cp -r . "$TEMP_DIR/"
+          cd "$TEMP_DIR"
+          rm -rf .git
+          git init
+          git add .
+          git commit -m "Mirroring Zappy from Common (flattened submodules)"
+
+          git remote add mirror "${{ vars.MIRROR_URL }}"
+          git push mirror master:main --force || git push mirror master:master --force

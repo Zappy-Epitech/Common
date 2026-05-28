@@ -11,8 +11,8 @@ const config: Config = {
     v4: true,
   },
 
-  url: "https://zappy.pavel-dw.com",
-  baseUrl: "/",
+  url: "https://Zappy-Epitech.github.io",
+  baseUrl: "/Common/",
 
   organizationName: "Zappy-Epitech",
   projectName: "Common",
@@ -29,6 +29,7 @@ const config: Config = {
       "classic",
       {
         docs: {
+          path: "../docs",
           sidebarPath: "./sidebars.ts",
           routeBasePath: "/",
         },
