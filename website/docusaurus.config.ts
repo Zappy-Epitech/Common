@@ -32,6 +32,7 @@ const config: Config = {
           path: "../docs",
           sidebarPath: "./sidebars.ts",
           routeBasePath: "/",
+          exclude: ["doxygen-awesome/**"],
         },
         blog: false,
         theme: {

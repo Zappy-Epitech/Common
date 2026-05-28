@@ -19,39 +19,50 @@ jobs:
 
       - name: Flatten Submodules
         run: |
+          # 1. Remove .gitmodules
           rm -f .gitmodules
-
+          
+          # 2. For each submodule, remove its .git metadata and keep files
           for module in ai gui server docs/doxygen-awesome; do
             if [ -d "$module" ]; then
               echo "Flattening $module..."
-              git rm --cached "$module"
               rm -rf "$module/.git"
             fi
           done
-
+          
+          # 3. Clean up any other submodule related metadata
           rm -rf .git/modules
 
       - name: Clean up for Epitech
         run: |
+          # Remove GitHub specific files
           rm -rf .github
-
+          
       - name: Push to Mirror
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-
+          git config --global init.defaultBranch main
+          
+          # Setup SSH for mirroring
           mkdir -p ~/.ssh
           echo "${{ secrets.GIT_SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
-
+          
+          # Create a temporary repository to avoid messing with the current one
           TEMP_DIR=$(mktemp -d)
+          # Use rsync or cp -a to ensure all files (including hidden ones except .git) are copied
           cp -r . "$TEMP_DIR/"
           cd "$TEMP_DIR"
           rm -rf .git
+          
+          # Re-initialize as a clean repository
           git init
           git add .
           git commit -m "Mirroring Zappy from Common (flattened submodules)"
-
+          
+          # Push to the Epitech repository
           git remote add mirror "${{ vars.MIRROR_URL }}"
-          git push mirror master:main --force || git push mirror master:master --force
+          # Try to push to main or master
+          git push mirror main:main --force || git push mirror main:master --force
