@@ -48,11 +48,13 @@ jobs:
           mkdir -p ~/.ssh
           echo "${{ secrets.GIT_SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+          # Extract host from MIRROR_URL for ssh-keyscan
+          MIRROR_URL="${{ vars.MIRROR_URL }}"
+          HOST=$(echo "$MIRROR_URL" | sed -E 's/.*@([^:]+).*/\1/')
+          ssh-keyscan -t rsa "$HOST" >> ~/.ssh/known_hosts
           
           # Create a temporary repository to avoid messing with the current one
           TEMP_DIR=$(mktemp -d)
-          # Use rsync or cp -a to ensure all files (including hidden ones except .git) are copied
           cp -r . "$TEMP_DIR/"
           cd "$TEMP_DIR"
           rm -rf .git
@@ -63,6 +65,6 @@ jobs:
           git commit -m "Mirroring Zappy from Common (flattened submodules)"
           
           # Push to the Epitech repository
-          git remote add mirror "${{ vars.MIRROR_URL }}"
+          git remote add mirror "$MIRROR_URL"
           # Try to push to main or master
           git push mirror main:main --force || git push mirror main:master --force

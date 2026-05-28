@@ -26,8 +26,9 @@ jobs:
 
       - name: Configure git
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
 
       - name: Install Rust toolchain
         uses: dtolnay/rust-toolchain@stable
@@ -41,9 +42,12 @@ jobs:
       - name: Commit generated docs
         run: |
           git add website/static/api/
-          git diff --staged --quiet && echo "Nothing to commit" && exit 0
-          git commit -m "chore: regenerate API docs"
-          git push
+          if ! git diff --staged --quiet; then
+            git commit -m "chore: regenerate API docs"
+            git push origin main
+          else
+            echo "Nothing to commit"
+          fi
 
       - uses: oven-sh/setup-bun@v2
         with:
