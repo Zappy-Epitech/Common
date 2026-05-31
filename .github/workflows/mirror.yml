@@ -17,54 +17,43 @@ jobs:
           submodules: recursive
           token: ${{ secrets.COMMON_TOKEN }}
 
-      - name: Flatten Submodules
+      - name: Prepare Flat Repository
         run: |
-          # 1. Remove .gitmodules
+          SUBMODULES=$(git submodule status | awk '{print $2}')
           rm -f .gitmodules
-          
-          # 2. For each submodule, remove its .git metadata and keep files
-          for module in ai gui server docs/doxygen-awesome; do
+          for module in $SUBMODULES; do
             if [ -d "$module" ]; then
               echo "Flattening $module..."
               rm -rf "$module/.git"
             fi
           done
-          
-          # 3. Clean up any other submodule related metadata
-          rm -rf .git/modules
-
-      - name: Clean up for Epitech
-        run: |
-          # Remove GitHub specific files
           rm -rf .github
-          
-      - name: Push to Mirror
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global init.defaultBranch main
-          
-          # Setup SSH for mirroring
-          mkdir -p ~/.ssh
-          echo "${{ secrets.GIT_SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          # Extract host from MIRROR_URL for ssh-keyscan
-          MIRROR_URL="${{ vars.MIRROR_URL }}"
-          HOST=$(echo "$MIRROR_URL" | sed -E 's/.*@([^:]+).*/\1/')
-          ssh-keyscan -t rsa "$HOST" >> ~/.ssh/known_hosts
-          
-          # Create a temporary repository to avoid messing with the current one
-          TEMP_DIR=$(mktemp -d)
-          cp -r . "$TEMP_DIR/"
-          cd "$TEMP_DIR"
           rm -rf .git
+
+      - name: Push to Mirror
+        env:
+          MIRROR_URL: ${{ vars.MIRROR_URL }}
+          SSH_PRIVATE_KEY: ${{ secrets.GIT_SSH_PRIVATE_KEY }}
+        run: |
+          if [ -z "$MIRROR_URL" ]; then
+            echo "Error: MIRROR_URL is not set in variables."
+            exit 1
+          fi
+
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
           
-          # Re-initialize as a clean repository
+          HOST=$(echo "$MIRROR_URL" | cut -d'@' -f2 | cut -d':' -f1)
+          ssh-keyscan -H "$HOST" >> ~/.ssh/known_hosts
+
           git init
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b main
+          
           git add .
           git commit -m "Mirroring Zappy from Common (flattened submodules)"
           
-          # Push to the Epitech repository
           git remote add mirror "$MIRROR_URL"
-          # Try to push to main or master
-          git push mirror main:main --force || git push mirror main:master --force
+          git push mirror main --force || git push mirror main:master --force
