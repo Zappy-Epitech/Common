@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('structecs__iter__t.html',''); initResi
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="flecs_8hpp_source.html">flecs.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="flecs_8h_source.html">flecs.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for ecs_iter_t:</div>
 <div class="dyncontent">
@@ -170,6 +170,9 @@ Public Attributes</h2></td></tr>
 <tr class="separator:af041f8af422103821cf54d965d3af3b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7f57b8e0c1b3a19a540930aae5b7104" id="r_ae7f57b8e0c1b3a19a540930aae5b7104"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structecs__table__record__t.html">ecs_table_record_t</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structecs__iter__t.html#ae7f57b8e0c1b3a19a540930aae5b7104">trs</a></td></tr>
 <tr class="separator:ae7f57b8e0c1b3a19a540930aae5b7104"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e09ae166b10d4565b63f564d859df78" id="r_a7e09ae166b10d4565b63f564d859df78"><td class="memItemLeft" align="right" valign="top"><a id="a7e09ae166b10d4565b63f564d859df78" name="a7e09ae166b10d4565b63f564d859df78"></a>
+const int16_t *&#160;</td><td class="memItemRight" valign="bottom"><b>columns</b></td></tr>
+<tr class="separator:a7e09ae166b10d4565b63f564d859df78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9a9663f4d0d5f4bc09177dc93015459" id="r_aa9a9663f4d0d5f4bc09177dc93015459"><td class="memItemLeft" align="right" valign="top">const ecs_size_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structecs__iter__t.html#aa9a9663f4d0d5f4bc09177dc93015459">sizes</a></td></tr>
 <tr class="separator:aa9a9663f4d0d5f4bc09177dc93015459"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c13c316a65ed0a190d5538079598b38" id="r_a5c13c316a65ed0a190d5538079598b38"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__core__types.html#gad89be37a3609d524994b418b413fa9ae">ecs_table_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structecs__iter__t.html#a5c13c316a65ed0a190d5538079598b38">table</a></td></tr>
@@ -240,8 +243,8 @@ Public Attributes</h2></td></tr>
 <p>Functions that create iterators accept as first argument the world, and as second argument the object they iterate. For example:</p>
 <div class="fragment"><div class="line"><a class="code hl_struct" href="structecs__iter__t.html">ecs_iter_t</a> it = <a class="code hl_function" href="group__queries.html#ga9778cea069cae30f1c8c691d4e1be122">ecs_query_iter</a>(<a class="code hl_variable" href="structecs__iter__t.html#a7f1db7ca958d8bbf12d6ef76f7e91bf2">world</a>, q);</div>
 <div class="ttc" id="agroup__queries_html_ga9778cea069cae30f1c8c691d4e1be122"><div class="ttname"><a href="group__queries.html#ga9778cea069cae30f1c8c691d4e1be122">ecs_query_iter</a></div><div class="ttdeci">FLECS_API ecs_iter_t ecs_query_iter(const ecs_world_t *world, const ecs_query_t *query)</div></div>
-<div class="ttc" id="astructecs__iter__t_html"><div class="ttname"><a href="structecs__iter__t.html">ecs_iter_t</a></div><div class="ttdef"><b>Definition</b> flecs.hpp:6136</div></div>
-<div class="ttc" id="astructecs__iter__t_html_a7f1db7ca958d8bbf12d6ef76f7e91bf2"><div class="ttname"><a href="structecs__iter__t.html#a7f1db7ca958d8bbf12d6ef76f7e91bf2">ecs_iter_t::world</a></div><div class="ttdeci">ecs_world_t * world</div><div class="ttdef"><b>Definition</b> flecs.hpp:6138</div></div>
+<div class="ttc" id="astructecs__iter__t_html"><div class="ttname"><a href="structecs__iter__t.html">ecs_iter_t</a></div><div class="ttdef"><b>Definition</b> flecs.h:6169</div></div>
+<div class="ttc" id="astructecs__iter__t_html_a7f1db7ca958d8bbf12d6ef76f7e91bf2"><div class="ttname"><a href="structecs__iter__t.html#a7f1db7ca958d8bbf12d6ef76f7e91bf2">ecs_iter_t::world</a></div><div class="ttdeci">ecs_world_t * world</div><div class="ttdef"><b>Definition</b> flecs.h:6171</div></div>
 </div><!-- fragment --><p>When this code is called from a system, it is important to use the world provided by its iterator object to ensure thread safety. For example:</p>
 <div class="fragment"><div class="line"><span class="keywordtype">void</span> Collide(<a class="code hl_struct" href="structecs__iter__t.html">ecs_iter_t</a> *it) {</div>
 <div class="line">  <a class="code hl_struct" href="structecs__iter__t.html">ecs_iter_t</a> qit = <a class="code hl_function" href="group__queries.html#ga9778cea069cae30f1c8c691d4e1be122">ecs_query_iter</a>(it-&gt;<a class="code hl_variable" href="structecs__iter__t.html#a7f1db7ca958d8bbf12d6ef76f7e91bf2">world</a>, Colliders);</div>
@@ -843,7 +846,7 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>src/extern/<a class="el" href="flecs_8hpp_source.html">flecs.hpp</a></li>
+<li>src/extern/<a class="el" href="flecs_8h_source.html">flecs.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

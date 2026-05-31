@@ -212,6 +212,10 @@ Typedefs</h2></td></tr>
 <tr class="separator:ga6e08840299e9eb6581fca8bc4db36d4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga53c16fbbdaa4281a84f914f5b86e1d8c" id="r_ga53c16fbbdaa4281a84f914f5b86e1d8c"><td class="memItemLeft" align="right" valign="top">typedef char *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__os__api.html#ga53c16fbbdaa4281a84f914f5b86e1d8c">ecs_os_api_module_to_path_t</a>) (const char *module_id)</td></tr>
 <tr class="separator:ga53c16fbbdaa4281a84f914f5b86e1d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9e8db40e143f4c2fcf15d1913035cf2c" id="r_ga9e8db40e143f4c2fcf15d1913035cf2c"><td class="memItemLeft" align="right" valign="top">typedef FILE *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__os__api.html#ga9e8db40e143f4c2fcf15d1913035cf2c">ecs_os_api_fopen_t</a>) (const char *file, const char *mode)</td></tr>
+<tr class="separator:ga9e8db40e143f4c2fcf15d1913035cf2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf0bc21e5a1f846f3cdc0a5b37b3647b1" id="r_gaf0bc21e5a1f846f3cdc0a5b37b3647b1"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__os__api.html#gaf0bc21e5a1f846f3cdc0a5b37b3647b1">ecs_os_api_fclose_t</a>) (FILE *file)</td></tr>
+<tr class="separator:gaf0bc21e5a1f846f3cdc0a5b37b3647b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac1763b229facc599347b4fda822e895c" id="r_gac1763b229facc599347b4fda822e895c"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__os__api.html#gac1763b229facc599347b4fda822e895c">ecs_os_api_perf_trace_t</a>) (const char *filename, size_t line, const char *name)</td></tr>
 <tr class="separator:gac1763b229facc599347b4fda822e895c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac5d1baef7cf87fb2f446406baccd0575" id="r_gac5d1baef7cf87fb2f446406baccd0575"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structecs__os__api__t.html">ecs_os_api_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__os__api.html#gac5d1baef7cf87fb2f446406baccd0575">ecs_os_api_t</a></td></tr>
@@ -468,6 +472,21 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="gaf0bc21e5a1f846f3cdc0a5b37b3647b1" name="gaf0bc21e5a1f846f3cdc0a5b37b3647b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf0bc21e5a1f846f3cdc0a5b37b3647b1">&#9670;&#160;</a></span>ecs_os_api_fclose_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* ecs_os_api_fclose_t) (FILE *file)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>OS API fclose function type. </p>
+
+</div>
+</div>
 <a id="gab309aa92173969941c358773390bd9ce" name="gab309aa92173969941c358773390bd9ce"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gab309aa92173969941c358773390bd9ce">&#9670;&#160;</a></span>ecs_os_api_fini_t</h2>
 
@@ -480,6 +499,21 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>OS API deinit. </p>
+
+</div>
+</div>
+<a id="ga9e8db40e143f4c2fcf15d1913035cf2c" name="ga9e8db40e143f4c2fcf15d1913035cf2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9e8db40e143f4c2fcf15d1913035cf2c">&#9670;&#160;</a></span>ecs_os_api_fopen_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef FILE *(* ecs_os_api_fopen_t) (const char *file, const char *mode)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>OS API fopen function type. </p>
 
 </div>
 </div>
@@ -1291,8 +1325,8 @@ Variables</h2></td></tr>
 <div class="ttc" id="agroup__c__os__api_html_ga4f54099379c8c6b230f2c413fe8c19b2"><div class="ttname"><a href="group__c__os__api.html#ga4f54099379c8c6b230f2c413fe8c19b2">ecs_os_set_api</a></div><div class="ttdeci">FLECS_API void ecs_os_set_api(ecs_os_api_t *os_api)</div></div>
 <div class="ttc" id="agroup__c__os__api_html_ga65c48c375b9977bfb74c8286db6c49ad"><div class="ttname"><a href="group__c__os__api.html#ga65c48c375b9977bfb74c8286db6c49ad">ecs_os_get_api</a></div><div class="ttdeci">FLECS_API ecs_os_api_t ecs_os_get_api(void)</div></div>
 <div class="ttc" id="agroup__c__os__api_html_gad108ed0883ea96a180fc4df187ed6cb0"><div class="ttname"><a href="group__c__os__api.html#gad108ed0883ea96a180fc4df187ed6cb0">ecs_os_set_api_defaults</a></div><div class="ttdeci">FLECS_API void ecs_os_set_api_defaults(void)</div></div>
-<div class="ttc" id="astructecs__os__api__t_html"><div class="ttname"><a href="structecs__os__api__t.html">ecs_os_api_t</a></div><div class="ttdef"><b>Definition</b> flecs.hpp:3723</div></div>
-<div class="ttc" id="astructecs__os__api__t_html_a27748ba2a6fb42fd4c2ae060514c9e2c"><div class="ttname"><a href="structecs__os__api__t.html#a27748ba2a6fb42fd4c2ae060514c9e2c">ecs_os_api_t::abort_</a></div><div class="ttdeci">ecs_os_api_abort_t abort_</div><div class="ttdef"><b>Definition</b> flecs.hpp:3780</div></div>
+<div class="ttc" id="astructecs__os__api__t_html"><div class="ttname"><a href="structecs__os__api__t.html">ecs_os_api_t</a></div><div class="ttdef"><b>Definition</b> flecs.h:3754</div></div>
+<div class="ttc" id="astructecs__os__api__t_html_a27748ba2a6fb42fd4c2ae060514c9e2c"><div class="ttname"><a href="structecs__os__api__t.html#a27748ba2a6fb42fd4c2ae060514c9e2c">ecs_os_api_t::abort_</a></div><div class="ttdeci">ecs_os_api_abort_t abort_</div><div class="ttdef"><b>Definition</b> flecs.h:3811</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -1658,7 +1692,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="comment">// code</span></div>
 <div class="line"><span class="keywordtype">double</span> elapsed = <a class="code hl_function" href="group__c__os__api.html#ga2ff15d664bdc88093a9b8a7e3ddc99de">ecs_time_measure</a>(&amp;t);</div>
 <div class="ttc" id="agroup__c__os__api_html_ga2ff15d664bdc88093a9b8a7e3ddc99de"><div class="ttname"><a href="group__c__os__api.html#ga2ff15d664bdc88093a9b8a7e3ddc99de">ecs_time_measure</a></div><div class="ttdeci">FLECS_API double ecs_time_measure(ecs_time_t *start)</div></div>
-<div class="ttc" id="astructecs__time__t_html"><div class="ttname"><a href="structecs__time__t.html">ecs_time_t</a></div><div class="ttdef"><b>Definition</b> flecs.hpp:3492</div></div>
+<div class="ttc" id="astructecs__time__t_html"><div class="ttname"><a href="structecs__time__t.html">ecs_time_t</a></div><div class="ttdef"><b>Definition</b> flecs.h:3512</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">start</td><td>The starting timestamp. </td></tr>

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['flecs_5fhashmap_5fiter_5ft_0',['flecs_hashmap_iter_t',['../structflecs__hashmap__iter__t.html',1,'']]],
-  ['flecs_5fhashmap_5fresult_5ft_1',['flecs_hashmap_result_t',['../structflecs__hashmap__result__t.html',1,'']]]
+  ['direction_0',['Direction',['../structDirection.html',1,'']]],
+  ['draw3d_1',['Draw3D',['../structDraw3D.html',1,'']]]
 ];

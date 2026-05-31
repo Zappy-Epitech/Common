@@ -1,5 +1,5 @@
 <map id="zappy::CommandParser" name="zappy::CommandParser">
-<area shape="rect" id="Node000001" title=" " alt="" coords="13,93,188,119"/>
-<area shape="rect" id="Node000002" href="$classparsing_1_1Scanner.html" title=" " alt="" coords="5,5,196,31"/>
+<area shape="rect" id="Node000001" title="Maps a command name to its parser." alt="" coords="13,93,188,119"/>
+<area shape="rect" id="Node000002" href="$classparsing_1_1Scanner.html" title="Reads tokens from a string view." alt="" coords="5,5,196,31"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,45,103,93,98,93,98,45"/>
 </map>

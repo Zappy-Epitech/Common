@@ -7,7 +7,7 @@ var searchData=
   ['head_4',['head',['../structecs__block__allocator__t.html#a525e908312eda8185ad4891f8d65b945',1,'ecs_block_allocator_t']]],
   ['header_5fcount_5',['header_count',['../structecs__http__request__t.html#a51d95c1136b353eb61ca6ea70d0d9866',1,'ecs_http_request_t']]],
   ['headers_6',['headers',['../structecs__http__request__t.html#a9f85b61c9378c5cb393174be9508534a',1,'ecs_http_request_t::headers'],['../structecs__http__reply__t.html#a6e61bdcc595f70aee6555ebe4c2d0f89',1,'ecs_http_reply_t::headers']]],
-  ['home_7',['Home',['../structHome.html',1,'']]],
+  ['home_7',['home',['../structHome.html',1,'Home'],['../structHome.html#af3291342a12877eea45892f3b1b68119',1,'Home::Home()']]],
   ['hooks_8',['hooks',['../structecs__type__info__t.html#aae69c53af4499bb30d0f3402c8537380',1,'ecs_type_info_t']]],
   ['host_9',['host',['../structecs__http__connection__t.html#a26cc4c5b3ff9346fabf63fe76a7920ca',1,'ecs_http_connection_t']]],
   ['http_10',['Http',['../group__c__addons__http.html',1,'']]]

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Zappy GUI: src/modules/Gui.hpp Source File</title>
+<title>Zappy GUI: src/core/Gui.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -100,60 +100,86 @@ $(document).ready(function(){initNavTree('Gui_8hpp_source.html',''); initResizab
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;../extern/flecs.hpp&quot;</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;cstring&gt;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;functional&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="structOnClick.html">    7</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structOnClick.html">OnClick</a> : std::function&lt;void(flecs::entity)&gt; {};</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="structOnEnter.html">    8</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structOnEnter.html">OnEnter</a> : std::function&lt;void(flecs::entity, std::string &amp;)&gt; {};</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="structOnTextUpdate.html">    9</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structOnTextUpdate.html">OnTextUpdate</a> : std::function&lt;void(flecs::entity, std::string &amp;)&gt; {};</div>
-<div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="structHasInputActive.html">   10</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structHasInputActive.html">HasInputActive</a> {</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keywordtype">bool</span> value = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>};</div>
-</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;cstring&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;functional&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span>flecs {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">struct </span>world;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">struct </span>entity;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>} <span class="comment">// namespace flecs</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="structOnClick.html">   12</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structOnClick.html">OnClick</a> : std::function&lt;void(flecs::entity &amp;)&gt; {};</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="structButton.html">   14</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structButton.html">Button</a> {</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordtype">char</span> *label = strdup(<span class="stringliteral">&quot;No Label&quot;</span>);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="structOnEnter.html">   15</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structOnEnter.html">OnEnter</a> : std::function&lt;void(flecs::entity &amp;, std::string &amp;)&gt; {};</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_struct" href="structButton.html">Button</a>() {</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    }</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_struct" href="structButton.html">Button</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *label) : label(strdup(label)) {</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    }</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>};</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="structOnTextUpdate.html">   18</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structOnTextUpdate.html">OnTextUpdate</a> : std::function&lt;void(flecs::entity &amp;, std::string &amp;)&gt; {};</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="foldopen" id="foldopen00021" data-start="{" data-end="};">
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="structHasInputActive.html">   21</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structHasInputActive.html">HasInputActive</a> {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordtype">bool</span> value = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>};</div>
 </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="structTextInput.html">   23</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structTextInput.html">TextInput</a> {</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    std::string text;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">bool</span> active = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_struct" href="structTextInput.html">TextInput</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_struct" href="structTextInput.html">TextInput</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *text) : text(text) {</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    }</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>};</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="};">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="structButton.html">   26</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structButton.html">Button</a> {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">char</span> *label = strdup(<span class="stringliteral">&quot;No Label&quot;</span>);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="}">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="structButton.html#a3b36df1ae23c58aedb9e15a713159459">   30</a></span>    <a class="code hl_function" href="structButton.html#a3b36df1ae23c58aedb9e15a713159459">Button</a>() {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    }</div>
 </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="foldopen" id="foldopen00032" data-start="{" data-end="};">
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="structGui.html">   32</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structGui.html">Gui</a> {</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_struct" href="structGui.html">Gui</a>(flecs::world &amp;world);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>};</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="structButton.html#aefc67c8ea47cb1a8789e361af1595c21">   34</a></span>    <a class="code hl_function" href="structButton.html#aefc67c8ea47cb1a8789e361af1595c21">Button</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *label) : label(strdup(label)) {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    }</div>
 </div>
-<div class="ttc" id="astructButton_html"><div class="ttname"><a href="structButton.html">Button</a></div><div class="ttdef"><b>Definition</b> Gui.hpp:14</div></div>
-<div class="ttc" id="astructGui_html"><div class="ttname"><a href="structGui.html">Gui</a></div><div class="ttdef"><b>Definition</b> Gui.hpp:32</div></div>
-<div class="ttc" id="astructHasInputActive_html"><div class="ttname"><a href="structHasInputActive.html">HasInputActive</a></div><div class="ttdef"><b>Definition</b> Gui.hpp:10</div></div>
-<div class="ttc" id="astructOnClick_html"><div class="ttname"><a href="structOnClick.html">OnClick</a></div><div class="ttdef"><b>Definition</b> Gui.hpp:7</div></div>
-<div class="ttc" id="astructOnEnter_html"><div class="ttname"><a href="structOnEnter.html">OnEnter</a></div><div class="ttdef"><b>Definition</b> Gui.hpp:8</div></div>
-<div class="ttc" id="astructOnTextUpdate_html"><div class="ttname"><a href="structOnTextUpdate.html">OnTextUpdate</a></div><div class="ttdef"><b>Definition</b> Gui.hpp:9</div></div>
-<div class="ttc" id="astructTextInput_html"><div class="ttname"><a href="structTextInput.html">TextInput</a></div><div class="ttdef"><b>Definition</b> Gui.hpp:23</div></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>};</div>
+</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="foldopen" id="foldopen00039" data-start="{" data-end="};">
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="structTextInput.html">   39</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structTextInput.html">TextInput</a> {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    std::string text;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">bool</span> active = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="structTextInput.html#afa2f28b1ecad0d180cfc388c8bdf56f3">   44</a></span>    <a class="code hl_function" href="structTextInput.html#afa2f28b1ecad0d180cfc388c8bdf56f3">TextInput</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="structTextInput.html#a7cf48d0f530353d499cc2abeb9272b31">   47</a></span>    <a class="code hl_function" href="structTextInput.html#a7cf48d0f530353d499cc2abeb9272b31">TextInput</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *text) : text(text) {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    }</div>
+</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>};</div>
+</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="foldopen" id="foldopen00052" data-start="{" data-end="};">
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="structScreenMessage.html">   52</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structScreenMessage.html">ScreenMessage</a> {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    std::string value;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>};</div>
+</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="foldopen" id="foldopen00057" data-start="{" data-end="};">
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="structGui.html">   57</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structGui.html">Gui</a> {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <a class="code hl_struct" href="structGui.html">Gui</a>(flecs::world &amp;world);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>};</div>
+</div>
+<div class="ttc" id="astructButton_html"><div class="ttname"><a href="structButton.html">Button</a></div><div class="ttdoc">Stores a button label.</div><div class="ttdef"><b>Definition</b> Gui.hpp:26</div></div>
+<div class="ttc" id="astructButton_html_a3b36df1ae23c58aedb9e15a713159459"><div class="ttname"><a href="structButton.html#a3b36df1ae23c58aedb9e15a713159459">Button::Button</a></div><div class="ttdeci">Button()</div><div class="ttdoc">Creates a default button label.</div><div class="ttdef"><b>Definition</b> Gui.hpp:30</div></div>
+<div class="ttc" id="astructButton_html_aefc67c8ea47cb1a8789e361af1595c21"><div class="ttname"><a href="structButton.html#aefc67c8ea47cb1a8789e361af1595c21">Button::Button</a></div><div class="ttdeci">Button(const char *label)</div><div class="ttdoc">Creates a button with a label.</div><div class="ttdef"><b>Definition</b> Gui.hpp:34</div></div>
+<div class="ttc" id="astructGui_html"><div class="ttname"><a href="structGui.html">Gui</a></div><div class="ttdoc">Registers GUI components and systems.</div><div class="ttdef"><b>Definition</b> Gui.hpp:57</div></div>
+<div class="ttc" id="astructHasInputActive_html"><div class="ttname"><a href="structHasInputActive.html">HasInputActive</a></div><div class="ttdoc">Tracks whether an input is active.</div><div class="ttdef"><b>Definition</b> Gui.hpp:21</div></div>
+<div class="ttc" id="astructOnClick_html"><div class="ttname"><a href="structOnClick.html">OnClick</a></div><div class="ttdoc">Stores a button click callback.</div><div class="ttdef"><b>Definition</b> Gui.hpp:12</div></div>
+<div class="ttc" id="astructOnEnter_html"><div class="ttname"><a href="structOnEnter.html">OnEnter</a></div><div class="ttdoc">Stores a text submit callback.</div><div class="ttdef"><b>Definition</b> Gui.hpp:15</div></div>
+<div class="ttc" id="astructOnTextUpdate_html"><div class="ttname"><a href="structOnTextUpdate.html">OnTextUpdate</a></div><div class="ttdoc">Stores a text change callback.</div><div class="ttdef"><b>Definition</b> Gui.hpp:18</div></div>
+<div class="ttc" id="astructScreenMessage_html"><div class="ttname"><a href="structScreenMessage.html">ScreenMessage</a></div><div class="ttdoc">Stores a temporary screen message.</div><div class="ttdef"><b>Definition</b> Gui.hpp:52</div></div>
+<div class="ttc" id="astructTextInput_html"><div class="ttname"><a href="structTextInput.html">TextInput</a></div><div class="ttdoc">Stores editable text input state.</div><div class="ttdef"><b>Definition</b> Gui.hpp:39</div></div>
+<div class="ttc" id="astructTextInput_html_a7cf48d0f530353d499cc2abeb9272b31"><div class="ttname"><a href="structTextInput.html#a7cf48d0f530353d499cc2abeb9272b31">TextInput::TextInput</a></div><div class="ttdeci">TextInput(const char *text)</div><div class="ttdoc">Creates a text input with initial text.</div><div class="ttdef"><b>Definition</b> Gui.hpp:47</div></div>
+<div class="ttc" id="astructTextInput_html_afa2f28b1ecad0d180cfc388c8bdf56f3"><div class="ttname"><a href="structTextInput.html#afa2f28b1ecad0d180cfc388c8bdf56f3">TextInput::TextInput</a></div><div class="ttdeci">TextInput()=default</div><div class="ttdoc">Creates an empty text input.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_ddb4d7e95cc2d6c8e1ade10a20d7247d.html">modules</a></li><li class="navelem"><b>Gui.hpp</b></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li><li class="navelem"><b>Gui.hpp</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

@@ -1,0 +1,5 @@
+<map id="PartUV" name="PartUV">
+<area shape="rect" id="Node000001" title="Stores UVs for a body part." alt="" coords="7,167,74,192"/>
+<area shape="rect" id="Node000002" href="$structFaceUV.html" title="Stores one face UV rectangle." alt="" coords="5,5,76,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="43,44,43,166,38,166,38,44"/>
+</map>

@@ -385,9 +385,9 @@ flecs::entity_view::get_doc_link() </dd></dl>
 <p>To test if an entity has a human-readable name, use:</p>
 <div class="fragment"><div class="line"><a class="code hl_define" href="group__flecs__c__has.html#ga7eec42af45e8804cd1e2d16ff4ef024c">ecs_has_pair</a>(world, e, <a class="code hl_define" href="group__core.html#gaab94f132ee301a2b1265425f793b077c">ecs_id</a>(<a class="code hl_struct" href="structEcsDocDescription.html">EcsDocDescription</a>), <a class="code hl_variable" href="group__builtin__tags.html#gaff996b0badbf28850be613c5a7246c3e">EcsName</a>);</div>
 <div class="ttc" id="agroup__builtin__tags_html_gaff996b0badbf28850be613c5a7246c3e"><div class="ttname"><a href="group__builtin__tags.html#gaff996b0badbf28850be613c5a7246c3e">EcsName</a></div><div class="ttdeci">FLECS_API const ecs_entity_t EcsName</div></div>
-<div class="ttc" id="agroup__core_html_gaab94f132ee301a2b1265425f793b077c"><div class="ttname"><a href="group__core.html#gaab94f132ee301a2b1265425f793b077c">ecs_id</a></div><div class="ttdeci">#define ecs_id(T)</div><div class="ttdef"><b>Definition</b> flecs.hpp:1056</div></div>
-<div class="ttc" id="agroup__flecs__c__has_html_ga7eec42af45e8804cd1e2d16ff4ef024c"><div class="ttname"><a href="group__flecs__c__has.html#ga7eec42af45e8804cd1e2d16ff4ef024c">ecs_has_pair</a></div><div class="ttdeci">#define ecs_has_pair(world, entity, first, second)</div><div class="ttdef"><b>Definition</b> flecs.hpp:12096</div></div>
-<div class="ttc" id="astructEcsDocDescription_html"><div class="ttname"><a href="structEcsDocDescription.html">EcsDocDescription</a></div><div class="ttdef"><b>Definition</b> flecs.hpp:17892</div></div>
+<div class="ttc" id="agroup__core_html_gaab94f132ee301a2b1265425f793b077c"><div class="ttname"><a href="group__core.html#gaab94f132ee301a2b1265425f793b077c">ecs_id</a></div><div class="ttdeci">#define ecs_id(T)</div><div class="ttdef"><b>Definition</b> flecs.h:1074</div></div>
+<div class="ttc" id="agroup__flecs__c__has_html_ga7eec42af45e8804cd1e2d16ff4ef024c"><div class="ttname"><a href="group__flecs__c__has.html#ga7eec42af45e8804cd1e2d16ff4ef024c">ecs_has_pair</a></div><div class="ttdeci">#define ecs_has_pair(world, entity, first, second)</div><div class="ttdef"><b>Definition</b> flecs.h:12229</div></div>
+<div class="ttc" id="astructEcsDocDescription_html"><div class="ttname"><a href="structEcsDocDescription.html">EcsDocDescription</a></div><div class="ttdef"><b>Definition</b> flecs.h:18083</div></div>
 </div><!-- fragment --><p>Or in C++:</p>
 <div class="fragment"><div class="line">e.has&lt;flecs::doc::Description&gt;(flecs::Name);</div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
@@ -778,7 +778,7 @@ flecs::entity_builder::set_doc_uuid() </dd></dl>
       </table>
 </div><div class="memdoc">
 <p>Doc module import function. Usage: </p><div class="fragment"><div class="line"><a class="code hl_define" href="group__c__addons__module.html#gae3c27bd0ac0793f8a9a3cada8b39f86f">ECS_IMPORT</a>(world, FlecsDoc)</div>
-<div class="ttc" id="agroup__c__addons__module_html_gae3c27bd0ac0793f8a9a3cada8b39f86f"><div class="ttname"><a href="group__c__addons__module.html#gae3c27bd0ac0793f8a9a3cada8b39f86f">ECS_IMPORT</a></div><div class="ttdeci">#define ECS_IMPORT(world, id)</div><div class="ttdef"><b>Definition</b> flecs.hpp:19806</div></div>
+<div class="ttc" id="agroup__c__addons__module_html_gae3c27bd0ac0793f8a9a3cada8b39f86f"><div class="ttname"><a href="group__c__addons__module.html#gae3c27bd0ac0793f8a9a3cada8b39f86f">ECS_IMPORT</a></div><div class="ttdeci">#define ECS_IMPORT(world, id)</div><div class="ttdef"><b>Definition</b> flecs.h:20022</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">world</td><td>The world. </td></tr>

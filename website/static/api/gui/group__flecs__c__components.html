@@ -201,7 +201,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>Declare a copy action. Example:</p>
 <div class="fragment"><div class="line"><a class="code hl_define" href="group__flecs__c__components.html#gadc23db5336d16480f90416386af8b773">ECS_COPY</a>(MyType, dst, src, { dst-&gt;value = strdup(src-&gt;value); });</div>
-<div class="ttc" id="agroup__flecs__c__components_html_gadc23db5336d16480f90416386af8b773"><div class="ttname"><a href="group__flecs__c__components.html#gadc23db5336d16480f90416386af8b773">ECS_COPY</a></div><div class="ttdeci">#define ECS_COPY(type, dst_var, src_var,...)</div><div class="ttdef"><b>Definition</b> flecs.hpp:12226</div></div>
+<div class="ttc" id="agroup__flecs__c__components_html_gadc23db5336d16480f90416386af8b773"><div class="ttname"><a href="group__flecs__c__components.html#gadc23db5336d16480f90416386af8b773">ECS_COPY</a></div><div class="ttdeci">#define ECS_COPY(type, dst_var, src_var,...)</div><div class="ttdef"><b>Definition</b> flecs.h:12359</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -257,7 +257,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>Declare a constructor. Example:</p>
 <div class="fragment"><div class="line"><a class="code hl_define" href="group__flecs__c__components.html#ga3ced6ec49831a3916bd270eb9904c8f9">ECS_CTOR</a>(MyType, ptr, { ptr-&gt;value = NULL; });</div>
-<div class="ttc" id="agroup__flecs__c__components_html_ga3ced6ec49831a3916bd270eb9904c8f9"><div class="ttname"><a href="group__flecs__c__components.html#ga3ced6ec49831a3916bd270eb9904c8f9">ECS_CTOR</a></div><div class="ttdeci">#define ECS_CTOR(type, var,...)</div><div class="ttdef"><b>Definition</b> flecs.hpp:12206</div></div>
+<div class="ttc" id="agroup__flecs__c__components_html_ga3ced6ec49831a3916bd270eb9904c8f9"><div class="ttname"><a href="group__flecs__c__components.html#ga3ced6ec49831a3916bd270eb9904c8f9">ECS_CTOR</a></div><div class="ttdeci">#define ECS_CTOR(type, var,...)</div><div class="ttdef"><b>Definition</b> flecs.h:12339</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -313,7 +313,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>Declare a destructor. Example:</p>
 <div class="fragment"><div class="line"><a class="code hl_define" href="group__flecs__c__components.html#ga6fd394cb3ec4ae69767efccb334b565e">ECS_DTOR</a>(MyType, ptr, { free(ptr-&gt;value); });</div>
-<div class="ttc" id="agroup__flecs__c__components_html_ga6fd394cb3ec4ae69767efccb334b565e"><div class="ttname"><a href="group__flecs__c__components.html#ga6fd394cb3ec4ae69767efccb334b565e">ECS_DTOR</a></div><div class="ttdeci">#define ECS_DTOR(type, var,...)</div><div class="ttdef"><b>Definition</b> flecs.hpp:12216</div></div>
+<div class="ttc" id="agroup__flecs__c__components_html_ga6fd394cb3ec4ae69767efccb334b565e"><div class="ttname"><a href="group__flecs__c__components.html#ga6fd394cb3ec4ae69767efccb334b565e">ECS_DTOR</a></div><div class="ttdeci">#define ECS_DTOR(type, var,...)</div><div class="ttdef"><b>Definition</b> flecs.h:12349</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -404,7 +404,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>Declare a move action. Example:</p>
 <div class="fragment"><div class="line"><a class="code hl_define" href="group__flecs__c__components.html#ga53493c1f7614b96b9f05b9cc5c9a5cb6">ECS_MOVE</a>(MyType, dst, src, { dst-&gt;value = src-&gt;value; src-&gt;value = 0; });</div>
-<div class="ttc" id="agroup__flecs__c__components_html_ga53493c1f7614b96b9f05b9cc5c9a5cb6"><div class="ttname"><a href="group__flecs__c__components.html#ga53493c1f7614b96b9f05b9cc5c9a5cb6">ECS_MOVE</a></div><div class="ttdeci">#define ECS_MOVE(type, dst_var, src_var,...)</div><div class="ttdef"><b>Definition</b> flecs.hpp:12236</div></div>
+<div class="ttc" id="agroup__flecs__c__components_html_ga53493c1f7614b96b9f05b9cc5c9a5cb6"><div class="ttname"><a href="group__flecs__c__components.html#ga53493c1f7614b96b9f05b9cc5c9a5cb6">ECS_MOVE</a></div><div class="ttdeci">#define ECS_MOVE(type, dst_var, src_var,...)</div><div class="ttdef"><b>Definition</b> flecs.h:12369</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -460,7 +460,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>Declare an on_add hook. Example:</p>
 <div class="fragment"><div class="line"><a class="code hl_define" href="group__flecs__c__components.html#ga16bf14a5bd146e03072394ff166f08fc">ECS_ON_ADD</a>(MyType, ptr, { printf(<span class="stringliteral">&quot;added\n&quot;</span>); });</div>
-<div class="ttc" id="agroup__flecs__c__components_html_ga16bf14a5bd146e03072394ff166f08fc"><div class="ttname"><a href="group__flecs__c__components.html#ga16bf14a5bd146e03072394ff166f08fc">ECS_ON_ADD</a></div><div class="ttdeci">#define ECS_ON_ADD(type, ptr,...)</div><div class="ttdef"><b>Definition</b> flecs.hpp:12246</div></div>
+<div class="ttc" id="agroup__flecs__c__components_html_ga16bf14a5bd146e03072394ff166f08fc"><div class="ttname"><a href="group__flecs__c__components.html#ga16bf14a5bd146e03072394ff166f08fc">ECS_ON_ADD</a></div><div class="ttdeci">#define ECS_ON_ADD(type, ptr,...)</div><div class="ttdef"><b>Definition</b> flecs.h:12379</div></div>
 </div><!-- fragment --> 
 </div>
 </div>

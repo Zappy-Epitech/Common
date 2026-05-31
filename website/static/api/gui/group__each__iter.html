@@ -153,7 +153,7 @@ Functions</h2></td></tr>
 <p>Iterate children of a parent. This operation is usually equivalent to doing: </p><div class="fragment"><div class="line"><a class="code hl_struct" href="structecs__iter__t.html">ecs_iter_t</a> it = <a class="code hl_function" href="group__each__iter.html#gaa7280edda8dfccc2d869ca0514ed373c">ecs_each_id</a>(world, ecs_pair(<a class="code hl_variable" href="group__builtin__tags.html#gad9e4db958bd8fcae53eb459365ad3dce">EcsChildOf</a>, parent));</div>
 <div class="ttc" id="agroup__builtin__tags_html_gad9e4db958bd8fcae53eb459365ad3dce"><div class="ttname"><a href="group__builtin__tags.html#gad9e4db958bd8fcae53eb459365ad3dce">EcsChildOf</a></div><div class="ttdeci">FLECS_API const ecs_entity_t EcsChildOf</div></div>
 <div class="ttc" id="agroup__each__iter_html_gaa7280edda8dfccc2d869ca0514ed373c"><div class="ttname"><a href="group__each__iter.html#gaa7280edda8dfccc2d869ca0514ed373c">ecs_each_id</a></div><div class="ttdeci">FLECS_API ecs_iter_t ecs_each_id(const ecs_world_t *world, ecs_id_t component)</div></div>
-<div class="ttc" id="astructecs__iter__t_html"><div class="ttname"><a href="structecs__iter__t.html">ecs_iter_t</a></div><div class="ttdef"><b>Definition</b> flecs.hpp:6136</div></div>
+<div class="ttc" id="astructecs__iter__t_html"><div class="ttname"><a href="structecs__iter__t.html">ecs_iter_t</a></div><div class="ttdef"><b>Definition</b> flecs.h:6169</div></div>
 </div><!-- fragment --><p>The only exception is when the parent has the EcsOrderedChildren trait, in which case this operation will return a single result with the ordered child entity IDs.</p>
 <p>This operation is equivalent to doing:</p>
 <div class="fragment"><div class="line"><a class="code hl_function" href="group__each__iter.html#gae277ccbe944eb8d67373c63598683797">ecs_children_w_rel</a>(world, <a class="code hl_variable" href="group__builtin__tags.html#gad9e4db958bd8fcae53eb459365ad3dce">EcsChildOf</a>, parent);</div>
@@ -266,15 +266,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Iterate all entities with a specified (component ID). This returns an iterator that yields all entities with a single specified component. This is a much lighter-weight operation than creating and iterating a query.</p>
-<p>Usage: </p><div class="fragment"><div class="line"><a class="code hl_struct" href="structecs__iter__t.html">ecs_iter_t</a> it = <a class="code hl_define" href="group__flecs__c__misc.html#ga08604ce5060a21cd3dc7b5f3c2737e6b">ecs_each</a>(world, Player);</div>
+<p>Usage: </p><div class="fragment"><div class="line"><a class="code hl_struct" href="structecs__iter__t.html">ecs_iter_t</a> it = <a class="code hl_define" href="group__flecs__c__misc.html#ga08604ce5060a21cd3dc7b5f3c2737e6b">ecs_each</a>(world, <a class="code hl_struct" href="structPlayer.html">Player</a>);</div>
 <div class="line"><span class="keywordflow">while</span> (<a class="code hl_function" href="group__each__iter.html#ga1ed0beb35fea40cde064305af80d3382">ecs_each_next</a>(&amp;it)) {</div>
 <div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; it.<a class="code hl_variable" href="structecs__iter__t.html#aeb636256c83cb2acc36f4f7ca84eeef0">count</a>; i ++) {</div>
 <div class="line">    <span class="comment">// Iterate as usual.</span></div>
 <div class="line">  }</div>
 <div class="line">}</div>
 <div class="ttc" id="agroup__each__iter_html_ga1ed0beb35fea40cde064305af80d3382"><div class="ttname"><a href="group__each__iter.html#ga1ed0beb35fea40cde064305af80d3382">ecs_each_next</a></div><div class="ttdeci">FLECS_API bool ecs_each_next(ecs_iter_t *it)</div></div>
-<div class="ttc" id="agroup__flecs__c__misc_html_ga08604ce5060a21cd3dc7b5f3c2737e6b"><div class="ttname"><a href="group__flecs__c__misc.html#ga08604ce5060a21cd3dc7b5f3c2737e6b">ecs_each</a></div><div class="ttdeci">#define ecs_each(world, id)</div><div class="ttdef"><b>Definition</b> flecs.hpp:12493</div></div>
-<div class="ttc" id="astructecs__iter__t_html_aeb636256c83cb2acc36f4f7ca84eeef0"><div class="ttname"><a href="structecs__iter__t.html#aeb636256c83cb2acc36f4f7ca84eeef0">ecs_iter_t::count</a></div><div class="ttdeci">int32_t count</div><div class="ttdef"><b>Definition</b> flecs.hpp:6143</div></div>
+<div class="ttc" id="agroup__flecs__c__misc_html_ga08604ce5060a21cd3dc7b5f3c2737e6b"><div class="ttname"><a href="group__flecs__c__misc.html#ga08604ce5060a21cd3dc7b5f3c2737e6b">ecs_each</a></div><div class="ttdeci">#define ecs_each(world, id)</div><div class="ttdef"><b>Definition</b> flecs.h:12626</div></div>
+<div class="ttc" id="astructPlayer_html"><div class="ttname"><a href="structPlayer.html">Player</a></div><div class="ttdoc">Stores player state.</div><div class="ttdef"><b>Definition</b> Player.hpp:4</div></div>
+<div class="ttc" id="astructecs__iter__t_html_aeb636256c83cb2acc36f4f7ca84eeef0"><div class="ttname"><a href="structecs__iter__t.html#aeb636256c83cb2acc36f4f7ca84eeef0">ecs_iter_t::count</a></div><div class="ttdeci">int32_t count</div><div class="ttdef"><b>Definition</b> flecs.h:6176</div></div>
 </div><!-- fragment --><p>If the specified ID is a component, it is possible to access the component pointer with <a class="el" href="group__flecs__c__iterators.html#ga15fdba6089a2597913dc420efb49ad60">ecs_field()</a> just like with regular queries:</p>
 <div class="fragment"><div class="line"><a class="code hl_struct" href="structecs__iter__t.html">ecs_iter_t</a> it = <a class="code hl_define" href="group__flecs__c__misc.html#ga08604ce5060a21cd3dc7b5f3c2737e6b">ecs_each</a>(world, Position);</div>
 <div class="line"><span class="keywordflow">while</span> (<a class="code hl_function" href="group__each__iter.html#ga1ed0beb35fea40cde064305af80d3382">ecs_each_next</a>(&amp;it)) {</div>
@@ -283,7 +284,7 @@ Functions</h2></td></tr>
 <div class="line">    <span class="comment">// Iterate as usual.</span></div>
 <div class="line">  }</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__flecs__c__iterators_html_ga15fdba6089a2597913dc420efb49ad60"><div class="ttname"><a href="group__flecs__c__iterators.html#ga15fdba6089a2597913dc420efb49ad60">ecs_field</a></div><div class="ttdeci">#define ecs_field(it, T, index)</div><div class="ttdef"><b>Definition</b> flecs.hpp:12289</div></div>
+<div class="ttc" id="agroup__flecs__c__iterators_html_ga15fdba6089a2597913dc420efb49ad60"><div class="ttname"><a href="group__flecs__c__iterators.html#ga15fdba6089a2597913dc420efb49ad60">ecs_field</a></div><div class="ttdeci">#define ecs_field(it, T, index)</div><div class="ttdef"><b>Definition</b> flecs.h:12422</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">world</td><td>The world. </td></tr>

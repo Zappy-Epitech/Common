@@ -10,6 +10,7 @@ var group__c__addons__pipeline =
     [ "ecs_pipeline_desc_t", "group__c__addons__pipeline.html#ga6c2091592e7e84ec8fcc04f65e25f7ae", null ],
     [ "ecs_get_pipeline", "group__c__addons__pipeline.html#ga42f3d9f582fc522d51a45fd8b119ff25", null ],
     [ "ecs_pipeline_init", "group__c__addons__pipeline.html#gaf236adfc21f8a8a35c1280d562a55026", null ],
+    [ "ecs_pipeline_update", "group__c__addons__pipeline.html#ga8ae0fcd6e980d20c57687c331c428833", null ],
     [ "ecs_progress", "group__c__addons__pipeline.html#ga46f3f33d48f252fcc510450aebe8c187", null ],
     [ "ecs_reset_clock", "group__c__addons__pipeline.html#ga679fe80ba515b65db1652a660e044221", null ],
     [ "ecs_run_pipeline", "group__c__addons__pipeline.html#ga691f1a1d41d31505b8f2de0b04ac188b", null ],

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['later_0',['Later',['../structLater.html',1,'']]]
+  ['hasinputactive_0',['HasInputActive',['../structHasInputActive.html',1,'']]],
+  ['home_1',['Home',['../structHome.html',1,'']]]
 ];

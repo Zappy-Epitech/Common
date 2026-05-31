@@ -131,6 +131,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga5fa46f9eb4d4c1c6b6b2f8250bdfbd3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad180f190d5c94ee6a38ea91dc68e11bd" id="r_gad180f190d5c94ee6a38ea91dc68e11bd"><td class="memItemLeft" align="right" valign="top">FLECS_API <a class="el" href="group__core__types.html#ga7f68bc56147690fc4095ffb29b3679cc">ecs_entity_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__observers.html#gad180f190d5c94ee6a38ea91dc68e11bd">ecs_observer_init</a> (<a class="el" href="group__core__types.html#ga9ba4521a67d59d716e2d8ba04d4ccb15">ecs_world_t</a> *world, const <a class="el" href="structecs__observer__desc__t.html">ecs_observer_desc_t</a> *desc)</td></tr>
 <tr class="separator:gad180f190d5c94ee6a38ea91dc68e11bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaca215b2ada247d7846312fa8829e9a5a" id="r_gaca215b2ada247d7846312fa8829e9a5a"><td class="memItemLeft" align="right" valign="top">FLECS_API <a class="el" href="group__core__types.html#ga7f68bc56147690fc4095ffb29b3679cc">ecs_entity_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__observers.html#gaca215b2ada247d7846312fa8829e9a5a">ecs_observer_update</a> (<a class="el" href="group__core__types.html#ga9ba4521a67d59d716e2d8ba04d4ccb15">ecs_world_t</a> *world, <a class="el" href="group__core__types.html#ga7f68bc56147690fc4095ffb29b3679cc">ecs_entity_t</a> observer, const <a class="el" href="structecs__observer__desc__t.html">ecs_observer_desc_t</a> *desc)</td></tr>
+<tr class="separator:gaca215b2ada247d7846312fa8829e9a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga40d7d885d4582d5b87b06024c6200ba3" id="r_ga40d7d885d4582d5b87b06024c6200ba3"><td class="memItemLeft" align="right" valign="top">FLECS_API const <a class="el" href="structecs__observer__t.html">ecs_observer_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__observers.html#ga40d7d885d4582d5b87b06024c6200ba3">ecs_observer_get</a> (const <a class="el" href="group__core__types.html#ga9ba4521a67d59d716e2d8ba04d4ccb15">ecs_world_t</a> *world, <a class="el" href="group__core__types.html#ga7f68bc56147690fc4095ffb29b3679cc">ecs_entity_t</a> observer)</td></tr>
 <tr class="separator:ga40d7d885d4582d5b87b06024c6200ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -308,6 +310,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Create an observer. Observers can subscribe for one or more terms. An observer only triggers when the source of the event meets all terms.</p>
+<p>If the descriptor specifies an existing entity, the entity must not already be associated with an observer. To modify an existing observer, use <a class="el" href="group__observers.html#gaca215b2ada247d7846312fa8829e9a5a">ecs_observer_update()</a>.</p>
 <p>See the documentation for <a class="el" href="structecs__observer__desc__t.html">ecs_observer_desc_t</a> for more details.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -317,6 +320,51 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The observer, or 0 if the operation failed. </dd></dl>
+
+</div>
+</div>
+<a id="gaca215b2ada247d7846312fa8829e9a5a" name="gaca215b2ada247d7846312fa8829e9a5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaca215b2ada247d7846312fa8829e9a5a">&#9670;&#160;</a></span>ecs_observer_update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FLECS_API <a class="el" href="group__core__types.html#ga7f68bc56147690fc4095ffb29b3679cc">ecs_entity_t</a> ecs_observer_update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__core__types.html#ga9ba4521a67d59d716e2d8ba04d4ccb15">ecs_world_t</a> *&#160;</td>
+          <td class="paramname"><em>world</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__core__types.html#ga7f68bc56147690fc4095ffb29b3679cc">ecs_entity_t</a>&#160;</td>
+          <td class="paramname"><em>observer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structecs__observer__desc__t.html">ecs_observer_desc_t</a> *&#160;</td>
+          <td class="paramname"><em>desc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Update an existing observer. Updates the configuration of an observer that was previously created with <a class="el" href="group__observers.html#gad180f190d5c94ee6a38ea91dc68e11bd">ecs_observer_init()</a>. Only fields in desc that are set to a non-default value will be applied; fields left at their default value preserve the existing configuration of the observer.</p>
+<p>The query and events fields of the descriptor are not used by this function; the observer query and event subscriptions cannot be modified after creation.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">world</td><td>The world. </td></tr>
+    <tr><td class="paramname">observer</td><td>The observer to update. </td></tr>
+    <tr><td class="paramname">desc</td><td>The observer descriptor. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The observer entity, or 0 if the operation failed. </dd></dl>
 
 </div>
 </div>

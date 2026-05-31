@@ -37,5 +37,6 @@ var group__observers =
     [ "ecs_emit", "group__observers.html#gac735eb108cdf3ed748f53f1f95b0d22f", null ],
     [ "ecs_enqueue", "group__observers.html#ga5fa46f9eb4d4c1c6b6b2f8250bdfbd3e", null ],
     [ "ecs_observer_get", "group__observers.html#ga40d7d885d4582d5b87b06024c6200ba3", null ],
-    [ "ecs_observer_init", "group__observers.html#gad180f190d5c94ee6a38ea91dc68e11bd", null ]
+    [ "ecs_observer_init", "group__observers.html#gad180f190d5c94ee6a38ea91dc68e11bd", null ],
+    [ "ecs_observer_update", "group__observers.html#gaca215b2ada247d7846312fa8829e9a5a", null ]
 ];

@@ -7,6 +7,6 @@ var group__getting =
     [ "ecs_modified_id", "group__getting.html#ga166cbccb5f0cef3f54fb6f8599619563", null ],
     [ "ecs_ref_get_id", "group__getting.html#ga213d9e0e5bfb7aa1751db30dcddc4bec", null ],
     [ "ecs_ref_init_id", "group__getting.html#gad142751805e7eabca2d552b228312aa9", null ],
-    [ "ecs_ref_update", "group__getting.html#gad3c7ae959d086b63f47d4f3cdf47c792", null ],
+    [ "ecs_ref_update", "group__getting.html#gae1fb24e352a9a50904203bf752613ec8", null ],
     [ "ecs_set_id", "group__getting.html#ga51f0c76380735ced05c7abc5b60bcd41", null ]
 ];

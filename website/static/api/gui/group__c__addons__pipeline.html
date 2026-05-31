@@ -135,6 +135,8 @@ Typedefs</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:gaf236adfc21f8a8a35c1280d562a55026" id="r_gaf236adfc21f8a8a35c1280d562a55026"><td class="memItemLeft" align="right" valign="top">FLECS_API <a class="el" href="group__core__types.html#ga7f68bc56147690fc4095ffb29b3679cc">ecs_entity_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__addons__pipeline.html#gaf236adfc21f8a8a35c1280d562a55026">ecs_pipeline_init</a> (<a class="el" href="group__core__types.html#ga9ba4521a67d59d716e2d8ba04d4ccb15">ecs_world_t</a> *world, const <a class="el" href="structecs__pipeline__desc__t.html">ecs_pipeline_desc_t</a> *desc)</td></tr>
 <tr class="separator:gaf236adfc21f8a8a35c1280d562a55026"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8ae0fcd6e980d20c57687c331c428833" id="r_ga8ae0fcd6e980d20c57687c331c428833"><td class="memItemLeft" align="right" valign="top">FLECS_API <a class="el" href="group__core__types.html#ga7f68bc56147690fc4095ffb29b3679cc">ecs_entity_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__addons__pipeline.html#ga8ae0fcd6e980d20c57687c331c428833">ecs_pipeline_update</a> (<a class="el" href="group__core__types.html#ga9ba4521a67d59d716e2d8ba04d4ccb15">ecs_world_t</a> *world, <a class="el" href="group__core__types.html#ga7f68bc56147690fc4095ffb29b3679cc">ecs_entity_t</a> pipeline, const <a class="el" href="structecs__pipeline__desc__t.html">ecs_pipeline_desc_t</a> *desc)</td></tr>
+<tr class="separator:ga8ae0fcd6e980d20c57687c331c428833"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga41d9d6b955f06b81de2e3fcaec116475" id="r_ga41d9d6b955f06b81de2e3fcaec116475"><td class="memItemLeft" align="right" valign="top">FLECS_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__addons__pipeline.html#ga41d9d6b955f06b81de2e3fcaec116475">ecs_set_pipeline</a> (<a class="el" href="group__core__types.html#ga9ba4521a67d59d716e2d8ba04d4ccb15">ecs_world_t</a> *world, <a class="el" href="group__core__types.html#ga7f68bc56147690fc4095ffb29b3679cc">ecs_entity_t</a> pipeline)</td></tr>
 <tr class="separator:ga41d9d6b955f06b81de2e3fcaec116475"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga42f3d9f582fc522d51a45fd8b119ff25" id="r_ga42f3d9f582fc522d51a45fd8b119ff25"><td class="memItemLeft" align="right" valign="top">FLECS_API <a class="el" href="group__core__types.html#ga7f68bc56147690fc4095ffb29b3679cc">ecs_entity_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__addons__pipeline.html#ga42f3d9f582fc522d51a45fd8b119ff25">ecs_get_pipeline</a> (const <a class="el" href="group__core__types.html#ga9ba4521a67d59d716e2d8ba04d4ccb15">ecs_world_t</a> *world)</td></tr>
@@ -193,11 +195,11 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">    <a class="code hl_typedef" href="group__core__types.html#ga7f68bc56147690fc4095ffb29b3679cc">ecs_entity_t</a> <span class="keywordtype">id</span> = 0, <a class="code hl_define" href="group__core.html#gaab94f132ee301a2b1265425f793b077c">ecs_id</a>(<span class="keywordtype">id</span>) = 0; <a class="code hl_define" href="group__c__addons__pipeline.html#ga7fe5d117104919f33afe6d313ce20713">ECS_PIPELINE_DEFINE</a>(world, <span class="keywordtype">id</span>, __VA_ARGS__);\</div>
 <div class="line">    (void)<span class="keywordtype">id</span>;\</div>
 <div class="line">    (void)<a class="code hl_define" href="group__core.html#gaab94f132ee301a2b1265425f793b077c">ecs_id</a>(<span class="keywordtype">id</span>);</div>
-<div class="ttc" id="agroup__c__addons__pipeline_html_ga7fe5d117104919f33afe6d313ce20713"><div class="ttname"><a href="group__c__addons__pipeline.html#ga7fe5d117104919f33afe6d313ce20713">ECS_PIPELINE_DEFINE</a></div><div class="ttdeci">#define ECS_PIPELINE_DEFINE(world, id_,...)</div><div class="ttdef"><b>Definition</b> flecs.hpp:14197</div></div>
-<div class="ttc" id="agroup__core__types_html_ga7f68bc56147690fc4095ffb29b3679cc"><div class="ttname"><a href="group__core__types.html#ga7f68bc56147690fc4095ffb29b3679cc">ecs_entity_t</a></div><div class="ttdeci">ecs_id_t ecs_entity_t</div><div class="ttdef"><b>Definition</b> flecs.hpp:1195</div></div>
-<div class="ttc" id="agroup__core_html_gaab94f132ee301a2b1265425f793b077c"><div class="ttname"><a href="group__core.html#gaab94f132ee301a2b1265425f793b077c">ecs_id</a></div><div class="ttdeci">#define ecs_id(T)</div><div class="ttdef"><b>Definition</b> flecs.hpp:1056</div></div>
+<div class="ttc" id="agroup__c__addons__pipeline_html_ga7fe5d117104919f33afe6d313ce20713"><div class="ttname"><a href="group__c__addons__pipeline.html#ga7fe5d117104919f33afe6d313ce20713">ECS_PIPELINE_DEFINE</a></div><div class="ttdeci">#define ECS_PIPELINE_DEFINE(world, id_,...)</div><div class="ttdef"><b>Definition</b> flecs.h:14340</div></div>
+<div class="ttc" id="agroup__core__types_html_ga7f68bc56147690fc4095ffb29b3679cc"><div class="ttname"><a href="group__core__types.html#ga7f68bc56147690fc4095ffb29b3679cc">ecs_entity_t</a></div><div class="ttdeci">ecs_id_t ecs_entity_t</div><div class="ttdef"><b>Definition</b> flecs.h:1213</div></div>
+<div class="ttc" id="agroup__core_html_gaab94f132ee301a2b1265425f793b077c"><div class="ttname"><a href="group__core.html#gaab94f132ee301a2b1265425f793b077c">ecs_id</a></div><div class="ttdeci">#define ecs_id(T)</div><div class="ttdef"><b>Definition</b> flecs.h:1074</div></div>
 </div><!-- fragment --><p>Convenience macro to create a pipeline. Usage: </p><div class="fragment"><div class="line"><a class="code hl_define" href="group__c__addons__pipeline.html#ga5d3b0f6885d66f123399748b98da4432">ECS_PIPELINE</a>(world, MyPipeline, Update || Physics || Render)</div>
-<div class="ttc" id="agroup__c__addons__pipeline_html_ga5d3b0f6885d66f123399748b98da4432"><div class="ttname"><a href="group__c__addons__pipeline.html#ga5d3b0f6885d66f123399748b98da4432">ECS_PIPELINE</a></div><div class="ttdeci">#define ECS_PIPELINE(world, id,...)</div><div class="ttdef"><b>Definition</b> flecs.hpp:14217</div></div>
+<div class="ttc" id="agroup__c__addons__pipeline_html_ga5d3b0f6885d66f123399748b98da4432"><div class="ttname"><a href="group__c__addons__pipeline.html#ga5d3b0f6885d66f123399748b98da4432">ECS_PIPELINE</a></div><div class="ttdeci">#define ECS_PIPELINE(world, id,...)</div><div class="ttdef"><b>Definition</b> flecs.h:14360</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -272,19 +274,19 @@ Functions</h2></td></tr>
 <div class="line">        ecs_id(id_) = id_;\</div>
 <div class="line">    } \</div>
 <div class="line">    ecs_assert(id_ != 0, <a class="code hl_define" href="group__c__addons__log.html#ga8a08384c430416853fbf6fcab3bb0b48">ECS_INVALID_PARAMETER</a>, <span class="stringliteral">&quot;failed to create pipeline&quot;</span>);</div>
-<div class="ttc" id="agroup__c__addons__log_html_ga8a08384c430416853fbf6fcab3bb0b48"><div class="ttname"><a href="group__c__addons__log.html#ga8a08384c430416853fbf6fcab3bb0b48">ECS_INVALID_PARAMETER</a></div><div class="ttdeci">#define ECS_INVALID_PARAMETER</div><div class="ttdef"><b>Definition</b> flecs.hpp:13246</div></div>
+<div class="ttc" id="agroup__c__addons__log_html_ga8a08384c430416853fbf6fcab3bb0b48"><div class="ttname"><a href="group__c__addons__log.html#ga8a08384c430416853fbf6fcab3bb0b48">ECS_INVALID_PARAMETER</a></div><div class="ttdeci">#define ECS_INVALID_PARAMETER</div><div class="ttdef"><b>Definition</b> flecs.h:13389</div></div>
 <div class="ttc" id="agroup__c__addons__pipeline_html_gaf236adfc21f8a8a35c1280d562a55026"><div class="ttname"><a href="group__c__addons__pipeline.html#gaf236adfc21f8a8a35c1280d562a55026">ecs_pipeline_init</a></div><div class="ttdeci">FLECS_API ecs_entity_t ecs_pipeline_init(ecs_world_t *world, const ecs_pipeline_desc_t *desc)</div></div>
 <div class="ttc" id="agroup__creating__entities_html_gad37f1ba5bd9c77fa94a30a2d017b7749"><div class="ttname"><a href="group__creating__entities.html#gad37f1ba5bd9c77fa94a30a2d017b7749">ecs_entity_init</a></div><div class="ttdeci">FLECS_API ecs_entity_t ecs_entity_init(ecs_world_t *world, const ecs_entity_desc_t *desc)</div></div>
-<div class="ttc" id="astructecs__entity__desc__t_html"><div class="ttname"><a href="structecs__entity__desc__t.html">ecs_entity_desc_t</a></div><div class="ttdef"><b>Definition</b> flecs.hpp:6012</div></div>
-<div class="ttc" id="astructecs__entity__desc__t_html_a2c1fecf732994afd7a32f2724f0fd0ec"><div class="ttname"><a href="structecs__entity__desc__t.html#a2c1fecf732994afd7a32f2724f0fd0ec">ecs_entity_desc_t::name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition</b> flecs.hpp:6019</div></div>
-<div class="ttc" id="astructecs__entity__desc__t_html_ac6edf50437ed45057c2c97d47cfe47b1"><div class="ttname"><a href="structecs__entity__desc__t.html#ac6edf50437ed45057c2c97d47cfe47b1">ecs_entity_desc_t::id</a></div><div class="ttdeci">ecs_entity_t id</div><div class="ttdef"><b>Definition</b> flecs.hpp:6015</div></div>
-<div class="ttc" id="astructecs__pipeline__desc__t_html"><div class="ttname"><a href="structecs__pipeline__desc__t.html">ecs_pipeline_desc_t</a></div><div class="ttdef"><b>Definition</b> flecs.hpp:14231</div></div>
-<div class="ttc" id="astructecs__pipeline__desc__t_html_a4d502a023d394a6a4ffe8c7fd9a3185b"><div class="ttname"><a href="structecs__pipeline__desc__t.html#a4d502a023d394a6a4ffe8c7fd9a3185b">ecs_pipeline_desc_t::entity</a></div><div class="ttdeci">ecs_entity_t entity</div><div class="ttdef"><b>Definition</b> flecs.hpp:14233</div></div>
-<div class="ttc" id="astructecs__pipeline__desc__t_html_a704b44813acb433e3557e1b59eab8c3b"><div class="ttname"><a href="structecs__pipeline__desc__t.html#a704b44813acb433e3557e1b59eab8c3b">ecs_pipeline_desc_t::query</a></div><div class="ttdeci">ecs_query_desc_t query</div><div class="ttdef"><b>Definition</b> flecs.hpp:14258</div></div>
-<div class="ttc" id="astructecs__query__desc__t_html_ae60d575996ffca82c58d6f0057ce66bb"><div class="ttname"><a href="structecs__query__desc__t.html#ae60d575996ffca82c58d6f0057ce66bb">ecs_query_desc_t::expr</a></div><div class="ttdeci">const char * expr</div><div class="ttdef"><b>Definition</b> flecs.hpp:6253</div></div>
+<div class="ttc" id="astructecs__entity__desc__t_html"><div class="ttname"><a href="structecs__entity__desc__t.html">ecs_entity_desc_t</a></div><div class="ttdef"><b>Definition</b> flecs.h:6045</div></div>
+<div class="ttc" id="astructecs__entity__desc__t_html_a2c1fecf732994afd7a32f2724f0fd0ec"><div class="ttname"><a href="structecs__entity__desc__t.html#a2c1fecf732994afd7a32f2724f0fd0ec">ecs_entity_desc_t::name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition</b> flecs.h:6052</div></div>
+<div class="ttc" id="astructecs__entity__desc__t_html_ac6edf50437ed45057c2c97d47cfe47b1"><div class="ttname"><a href="structecs__entity__desc__t.html#ac6edf50437ed45057c2c97d47cfe47b1">ecs_entity_desc_t::id</a></div><div class="ttdeci">ecs_entity_t id</div><div class="ttdef"><b>Definition</b> flecs.h:6048</div></div>
+<div class="ttc" id="astructecs__pipeline__desc__t_html"><div class="ttname"><a href="structecs__pipeline__desc__t.html">ecs_pipeline_desc_t</a></div><div class="ttdef"><b>Definition</b> flecs.h:14374</div></div>
+<div class="ttc" id="astructecs__pipeline__desc__t_html_a4d502a023d394a6a4ffe8c7fd9a3185b"><div class="ttname"><a href="structecs__pipeline__desc__t.html#a4d502a023d394a6a4ffe8c7fd9a3185b">ecs_pipeline_desc_t::entity</a></div><div class="ttdeci">ecs_entity_t entity</div><div class="ttdef"><b>Definition</b> flecs.h:14376</div></div>
+<div class="ttc" id="astructecs__pipeline__desc__t_html_a704b44813acb433e3557e1b59eab8c3b"><div class="ttname"><a href="structecs__pipeline__desc__t.html#a704b44813acb433e3557e1b59eab8c3b">ecs_pipeline_desc_t::query</a></div><div class="ttdeci">ecs_query_desc_t query</div><div class="ttdef"><b>Definition</b> flecs.h:14401</div></div>
+<div class="ttc" id="astructecs__query__desc__t_html_ae60d575996ffca82c58d6f0057ce66bb"><div class="ttname"><a href="structecs__query__desc__t.html#ae60d575996ffca82c58d6f0057ce66bb">ecs_query_desc_t::expr</a></div><div class="ttdeci">const char * expr</div><div class="ttdef"><b>Definition</b> flecs.h:6308</div></div>
 </div><!-- fragment --><p>Convenience macro to create a forward-declared pipeline. Usage: </p><div class="fragment"><div class="line"><a class="code hl_define" href="group__flecs__c__creation.html#ga4f18634853a22a09add8136cc52f0aa2">ECS_ENTITY_DECLARE</a>(MyPipeline);</div>
 <div class="line"><a class="code hl_define" href="group__c__addons__pipeline.html#ga7fe5d117104919f33afe6d313ce20713">ECS_PIPELINE_DEFINE</a>(world, MyPipeline, Update || Physics || Render)</div>
-<div class="ttc" id="agroup__flecs__c__creation_html_ga4f18634853a22a09add8136cc52f0aa2"><div class="ttname"><a href="group__flecs__c__creation.html#ga4f18634853a22a09add8136cc52f0aa2">ECS_ENTITY_DECLARE</a></div><div class="ttdeci">#define ECS_ENTITY_DECLARE</div><div class="ttdef"><b>Definition</b> flecs.hpp:11591</div></div>
+<div class="ttc" id="agroup__flecs__c__creation_html_ga4f18634853a22a09add8136cc52f0aa2"><div class="ttname"><a href="group__flecs__c__creation.html#ga4f18634853a22a09add8136cc52f0aa2">ECS_ENTITY_DECLARE</a></div><div class="ttdeci">#define ECS_ENTITY_DECLARE</div><div class="ttdef"><b>Definition</b> flecs.h:11724</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -356,7 +358,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Create a custom pipeline.</p>
+<p>Create a custom pipeline. If the descriptor specifies an existing entity, the entity must not already be associated with a pipeline. To replace an existing pipeline on an entity, use <a class="el" href="group__c__addons__pipeline.html#ga8ae0fcd6e980d20c57687c331c428833">ecs_pipeline_update()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">world</td><td>The world. </td></tr>
@@ -365,6 +367,50 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The pipeline, 0 if failed. </dd></dl>
+
+</div>
+</div>
+<a id="ga8ae0fcd6e980d20c57687c331c428833" name="ga8ae0fcd6e980d20c57687c331c428833"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8ae0fcd6e980d20c57687c331c428833">&#9670;&#160;</a></span>ecs_pipeline_update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FLECS_API <a class="el" href="group__core__types.html#ga7f68bc56147690fc4095ffb29b3679cc">ecs_entity_t</a> ecs_pipeline_update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__core__types.html#ga9ba4521a67d59d716e2d8ba04d4ccb15">ecs_world_t</a> *&#160;</td>
+          <td class="paramname"><em>world</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__core__types.html#ga7f68bc56147690fc4095ffb29b3679cc">ecs_entity_t</a>&#160;</td>
+          <td class="paramname"><em>pipeline</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structecs__pipeline__desc__t.html">ecs_pipeline_desc_t</a> *&#160;</td>
+          <td class="paramname"><em>desc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Replace the pipeline query on an existing entity. Removes the pipeline currently attached to the entity and creates a new one from the descriptor.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">world</td><td>The world. </td></tr>
+    <tr><td class="paramname">pipeline</td><td>The pipeline entity to update. </td></tr>
+    <tr><td class="paramname">desc</td><td>The pipeline descriptor. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The pipeline entity, or 0 if the operation failed. </dd></dl>
 
 </div>
 </div>
@@ -663,7 +709,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Pipeline module import function. Usage: </p><div class="fragment"><div class="line"><a class="code hl_define" href="group__c__addons__module.html#gae3c27bd0ac0793f8a9a3cada8b39f86f">ECS_IMPORT</a>(world, FlecsPipeline)</div>
-<div class="ttc" id="agroup__c__addons__module_html_gae3c27bd0ac0793f8a9a3cada8b39f86f"><div class="ttname"><a href="group__c__addons__module.html#gae3c27bd0ac0793f8a9a3cada8b39f86f">ECS_IMPORT</a></div><div class="ttdeci">#define ECS_IMPORT(world, id)</div><div class="ttdef"><b>Definition</b> flecs.hpp:19806</div></div>
+<div class="ttc" id="agroup__c__addons__module_html_gae3c27bd0ac0793f8a9a3cada8b39f86f"><div class="ttname"><a href="group__c__addons__module.html#gae3c27bd0ac0793f8a9a3cada8b39f86f">ECS_IMPORT</a></div><div class="ttdeci">#define ECS_IMPORT(world, id)</div><div class="ttdef"><b>Definition</b> flecs.h:20022</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">world</td><td>The world. </td></tr>

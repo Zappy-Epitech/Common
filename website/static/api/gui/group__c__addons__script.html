@@ -1415,7 +1415,7 @@ FLECS_API&#160;</td><td class="memItemRight" valign="bottom"><b>ECS_DECLARE</b> 
 <div class="ttc" id="agroup__c__addons__script_html_ga121add19200411563a580605feb69d23"><div class="ttname"><a href="group__c__addons__script.html#ga121add19200411563a580605feb69d23">ecs_script_eval</a></div><div class="ttdeci">FLECS_API int ecs_script_eval(const ecs_script_t *script, const ecs_script_eval_desc_t *desc, ecs_script_eval_result_t *result)</div></div>
 <div class="ttc" id="agroup__c__addons__script_html_ga9936fc113cd1eabe1e9fbada5043ea52"><div class="ttname"><a href="group__c__addons__script.html#ga9936fc113cd1eabe1e9fbada5043ea52">ecs_script_free</a></div><div class="ttdeci">FLECS_API void ecs_script_free(ecs_script_t *script)</div></div>
 <div class="ttc" id="agroup__c__addons__script_html_gad504f25b650a67946d600d65993c80c7"><div class="ttname"><a href="group__c__addons__script.html#gad504f25b650a67946d600d65993c80c7">ecs_script_parse</a></div><div class="ttdeci">FLECS_API ecs_script_t * ecs_script_parse(ecs_world_t *world, const char *name, const char *code, const ecs_script_eval_desc_t *desc, ecs_script_eval_result_t *result)</div></div>
-<div class="ttc" id="astructecs__script__t_html"><div class="ttname"><a href="structecs__script__t.html">ecs_script_t</a></div><div class="ttdef"><b>Definition</b> flecs.hpp:16971</div></div>
+<div class="ttc" id="astructecs__script__t_html"><div class="ttname"><a href="structecs__script__t.html">ecs_script_t</a></div><div class="ttdef"><b>Definition</b> flecs.h:17155</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">world</td><td>The world. </td></tr>
@@ -1796,7 +1796,8 @@ FLECS_API&#160;</td><td class="memItemRight" valign="bottom"><b>ECS_DECLARE</b> 
       </table>
 </div><div class="memdoc">
 <p>Lookup a variable by stack pointer. This operation provides a faster way to lookup variables that are always declared in the same order in a <a class="el" href="structecs__script__vars__t.html">ecs_script_vars_t</a> scope.</p>
-<p>The stack pointer of a variable can be obtained from the <a class="el" href="structecs__script__var__t.html">ecs_script_var_t</a> type. The provided frame offset must be valid for the provided variable stack. If the frame offset is not valid, this operation will panic.</p>
+<p>The stack pointer of a variable can be obtained from the <a class="el" href="structecs__script__var__t.html">ecs_script_var_t</a> type. The provided frame offset must be valid for the provided variable <br  />
+ stack. If the frame offset is not valid, this operation will panic.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">vars</td><td>The variable scope. </td></tr>
@@ -2004,7 +2005,7 @@ FLECS_API&#160;</td><td class="memItemRight" valign="bottom"><b>ECS_DECLARE</b> 
       </table>
 </div><div class="memdoc">
 <p>Script module import function. Usage: </p><div class="fragment"><div class="line"><a class="code hl_define" href="group__c__addons__module.html#gae3c27bd0ac0793f8a9a3cada8b39f86f">ECS_IMPORT</a>(world, FlecsScript)</div>
-<div class="ttc" id="agroup__c__addons__module_html_gae3c27bd0ac0793f8a9a3cada8b39f86f"><div class="ttname"><a href="group__c__addons__module.html#gae3c27bd0ac0793f8a9a3cada8b39f86f">ECS_IMPORT</a></div><div class="ttdeci">#define ECS_IMPORT(world, id)</div><div class="ttdef"><b>Definition</b> flecs.hpp:19806</div></div>
+<div class="ttc" id="agroup__c__addons__module_html_gae3c27bd0ac0793f8a9a3cada8b39f86f"><div class="ttname"><a href="group__c__addons__module.html#gae3c27bd0ac0793f8a9a3cada8b39f86f">ECS_IMPORT</a></div><div class="ttdeci">#define ECS_IMPORT(world, id)</div><div class="ttdef"><b>Definition</b> flecs.h:20022</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">world</td><td>The world. </td></tr>

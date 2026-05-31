@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Zappy GUI: src/modules/Grid.hpp Source File</title>
+<title>Zappy GUI: src/gameplay/Grid.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -100,29 +100,46 @@ $(document).ready(function(){initNavTree('Grid_8hpp_source.html',''); initResiza
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;sys/types.h&gt;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;src/core/Spatial.hpp&quot;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span>flecs {</div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">struct </span>world;</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>};</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>}</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="structGridCell.html">    8</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structGridCell.html">GridCell</a> {};</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="structGrid.html">   10</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structGrid.html">Grid</a> {</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <a class="code hl_struct" href="structGrid.html">Grid</a>(flecs::world &amp;world);</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> spawn(<span class="keyword">const</span> flecs::world &amp;world, uint width, uint height);</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>};</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="structGridCell.html">    9</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structGridCell.html">GridCell</a> {};</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="structGridContainer.html">   12</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structGridContainer.html">GridContainer</a> {};</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="};">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="structGridPosition.html">   15</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structGridPosition.html">GridPosition</a> {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">int</span> x;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">int</span> y;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>};</div>
 </div>
-<div class="ttc" id="astructGridCell_html"><div class="ttname"><a href="structGridCell.html">GridCell</a></div><div class="ttdef"><b>Definition</b> Grid.hpp:8</div></div>
-<div class="ttc" id="astructGrid_html"><div class="ttname"><a href="structGrid.html">Grid</a></div><div class="ttdef"><b>Definition</b> Grid.hpp:10</div></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="foldopen" id="foldopen00021" data-start="{" data-end="};">
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="structGrid.html">   21</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structGrid.html">Grid</a> {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_struct" href="structGrid.html">Grid</a>(flecs::world &amp;world);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">static</span> <a class="code hl_struct" href="structPosition3.html">Position3</a> <a class="code hl_function" href="structGrid.html#a36dde5434360e6dabf85f113d8c4ca18">position</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">static</span> <a class="code hl_struct" href="structPosition3.html">Position3</a> <a class="code hl_function" href="structGrid.html#a04012e74decf95288b290a47169bddf9">topPosition</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="structGrid.html#aabc4029bf4a8e0dfc75ceb203500af78">spawn</a>(<span class="keyword">const</span> flecs::world &amp;world, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>};</div>
+</div>
+<div class="ttc" id="astructGridCell_html"><div class="ttname"><a href="structGridCell.html">GridCell</a></div><div class="ttdoc">Marks a grid tile entity.</div><div class="ttdef"><b>Definition</b> Grid.hpp:9</div></div>
+<div class="ttc" id="astructGridContainer_html"><div class="ttname"><a href="structGridContainer.html">GridContainer</a></div><div class="ttdoc">Marks the grid root entity.</div><div class="ttdef"><b>Definition</b> Grid.hpp:12</div></div>
+<div class="ttc" id="astructGridPosition_html"><div class="ttname"><a href="structGridPosition.html">GridPosition</a></div><div class="ttdoc">Stores grid coordinates.</div><div class="ttdef"><b>Definition</b> Grid.hpp:15</div></div>
+<div class="ttc" id="astructGrid_html"><div class="ttname"><a href="structGrid.html">Grid</a></div><div class="ttdoc">Registers grid systems and helpers.</div><div class="ttdef"><b>Definition</b> Grid.hpp:21</div></div>
+<div class="ttc" id="astructGrid_html_a04012e74decf95288b290a47169bddf9"><div class="ttname"><a href="structGrid.html#a04012e74decf95288b290a47169bddf9">Grid::topPosition</a></div><div class="ttdeci">static Position3 topPosition(int x, int y)</div><div class="ttdoc">Returns the top position of a grid tile.</div><div class="ttdef"><b>Definition</b> Grid.cpp:53</div></div>
+<div class="ttc" id="astructGrid_html_a36dde5434360e6dabf85f113d8c4ca18"><div class="ttname"><a href="structGrid.html#a36dde5434360e6dabf85f113d8c4ca18">Grid::position</a></div><div class="ttdeci">static Position3 position(int x, int y)</div><div class="ttdoc">Returns a world position for grid coordinates.</div><div class="ttdef"><b>Definition</b> Grid.cpp:44</div></div>
+<div class="ttc" id="astructGrid_html_aabc4029bf4a8e0dfc75ceb203500af78"><div class="ttname"><a href="structGrid.html#aabc4029bf4a8e0dfc75ceb203500af78">Grid::spawn</a></div><div class="ttdeci">static void spawn(const flecs::world &amp;world, int width, int height)</div><div class="ttdoc">Spawns a grid with the given size.</div><div class="ttdef"><b>Definition</b> Grid.cpp:58</div></div>
+<div class="ttc" id="astructPosition3_html"><div class="ttname"><a href="structPosition3.html">Position3</a></div><div class="ttdoc">Stores a 3D position.</div><div class="ttdef"><b>Definition</b> Spatial.hpp:48</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_ddb4d7e95cc2d6c8e1ade10a20d7247d.html">modules</a></li><li class="navelem"><b>Grid.hpp</b></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_6425294c249cc3d9e7adb2f34254d0c5.html">gameplay</a></li><li class="navelem"><b>Grid.hpp</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

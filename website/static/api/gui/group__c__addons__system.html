@@ -145,6 +145,8 @@ Typedefs</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:gaaaad75436cc867ff5fb6856f2895799e" id="r_gaaaad75436cc867ff5fb6856f2895799e"><td class="memItemLeft" align="right" valign="top">FLECS_API <a class="el" href="group__core__types.html#ga7f68bc56147690fc4095ffb29b3679cc">ecs_entity_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__addons__system.html#gaaaad75436cc867ff5fb6856f2895799e">ecs_system_init</a> (<a class="el" href="group__core__types.html#ga9ba4521a67d59d716e2d8ba04d4ccb15">ecs_world_t</a> *world, const <a class="el" href="structecs__system__desc__t.html">ecs_system_desc_t</a> *desc)</td></tr>
 <tr class="separator:gaaaad75436cc867ff5fb6856f2895799e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad06010d81a179bf5b60fcb88acaeac53" id="r_gad06010d81a179bf5b60fcb88acaeac53"><td class="memItemLeft" align="right" valign="top">FLECS_API <a class="el" href="group__core__types.html#ga7f68bc56147690fc4095ffb29b3679cc">ecs_entity_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__addons__system.html#gad06010d81a179bf5b60fcb88acaeac53">ecs_system_update</a> (<a class="el" href="group__core__types.html#ga9ba4521a67d59d716e2d8ba04d4ccb15">ecs_world_t</a> *world, <a class="el" href="group__core__types.html#ga7f68bc56147690fc4095ffb29b3679cc">ecs_entity_t</a> system, const <a class="el" href="structecs__system__desc__t.html">ecs_system_desc_t</a> *desc)</td></tr>
+<tr class="separator:gad06010d81a179bf5b60fcb88acaeac53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga62071e2782a578e69d31ef9024de9bf2" id="r_ga62071e2782a578e69d31ef9024de9bf2"><td class="memItemLeft" align="right" valign="top">FLECS_API const <a class="el" href="structecs__system__t.html">ecs_system_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__addons__system.html#ga62071e2782a578e69d31ef9024de9bf2">ecs_system_get</a> (const <a class="el" href="group__core__types.html#ga9ba4521a67d59d716e2d8ba04d4ccb15">ecs_world_t</a> *world, <a class="el" href="group__core__types.html#ga7f68bc56147690fc4095ffb29b3679cc">ecs_entity_t</a> system)</td></tr>
 <tr class="separator:ga62071e2782a578e69d31ef9024de9bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaba5a4f65a54784a782f24b3502146628" id="r_gaba5a4f65a54784a782f24b3502146628"><td class="memItemLeft" align="right" valign="top">FLECS_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__addons__system.html#gaba5a4f65a54784a782f24b3502146628">ecs_system_set_group</a> (<a class="el" href="group__core__types.html#ga9ba4521a67d59d716e2d8ba04d4ccb15">ecs_world_t</a> *world, <a class="el" href="group__core__types.html#ga7f68bc56147690fc4095ffb29b3679cc">ecs_entity_t</a> system, uint64_t group_id)</td></tr>
@@ -200,14 +202,14 @@ Functions</h2></td></tr>
 <div class="line">    <a class="code hl_typedef" href="group__core__types.html#ga7f68bc56147690fc4095ffb29b3679cc">ecs_entity_t</a> <span class="keywordtype">id</span> = <a class="code hl_define" href="group__core.html#gaab94f132ee301a2b1265425f793b077c">ecs_id</a>(<span class="keywordtype">id</span>);\</div>
 <div class="line">    (void)<a class="code hl_define" href="group__core.html#gaab94f132ee301a2b1265425f793b077c">ecs_id</a>(<span class="keywordtype">id</span>);\</div>
 <div class="line">    (void)id</div>
-<div class="ttc" id="agroup__c__addons__system_html_gaf25f560d6578fd8255b549f68de7e3c4"><div class="ttname"><a href="group__c__addons__system.html#gaf25f560d6578fd8255b549f68de7e3c4">ECS_SYSTEM_DEFINE</a></div><div class="ttdeci">#define ECS_SYSTEM_DEFINE(world, id_, phase_,...)</div><div class="ttdef"><b>Definition</b> flecs.hpp:14658</div></div>
-<div class="ttc" id="agroup__core__types_html_ga7f68bc56147690fc4095ffb29b3679cc"><div class="ttname"><a href="group__core__types.html#ga7f68bc56147690fc4095ffb29b3679cc">ecs_entity_t</a></div><div class="ttdeci">ecs_id_t ecs_entity_t</div><div class="ttdef"><b>Definition</b> flecs.hpp:1195</div></div>
-<div class="ttc" id="agroup__core_html_gaab94f132ee301a2b1265425f793b077c"><div class="ttname"><a href="group__core.html#gaab94f132ee301a2b1265425f793b077c">ecs_id</a></div><div class="ttdeci">#define ecs_id(T)</div><div class="ttdef"><b>Definition</b> flecs.hpp:1056</div></div>
+<div class="ttc" id="agroup__c__addons__system_html_gaf25f560d6578fd8255b549f68de7e3c4"><div class="ttname"><a href="group__c__addons__system.html#gaf25f560d6578fd8255b549f68de7e3c4">ECS_SYSTEM_DEFINE</a></div><div class="ttdeci">#define ECS_SYSTEM_DEFINE(world, id_, phase_,...)</div><div class="ttdef"><b>Definition</b> flecs.h:14842</div></div>
+<div class="ttc" id="agroup__core__types_html_ga7f68bc56147690fc4095ffb29b3679cc"><div class="ttname"><a href="group__core__types.html#ga7f68bc56147690fc4095ffb29b3679cc">ecs_entity_t</a></div><div class="ttdeci">ecs_id_t ecs_entity_t</div><div class="ttdef"><b>Definition</b> flecs.h:1213</div></div>
+<div class="ttc" id="agroup__core_html_gaab94f132ee301a2b1265425f793b077c"><div class="ttname"><a href="group__core.html#gaab94f132ee301a2b1265425f793b077c">ecs_id</a></div><div class="ttdeci">#define ecs_id(T)</div><div class="ttdef"><b>Definition</b> flecs.h:1074</div></div>
 </div><!-- fragment --><p>Declare and define a system.</p>
 <p>Example:</p>
 <div class="fragment"><div class="line"><a class="code hl_define" href="group__c__addons__system.html#gafe627ef7c46f7fac4148a632c3192c81">ECS_SYSTEM</a>(world, Move, <a class="code hl_variable" href="group__builtin__tags.html#ga47acecdcce3f70b498bad17a66e6bd74">EcsOnUpdate</a>, Position, Velocity);</div>
 <div class="ttc" id="agroup__builtin__tags_html_ga47acecdcce3f70b498bad17a66e6bd74"><div class="ttname"><a href="group__builtin__tags.html#ga47acecdcce3f70b498bad17a66e6bd74">EcsOnUpdate</a></div><div class="ttdeci">FLECS_API const ecs_entity_t EcsOnUpdate</div></div>
-<div class="ttc" id="agroup__c__addons__system_html_gafe627ef7c46f7fac4148a632c3192c81"><div class="ttname"><a href="group__c__addons__system.html#gafe627ef7c46f7fac4148a632c3192c81">ECS_SYSTEM</a></div><div class="ttdeci">#define ECS_SYSTEM(world, id, phase,...)</div><div class="ttdef"><b>Definition</b> flecs.hpp:14680</div></div>
+<div class="ttc" id="agroup__c__addons__system_html_gafe627ef7c46f7fac4148a632c3192c81"><div class="ttname"><a href="group__c__addons__system.html#gafe627ef7c46f7fac4148a632c3192c81">ECS_SYSTEM</a></div><div class="ttdeci">#define ECS_SYSTEM(world, id, phase,...)</div><div class="ttdef"><b>Definition</b> flecs.h:14864</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -249,10 +251,10 @@ Functions</h2></td></tr>
 <div class="line">  },</div>
 <div class="line">  .callback = Move</div>
 <div class="line">});</div>
-<div class="ttc" id="agroup__c__addons__system_html_ga29fa50f4d1dee2d2d115800928e1bb69"><div class="ttname"><a href="group__c__addons__system.html#ga29fa50f4d1dee2d2d115800928e1bb69">ecs_system</a></div><div class="ttdeci">#define ecs_system(world,...)</div><div class="ttdef"><b>Definition</b> flecs.hpp:14704</div></div>
-<div class="ttc" id="agroup__flecs__c__creation_html_ga14bc43363bb1bddd03f25449435a6956"><div class="ttname"><a href="group__flecs__c__creation.html#ga14bc43363bb1bddd03f25449435a6956">ecs_entity</a></div><div class="ttdeci">#define ecs_entity(world,...)</div><div class="ttdef"><b>Definition</b> flecs.hpp:11797</div></div>
-<div class="ttc" id="agroup__flecs__c__misc_html_gacccfdbf782750c4aaf646a826a4f26b9"><div class="ttname"><a href="group__flecs__c__misc.html#gacccfdbf782750c4aaf646a826a4f26b9">ecs_dependson</a></div><div class="ttdeci">#define ecs_dependson(e)</div><div class="ttdef"><b>Definition</b> flecs.hpp:12488</div></div>
-<div class="ttc" id="agroup__flecs__c__values_html_gab218ce23cfd3aa7fc4f29ffd8d802318"><div class="ttname"><a href="group__flecs__c__values.html#gab218ce23cfd3aa7fc4f29ffd8d802318">ecs_ids</a></div><div class="ttdeci">#define ecs_ids(...)</div><div class="ttdef"><b>Definition</b> flecs.hpp:12327</div></div>
+<div class="ttc" id="agroup__c__addons__system_html_ga29fa50f4d1dee2d2d115800928e1bb69"><div class="ttname"><a href="group__c__addons__system.html#ga29fa50f4d1dee2d2d115800928e1bb69">ecs_system</a></div><div class="ttdeci">#define ecs_system(world,...)</div><div class="ttdef"><b>Definition</b> flecs.h:14888</div></div>
+<div class="ttc" id="agroup__flecs__c__creation_html_ga14bc43363bb1bddd03f25449435a6956"><div class="ttname"><a href="group__flecs__c__creation.html#ga14bc43363bb1bddd03f25449435a6956">ecs_entity</a></div><div class="ttdeci">#define ecs_entity(world,...)</div><div class="ttdef"><b>Definition</b> flecs.h:11930</div></div>
+<div class="ttc" id="agroup__flecs__c__misc_html_gacccfdbf782750c4aaf646a826a4f26b9"><div class="ttname"><a href="group__flecs__c__misc.html#gacccfdbf782750c4aaf646a826a4f26b9">ecs_dependson</a></div><div class="ttdeci">#define ecs_dependson(e)</div><div class="ttdef"><b>Definition</b> flecs.h:12621</div></div>
+<div class="ttc" id="agroup__flecs__c__values_html_gab218ce23cfd3aa7fc4f29ffd8d802318"><div class="ttname"><a href="group__flecs__c__values.html#gab218ce23cfd3aa7fc4f29ffd8d802318">ecs_ids</a></div><div class="ttdeci">#define ecs_ids(...)</div><div class="ttdef"><b>Definition</b> flecs.h:12460</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -324,18 +326,18 @@ Functions</h2></td></tr>
 <div class="line">        ecs_id(id_) = <a class="code hl_function" href="group__c__addons__system.html#gaaaad75436cc867ff5fb6856f2895799e">ecs_system_init</a>(world, &amp;desc); \</div>
 <div class="line">    } \</div>
 <div class="line">    ecs_assert(<a class="code hl_define" href="group__core.html#gaab94f132ee301a2b1265425f793b077c">ecs_id</a>(id_) != 0, <a class="code hl_define" href="group__c__addons__log.html#ga8a08384c430416853fbf6fcab3bb0b48">ECS_INVALID_PARAMETER</a>, <span class="stringliteral">&quot;failed to create system %s&quot;</span>, #id_)</div>
-<div class="ttc" id="agroup__c__addons__log_html_ga8a08384c430416853fbf6fcab3bb0b48"><div class="ttname"><a href="group__c__addons__log.html#ga8a08384c430416853fbf6fcab3bb0b48">ECS_INVALID_PARAMETER</a></div><div class="ttdeci">#define ECS_INVALID_PARAMETER</div><div class="ttdef"><b>Definition</b> flecs.hpp:13246</div></div>
+<div class="ttc" id="agroup__c__addons__log_html_ga8a08384c430416853fbf6fcab3bb0b48"><div class="ttname"><a href="group__c__addons__log.html#ga8a08384c430416853fbf6fcab3bb0b48">ECS_INVALID_PARAMETER</a></div><div class="ttdeci">#define ECS_INVALID_PARAMETER</div><div class="ttdef"><b>Definition</b> flecs.h:13389</div></div>
 <div class="ttc" id="agroup__c__addons__system_html_gaaaad75436cc867ff5fb6856f2895799e"><div class="ttname"><a href="group__c__addons__system.html#gaaaad75436cc867ff5fb6856f2895799e">ecs_system_init</a></div><div class="ttdeci">FLECS_API ecs_entity_t ecs_system_init(ecs_world_t *world, const ecs_system_desc_t *desc)</div></div>
 <div class="ttc" id="agroup__creating__entities_html_gad37f1ba5bd9c77fa94a30a2d017b7749"><div class="ttname"><a href="group__creating__entities.html#gad37f1ba5bd9c77fa94a30a2d017b7749">ecs_entity_init</a></div><div class="ttdeci">FLECS_API ecs_entity_t ecs_entity_init(ecs_world_t *world, const ecs_entity_desc_t *desc)</div></div>
-<div class="ttc" id="astructecs__entity__desc__t_html"><div class="ttname"><a href="structecs__entity__desc__t.html">ecs_entity_desc_t</a></div><div class="ttdef"><b>Definition</b> flecs.hpp:6012</div></div>
-<div class="ttc" id="astructecs__entity__desc__t_html_a2c1fecf732994afd7a32f2724f0fd0ec"><div class="ttname"><a href="structecs__entity__desc__t.html#a2c1fecf732994afd7a32f2724f0fd0ec">ecs_entity_desc_t::name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition</b> flecs.hpp:6019</div></div>
-<div class="ttc" id="astructecs__entity__desc__t_html_ac6edf50437ed45057c2c97d47cfe47b1"><div class="ttname"><a href="structecs__entity__desc__t.html#ac6edf50437ed45057c2c97d47cfe47b1">ecs_entity_desc_t::id</a></div><div class="ttdeci">ecs_entity_t id</div><div class="ttdef"><b>Definition</b> flecs.hpp:6015</div></div>
-<div class="ttc" id="astructecs__query__desc__t_html_ae60d575996ffca82c58d6f0057ce66bb"><div class="ttname"><a href="structecs__query__desc__t.html#ae60d575996ffca82c58d6f0057ce66bb">ecs_query_desc_t::expr</a></div><div class="ttdeci">const char * expr</div><div class="ttdef"><b>Definition</b> flecs.hpp:6253</div></div>
-<div class="ttc" id="astructecs__system__desc__t_html"><div class="ttname"><a href="structecs__system__desc__t.html">ecs_system_desc_t</a></div><div class="ttdef"><b>Definition</b> flecs.hpp:14478</div></div>
-<div class="ttc" id="astructecs__system__desc__t_html_a426977ff82edcd5b9352bed3fba420ef"><div class="ttname"><a href="structecs__system__desc__t.html#a426977ff82edcd5b9352bed3fba420ef">ecs_system_desc_t::phase</a></div><div class="ttdeci">ecs_entity_t phase</div><div class="ttdef"><b>Definition</b> flecs.hpp:14489</div></div>
-<div class="ttc" id="astructecs__system__desc__t_html_aad39f831b1d018e1b41867f76393e0f0"><div class="ttname"><a href="structecs__system__desc__t.html#aad39f831b1d018e1b41867f76393e0f0">ecs_system_desc_t::callback</a></div><div class="ttdeci">ecs_iter_action_t callback</div><div class="ttdef"><b>Definition</b> flecs.hpp:14494</div></div>
-<div class="ttc" id="astructecs__system__desc__t_html_ace9424237eee432fbdb32677c3879ef8"><div class="ttname"><a href="structecs__system__desc__t.html#ace9424237eee432fbdb32677c3879ef8">ecs_system_desc_t::entity</a></div><div class="ttdeci">ecs_entity_t entity</div><div class="ttdef"><b>Definition</b> flecs.hpp:14482</div></div>
-<div class="ttc" id="astructecs__system__desc__t_html_ad3d1e2dd947e51cac54e0178671f6c1a"><div class="ttname"><a href="structecs__system__desc__t.html#ad3d1e2dd947e51cac54e0178671f6c1a">ecs_system_desc_t::query</a></div><div class="ttdeci">ecs_query_desc_t query</div><div class="ttdef"><b>Definition</b> flecs.hpp:14485</div></div>
+<div class="ttc" id="astructecs__entity__desc__t_html"><div class="ttname"><a href="structecs__entity__desc__t.html">ecs_entity_desc_t</a></div><div class="ttdef"><b>Definition</b> flecs.h:6045</div></div>
+<div class="ttc" id="astructecs__entity__desc__t_html_a2c1fecf732994afd7a32f2724f0fd0ec"><div class="ttname"><a href="structecs__entity__desc__t.html#a2c1fecf732994afd7a32f2724f0fd0ec">ecs_entity_desc_t::name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition</b> flecs.h:6052</div></div>
+<div class="ttc" id="astructecs__entity__desc__t_html_ac6edf50437ed45057c2c97d47cfe47b1"><div class="ttname"><a href="structecs__entity__desc__t.html#ac6edf50437ed45057c2c97d47cfe47b1">ecs_entity_desc_t::id</a></div><div class="ttdeci">ecs_entity_t id</div><div class="ttdef"><b>Definition</b> flecs.h:6048</div></div>
+<div class="ttc" id="astructecs__query__desc__t_html_ae60d575996ffca82c58d6f0057ce66bb"><div class="ttname"><a href="structecs__query__desc__t.html#ae60d575996ffca82c58d6f0057ce66bb">ecs_query_desc_t::expr</a></div><div class="ttdeci">const char * expr</div><div class="ttdef"><b>Definition</b> flecs.h:6308</div></div>
+<div class="ttc" id="astructecs__system__desc__t_html"><div class="ttname"><a href="structecs__system__desc__t.html">ecs_system_desc_t</a></div><div class="ttdef"><b>Definition</b> flecs.h:14639</div></div>
+<div class="ttc" id="astructecs__system__desc__t_html_a426977ff82edcd5b9352bed3fba420ef"><div class="ttname"><a href="structecs__system__desc__t.html#a426977ff82edcd5b9352bed3fba420ef">ecs_system_desc_t::phase</a></div><div class="ttdeci">ecs_entity_t phase</div><div class="ttdef"><b>Definition</b> flecs.h:14650</div></div>
+<div class="ttc" id="astructecs__system__desc__t_html_aad39f831b1d018e1b41867f76393e0f0"><div class="ttname"><a href="structecs__system__desc__t.html#aad39f831b1d018e1b41867f76393e0f0">ecs_system_desc_t::callback</a></div><div class="ttdeci">ecs_iter_action_t callback</div><div class="ttdef"><b>Definition</b> flecs.h:14655</div></div>
+<div class="ttc" id="astructecs__system__desc__t_html_ace9424237eee432fbdb32677c3879ef8"><div class="ttname"><a href="structecs__system__desc__t.html#ace9424237eee432fbdb32677c3879ef8">ecs_system_desc_t::entity</a></div><div class="ttdeci">ecs_entity_t entity</div><div class="ttdef"><b>Definition</b> flecs.h:14643</div></div>
+<div class="ttc" id="astructecs__system__desc__t_html_ad3d1e2dd947e51cac54e0178671f6c1a"><div class="ttname"><a href="structecs__system__desc__t.html#ad3d1e2dd947e51cac54e0178671f6c1a">ecs_system_desc_t::query</a></div><div class="ttdeci">ecs_query_desc_t query</div><div class="ttdef"><b>Definition</b> flecs.h:14646</div></div>
 </div><!-- fragment --><p>Define a forward-declared system.</p>
 <p>Example:</p>
 <div class="fragment"><div class="line"><a class="code hl_define" href="group__c__addons__system.html#gaf25f560d6578fd8255b549f68de7e3c4">ECS_SYSTEM_DEFINE</a>(world, Move, <a class="code hl_variable" href="group__builtin__tags.html#ga47acecdcce3f70b498bad17a66e6bd74">EcsOnUpdate</a>, Position, Velocity);</div>
@@ -354,7 +356,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Use with <a class="el" href="group__c__addons__system.html#gaaaad75436cc867ff5fb6856f2895799e">ecs_system_init()</a> to create or update a system. </p>
+<p>Use with <a class="el" href="group__c__addons__system.html#gaaaad75436cc867ff5fb6856f2895799e">ecs_system_init()</a> and <a class="el" href="group__c__addons__system.html#gad06010d81a179bf5b60fcb88acaeac53">ecs_system_update()</a>. </p>
 
 </div>
 </div>
@@ -570,7 +572,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Create a system.</p>
+<p>Create a system. If the descriptor specifies an existing entity, the entity must not already be associated with a system. To modify an existing system, use <a class="el" href="group__c__addons__system.html#gad06010d81a179bf5b60fcb88acaeac53">ecs_system_update()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">world</td><td>The world. </td></tr>
@@ -625,6 +627,51 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="gad06010d81a179bf5b60fcb88acaeac53" name="gad06010d81a179bf5b60fcb88acaeac53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad06010d81a179bf5b60fcb88acaeac53">&#9670;&#160;</a></span>ecs_system_update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FLECS_API <a class="el" href="group__core__types.html#ga7f68bc56147690fc4095ffb29b3679cc">ecs_entity_t</a> ecs_system_update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__core__types.html#ga9ba4521a67d59d716e2d8ba04d4ccb15">ecs_world_t</a> *&#160;</td>
+          <td class="paramname"><em>world</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__core__types.html#ga7f68bc56147690fc4095ffb29b3679cc">ecs_entity_t</a>&#160;</td>
+          <td class="paramname"><em>system</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structecs__system__desc__t.html">ecs_system_desc_t</a> *&#160;</td>
+          <td class="paramname"><em>desc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Update an existing system. Updates the configuration of a system that was previously created with <a class="el" href="group__c__addons__system.html#gaaaad75436cc867ff5fb6856f2895799e">ecs_system_init()</a>. Only fields in desc that are set to a non-default value will be applied; fields left at their default value preserve the existing configuration of the system.</p>
+<p>The query field of the descriptor is not used by this function; the system query cannot be modified after creation.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">world</td><td>The world. </td></tr>
+    <tr><td class="paramname">system</td><td>The system to update. </td></tr>
+    <tr><td class="paramname">desc</td><td>The system descriptor. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The system entity, or 0 if the operation failed. </dd></dl>
+
+</div>
+</div>
 <a id="ga6991808fccc93f5d969f7408919c0f34" name="ga6991808fccc93f5d969f7408919c0f34"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga6991808fccc93f5d969f7408919c0f34">&#9670;&#160;</a></span>FlecsSystemImport()</h2>
 
@@ -641,7 +688,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>System module import function. Usage: </p><div class="fragment"><div class="line"><a class="code hl_define" href="group__c__addons__module.html#gae3c27bd0ac0793f8a9a3cada8b39f86f">ECS_IMPORT</a>(world, FlecsSystem)</div>
-<div class="ttc" id="agroup__c__addons__module_html_gae3c27bd0ac0793f8a9a3cada8b39f86f"><div class="ttname"><a href="group__c__addons__module.html#gae3c27bd0ac0793f8a9a3cada8b39f86f">ECS_IMPORT</a></div><div class="ttdeci">#define ECS_IMPORT(world, id)</div><div class="ttdef"><b>Definition</b> flecs.hpp:19806</div></div>
+<div class="ttc" id="agroup__c__addons__module_html_gae3c27bd0ac0793f8a9a3cada8b39f86f"><div class="ttname"><a href="group__c__addons__module.html#gae3c27bd0ac0793f8a9a3cada8b39f86f">ECS_IMPORT</a></div><div class="ttdeci">#define ECS_IMPORT(world, id)</div><div class="ttdef"><b>Definition</b> flecs.h:20022</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">world</td><td>The world. </td></tr>

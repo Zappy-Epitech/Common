@@ -57,5 +57,6 @@ var group__c__addons__system =
     [ "ecs_system_get", "group__c__addons__system.html#ga62071e2782a578e69d31ef9024de9bf2", null ],
     [ "ecs_system_init", "group__c__addons__system.html#gaaaad75436cc867ff5fb6856f2895799e", null ],
     [ "ecs_system_set_group", "group__c__addons__system.html#gaba5a4f65a54784a782f24b3502146628", null ],
+    [ "ecs_system_update", "group__c__addons__system.html#gad06010d81a179bf5b60fcb88acaeac53", null ],
     [ "FlecsSystemImport", "group__c__addons__system.html#ga6991808fccc93f5d969f7408919c0f34", null ]
 ];

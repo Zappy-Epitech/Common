@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,55,108,80"/>
+<area shape="rect" id="Node000001" href="$structOnClick.html" title="Stores a button click callback." alt="" coords="177,5,249,31"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="110,48,176,27,178,32,112,53"/>
+<area shape="rect" id="Node000002" href="$structOnEnter.html" title="Stores a text submit callback." alt="" coords="176,55,251,80"/>
+<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="122,65,176,65,176,70,122,70"/>
+<area shape="rect" id="Node000003" href="$structOnTextUpdate.html" title="Stores a text change callback." alt="" coords="156,104,271,129"/>
+<area shape="poly" id="edge3_Node000000_Node000003" title=" " alt="" coords="111,82,173,101,171,106,110,87"/>
+</map>

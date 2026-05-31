@@ -156,6 +156,10 @@ Macros</h2></td></tr>
 <tr class="separator:gade2217538dc0937bab59c6b4596efc74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8ae5e5a9bc01b9f985700167f31f14ba" id="r_ga8ae5e5a9bc01b9f985700167f31f14ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__queries.html#ga8ae5e5a9bc01b9f985700167f31f14ba">EcsQueryDetectChanges</a>&#160;&#160;&#160;(1u &lt;&lt; 8u)</td></tr>
 <tr class="separator:ga8ae5e5a9bc01b9f985700167f31f14ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4671e4e4476390dde40cf1f41e4db529" id="r_ga4671e4e4476390dde40cf1f41e4db529"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__queries.html#ga4671e4e4476390dde40cf1f41e4db529">EcsQueryGroupByOrdered</a>&#160;&#160;&#160;(1u &lt;&lt; 9u)</td></tr>
+<tr class="separator:ga4671e4e4476390dde40cf1f41e4db529"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafa20cb01fa10dd2ee2d4557b4e32565a" id="r_gafa20cb01fa10dd2ee2d4557b4e32565a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__queries.html#gafa20cb01fa10dd2ee2d4557b4e32565a">EcsQueryGroupByDesc</a>&#160;&#160;&#160;(1u &lt;&lt; 10u)</td></tr>
+<tr class="separator:gafa20cb01fa10dd2ee2d4557b4e32565a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -180,6 +184,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga1d0a535bb93e0e3613e540bbad2b7cc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadd000d993ab328feae66737419bda830" id="r_gadd000d993ab328feae66737419bda830"><td class="memItemLeft" align="right" valign="top">FLECS_API <a class="el" href="structecs__query__t.html">ecs_query_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__queries.html#gadd000d993ab328feae66737419bda830">ecs_query_init</a> (<a class="el" href="group__core__types.html#ga9ba4521a67d59d716e2d8ba04d4ccb15">ecs_world_t</a> *world, const <a class="el" href="structecs__query__desc__t.html">ecs_query_desc_t</a> *desc)</td></tr>
 <tr class="separator:gadd000d993ab328feae66737419bda830"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa036f4d677c86413216485d5b385f11d" id="r_gaa036f4d677c86413216485d5b385f11d"><td class="memItemLeft" align="right" valign="top">FLECS_API <a class="el" href="structecs__query__t.html">ecs_query_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__queries.html#gaa036f4d677c86413216485d5b385f11d">ecs_query_update</a> (<a class="el" href="group__core__types.html#ga9ba4521a67d59d716e2d8ba04d4ccb15">ecs_world_t</a> *world, <a class="el" href="group__core__types.html#ga7f68bc56147690fc4095ffb29b3679cc">ecs_entity_t</a> entity, const <a class="el" href="structecs__query__desc__t.html">ecs_query_desc_t</a> *desc)</td></tr>
+<tr class="separator:gaa036f4d677c86413216485d5b385f11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga498d7b8f158c5162e4c0e42b954df979" id="r_ga498d7b8f158c5162e4c0e42b954df979"><td class="memItemLeft" align="right" valign="top">FLECS_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__queries.html#ga498d7b8f158c5162e4c0e42b954df979">ecs_query_fini</a> (<a class="el" href="structecs__query__t.html">ecs_query_t</a> *query)</td></tr>
 <tr class="separator:ga498d7b8f158c5162e4c0e42b954df979"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1c3bba6b46bfe9d2784263f4f7611d7a" id="r_ga1c3bba6b46bfe9d2784263f4f7611d7a"><td class="memItemLeft" align="right" valign="top">FLECS_API int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__queries.html#ga1c3bba6b46bfe9d2784263f4f7611d7a">ecs_query_find_var</a> (const <a class="el" href="structecs__query__t.html">ecs_query_t</a> *query, const char *name)</td></tr>
@@ -336,6 +342,38 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Enable change detection for a query. Can be combined with other query flags on the <a class="el" href="structecs__query__desc__t.html#ac77af6e7ae1e27740e0a76fa1d00882b">ecs_query_desc_t::flags</a> field.</p>
 <p>Adding this flag makes it possible to use <a class="el" href="group__queries.html#ga2b1bf1de93c7c3a2bb64a5708234afab">ecs_query_changed()</a> and <a class="el" href="group__iterator.html#ga7cd8c39647919eb7d4964fba61ebf0ec">ecs_iter_changed()</a> with the query. Change detection requires the query to be cached. If cache_kind is left to the default value, this flag will cause it to default to EcsQueryCacheAuto. </p>
+
+</div>
+</div>
+<a id="gafa20cb01fa10dd2ee2d4557b4e32565a" name="gafa20cb01fa10dd2ee2d4557b4e32565a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafa20cb01fa10dd2ee2d4557b4e32565a">&#9670;&#160;</a></span>EcsQueryGroupByDesc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EcsQueryGroupByDesc&#160;&#160;&#160;(1u &lt;&lt; 10u)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Enable descending ordering for query groups. When this flag is set in combination with EcsQueryGroupByOrdered, groups will be iterated in descending order, with higher group ids first and lower group ids afterwards.</p>
+<p>This flag is enabled automatically when a query contains cascade|desc terms. </p>
+
+</div>
+</div>
+<a id="ga4671e4e4476390dde40cf1f41e4db529" name="ga4671e4e4476390dde40cf1f41e4db529"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4671e4e4476390dde40cf1f41e4db529">&#9670;&#160;</a></span>EcsQueryGroupByOrdered</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EcsQueryGroupByOrdered&#160;&#160;&#160;(1u &lt;&lt; 9u)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Enable ordering for query groups. When this flag is set, groups will be iterated in ascending order, with lower group ids first and higher group ids afterwards.</p>
+<p>This flag is enabled automatically when a query contains cascade terms. </p>
 
 </div>
 </div>
@@ -906,16 +944,16 @@ Functions</h2></td></tr>
 <div class="line">    <span class="comment">// Iterate as usual</span></div>
 <div class="line">  }</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__core_html_ga296d4a8796ea8891ebf83ae23fe9bc1e"><div class="ttname"><a href="group__core.html#ga296d4a8796ea8891ebf83ae23fe9bc1e">ecs_map_key</a></div><div class="ttdeci">#define ecs_map_key(it)</div><div class="ttdef"><b>Definition</b> flecs.hpp:2946</div></div>
+<div class="ttc" id="agroup__core_html_ga296d4a8796ea8891ebf83ae23fe9bc1e"><div class="ttname"><a href="group__core.html#ga296d4a8796ea8891ebf83ae23fe9bc1e">ecs_map_key</a></div><div class="ttdeci">#define ecs_map_key(it)</div><div class="ttdef"><b>Definition</b> flecs.h:2964</div></div>
 <div class="ttc" id="agroup__core_html_ga7dd4fcbf104624370f1bcbfab58da214"><div class="ttname"><a href="group__core.html#ga7dd4fcbf104624370f1bcbfab58da214">ecs_map_iter</a></div><div class="ttdeci">FLECS_API ecs_map_iter_t ecs_map_iter(const ecs_map_t *map)</div></div>
 <div class="ttc" id="agroup__core_html_gaec5c940bdc45e1a95d03e0ecd4cd343b"><div class="ttname"><a href="group__core.html#gaec5c940bdc45e1a95d03e0ecd4cd343b">ecs_map_next</a></div><div class="ttdeci">FLECS_API bool ecs_map_next(ecs_map_iter_t *iter)</div></div>
 <div class="ttc" id="agroup__queries_html_ga144298140985f5ec43292d75308a09fc"><div class="ttname"><a href="group__queries.html#ga144298140985f5ec43292d75308a09fc">ecs_query_get_groups</a></div><div class="ttdeci">FLECS_API const ecs_map_t * ecs_query_get_groups(const ecs_query_t *query)</div></div>
 <div class="ttc" id="agroup__queries_html_ga1bf5ecfa2ac93c8fe9eeca045cbd233f"><div class="ttname"><a href="group__queries.html#ga1bf5ecfa2ac93c8fe9eeca045cbd233f">ecs_query_next</a></div><div class="ttdeci">FLECS_API bool ecs_query_next(ecs_iter_t *it)</div></div>
 <div class="ttc" id="agroup__queries_html_ga92809f4e288371bfed8e8a8ffc70ce66"><div class="ttname"><a href="group__queries.html#ga92809f4e288371bfed8e8a8ffc70ce66">ecs_iter_set_group</a></div><div class="ttdeci">FLECS_API void ecs_iter_set_group(ecs_iter_t *it, uint64_t group_id)</div></div>
 <div class="ttc" id="agroup__queries_html_ga9778cea069cae30f1c8c691d4e1be122"><div class="ttname"><a href="group__queries.html#ga9778cea069cae30f1c8c691d4e1be122">ecs_query_iter</a></div><div class="ttdeci">FLECS_API ecs_iter_t ecs_query_iter(const ecs_world_t *world, const ecs_query_t *query)</div></div>
-<div class="ttc" id="astructecs__iter__t_html"><div class="ttname"><a href="structecs__iter__t.html">ecs_iter_t</a></div><div class="ttdef"><b>Definition</b> flecs.hpp:6136</div></div>
-<div class="ttc" id="astructecs__map__iter__t_html"><div class="ttname"><a href="structecs__map__iter__t.html">ecs_map_iter_t</a></div><div class="ttdef"><b>Definition</b> flecs.hpp:2724</div></div>
-<div class="ttc" id="astructecs__map__t_html"><div class="ttname"><a href="structecs__map__t.html">ecs_map_t</a></div><div class="ttdef"><b>Definition</b> flecs.hpp:2711</div></div>
+<div class="ttc" id="astructecs__iter__t_html"><div class="ttname"><a href="structecs__iter__t.html">ecs_iter_t</a></div><div class="ttdef"><b>Definition</b> flecs.h:6169</div></div>
+<div class="ttc" id="astructecs__map__iter__t_html"><div class="ttname"><a href="structecs__map__iter__t.html">ecs_map_iter_t</a></div><div class="ttdef"><b>Definition</b> flecs.h:2742</div></div>
+<div class="ttc" id="astructecs__map__t_html"><div class="ttname"><a href="structecs__map__t.html">ecs_map_t</a></div><div class="ttdef"><b>Definition</b> flecs.h:2729</div></div>
 </div><!-- fragment --><p>This operation is not valid for queries that do not use group_by. The returned map pointer will remain valid for as long as the query exists.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1021,7 +1059,7 @@ Functions</h2></td></tr>
 <div class="line">  <a class="code hl_function" href="group__iterator.html#ga90f2ef797d52dd1229d253d58a727c18">ecs_iter_fini</a>(&amp;it);</div>
 <div class="line">}</div>
 <div class="ttc" id="agroup__queries_html_ga49c401e8a7d75ed08d7b24a99b6ceb67"><div class="ttname"><a href="group__queries.html#ga49c401e8a7d75ed08d7b24a99b6ceb67">ecs_query_has_range</a></div><div class="ttdeci">FLECS_API bool ecs_query_has_range(const ecs_query_t *query, ecs_table_range_t *range, ecs_iter_t *it)</div></div>
-<div class="ttc" id="astructecs__table__range__t_html"><div class="ttname"><a href="structecs__table__range__t.html">ecs_table_range_t</a></div><div class="ttdef"><b>Definition</b> flecs.hpp:4783</div></div>
+<div class="ttc" id="astructecs__table__range__t_html"><div class="ttname"><a href="structecs__table__range__t.html">ecs_table_range_t</a></div><div class="ttdef"><b>Definition</b> flecs.h:4815</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">query</td><td>The query. </td></tr>
@@ -1108,7 +1146,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Create a query.</p>
+<p>Create a query. If the descriptor specifies an existing entity, the entity must not already be associated with a query. To replace an existing query on an entity, use <a class="el" href="group__queries.html#gaa036f4d677c86413216485d5b385f11d">ecs_query_update()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">world</td><td>The world. </td></tr>
@@ -1184,8 +1222,8 @@ Functions</h2></td></tr>
 <div class="line">    p[i].y += v[i].y;</div>
 <div class="line">  }</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__flecs__c__iterators_html_ga15fdba6089a2597913dc420efb49ad60"><div class="ttname"><a href="group__flecs__c__iterators.html#ga15fdba6089a2597913dc420efb49ad60">ecs_field</a></div><div class="ttdeci">#define ecs_field(it, T, index)</div><div class="ttdef"><b>Definition</b> flecs.hpp:12289</div></div>
-<div class="ttc" id="astructecs__iter__t_html_aeb636256c83cb2acc36f4f7ca84eeef0"><div class="ttname"><a href="structecs__iter__t.html#aeb636256c83cb2acc36f4f7ca84eeef0">ecs_iter_t::count</a></div><div class="ttdeci">int32_t count</div><div class="ttdef"><b>Definition</b> flecs.hpp:6143</div></div>
+<div class="ttc" id="agroup__flecs__c__iterators_html_ga15fdba6089a2597913dc420efb49ad60"><div class="ttname"><a href="group__flecs__c__iterators.html#ga15fdba6089a2597913dc420efb49ad60">ecs_field</a></div><div class="ttdeci">#define ecs_field(it, T, index)</div><div class="ttdef"><b>Definition</b> flecs.h:12422</div></div>
+<div class="ttc" id="astructecs__iter__t_html_aeb636256c83cb2acc36f4f7ca84eeef0"><div class="ttname"><a href="structecs__iter__t.html#aeb636256c83cb2acc36f4f7ca84eeef0">ecs_iter_t::count</a></div><div class="ttdeci">int32_t count</div><div class="ttdef"><b>Definition</b> flecs.h:6176</div></div>
 </div><!-- fragment --><p>The world passed into the operation must be either the actual world or the current stage, when iterating from a system. The stage is accessible through the it.world member.</p>
 <p>Example: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> MySystem(<a class="code hl_struct" href="structecs__iter__t.html">ecs_iter_t</a> *it) {</div>
 <div class="line">  <a class="code hl_struct" href="structecs__query__t.html">ecs_query_t</a> *q = it-&gt;<a class="code hl_variable" href="structecs__iter__t.html#a46b93f08abafc689c88aa10a779067d4">ctx</a>; <span class="comment">// Query passed as system context</span></div>
@@ -1196,9 +1234,9 @@ Functions</h2></td></tr>
 <div class="line">    <span class="comment">// Iterate as usual</span></div>
 <div class="line">  }</div>
 <div class="line">}</div>
-<div class="ttc" id="astructecs__iter__t_html_a46b93f08abafc689c88aa10a779067d4"><div class="ttname"><a href="structecs__iter__t.html#a46b93f08abafc689c88aa10a779067d4">ecs_iter_t::ctx</a></div><div class="ttdeci">void * ctx</div><div class="ttdef"><b>Definition</b> flecs.hpp:6173</div></div>
-<div class="ttc" id="astructecs__iter__t_html_a7f1db7ca958d8bbf12d6ef76f7e91bf2"><div class="ttname"><a href="structecs__iter__t.html#a7f1db7ca958d8bbf12d6ef76f7e91bf2">ecs_iter_t::world</a></div><div class="ttdeci">ecs_world_t * world</div><div class="ttdef"><b>Definition</b> flecs.hpp:6138</div></div>
-<div class="ttc" id="astructecs__query__t_html"><div class="ttname"><a href="structecs__query__t.html">ecs_query_t</a></div><div class="ttdef"><b>Definition</b> flecs.hpp:4536</div></div>
+<div class="ttc" id="astructecs__iter__t_html_a46b93f08abafc689c88aa10a779067d4"><div class="ttname"><a href="structecs__iter__t.html#a46b93f08abafc689c88aa10a779067d4">ecs_iter_t::ctx</a></div><div class="ttdeci">void * ctx</div><div class="ttdef"><b>Definition</b> flecs.h:6207</div></div>
+<div class="ttc" id="astructecs__iter__t_html_a7f1db7ca958d8bbf12d6ef76f7e91bf2"><div class="ttname"><a href="structecs__iter__t.html#a7f1db7ca958d8bbf12d6ef76f7e91bf2">ecs_iter_t::world</a></div><div class="ttdeci">ecs_world_t * world</div><div class="ttdef"><b>Definition</b> flecs.h:6171</div></div>
+<div class="ttc" id="astructecs__query__t_html"><div class="ttname"><a href="structecs__query__t.html">ecs_query_t</a></div><div class="ttdef"><b>Definition</b> flecs.h:4568</div></div>
 </div><!-- fragment --><p>If query iteration is stopped without the last call to <a class="el" href="group__queries.html#ga1bf5ecfa2ac93c8fe9eeca045cbd233f">ecs_query_next()</a> returning false, iterator resources need to be cleaned up explicitly with <a class="el" href="group__iterator.html#ga90f2ef797d52dd1229d253d58a727c18">ecs_iter_fini()</a>.</p>
 <p>Example: </p><div class="fragment"><div class="line"><a class="code hl_struct" href="structecs__iter__t.html">ecs_iter_t</a> it = <a class="code hl_function" href="group__queries.html#ga9778cea069cae30f1c8c691d4e1be122">ecs_query_iter</a>(world, q);</div>
 <div class="line"> </div>
@@ -1393,6 +1431,50 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The query converted to a string. </dd></dl>
+
+</div>
+</div>
+<a id="gaa036f4d677c86413216485d5b385f11d" name="gaa036f4d677c86413216485d5b385f11d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa036f4d677c86413216485d5b385f11d">&#9670;&#160;</a></span>ecs_query_update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FLECS_API <a class="el" href="structecs__query__t.html">ecs_query_t</a> * ecs_query_update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__core__types.html#ga9ba4521a67d59d716e2d8ba04d4ccb15">ecs_world_t</a> *&#160;</td>
+          <td class="paramname"><em>world</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__core__types.html#ga7f68bc56147690fc4095ffb29b3679cc">ecs_entity_t</a>&#160;</td>
+          <td class="paramname"><em>entity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structecs__query__desc__t.html">ecs_query_desc_t</a> *&#160;</td>
+          <td class="paramname"><em>desc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Replace the query on an existing entity. Removes the query currently attached to the entity and creates a new one from the descriptor. Any handles to the previous query become invalid; use the returned handle for subsequent iteration.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">world</td><td>The world. </td></tr>
+    <tr><td class="paramname">entity</td><td>The entity that holds the query to replace. </td></tr>
+    <tr><td class="paramname">desc</td><td>The descriptor (see <a class="el" href="structecs__query__desc__t.html">ecs_query_desc_t</a>). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The new query, or NULL if the operation failed. </dd></dl>
 
 </div>
 </div>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Zappy GUI: src/modules/Raylib.hpp Source File</title>
+<title>Zappy GUI: src/core/Raylib.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -100,33 +100,40 @@ $(document).ready(function(){initNavTree('Raylib_8hpp_source.html',''); initResi
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;Spatial.hpp&quot;</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span>flecs {</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">struct </span>world;</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>}</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="structCube.html">    8</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structCube.html">Cube</a> {};</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="structRender3D.html">    9</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structRender3D.html">Render3D</a> {};</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="structRender2D.html">   10</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structRender2D.html">Render2D</a> {};</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="structPostRender.html">   11</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structPostRender.html">PostRender</a> {};</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="structRaylib.html">   13</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structRaylib.html">Raylib</a> {</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <a class="code hl_struct" href="structRaylib.html">Raylib</a>(flecs::world &amp;world);</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>};</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">namespace </span>flecs {</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">struct </span>world;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>}</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="structCube.html">    7</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structCube.html">Cube</a> {};</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="structRender3D.html">   10</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structRender3D.html">Render3D</a> {};</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="structDraw3D.html">   13</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structDraw3D.html">Draw3D</a> {};</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="structCloseRender3D.html">   16</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structCloseRender3D.html">CloseRender3D</a> {};</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="structRender2D.html">   19</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structRender2D.html">Render2D</a> {};</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="structPostRender.html">   22</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structPostRender.html">PostRender</a> {};</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="structRaylib.html">   25</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structRaylib.html">Raylib</a> {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_struct" href="structRaylib.html">Raylib</a>(flecs::world &amp;world);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>};</div>
 </div>
-<div class="ttc" id="astructCube_html"><div class="ttname"><a href="structCube.html">Cube</a></div><div class="ttdef"><b>Definition</b> Raylib.hpp:8</div></div>
-<div class="ttc" id="astructPostRender_html"><div class="ttname"><a href="structPostRender.html">PostRender</a></div><div class="ttdef"><b>Definition</b> Raylib.hpp:11</div></div>
-<div class="ttc" id="astructRaylib_html"><div class="ttname"><a href="structRaylib.html">Raylib</a></div><div class="ttdef"><b>Definition</b> Raylib.hpp:13</div></div>
-<div class="ttc" id="astructRender2D_html"><div class="ttname"><a href="structRender2D.html">Render2D</a></div><div class="ttdef"><b>Definition</b> Raylib.hpp:10</div></div>
-<div class="ttc" id="astructRender3D_html"><div class="ttname"><a href="structRender3D.html">Render3D</a></div><div class="ttdef"><b>Definition</b> Raylib.hpp:9</div></div>
+<div class="ttc" id="astructCloseRender3D_html"><div class="ttname"><a href="structCloseRender3D.html">CloseRender3D</a></div><div class="ttdoc">Phase for closing 3D rendering.</div><div class="ttdef"><b>Definition</b> Raylib.hpp:16</div></div>
+<div class="ttc" id="astructCube_html"><div class="ttname"><a href="structCube.html">Cube</a></div><div class="ttdoc">Marks an entity rendered as a cube.</div><div class="ttdef"><b>Definition</b> Raylib.hpp:7</div></div>
+<div class="ttc" id="astructDraw3D_html"><div class="ttname"><a href="structDraw3D.html">Draw3D</a></div><div class="ttdoc">Phase for drawing 3D content.</div><div class="ttdef"><b>Definition</b> Raylib.hpp:13</div></div>
+<div class="ttc" id="astructPostRender_html"><div class="ttname"><a href="structPostRender.html">PostRender</a></div><div class="ttdoc">Phase for finishing a frame.</div><div class="ttdef"><b>Definition</b> Raylib.hpp:22</div></div>
+<div class="ttc" id="astructRaylib_html"><div class="ttname"><a href="structRaylib.html">Raylib</a></div><div class="ttdoc">Registers Raylib rendering systems.</div><div class="ttdef"><b>Definition</b> Raylib.hpp:25</div></div>
+<div class="ttc" id="astructRender2D_html"><div class="ttname"><a href="structRender2D.html">Render2D</a></div><div class="ttdoc">Phase for drawing 2D content.</div><div class="ttdef"><b>Definition</b> Raylib.hpp:19</div></div>
+<div class="ttc" id="astructRender3D_html"><div class="ttname"><a href="structRender3D.html">Render3D</a></div><div class="ttdoc">Phase for starting 3D rendering.</div><div class="ttdef"><b>Definition</b> Raylib.hpp:10</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_ddb4d7e95cc2d6c8e1ade10a20d7247d.html">modules</a></li><li class="navelem"><b>Raylib.hpp</b></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li><li class="navelem"><b>Raylib.hpp</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

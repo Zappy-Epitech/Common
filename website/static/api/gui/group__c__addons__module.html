@@ -160,7 +160,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Wrapper around <a class="el" href="group__c__addons__module.html#gabcf8d5ab6e86d6b961742bdfacbccaf3">ecs_import()</a>. This macro provides a convenient way to load a module with the world. It can be used like this:</p>
 <div class="fragment"><div class="line"><a class="code hl_define" href="group__c__addons__module.html#gae3c27bd0ac0793f8a9a3cada8b39f86f">ECS_IMPORT</a>(world, FlecsSystemsPhysics);</div>
-<div class="ttc" id="agroup__c__addons__module_html_gae3c27bd0ac0793f8a9a3cada8b39f86f"><div class="ttname"><a href="group__c__addons__module.html#gae3c27bd0ac0793f8a9a3cada8b39f86f">ECS_IMPORT</a></div><div class="ttdeci">#define ECS_IMPORT(world, id)</div><div class="ttdef"><b>Definition</b> flecs.hpp:19806</div></div>
+<div class="ttc" id="agroup__c__addons__module_html_gae3c27bd0ac0793f8a9a3cada8b39f86f"><div class="ttname"><a href="group__c__addons__module.html#gae3c27bd0ac0793f8a9a3cada8b39f86f">ECS_IMPORT</a></div><div class="ttdeci">#define ECS_IMPORT(world, id)</div><div class="ttdef"><b>Definition</b> flecs.h:20022</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -191,9 +191,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <a class="code hl_typedef" href="group__core__types.html#ga7f68bc56147690fc4095ffb29b3679cc">ecs_entity_t</a> <a class="code hl_define" href="group__core.html#gaab94f132ee301a2b1265425f793b077c">ecs_id</a>(<span class="keywordtype">id</span>) = 0; <a class="code hl_define" href="group__c__addons__module.html#gac25dba1f11a2cb022a42d8060f73a42d">ECS_MODULE_DEFINE</a>(world, <span class="keywordtype">id</span>)\</div>
 <div class="line">    (void)<a class="code hl_define" href="group__core.html#gaab94f132ee301a2b1265425f793b077c">ecs_id</a>(<span class="keywordtype">id</span>)</div>
-<div class="ttc" id="agroup__c__addons__module_html_gac25dba1f11a2cb022a42d8060f73a42d"><div class="ttname"><a href="group__c__addons__module.html#gac25dba1f11a2cb022a42d8060f73a42d">ECS_MODULE_DEFINE</a></div><div class="ttdeci">#define ECS_MODULE_DEFINE(world, id)</div><div class="ttdef"><b>Definition</b> flecs.hpp:19785</div></div>
-<div class="ttc" id="agroup__core__types_html_ga7f68bc56147690fc4095ffb29b3679cc"><div class="ttname"><a href="group__core__types.html#ga7f68bc56147690fc4095ffb29b3679cc">ecs_entity_t</a></div><div class="ttdeci">ecs_id_t ecs_entity_t</div><div class="ttdef"><b>Definition</b> flecs.hpp:1195</div></div>
-<div class="ttc" id="agroup__core_html_gaab94f132ee301a2b1265425f793b077c"><div class="ttname"><a href="group__core.html#gaab94f132ee301a2b1265425f793b077c">ecs_id</a></div><div class="ttdeci">#define ecs_id(T)</div><div class="ttdef"><b>Definition</b> flecs.hpp:1056</div></div>
+<div class="ttc" id="agroup__c__addons__module_html_gac25dba1f11a2cb022a42d8060f73a42d"><div class="ttname"><a href="group__c__addons__module.html#gac25dba1f11a2cb022a42d8060f73a42d">ECS_MODULE_DEFINE</a></div><div class="ttdeci">#define ECS_MODULE_DEFINE(world, id)</div><div class="ttdef"><b>Definition</b> flecs.h:20001</div></div>
+<div class="ttc" id="agroup__core__types_html_ga7f68bc56147690fc4095ffb29b3679cc"><div class="ttname"><a href="group__core__types.html#ga7f68bc56147690fc4095ffb29b3679cc">ecs_entity_t</a></div><div class="ttdeci">ecs_id_t ecs_entity_t</div><div class="ttdef"><b>Definition</b> flecs.h:1213</div></div>
+<div class="ttc" id="agroup__core_html_gaab94f132ee301a2b1265425f793b077c"><div class="ttname"><a href="group__core.html#gaab94f132ee301a2b1265425f793b077c">ecs_id</a></div><div class="ttdeci">#define ecs_id(T)</div><div class="ttdef"><b>Definition</b> flecs.h:1074</div></div>
 </div><!-- fragment --><p>Create a module. </p>
 
 </div>
@@ -230,8 +230,8 @@ Functions</h2></td></tr>
 <div class="line">        ecs_set_scope(world, <a class="code hl_define" href="group__core.html#gaab94f132ee301a2b1265425f793b077c">ecs_id</a>(<span class="keywordtype">id</span>));\</div>
 <div class="line">    }</div>
 <div class="ttc" id="agroup__c__addons__module_html_ga9b08ab08fbc1ec9c3076cc00484f6ba9"><div class="ttname"><a href="group__c__addons__module.html#ga9b08ab08fbc1ec9c3076cc00484f6ba9">ecs_module_init</a></div><div class="ttdeci">FLECS_API ecs_entity_t ecs_module_init(ecs_world_t *world, const char *c_name, const ecs_component_desc_t *desc)</div></div>
-<div class="ttc" id="astructecs__component__desc__t_html"><div class="ttname"><a href="structecs__component__desc__t.html">ecs_component_desc_t</a></div><div class="ttdef"><b>Definition</b> flecs.hpp:6088</div></div>
-<div class="ttc" id="astructecs__component__desc__t_html_a70cadd7c43e57b445fe8e36612f11706"><div class="ttname"><a href="structecs__component__desc__t.html#a70cadd7c43e57b445fe8e36612f11706">ecs_component_desc_t::entity</a></div><div class="ttdeci">ecs_entity_t entity</div><div class="ttdef"><b>Definition</b> flecs.hpp:6092</div></div>
+<div class="ttc" id="astructecs__component__desc__t_html"><div class="ttname"><a href="structecs__component__desc__t.html">ecs_component_desc_t</a></div><div class="ttdef"><b>Definition</b> flecs.h:6121</div></div>
+<div class="ttc" id="astructecs__component__desc__t_html_a70cadd7c43e57b445fe8e36612f11706"><div class="ttname"><a href="structecs__component__desc__t.html#a70cadd7c43e57b445fe8e36612f11706">ecs_component_desc_t::entity</a></div><div class="ttdeci">ecs_entity_t entity</div><div class="ttdef"><b>Definition</b> flecs.h:6125</div></div>
 </div><!-- fragment --><p>Define module. </p>
 
 </div>

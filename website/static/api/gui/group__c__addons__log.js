@@ -4,6 +4,7 @@ var group__c__addons__log =
     [ "ECS_ACCESS_VIOLATION", "group__c__addons__log.html#ga25088cf79885336ce35953872b3cfb59", null ],
     [ "ECS_ALREADY_DEFINED", "group__c__addons__log.html#ga2405b17048e2ceea7befe7aaf2ab05db", null ],
     [ "ECS_ALREADY_IN_USE", "group__c__addons__log.html#ga86d3d6839408ae3f7c352acf2441168a", null ],
+    [ "ecs_always_assert", "group__c__addons__log.html#gad2c41e50fe5d0b9f34d0660c6cb47bcc", null ],
     [ "ecs_assert", "group__c__addons__log.html#ga11056903a2334e57e39de0cdb5b9032e", null ],
     [ "ECS_BLACK", "group__c__addons__log.html#gabfd617b7e6b406bdeaa23b9e42e095cd", null ],
     [ "ECS_BLUE", "group__c__addons__log.html#ga6870ab3202fa96e2ecbf8f3375c4c910", null ],

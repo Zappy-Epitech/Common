@@ -33,10 +33,8 @@ var group__misc__types =
       [ "id_create_total", "structecs__world__info__t.html#abff0b796f60b04b1c07125725f2da679", null ],
       [ "id_delete_total", "structecs__world__info__t.html#a7137546174c7ecb2ab211d2bbeedb07b", null ],
       [ "last_component_id", "structecs__world__info__t.html#a9602a1615e0a6f2c7c9ecc815026cdbe", null ],
-      [ "max_id", "structecs__world__info__t.html#aa6ad73c201fbb7e95b242a7e47ce5455", null ],
       [ "merge_count_total", "structecs__world__info__t.html#aa9a9268a94b6a8c5f337b309f60e44b4", null ],
       [ "merge_time_total", "structecs__world__info__t.html#adc14c601e6d479e9eb26a4d26b58b9d4", null ],
-      [ "min_id", "structecs__world__info__t.html#a0a65987b62c3178691a01b471b8f7645", null ],
       [ "modified_count", "structecs__world__info__t.html#aedfc548cb8fc79b8754e6814a3c22bae", null ],
       [ "name_prefix", "structecs__world__info__t.html#af13ccc527262482ab8b3c9edb64d8431", null ],
       [ "observers_ran_total", "structecs__world__info__t.html#a00d084fb66128a3a5ffb3f75992faff0", null ],
@@ -65,7 +63,14 @@ var group__misc__types =
       [ "match_count", "structecs__query__group__info__t.html#a81331329cc77bd18afa7e62f66c85dd8", null ],
       [ "table_count", "structecs__query__group__info__t.html#a0489e7117e39ce91555db90dbf2e97dc", null ]
     ] ],
+    [ "ecs_entity_range_t", "structecs__entity__range__t.html", [
+      [ "cur", "structecs__entity__range__t.html#ae0535151d5d4abd2ad74206210c1b6fb", null ],
+      [ "max", "structecs__entity__range__t.html#a0978426f1a9cf989286d2b82f4a04ea8", null ],
+      [ "min", "structecs__entity__range__t.html#afbe58ec982c492f40bd5220ed54051d7", null ],
+      [ "recycled", "structecs__entity__range__t.html#af6705a2e2a7463e82fc754fd531cd968", null ]
+    ] ],
     [ "ecs_build_info_t", "group__misc__types.html#gaf2c4812d83cfee1027709de8c761b844", null ],
+    [ "ecs_entity_range_t", "group__misc__types.html#ga97401e64f10d8a69b057c47c5f64a69f", null ],
     [ "ecs_query_group_info_t", "group__misc__types.html#ga6775756254018e33b5ae1f6c75717a85", null ],
     [ "ecs_world_info_t", "group__misc__types.html#ga06025899fe47f33d152d10f0c69c3a8e", null ]
 ];

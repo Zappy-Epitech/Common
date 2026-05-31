@@ -183,6 +183,8 @@ Macros</h2></td></tr>
 <tr class="separator:ga11056903a2334e57e39de0cdb5b9032e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga908d0463e1e571a49c0cc66ddd5c5e83" id="r_ga908d0463e1e571a49c0cc66ddd5c5e83"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__addons__log.html#ga908d0463e1e571a49c0cc66ddd5c5e83">ecs_dbg_assert</a>(condition,  error_code, ...)&#160;&#160;&#160;<a class="el" href="group__c__addons__log.html#ga11056903a2334e57e39de0cdb5b9032e">ecs_assert</a>(condition, error_code, __VA_ARGS__)</td></tr>
 <tr class="separator:ga908d0463e1e571a49c0cc66ddd5c5e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad2c41e50fe5d0b9f34d0660c6cb47bcc" id="r_gad2c41e50fe5d0b9f34d0660c6cb47bcc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__addons__log.html#gad2c41e50fe5d0b9f34d0660c6cb47bcc">ecs_always_assert</a>(condition,  error_code, ...)</td></tr>
+<tr class="separator:gad2c41e50fe5d0b9f34d0660c6cb47bcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0b16a8db3568adad2e6e9ed21675814b" id="r_ga0b16a8db3568adad2e6e9ed21675814b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__addons__log.html#ga0b16a8db3568adad2e6e9ed21675814b">ecs_san_assert</a>(condition,  error_code, ...)</td></tr>
 <tr class="separator:ga0b16a8db3568adad2e6e9ed21675814b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga11eb2506eeb4be2511b767cf9f6771c2" id="r_ga11eb2506eeb4be2511b767cf9f6771c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__c__addons__log.html#ga11eb2506eeb4be2511b767cf9f6771c2">ecs_dummy_check</a></td></tr>
@@ -415,6 +417,46 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="gad2c41e50fe5d0b9f34d0660c6cb47bcc" name="gad2c41e50fe5d0b9f34d0660c6cb47bcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad2c41e50fe5d0b9f34d0660c6cb47bcc">&#9670;&#160;</a></span>ecs_always_assert</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ecs_always_assert</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">condition, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">error_code, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">if</span> (!(condition)) {\</div>
+<div class="line">        ecs_assert_log_(error_code, #condition, __FILE__, __LINE__, __VA_ARGS__);\</div>
+<div class="line">        ecs_os_abort();\</div>
+<div class="line">    }\</div>
+<div class="line">    assert(condition) <span class="comment">/* satisfy compiler/static analyzers */</span></div>
+</div><!-- fragment --><p>Always assert. Assert that is always active, even in release builds. Always aborts on failure (does not support FLECS_SOFT_ASSERT). </p>
+
+</div>
+</div>
 <a id="ga11056903a2334e57e39de0cdb5b9032e" name="ga11056903a2334e57e39de0cdb5b9032e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga11056903a2334e57e39de0cdb5b9032e">&#9670;&#160;</a></span>ecs_assert</h2>
 
@@ -537,7 +579,7 @@ Functions</h2></td></tr>
 <div class="line">    }\</div>
 <div class="line">    assert(condition); <span class="comment">/* satisfy compiler/static analyzers */</span> \</div>
 <div class="line">    <a class="code hl_define" href="group__c__addons__log.html#ga11eb2506eeb4be2511b767cf9f6771c2">ecs_dummy_check</a></div>
-<div class="ttc" id="agroup__c__addons__log_html_ga11eb2506eeb4be2511b767cf9f6771c2"><div class="ttname"><a href="group__c__addons__log.html#ga11eb2506eeb4be2511b767cf9f6771c2">ecs_dummy_check</a></div><div class="ttdeci">#define ecs_dummy_check</div><div class="ttdef"><b>Definition</b> flecs.hpp:13084</div></div>
+<div class="ttc" id="agroup__c__addons__log_html_ga11eb2506eeb4be2511b767cf9f6771c2"><div class="ttname"><a href="group__c__addons__log.html#ga11eb2506eeb4be2511b767cf9f6771c2">ecs_dummy_check</a></div><div class="ttdeci">#define ecs_dummy_check</div><div class="ttdef"><b>Definition</b> flecs.h:13227</div></div>
 </div><!-- fragment --><p>Check. Go to error if condition is false. </p>
 
 </div>
@@ -1868,7 +1910,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <a class="code hl_define" href="group__c__addons__log.html#gadb59e689daa4a653f4723cf6f098932b">ecs_abort</a>(error_code, __VA_ARGS__);\</div>
 <div class="line">    <a class="code hl_define" href="group__c__addons__log.html#ga11eb2506eeb4be2511b767cf9f6771c2">ecs_dummy_check</a></div>
-<div class="ttc" id="agroup__c__addons__log_html_gadb59e689daa4a653f4723cf6f098932b"><div class="ttname"><a href="group__c__addons__log.html#gadb59e689daa4a653f4723cf6f098932b">ecs_abort</a></div><div class="ttdeci">#define ecs_abort(error_code,...)</div><div class="ttdef"><b>Definition</b> flecs.hpp:13049</div></div>
+<div class="ttc" id="agroup__c__addons__log_html_gadb59e689daa4a653f4723cf6f098932b"><div class="ttname"><a href="group__c__addons__log.html#gadb59e689daa4a653f4723cf6f098932b">ecs_abort</a></div><div class="ttdeci">#define ecs_abort(error_code,...)</div><div class="ttdef"><b>Definition</b> flecs.h:13182</div></div>
 </div><!-- fragment --><p>Panic. Go to error when FLECS_SOFT_ASSERT is defined, otherwise abort. </p>
 
 </div>

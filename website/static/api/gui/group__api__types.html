@@ -592,7 +592,7 @@ FLECS_API void&#160;</td><td class="memItemRight" valign="bottom"><b>flecs_resum
 <b>Value:</b><div class="fragment"><div class="line">    ((cond) \</div>
 <div class="line">    ? (<a class="code hl_define" href="group__api__types.html#ga64235d66f88dcfb92f6bd18f9d66cb48">ECS_BIT_SET</a>(flags, bit)) \</div>
 <div class="line">    : (ECS_BIT_CLEAR(flags, bit)))</div>
-<div class="ttc" id="agroup__api__types_html_ga64235d66f88dcfb92f6bd18f9d66cb48"><div class="ttname"><a href="group__api__types.html#ga64235d66f88dcfb92f6bd18f9d66cb48">ECS_BIT_SET</a></div><div class="ttdeci">#define ECS_BIT_SET(flags, bit)</div><div class="ttdef"><b>Definition</b> flecs.hpp:5327</div></div>
+<div class="ttc" id="agroup__api__types_html_ga64235d66f88dcfb92f6bd18f9d66cb48"><div class="ttname"><a href="group__api__types.html#ga64235d66f88dcfb92f6bd18f9d66cb48">ECS_BIT_SET</a></div><div class="ttdeci">#define ECS_BIT_SET(flags, bit)</div><div class="ttdef"><b>Definition</b> flecs.h:5360</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -751,7 +751,7 @@ FLECS_API void&#160;</td><td class="memItemRight" valign="bottom"><b>flecs_resum
 <div class="line">    ECS_TYPE_HOOK_COPY|ECS_TYPE_HOOK_MOVE|ECS_TYPE_HOOK_COPY_CTOR|\</div>
 <div class="line">    ECS_TYPE_HOOK_MOVE_CTOR|ECS_TYPE_HOOK_CTOR_MOVE_DTOR|\</div>
 <div class="line">    ECS_TYPE_HOOK_MOVE_DTOR|ECS_TYPE_HOOK_CMP|ECS_TYPE_HOOK_EQUALS)</div>
-<div class="ttc" id="agroup__components_html_ga594284b97d54dc50dc41c9ede66da269"><div class="ttname"><a href="group__components.html#ga594284b97d54dc50dc41c9ede66da269">ECS_TYPE_HOOK_CTOR</a></div><div class="ttdeci">#define ECS_TYPE_HOOK_CTOR</div><div class="ttdef"><b>Definition</b> flecs.hpp:4611</div></div>
+<div class="ttc" id="agroup__components_html_ga594284b97d54dc50dc41c9ede66da269"><div class="ttname"><a href="group__components.html#ga594284b97d54dc50dc41c9ede66da269">ECS_TYPE_HOOK_CTOR</a></div><div class="ttdeci">#define ECS_TYPE_HOOK_CTOR</div><div class="ttdef"><b>Definition</b> flecs.h:4643</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1416,9 +1416,9 @@ FLECS_API void&#160;</td><td class="memItemRight" valign="bottom"><b>flecs_resum
 <div class="line">Position *ptr = <a class="code hl_function" href="group__api__types.html#gaa26f92cc0e0ecde81180a7c6c14059a6">ecs_record_get_by_column</a>(r, column, <span class="keyword">sizeof</span>(Position));</div>
 <div class="ttc" id="agroup__api__types_html_ga171a7833fb4eccfb5654d26b9de00751"><div class="ttname"><a href="group__api__types.html#ga171a7833fb4eccfb5654d26b9de00751">ecs_record_find</a></div><div class="ttdeci">FLECS_API ecs_record_t * ecs_record_find(const ecs_world_t *world, ecs_entity_t entity)</div></div>
 <div class="ttc" id="agroup__api__types_html_gaa26f92cc0e0ecde81180a7c6c14059a6"><div class="ttname"><a href="group__api__types.html#gaa26f92cc0e0ecde81180a7c6c14059a6">ecs_record_get_by_column</a></div><div class="ttdeci">FLECS_API void * ecs_record_get_by_column(const ecs_record_t *record, int32_t column, size_t size)</div></div>
-<div class="ttc" id="agroup__core_html_gaab94f132ee301a2b1265425f793b077c"><div class="ttname"><a href="group__core.html#gaab94f132ee301a2b1265425f793b077c">ecs_id</a></div><div class="ttdeci">#define ecs_id(T)</div><div class="ttdef"><b>Definition</b> flecs.hpp:1056</div></div>
+<div class="ttc" id="agroup__core_html_gaab94f132ee301a2b1265425f793b077c"><div class="ttname"><a href="group__core.html#gaab94f132ee301a2b1265425f793b077c">ecs_id</a></div><div class="ttdeci">#define ecs_id(T)</div><div class="ttdef"><b>Definition</b> flecs.h:1074</div></div>
 <div class="ttc" id="agroup__tables_html_ga6b7255a399591cbfde5d75cd8d923579"><div class="ttname"><a href="group__tables.html#ga6b7255a399591cbfde5d75cd8d923579">ecs_table_get_column_index</a></div><div class="ttdeci">FLECS_API int32_t ecs_table_get_column_index(const ecs_world_t *world, const ecs_table_t *table, ecs_id_t component)</div></div>
-<div class="ttc" id="astructecs__record__t_html"><div class="ttname"><a href="structecs__record__t.html">ecs_record_t</a></div><div class="ttdef"><b>Definition</b> flecs.hpp:5607</div></div>
+<div class="ttc" id="astructecs__record__t_html"><div class="ttname"><a href="structecs__record__t.html">ecs_record_t</a></div><div class="ttdef"><b>Definition</b> flecs.h:5640</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">record</td><td>The record. </td></tr>
@@ -2183,11 +2183,11 @@ FLECS_API void&#160;</td><td class="memItemRight" valign="bottom"><b>flecs_resum
 <div class="line">}</div>
 <div class="ttc" id="agroup__api__types_html_ga08f3002fca2763801152e02494005608"><div class="ttname"><a href="group__api__types.html#ga08f3002fca2763801152e02494005608">flecs_component_next</a></div><div class="ttdeci">FLECS_API const ecs_table_record_t * flecs_component_next(ecs_table_cache_iter_t *iter)</div></div>
 <div class="ttc" id="agroup__api__types_html_gae70ae3afebbb8998b48e41dc311988c0"><div class="ttname"><a href="group__api__types.html#gae70ae3afebbb8998b48e41dc311988c0">flecs_component_iter</a></div><div class="ttdeci">FLECS_API bool flecs_component_iter(const ecs_component_record_t *cr, ecs_table_cache_iter_t *iter_out)</div></div>
-<div class="ttc" id="agroup__core__types_html_gad89be37a3609d524994b418b413fa9ae"><div class="ttname"><a href="group__core__types.html#gad89be37a3609d524994b418b413fa9ae">ecs_table_t</a></div><div class="ttdeci">struct ecs_table_t ecs_table_t</div><div class="ttdef"><b>Definition</b> flecs.hpp:1245</div></div>
-<div class="ttc" id="astructecs__table__cache__hdr__t_html_ad8ad6d62f6085de7b6df8e1c9880428c"><div class="ttname"><a href="structecs__table__cache__hdr__t.html#ad8ad6d62f6085de7b6df8e1c9880428c">ecs_table_cache_hdr_t::table</a></div><div class="ttdeci">ecs_table_t * table</div><div class="ttdef"><b>Definition</b> flecs.hpp:5616</div></div>
-<div class="ttc" id="astructecs__table__cache__iter__t_html"><div class="ttname"><a href="structecs__table__cache__iter__t.html">ecs_table_cache_iter_t</a></div><div class="ttdef"><b>Definition</b> flecs.hpp:4825</div></div>
-<div class="ttc" id="astructecs__table__record__t_html"><div class="ttname"><a href="structecs__table__record__t.html">ecs_table_record_t</a></div><div class="ttdef"><b>Definition</b> flecs.hpp:5623</div></div>
-<div class="ttc" id="astructecs__table__record__t_html_a598a444e7d7be6138019040a4c0cc389"><div class="ttname"><a href="structecs__table__record__t.html#a598a444e7d7be6138019040a4c0cc389">ecs_table_record_t::hdr</a></div><div class="ttdeci">ecs_table_cache_hdr_t hdr</div><div class="ttdef"><b>Definition</b> flecs.hpp:5624</div></div>
+<div class="ttc" id="agroup__core__types_html_gad89be37a3609d524994b418b413fa9ae"><div class="ttname"><a href="group__core__types.html#gad89be37a3609d524994b418b413fa9ae">ecs_table_t</a></div><div class="ttdeci">struct ecs_table_t ecs_table_t</div><div class="ttdef"><b>Definition</b> flecs.h:1263</div></div>
+<div class="ttc" id="astructecs__table__cache__hdr__t_html_ad8ad6d62f6085de7b6df8e1c9880428c"><div class="ttname"><a href="structecs__table__cache__hdr__t.html#ad8ad6d62f6085de7b6df8e1c9880428c">ecs_table_cache_hdr_t::table</a></div><div class="ttdeci">ecs_table_t * table</div><div class="ttdef"><b>Definition</b> flecs.h:5649</div></div>
+<div class="ttc" id="astructecs__table__cache__iter__t_html"><div class="ttname"><a href="structecs__table__cache__iter__t.html">ecs_table_cache_iter_t</a></div><div class="ttdef"><b>Definition</b> flecs.h:4858</div></div>
+<div class="ttc" id="astructecs__table__record__t_html"><div class="ttname"><a href="structecs__table__record__t.html">ecs_table_record_t</a></div><div class="ttdef"><b>Definition</b> flecs.h:5656</div></div>
+<div class="ttc" id="astructecs__table__record__t_html_a598a444e7d7be6138019040a4c0cc389"><div class="ttname"><a href="structecs__table__record__t.html#a598a444e7d7be6138019040a4c0cc389">ecs_table_record_t::hdr</a></div><div class="ttdeci">ecs_table_cache_hdr_t hdr</div><div class="ttdef"><b>Definition</b> flecs.h:5657</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cr</td><td>The component record. </td></tr>

@@ -98,22 +98,143 @@ $(document).ready(function(){initNavTree('structGrid.html',''); initResizable();
   <div class="headertitle"><div class="title">Grid Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Registers grid systems and helpers.  
+ <a href="structGrid.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Grid_8hpp_source.html">Grid.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3542e96bb4eaf5cc4230592b0ebdf514" id="r_a3542e96bb4eaf5cc4230592b0ebdf514"><td class="memItemLeft" align="right" valign="top"><a id="a3542e96bb4eaf5cc4230592b0ebdf514" name="a3542e96bb4eaf5cc4230592b0ebdf514"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Grid</b> (flecs::world &amp;world)</td></tr>
+<tr class="memitem:a3542e96bb4eaf5cc4230592b0ebdf514" id="r_a3542e96bb4eaf5cc4230592b0ebdf514"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGrid.html#a3542e96bb4eaf5cc4230592b0ebdf514">Grid</a> (flecs::world &amp;world)</td></tr>
+<tr class="memdesc:a3542e96bb4eaf5cc4230592b0ebdf514"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imports the grid module.  <br /></td></tr>
 <tr class="separator:a3542e96bb4eaf5cc4230592b0ebdf514"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a9727a30b1a23e89d2c54d41ae1a13446" id="r_a9727a30b1a23e89d2c54d41ae1a13446"><td class="memItemLeft" align="right" valign="top"><a id="a9727a30b1a23e89d2c54d41ae1a13446" name="a9727a30b1a23e89d2c54d41ae1a13446"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>spawn</b> (const flecs::world &amp;world, uint width, uint height)</td></tr>
-<tr class="separator:a9727a30b1a23e89d2c54d41ae1a13446"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36dde5434360e6dabf85f113d8c4ca18" id="r_a36dde5434360e6dabf85f113d8c4ca18"><td class="memItemLeft" align="right" valign="top"><a id="a36dde5434360e6dabf85f113d8c4ca18" name="a36dde5434360e6dabf85f113d8c4ca18"></a>
+static <a class="el" href="structPosition3.html">Position3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>position</b> (int x, int y)</td></tr>
+<tr class="memdesc:a36dde5434360e6dabf85f113d8c4ca18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a world position for grid coordinates. <br /></td></tr>
+<tr class="separator:a36dde5434360e6dabf85f113d8c4ca18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04012e74decf95288b290a47169bddf9" id="r_a04012e74decf95288b290a47169bddf9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structPosition3.html">Position3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGrid.html#a04012e74decf95288b290a47169bddf9">topPosition</a> (int x, int y)</td></tr>
+<tr class="memdesc:a04012e74decf95288b290a47169bddf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the top position of a grid tile.  <br /></td></tr>
+<tr class="separator:a04012e74decf95288b290a47169bddf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabc4029bf4a8e0dfc75ceb203500af78" id="r_aabc4029bf4a8e0dfc75ceb203500af78"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGrid.html#aabc4029bf4a8e0dfc75ceb203500af78">spawn</a> (const flecs::world &amp;world, int width, int height)</td></tr>
+<tr class="memdesc:aabc4029bf4a8e0dfc75ceb203500af78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spawns a grid with the given size.  <br /></td></tr>
+<tr class="separator:aabc4029bf4a8e0dfc75ceb203500af78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Registers grid systems and helpers. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a3542e96bb4eaf5cc4230592b0ebdf514" name="a3542e96bb4eaf5cc4230592b0ebdf514"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3542e96bb4eaf5cc4230592b0ebdf514">&#9670;&#160;</a></span>Grid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Grid::Grid </td>
+          <td>(</td>
+          <td class="paramtype">flecs::world &amp;&#160;</td>
+          <td class="paramname"><em>world</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Imports the grid module. </p>
+<p>Registers grid components and prefabs. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aabc4029bf4a8e0dfc75ceb203500af78" name="aabc4029bf4a8e0dfc75ceb203500af78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabc4029bf4a8e0dfc75ceb203500af78">&#9670;&#160;</a></span>spawn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Grid::spawn </td>
+          <td>(</td>
+          <td class="paramtype">const flecs::world &amp;&#160;</td>
+          <td class="paramname"><em>world</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Spawns a grid with the given size. </p>
+<p>Spawns all grid tiles. </p>
+
+</div>
+</div>
+<a id="a04012e74decf95288b290a47169bddf9" name="a04012e74decf95288b290a47169bddf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04012e74decf95288b290a47169bddf9">&#9670;&#160;</a></span>topPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structPosition3.html">Position3</a> Grid::topPosition </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the top position of a grid tile. </p>
+<p>Returns a position above a grid tile. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
-<li>src/modules/<a class="el" href="Grid_8hpp_source.html">Grid.hpp</a></li>
-<li>src/modules/<b>Grid.cpp</b></li>
+<li>src/gameplay/<a class="el" href="Grid_8hpp_source.html">Grid.hpp</a></li>
+<li>src/gameplay/<b>Grid.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

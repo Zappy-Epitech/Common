@@ -1,0 +1,7 @@
+<map id="SkinAnimation" name="SkinAnimation">
+<area shape="rect" id="Node000001" title="Stores a skin animation clip." alt="" coords="5,181,123,207"/>
+<area shape="rect" id="Node000002" href="$structLimbTrack.html" title="Stores keyframes for one limb." alt="" coords="20,93,108,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="67,133,67,181,61,181,61,133"/>
+<area shape="rect" id="Node000003" href="$structKeyframe.html" title="Stores one animation keyframe." alt="" coords="21,5,107,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="67,45,67,93,61,93,61,45"/>
+</map>

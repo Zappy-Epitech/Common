@@ -15,5 +15,6 @@ var searchData=
   ['version_12',['version',['../structecs__build__info__t.html#a7a4ad256819c542324f4a0b0248a2987',1,'ecs_build_info_t']]],
   ['version_5fmajor_13',['version_major',['../structecs__build__info__t.html#a4c312478e6bcbfbbbeff0ba86f645cc0',1,'ecs_build_info_t']]],
   ['version_5fminor_14',['version_minor',['../structecs__build__info__t.html#ad58e1e2bd9fc9c3a792c32876ddd7ac6',1,'ecs_build_info_t']]],
-  ['version_5fpatch_15',['version_patch',['../structecs__build__info__t.html#afa6859e83affe8784fe304ccf4b44463',1,'ecs_build_info_t']]]
+  ['version_5fpatch_15',['version_patch',['../structecs__build__info__t.html#afa6859e83affe8784fe304ccf4b44463',1,'ecs_build_info_t']]],
+  ['view_16',['View',['../classparsing_1_1Scanner.html#a37877e730c28764b8d2f250ef109672b',1,'parsing::Scanner']]]
 ];

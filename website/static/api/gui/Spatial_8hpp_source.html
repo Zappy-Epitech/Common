@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Zappy GUI: src/modules/Spatial.hpp Source File</title>
+<title>Zappy GUI: src/core/Spatial.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -100,75 +100,125 @@ $(document).ready(function(){initNavTree('Spatial_8hpp_source.html',''); initRes
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> WINDOW_WIDTH = 1920.0f;</div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> WINDOW_HEIGHT = 1200.0f;</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span>flecs {</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">struct </span>world;</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>}</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="structPosition2.html">   10</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structPosition2.html">Position2</a> {</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keywordtype">float</span> x, y;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;raylib.h&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> WINDOW_WIDTH = 1920.0f;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> WINDOW_HEIGHT = 1200.0f;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span>flecs {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">struct </span>world;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>}</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">static</span> <a class="code hl_struct" href="structPosition2.html">Position2</a> center();</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">static</span> <a class="code hl_struct" href="structPosition2.html">Position2</a> bottom_center();</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">static</span> <a class="code hl_struct" href="structPosition2.html">Position2</a> splat(<span class="keywordtype">float</span> value);</div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="structPosition2.html">   14</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structPosition2.html">Position2</a> {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordtype">float</span> x, y;</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_struct" href="structPosition2.html">Position2</a> with_x(<span class="keywordtype">float</span> x);</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <a class="code hl_struct" href="structPosition2.html">Position2</a> with_y(<span class="keywordtype">float</span> y);</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_struct" href="structPosition2.html">Position2</a> sub_x(<span class="keywordtype">float</span> x);</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_struct" href="structPosition2.html">Position2</a> sub_y(<span class="keywordtype">float</span> y);</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_struct" href="structPosition2.html">Position2</a> add_x(<span class="keywordtype">float</span> x);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_struct" href="structPosition2.html">Position2</a> add_y(<span class="keywordtype">float</span> y);</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>};</div>
-</div>
-<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="structPosition3.html">   24</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structPosition3.html">Position3</a> {</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">float</span> x, y, z;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">static</span> <a class="code hl_struct" href="structPosition3.html">Position3</a> zero();</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_struct" href="structPosition3.html">Position3</a> with_x(<span class="keywordtype">float</span> x);</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_struct" href="structPosition3.html">Position3</a> with_y(<span class="keywordtype">float</span> y);</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_struct" href="structPosition3.html">Position3</a> with_z(<span class="keywordtype">float</span> z);</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_struct" href="structPosition3.html">Position3</a> sub_x(<span class="keywordtype">float</span> x);</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_struct" href="structPosition3.html">Position3</a> sub_y(<span class="keywordtype">float</span> y);</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_struct" href="structPosition3.html">Position3</a> sub_z(<span class="keywordtype">float</span> z);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <a class="code hl_struct" href="structPosition3.html">Position3</a> add_x(<span class="keywordtype">float</span> x);</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_struct" href="structPosition3.html">Position3</a> add_y(<span class="keywordtype">float</span> y);</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_struct" href="structPosition3.html">Position3</a> add_z(<span class="keywordtype">float</span> z);</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>};</div>
-</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="foldopen" id="foldopen00039" data-start="{" data-end="};">
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="structSize2.html">   39</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structSize2.html">Size2</a> {</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">float</span> width, height;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>};</div>
-</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">static</span> <a class="code hl_struct" href="structPosition2.html">Position2</a> <a class="code hl_function" href="structPosition2.html#a4e05404746663967b38ab56bc092f1d4">center</a>();</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">static</span> <a class="code hl_struct" href="structPosition2.html">Position2</a> <a class="code hl_function" href="structPosition2.html#a4e05404746663967b38ab56bc092f1d4">center</a>(<span class="keywordtype">float</span> width, <span class="keywordtype">float</span> height);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">static</span> <a class="code hl_struct" href="structPosition2.html">Position2</a> <a class="code hl_function" href="structPosition2.html#ab6055d70226522afe1b23bb9ecf4e583">bottom_center</a>();</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">static</span> <a class="code hl_struct" href="structPosition2.html">Position2</a> <a class="code hl_function" href="structPosition2.html#abbf1a8747ba01facfb68b361d865a351">splat</a>(<span class="keywordtype">float</span> value);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_struct" href="structPosition2.html">Position2</a> <a class="code hl_function" href="structPosition2.html#a148f0a8922c95a20fb5d683cf1c90ee8">with_x</a>(<span class="keywordtype">float</span> x);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_struct" href="structPosition2.html">Position2</a> <a class="code hl_function" href="structPosition2.html#a10246f3bb787da96def250015d377f4b">with_y</a>(<span class="keywordtype">float</span> y);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_struct" href="structPosition2.html">Position2</a> <a class="code hl_function" href="structPosition2.html#ac19b1e1a7b0d4986f072ad68fb117d0d">sub_x</a>(<span class="keywordtype">float</span> x);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_struct" href="structPosition2.html">Position2</a> <a class="code hl_function" href="structPosition2.html#af96b24714e2bd8d43346934a26d837b9">sub_y</a>(<span class="keywordtype">float</span> y);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_struct" href="structPosition2.html">Position2</a> <a class="code hl_function" href="structPosition2.html#ac54dcf10420a1c93d9d682f30db9e6cf">add_x</a>(<span class="keywordtype">float</span> x);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <a class="code hl_struct" href="structPosition2.html">Position2</a> <a class="code hl_function" href="structPosition2.html#a52d1527c83f0232670e5eb9e90db2f79">add_y</a>(<span class="keywordtype">float</span> y);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <a class="code hl_struct" href="structPosition2.html">Position2</a> <a class="code hl_function" href="structPosition2.html#a719ccc4f9729aeef04002f755af5efd9">div_x</a>(<span class="keywordtype">float</span> x);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_struct" href="structPosition2.html">Position2</a> <a class="code hl_function" href="structPosition2.html#a4207e679f17ae7c54a9792d461653ea5">div_y</a>(<span class="keywordtype">float</span> y);</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="foldopen" id="foldopen00043" data-start="{" data-end="};">
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="structScale.html">   43</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structScale.html">Scale</a> {</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordtype">float</span> value;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    Rectangle <a class="code hl_function" href="structPosition2.html#a1a602654938afd137eaef9ffe4664870">rect</a>(<span class="keywordtype">float</span> width, <span class="keywordtype">float</span> height);</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>};</div>
 </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="foldopen" id="foldopen00047" data-start="{" data-end="};">
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="structSpatial.html">   47</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structSpatial.html">Spatial</a> {</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_struct" href="structSpatial.html">Spatial</a>(flecs::world &amp;world);</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>};</div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="};">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="structPosition3.html">   48</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structPosition3.html">Position3</a> {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">float</span> x, y, z;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">static</span> <a class="code hl_struct" href="structPosition3.html">Position3</a> <a class="code hl_function" href="structPosition3.html#a23025b4000298aac67504d5ee4f3a252">zero</a>();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keyword">static</span> <a class="code hl_struct" href="structPosition3.html">Position3</a> <a class="code hl_function" href="structPosition3.html#a06397ee2e7e6bc083b719c675eee09cf">from_xyz</a>(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y, <span class="keywordtype">float</span> z);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <a class="code hl_struct" href="structPosition3.html">Position3</a> <a class="code hl_function" href="structPosition3.html#a992a15fb142d92d13d6e0e8f82fae1b4">with_x</a>(<span class="keywordtype">float</span> x) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <a class="code hl_struct" href="structPosition3.html">Position3</a> <a class="code hl_function" href="structPosition3.html#a9957c5df795e4b565e71a1418700951c">with_y</a>(<span class="keywordtype">float</span> y) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <a class="code hl_struct" href="structPosition3.html">Position3</a> <a class="code hl_function" href="structPosition3.html#a03374e032baa976c9190f9357a6f05c9">with_z</a>(<span class="keywordtype">float</span> z) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <a class="code hl_struct" href="structPosition3.html">Position3</a> <a class="code hl_function" href="structPosition3.html#a968f4992a917f56001218b0c68119346">sub_x</a>(<span class="keywordtype">float</span> x) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <a class="code hl_struct" href="structPosition3.html">Position3</a> <a class="code hl_function" href="structPosition3.html#a25810a624dd9d3dacc09c4b6c4909341">sub_y</a>(<span class="keywordtype">float</span> y) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <a class="code hl_struct" href="structPosition3.html">Position3</a> <a class="code hl_function" href="structPosition3.html#af4acc384fade43f50b1e5697ac19fe56">sub_z</a>(<span class="keywordtype">float</span> z) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <a class="code hl_struct" href="structPosition3.html">Position3</a> <a class="code hl_function" href="structPosition3.html#a2833b289b84a16d5d0c709219231bfd9">add_x</a>(<span class="keywordtype">float</span> x) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <a class="code hl_struct" href="structPosition3.html">Position3</a> <a class="code hl_function" href="structPosition3.html#aa00e18a5aa088cba0bb40b057b85ebd0">add_y</a>(<span class="keywordtype">float</span> y) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <a class="code hl_struct" href="structPosition3.html">Position3</a> <a class="code hl_function" href="structPosition3.html#a656a0c63f95b7dfb53bcdd8df76f782e">add_z</a>(<span class="keywordtype">float</span> z) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>};</div>
 </div>
-<div class="ttc" id="astructPosition2_html"><div class="ttname"><a href="structPosition2.html">Position2</a></div><div class="ttdef"><b>Definition</b> Spatial.hpp:10</div></div>
-<div class="ttc" id="astructPosition3_html"><div class="ttname"><a href="structPosition3.html">Position3</a></div><div class="ttdef"><b>Definition</b> Spatial.hpp:24</div></div>
-<div class="ttc" id="astructScale_html"><div class="ttname"><a href="structScale.html">Scale</a></div><div class="ttdef"><b>Definition</b> Spatial.hpp:43</div></div>
-<div class="ttc" id="astructSize2_html"><div class="ttname"><a href="structSize2.html">Size2</a></div><div class="ttdef"><b>Definition</b> Spatial.hpp:39</div></div>
-<div class="ttc" id="astructSpatial_html"><div class="ttname"><a href="structSpatial.html">Spatial</a></div><div class="ttdef"><b>Definition</b> Spatial.hpp:47</div></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="foldopen" id="foldopen00076" data-start="{" data-end="};">
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="structRotation3.html">   76</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structRotation3.html">Rotation3</a> {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordtype">float</span> x, y, z;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keyword">static</span> <a class="code hl_struct" href="structRotation3.html">Rotation3</a> <a class="code hl_function" href="structRotation3.html#a1b84fc1cc05de334a071543308d478f4">zero</a>();</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keyword">static</span> <a class="code hl_struct" href="structRotation3.html">Rotation3</a> <a class="code hl_function" href="structRotation3.html#afc59275f00afab03dc63e8469e34d804">from_xyz</a>(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y, <span class="keywordtype">float</span> z);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>};</div>
+</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="keyword">enum struct</span> Orientation : <span class="keywordtype">int</span> {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    NORTH = 1,</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    EAST = 2,</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    SOUTH = 3,</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    WEST = 4,</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>};</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="foldopen" id="foldopen00094" data-start="{" data-end="};">
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="structSize2.html">   94</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structSize2.html">Size2</a> {</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keywordtype">float</span> width, height;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>};</div>
+</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="foldopen" id="foldopen00099" data-start="{" data-end="};">
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="structScale.html">   99</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structScale.html">Scale</a> {</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keywordtype">float</span> value;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>};</div>
+</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="foldopen" id="foldopen00104" data-start="{" data-end="};">
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="structSpatial.html">  104</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structSpatial.html">Spatial</a> {</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <a class="code hl_struct" href="structSpatial.html">Spatial</a>(flecs::world &amp;world);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>};</div>
+</div>
+<div class="ttc" id="astructPosition2_html"><div class="ttname"><a href="structPosition2.html">Position2</a></div><div class="ttdoc">Stores a 2D position.</div><div class="ttdef"><b>Definition</b> Spatial.hpp:14</div></div>
+<div class="ttc" id="astructPosition2_html_a10246f3bb787da96def250015d377f4b"><div class="ttname"><a href="structPosition2.html#a10246f3bb787da96def250015d377f4b">Position2::with_y</a></div><div class="ttdeci">Position2 with_y(float y)</div><div class="ttdoc">Returns a copy with a new y value.</div><div class="ttdef"><b>Definition</b> Spatial.cpp:58</div></div>
+<div class="ttc" id="astructPosition2_html_a148f0a8922c95a20fb5d683cf1c90ee8"><div class="ttname"><a href="structPosition2.html#a148f0a8922c95a20fb5d683cf1c90ee8">Position2::with_x</a></div><div class="ttdeci">Position2 with_x(float x)</div><div class="ttdoc">Returns a copy with a new x value.</div><div class="ttdef"><b>Definition</b> Spatial.cpp:53</div></div>
+<div class="ttc" id="astructPosition2_html_a1a602654938afd137eaef9ffe4664870"><div class="ttname"><a href="structPosition2.html#a1a602654938afd137eaef9ffe4664870">Position2::rect</a></div><div class="ttdeci">Rectangle rect(float width, float height)</div><div class="ttdoc">Builds a rectangle from this position.</div><div class="ttdef"><b>Definition</b> Spatial.cpp:93</div></div>
+<div class="ttc" id="astructPosition2_html_a4207e679f17ae7c54a9792d461653ea5"><div class="ttname"><a href="structPosition2.html#a4207e679f17ae7c54a9792d461653ea5">Position2::div_y</a></div><div class="ttdeci">Position2 div_y(float y)</div><div class="ttdoc">Returns a copy with divided y.</div><div class="ttdef"><b>Definition</b> Spatial.cpp:88</div></div>
+<div class="ttc" id="astructPosition2_html_a4e05404746663967b38ab56bc092f1d4"><div class="ttname"><a href="structPosition2.html#a4e05404746663967b38ab56bc092f1d4">Position2::center</a></div><div class="ttdeci">static Position2 center()</div><div class="ttdoc">Returns the screen center.</div><div class="ttdef"><b>Definition</b> Spatial.cpp:33</div></div>
+<div class="ttc" id="astructPosition2_html_a52d1527c83f0232670e5eb9e90db2f79"><div class="ttname"><a href="structPosition2.html#a52d1527c83f0232670e5eb9e90db2f79">Position2::add_y</a></div><div class="ttdeci">Position2 add_y(float y)</div><div class="ttdoc">Returns a copy shifted down.</div><div class="ttdef"><b>Definition</b> Spatial.cpp:78</div></div>
+<div class="ttc" id="astructPosition2_html_a719ccc4f9729aeef04002f755af5efd9"><div class="ttname"><a href="structPosition2.html#a719ccc4f9729aeef04002f755af5efd9">Position2::div_x</a></div><div class="ttdeci">Position2 div_x(float x)</div><div class="ttdoc">Returns a copy with divided x.</div><div class="ttdef"><b>Definition</b> Spatial.cpp:83</div></div>
+<div class="ttc" id="astructPosition2_html_ab6055d70226522afe1b23bb9ecf4e583"><div class="ttname"><a href="structPosition2.html#ab6055d70226522afe1b23bb9ecf4e583">Position2::bottom_center</a></div><div class="ttdeci">static Position2 bottom_center()</div><div class="ttdoc">Returns the bottom center point.</div><div class="ttdef"><b>Definition</b> Spatial.cpp:43</div></div>
+<div class="ttc" id="astructPosition2_html_abbf1a8747ba01facfb68b361d865a351"><div class="ttname"><a href="structPosition2.html#abbf1a8747ba01facfb68b361d865a351">Position2::splat</a></div><div class="ttdeci">static Position2 splat(float value)</div><div class="ttdoc">Returns a position with both values equal.</div><div class="ttdef"><b>Definition</b> Spatial.cpp:48</div></div>
+<div class="ttc" id="astructPosition2_html_ac19b1e1a7b0d4986f072ad68fb117d0d"><div class="ttname"><a href="structPosition2.html#ac19b1e1a7b0d4986f072ad68fb117d0d">Position2::sub_x</a></div><div class="ttdeci">Position2 sub_x(float x)</div><div class="ttdoc">Returns a copy shifted left.</div><div class="ttdef"><b>Definition</b> Spatial.cpp:63</div></div>
+<div class="ttc" id="astructPosition2_html_ac54dcf10420a1c93d9d682f30db9e6cf"><div class="ttname"><a href="structPosition2.html#ac54dcf10420a1c93d9d682f30db9e6cf">Position2::add_x</a></div><div class="ttdeci">Position2 add_x(float x)</div><div class="ttdoc">Returns a copy shifted right.</div><div class="ttdef"><b>Definition</b> Spatial.cpp:73</div></div>
+<div class="ttc" id="astructPosition2_html_af96b24714e2bd8d43346934a26d837b9"><div class="ttname"><a href="structPosition2.html#af96b24714e2bd8d43346934a26d837b9">Position2::sub_y</a></div><div class="ttdeci">Position2 sub_y(float y)</div><div class="ttdoc">Returns a copy shifted up.</div><div class="ttdef"><b>Definition</b> Spatial.cpp:68</div></div>
+<div class="ttc" id="astructPosition3_html"><div class="ttname"><a href="structPosition3.html">Position3</a></div><div class="ttdoc">Stores a 3D position.</div><div class="ttdef"><b>Definition</b> Spatial.hpp:48</div></div>
+<div class="ttc" id="astructPosition3_html_a03374e032baa976c9190f9357a6f05c9"><div class="ttname"><a href="structPosition3.html#a03374e032baa976c9190f9357a6f05c9">Position3::with_z</a></div><div class="ttdeci">Position3 with_z(float z) const</div><div class="ttdoc">Returns a copy with a new z value.</div><div class="ttdef"><b>Definition</b> Spatial.cpp:118</div></div>
+<div class="ttc" id="astructPosition3_html_a06397ee2e7e6bc083b719c675eee09cf"><div class="ttname"><a href="structPosition3.html#a06397ee2e7e6bc083b719c675eee09cf">Position3::from_xyz</a></div><div class="ttdeci">static Position3 from_xyz(float x, float y, float z)</div><div class="ttdoc">Creates a position from coordinates.</div><div class="ttdef"><b>Definition</b> Spatial.cpp:103</div></div>
+<div class="ttc" id="astructPosition3_html_a23025b4000298aac67504d5ee4f3a252"><div class="ttname"><a href="structPosition3.html#a23025b4000298aac67504d5ee4f3a252">Position3::zero</a></div><div class="ttdeci">static Position3 zero()</div><div class="ttdoc">Returns the origin.</div><div class="ttdef"><b>Definition</b> Spatial.cpp:98</div></div>
+<div class="ttc" id="astructPosition3_html_a25810a624dd9d3dacc09c4b6c4909341"><div class="ttname"><a href="structPosition3.html#a25810a624dd9d3dacc09c4b6c4909341">Position3::sub_y</a></div><div class="ttdeci">Position3 sub_y(float y) const</div><div class="ttdoc">Returns a copy shifted down.</div><div class="ttdef"><b>Definition</b> Spatial.cpp:128</div></div>
+<div class="ttc" id="astructPosition3_html_a2833b289b84a16d5d0c709219231bfd9"><div class="ttname"><a href="structPosition3.html#a2833b289b84a16d5d0c709219231bfd9">Position3::add_x</a></div><div class="ttdeci">Position3 add_x(float x) const</div><div class="ttdoc">Returns a copy advanced on x.</div><div class="ttdef"><b>Definition</b> Spatial.cpp:138</div></div>
+<div class="ttc" id="astructPosition3_html_a656a0c63f95b7dfb53bcdd8df76f782e"><div class="ttname"><a href="structPosition3.html#a656a0c63f95b7dfb53bcdd8df76f782e">Position3::add_z</a></div><div class="ttdeci">Position3 add_z(float z) const</div><div class="ttdoc">Returns a copy advanced on z.</div><div class="ttdef"><b>Definition</b> Spatial.cpp:148</div></div>
+<div class="ttc" id="astructPosition3_html_a968f4992a917f56001218b0c68119346"><div class="ttname"><a href="structPosition3.html#a968f4992a917f56001218b0c68119346">Position3::sub_x</a></div><div class="ttdeci">Position3 sub_x(float x) const</div><div class="ttdoc">Returns a copy shifted on x.</div><div class="ttdef"><b>Definition</b> Spatial.cpp:123</div></div>
+<div class="ttc" id="astructPosition3_html_a992a15fb142d92d13d6e0e8f82fae1b4"><div class="ttname"><a href="structPosition3.html#a992a15fb142d92d13d6e0e8f82fae1b4">Position3::with_x</a></div><div class="ttdeci">Position3 with_x(float x) const</div><div class="ttdoc">Returns a copy with a new x value.</div><div class="ttdef"><b>Definition</b> Spatial.cpp:108</div></div>
+<div class="ttc" id="astructPosition3_html_a9957c5df795e4b565e71a1418700951c"><div class="ttname"><a href="structPosition3.html#a9957c5df795e4b565e71a1418700951c">Position3::with_y</a></div><div class="ttdeci">Position3 with_y(float y) const</div><div class="ttdoc">Returns a copy with a new y value.</div><div class="ttdef"><b>Definition</b> Spatial.cpp:113</div></div>
+<div class="ttc" id="astructPosition3_html_aa00e18a5aa088cba0bb40b057b85ebd0"><div class="ttname"><a href="structPosition3.html#aa00e18a5aa088cba0bb40b057b85ebd0">Position3::add_y</a></div><div class="ttdeci">Position3 add_y(float y) const</div><div class="ttdoc">Returns a copy advanced on y.</div><div class="ttdef"><b>Definition</b> Spatial.cpp:143</div></div>
+<div class="ttc" id="astructPosition3_html_af4acc384fade43f50b1e5697ac19fe56"><div class="ttname"><a href="structPosition3.html#af4acc384fade43f50b1e5697ac19fe56">Position3::sub_z</a></div><div class="ttdeci">Position3 sub_z(float z) const</div><div class="ttdoc">Returns a copy shifted on z.</div><div class="ttdef"><b>Definition</b> Spatial.cpp:133</div></div>
+<div class="ttc" id="astructRotation3_html"><div class="ttname"><a href="structRotation3.html">Rotation3</a></div><div class="ttdoc">Stores Euler rotation values.</div><div class="ttdef"><b>Definition</b> Spatial.hpp:76</div></div>
+<div class="ttc" id="astructRotation3_html_a1b84fc1cc05de334a071543308d478f4"><div class="ttname"><a href="structRotation3.html#a1b84fc1cc05de334a071543308d478f4">Rotation3::zero</a></div><div class="ttdeci">static Rotation3 zero()</div><div class="ttdoc">Returns a zero rotation.</div><div class="ttdef"><b>Definition</b> Spatial.cpp:153</div></div>
+<div class="ttc" id="astructRotation3_html_afc59275f00afab03dc63e8469e34d804"><div class="ttname"><a href="structRotation3.html#afc59275f00afab03dc63e8469e34d804">Rotation3::from_xyz</a></div><div class="ttdeci">static Rotation3 from_xyz(float x, float y, float z)</div><div class="ttdoc">Creates a rotation from angles.</div><div class="ttdef"><b>Definition</b> Spatial.cpp:158</div></div>
+<div class="ttc" id="astructScale_html"><div class="ttname"><a href="structScale.html">Scale</a></div><div class="ttdoc">Stores a uniform scale.</div><div class="ttdef"><b>Definition</b> Spatial.hpp:99</div></div>
+<div class="ttc" id="astructSize2_html"><div class="ttname"><a href="structSize2.html">Size2</a></div><div class="ttdoc">Stores a 2D size.</div><div class="ttdef"><b>Definition</b> Spatial.hpp:94</div></div>
+<div class="ttc" id="astructSpatial_html"><div class="ttname"><a href="structSpatial.html">Spatial</a></div><div class="ttdoc">Registers spatial components.</div><div class="ttdef"><b>Definition</b> Spatial.hpp:104</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_ddb4d7e95cc2d6c8e1ade10a20d7247d.html">modules</a></li><li class="navelem"><b>Spatial.hpp</b></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li><li class="navelem"><b>Spatial.hpp</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
