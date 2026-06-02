@@ -58,7 +58,7 @@ var searchData=
   ['stage_55',['stage',['../structecs__cpp__get__mut__t.html#a2bcaf9bc2061a75d2687143217e86ee4',1,'ecs_cpp_get_mut_t']]],
   ['static_5fid_5ffields_56',['static_id_fields',['../structecs__query__t.html#ab51c1a2569edb2f1ad5cced6bdb2350e',1,'ecs_query_t']]],
   ['stats_57',['stats',['../structEcsSystemStats.html#a75014226587fa701e06d4920b1678a3d',1,'EcsSystemStats::stats'],['../structEcsPipelineStats.html#addaa7c272996cc41a57378f81e4a0750',1,'EcsPipelineStats::stats'],['../structEcsWorldStats.html#a0f921b5433f3b5c3c8156c78290f3065',1,'EcsWorldStats::stats']]],
-  ['status_58',['status',['../structecs__http__reply__t.html#ac56751c09e9facc350b46fc86ecb4979',1,'ecs_http_reply_t']]],
+  ['status_58',['status',['../structecs__http__reply__t.html#ac56751c09e9facc350b46fc86ecb4979',1,'ecs_http_reply_t::status'],['../structNetworkState.html#a3e1e6fec993ff52f14c0ca29a50ff205',1,'NetworkState::status']]],
   ['strdup_5f_59',['strdup_',['../structecs__os__api__t.html#abf92f780bbe4985c47c370f191be7b77',1,'ecs_os_api_t']]],
   ['strict_60',['strict',['../structecs__from__json__desc__t.html#a796976e0e1af4b7772a9b1c012183976',1,'ecs_from_json_desc_t']]],
   ['symbol_61',['symbol',['../structecs__entity__desc__t.html#a610ddb4767261fab5d3aa13f9403ebbb',1,'ecs_entity_desc_t::symbol'],['../structEcsUnit.html#a4b38a32a4c0901240096a64e242d8b0b',1,'EcsUnit::symbol'],['../structEcsUnitPrefix.html#ad7cc06adea0daadc453be9359a0f1b5e',1,'EcsUnitPrefix::symbol'],['../structecs__unit__desc__t.html#a955fbda0f383c8b1800a5fed88843f01',1,'ecs_unit_desc_t::symbol'],['../structecs__unit__prefix__desc__t.html#aa339ecc95ead110e55810d6a9787d6e3',1,'ecs_unit_prefix_desc_t::symbol']]],

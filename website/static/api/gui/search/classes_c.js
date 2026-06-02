@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['onclick_0',['OnClick',['../structOnClick.html',1,'']]],
-  ['onenter_1',['OnEnter',['../structOnEnter.html',1,'']]],
-  ['ontextupdate_2',['OnTextUpdate',['../structOnTextUpdate.html',1,'']]],
-  ['overloaded_3',['Overloaded',['../structOverloaded.html',1,'']]]
+  ['networkclienthandle_0',['NetworkClientHandle',['../structNetworkClientHandle.html',1,'']]],
+  ['networkconfig_1',['NetworkConfig',['../structNetworkConfig.html',1,'']]],
+  ['networkmodule_2',['NetworkModule',['../structNetworkModule.html',1,'']]],
+  ['networkstate_3',['NetworkState',['../structNetworkState.html',1,'']]]
 ];

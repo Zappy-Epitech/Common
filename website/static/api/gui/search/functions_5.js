@@ -106,5 +106,6 @@ var searchData=
   ['flecssystemimport_103',['FlecsSystemImport',['../group__c__addons__system.html#ga6991808fccc93f5d969f7408919c0f34',1,'flecs.h']]],
   ['flecstimerimport_104',['FlecsTimerImport',['../group__c__addons__timer.html#gaa3e8e5d3571ae39786291321c3601884',1,'flecs.h']]],
   ['flecsunitsimport_105',['FlecsUnitsImport',['../group__c__addons__units.html#ga1a262c645dc495fbd6754a69f6c8bd60',1,'flecs.h']]],
-  ['from_5fxyz_106',['from_xyz',['../structRotation3.html#afc59275f00afab03dc63e8469e34d804',1,'Rotation3::from_xyz()'],['../structPosition3.html#a06397ee2e7e6bc083b719c675eee09cf',1,'Position3::from_xyz()']]]
+  ['formatcommand_106',['formatCommand',['../classnet_1_1ZappySession.html#a03275fa0e440cd9a5287a4a9e23eac8b',1,'net::ZappySession']]],
+  ['from_5fxyz_107',['from_xyz',['../structRotation3.html#afc59275f00afab03dc63e8469e34d804',1,'Rotation3::from_xyz()'],['../structPosition3.html#a06397ee2e7e6bc083b719c675eee09cf',1,'Position3::from_xyz()']]]
 ];

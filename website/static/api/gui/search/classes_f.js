@@ -1,12 +1,8 @@
 var searchData=
 [
-  ['scale_0',['Scale',['../structScale.html',1,'']]],
-  ['scanner_1',['Scanner',['../classparsing_1_1Scanner.html',1,'parsing']]],
-  ['scenes_2',['Scenes',['../structScenes.html',1,'']]],
-  ['screenmessage_3',['ScreenMessage',['../structScreenMessage.html',1,'']]],
-  ['servermessage_4',['ServerMessage',['../structzappy_1_1ServerMessage.html',1,'zappy']]],
-  ['size2_5',['Size2',['../structSize2.html',1,'']]],
-  ['skinanimation_6',['SkinAnimation',['../structSkinAnimation.html',1,'']]],
-  ['skinpose_7',['SkinPose',['../structSkinPose.html',1,'']]],
-  ['spatial_8',['Spatial',['../structSpatial.html',1,'']]]
+  ['raylib_0',['Raylib',['../structRaylib.html',1,'']]],
+  ['render2d_1',['Render2D',['../structRender2D.html',1,'']]],
+  ['render3d_2',['Render3D',['../structRender3D.html',1,'']]],
+  ['resources_3',['Resources',['../structzappy_1_1Resources.html',1,'zappy']]],
+  ['rotation3_4',['Rotation3',['../structRotation3.html',1,'']]]
 ];

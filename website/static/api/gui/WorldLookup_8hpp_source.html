@@ -108,13 +108,13 @@ $(document).ready(function(){initNavTree('WorldLookup_8hpp_source.html',''); ini
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">struct </span>entity;</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>} <span class="comment">// namespace flecs</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>flecs::entity findPlayer(flecs::world &amp;world, <span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>flecs::entity findPlayer(<span class="keyword">const</span> flecs::world &amp;world, <span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>flecs::entity findTile(flecs::world &amp;world, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>flecs::entity findTile(<span class="keyword">const</span> flecs::world &amp;world, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>flecs::entity findTeam(flecs::world &amp;world, <span class="keyword">const</span> std::string &amp;name);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>flecs::entity findTeam(<span class="keyword">const</span> flecs::world &amp;world, <span class="keyword">const</span> std::string &amp;name);</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>flecs::entity findOrCreateTeam(flecs::world &amp;world, <span class="keyword">const</span> std::string &amp;name);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>flecs::entity findOrCreateTeam(<span class="keyword">const</span> flecs::world &amp;world, <span class="keyword">const</span> std::string &amp;name);</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

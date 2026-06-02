@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['zappyprotocol_0',['ZappyProtocol',['../classzappy_1_1ZappyProtocol.html',1,'zappy']]]
+  ['unknowncommand_0',['UnknownCommand',['../structzappy_1_1UnknownCommand.html',1,'zappy']]]
 ];

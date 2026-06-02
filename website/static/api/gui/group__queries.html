@@ -944,16 +944,16 @@ Functions</h2></td></tr>
 <div class="line">    <span class="comment">// Iterate as usual</span></div>
 <div class="line">  }</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__core_html_ga296d4a8796ea8891ebf83ae23fe9bc1e"><div class="ttname"><a href="group__core.html#ga296d4a8796ea8891ebf83ae23fe9bc1e">ecs_map_key</a></div><div class="ttdeci">#define ecs_map_key(it)</div><div class="ttdef"><b>Definition</b> flecs.h:2964</div></div>
+<div class="ttc" id="agroup__core_html_ga296d4a8796ea8891ebf83ae23fe9bc1e"><div class="ttname"><a href="group__core.html#ga296d4a8796ea8891ebf83ae23fe9bc1e">ecs_map_key</a></div><div class="ttdeci">#define ecs_map_key(it)</div><div class="ttdef"><b>Definition</b> flecs.h:2896</div></div>
 <div class="ttc" id="agroup__core_html_ga7dd4fcbf104624370f1bcbfab58da214"><div class="ttname"><a href="group__core.html#ga7dd4fcbf104624370f1bcbfab58da214">ecs_map_iter</a></div><div class="ttdeci">FLECS_API ecs_map_iter_t ecs_map_iter(const ecs_map_t *map)</div></div>
 <div class="ttc" id="agroup__core_html_gaec5c940bdc45e1a95d03e0ecd4cd343b"><div class="ttname"><a href="group__core.html#gaec5c940bdc45e1a95d03e0ecd4cd343b">ecs_map_next</a></div><div class="ttdeci">FLECS_API bool ecs_map_next(ecs_map_iter_t *iter)</div></div>
 <div class="ttc" id="agroup__queries_html_ga144298140985f5ec43292d75308a09fc"><div class="ttname"><a href="group__queries.html#ga144298140985f5ec43292d75308a09fc">ecs_query_get_groups</a></div><div class="ttdeci">FLECS_API const ecs_map_t * ecs_query_get_groups(const ecs_query_t *query)</div></div>
 <div class="ttc" id="agroup__queries_html_ga1bf5ecfa2ac93c8fe9eeca045cbd233f"><div class="ttname"><a href="group__queries.html#ga1bf5ecfa2ac93c8fe9eeca045cbd233f">ecs_query_next</a></div><div class="ttdeci">FLECS_API bool ecs_query_next(ecs_iter_t *it)</div></div>
 <div class="ttc" id="agroup__queries_html_ga92809f4e288371bfed8e8a8ffc70ce66"><div class="ttname"><a href="group__queries.html#ga92809f4e288371bfed8e8a8ffc70ce66">ecs_iter_set_group</a></div><div class="ttdeci">FLECS_API void ecs_iter_set_group(ecs_iter_t *it, uint64_t group_id)</div></div>
 <div class="ttc" id="agroup__queries_html_ga9778cea069cae30f1c8c691d4e1be122"><div class="ttname"><a href="group__queries.html#ga9778cea069cae30f1c8c691d4e1be122">ecs_query_iter</a></div><div class="ttdeci">FLECS_API ecs_iter_t ecs_query_iter(const ecs_world_t *world, const ecs_query_t *query)</div></div>
-<div class="ttc" id="astructecs__iter__t_html"><div class="ttname"><a href="structecs__iter__t.html">ecs_iter_t</a></div><div class="ttdef"><b>Definition</b> flecs.h:6169</div></div>
-<div class="ttc" id="astructecs__map__iter__t_html"><div class="ttname"><a href="structecs__map__iter__t.html">ecs_map_iter_t</a></div><div class="ttdef"><b>Definition</b> flecs.h:2742</div></div>
-<div class="ttc" id="astructecs__map__t_html"><div class="ttname"><a href="structecs__map__t.html">ecs_map_t</a></div><div class="ttdef"><b>Definition</b> flecs.h:2729</div></div>
+<div class="ttc" id="astructecs__iter__t_html"><div class="ttname"><a href="structecs__iter__t.html">ecs_iter_t</a></div><div class="ttdef"><b>Definition</b> flecs.h:6035</div></div>
+<div class="ttc" id="astructecs__map__iter__t_html"><div class="ttname"><a href="structecs__map__iter__t.html">ecs_map_iter_t</a></div><div class="ttdef"><b>Definition</b> flecs.h:2674</div></div>
+<div class="ttc" id="astructecs__map__t_html"><div class="ttname"><a href="structecs__map__t.html">ecs_map_t</a></div><div class="ttdef"><b>Definition</b> flecs.h:2661</div></div>
 </div><!-- fragment --><p>This operation is not valid for queries that do not use group_by. The returned map pointer will remain valid for as long as the query exists.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1059,7 +1059,7 @@ Functions</h2></td></tr>
 <div class="line">  <a class="code hl_function" href="group__iterator.html#ga90f2ef797d52dd1229d253d58a727c18">ecs_iter_fini</a>(&amp;it);</div>
 <div class="line">}</div>
 <div class="ttc" id="agroup__queries_html_ga49c401e8a7d75ed08d7b24a99b6ceb67"><div class="ttname"><a href="group__queries.html#ga49c401e8a7d75ed08d7b24a99b6ceb67">ecs_query_has_range</a></div><div class="ttdeci">FLECS_API bool ecs_query_has_range(const ecs_query_t *query, ecs_table_range_t *range, ecs_iter_t *it)</div></div>
-<div class="ttc" id="astructecs__table__range__t_html"><div class="ttname"><a href="structecs__table__range__t.html">ecs_table_range_t</a></div><div class="ttdef"><b>Definition</b> flecs.h:4815</div></div>
+<div class="ttc" id="astructecs__table__range__t_html"><div class="ttname"><a href="structecs__table__range__t.html">ecs_table_range_t</a></div><div class="ttdef"><b>Definition</b> flecs.h:4707</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">query</td><td>The query. </td></tr>
@@ -1222,8 +1222,8 @@ Functions</h2></td></tr>
 <div class="line">    p[i].y += v[i].y;</div>
 <div class="line">  }</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__flecs__c__iterators_html_ga15fdba6089a2597913dc420efb49ad60"><div class="ttname"><a href="group__flecs__c__iterators.html#ga15fdba6089a2597913dc420efb49ad60">ecs_field</a></div><div class="ttdeci">#define ecs_field(it, T, index)</div><div class="ttdef"><b>Definition</b> flecs.h:12422</div></div>
-<div class="ttc" id="astructecs__iter__t_html_aeb636256c83cb2acc36f4f7ca84eeef0"><div class="ttname"><a href="structecs__iter__t.html#aeb636256c83cb2acc36f4f7ca84eeef0">ecs_iter_t::count</a></div><div class="ttdeci">int32_t count</div><div class="ttdef"><b>Definition</b> flecs.h:6176</div></div>
+<div class="ttc" id="agroup__flecs__c__iterators_html_ga15fdba6089a2597913dc420efb49ad60"><div class="ttname"><a href="group__flecs__c__iterators.html#ga15fdba6089a2597913dc420efb49ad60">ecs_field</a></div><div class="ttdeci">#define ecs_field(it, T, index)</div><div class="ttdef"><b>Definition</b> flecs.h:12274</div></div>
+<div class="ttc" id="astructecs__iter__t_html_aeb636256c83cb2acc36f4f7ca84eeef0"><div class="ttname"><a href="structecs__iter__t.html#aeb636256c83cb2acc36f4f7ca84eeef0">ecs_iter_t::count</a></div><div class="ttdeci">int32_t count</div><div class="ttdef"><b>Definition</b> flecs.h:6042</div></div>
 </div><!-- fragment --><p>The world passed into the operation must be either the actual world or the current stage, when iterating from a system. The stage is accessible through the it.world member.</p>
 <p>Example: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> MySystem(<a class="code hl_struct" href="structecs__iter__t.html">ecs_iter_t</a> *it) {</div>
 <div class="line">  <a class="code hl_struct" href="structecs__query__t.html">ecs_query_t</a> *q = it-&gt;<a class="code hl_variable" href="structecs__iter__t.html#a46b93f08abafc689c88aa10a779067d4">ctx</a>; <span class="comment">// Query passed as system context</span></div>
@@ -1234,9 +1234,9 @@ Functions</h2></td></tr>
 <div class="line">    <span class="comment">// Iterate as usual</span></div>
 <div class="line">  }</div>
 <div class="line">}</div>
-<div class="ttc" id="astructecs__iter__t_html_a46b93f08abafc689c88aa10a779067d4"><div class="ttname"><a href="structecs__iter__t.html#a46b93f08abafc689c88aa10a779067d4">ecs_iter_t::ctx</a></div><div class="ttdeci">void * ctx</div><div class="ttdef"><b>Definition</b> flecs.h:6207</div></div>
-<div class="ttc" id="astructecs__iter__t_html_a7f1db7ca958d8bbf12d6ef76f7e91bf2"><div class="ttname"><a href="structecs__iter__t.html#a7f1db7ca958d8bbf12d6ef76f7e91bf2">ecs_iter_t::world</a></div><div class="ttdeci">ecs_world_t * world</div><div class="ttdef"><b>Definition</b> flecs.h:6171</div></div>
-<div class="ttc" id="astructecs__query__t_html"><div class="ttname"><a href="structecs__query__t.html">ecs_query_t</a></div><div class="ttdef"><b>Definition</b> flecs.h:4568</div></div>
+<div class="ttc" id="astructecs__iter__t_html_a46b93f08abafc689c88aa10a779067d4"><div class="ttname"><a href="structecs__iter__t.html#a46b93f08abafc689c88aa10a779067d4">ecs_iter_t::ctx</a></div><div class="ttdeci">void * ctx</div><div class="ttdef"><b>Definition</b> flecs.h:6073</div></div>
+<div class="ttc" id="astructecs__iter__t_html_a7f1db7ca958d8bbf12d6ef76f7e91bf2"><div class="ttname"><a href="structecs__iter__t.html#a7f1db7ca958d8bbf12d6ef76f7e91bf2">ecs_iter_t::world</a></div><div class="ttdeci">ecs_world_t * world</div><div class="ttdef"><b>Definition</b> flecs.h:6037</div></div>
+<div class="ttc" id="astructecs__query__t_html"><div class="ttname"><a href="structecs__query__t.html">ecs_query_t</a></div><div class="ttdef"><b>Definition</b> flecs.h:4472</div></div>
 </div><!-- fragment --><p>If query iteration is stopped without the last call to <a class="el" href="group__queries.html#ga1bf5ecfa2ac93c8fe9eeca045cbd233f">ecs_query_next()</a> returning false, iterator resources need to be cleaned up explicitly with <a class="el" href="group__iterator.html#ga90f2ef797d52dd1229d253d58a727c18">ecs_iter_fini()</a>.</p>
 <p>Example: </p><div class="fragment"><div class="line"><a class="code hl_struct" href="structecs__iter__t.html">ecs_iter_t</a> it = <a class="code hl_function" href="group__queries.html#ga9778cea069cae30f1c8c691d4e1be122">ecs_query_iter</a>(world, q);</div>
 <div class="line"> </div>

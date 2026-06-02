@@ -170,5 +170,6 @@ var searchData=
   ['ecsworldsummary_167',['EcsWorldSummary',['../structEcsWorldSummary.html',1,'']]],
   ['eggdeath_168',['EggDeath',['../structzappy_1_1EggDeath.html',1,'zappy']]],
   ['egghatched_169',['EggHatched',['../structzappy_1_1EggHatched.html',1,'zappy']]],
-  ['eggnew_170',['EggNew',['../structzappy_1_1EggNew.html',1,'zappy']]]
+  ['eggnew_170',['EggNew',['../structzappy_1_1EggNew.html',1,'zappy']]],
+  ['error_171',['Error',['../structnet_1_1Error.html',1,'net']]]
 ];

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['raylib_0',['Raylib',['../structRaylib.html#afa1d23674af91c34e07970f7d056839f',1,'Raylib']]],
-  ['rect_1',['rect',['../structPosition2.html#a1a602654938afd137eaef9ffe4664870',1,'Position2']]]
+  ['operator_3d_0',['operator=',['../classnet_1_1ZappyClient.html#a34b5392468ac0a2c510105f8cdc4ebc4',1,'net::ZappyClient::operator=()'],['../classAddressList.html#afe5e46fa7a65bb48c36e53667aa1d6e8',1,'AddressList::operator=()'],['../classnet_1_1SocketHandle.html#ae440d2fc2e4ab3326a29f27871bcdb04',1,'net::SocketHandle::operator=(const SocketHandle &amp;)=delete'],['../classnet_1_1SocketHandle.html#a3913abcb2e61bf8ee4149d22bb913935',1,'net::SocketHandle::operator=(SocketHandle &amp;&amp;other) noexcept'],['../classnet_1_1TcpClient.html#ac76f79685d12baed7dfe092fe09fbcbc',1,'net::TcpClient::operator=(const TcpClient &amp;)=delete'],['../classnet_1_1TcpClient.html#ac11d125757b9dbf22b36d3fcbaa2c108',1,'net::TcpClient::operator=(TcpClient &amp;&amp;other) noexcept=default']]]
 ];
