@@ -1,9 +1,9 @@
 (function() {
-    const implementors = Object.fromEntries([["zappy_server",[["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/1.96.0/core/marker/trait.Sync.html\" title=\"trait core::marker::Sync\">Sync</a> for <a class=\"struct\" href=\"zappy_server/struct.ServerConfig.html\" title=\"struct zappy_server::ServerConfig\">ServerConfig</a>",0,1,["zappy_server::ServerConfig"]]]]]);
+    const implementors = Object.fromEntries([["zappy_server",[["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/1.96.0/core/marker/trait.Sync.html\" title=\"trait core::marker::Sync\">Sync</a> for <a class=\"enum\" href=\"zappy_server/network/client/enum.ClientState.html\" title=\"enum zappy_server::network::client::ClientState\">ClientState</a>",0,1,["zappy_server::network::client::ClientState"]],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/1.96.0/core/marker/trait.Sync.html\" title=\"trait core::marker::Sync\">Sync</a> for <a class=\"struct\" href=\"zappy_server/config/struct.ServerConfig.html\" title=\"struct zappy_server::config::ServerConfig\">ServerConfig</a>",0,1,["zappy_server::config::ServerConfig"]],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/1.96.0/core/marker/trait.Sync.html\" title=\"trait core::marker::Sync\">Sync</a> for <a class=\"struct\" href=\"zappy_server/network/client/struct.Client.html\" title=\"struct zappy_server::network::client::Client\">Client</a>",0,1,["zappy_server::network::client::Client"]],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/1.96.0/core/marker/trait.Sync.html\" title=\"trait core::marker::Sync\">Sync</a> for <a class=\"struct\" href=\"zappy_server/network/server/struct.Server.html\" title=\"struct zappy_server::network::server::Server\">Server</a>",0,1,["zappy_server::network::server::Server"]]]]]);
     if (window.register_implementors) {
         window.register_implementors(implementors);
     } else {
         window.pending_implementors = implementors;
     }
 })()
-//{"start":59,"fragment_lengths":[327]}
+//{"start":59,"fragment_lengths":[1366]}

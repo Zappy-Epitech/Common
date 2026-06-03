@@ -1,1 +1,1 @@
-window.SIDEBAR_ITEMS = {"fn":["main"],"struct":["ServerConfig"]};
+window.SIDEBAR_ITEMS = {"fn":["main"],"mod":["config","game","network","protocol"]};
