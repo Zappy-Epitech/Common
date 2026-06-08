@@ -1,2 +1,2 @@
-createSrcSidebar('[["zappy_server",["",[["game",[],["mod.rs"]],["network",[],["client.rs","mod.rs","server.rs"]],["protocol",[],["mod.rs"]]],["config.rs","main.rs"]]]]');
-//{"start":19,"fragment_lengths":[147]}
+createSrcSidebar('[["zappy_server",["",[["game",[],["mod.rs","player.rs","world.rs"]],["network",[],["client.rs","mod.rs","server.rs"]],["protocol",[],["mod.rs"]]],["config.rs","main.rs"]]]]');
+//{"start":19,"fragment_lengths":[170]}
