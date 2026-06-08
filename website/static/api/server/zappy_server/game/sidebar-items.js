@@ -1,1 +1,1 @@
-window.SIDEBAR_ITEMS = {"mod":["player","world"]};
+window.SIDEBAR_ITEMS = {"mod":["commands","player","world"]};
