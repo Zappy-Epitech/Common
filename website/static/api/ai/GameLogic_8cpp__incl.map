@@ -1,0 +1,22 @@
+<map id="algo/src/Player/GameLogic/GameLogic.cpp" name="algo/src/Player/GameLogic/GameLogic.cpp">
+<area shape="rect" id="Node000001" title="Implementation of the player&#39;s per&#45;tick decision making." alt="" coords="223,5,417,45"/>
+<area shape="rect" id="Node000002" href="$Player_8hpp.html" title="The AI player: its state and main decision loop." alt="" coords="253,93,387,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="323,46,323,79,317,79,317,46"/>
+<area shape="rect" id="Node000003" href="$Network_8hpp.html" title="TCP client that talks to the Zappy server." alt="" coords="73,167,237,192"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="294,121,195,164,193,159,292,116"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,240,64,265"/>
+<area shape="poly" id="edge10_Node000002_Node000005" title=" " alt="" coords="253,118,142,137,93,151,62,169,52,181,45,196,38,227,33,225,40,194,47,178,58,165,91,147,141,132,252,112"/>
+<area shape="rect" id="Node000008" href="$Ressource_8hpp.html" title="Resource types and elevation (upgrade) cost tables for the Zappy AI." alt="" coords="261,167,379,192"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="323,119,323,153,317,153,317,119"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="403,167,490,192"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="342,116,415,157,413,162,339,121"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="515,167,565,192"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="356,116,502,163,501,168,355,121"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="88,240,184,265"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="154,193,145,228,140,226,149,192"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="137,194,68,235,65,230,134,190"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="209,240,311,265"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="173,190,233,230,230,235,170,194"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="335,240,398,265"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="190,189,323,234,322,239,188,195"/>
+</map>

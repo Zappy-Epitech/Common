@@ -1,0 +1,9 @@
+<map id="algo/include/Errors.hpp" name="algo/include/Errors.hpp">
+<area shape="rect" id="Node000001" title="Exception type and error catalogue used across the Zappy AI." alt="" coords="57,5,227,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,92,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,33,76,72,73,68,125,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="117,79,167,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="145,31,145,65,139,65,139,31"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="191,79,250,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="156,29,200,68,196,71,153,33"/>
+</map>

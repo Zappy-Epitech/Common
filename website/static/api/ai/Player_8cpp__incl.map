@@ -1,0 +1,22 @@
+<map id="algo/src/Player/Player.cpp" name="algo/src/Player/Player.cpp">
+<area shape="rect" id="Node000001" title="Implementation of the Player loop and elevation helpers." alt="" coords="225,5,415,31"/>
+<area shape="rect" id="Node000002" href="$Player_8hpp.html" title="The AI player: its state and main decision loop." alt="" coords="275,79,365,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="323,31,323,65,317,65,317,31"/>
+<area shape="rect" id="Node000003" href="$Network_8hpp.html" title="TCP client that talks to the Zappy server." alt="" coords="73,152,237,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="294,106,195,149,193,144,292,102"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,225,64,251"/>
+<area shape="poly" id="edge10_Node000002_Node000005" title=" " alt="" coords="275,100,155,120,98,135,77,144,62,154,52,166,45,181,38,212,33,211,40,179,47,164,58,150,74,139,96,130,153,114,274,95"/>
+<area shape="rect" id="Node000008" href="$Ressource_8hpp.html" title="Resource types and elevation (upgrade) cost tables for the Zappy AI." alt="" coords="261,152,379,177"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="323,104,323,138,317,138,317,104"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="403,152,490,177"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="342,102,415,143,413,147,339,106"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="515,152,565,177"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="356,101,502,148,501,153,355,107"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="88,225,184,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="154,178,145,213,140,212,149,177"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="137,180,68,220,65,216,134,175"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="209,225,311,251"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="173,175,233,215,230,220,170,180"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="335,225,398,251"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="190,175,323,219,322,224,188,180"/>
+</map>

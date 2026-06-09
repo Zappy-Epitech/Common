@@ -1,0 +1,9 @@
+<map id="algo/src/Player/Player.hpp" name="algo/src/Player/Player.hpp">
+<area shape="rect" id="Node000001" title="The AI player: its state and main decision loop." alt="" coords="223,5,414,31"/>
+<area shape="rect" id="Node000002" href="$GameLogic_8cpp.html" title="Implementation of the player&#39;s per&#45;tick decision making." alt="" coords="5,79,200,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="276,38,156,81,154,76,274,33"/>
+<area shape="rect" id="Node000003" href="$Player_8cpp.html" title="Implementation of the Player loop and elevation helpers." alt="" coords="224,86,413,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="321,44,321,86,316,86,316,44"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html" title="Program entry point: parses CLI arguments and starts the AI." alt="" coords="438,86,575,111"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="360,33,480,84,478,88,358,38"/>
+</map>
