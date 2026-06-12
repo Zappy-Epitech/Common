@@ -100,48 +100,54 @@ $(document).ready(function(){initNavTree('Network_8hpp_source.html',''); initRes
 </div><!--header-->
 <div class="contents">
 <a href="Network_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;netinet/in.h&gt;</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;sys/socket.h&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="foldopen" id="foldopen00020" data-start="{" data-end="};">
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classNetwork.html">   20</a></span><span class="keyword">class </span><a class="code hl_class" href="classNetwork.html">Network</a> {</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        uint _port;                            </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        std::string _ip;                       </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keywordtype">int</span> _socket;                           </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        sockaddr_in _serverAddress;            </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="keywordtype">bool</span> _able_to_send = <span class="keyword">false</span>;            </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        std::vector&lt;std::string&gt; _messageQueue; </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        std::vector&lt;std::string&gt; _sendQueue;    </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <a class="code hl_class" href="classNetwork.html">Network</a>(uint port, <span class="keyword">const</span> std::string&amp; ip);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classNetwork.html#ac2205cbf6d16ff898bc741658113a081">sendMessage</a>(<span class="keyword">const</span> std::string&amp; message);</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        std::string <a class="code hl_function" href="classNetwork.html#a6fca7071e0849e4f04d03a3c521a8011">receiveMessage</a>();</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classNetwork.html#ad3220f31791e909e11e41c889240ef34">pollCheck</a>();</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        std::vector&lt;std::string&gt;&amp; <a class="code hl_function" href="classNetwork.html#a76d49969854b8ca3020c86366ae63429">getMessageQueue</a>();</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classNetwork.html#a3d341f7d934478ab72b3bff66f96ef9d">clearMessageQueue</a>();</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;functional&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;netinet/in.h&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;sys/socket.h&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">using </span>func = std::function&lt;void()&gt;;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classNetwork.html">   23</a></span><span class="keyword">class </span><a class="code hl_class" href="classNetwork.html">Network</a> {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        uint _port;                             </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        std::string _ip;                        </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keywordtype">int</span> _socket;                            </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        sockaddr_in _serverAddress;             </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keywordtype">bool</span> _able_to_send = <span class="keyword">false</span>;             </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        std::vector&lt;std::string&gt; _messageQueue; </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        std::vector&lt;std::string&gt; _sendQueue;    </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <a class="code hl_class" href="classNetwork.html">Network</a>(uint port, <span class="keyword">const</span> std::string&amp; ip);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classNetwork.html#ac2205cbf6d16ff898bc741658113a081">sendMessage</a>(<span class="keyword">const</span> std::string&amp; message);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        std::string <a class="code hl_function" href="classNetwork.html#a6fca7071e0849e4f04d03a3c521a8011">receiveMessage</a>();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classNetwork.html#a0074dd651e820d131dfe450ef02a3fc0">pollCheck</a>(<span class="keywordtype">bool</span> block = <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        std::vector&lt;std::string&gt;&amp; <a class="code hl_function" href="classNetwork.html#a76d49969854b8ca3020c86366ae63429">getMessageQueue</a>();</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classNetwork.html#ab8d838ca7365828935c8bfebc95a6c0b">processSendQueue</a>();</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classNetwork.html#a70d18db9d6b0602b77cc1cee9f9d903e">addToSendQueue</a>(<span class="keyword">const</span> std::string&amp; message);</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>};</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classNetwork.html#a3d341f7d934478ab72b3bff66f96ef9d">clearMessageQueue</a>();</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classNetwork.html#ab8d838ca7365828935c8bfebc95a6c0b">processSendQueue</a>();</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classNetwork.html#a70d18db9d6b0602b77cc1cee9f9d903e">addToSendQueue</a>(<span class="keyword">const</span> std::string&amp; message);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classNetwork.html#a0052d9f9280e91f7d943e33e1a4f576d">waitResponse</a>();</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>};</div>
 </div>
-<div class="ttc" id="aclassNetwork_html"><div class="ttname"><a href="classNetwork.html">Network</a></div><div class="ttdoc">Manages the TCP connection to the Zappy server.</div><div class="ttdef"><b>Definition</b> Network.hpp:20</div></div>
+<div class="ttc" id="aclassNetwork_html"><div class="ttname"><a href="classNetwork.html">Network</a></div><div class="ttdoc">Manages the TCP connection to the Zappy server.</div><div class="ttdef"><b>Definition</b> Network.hpp:23</div></div>
+<div class="ttc" id="aclassNetwork_html_a0052d9f9280e91f7d943e33e1a4f576d"><div class="ttname"><a href="classNetwork.html#a0052d9f9280e91f7d943e33e1a4f576d">Network::waitResponse</a></div><div class="ttdeci">void waitResponse()</div><div class="ttdoc">Blocks until at least one message is in the inbound queue.</div><div class="ttdef"><b>Definition</b> Network.cpp:79</div></div>
+<div class="ttc" id="aclassNetwork_html_a0074dd651e820d131dfe450ef02a3fc0"><div class="ttname"><a href="classNetwork.html#a0074dd651e820d131dfe450ef02a3fc0">Network::pollCheck</a></div><div class="ttdeci">void pollCheck(bool block=false)</div><div class="ttdoc">Polls the socket once and updates internal state.</div><div class="ttdef"><b>Definition</b> Network.cpp:39</div></div>
 <div class="ttc" id="aclassNetwork_html_a3d341f7d934478ab72b3bff66f96ef9d"><div class="ttname"><a href="classNetwork.html#a3d341f7d934478ab72b3bff66f96ef9d">Network::clearMessageQueue</a></div><div class="ttdeci">void clearMessageQueue()</div><div class="ttdoc">Empties the inbound message queue.</div><div class="ttdef"><b>Definition</b> Network.cpp:65</div></div>
 <div class="ttc" id="aclassNetwork_html_a6fca7071e0849e4f04d03a3c521a8011"><div class="ttname"><a href="classNetwork.html#a6fca7071e0849e4f04d03a3c521a8011">Network::receiveMessage</a></div><div class="ttdeci">std::string receiveMessage()</div><div class="ttdoc">Reads a single chunk of data from the socket.</div><div class="ttdef"><b>Definition</b> Network.cpp:28</div></div>
 <div class="ttc" id="aclassNetwork_html_a70d18db9d6b0602b77cc1cee9f9d903e"><div class="ttname"><a href="classNetwork.html#a70d18db9d6b0602b77cc1cee9f9d903e">Network::addToSendQueue</a></div><div class="ttdeci">void addToSendQueue(const std::string &amp;message)</div><div class="ttdoc">Appends a message to the outbound queue.</div><div class="ttdef"><b>Definition</b> Network.cpp:75</div></div>
 <div class="ttc" id="aclassNetwork_html_a76d49969854b8ca3020c86366ae63429"><div class="ttname"><a href="classNetwork.html#a76d49969854b8ca3020c86366ae63429">Network::getMessageQueue</a></div><div class="ttdeci">std::vector&lt; std::string &gt; &amp; getMessageQueue()</div><div class="ttdoc">Accesses the inbound message queue.</div><div class="ttdef"><b>Definition</b> Network.cpp:61</div></div>
 <div class="ttc" id="aclassNetwork_html_ab8d838ca7365828935c8bfebc95a6c0b"><div class="ttname"><a href="classNetwork.html#ab8d838ca7365828935c8bfebc95a6c0b">Network::processSendQueue</a></div><div class="ttdeci">void processSendQueue()</div><div class="ttdoc">Sends every queued outbound message, then clears the queue.</div><div class="ttdef"><b>Definition</b> Network.cpp:69</div></div>
 <div class="ttc" id="aclassNetwork_html_ac2205cbf6d16ff898bc741658113a081"><div class="ttname"><a href="classNetwork.html#ac2205cbf6d16ff898bc741658113a081">Network::sendMessage</a></div><div class="ttdeci">void sendMessage(const std::string &amp;message)</div><div class="ttdoc">Sends a message to the server immediately.</div><div class="ttdef"><b>Definition</b> Network.cpp:24</div></div>
-<div class="ttc" id="aclassNetwork_html_ad3220f31791e909e11e41c889240ef34"><div class="ttname"><a href="classNetwork.html#ad3220f31791e909e11e41c889240ef34">Network::pollCheck</a></div><div class="ttdeci">void pollCheck()</div><div class="ttdoc">Polls the socket once and updates internal state.</div><div class="ttdef"><b>Definition</b> Network.cpp:39</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

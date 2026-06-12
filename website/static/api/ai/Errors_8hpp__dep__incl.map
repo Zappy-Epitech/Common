@@ -1,5 +1,7 @@
 <map id="algo/include/Errors.hpp" name="algo/include/Errors.hpp">
-<area shape="rect" id="Node000001" title="Exception type and error catalogue used across the Zappy AI." alt="" coords="29,5,200,31"/>
+<area shape="rect" id="Node000001" title="Exception type and error catalogue used across the Zappy AI." alt="" coords="143,5,313,31"/>
 <area shape="rect" id="Node000002" href="$Network_8cpp.html" title="Implementation of the Network TCP client." alt="" coords="5,79,224,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,44,117,79,112,79,112,44"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,40,135,81,132,76,196,36"/>
+<area shape="rect" id="Node000003" href="$Player_8cpp.html" title="Implementation of the Player loop and elevation helpers." alt="" coords="248,79,437,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="259,35,325,76,323,81,256,40"/>
 </map>

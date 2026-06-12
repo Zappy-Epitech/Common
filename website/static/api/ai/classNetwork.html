@@ -114,9 +114,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6fca7071e0849e4f04d03a3c521a8011" id="r_a6fca7071e0849e4f04d03a3c521a8011"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNetwork.html#a6fca7071e0849e4f04d03a3c521a8011">receiveMessage</a> ()</td></tr>
 <tr class="memdesc:a6fca7071e0849e4f04d03a3c521a8011"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a single chunk of data from the socket.  <br /></td></tr>
 <tr class="separator:a6fca7071e0849e4f04d03a3c521a8011"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3220f31791e909e11e41c889240ef34" id="r_ad3220f31791e909e11e41c889240ef34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNetwork.html#ad3220f31791e909e11e41c889240ef34">pollCheck</a> ()</td></tr>
-<tr class="memdesc:ad3220f31791e909e11e41c889240ef34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Polls the socket once and updates internal state.  <br /></td></tr>
-<tr class="separator:ad3220f31791e909e11e41c889240ef34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0074dd651e820d131dfe450ef02a3fc0" id="r_a0074dd651e820d131dfe450ef02a3fc0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNetwork.html#a0074dd651e820d131dfe450ef02a3fc0">pollCheck</a> (bool block=false)</td></tr>
+<tr class="memdesc:a0074dd651e820d131dfe450ef02a3fc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Polls the socket once and updates internal state.  <br /></td></tr>
+<tr class="separator:a0074dd651e820d131dfe450ef02a3fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76d49969854b8ca3020c86366ae63429" id="r_a76d49969854b8ca3020c86366ae63429"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNetwork.html#a76d49969854b8ca3020c86366ae63429">getMessageQueue</a> ()</td></tr>
 <tr class="memdesc:a76d49969854b8ca3020c86366ae63429"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accesses the inbound message queue.  <br /></td></tr>
 <tr class="separator:a76d49969854b8ca3020c86366ae63429"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,10 +131,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>processSendQueue</b> 
 <tr class="memitem:a70d18db9d6b0602b77cc1cee9f9d903e" id="r_a70d18db9d6b0602b77cc1cee9f9d903e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNetwork.html#a70d18db9d6b0602b77cc1cee9f9d903e">addToSendQueue</a> (const std::string &amp;message)</td></tr>
 <tr class="memdesc:a70d18db9d6b0602b77cc1cee9f9d903e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends a message to the outbound queue.  <br /></td></tr>
 <tr class="separator:a70d18db9d6b0602b77cc1cee9f9d903e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0052d9f9280e91f7d943e33e1a4f576d" id="r_a0052d9f9280e91f7d943e33e1a4f576d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNetwork.html#a0052d9f9280e91f7d943e33e1a4f576d">waitResponse</a> ()</td></tr>
+<tr class="memdesc:a0052d9f9280e91f7d943e33e1a4f576d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks until at least one message is in the inbound queue.  <br /></td></tr>
+<tr class="separator:a0052d9f9280e91f7d943e33e1a4f576d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Manages the TCP connection to the Zappy server. </p>
-<p>Owns the socket and two buffers: an inbound queue of messages received from the server and an outbound queue of messages waiting to be sent. Polling, receiving and flushing are driven externally (see <a class="el" href="classNetwork.html#ad3220f31791e909e11e41c889240ef34">pollCheck</a> and <a class="el" href="classNetwork.html#ab8d838ca7365828935c8bfebc95a6c0b">processSendQueue</a>). </p>
+<p>Owns the socket and two buffers: an inbound queue of messages received from the server and an outbound queue of messages waiting to be sent. Polling, receiving and flushing are driven externally (see <a class="el" href="classNetwork.html#a0074dd651e820d131dfe450ef02a3fc0">pollCheck</a> and <a class="el" href="classNetwork.html#ab8d838ca7365828935c8bfebc95a6c0b">processSendQueue</a>). </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae7392b537c89c7ed6adecd495bb75ae2" name="ae7392b537c89c7ed6adecd495bb75ae2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae7392b537c89c7ed6adecd495bb75ae2">&#9670;&#160;</a></span>Network()</h2>
@@ -226,8 +229,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>processSendQueue</b> 
 
 </div>
 </div>
-<a id="ad3220f31791e909e11e41c889240ef34" name="ad3220f31791e909e11e41c889240ef34"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3220f31791e909e11e41c889240ef34">&#9670;&#160;</a></span>pollCheck()</h2>
+<a id="a0074dd651e820d131dfe450ef02a3fc0" name="a0074dd651e820d131dfe450ef02a3fc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0074dd651e820d131dfe450ef02a3fc0">&#9670;&#160;</a></span>pollCheck()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -235,7 +238,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>processSendQueue</b> 
         <tr>
           <td class="memname">void Network::pollCheck </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>block</em> = <code>false</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -291,6 +295,31 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>processSendQueue</b> 
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">message</td><td>The raw bytes to write to the socket. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0052d9f9280e91f7d943e33e1a4f576d" name="a0052d9f9280e91f7d943e33e1a4f576d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0052d9f9280e91f7d943e33e1a4f576d">&#9670;&#160;</a></span>waitResponse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Network::waitResponse </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Blocks until at least one message is in the inbound queue. </p>
+<p>Repeatedly polls the socket in blocking mode until _messageQueue is non-empty. Used to wait for the reply to a command that was just sent. </p><dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classZappyException.html" title="Exception carrying a human-readable message for a given ErrorType.">ZappyException</a></td><td>with <a class="el" href="Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aa29422ea3bfa0fde21ed413e6f9d7b0d9">POLL_ERROR</a> or <a class="el" href="Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aa00bc8d8fa2a4ef22ac8d9aa337802707">CONNECTION_LOST</a>, propagated from <a class="el" href="classNetwork.html#a0074dd651e820d131dfe450ef02a3fc0">pollCheck</a>. </td></tr>
   </table>
   </dd>
 </dl>

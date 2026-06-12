@@ -91,6 +91,8 @@ $(document).ready(function(){initNavTree('GameLogic_8cpp.html',''); initResizabl
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">GameLogic.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -98,36 +100,150 @@ $(document).ready(function(){initNavTree('GameLogic_8cpp.html',''); initResizabl
 <p>Implementation of the player's per-tick decision making.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="Player_8hpp_source.html">Player/Player.hpp</a>&quot;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for GameLogic.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="GameLogic_8cpp__incl.png" border="0" usemap="#aalgo_2src_2Player_2GameLogic_2GameLogic_8cpp" alt=""/></div>
 <map name="aalgo_2src_2Player_2GameLogic_2GameLogic_8cpp" id="aalgo_2src_2Player_2GameLogic_2GameLogic_8cpp">
-<area shape="rect" title="Implementation of the player&#39;s per&#45;tick decision making." alt="" coords="223,5,417,45"/>
-<area shape="rect" href="Player_8hpp.html" title="The AI player: its state and main decision loop." alt="" coords="253,93,387,119"/>
-<area shape="poly" title=" " alt="" coords="323,46,323,79,317,79,317,46"/>
-<area shape="rect" href="Network_8hpp.html" title="TCP client that talks to the Zappy server." alt="" coords="73,167,237,192"/>
-<area shape="poly" title=" " alt="" coords="294,121,195,164,193,159,292,116"/>
-<area shape="rect" title=" " alt="" coords="5,240,64,265"/>
-<area shape="poly" title=" " alt="" coords="253,118,142,137,93,151,62,169,52,181,45,196,38,227,33,225,40,194,47,178,58,165,91,147,141,132,252,112"/>
-<area shape="rect" href="Ressource_8hpp.html" title="Resource types and elevation (upgrade) cost tables for the Zappy AI." alt="" coords="261,167,379,192"/>
-<area shape="poly" title=" " alt="" coords="323,119,323,153,317,153,317,119"/>
-<area shape="rect" title=" " alt="" coords="403,167,490,192"/>
-<area shape="poly" title=" " alt="" coords="342,116,415,157,413,162,339,121"/>
-<area shape="rect" title=" " alt="" coords="515,167,565,192"/>
-<area shape="poly" title=" " alt="" coords="356,116,502,163,501,168,355,121"/>
-<area shape="rect" title=" " alt="" coords="88,240,184,265"/>
-<area shape="poly" title=" " alt="" coords="154,193,145,228,140,226,149,192"/>
-<area shape="poly" title=" " alt="" coords="137,194,68,235,65,230,134,190"/>
-<area shape="rect" title=" " alt="" coords="209,240,311,265"/>
-<area shape="poly" title=" " alt="" coords="173,190,233,230,230,235,170,194"/>
-<area shape="rect" title=" " alt="" coords="335,240,398,265"/>
-<area shape="poly" title=" " alt="" coords="190,189,323,234,322,239,188,195"/>
+<area shape="rect" title="Implementation of the player&#39;s per&#45;tick decision making." alt="" coords="443,5,638,45"/>
+<area shape="rect" href="Player_8hpp.html" title="The AI player: its state and main decision loop." alt="" coords="341,93,476,119"/>
+<area shape="poly" title=" " alt="" coords="510,48,442,88,439,84,508,43"/>
+<area shape="rect" title=" " alt="" coords="501,93,581,119"/>
+<area shape="poly" title=" " alt="" coords="543,46,543,79,538,79,538,46"/>
+<area shape="rect" title=" " alt="" coords="605,93,679,119"/>
+<area shape="poly" title=" " alt="" coords="567,43,617,82,614,87,564,48"/>
+<area shape="rect" href="Network_8hpp.html" title="TCP client that talks to the Zappy server." alt="" coords="207,167,371,192"/>
+<area shape="poly" title=" " alt="" coords="391,121,322,162,319,157,388,116"/>
+<area shape="rect" title=" " alt="" coords="5,240,92,265"/>
+<area shape="poly" title=" " alt="" coords="354,121,278,141,196,169,131,202,78,235,75,230,129,197,194,164,276,136,352,116"/>
+<area shape="rect" title=" " alt="" coords="451,240,510,265"/>
+<area shape="poly" title=" " alt="" coords="413,118,421,152,436,191,463,228,458,231,432,193,416,153,408,119"/>
+<area shape="rect" href="Ressource_8hpp.html" title="Resource types and elevation (upgrade) cost tables for the Zappy AI." alt="" coords="446,167,563,192"/>
+<area shape="poly" title=" " alt="" coords="426,117,479,156,476,160,423,121"/>
+<area shape="rect" title=" " alt="" coords="587,167,638,192"/>
+<area shape="poly" title=" " alt="" coords="442,116,575,162,574,167,441,121"/>
+<area shape="poly" title=" " alt="" coords="251,195,102,239,100,233,249,189"/>
+<area shape="rect" title=" " alt="" coords="117,240,213,265"/>
+<area shape="poly" title=" " alt="" coords="270,194,198,235,195,231,267,190"/>
+<area shape="poly" title=" " alt="" coords="320,190,439,233,437,238,319,195"/>
+<area shape="rect" title=" " alt="" coords="237,240,340,265"/>
+<area shape="poly" title=" " alt="" coords="291,192,291,226,286,226,286,192"/>
+<area shape="rect" title=" " alt="" coords="364,240,427,265"/>
+<area shape="poly" title=" " alt="" coords="307,190,368,230,365,235,304,194"/>
 </map>
 </div>
-</div><a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a342a66c469c6ac363230afcee7bbcfff" id="r_a342a66c469c6ac363230afcee7bbcfff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Ressource_8hpp.html#a09526742abc3e0feb0a61b36291e1b8c">Ressource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GameLogic_8cpp.html#a342a66c469c6ac363230afcee7bbcfff">ressourceFromName</a> (const std::string &amp;name)</td></tr>
+<tr class="memdesc:a342a66c469c6ac363230afcee7bbcfff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps a resource name from a server response to its <a class="el" href="Ressource_8hpp.html#a09526742abc3e0feb0a61b36291e1b8c">Ressource</a>.  <br /></td></tr>
+<tr class="separator:a342a66c469c6ac363230afcee7bbcfff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dd14f591eff5dea91185b734b85db43" id="r_a1dd14f591eff5dea91185b734b85db43"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; <a class="el" href="Ressource_8hpp.html#a09526742abc3e0feb0a61b36291e1b8c">Ressource</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GameLogic_8cpp.html#a1dd14f591eff5dea91185b734b85db43">parseLook</a> (const std::string &amp;res)</td></tr>
+<tr class="memdesc:a1dd14f591eff5dea91185b734b85db43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a server <code>Look</code> response into per-tile resource lists.  <br /></td></tr>
+<tr class="separator:a1dd14f591eff5dea91185b734b85db43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa02472a024b1e66f94d86e53f8576c9c" id="r_aa02472a024b1e66f94d86e53f8576c9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GameLogic_8cpp.html#aa02472a024b1e66f94d86e53f8576c9c">parseInventory</a> (<a class="el" href="structInventory.html">Inventory</a> &amp;inventory, const std::string &amp;res)</td></tr>
+<tr class="memdesc:aa02472a024b1e66f94d86e53f8576c9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates an inventory in place from a server <code><a class="el" href="structInventory.html" title="The quantity of every resource a player currently holds.">Inventory</a></code> response.  <br /></td></tr>
+<tr class="separator:aa02472a024b1e66f94d86e53f8576c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation of the player's per-tick decision making. </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="aa02472a024b1e66f94d86e53f8576c9c" name="aa02472a024b1e66f94d86e53f8576c9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa02472a024b1e66f94d86e53f8576c9c">&#9670;&#160;</a></span>parseInventory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void parseInventory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structInventory.html">Inventory</a> &amp;&#160;</td>
+          <td class="paramname"><em>inventory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>res</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Updates an inventory in place from a server <code><a class="el" href="structInventory.html" title="The quantity of every resource a player currently holds.">Inventory</a></code> response. </p>
+<p>Each space-separated token has the form <code>name:quantity</code>. Tokens without a colon are skipped, and an unrecognised resource name is reported on stdout and left out. Fields whose resource does not appear in <code>res</code> keep their previous value.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inventory</td><td>The inventory to overwrite with the reported quantities. </td></tr>
+    <tr><td class="paramname">res</td><td>The raw response, e.g. <code>"food:5 linemate:2 sibur:0"</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1dd14f591eff5dea91185b734b85db43" name="a1dd14f591eff5dea91185b734b85db43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dd14f591eff5dea91185b734b85db43">&#9670;&#160;</a></span>parseLook()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::vector&lt; <a class="el" href="Ressource_8hpp.html#a09526742abc3e0feb0a61b36291e1b8c">Ressource</a> &gt; &gt; parseLook </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>res</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parses a server <code>Look</code> response into per-tile resource lists. </p>
+<p>The server replies with a bracketed, comma-separated list of tiles, each tile holding space-separated tokens (resources, players, ...). Tokens that are not resources (e.g. "player") are ignored; an empty tile yields an empty list.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">res</td><td>The raw response, e.g. <code>"[ player, linemate, food sibur, ]"</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>One entry per tile, in response order, each listing the resources on that tile. Empty if no well-formed <code>[...]</code> block is present. </dd></dl>
+
+</div>
+</div>
+<a id="a342a66c469c6ac363230afcee7bbcfff" name="a342a66c469c6ac363230afcee7bbcfff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a342a66c469c6ac363230afcee7bbcfff">&#9670;&#160;</a></span>ressourceFromName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Ressource_8hpp.html#a09526742abc3e0feb0a61b36291e1b8c">Ressource</a> ressourceFromName </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maps a resource name from a server response to its <a class="el" href="Ressource_8hpp.html#a09526742abc3e0feb0a61b36291e1b8c">Ressource</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The resource token as written by the server (e.g. "linemate"). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The matching resource, or NONE for an unknown token (e.g. "player"). </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

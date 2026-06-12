@@ -7,7 +7,7 @@ var indexSectionsWithContent =
   4: "_dflmpstuxy",
   5: "f",
   6: "er",
-  7: "cdflmpst"
+  7: "cdflmnpst"
 };
 
 var indexSectionNames =
