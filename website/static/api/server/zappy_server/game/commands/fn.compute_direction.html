@@ -1,0 +1,34 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Calculates the relative direction (1-8) of a sound source on a toroidal map."><title>compute_direction in zappy_server::game::commands - Rust</title><script>if(window.location.protocol!=="file:")document.head.insertAdjacentHTML("beforeend","SourceSerif4-Regular-6b053e98.ttf.woff2,FiraSans-Italic-81dc35de.woff2,FiraSans-Regular-0fe48ade.woff2,FiraSans-MediumItalic-ccf7e434.woff2,FiraSans-Medium-e1aa3f0a.woff2,SourceCodePro-Regular-8badfe75.ttf.woff2,SourceCodePro-Semibold-aa29a496.ttf.woff2".split(",").map(f=>`<link rel="preload" as="font" type="font/woff2"href="../../../static.files/${f}">`).join(""))</script><link rel="stylesheet" href="../../../static.files/normalize-9960930a.css"><link rel="stylesheet" href="../../../static.files/rustdoc-17e0aaed.css"><meta name="rustdoc-vars" data-root-path="../../../" data-static-root-path="../../../static.files/" data-current-crate="zappy_server" data-themes="" data-resource-suffix="" data-rustdoc-version="1.96.0 (ac68faa20 2026-05-25)" data-channel="1.96.0" data-search-js="search-b5634cc7.js" data-stringdex-js="stringdex-2da4960a.js" data-settings-js="settings-170eb4bf.js" ><script src="../../../static.files/storage-41dd4d93.js"></script><script defer src="sidebar-items.js"></script><script defer src="../../../static.files/main-5013f961.js"></script><noscript><link rel="stylesheet" href="../../../static.files/noscript-f7c3ffd8.css"></noscript><link rel="alternate icon" type="image/png" href="../../../static.files/favicon-32x32-eab170b8.png"><link rel="icon" type="image/svg+xml" href="../../../static.files/favicon-044be391.svg"></head><body class="rustdoc fn"><a class="skip-main-content" href="#main-content">Skip to main content</a><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><rustdoc-topbar><h2><a href="#">compute_direction</a></h2></rustdoc-topbar><nav class="sidebar"><div class="sidebar-crate"><h2><a href="../../../zappy_server/index.html">zappy_<wbr>server</a><span class="version">0.1.0</span></h2></div><div class="sidebar-elems"><section id="rustdoc-toc"><h2 class="location"><a href="#">compute_<wbr>direction</a></h2><h3><a href="#">Sections</a></h3><ul class="block top-toc"><li><a href="#the-algorithm-minimum-image-convention" title="The Algorithm: Minimum Image Convention">The Algorithm: Minimum Image Convention</a></li></ul></section><div id="rustdoc-modnav"><h2><a href="index.html">In zappy_<wbr>server::<wbr>game::<wbr>commands</a></h2></div></div></nav><div class="sidebar-resizer" title="Drag to resize sidebar"></div><main><div class="width-limiter"><section id="main-content" class="content" tabindex="-1"><div class="main-heading"><div class="rustdoc-breadcrumbs"><a href="../../index.html">zappy_server</a>::<wbr><a href="../index.html">game</a>::<wbr><a href="index.html">commands</a></div><h1>Function <span class="fn">compute_<wbr>direction</span>&nbsp;<button id="copy-path" title="Copy item path to clipboard">Copy item path</button></h1><rustdoc-toolbar></rustdoc-toolbar><span class="sub-heading"><a class="src" href="../../../src/zappy_server/game/commands/mod.rs.html#68-96">Source</a> </span></div><pre class="rust item-decl"><code>pub fn compute_direction(
+    rx: <a class="primitive" href="https://doc.rust-lang.org/1.96.0/std/primitive.i32.html">i32</a>,
+    ry: <a class="primitive" href="https://doc.rust-lang.org/1.96.0/std/primitive.i32.html">i32</a>,
+    rdir: <a class="enum" href="../player/enum.Direction.html" title="enum zappy_server::game::player::Direction">Direction</a>,
+    sx: <a class="primitive" href="https://doc.rust-lang.org/1.96.0/std/primitive.i32.html">i32</a>,
+    sy: <a class="primitive" href="https://doc.rust-lang.org/1.96.0/std/primitive.i32.html">i32</a>,
+    w: <a class="primitive" href="https://doc.rust-lang.org/1.96.0/std/primitive.i32.html">i32</a>,
+    h: <a class="primitive" href="https://doc.rust-lang.org/1.96.0/std/primitive.i32.html">i32</a>,
+) -&gt; <a class="primitive" href="https://doc.rust-lang.org/1.96.0/std/primitive.u32.html">u32</a></code></pre><details class="toggle top-doc" open><summary class="hideme"><span>Expand description</span></summary><div class="docblock"><p>Calculates the relative direction (1-8) of a sound source on a toroidal map.</p>
+<p>This implementation uses the <strong>Minimum Image Convention</strong> algorithm.</p>
+<h4 id="the-algorithm-minimum-image-convention"><a class="doc-anchor" href="#the-algorithm-minimum-image-convention">§</a>The Algorithm: Minimum Image Convention</h4>
+<p>In a periodic (toroidal) world, a sound source has an infinite number of “images”
+due to the map wrapping around. This algorithm ensures we always calculate the
+path to the <em>closest</em> image of the sender.</p>
+<ol>
+<li>
+<p><strong>Shortest Vector</strong>: We calculate the raw distance <code>dx</code> and <code>dy</code>. If a distance
+is greater than half the world size, we “wrap” it by subtracting/adding the
+full world size. This gives us the shortest possible vector <code>(dx, dy)</code> on a torus.</p>
+</li>
+<li>
+<p><strong>Trigonometry</strong>: We use <code>atan2(dx, -dy)</code> to convert this vector into a
+geographic angle where 0° is North (upward in our grid).</p>
+</li>
+<li>
+<p><strong>Compass Mapping</strong>: The angle is mapped to the RFC’s 1-8 compass (8 slices of 45°).</p>
+</li>
+<li>
+<p><strong>Receiver Relativity</strong>: Finally, we adjust the absolute direction by the
+receiver’s current orientation (<code>rdir</code>) so that ‘1’ always represents the
+tile directly in front of them.</p>
+</li>
+</ol>
+</div></details></section></div></main></body></html>

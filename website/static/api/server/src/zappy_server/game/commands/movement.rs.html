@@ -2,30 +2,74 @@
 <a href=#2 id=2 data-nosnippet>2</a><span class="kw">use </span><span class="kw">crate</span>::protocol::Command;
 <a href=#3 id=3 data-nosnippet>3</a><span class="kw">use </span><span class="kw">crate</span>::game::player::Direction;
 <a href=#4 id=4 data-nosnippet>4</a>
-<a href=#5 id=5 data-nosnippet>5</a><span class="doccomment">/// Executes movement-related commands (Forward, Right, Left).
+<a href=#5 id=5 data-nosnippet>5</a><span class="doccomment">/// Executes movement-related commands (Forward, Right, Left, Eject).
 <a href=#6 id=6 data-nosnippet>6</a></span><span class="kw">pub fn </span>execute(command: Command, player_id: usize, world: <span class="kw-2">&amp;mut </span>World) -&gt; String {
-<a href=#7 id=7 data-nosnippet>7</a>    <span class="kw">let </span>player = world.players.get_mut(<span class="kw-2">&amp;</span>player_id).expect(<span class="string">"Player should exist"</span>);
-<a href=#8 id=8 data-nosnippet>8</a>
-<a href=#9 id=9 data-nosnippet>9</a>    <span class="kw">match </span>command {
-<a href=#10 id=10 data-nosnippet>10</a>        Command::Forward =&gt; {
-<a href=#11 id=11 data-nosnippet>11</a>            <span class="kw">match </span>player.direction {
-<a href=#12 id=12 data-nosnippet>12</a>                Direction::North =&gt; player.y = <span class="kw">if </span>player.y == <span class="number">0 </span>{ world.height - <span class="number">1 </span>} <span class="kw">else </span>{ player.y - <span class="number">1 </span>},
-<a href=#13 id=13 data-nosnippet>13</a>                Direction::East =&gt; player.x = (player.x + <span class="number">1</span>) % world.width,
-<a href=#14 id=14 data-nosnippet>14</a>                Direction::South =&gt; player.y = (player.y + <span class="number">1</span>) % world.height,
-<a href=#15 id=15 data-nosnippet>15</a>                Direction::West =&gt; player.x = <span class="kw">if </span>player.x == <span class="number">0 </span>{ world.width - <span class="number">1 </span>} <span class="kw">else </span>{ player.x - <span class="number">1 </span>},
-<a href=#16 id=16 data-nosnippet>16</a>            }
-<a href=#17 id=17 data-nosnippet>17</a>            <span class="string">"ok\n"</span>.to_string()
-<a href=#18 id=18 data-nosnippet>18</a>        }
-<a href=#19 id=19 data-nosnippet>19</a>        Command::Right =&gt; {
+<a href=#7 id=7 data-nosnippet>7</a>    <span class="kw">match </span>command {
+<a href=#8 id=8 data-nosnippet>8</a>        Command::Forward =&gt; {
+<a href=#9 id=9 data-nosnippet>9</a>            <span class="kw">let </span>player = world.players.get_mut(<span class="kw-2">&amp;</span>player_id).expect(<span class="string">"Player should exist"</span>);
+<a href=#10 id=10 data-nosnippet>10</a>            <span class="kw">match </span>player.direction {
+<a href=#11 id=11 data-nosnippet>11</a>                Direction::North =&gt; player.y = <span class="kw">if </span>player.y == <span class="number">0 </span>{ world.height - <span class="number">1 </span>} <span class="kw">else </span>{ player.y - <span class="number">1 </span>},
+<a href=#12 id=12 data-nosnippet>12</a>                Direction::East =&gt; player.x = (player.x + <span class="number">1</span>) % world.width,
+<a href=#13 id=13 data-nosnippet>13</a>                Direction::South =&gt; player.y = (player.y + <span class="number">1</span>) % world.height,
+<a href=#14 id=14 data-nosnippet>14</a>                Direction::West =&gt; player.x = <span class="kw">if </span>player.x == <span class="number">0 </span>{ world.width - <span class="number">1 </span>} <span class="kw">else </span>{ player.x - <span class="number">1 </span>},
+<a href=#15 id=15 data-nosnippet>15</a>            }
+<a href=#16 id=16 data-nosnippet>16</a>            <span class="string">"ok\n"</span>.to_string()
+<a href=#17 id=17 data-nosnippet>17</a>        }
+<a href=#18 id=18 data-nosnippet>18</a>        Command::Right =&gt; {
+<a href=#19 id=19 data-nosnippet>19</a>            <span class="kw">let </span>player = world.players.get_mut(<span class="kw-2">&amp;</span>player_id).expect(<span class="string">"Player should exist"</span>);
 <a href=#20 id=20 data-nosnippet>20</a>            player.direction = player.direction.turn_right();
 <a href=#21 id=21 data-nosnippet>21</a>            <span class="string">"ok\n"</span>.to_string()
 <a href=#22 id=22 data-nosnippet>22</a>        }
 <a href=#23 id=23 data-nosnippet>23</a>        Command::Left =&gt; {
-<a href=#24 id=24 data-nosnippet>24</a>            player.direction = player.direction.turn_left();
-<a href=#25 id=25 data-nosnippet>25</a>            <span class="string">"ok\n"</span>.to_string()
-<a href=#26 id=26 data-nosnippet>26</a>        }
-<a href=#27 id=27 data-nosnippet>27</a>        <span class="kw">_ </span>=&gt; <span class="string">"ko\n"</span>.to_string(),
-<a href=#28 id=28 data-nosnippet>28</a>    }
-<a href=#29 id=29 data-nosnippet>29</a>}
-<a href=#30 id=30 data-nosnippet>30</a>
+<a href=#24 id=24 data-nosnippet>24</a>            <span class="kw">let </span>player = world.players.get_mut(<span class="kw-2">&amp;</span>player_id).expect(<span class="string">"Player should exist"</span>);
+<a href=#25 id=25 data-nosnippet>25</a>            player.direction = player.direction.turn_left();
+<a href=#26 id=26 data-nosnippet>26</a>            <span class="string">"ok\n"</span>.to_string()
+<a href=#27 id=27 data-nosnippet>27</a>        }
+<a href=#28 id=28 data-nosnippet>28</a>        Command::Eject =&gt; {
+<a href=#29 id=29 data-nosnippet>29</a>            <span class="kw">let </span>(px, py, pdir) = {
+<a href=#30 id=30 data-nosnippet>30</a>                <span class="kw">let </span>player = world.players.get(<span class="kw-2">&amp;</span>player_id).expect(<span class="string">"Player should exist"</span>);
+<a href=#31 id=31 data-nosnippet>31</a>                (player.x, player.y, player.direction)
+<a href=#32 id=32 data-nosnippet>32</a>            };
+<a href=#33 id=33 data-nosnippet>33</a>
+<a href=#34 id=34 data-nosnippet>34</a>            <span class="kw">let </span><span class="kw-2">mut </span>targets = Vec::new();
+<a href=#35 id=35 data-nosnippet>35</a>            <span class="kw">for </span>(<span class="kw-2">&amp;</span>id, p) <span class="kw">in </span>world.players.iter() {
+<a href=#36 id=36 data-nosnippet>36</a>                <span class="kw">if </span>id != player_id &amp;&amp; p.x == px &amp;&amp; p.y == py {
+<a href=#37 id=37 data-nosnippet>37</a>                    targets.push(id);
+<a href=#38 id=38 data-nosnippet>38</a>                }
+<a href=#39 id=39 data-nosnippet>39</a>            }
+<a href=#40 id=40 data-nosnippet>40</a>
+<a href=#41 id=41 data-nosnippet>41</a>            <span class="kw">if </span>targets.is_empty() {
+<a href=#42 id=42 data-nosnippet>42</a>                <span class="kw">return </span><span class="string">"ko\n"</span>.to_string();
+<a href=#43 id=43 data-nosnippet>43</a>            }
+<a href=#44 id=44 data-nosnippet>44</a>
+<a href=#45 id=45 data-nosnippet>45</a>            <span class="kw">for </span>target_id <span class="kw">in </span>targets {
+<a href=#46 id=46 data-nosnippet>46</a>                <span class="kw">let </span>(<span class="kw-2">mut </span>tx, <span class="kw-2">mut </span>ty) = (px <span class="kw">as </span>i32, py <span class="kw">as </span>i32);
+<a href=#47 id=47 data-nosnippet>47</a>                <span class="kw">match </span>pdir {
+<a href=#48 id=48 data-nosnippet>48</a>                    Direction::North =&gt; ty -= <span class="number">1</span>,
+<a href=#49 id=49 data-nosnippet>49</a>                    Direction::East =&gt; tx += <span class="number">1</span>,
+<a href=#50 id=50 data-nosnippet>50</a>                    Direction::South =&gt; ty += <span class="number">1</span>,
+<a href=#51 id=51 data-nosnippet>51</a>                    Direction::West =&gt; tx -= <span class="number">1</span>,
+<a href=#52 id=52 data-nosnippet>52</a>                }
+<a href=#53 id=53 data-nosnippet>53</a>                <span class="kw">let </span>final_x = tx.rem_euclid(world.width <span class="kw">as </span>i32) <span class="kw">as </span>u32;
+<a href=#54 id=54 data-nosnippet>54</a>                <span class="kw">let </span>final_y = ty.rem_euclid(world.height <span class="kw">as </span>i32) <span class="kw">as </span>u32;
+<a href=#55 id=55 data-nosnippet>55</a>
+<a href=#56 id=56 data-nosnippet>56</a>                <span class="kw">if let </span><span class="prelude-val">Some</span>(target) = world.players.get_mut(<span class="kw-2">&amp;</span>target_id) {
+<a href=#57 id=57 data-nosnippet>57</a>                    target.x = final_x;
+<a href=#58 id=58 data-nosnippet>58</a>                    target.y = final_y;
+<a href=#59 id=59 data-nosnippet>59</a>                    
+<a href=#60 id=60 data-nosnippet>60</a>
+<a href=#61 id=61 data-nosnippet>61</a>                    <span class="kw">let </span>k = <span class="kw">crate</span>::game::commands::compute_direction(
+<a href=#62 id=62 data-nosnippet>62</a>                        final_x <span class="kw">as </span>i32, final_y <span class="kw">as </span>i32, target.direction,
+<a href=#63 id=63 data-nosnippet>63</a>                        px <span class="kw">as </span>i32, py <span class="kw">as </span>i32,
+<a href=#64 id=64 data-nosnippet>64</a>                        world.width <span class="kw">as </span>i32, world.height <span class="kw">as </span>i32
+<a href=#65 id=65 data-nosnippet>65</a>                    );
+<a href=#66 id=66 data-nosnippet>66</a>                    target.notifications.push_back(<span class="macro">format!</span>(<span class="string">"eject {}\n"</span>, k));
+<a href=#67 id=67 data-nosnippet>67</a>                }
+<a href=#68 id=68 data-nosnippet>68</a>            }
+<a href=#69 id=69 data-nosnippet>69</a>
+<a href=#70 id=70 data-nosnippet>70</a>            <span class="string">"ok\n"</span>.to_string()
+<a href=#71 id=71 data-nosnippet>71</a>        }
+<a href=#72 id=72 data-nosnippet>72</a>        <span class="kw">_ </span>=&gt; <span class="string">"ko\n"</span>.to_string(),
+<a href=#73 id=73 data-nosnippet>73</a>    }
+<a href=#74 id=74 data-nosnippet>74</a>}
 </code></pre></div></section></main></body></html>

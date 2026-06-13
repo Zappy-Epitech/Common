@@ -5,42 +5,93 @@
 <a href=#5 id=5 data-nosnippet>5</a>
 <a href=#6 id=6 data-nosnippet>6</a><span class="kw">use </span><span class="kw">crate</span>::game::world::World;
 <a href=#7 id=7 data-nosnippet>7</a><span class="kw">use </span><span class="kw">crate</span>::protocol::Command;
-<a href=#8 id=8 data-nosnippet>8</a>
-<a href=#9 id=9 data-nosnippet>9</a><span class="doccomment">/// Handles the immediate part of a command (RFC requirement).
-<a href=#10 id=10 data-nosnippet>10</a>/// Only returns a message if the command requires an immediate response.
-<a href=#11 id=11 data-nosnippet>11</a></span><span class="kw">pub fn </span>init(command: <span class="kw-2">&amp;</span>Command, player_id: usize, world: <span class="kw-2">&amp;mut </span>World) -&gt; <span class="prelude-ty">Option</span>&lt;String&gt; {
-<a href=#12 id=12 data-nosnippet>12</a>    <span class="kw">match </span>command {
-<a href=#13 id=13 data-nosnippet>13</a>        Command::Incantation =&gt; incantation::handle_start(player_id, world),
-<a href=#14 id=14 data-nosnippet>14</a>        <span class="kw">_ </span>=&gt; <span class="prelude-val">None</span>,
-<a href=#15 id=15 data-nosnippet>15</a>    }
-<a href=#16 id=16 data-nosnippet>16</a>}
-<a href=#17 id=17 data-nosnippet>17</a>
-<a href=#18 id=18 data-nosnippet>18</a><span class="doccomment">/// Handles the final execution of a command after its time delay.
-<a href=#19 id=19 data-nosnippet>19</a></span><span class="kw">pub fn </span>execute(command: Command, player_id: usize, world: <span class="kw-2">&amp;mut </span>World) -&gt; String {
-<a href=#20 id=20 data-nosnippet>20</a>    <span class="kw">match </span>command {
-<a href=#21 id=21 data-nosnippet>21</a>        Command::Forward | Command::Right | Command::Left =&gt; {
-<a href=#22 id=22 data-nosnippet>22</a>            movement::execute(command, player_id, world)
-<a href=#23 id=23 data-nosnippet>23</a>        }
-<a href=#24 id=24 data-nosnippet>24</a>        Command::Look | Command::Inventory | Command::Take(<span class="kw">_</span>) | Command::Set(<span class="kw">_</span>) | Command::Fork =&gt; {
-<a href=#25 id=25 data-nosnippet>25</a>            interaction::execute(command, player_id, world)
-<a href=#26 id=26 data-nosnippet>26</a>        }
-<a href=#27 id=27 data-nosnippet>27</a>        Command::Broadcast(<span class="kw">_</span>) =&gt; {
-<a href=#28 id=28 data-nosnippet>28</a>            social::execute(command, player_id, world)
-<a href=#29 id=29 data-nosnippet>29</a>        }
-<a href=#30 id=30 data-nosnippet>30</a>        Command::Incantation =&gt; {
-<a href=#31 id=31 data-nosnippet>31</a>            incantation::execute(player_id, world)
-<a href=#32 id=32 data-nosnippet>32</a>        }
-<a href=#33 id=33 data-nosnippet>33</a>        Command::ConnectNbr =&gt; {
-<a href=#34 id=34 data-nosnippet>34</a>            <span class="kw">let </span>team_name = {
-<a href=#35 id=35 data-nosnippet>35</a>                <span class="kw">let </span>player = world.players.get(<span class="kw-2">&amp;</span>player_id).expect(<span class="string">"Player should exist"</span>);
-<a href=#36 id=36 data-nosnippet>36</a>                player.team.clone()
-<a href=#37 id=37 data-nosnippet>37</a>            };
-<a href=#38 id=38 data-nosnippet>38</a>            <span class="kw">let </span>initial_slots = <span class="kw-2">*</span>world.team_slots.get(<span class="kw-2">&amp;</span>team_name).unwrap_or(<span class="kw-2">&amp;</span><span class="number">0</span>);
-<a href=#39 id=39 data-nosnippet>39</a>            <span class="kw">let </span>egg_slots = world.eggs.iter().filter(|e| e.team == team_name).count();
-<a href=#40 id=40 data-nosnippet>40</a>            <span class="macro">format!</span>(<span class="string">"{}\n"</span>, initial_slots + egg_slots)
-<a href=#41 id=41 data-nosnippet>41</a>        }
-<a href=#42 id=42 data-nosnippet>42</a>
+<a href=#8 id=8 data-nosnippet>8</a><span class="kw">use </span><span class="kw">crate</span>::game::player::Direction;
+<a href=#9 id=9 data-nosnippet>9</a>
+<a href=#10 id=10 data-nosnippet>10</a><span class="doccomment">/// Handles the immediate part of a command (RFC requirement).
+<a href=#11 id=11 data-nosnippet>11</a>/// Only returns a message if the command requires an immediate response.
+<a href=#12 id=12 data-nosnippet>12</a></span><span class="kw">pub fn </span>init(command: <span class="kw-2">&amp;</span>Command, player_id: usize, world: <span class="kw-2">&amp;mut </span>World) -&gt; <span class="prelude-ty">Option</span>&lt;String&gt; {
+<a href=#13 id=13 data-nosnippet>13</a>    <span class="kw">match </span>command {
+<a href=#14 id=14 data-nosnippet>14</a>        Command::Incantation =&gt; incantation::handle_start(player_id, world),
+<a href=#15 id=15 data-nosnippet>15</a>        <span class="kw">_ </span>=&gt; <span class="prelude-val">None</span>,
+<a href=#16 id=16 data-nosnippet>16</a>    }
+<a href=#17 id=17 data-nosnippet>17</a>}
+<a href=#18 id=18 data-nosnippet>18</a>
+<a href=#19 id=19 data-nosnippet>19</a><span class="doccomment">/// Handles the final execution of a command after its time delay.
+<a href=#20 id=20 data-nosnippet>20</a></span><span class="kw">pub fn </span>execute(command: Command, player_id: usize, world: <span class="kw-2">&amp;mut </span>World) -&gt; String {
+<a href=#21 id=21 data-nosnippet>21</a>    <span class="kw">match </span>command {
+<a href=#22 id=22 data-nosnippet>22</a>        Command::Forward | Command::Right | Command::Left | Command::Eject =&gt; {
+<a href=#23 id=23 data-nosnippet>23</a>            movement::execute(command, player_id, world)
+<a href=#24 id=24 data-nosnippet>24</a>        }
+<a href=#25 id=25 data-nosnippet>25</a>        Command::Look | Command::Inventory | Command::Take(<span class="kw">_</span>) | Command::Set(<span class="kw">_</span>) | Command::Fork =&gt; {
+<a href=#26 id=26 data-nosnippet>26</a>            interaction::execute(command, player_id, world)
+<a href=#27 id=27 data-nosnippet>27</a>        }
+<a href=#28 id=28 data-nosnippet>28</a>        Command::Broadcast(<span class="kw">_</span>) =&gt; {
+<a href=#29 id=29 data-nosnippet>29</a>            social::execute(command, player_id, world)
+<a href=#30 id=30 data-nosnippet>30</a>        }
+<a href=#31 id=31 data-nosnippet>31</a>        Command::Incantation =&gt; {
+<a href=#32 id=32 data-nosnippet>32</a>            incantation::execute(player_id, world)
+<a href=#33 id=33 data-nosnippet>33</a>        }
+<a href=#34 id=34 data-nosnippet>34</a>        Command::ConnectNbr =&gt; {
+<a href=#35 id=35 data-nosnippet>35</a>            <span class="kw">let </span>team_name = {
+<a href=#36 id=36 data-nosnippet>36</a>                <span class="kw">let </span>player = world.players.get(<span class="kw-2">&amp;</span>player_id).expect(<span class="string">"Player should exist"</span>);
+<a href=#37 id=37 data-nosnippet>37</a>                player.team.clone()
+<a href=#38 id=38 data-nosnippet>38</a>            };
+<a href=#39 id=39 data-nosnippet>39</a>            <span class="kw">let </span>initial_slots = <span class="kw-2">*</span>world.team_slots.get(<span class="kw-2">&amp;</span>team_name).unwrap_or(<span class="kw-2">&amp;</span><span class="number">0</span>);
+<a href=#40 id=40 data-nosnippet>40</a>            <span class="kw">let </span>egg_slots = world.eggs.iter().filter(|e| e.team == team_name).count();
+<a href=#41 id=41 data-nosnippet>41</a>            <span class="macro">format!</span>(<span class="string">"{}\n"</span>, initial_slots + egg_slots)
+<a href=#42 id=42 data-nosnippet>42</a>        }
 <a href=#43 id=43 data-nosnippet>43</a>        <span class="kw">_ </span>=&gt; <span class="string">"ok\n"</span>.to_string(),
 <a href=#44 id=44 data-nosnippet>44</a>    }
 <a href=#45 id=45 data-nosnippet>45</a>}
+<a href=#46 id=46 data-nosnippet>46</a>
+<a href=#47 id=47 data-nosnippet>47</a><span class="doccomment">/// Calculates the relative direction (1-8) of a sound source on a toroidal map.
+<a href=#48 id=48 data-nosnippet>48</a>/// 
+<a href=#49 id=49 data-nosnippet>49</a>/// This implementation uses the **Minimum Image Convention** algorithm.
+<a href=#50 id=50 data-nosnippet>50</a>/// 
+<a href=#51 id=51 data-nosnippet>51</a>/// ### The Algorithm: Minimum Image Convention
+<a href=#52 id=52 data-nosnippet>52</a>/// In a periodic (toroidal) world, a sound source has an infinite number of "images" 
+<a href=#53 id=53 data-nosnippet>53</a>/// due to the map wrapping around. This algorithm ensures we always calculate the 
+<a href=#54 id=54 data-nosnippet>54</a>/// path to the *closest* image of the sender.
+<a href=#55 id=55 data-nosnippet>55</a>/// 
+<a href=#56 id=56 data-nosnippet>56</a>/// 1. **Shortest Vector**: We calculate the raw distance `dx` and `dy`. If a distance 
+<a href=#57 id=57 data-nosnippet>57</a>///    is greater than half the world size, we "wrap" it by subtracting/adding the 
+<a href=#58 id=58 data-nosnippet>58</a>///    full world size. This gives us the shortest possible vector `(dx, dy)` on a torus.
+<a href=#59 id=59 data-nosnippet>59</a>/// 
+<a href=#60 id=60 data-nosnippet>60</a>/// 2. **Trigonometry**: We use `atan2(dx, -dy)` to convert this vector into a 
+<a href=#61 id=61 data-nosnippet>61</a>///    geographic angle where 0° is North (upward in our grid).
+<a href=#62 id=62 data-nosnippet>62</a>/// 
+<a href=#63 id=63 data-nosnippet>63</a>/// 3. **Compass Mapping**: The angle is mapped to the RFC's 1-8 compass (8 slices of 45°).
+<a href=#64 id=64 data-nosnippet>64</a>/// 
+<a href=#65 id=65 data-nosnippet>65</a>/// 4. **Receiver Relativity**: Finally, we adjust the absolute direction by the 
+<a href=#66 id=66 data-nosnippet>66</a>///    receiver's current orientation (`rdir`) so that '1' always represents the 
+<a href=#67 id=67 data-nosnippet>67</a>///    tile directly in front of them.
+<a href=#68 id=68 data-nosnippet>68</a></span><span class="kw">pub fn </span>compute_direction(rx: i32, ry: i32, rdir: Direction, sx: i32, sy: i32, w: i32, h: i32) -&gt; u32 {
+<a href=#69 id=69 data-nosnippet>69</a>    <span class="kw">if </span>rx == sx &amp;&amp; ry == sy { <span class="kw">return </span><span class="number">0</span>; }
+<a href=#70 id=70 data-nosnippet>70</a>
+<a href=#71 id=71 data-nosnippet>71</a>    <span class="kw">let </span><span class="kw-2">mut </span>dx = sx - rx;
+<a href=#72 id=72 data-nosnippet>72</a>    <span class="kw">let </span><span class="kw-2">mut </span>dy = sy - ry;
+<a href=#73 id=73 data-nosnippet>73</a>
+<a href=#74 id=74 data-nosnippet>74</a>    <span class="kw">if </span>dx.abs() &gt; w / <span class="number">2 </span>{ dx -= dx.signum() * w; }
+<a href=#75 id=75 data-nosnippet>75</a>    <span class="kw">if </span>dy.abs() &gt; h / <span class="number">2 </span>{ dy -= dy.signum() * h; }
+<a href=#76 id=76 data-nosnippet>76</a>
+<a href=#77 id=77 data-nosnippet>77</a>    <span class="kw">let </span>angle = (dx <span class="kw">as </span>f64).atan2(-dy <span class="kw">as </span>f64).to_degrees();
+<a href=#78 id=78 data-nosnippet>78</a>    <span class="kw">let </span>normalized_angle = <span class="kw">if </span>angle &lt; <span class="number">0.0 </span>{ angle + <span class="number">360.0 </span>} <span class="kw">else </span>{ angle };
+<a href=#79 id=79 data-nosnippet>79</a>
+<a href=#80 id=80 data-nosnippet>80</a>    <span class="kw">let </span>abs_k = (((normalized_angle + <span class="number">22.5</span>) % <span class="number">360.0</span>) / <span class="number">45.0</span>).floor() <span class="kw">as </span>u32 + <span class="number">1</span>;
+<a href=#81 id=81 data-nosnippet>81</a>
+<a href=#82 id=82 data-nosnippet>82</a>    <span class="kw">let </span>dir_offset = <span class="kw">match </span>rdir {
+<a href=#83 id=83 data-nosnippet>83</a>        Direction::North =&gt; <span class="number">0</span>,
+<a href=#84 id=84 data-nosnippet>84</a>        Direction::East =&gt; <span class="number">2</span>,
+<a href=#85 id=85 data-nosnippet>85</a>        Direction::South =&gt; <span class="number">4</span>,
+<a href=#86 id=86 data-nosnippet>86</a>        Direction::West =&gt; <span class="number">6</span>,
+<a href=#87 id=87 data-nosnippet>87</a>    };
+<a href=#88 id=88 data-nosnippet>88</a>
+<a href=#89 id=89 data-nosnippet>89</a>    <span class="kw">let </span>relative_k = <span class="kw">if </span>abs_k == <span class="number">0 </span>{ <span class="number">0 </span>} <span class="kw">else </span>{
+<a href=#90 id=90 data-nosnippet>90</a>        <span class="kw">let </span><span class="kw-2">mut </span>k = abs_k <span class="kw">as </span>i32 - dir_offset;
+<a href=#91 id=91 data-nosnippet>91</a>        <span class="kw">while </span>k &lt;= <span class="number">0 </span>{ k += <span class="number">8</span>; }
+<a href=#92 id=92 data-nosnippet>92</a>        k <span class="kw">as </span>u32
+<a href=#93 id=93 data-nosnippet>93</a>    };
+<a href=#94 id=94 data-nosnippet>94</a>
+<a href=#95 id=95 data-nosnippet>95</a>    relative_k
+<a href=#96 id=96 data-nosnippet>96</a>}
 </code></pre></div></section></main></body></html>

@@ -1,1 +1,1 @@
-window.SIDEBAR_ITEMS = {"fn":["compute_direction","execute"]};
+window.SIDEBAR_ITEMS = {"fn":["execute"]};
