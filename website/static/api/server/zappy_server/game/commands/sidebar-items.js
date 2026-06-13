@@ -1,1 +1,1 @@
-window.SIDEBAR_ITEMS = {"fn":["execute"],"mod":["incantation","interaction","movement","social"]};
+window.SIDEBAR_ITEMS = {"fn":["execute","init"],"mod":["incantation","interaction","movement","social"]};
