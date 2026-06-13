@@ -118,7 +118,21 @@
 <a href=#118 id=118 data-nosnippet>118</a>                <span class="string">"ko\n"</span>.to_string()
 <a href=#119 id=119 data-nosnippet>119</a>            }
 <a href=#120 id=120 data-nosnippet>120</a>        }
-<a href=#121 id=121 data-nosnippet>121</a>        <span class="kw">_ </span>=&gt; <span class="string">"ko\n"</span>.to_string(),
-<a href=#122 id=122 data-nosnippet>122</a>    }
-<a href=#123 id=123 data-nosnippet>123</a>}
+<a href=#121 id=121 data-nosnippet>121</a>        Command::Fork =&gt; {
+<a href=#122 id=122 data-nosnippet>122</a>            <span class="kw">let </span>(tx, ty, team_name) = {
+<a href=#123 id=123 data-nosnippet>123</a>                <span class="kw">let </span>player = world.players.get(<span class="kw-2">&amp;</span>player_id).expect(<span class="string">"Player should exist"</span>);
+<a href=#124 id=124 data-nosnippet>124</a>                (player.x, player.y, player.team.clone())
+<a href=#125 id=125 data-nosnippet>125</a>            };
+<a href=#126 id=126 data-nosnippet>126</a>            
+<a href=#127 id=127 data-nosnippet>127</a>            world.eggs.push(<span class="kw">crate</span>::game::world::Egg {
+<a href=#128 id=128 data-nosnippet>128</a>                x: tx,
+<a href=#129 id=129 data-nosnippet>129</a>                y: ty,
+<a href=#130 id=130 data-nosnippet>130</a>                team: team_name,
+<a href=#131 id=131 data-nosnippet>131</a>            });
+<a href=#132 id=132 data-nosnippet>132</a>            
+<a href=#133 id=133 data-nosnippet>133</a>            <span class="string">"ok\n"</span>.to_string()
+<a href=#134 id=134 data-nosnippet>134</a>        }
+<a href=#135 id=135 data-nosnippet>135</a>        <span class="kw">_ </span>=&gt; <span class="string">"ko\n"</span>.to_string(),
+<a href=#136 id=136 data-nosnippet>136</a>    }
+<a href=#137 id=137 data-nosnippet>137</a>}
 </code></pre></div></section></main></body></html>
