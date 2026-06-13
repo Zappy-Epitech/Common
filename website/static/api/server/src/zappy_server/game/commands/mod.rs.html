@@ -21,7 +21,7 @@
 <a href=#21 id=21 data-nosnippet>21</a>        Command::Forward | Command::Right | Command::Left =&gt; {
 <a href=#22 id=22 data-nosnippet>22</a>            movement::execute(command, player_id, world)
 <a href=#23 id=23 data-nosnippet>23</a>        }
-<a href=#24 id=24 data-nosnippet>24</a>        Command::Inventory | Command::Take(<span class="kw">_</span>) | Command::Set(<span class="kw">_</span>) =&gt; {
+<a href=#24 id=24 data-nosnippet>24</a>        Command::Look | Command::Inventory | Command::Take(<span class="kw">_</span>) | Command::Set(<span class="kw">_</span>) =&gt; {
 <a href=#25 id=25 data-nosnippet>25</a>            interaction::execute(command, player_id, world)
 <a href=#26 id=26 data-nosnippet>26</a>        }
 <a href=#27 id=27 data-nosnippet>27</a>        Command::Broadcast(<span class="kw">_</span>) =&gt; {
