@@ -1,1 +1,1 @@
-window.SIDEBAR_ITEMS = {"enum":["Command"],"struct":["PendingCommand"]};
+window.SIDEBAR_ITEMS = {"enum":["Command"],"mod":["gui"],"struct":["PendingCommand"]};
