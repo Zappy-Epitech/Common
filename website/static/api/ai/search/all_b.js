@@ -1,14 +1,8 @@
 var searchData=
 [
-  ['parseinventory_0',['parseInventory',['../GameLogic_8cpp.html#aa02472a024b1e66f94d86e53f8576c9c',1,'GameLogic.cpp']]],
-  ['parselook_1',['parseLook',['../GameLogic_8cpp.html#a1dd14f591eff5dea91185b734b85db43',1,'GameLogic.cpp']]],
-  ['phiras_2',['phiras',['../structInventory.html#a8f58c2f93cf0932370cdd63bbf288a51',1,'Inventory::phiras'],['../structUpgradeCost.html#a075dcca2d98461180ae761954d498924',1,'UpgradeCost::phiras'],['../Ressource_8hpp.html#a09526742abc3e0feb0a61b36291e1b8ca5580e70ebf42665014dca5cfdaa11b82',1,'PHIRAS:&#160;Ressource.hpp']]],
-  ['player_3',['player',['../classPlayer.html',1,'Player'],['../classPlayer.html#ab941a0cae7652bdc82ead5822624ef00',1,'Player::Player()']]],
-  ['player_2ecpp_4',['Player.cpp',['../Player_8cpp.html',1,'']]],
-  ['player_2ehpp_5',['Player.hpp',['../Player_8hpp.html',1,'']]],
-  ['poll_5ferror_6',['POLL_ERROR',['../Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aa29422ea3bfa0fde21ed413e6f9d7b0d9',1,'Errors.hpp']]],
-  ['pollcheck_7',['pollCheck',['../classNetwork.html#a0074dd651e820d131dfe450ef02a3fc0',1,'Network']]],
-  ['position_8',['position',['../structposition.html',1,'']]],
-  ['processgamelogic_9',['processGameLogic',['../classPlayer.html#a44e3fd5212cffab67dba097a984732ef',1,'Player']]],
-  ['processsendqueue_10',['processSendQueue',['../classNetwork.html#ab8d838ca7365828935c8bfebc95a6c0b',1,'Network']]]
+  ['network_0',['network',['../classNetwork.html',1,'Network'],['../classNetwork.html#ae7392b537c89c7ed6adecd495bb75ae2',1,'Network::Network(uint port, const std::string &amp;ip)'],['../classNetwork.html#a3eccb7fe2c192bf6f13482297783b1b8',1,'Network::Network(const Network &amp;)=delete']]],
+  ['network_2ecpp_1',['Network.cpp',['../Network_8cpp.html',1,'']]],
+  ['network_2ehpp_2',['Network.hpp',['../Network_8hpp.html',1,'']]],
+  ['no_5fremaining_5fslots_3',['NO_REMAINING_SLOTS',['../Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aa744dbb7306bd36220b040c4e39708f5d',1,'Errors.hpp']]],
+  ['no_5fwelcome_4',['NO_WELCOME',['../Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aab3b81dfb2a25e41b80648893d91c1c49',1,'Errors.hpp']]]
 ];

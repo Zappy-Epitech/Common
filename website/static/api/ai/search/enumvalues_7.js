@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['sibur_0',['SIBUR',['../Ressource_8hpp.html#a09526742abc3e0feb0a61b36291e1b8ca38d54bcfbd316bc737fa680e796e60d5',1,'Ressource.hpp']]],
-  ['socket_5ferror_1',['SOCKET_ERROR',['../Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aad8d4e8b0e41222647ad1b740fe6deb4d',1,'Errors.hpp']]]
+  ['no_5fremaining_5fslots_0',['NO_REMAINING_SLOTS',['../Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aa744dbb7306bd36220b040c4e39708f5d',1,'Errors.hpp']]],
+  ['no_5fwelcome_1',['NO_WELCOME',['../Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aab3b81dfb2a25e41b80648893d91c1c49',1,'Errors.hpp']]]
 ];

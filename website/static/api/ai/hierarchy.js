@@ -7,5 +7,6 @@ var hierarchy =
     [ "Network", "classNetwork.html", null ],
     [ "Player", "classPlayer.html", null ],
     [ "position", "structposition.html", null ],
+    [ "TestServer", "structTestServer.html", null ],
     [ "UpgradeCost", "structUpgradeCost.html", null ]
 ];

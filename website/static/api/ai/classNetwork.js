@@ -1,9 +1,12 @@
 var classNetwork =
 [
     [ "Network", "classNetwork.html#ae7392b537c89c7ed6adecd495bb75ae2", null ],
+    [ "~Network", "classNetwork.html#a7a4e19cdb4bf0c7ecf82baa643831492", null ],
+    [ "Network", "classNetwork.html#a3eccb7fe2c192bf6f13482297783b1b8", null ],
     [ "addToSendQueue", "classNetwork.html#a70d18db9d6b0602b77cc1cee9f9d903e", null ],
     [ "clearMessageQueue", "classNetwork.html#a3d341f7d934478ab72b3bff66f96ef9d", null ],
     [ "getMessageQueue", "classNetwork.html#a76d49969854b8ca3020c86366ae63429", null ],
+    [ "operator=", "classNetwork.html#a8e77568bdabe6af92481a663bccdc40f", null ],
     [ "pollCheck", "classNetwork.html#a0074dd651e820d131dfe450ef02a3fc0", null ],
     [ "processSendQueue", "classNetwork.html#ab8d838ca7365828935c8bfebc95a6c0b", null ],
     [ "receiveMessage", "classNetwork.html#a6fca7071e0849e4f04d03a3c521a8011", null ],

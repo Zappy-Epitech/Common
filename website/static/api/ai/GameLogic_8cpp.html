@@ -99,39 +99,51 @@ $(document).ready(function(){initNavTree('GameLogic_8cpp.html',''); initResizabl
 
 <p>Implementation of the player's per-tick decision making.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="Player_8hpp_source.html">Player/Player.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="Errors_8hpp_source.html">Errors.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Player_8hpp_source.html">Player/Player.hpp</a>&quot;</code><br />
+<code>#include &lt;cctype&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for GameLogic.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="GameLogic_8cpp__incl.png" border="0" usemap="#aalgo_2src_2Player_2GameLogic_2GameLogic_8cpp" alt=""/></div>
 <map name="aalgo_2src_2Player_2GameLogic_2GameLogic_8cpp" id="aalgo_2src_2Player_2GameLogic_2GameLogic_8cpp">
-<area shape="rect" title="Implementation of the player&#39;s per&#45;tick decision making." alt="" coords="443,5,638,45"/>
-<area shape="rect" href="Player_8hpp.html" title="The AI player: its state and main decision loop." alt="" coords="341,93,476,119"/>
-<area shape="poly" title=" " alt="" coords="510,48,442,88,439,84,508,43"/>
-<area shape="rect" title=" " alt="" coords="501,93,581,119"/>
-<area shape="poly" title=" " alt="" coords="543,46,543,79,538,79,538,46"/>
-<area shape="rect" title=" " alt="" coords="605,93,679,119"/>
-<area shape="poly" title=" " alt="" coords="567,43,617,82,614,87,564,48"/>
-<area shape="rect" href="Network_8hpp.html" title="TCP client that talks to the Zappy server." alt="" coords="207,167,371,192"/>
-<area shape="poly" title=" " alt="" coords="391,121,322,162,319,157,388,116"/>
-<area shape="rect" title=" " alt="" coords="5,240,92,265"/>
-<area shape="poly" title=" " alt="" coords="354,121,278,141,196,169,131,202,78,235,75,230,129,197,194,164,276,136,352,116"/>
-<area shape="rect" title=" " alt="" coords="451,240,510,265"/>
-<area shape="poly" title=" " alt="" coords="413,118,421,152,436,191,463,228,458,231,432,193,416,153,408,119"/>
-<area shape="rect" href="Ressource_8hpp.html" title="Resource types and elevation (upgrade) cost tables for the Zappy AI." alt="" coords="446,167,563,192"/>
-<area shape="poly" title=" " alt="" coords="426,117,479,156,476,160,423,121"/>
-<area shape="rect" title=" " alt="" coords="587,167,638,192"/>
-<area shape="poly" title=" " alt="" coords="442,116,575,162,574,167,441,121"/>
-<area shape="poly" title=" " alt="" coords="251,195,102,239,100,233,249,189"/>
-<area shape="rect" title=" " alt="" coords="117,240,213,265"/>
-<area shape="poly" title=" " alt="" coords="270,194,198,235,195,231,267,190"/>
-<area shape="poly" title=" " alt="" coords="320,190,439,233,437,238,319,195"/>
-<area shape="rect" title=" " alt="" coords="237,240,340,265"/>
-<area shape="poly" title=" " alt="" coords="291,192,291,226,286,226,286,192"/>
-<area shape="rect" title=" " alt="" coords="364,240,427,265"/>
-<area shape="poly" title=" " alt="" coords="307,190,368,230,365,235,304,194"/>
+<area shape="rect" title="Implementation of the player&#39;s per&#45;tick decision making." alt="" coords="325,5,519,45"/>
+<area shape="rect" href="Errors_8hpp.html" title="Exception type and error catalogue used across the Zappy AI." alt="" coords="109,93,197,119"/>
+<area shape="poly" title=" " alt="" coords="358,48,206,92,204,87,357,43"/>
+<area shape="rect" title=" " alt="" coords="229,240,287,265"/>
+<area shape="poly" title=" " alt="" coords="350,48,313,67,283,95,266,127,258,162,256,197,257,226,252,226,251,197,253,161,261,125,279,92,310,63,348,43"/>
+<area shape="rect" href="Player_8hpp.html" title="The AI player: its state and main decision loop." alt="" coords="293,93,428,119"/>
+<area shape="poly" title=" " alt="" coords="409,47,380,84,376,81,405,44"/>
+<area shape="rect" title=" " alt="" coords="452,93,517,119"/>
+<area shape="poly" title=" " alt="" coords="439,44,469,81,465,84,435,47"/>
+<area shape="rect" title=" " alt="" coords="542,93,622,119"/>
+<area shape="poly" title=" " alt="" coords="461,43,547,85,545,90,459,48"/>
+<area shape="rect" title=" " alt="" coords="646,93,721,119"/>
+<area shape="poly" title=" " alt="" coords="485,43,634,87,632,92,484,48"/>
+<area shape="rect" title=" " alt="" coords="5,167,92,192"/>
+<area shape="poly" title=" " alt="" coords="137,121,79,161,76,156,134,116"/>
+<area shape="rect" title=" " alt="" coords="167,167,218,192"/>
+<area shape="poly" title=" " alt="" coords="162,118,182,153,177,156,157,120"/>
+<area shape="poly" title=" " alt="" coords="152,119,149,153,151,173,158,191,169,205,184,218,217,236,215,241,181,222,165,209,153,193,146,174,143,153,147,118"/>
+<area shape="poly" title=" " alt="" coords="335,121,232,164,230,159,333,116"/>
+<area shape="poly" title=" " alt="" coords="354,121,276,230,272,227,350,118"/>
+<area shape="rect" href="Network_8hpp.html" title="TCP client that talks to the Zappy server." alt="" coords="395,167,559,192"/>
+<area shape="poly" title=" " alt="" coords="381,116,447,157,445,162,378,121"/>
+<area shape="rect" title=" " alt="" coords="313,240,400,265"/>
+<area shape="poly" title=" " alt="" coords="363,119,360,226,355,226,358,119"/>
+<area shape="rect" href="Ressource_8hpp.html" title="Resource types and elevation (upgrade) cost tables for the Zappy AI." alt="" coords="583,167,701,192"/>
+<area shape="poly" title=" " alt="" coords="407,116,584,161,583,166,405,121"/>
+<area shape="poly" title=" " alt="" coords="442,195,301,240,300,235,441,189"/>
+<area shape="poly" title=" " alt="" coords="459,194,390,235,387,230,456,190"/>
+<area shape="rect" title=" " alt="" coords="425,240,521,265"/>
+<area shape="poly" title=" " alt="" coords="479,192,477,227,471,226,473,192"/>
+<area shape="rect" title=" " alt="" coords="545,240,648,265"/>
+<area shape="poly" title=" " alt="" coords="497,190,566,230,564,235,495,194"/>
+<area shape="rect" title=" " alt="" coords="672,240,735,265"/>
+<area shape="poly" title=" " alt="" coords="514,189,660,235,658,240,512,195"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -146,10 +158,47 @@ Functions</h2></td></tr>
 <tr class="memitem:aa02472a024b1e66f94d86e53f8576c9c" id="r_aa02472a024b1e66f94d86e53f8576c9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GameLogic_8cpp.html#aa02472a024b1e66f94d86e53f8576c9c">parseInventory</a> (<a class="el" href="structInventory.html">Inventory</a> &amp;inventory, const std::string &amp;res)</td></tr>
 <tr class="memdesc:aa02472a024b1e66f94d86e53f8576c9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates an inventory in place from a server <code><a class="el" href="structInventory.html" title="The quantity of every resource a player currently holds.">Inventory</a></code> response.  <br /></td></tr>
 <tr class="separator:aa02472a024b1e66f94d86e53f8576c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19d1eda9084a2e436f97fb3aed5dbfd0" id="r_a19d1eda9084a2e436f97fb3aed5dbfd0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GameLogic_8cpp.html#a19d1eda9084a2e436f97fb3aed5dbfd0">parseConnectNbr</a> (const std::string &amp;res)</td></tr>
+<tr class="memdesc:a19d1eda9084a2e436f97fb3aed5dbfd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a server <code>Connect_nbr</code> response into a slot count.  <br /></td></tr>
+<tr class="separator:a19d1eda9084a2e436f97fb3aed5dbfd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation of the player's per-tick decision making. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a19d1eda9084a2e436f97fb3aed5dbfd0" name="a19d1eda9084a2e436f97fb3aed5dbfd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19d1eda9084a2e436f97fb3aed5dbfd0">&#9670;&#160;</a></span>parseConnectNbr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int parseConnectNbr </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>res</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parses a server <code>Connect_nbr</code> response into a slot count. </p>
+<p>A trailing newline, if present, is stripped first. The remaining text must be non-empty and contain only decimal digits, so signs and whitespace are rejected.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">res</td><td>The raw response, e.g. <code>"3\n"</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of free team connection slots reported by the server. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classZappyException.html" title="Exception carrying a human-readable message for a given ErrorType.">ZappyException</a></td><td>with <a class="el" href="Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aa35534217aed6bd53b42b47e31c5f0aff">INVALID_CONNECT_NBR</a> if the response is empty or contains a non-digit character. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aa02472a024b1e66f94d86e53f8576c9c" name="aa02472a024b1e66f94d86e53f8576c9c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa02472a024b1e66f94d86e53f8576c9c">&#9670;&#160;</a></span>parseInventory()</h2>
 

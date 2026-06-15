@@ -106,8 +106,20 @@ $(document).ready(function(){initNavTree('classNetwork.html',''); initResizable(
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae7392b537c89c7ed6adecd495bb75ae2" id="r_ae7392b537c89c7ed6adecd495bb75ae2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNetwork.html#ae7392b537c89c7ed6adecd495bb75ae2">Network</a> (uint port, const std::string &amp;ip)</td></tr>
-<tr class="memdesc:ae7392b537c89c7ed6adecd495bb75ae2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the client socket and prepares the server address.  <br /></td></tr>
+<tr class="memdesc:ae7392b537c89c7ed6adecd495bb75ae2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolves the server, creates the socket, and connects to it.  <br /></td></tr>
 <tr class="separator:ae7392b537c89c7ed6adecd495bb75ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a4e19cdb4bf0c7ecf82baa643831492" id="r_a7a4e19cdb4bf0c7ecf82baa643831492"><td class="memItemLeft" align="right" valign="top"><a id="a7a4e19cdb4bf0c7ecf82baa643831492" name="a7a4e19cdb4bf0c7ecf82baa643831492"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~Network</b> ()</td></tr>
+<tr class="memdesc:a7a4e19cdb4bf0c7ecf82baa643831492"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the socket if it is open. <br /></td></tr>
+<tr class="separator:a7a4e19cdb4bf0c7ecf82baa643831492"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eccb7fe2c192bf6f13482297783b1b8" id="r_a3eccb7fe2c192bf6f13482297783b1b8"><td class="memItemLeft" align="right" valign="top"><a id="a3eccb7fe2c192bf6f13482297783b1b8" name="a3eccb7fe2c192bf6f13482297783b1b8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Network</b> (const <a class="el" href="classNetwork.html">Network</a> &amp;)=delete</td></tr>
+<tr class="memdesc:a3eccb7fe2c192bf6f13482297783b1b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non-copyable: owns a socket fd. <br /></td></tr>
+<tr class="separator:a3eccb7fe2c192bf6f13482297783b1b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e77568bdabe6af92481a663bccdc40f" id="r_a8e77568bdabe6af92481a663bccdc40f"><td class="memItemLeft" align="right" valign="top"><a id="a8e77568bdabe6af92481a663bccdc40f" name="a8e77568bdabe6af92481a663bccdc40f"></a>
+<a class="el" href="classNetwork.html">Network</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classNetwork.html">Network</a> &amp;)=delete</td></tr>
+<tr class="memdesc:a8e77568bdabe6af92481a663bccdc40f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non-copyable: owns a socket fd. <br /></td></tr>
+<tr class="separator:a8e77568bdabe6af92481a663bccdc40f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2205cbf6d16ff898bc741658113a081" id="r_ac2205cbf6d16ff898bc741658113a081"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNetwork.html#ac2205cbf6d16ff898bc741658113a081">sendMessage</a> (const std::string &amp;message)</td></tr>
 <tr class="memdesc:ac2205cbf6d16ff898bc741658113a081"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a message to the server immediately.  <br /></td></tr>
 <tr class="separator:ac2205cbf6d16ff898bc741658113a081"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -115,7 +127,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a6fca7071e0849e4f04d03a3c521a8011"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a single chunk of data from the socket.  <br /></td></tr>
 <tr class="separator:a6fca7071e0849e4f04d03a3c521a8011"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0074dd651e820d131dfe450ef02a3fc0" id="r_a0074dd651e820d131dfe450ef02a3fc0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNetwork.html#a0074dd651e820d131dfe450ef02a3fc0">pollCheck</a> (bool block=false)</td></tr>
-<tr class="memdesc:a0074dd651e820d131dfe450ef02a3fc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Polls the socket once and updates internal state.  <br /></td></tr>
+<tr class="memdesc:a0074dd651e820d131dfe450ef02a3fc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Polls the socket once and pumps both queues.  <br /></td></tr>
 <tr class="separator:a0074dd651e820d131dfe450ef02a3fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76d49969854b8ca3020c86366ae63429" id="r_a76d49969854b8ca3020c86366ae63429"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNetwork.html#a76d49969854b8ca3020c86366ae63429">getMessageQueue</a> ()</td></tr>
 <tr class="memdesc:a76d49969854b8ca3020c86366ae63429"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accesses the inbound message queue.  <br /></td></tr>
@@ -165,17 +177,17 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>processSendQueue</b> 
       </table>
 </div><div class="memdoc">
 
-<p>Creates the client socket and prepares the server address. </p>
+<p>Resolves the server, creates the socket, and connects to it. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">port</td><td>The server port to target. </td></tr>
-    <tr><td class="paramname">ip</td><td>The server IP address in dotted-decimal notation. </td></tr>
+    <tr><td class="paramname">ip</td><td>The server host: a hostname (e.g. "localhost") or a dotted-decimal IP address. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classZappyException.html" title="Exception carrying a human-readable message for a given ErrorType.">ZappyException</a></td><td>with <a class="el" href="Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aad8d4e8b0e41222647ad1b740fe6deb4d">SOCKET_ERROR</a> if the socket cannot be created. </td></tr>
+    <tr><td class="paramname"><a class="el" href="classZappyException.html" title="Exception carrying a human-readable message for a given ErrorType.">ZappyException</a></td><td>with <a class="el" href="Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aacc6fddadc193d1b00dcd1d4c3c567e86">HOST_RESOLUTION_ERROR</a> if the host/port cannot be resolved, <a class="el" href="Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aad8d4e8b0e41222647ad1b740fe6deb4d">SOCKET_ERROR</a> if the socket cannot be created, or <a class="el" href="Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aadf57e5692cf9e34f39bab81b40fcdbc0">CONNECTION_FAILED</a> if the connection fails. </td></tr>
   </table>
   </dd>
 </dl>
@@ -245,8 +257,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>processSendQueue</b> 
       </table>
 </div><div class="memdoc">
 
-<p>Polls the socket once and updates internal state. </p>
-<p>Sets the writable flag and, when data is available, appends the received message to the inbound queue. </p><dl class="exception"><dt>Exceptions</dt><dd>
+<p>Polls the socket once and pumps both queues. </p>
+<p>Waits for readiness (blocking when <code>block</code> is true). When the socket is writable and there are queued outbound messages, flushes them via <a class="el" href="classNetwork.html#ab8d838ca7365828935c8bfebc95a6c0b">processSendQueue</a>. When data is available, appends the received message to the inbound queue. Outbound interest is only registered while _sendQueue is non-empty, so a blocking call with nothing to send waits on input rather than spinning. </p><dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname"><a class="el" href="classZappyException.html" title="Exception carrying a human-readable message for a given ErrorType.">ZappyException</a></td><td>with <a class="el" href="Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aa29422ea3bfa0fde21ed413e6f9d7b0d9">POLL_ERROR</a> on poll failure or <a class="el" href="Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aa00bc8d8fa2a4ef22ac8d9aa337802707">CONNECTION_LOST</a> if the peer hangs up or errors. </td></tr>
   </table>
@@ -271,7 +283,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>processSendQueue</b> 
 </div><div class="memdoc">
 
 <p>Reads a single chunk of data from the socket. </p>
-<dl class="section return"><dt>Returns</dt><dd>The bytes read, or an empty string on read error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The bytes read. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classZappyException.html" title="Exception carrying a human-readable message for a given ErrorType.">ZappyException</a></td><td>with <a class="el" href="Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aa00bc8d8fa2a4ef22ac8d9aa337802707">CONNECTION_LOST</a> if the peer closed the connection (0 bytes) or the read failed. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

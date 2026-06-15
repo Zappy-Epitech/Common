@@ -101,38 +101,43 @@ $(document).ready(function(){initNavTree('Player_8cpp.html',''); initResizable()
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="Player_8hpp_source.html">Player.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Errors_8hpp_source.html">Errors.hpp</a>&quot;</code><br />
+<code>#include &lt;array&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Player.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="Player_8cpp__incl.png" border="0" usemap="#aalgo_2src_2Player_2Player_8cpp" alt=""/></div>
 <map name="aalgo_2src_2Player_2Player_8cpp" id="aalgo_2src_2Player_2Player_8cpp">
-<area shape="rect" title="Implementation of the Player loop and elevation helpers." alt="" coords="410,5,599,31"/>
-<area shape="rect" href="Player_8hpp.html" title="The AI player: its state and main decision loop." alt="" coords="403,79,494,104"/>
-<area shape="poly" title=" " alt="" coords="498,33,468,69,464,66,493,29"/>
-<area shape="rect" href="Errors_8hpp.html" title="Exception type and error catalogue used across the Zappy AI." alt="" coords="563,79,651,104"/>
-<area shape="poly" title=" " alt="" coords="523,28,581,68,578,73,520,33"/>
-<area shape="rect" href="Network_8hpp.html" title="TCP client that talks to the Zappy server." alt="" coords="176,152,340,177"/>
-<area shape="poly" title=" " alt="" coords="419,107,303,149,301,144,417,102"/>
+<area shape="rect" title="Implementation of the Player loop and elevation helpers." alt="" coords="582,5,771,31"/>
+<area shape="rect" href="Player_8hpp.html" title="The AI player: its state and main decision loop." alt="" coords="337,79,427,104"/>
+<area shape="poly" title=" " alt="" coords="630,33,442,78,440,73,629,28"/>
+<area shape="rect" title=" " alt="" coords="489,225,547,251"/>
+<area shape="poly" title=" " alt="" coords="685,30,697,58,708,97,709,139,705,160,695,179,667,206,632,223,596,233,562,238,561,233,595,228,630,218,664,201,691,176,700,158,704,139,702,98,692,60,680,32"/>
+<area shape="rect" href="Errors_8hpp.html" title="Exception type and error catalogue used across the Zappy AI." alt="" coords="551,79,639,104"/>
+<area shape="poly" title=" " alt="" coords="665,33,621,72,617,68,662,29"/>
+<area shape="rect" title=" " alt="" coords="755,79,811,104"/>
+<area shape="poly" title=" " alt="" coords="695,28,756,69,753,73,692,33"/>
+<area shape="rect" href="Network_8hpp.html" title="TCP client that talks to the Zappy server." alt="" coords="87,152,251,177"/>
+<area shape="poly" title=" " alt="" coords="349,107,217,150,215,145,347,101"/>
 <area shape="rect" title=" " alt="" coords="5,225,92,251"/>
-<area shape="poly" title=" " alt="" coords="403,99,292,115,227,132,164,154,114,185,73,218,69,213,111,180,162,150,225,126,291,110,402,93"/>
-<area shape="rect" title=" " alt="" coords="451,225,510,251"/>
-<area shape="poly" title=" " alt="" coords="437,106,423,120,410,138,403,157,406,176,423,199,446,216,443,221,419,203,401,178,398,157,405,136,419,117,433,102"/>
-<area shape="rect" href="Ressource_8hpp.html" title="Resource types and elevation (upgrade) cost tables for the Zappy AI." alt="" coords="415,152,533,177"/>
-<area shape="poly" title=" " alt="" coords="455,103,468,138,463,140,450,105"/>
-<area shape="rect" title=" " alt="" coords="557,152,607,177"/>
-<area shape="poly" title=" " alt="" coords="471,102,549,143,547,148,469,106"/>
-<area shape="poly" title=" " alt="" coords="225,180,97,223,95,218,224,175"/>
-<area shape="rect" title=" " alt="" coords="117,225,213,251"/>
-<area shape="poly" title=" " alt="" coords="245,179,192,219,189,215,241,175"/>
-<area shape="poly" title=" " alt="" coords="295,175,439,221,437,226,293,180"/>
-<area shape="rect" title=" " alt="" coords="237,225,340,251"/>
-<area shape="poly" title=" " alt="" coords="266,177,281,212,276,214,261,179"/>
-<area shape="rect" title=" " alt="" coords="364,225,427,251"/>
-<area shape="poly" title=" " alt="" coords="281,175,362,217,360,221,279,180"/>
-<area shape="poly" title=" " alt="" coords="616,103,628,138,629,159,622,179,602,200,577,216,525,233,523,228,575,211,598,196,617,176,623,158,623,139,611,105"/>
-<area shape="poly" title=" " alt="" coords="606,105,593,140,588,138,601,103"/>
-<area shape="rect" title=" " alt="" coords="683,152,769,177"/>
-<area shape="poly" title=" " alt="" coords="628,102,696,142,693,147,625,106"/>
+<area shape="poly" title=" " alt="" coords="337,98,269,105,191,116,121,132,94,142,76,154,66,166,59,181,52,212,47,211,54,179,61,163,72,150,92,138,120,127,190,111,268,100,336,93"/>
+<area shape="poly" title=" " alt="" coords="394,103,457,175,497,214,493,218,453,179,390,106"/>
+<area shape="rect" href="Ressource_8hpp.html" title="Resource types and elevation (upgrade) cost tables for the Zappy AI." alt="" coords="275,152,393,177"/>
+<area shape="poly" title=" " alt="" coords="376,106,352,142,347,139,372,103"/>
+<area shape="rect" title=" " alt="" coords="467,152,518,177"/>
+<area shape="poly" title=" " alt="" coords="401,102,464,142,461,147,398,106"/>
+<area shape="poly" title=" " alt="" coords="151,180,82,220,79,216,148,175"/>
+<area shape="rect" title=" " alt="" coords="203,225,299,251"/>
+<area shape="poly" title=" " alt="" coords="184,175,229,214,226,218,180,179"/>
+<area shape="poly" title=" " alt="" coords="225,175,476,225,475,231,224,180"/>
+<area shape="rect" title=" " alt="" coords="324,225,427,251"/>
+<area shape="poly" title=" " alt="" coords="203,175,330,218,328,223,201,180"/>
+<area shape="rect" title=" " alt="" coords="116,225,179,251"/>
+<area shape="poly" title=" " alt="" coords="168,178,157,213,152,211,163,177"/>
+<area shape="poly" title=" " alt="" coords="591,106,533,215,528,212,587,103"/>
+<area shape="poly" title=" " alt="" coords="580,106,522,146,519,142,577,102"/>
+<area shape="rect" title=" " alt="" coords="593,152,680,177"/>
+<area shape="poly" title=" " alt="" coords="604,103,625,139,621,141,600,106"/>
 </map>
 </div>
 </div><table class="memberdecls">

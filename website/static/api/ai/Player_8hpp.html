@@ -93,7 +93,8 @@ $(document).ready(function(){initNavTree('Player_8hpp.html',''); initResizable()
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle"><div class="title">Player.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -136,13 +137,15 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="Player_8hpp__dep__incl.png" border="0" usemap="#aalgo_2src_2Player_2Player_8hppdep" alt=""/></div>
 <map name="aalgo_2src_2Player_2Player_8hppdep" id="aalgo_2src_2Player_2Player_8hppdep">
-<area shape="rect" title="The AI player: its state and main decision loop." alt="" coords="223,5,414,31"/>
-<area shape="rect" href="GameLogic_8cpp.html" title="Implementation of the player&#39;s per&#45;tick decision making." alt="" coords="5,79,200,119"/>
-<area shape="poly" title=" " alt="" coords="276,38,156,81,154,76,274,33"/>
-<area shape="rect" href="Player_8cpp.html" title="Implementation of the Player loop and elevation helpers." alt="" coords="224,86,413,111"/>
-<area shape="poly" title=" " alt="" coords="321,44,321,86,316,86,316,44"/>
-<area shape="rect" href="main_8cpp.html" title="Program entry point: parses CLI arguments and starts the AI." alt="" coords="438,86,575,111"/>
-<area shape="poly" title=" " alt="" coords="360,33,480,84,478,88,358,38"/>
+<area shape="rect" title="The AI player: its state and main decision loop." alt="" coords="310,5,501,31"/>
+<area shape="rect" href="Actions_8cpp.html" title="Implementation of the player&#39;s action commands." alt="" coords="5,79,176,119"/>
+<area shape="poly" title=" " alt="" coords="347,37,167,81,166,76,346,31"/>
+<area shape="rect" href="GameLogic_8cpp.html" title="Implementation of the player&#39;s per&#45;tick decision making." alt="" coords="200,79,395,119"/>
+<area shape="poly" title=" " alt="" coords="380,41,325,81,322,76,377,37"/>
+<area shape="rect" href="Player_8cpp.html" title="Implementation of the Player loop and elevation helpers." alt="" coords="419,86,608,111"/>
+<area shape="poly" title=" " alt="" coords="434,37,499,84,496,88,431,41"/>
+<area shape="rect" href="main_8cpp.html" title="Program entry point: parses CLI arguments and starts the AI." alt="" coords="633,86,770,111"/>
+<area shape="poly" title=" " alt="" coords="462,32,659,83,658,89,461,37"/>
 </map>
 </div>
 </div>
@@ -163,6 +166,14 @@ Typedefs</h2></td></tr>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>func</b> = std::function&lt; void()&gt;</td></tr>
 <tr class="memdesc:afe7b69e496c69459327eed2c2305b60f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback type used to handle a server command. <br /></td></tr>
 <tr class="separator:afe7b69e496c69459327eed2c2305b60f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a0b5e764f0ec9a407e9b8789f0259d754" id="r_a0b5e764f0ec9a407e9b8789f0259d754"><td class="memItemLeft" align="right" valign="top"><a id="a0b5e764f0ec9a407e9b8789f0259d754" name="a0b5e764f0ec9a407e9b8789f0259d754"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>MovementDirection</b> { <b>FORWARD</b>
+, <b>LEFT</b>
+, <b>RIGHT</b>
+ }</td></tr>
+<tr class="separator:a0b5e764f0ec9a407e9b8789f0259d754"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The AI player: its state and main decision loop. </p>

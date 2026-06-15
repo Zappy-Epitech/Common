@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['waitresponse_0',['waitResponse',['../classNetwork.html#a0052d9f9280e91f7d943e33e1a4f576d',1,'Network']]],
-  ['what_1',['what',['../classZappyException.html#aa00d9833a108fbf9c03a0919a2518e1c',1,'ZappyException']]]
+  ['sendmessage_0',['sendMessage',['../classNetwork.html#ac2205cbf6d16ff898bc741658113a081',1,'Network']]],
+  ['start_1',['start',['../classPlayer.html#a76e60ba5596cbc1cb7e76da2b9141a60',1,'Player']]]
 ];

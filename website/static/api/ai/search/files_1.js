@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gamelogic_2ecpp_0',['GameLogic.cpp',['../GameLogic_8cpp.html',1,'']]]
+  ['errors_2ehpp_0',['Errors.hpp',['../Errors_8hpp.html',1,'']]]
 ];

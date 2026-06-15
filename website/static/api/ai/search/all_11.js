@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['x_0',['x',['../structposition.html#aad0117268685890818989a6c0112ab8a',1,'position']]]
+  ['upgradecost_0',['UpgradeCost',['../structUpgradeCost.html',1,'']]],
+  ['upgradecosts_1',['upgradeCosts',['../Ressource_8hpp.html#aac34434cb1098468cfd9404af533e6ca',1,'Ressource.hpp']]]
 ];

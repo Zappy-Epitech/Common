@@ -122,11 +122,13 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="Errors_8hpp__dep__incl.png" border="0" usemap="#aalgo_2include_2Errors_8hppdep" alt=""/></div>
 <map name="aalgo_2include_2Errors_8hppdep" id="aalgo_2include_2Errors_8hppdep">
-<area shape="rect" title="Exception type and error catalogue used across the Zappy AI." alt="" coords="143,5,313,31"/>
-<area shape="rect" href="Network_8cpp.html" title="Implementation of the Network TCP client." alt="" coords="5,79,224,104"/>
-<area shape="poly" title=" " alt="" coords="199,40,135,81,132,76,196,36"/>
-<area shape="rect" href="Player_8cpp.html" title="Implementation of the Player loop and elevation helpers." alt="" coords="248,79,437,104"/>
-<area shape="poly" title=" " alt="" coords="259,35,325,76,323,81,256,40"/>
+<area shape="rect" title="Exception type and error catalogue used across the Zappy AI." alt="" coords="260,5,431,31"/>
+<area shape="rect" href="Network_8cpp.html" title="Implementation of the Network TCP client." alt="" coords="5,86,224,111"/>
+<area shape="poly" title=" " alt="" coords="300,38,149,89,147,83,298,33"/>
+<area shape="rect" href="GameLogic_8cpp.html" title="Implementation of the player&#39;s per&#45;tick decision making." alt="" coords="248,79,443,119"/>
+<area shape="poly" title=" " alt="" coords="348,44,348,79,343,79,343,44"/>
+<area shape="rect" href="Player_8cpp.html" title="Implementation of the Player loop and elevation helpers." alt="" coords="467,86,656,111"/>
+<area shape="poly" title=" " alt="" coords="390,33,531,83,529,88,389,38"/>
 </map>
 </div>
 </div>
@@ -142,11 +144,16 @@ Classes</h2></td></tr>
 Enumerations</h2></td></tr>
 <tr class="memitem:ab0df38968e4f03a3f1f6d6df0f31f45a" id="r_ab0df38968e4f03a3f1f6d6df0f31f45a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45a">ErrorType</a> { <br />
 &#160;&#160;<a class="el" href="Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aad8d4e8b0e41222647ad1b740fe6deb4d">SOCKET_ERROR</a>
+, <a class="el" href="Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aacc6fddadc193d1b00dcd1d4c3c567e86">HOST_RESOLUTION_ERROR</a>
+, <a class="el" href="Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aadf57e5692cf9e34f39bab81b40fcdbc0">CONNECTION_FAILED</a>
 , <a class="el" href="Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aa29422ea3bfa0fde21ed413e6f9d7b0d9">POLL_ERROR</a>
-, <a class="el" href="Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aa00bc8d8fa2a4ef22ac8d9aa337802707">CONNECTION_LOST</a>
-, <a class="el" href="Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aab3b81dfb2a25e41b80648893d91c1c49">NO_WELCOME</a>
 , <br />
-&#160;&#160;<a class="el" href="Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aa744dbb7306bd36220b040c4e39708f5d">NO_REMAINING_SLOTS</a>
+&#160;&#160;<a class="el" href="Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aa00bc8d8fa2a4ef22ac8d9aa337802707">CONNECTION_LOST</a>
+, <a class="el" href="Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aab3b81dfb2a25e41b80648893d91c1c49">NO_WELCOME</a>
+, <a class="el" href="Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aa744dbb7306bd36220b040c4e39708f5d">NO_REMAINING_SLOTS</a>
+, <a class="el" href="Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aa56189c1e24c9aabb9a2048c9436b7e1a">INVALID_DIRECTION</a>
+, <br />
+&#160;&#160;<a class="el" href="Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aa35534217aed6bd53b42b47e31c5f0aff">INVALID_CONNECT_NBR</a>
 <br />
  }</td></tr>
 <tr class="memdesc:ab0df38968e4f03a3f1f6d6df0f31f45a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Categories of fatal errors the AI can raise.  <a href="Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45a">More...</a><br /></td></tr>
@@ -171,6 +178,10 @@ Enumerations</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ab0df38968e4f03a3f1f6d6df0f31f45aad8d4e8b0e41222647ad1b740fe6deb4d" name="ab0df38968e4f03a3f1f6d6df0f31f45aad8d4e8b0e41222647ad1b740fe6deb4d"></a>SOCKET_ERROR&#160;</td><td class="fielddoc"><p>The client socket could not be created. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ab0df38968e4f03a3f1f6d6df0f31f45aacc6fddadc193d1b00dcd1d4c3c567e86" name="ab0df38968e4f03a3f1f6d6df0f31f45aacc6fddadc193d1b00dcd1d4c3c567e86"></a>HOST_RESOLUTION_ERROR&#160;</td><td class="fielddoc"><p>The server host/port could not be resolved. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab0df38968e4f03a3f1f6d6df0f31f45aadf57e5692cf9e34f39bab81b40fcdbc0" name="ab0df38968e4f03a3f1f6d6df0f31f45aadf57e5692cf9e34f39bab81b40fcdbc0"></a>CONNECTION_FAILED&#160;</td><td class="fielddoc"><p>The connection to the server could not be established. </p>
+</td></tr>
 <tr><td class="fieldname"><a id="ab0df38968e4f03a3f1f6d6df0f31f45aa29422ea3bfa0fde21ed413e6f9d7b0d9" name="ab0df38968e4f03a3f1f6d6df0f31f45aa29422ea3bfa0fde21ed413e6f9d7b0d9"></a>POLL_ERROR&#160;</td><td class="fielddoc"><p>Polling the socket for I/O readiness failed. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ab0df38968e4f03a3f1f6d6df0f31f45aa00bc8d8fa2a4ef22ac8d9aa337802707" name="ab0df38968e4f03a3f1f6d6df0f31f45aa00bc8d8fa2a4ef22ac8d9aa337802707"></a>CONNECTION_LOST&#160;</td><td class="fielddoc"><p>The connection to the server was dropped. </p>
@@ -178,6 +189,10 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="ab0df38968e4f03a3f1f6d6df0f31f45aab3b81dfb2a25e41b80648893d91c1c49" name="ab0df38968e4f03a3f1f6d6df0f31f45aab3b81dfb2a25e41b80648893d91c1c49"></a>NO_WELCOME&#160;</td><td class="fielddoc"><p>No welcome message received from the server after connecting. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ab0df38968e4f03a3f1f6d6df0f31f45aa744dbb7306bd36220b040c4e39708f5d" name="ab0df38968e4f03a3f1f6d6df0f31f45aa744dbb7306bd36220b040c4e39708f5d"></a>NO_REMAINING_SLOTS&#160;</td><td class="fielddoc"><p>The server reports that no player slots remain for the team. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab0df38968e4f03a3f1f6d6df0f31f45aa56189c1e24c9aabb9a2048c9436b7e1a" name="ab0df38968e4f03a3f1f6d6df0f31f45aa56189c1e24c9aabb9a2048c9436b7e1a"></a>INVALID_DIRECTION&#160;</td><td class="fielddoc"><p>The player was asked to move in an invalid direction. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab0df38968e4f03a3f1f6d6df0f31f45aa35534217aed6bd53b42b47e31c5f0aff" name="ab0df38968e4f03a3f1f6d6df0f31f45aa35534217aed6bd53b42b47e31c5f0aff"></a>INVALID_CONNECT_NBR&#160;</td><td class="fielddoc"><p>The server sent a malformed Connect_nbr response. </p>
 </td></tr>
 </table>
 
