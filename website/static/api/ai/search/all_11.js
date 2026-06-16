@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['upgradecost_0',['UpgradeCost',['../structUpgradeCost.html',1,'']]],
-  ['upgradecosts_1',['upgradeCosts',['../Ressource_8hpp.html#aac34434cb1098468cfd9404af533e6ca',1,'Ressource.hpp']]]
+  ['testserver_0',['TestServer',['../structTestServer.html',1,'']]],
+  ['text_1',['text',['../structBroadcastMessage.html#a1dd4101ab2a05efd470baca296a01596',1,'BroadcastMessage']]],
+  ['thystame_2',['thystame',['../structInventory.html#a17127c6dcb3af44357e0924350c56853',1,'Inventory::thystame'],['../structUpgradeCost.html#a3f51c55d824c2a84741ecc4e9dce341e',1,'UpgradeCost::thystame'],['../Ressource_8hpp.html#a09526742abc3e0feb0a61b36291e1b8cae4ec89137c3adb98896a1beead6cf185',1,'THYSTAME:&#160;Ressource.hpp']]]
 ];

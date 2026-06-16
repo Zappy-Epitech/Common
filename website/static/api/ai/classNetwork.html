@@ -129,6 +129,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0074dd651e820d131dfe450ef02a3fc0" id="r_a0074dd651e820d131dfe450ef02a3fc0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNetwork.html#a0074dd651e820d131dfe450ef02a3fc0">pollCheck</a> (bool block=false)</td></tr>
 <tr class="memdesc:a0074dd651e820d131dfe450ef02a3fc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Polls the socket once and pumps both queues.  <br /></td></tr>
 <tr class="separator:a0074dd651e820d131dfe450ef02a3fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a143d53386c859c9ef78ee19a823a8322" id="r_a143d53386c859c9ef78ee19a823a8322"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNetwork.html#a143d53386c859c9ef78ee19a823a8322">setServerMessageHandler</a> (std::function&lt; bool(const std::string &amp;)&gt; handler)</td></tr>
+<tr class="memdesc:a143d53386c859c9ef78ee19a823a8322"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a handler for server-initiated lines.  <br /></td></tr>
+<tr class="separator:a143d53386c859c9ef78ee19a823a8322"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76d49969854b8ca3020c86366ae63429" id="r_a76d49969854b8ca3020c86366ae63429"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNetwork.html#a76d49969854b8ca3020c86366ae63429">getMessageQueue</a> ()</td></tr>
 <tr class="memdesc:a76d49969854b8ca3020c86366ae63429"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accesses the inbound message queue.  <br /></td></tr>
 <tr class="separator:a76d49969854b8ca3020c86366ae63429"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -313,6 +316,32 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>processSendQueue</b> 
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">message</td><td>The raw bytes to write to the socket. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a143d53386c859c9ef78ee19a823a8322" name="a143d53386c859c9ef78ee19a823a8322"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a143d53386c859c9ef78ee19a823a8322">&#9670;&#160;</a></span>setServerMessageHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Network::setServerMessageHandler </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; bool(const std::string &amp;)&gt;&#160;</td>
+          <td class="paramname"><em>handler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Registers a handler for server-initiated lines. </p>
+<p>The handler is invoked for every complete inbound line. If it returns <code>true</code> the line is considered handled (e.g. a broadcast or <code>dead</code> notification) and is kept out of the command-response queue; if it returns <code>false</code> the line is queued as a normal command response. Running at the line boundary means asynchronous messages are handled even while a synchronous command is blocked in <a class="el" href="classNetwork.html#a0052d9f9280e91f7d943e33e1a4f576d">waitResponse</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handler</td><td>The predicate to consult for each inbound line. </td></tr>
   </table>
   </dd>
 </dl>

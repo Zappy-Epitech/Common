@@ -122,13 +122,15 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="Errors_8hpp__dep__incl.png" border="0" usemap="#aalgo_2include_2Errors_8hppdep" alt=""/></div>
 <map name="aalgo_2include_2Errors_8hppdep" id="aalgo_2include_2Errors_8hppdep">
-<area shape="rect" title="Exception type and error catalogue used across the Zappy AI." alt="" coords="260,5,431,31"/>
+<area shape="rect" title="Exception type and error catalogue used across the Zappy AI." alt="" coords="369,5,540,31"/>
 <area shape="rect" href="Network_8cpp.html" title="Implementation of the Network TCP client." alt="" coords="5,86,224,111"/>
-<area shape="poly" title=" " alt="" coords="300,38,149,89,147,83,298,33"/>
+<area shape="poly" title=" " alt="" coords="393,36,165,89,164,83,392,31"/>
 <area shape="rect" href="GameLogic_8cpp.html" title="Implementation of the player&#39;s per&#45;tick decision making." alt="" coords="248,79,443,119"/>
-<area shape="poly" title=" " alt="" coords="348,44,348,79,343,79,343,44"/>
-<area shape="rect" href="Player_8cpp.html" title="Implementation of the Player loop and elevation helpers." alt="" coords="467,86,656,111"/>
-<area shape="poly" title=" " alt="" coords="390,33,531,83,529,88,389,38"/>
+<area shape="poly" title=" " alt="" coords="429,41,373,81,370,76,426,36"/>
+<area shape="rect" href="StateSwitch_8cpp.html" title="Implementation of the player&#39;s state machine." alt="" coords="467,79,661,119"/>
+<area shape="poly" title=" " alt="" coords="483,36,539,76,536,81,480,41"/>
+<area shape="rect" href="Player_8cpp.html" title="Implementation of the Player loop and elevation helpers." alt="" coords="685,86,875,111"/>
+<area shape="poly" title=" " alt="" coords="516,31,733,83,732,89,515,36"/>
 </map>
 </div>
 </div>
@@ -154,6 +156,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aa56189c1e24c9aabb9a2048c9436b7e1a">INVALID_DIRECTION</a>
 , <br />
 &#160;&#160;<a class="el" href="Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aa35534217aed6bd53b42b47e31c5f0aff">INVALID_CONNECT_NBR</a>
+, <a class="el" href="Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aabea8a7c8e024e2080d2359bd0cf09efc">INVALID_BROADCAST</a>
 <br />
  }</td></tr>
 <tr class="memdesc:ab0df38968e4f03a3f1f6d6df0f31f45a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Categories of fatal errors the AI can raise.  <a href="Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45a">More...</a><br /></td></tr>
@@ -193,6 +196,8 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="ab0df38968e4f03a3f1f6d6df0f31f45aa56189c1e24c9aabb9a2048c9436b7e1a" name="ab0df38968e4f03a3f1f6d6df0f31f45aa56189c1e24c9aabb9a2048c9436b7e1a"></a>INVALID_DIRECTION&#160;</td><td class="fielddoc"><p>The player was asked to move in an invalid direction. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ab0df38968e4f03a3f1f6d6df0f31f45aa35534217aed6bd53b42b47e31c5f0aff" name="ab0df38968e4f03a3f1f6d6df0f31f45aa35534217aed6bd53b42b47e31c5f0aff"></a>INVALID_CONNECT_NBR&#160;</td><td class="fielddoc"><p>The server sent a malformed Connect_nbr response. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab0df38968e4f03a3f1f6d6df0f31f45aabea8a7c8e024e2080d2359bd0cf09efc" name="ab0df38968e4f03a3f1f6d6df0f31f45aabea8a7c8e024e2080d2359bd0cf09efc"></a>INVALID_BROADCAST&#160;</td><td class="fielddoc"><p>The server sent a malformed broadcast notification. </p>
 </td></tr>
 </table>
 

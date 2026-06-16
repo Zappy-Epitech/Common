@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['waitresponse_0',['waitResponse',['../classNetwork.html#a0052d9f9280e91f7d943e33e1a4f576d',1,'Network']]],
-  ['what_1',['what',['../classZappyException.html#aa00d9833a108fbf9c03a0919a2518e1c',1,'ZappyException']]]
+  ['upgradecost_0',['UpgradeCost',['../structUpgradeCost.html',1,'']]],
+  ['upgradecosts_1',['upgradeCosts',['../Ressource_8hpp.html#aac34434cb1098468cfd9404af533e6ca',1,'Ressource.hpp']]]
 ];

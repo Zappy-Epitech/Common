@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['inventory_0',['Inventory',['../structInventory.html',1,'']]]
+  ['broadcastmessage_0',['BroadcastMessage',['../structBroadcastMessage.html',1,'']]]
 ];

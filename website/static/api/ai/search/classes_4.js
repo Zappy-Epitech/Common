@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['upgradecost_0',['UpgradeCost',['../structUpgradeCost.html',1,'']]]
+  ['testserver_0',['TestServer',['../structTestServer.html',1,'']]]
 ];

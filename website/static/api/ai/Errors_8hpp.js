@@ -10,6 +10,7 @@ var Errors_8hpp =
       [ "NO_WELCOME", "Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aab3b81dfb2a25e41b80648893d91c1c49", null ],
       [ "NO_REMAINING_SLOTS", "Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aa744dbb7306bd36220b040c4e39708f5d", null ],
       [ "INVALID_DIRECTION", "Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aa56189c1e24c9aabb9a2048c9436b7e1a", null ],
-      [ "INVALID_CONNECT_NBR", "Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aa35534217aed6bd53b42b47e31c5f0aff", null ]
+      [ "INVALID_CONNECT_NBR", "Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aa35534217aed6bd53b42b47e31c5f0aff", null ],
+      [ "INVALID_BROADCAST", "Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aabea8a7c8e024e2080d2359bd0cf09efc", null ]
     ] ]
 ];

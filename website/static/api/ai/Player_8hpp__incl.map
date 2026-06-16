@@ -1,21 +1,18 @@
 <map id="algo/src/Player/Player.hpp" name="algo/src/Player/Player.hpp">
-<area shape="rect" id="Node000001" title="The AI player: its state and main decision loop." alt="" coords="313,5,504,31"/>
-<area shape="rect" id="Node000002" href="$Network_8hpp.html" title="TCP client that talks to the Zappy server." alt="" coords="207,79,371,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="391,33,322,74,319,69,388,28"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="5,152,92,177"/>
-<area shape="poly" id="edge8_Node000001_Node000003" title=" " alt="" coords="354,33,278,53,196,81,131,114,78,147,75,142,129,109,194,76,276,48,352,28"/>
+<area shape="rect" id="Node000001" title="The AI player: its state and main decision loop." alt="" coords="367,5,557,31"/>
+<area shape="rect" id="Node000002" href="$Network_8hpp.html" title="TCP client that talks to the Zappy server." alt="" coords="243,79,407,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="441,33,360,75,358,70,439,28"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="451,152,510,177"/>
-<area shape="poly" id="edge10_Node000001_Node000005" title=" " alt="" coords="413,30,421,64,436,103,463,140,458,143,432,105,416,65,408,31"/>
-<area shape="rect" id="Node000008" href="$Ressource_8hpp.html" title="Resource types and elevation (upgrade) cost tables for the Zappy AI." alt="" coords="446,79,563,104"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="426,29,479,68,476,72,423,33"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="587,79,638,104"/>
-<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="442,28,575,74,574,79,441,33"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="251,107,102,151,100,145,249,101"/>
+<area shape="poly" id="edge8_Node000001_Node000005" title=" " alt="" coords="466,31,480,138,475,139,461,31"/>
+<area shape="rect" id="Node000008" href="$Ressource_8hpp.html" title="Resource types and elevation (upgrade) cost tables for the Zappy AI." alt="" coords="499,79,617,104"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="479,29,533,68,530,72,476,33"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,152,92,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="281,107,106,151,105,146,280,101"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="117,152,213,177"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="270,106,198,147,195,143,267,102"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="320,102,439,145,437,150,319,107"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="300,106,204,149,202,144,298,102"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="351,102,444,144,442,149,349,106"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="237,152,340,177"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="291,104,291,138,286,138,286,104"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="321,106,303,141,298,138,316,103"/>
 <area shape="rect" id="Node000007" title=" " alt="" coords="364,152,427,177"/>
-<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="307,102,368,142,365,147,304,106"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="338,102,376,140,372,144,334,106"/>
 </map>

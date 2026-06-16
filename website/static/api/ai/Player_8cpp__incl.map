@@ -1,32 +1,32 @@
 <map id="algo/src/Player/Player.cpp" name="algo/src/Player/Player.cpp">
-<area shape="rect" id="Node000001" title="Implementation of the Player loop and elevation helpers." alt="" coords="582,5,771,31"/>
-<area shape="rect" id="Node000002" href="$Player_8hpp.html" title="The AI player: its state and main decision loop." alt="" coords="337,79,427,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="630,33,442,78,440,73,629,28"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="489,225,547,251"/>
-<area shape="poly" id="edge17_Node000001_Node000006" title=" " alt="" coords="685,30,697,58,708,97,709,139,705,160,695,179,667,206,632,223,596,233,562,238,561,233,595,228,630,218,664,201,691,176,700,158,704,139,702,98,692,60,680,32"/>
-<area shape="rect" id="Node000011" href="$Errors_8hpp.html" title="Exception type and error catalogue used across the Zappy AI." alt="" coords="551,79,639,104"/>
-<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="665,33,621,72,617,68,662,29"/>
-<area shape="rect" id="Node000013" title=" " alt="" coords="755,79,811,104"/>
-<area shape="poly" id="edge16_Node000001_Node000013" title=" " alt="" coords="695,28,756,69,753,73,692,33"/>
-<area shape="rect" id="Node000003" href="$Network_8hpp.html" title="TCP client that talks to the Zappy server." alt="" coords="87,152,251,177"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="349,107,217,150,215,145,347,101"/>
+<area shape="rect" id="Node000001" title="Implementation of the Player loop and elevation helpers." alt="" coords="557,5,746,31"/>
+<area shape="rect" id="Node000002" href="$Player_8hpp.html" title="The AI player: its state and main decision loop." alt="" coords="381,79,471,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="616,33,476,77,475,72,614,28"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="511,225,570,251"/>
+<area shape="poly" id="edge16_Node000001_Node000006" title=" " alt="" coords="639,33,618,54,598,80,580,114,566,150,548,213,543,211,561,149,575,112,593,77,614,50,636,29"/>
+<area shape="rect" id="Node000010" href="$Errors_8hpp.html" title="Exception type and error catalogue used across the Zappy AI." alt="" coords="607,79,695,104"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="654,31,654,65,649,65,649,31"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="719,79,775,104"/>
+<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="668,29,722,68,719,72,665,33"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="799,79,879,104"/>
+<area shape="poly" id="edge15_Node000001_Node000014" title=" " alt="" coords="682,28,797,71,795,76,681,33"/>
+<area shape="rect" id="Node000003" href="$Network_8hpp.html" title="TCP client that talks to the Zappy server." alt="" coords="176,152,340,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="400,106,299,149,297,144,398,102"/>
+<area shape="poly" id="edge9_Node000002_Node000006" title=" " alt="" coords="420,106,403,140,400,159,406,176,424,196,447,211,498,228,497,233,445,216,421,200,401,179,395,159,398,138,415,103"/>
+<area shape="rect" id="Node000009" href="$Ressource_8hpp.html" title="Resource types and elevation (upgrade) cost tables for the Zappy AI." alt="" coords="415,152,533,177"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="436,103,461,139,456,142,432,106"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="5,225,92,251"/>
-<area shape="poly" id="edge9_Node000002_Node000004" title=" " alt="" coords="337,98,269,105,191,116,121,132,94,142,76,154,66,166,59,181,52,212,47,211,54,179,61,163,72,150,92,138,120,127,190,111,268,100,336,93"/>
-<area shape="poly" id="edge11_Node000002_Node000006" title=" " alt="" coords="394,103,457,175,497,214,493,218,453,179,390,106"/>
-<area shape="rect" id="Node000009" href="$Ressource_8hpp.html" title="Resource types and elevation (upgrade) cost tables for the Zappy AI." alt="" coords="275,152,393,177"/>
-<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="376,106,352,142,347,139,372,103"/>
-<area shape="rect" id="Node000010" title=" " alt="" coords="467,152,518,177"/>
-<area shape="poly" id="edge10_Node000002_Node000010" title=" " alt="" coords="401,102,464,142,461,147,398,106"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="151,180,82,220,79,216,148,175"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="203,225,299,251"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="184,175,229,214,226,218,180,179"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="225,175,476,225,475,231,224,180"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="324,225,427,251"/>
-<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="203,175,330,218,328,223,201,180"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="116,225,179,251"/>
-<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="168,178,157,213,152,211,163,177"/>
-<area shape="poly" id="edge15_Node000011_Node000006" title=" " alt="" coords="591,106,533,215,528,212,587,103"/>
-<area shape="poly" id="edge14_Node000011_Node000010" title=" " alt="" coords="580,106,522,146,519,142,577,102"/>
-<area shape="rect" id="Node000012" title=" " alt="" coords="593,152,680,177"/>
-<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="604,103,625,139,621,141,600,106"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="225,180,97,223,95,218,224,175"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="117,225,213,251"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="245,179,192,219,189,215,241,175"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="304,175,498,223,497,229,303,180"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="237,225,340,251"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="266,177,281,212,276,214,261,179"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="364,225,427,251"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="281,175,362,217,360,221,279,180"/>
+<area shape="poly" id="edge13_Node000010_Node000006" title=" " alt="" coords="645,106,591,179,561,216,557,213,587,176,641,103"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="659,152,745,177"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="662,103,688,139,684,142,658,106"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="770,152,821,177"/>
+<area shape="poly" id="edge12_Node000010_Node000012" title=" " alt="" coords="676,102,761,143,758,148,673,106"/>
 </map>

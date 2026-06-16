@@ -93,8 +93,8 @@ $(document).ready(function(){initNavTree('Player_8hpp.html',''); initResizable()
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">Player.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -103,33 +103,28 @@ $(document).ready(function(){initNavTree('Player_8hpp.html',''); initResizable()
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="Network_8hpp_source.html">Network/Network.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Ressource_8hpp_source.html">Ressource.hpp</a>&quot;</code><br />
-<code>#include &lt;functional&gt;</code><br />
-<code>#include &lt;map&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Player.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="Player_8hpp__incl.png" border="0" usemap="#aalgo_2src_2Player_2Player_8hpp" alt=""/></div>
 <map name="aalgo_2src_2Player_2Player_8hpp" id="aalgo_2src_2Player_2Player_8hpp">
-<area shape="rect" title="The AI player: its state and main decision loop." alt="" coords="313,5,504,31"/>
-<area shape="rect" href="Network_8hpp.html" title="TCP client that talks to the Zappy server." alt="" coords="207,79,371,104"/>
-<area shape="poly" title=" " alt="" coords="391,33,322,74,319,69,388,28"/>
-<area shape="rect" title=" " alt="" coords="5,152,92,177"/>
-<area shape="poly" title=" " alt="" coords="354,33,278,53,196,81,131,114,78,147,75,142,129,109,194,76,276,48,352,28"/>
+<area shape="rect" title="The AI player: its state and main decision loop." alt="" coords="367,5,557,31"/>
+<area shape="rect" href="Network_8hpp.html" title="TCP client that talks to the Zappy server." alt="" coords="243,79,407,104"/>
+<area shape="poly" title=" " alt="" coords="441,33,360,75,358,70,439,28"/>
 <area shape="rect" title=" " alt="" coords="451,152,510,177"/>
-<area shape="poly" title=" " alt="" coords="413,30,421,64,436,103,463,140,458,143,432,105,416,65,408,31"/>
-<area shape="rect" href="Ressource_8hpp.html" title="Resource types and elevation (upgrade) cost tables for the Zappy AI." alt="" coords="446,79,563,104"/>
-<area shape="poly" title=" " alt="" coords="426,29,479,68,476,72,423,33"/>
-<area shape="rect" title=" " alt="" coords="587,79,638,104"/>
-<area shape="poly" title=" " alt="" coords="442,28,575,74,574,79,441,33"/>
-<area shape="poly" title=" " alt="" coords="251,107,102,151,100,145,249,101"/>
+<area shape="poly" title=" " alt="" coords="466,31,480,138,475,139,461,31"/>
+<area shape="rect" href="Ressource_8hpp.html" title="Resource types and elevation (upgrade) cost tables for the Zappy AI." alt="" coords="499,79,617,104"/>
+<area shape="poly" title=" " alt="" coords="479,29,533,68,530,72,476,33"/>
+<area shape="rect" title=" " alt="" coords="5,152,92,177"/>
+<area shape="poly" title=" " alt="" coords="281,107,106,151,105,146,280,101"/>
 <area shape="rect" title=" " alt="" coords="117,152,213,177"/>
-<area shape="poly" title=" " alt="" coords="270,106,198,147,195,143,267,102"/>
-<area shape="poly" title=" " alt="" coords="320,102,439,145,437,150,319,107"/>
+<area shape="poly" title=" " alt="" coords="300,106,204,149,202,144,298,102"/>
+<area shape="poly" title=" " alt="" coords="351,102,444,144,442,149,349,106"/>
 <area shape="rect" title=" " alt="" coords="237,152,340,177"/>
-<area shape="poly" title=" " alt="" coords="291,104,291,138,286,138,286,104"/>
+<area shape="poly" title=" " alt="" coords="321,106,303,141,298,138,316,103"/>
 <area shape="rect" title=" " alt="" coords="364,152,427,177"/>
-<area shape="poly" title=" " alt="" coords="307,102,368,142,365,147,304,106"/>
+<area shape="poly" title=" " alt="" coords="338,102,376,140,372,144,334,106"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -137,15 +132,17 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="Player_8hpp__dep__incl.png" border="0" usemap="#aalgo_2src_2Player_2Player_8hppdep" alt=""/></div>
 <map name="aalgo_2src_2Player_2Player_8hppdep" id="aalgo_2src_2Player_2Player_8hppdep">
-<area shape="rect" title="The AI player: its state and main decision loop." alt="" coords="310,5,501,31"/>
+<area shape="rect" title="The AI player: its state and main decision loop." alt="" coords="421,5,611,31"/>
 <area shape="rect" href="Actions_8cpp.html" title="Implementation of the player&#39;s action commands." alt="" coords="5,79,176,119"/>
-<area shape="poly" title=" " alt="" coords="347,37,167,81,166,76,346,31"/>
+<area shape="poly" title=" " alt="" coords="439,36,188,81,177,84,176,78,188,76,438,30"/>
 <area shape="rect" href="GameLogic_8cpp.html" title="Implementation of the player&#39;s per&#45;tick decision making." alt="" coords="200,79,395,119"/>
-<area shape="poly" title=" " alt="" coords="380,41,325,81,322,76,377,37"/>
-<area shape="rect" href="Player_8cpp.html" title="Implementation of the Player loop and elevation helpers." alt="" coords="419,86,608,111"/>
-<area shape="poly" title=" " alt="" coords="434,37,499,84,496,88,431,41"/>
-<area shape="rect" href="main_8cpp.html" title="Program entry point: parses CLI arguments and starts the AI." alt="" coords="633,86,770,111"/>
-<area shape="poly" title=" " alt="" coords="462,32,659,83,658,89,461,37"/>
+<area shape="poly" title=" " alt="" coords="472,38,351,81,349,76,471,33"/>
+<area shape="rect" href="StateSwitch_8cpp.html" title="Implementation of the player&#39;s state machine." alt="" coords="419,79,613,119"/>
+<area shape="poly" title=" " alt="" coords="519,44,519,79,513,79,513,44"/>
+<area shape="rect" href="Player_8cpp.html" title="Implementation of the Player loop and elevation helpers." alt="" coords="637,86,827,111"/>
+<area shape="poly" title=" " alt="" coords="561,33,701,83,700,88,559,38"/>
+<area shape="rect" href="main_8cpp.html" title="Program entry point: parses CLI arguments and starts the AI." alt="" coords="851,86,989,111"/>
+<area shape="poly" title=" " alt="" coords="597,30,839,76,872,83,871,89,838,81,596,36"/>
 </map>
 </div>
 </div>
@@ -153,19 +150,17 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structParams.html">Params</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structposition.html">position</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tile coordinate on the map.  <a href="structposition.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBroadcastMessage.html">BroadcastMessage</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A decoded broadcast notification received from the server.  <a href="structBroadcastMessage.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayer.html">Player</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drives a single Zappy AI player.  <a href="classPlayer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:afe7b69e496c69459327eed2c2305b60f" id="r_afe7b69e496c69459327eed2c2305b60f"><td class="memItemLeft" align="right" valign="top"><a id="afe7b69e496c69459327eed2c2305b60f" name="afe7b69e496c69459327eed2c2305b60f"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>func</b> = std::function&lt; void()&gt;</td></tr>
-<tr class="memdesc:afe7b69e496c69459327eed2c2305b60f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback type used to handle a server command. <br /></td></tr>
-<tr class="separator:afe7b69e496c69459327eed2c2305b60f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -174,10 +169,239 @@ Enumerations</h2></td></tr>
 , <b>RIGHT</b>
  }</td></tr>
 <tr class="separator:a0b5e764f0ec9a407e9b8789f0259d754"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c730f37b1b3a893159bada67637fdb1" id="r_a3c730f37b1b3a893159bada67637fdb1"><td class="memItemLeft" align="right" valign="top"><a id="a3c730f37b1b3a893159bada67637fdb1" name="a3c730f37b1b3a893159bada67637fdb1"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>PlayerState</b> { <b>SURVIVE</b>
+, <b>EXPLORE</b>
+, <b>UPGRADE</b>
+, <b>COOP</b>
+ }</td></tr>
+<tr class="separator:a3c730f37b1b3a893159bada67637fdb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a46de87374858b05a6dc163355aa2d65f" id="r_a46de87374858b05a6dc163355aa2d65f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#a46de87374858b05a6dc163355aa2d65f">canUpgrade</a> (const <a class="el" href="structInventory.html">Inventory</a> &amp;inventory, int currentLevel)</td></tr>
+<tr class="memdesc:a46de87374858b05a6dc163355aa2d65f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether an inventory satisfies the cost to elevate one level.  <br /></td></tr>
+<tr class="separator:a46de87374858b05a6dc163355aa2d65f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb87e1bdd3ab62ebb9c7701c04f70049" id="r_adb87e1bdd3ab62ebb9c7701c04f70049"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structBroadcastMessage.html">BroadcastMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#adb87e1bdd3ab62ebb9c7701c04f70049">parseBroadcast</a> (const std::string &amp;line)</td></tr>
+<tr class="memdesc:adb87e1bdd3ab62ebb9c7701c04f70049"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a server broadcast notification into its direction and text.  <br /></td></tr>
+<tr class="separator:adb87e1bdd3ab62ebb9c7701c04f70049"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6268365ee53de05ac3aa834d813a2e3e" id="r_a6268365ee53de05ac3aa834d813a2e3e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#a6268365ee53de05ac3aa834d813a2e3e">parseBroadcastLevel</a> (const std::string &amp;text, const std::string &amp;verb)</td></tr>
+<tr class="memdesc:a6268365ee53de05ac3aa834d813a2e3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the level from a <code>"&amp;lt;verb&amp;gt; &amp;lt;level&amp;gt;"</code> broadcast.  <br /></td></tr>
+<tr class="separator:a6268365ee53de05ac3aa834d813a2e3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96dfafef50f3f60151a4ceea304c6427" id="r_a96dfafef50f3f60151a4ceea304c6427"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#a96dfafef50f3f60151a4ceea304c6427">parseUpgradeLevel</a> (const std::string &amp;text)</td></tr>
+<tr class="memdesc:a96dfafef50f3f60151a4ceea304c6427"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the level from an "upgrade" broadcast call.  <br /></td></tr>
+<tr class="separator:a96dfafef50f3f60151a4ceea304c6427"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a339004e9f208bd0e48d0d12d1f6733bc" id="r_a339004e9f208bd0e48d0d12d1f6733bc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#a339004e9f208bd0e48d0d12d1f6733bc">parseElevationLevel</a> (const std::string &amp;line)</td></tr>
+<tr class="memdesc:a339004e9f208bd0e48d0d12d1f6733bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the new level from an incantation success response.  <br /></td></tr>
+<tr class="separator:a339004e9f208bd0e48d0d12d1f6733bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bc7b5fe47328af53f6b0208c35b4a45" id="r_a0bc7b5fe47328af53f6b0208c35b4a45"><td class="memItemLeft" align="right" valign="top">MovementDirection&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#a0bc7b5fe47328af53f6b0208c35b4a45">directionToMovement</a> (int soundDirection)</td></tr>
+<tr class="memdesc:a0bc7b5fe47328af53f6b0208c35b4a45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps a broadcast sound direction to the move that approaches it.  <br /></td></tr>
+<tr class="separator:a0bc7b5fe47328af53f6b0208c35b4a45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The AI player: its state and main decision loop. </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a46de87374858b05a6dc163355aa2d65f" name="a46de87374858b05a6dc163355aa2d65f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46de87374858b05a6dc163355aa2d65f">&#9670;&#160;</a></span>canUpgrade()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool canUpgrade </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structInventory.html">Inventory</a> &amp;&#160;</td>
+          <td class="paramname"><em>inventory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>currentLevel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks whether an inventory satisfies the cost to elevate one level. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inventory</td><td>The resources currently held by the player. </td></tr>
+    <tr><td class="paramname">currentLevel</td><td>The player's current level; only 1 to 6 can elevate. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the inventory meets or exceeds the cost for the next elevation, <code>false</code> otherwise (including out-of-range levels). </dd></dl>
+
+</div>
+</div>
+<a id="a0bc7b5fe47328af53f6b0208c35b4a45" name="a0bc7b5fe47328af53f6b0208c35b4a45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bc7b5fe47328af53f6b0208c35b4a45">&#9670;&#160;</a></span>directionToMovement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MovementDirection directionToMovement </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>soundDirection</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maps a broadcast sound direction to the move that approaches it. </p>
+<p>The direction is relative to the player's orientation: 1 is straight ahead, then clockwise (2 front-right, 3 right, ... 8 front-left). The forward hemisphere advances, the right side turns right, the left side turns left; repeated calls as fresh broadcasts arrive converge onto the sender.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">soundDirection</td><td>The direction reported by the server, 1-8. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The movement that brings the player closer to the sender. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classZappyException.html" title="Exception carrying a human-readable message for a given ErrorType.">ZappyException</a></td><td>with <a class="el" href="Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aa56189c1e24c9aabb9a2048c9436b7e1a">INVALID_DIRECTION</a> if <code>soundDirection</code> is 0 (same tile, no movement) or outside 1-8. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adb87e1bdd3ab62ebb9c7701c04f70049" name="adb87e1bdd3ab62ebb9c7701c04f70049"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb87e1bdd3ab62ebb9c7701c04f70049">&#9670;&#160;</a></span>parseBroadcast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structBroadcastMessage.html">BroadcastMessage</a> parseBroadcast </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>line</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parses a server broadcast notification into its direction and text. </p>
+<p>Accepts a line of the form <code>"message &amp;lt;k&amp;gt;, &amp;lt;text&amp;gt;"</code> (see RFC 8.2). A single trailing newline, if present, is stripped. The direction must be an integer in the range 0-8; the text is everything after the first <code>", "</code> separator and may itself contain commas or be empty.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">line</td><td>The raw notification line. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The decoded direction and text. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classZappyException.html" title="Exception carrying a human-readable message for a given ErrorType.">ZappyException</a></td><td>with <a class="el" href="Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aabea8a7c8e024e2080d2359bd0cf09efc">INVALID_BROADCAST</a> if the prefix, direction, or separator is missing or the direction is out of range. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6268365ee53de05ac3aa834d813a2e3e" name="a6268365ee53de05ac3aa834d813a2e3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6268365ee53de05ac3aa834d813a2e3e">&#9670;&#160;</a></span>parseBroadcastLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int parseBroadcastLevel </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>verb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Extracts the level from a <code>"&amp;lt;verb&amp;gt; &amp;lt;level&amp;gt;"</code> broadcast. </p>
+<p>Backs the team's broadcast vocabulary: <code>"upgrade N"</code> (come help me elevate from level N) and <code>"stop N"</code> (the level-N ritual is over). The text must be exactly the verb, a space, then a non-empty run of digits.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>The decoded broadcast body. </td></tr>
+    <tr><td class="paramname">verb</td><td>The expected leading keyword (e.g. "upgrade" or "stop"). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The level, or -1 if <code>text</code> does not match <code>verb + " " + digits</code>. </dd></dl>
+
+</div>
+</div>
+<a id="a339004e9f208bd0e48d0d12d1f6733bc" name="a339004e9f208bd0e48d0d12d1f6733bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a339004e9f208bd0e48d0d12d1f6733bc">&#9670;&#160;</a></span>parseElevationLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int parseElevationLevel </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>line</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Extracts the new level from an incantation success response. </p>
+<p>Recognises the server's <code>"Current level: &amp;lt;k&amp;gt;"</code> line (see RFC 7.12); a single trailing newline is tolerated. Other responses (<code>"Elevation
+underway"</code>, <code>"ko"</code>) are not completions.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">line</td><td>The raw response line. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The new level, or -1 if <code>line</code> is not a completion notice. </dd></dl>
+
+</div>
+</div>
+<a id="a96dfafef50f3f60151a4ceea304c6427" name="a96dfafef50f3f60151a4ceea304c6427"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96dfafef50f3f60151a4ceea304c6427">&#9670;&#160;</a></span>parseUpgradeLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int parseUpgradeLevel </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Extracts the level from an "upgrade" broadcast call. </p>
+<p>Convenience wrapper over <a class="el" href="GameLogic_8cpp.html#a6268365ee53de05ac3aa834d813a2e3e">parseBroadcastLevel</a> for the <code>"upgrade"</code> verb. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>The decoded broadcast body. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The requested level, or -1 if <code>text</code> is not a well-formed upgrade call. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

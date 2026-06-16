@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['sendmessage_0',['sendMessage',['../classNetwork.html#ac2205cbf6d16ff898bc741658113a081',1,'Network']]],
-  ['start_1',['start',['../classPlayer.html#a76e60ba5596cbc1cb7e76da2b9141a60',1,'Player']]]
+  ['receivemessage_0',['receiveMessage',['../classNetwork.html#a6fca7071e0849e4f04d03a3c521a8011',1,'Network']]],
+  ['ressourcefromname_1',['ressourceFromName',['../GameLogic_8cpp.html#a342a66c469c6ac363230afcee7bbcfff',1,'GameLogic.cpp']]]
 ];

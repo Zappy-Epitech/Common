@@ -91,6 +91,8 @@ $(document).ready(function(){initNavTree('Network_8cpp.html',''); initResizable(
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">Network.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -140,9 +142,45 @@ Include dependency graph for Network.cpp:</div>
 <area shape="poly" title=" " alt="" coords="581,102,643,142,640,147,578,106"/>
 </map>
 </div>
-</div><a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a605adbc7d6cfeb097af55136a97313e2" id="r_a605adbc7d6cfeb097af55136a97313e2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Network_8cpp.html#a605adbc7d6cfeb097af55136a97313e2">splitCompleteLines</a> (std::string &amp;buffer)</td></tr>
+<tr class="memdesc:a605adbc7d6cfeb097af55136a97313e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Splits a byte buffer into complete, newline-terminated lines.  <br /></td></tr>
+<tr class="separator:a605adbc7d6cfeb097af55136a97313e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation of the <a class="el" href="classNetwork.html">Network</a> TCP client. </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a605adbc7d6cfeb097af55136a97313e2" name="a605adbc7d6cfeb097af55136a97313e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a605adbc7d6cfeb097af55136a97313e2">&#9670;&#160;</a></span>splitCompleteLines()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; splitCompleteLines </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Splits a byte buffer into complete, newline-terminated lines. </p>
+<p>Server data arrives in arbitrary chunks that may contain several lines, a partial line, or both. This extracts every line up to and including its trailing <code>'\n</code> ', removing them from <code>buffer</code>. Any trailing bytes after the last newline (an incomplete line) are left in <code>buffer</code> for the next call.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>The accumulated inbound bytes; consumed lines are erased from it. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The complete lines found, in order, each keeping its trailing newline. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('Network_8hpp.html',''); initResizable(
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">Network.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -128,20 +128,22 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="Network_8hpp__dep__incl.png" border="0" usemap="#aalgo_2src_2Network_2Network_8hppdep" alt=""/></div>
 <map name="aalgo_2src_2Network_2Network_8hppdep" id="aalgo_2src_2Network_2Network_8hppdep">
-<area shape="rect" title="TCP client that talks to the Zappy server." alt="" coords="404,5,623,31"/>
-<area shape="rect" href="Network_8cpp.html" title="Implementation of the Network TCP client." alt="" coords="175,79,393,104"/>
-<area shape="poly" title=" " alt="" coords="464,37,322,81,320,76,462,32"/>
-<area shape="rect" href="Player_8hpp.html" title="The AI player: its state and main decision loop." alt="" coords="418,79,609,104"/>
-<area shape="poly" title=" " alt="" coords="516,44,516,79,511,79,511,44"/>
-<area shape="rect" href="main_8cpp.html" title="Program entry point: parses CLI arguments and starts the AI." alt="" coords="633,159,770,185"/>
-<area shape="poly" title=" " alt="" coords="554,34,589,53,623,77,666,119,695,157,691,160,662,123,620,81,586,58,552,39"/>
+<area shape="rect" title="TCP client that talks to the Zappy server." alt="" coords="475,5,693,31"/>
+<area shape="rect" href="Network_8cpp.html" title="Implementation of the Network TCP client." alt="" coords="245,79,464,104"/>
+<area shape="poly" title=" " alt="" coords="535,37,393,81,391,76,533,32"/>
+<area shape="rect" href="Player_8hpp.html" title="The AI player: its state and main decision loop." alt="" coords="489,79,679,104"/>
+<area shape="poly" title=" " alt="" coords="587,44,587,79,581,79,581,44"/>
+<area shape="rect" href="main_8cpp.html" title="Program entry point: parses CLI arguments and starts the AI." alt="" coords="851,159,989,185"/>
+<area shape="poly" title=" " alt="" coords="623,34,896,157,893,162,621,39"/>
 <area shape="rect" href="Actions_8cpp.html" title="Implementation of the player&#39;s action commands." alt="" coords="5,152,176,192"/>
-<area shape="poly" title=" " alt="" coords="437,109,188,155,177,157,176,152,188,149,436,104"/>
+<area shape="poly" title=" " alt="" coords="488,109,188,155,177,157,176,151,188,149,488,103"/>
 <area shape="rect" href="GameLogic_8cpp.html" title="Implementation of the player&#39;s per&#45;tick decision making." alt="" coords="200,152,395,192"/>
-<area shape="poly" title=" " alt="" coords="470,111,350,154,348,149,468,106"/>
-<area shape="rect" href="Player_8cpp.html" title="Implementation of the Player loop and elevation helpers." alt="" coords="419,159,608,185"/>
-<area shape="poly" title=" " alt="" coords="516,118,516,159,511,159,511,118"/>
-<area shape="poly" title=" " alt="" coords="554,107,675,157,673,162,552,112"/>
+<area shape="poly" title=" " alt="" coords="530,110,367,154,366,149,529,105"/>
+<area shape="rect" href="StateSwitch_8cpp.html" title="Implementation of the player&#39;s state machine." alt="" coords="419,152,613,192"/>
+<area shape="poly" title=" " alt="" coords="567,116,534,154,530,150,563,113"/>
+<area shape="rect" href="Player_8cpp.html" title="Implementation of the Player loop and elevation helpers." alt="" coords="637,159,827,185"/>
+<area shape="poly" title=" " alt="" coords="619,108,711,157,709,161,617,113"/>
+<area shape="poly" title=" " alt="" coords="647,104,872,157,870,162,646,110"/>
 </map>
 </div>
 </div>
@@ -153,15 +155,44 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manages the TCP connection to the Zappy server.  <a href="classNetwork.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:afe7b69e496c69459327eed2c2305b60f" id="r_afe7b69e496c69459327eed2c2305b60f"><td class="memItemLeft" align="right" valign="top"><a id="afe7b69e496c69459327eed2c2305b60f" name="afe7b69e496c69459327eed2c2305b60f"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>func</b> = std::function&lt; void()&gt;</td></tr>
-<tr class="separator:afe7b69e496c69459327eed2c2305b60f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a605adbc7d6cfeb097af55136a97313e2" id="r_a605adbc7d6cfeb097af55136a97313e2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Network_8hpp.html#a605adbc7d6cfeb097af55136a97313e2">splitCompleteLines</a> (std::string &amp;buffer)</td></tr>
+<tr class="memdesc:a605adbc7d6cfeb097af55136a97313e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Splits a byte buffer into complete, newline-terminated lines.  <br /></td></tr>
+<tr class="separator:a605adbc7d6cfeb097af55136a97313e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>TCP client that talks to the Zappy server. </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a605adbc7d6cfeb097af55136a97313e2" name="a605adbc7d6cfeb097af55136a97313e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a605adbc7d6cfeb097af55136a97313e2">&#9670;&#160;</a></span>splitCompleteLines()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; splitCompleteLines </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Splits a byte buffer into complete, newline-terminated lines. </p>
+<p>Server data arrives in arbitrary chunks that may contain several lines, a partial line, or both. This extracts every line up to and including its trailing <code>'\n</code> ', removing them from <code>buffer</code>. Any trailing bytes after the last newline (an incomplete line) are left in <code>buffer</code> for the next call.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>The accumulated inbound bytes; consumed lines are erased from it. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The complete lines found, in order, each keeping its trailing newline. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

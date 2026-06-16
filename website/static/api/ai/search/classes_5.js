@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['zappyexception_0',['ZappyException',['../classZappyException.html',1,'']]]
+  ['upgradecost_0',['UpgradeCost',['../structUpgradeCost.html',1,'']]]
 ];

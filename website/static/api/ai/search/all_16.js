@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7enetwork_0',['~Network',['../classNetwork.html#a7a4e19cdb4bf0c7ecf82baa643831492',1,'Network']]]
+  ['zappyexception_0',['zappyexception',['../classZappyException.html',1,'ZappyException'],['../classZappyException.html#a8fa0a7ed1254b419c368e7cd4b6ca5fb',1,'ZappyException::ZappyException()']]]
 ];
