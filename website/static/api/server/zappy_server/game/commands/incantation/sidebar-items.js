@@ -1,1 +1,1 @@
-window.SIDEBAR_ITEMS = {"fn":["execute","handle_start"]};
+window.SIDEBAR_ITEMS = {"fn":["check_resources","consume_resources","count_players_on_tile","execute","get_requirements","handle_start"],"static":["ACTIVE_INCANTATIONS"],"struct":["Req"]};
