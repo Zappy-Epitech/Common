@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["determine_log_color","run","run_app","ui"],"struct":["TuiState"]};

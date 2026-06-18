@@ -61,38 +61,39 @@
 <a href=#61 id=61 data-nosnippet>61</a>            teams: <span class="macro">vec!</span>[<span class="string">"TeamA"</span>.to_string(), <span class="string">"TeamB"</span>.to_string()],
 <a href=#62 id=62 data-nosnippet>62</a>            clients_nb: <span class="number">2</span>,
 <a href=#63 id=63 data-nosnippet>63</a>            freq: <span class="number">100</span>,
-<a href=#64 id=64 data-nosnippet>64</a>        };
-<a href=#65 id=65 data-nosnippet>65</a>        <span class="kw">let </span>world = World::new(config.width, config.height, config.teams.clone(), config.clients_nb, config.freq);
-<a href=#66 id=66 data-nosnippet>66</a>        (world, config)
-<a href=#67 id=67 data-nosnippet>67</a>    }
-<a href=#68 id=68 data-nosnippet>68</a>
-<a href=#69 id=69 data-nosnippet>69</a>    <span class="attr">#[test]
-<a href=#70 id=70 data-nosnippet>70</a>    </span><span class="kw">fn </span>test_map_size_command() {
-<a href=#71 id=71 data-nosnippet>71</a>        <span class="kw">let </span>(world, config) = setup_world_config();
-<a href=#72 id=72 data-nosnippet>72</a>        <span class="kw">let </span>res = execute(GuiCommand::MapSize, <span class="kw-2">&amp;</span>world, <span class="kw-2">&amp;</span>config);
-<a href=#73 id=73 data-nosnippet>73</a>        <span class="macro">assert_eq!</span>(res.len(), <span class="number">1</span>);
-<a href=#74 id=74 data-nosnippet>74</a>        <span class="macro">assert_eq!</span>(res[<span class="number">0</span>], <span class="string">"msz 5 5\n"</span>);
-<a href=#75 id=75 data-nosnippet>75</a>    }
-<a href=#76 id=76 data-nosnippet>76</a>
-<a href=#77 id=77 data-nosnippet>77</a>    <span class="attr">#[test]
-<a href=#78 id=78 data-nosnippet>78</a>    </span><span class="kw">fn </span>test_team_names_command() {
-<a href=#79 id=79 data-nosnippet>79</a>        <span class="kw">let </span>(world, config) = setup_world_config();
-<a href=#80 id=80 data-nosnippet>80</a>        <span class="kw">let </span>res = execute(GuiCommand::TeamNames, <span class="kw-2">&amp;</span>world, <span class="kw-2">&amp;</span>config);
-<a href=#81 id=81 data-nosnippet>81</a>        <span class="macro">assert_eq!</span>(res.len(), <span class="number">2</span>);
-<a href=#82 id=82 data-nosnippet>82</a>        <span class="macro">assert_eq!</span>(res[<span class="number">0</span>], <span class="string">"tna TeamA\n"</span>);
-<a href=#83 id=83 data-nosnippet>83</a>        <span class="macro">assert_eq!</span>(res[<span class="number">1</span>], <span class="string">"tna TeamB\n"</span>);
-<a href=#84 id=84 data-nosnippet>84</a>    }
-<a href=#85 id=85 data-nosnippet>85</a>
-<a href=#86 id=86 data-nosnippet>86</a>    <span class="attr">#[test]
-<a href=#87 id=87 data-nosnippet>87</a>    </span><span class="kw">fn </span>test_tile_content_command() {
-<a href=#88 id=88 data-nosnippet>88</a>        <span class="kw">let </span>(world, config) = setup_world_config();
-<a href=#89 id=89 data-nosnippet>89</a>        <span class="kw">let </span>res = execute(GuiCommand::TileContent(<span class="number">0</span>, <span class="number">0</span>), <span class="kw-2">&amp;</span>world, <span class="kw-2">&amp;</span>config);
-<a href=#90 id=90 data-nosnippet>90</a>        <span class="macro">assert_eq!</span>(res.len(), <span class="number">1</span>);
-<a href=#91 id=91 data-nosnippet>91</a>        <span class="macro">assert!</span>(res[<span class="number">0</span>].starts_with(<span class="string">"bct 0 0"</span>));
-<a href=#92 id=92 data-nosnippet>92</a>        
-<a href=#93 id=93 data-nosnippet>93</a>        <span class="kw">let </span>res_out_of_bounds = execute(GuiCommand::TileContent(<span class="number">10</span>, <span class="number">10</span>), <span class="kw-2">&amp;</span>world, <span class="kw-2">&amp;</span>config);
-<a href=#94 id=94 data-nosnippet>94</a>        <span class="macro">assert_eq!</span>(res_out_of_bounds.len(), <span class="number">1</span>);
-<a href=#95 id=95 data-nosnippet>95</a>        <span class="macro">assert_eq!</span>(res_out_of_bounds[<span class="number">0</span>], <span class="string">"sbp\n"</span>);
-<a href=#96 id=96 data-nosnippet>96</a>    }
-<a href=#97 id=97 data-nosnippet>97</a>}
+<a href=#64 id=64 data-nosnippet>64</a>            bonus: <span class="bool-val">false</span>,
+<a href=#65 id=65 data-nosnippet>65</a>        };
+<a href=#66 id=66 data-nosnippet>66</a>        <span class="kw">let </span>world = World::new(config.width, config.height, config.teams.clone(), config.clients_nb, config.freq);
+<a href=#67 id=67 data-nosnippet>67</a>        (world, config)
+<a href=#68 id=68 data-nosnippet>68</a>    }
+<a href=#69 id=69 data-nosnippet>69</a>
+<a href=#70 id=70 data-nosnippet>70</a>    <span class="attr">#[test]
+<a href=#71 id=71 data-nosnippet>71</a>    </span><span class="kw">fn </span>test_map_size_command() {
+<a href=#72 id=72 data-nosnippet>72</a>        <span class="kw">let </span>(world, config) = setup_world_config();
+<a href=#73 id=73 data-nosnippet>73</a>        <span class="kw">let </span>res = execute(GuiCommand::MapSize, <span class="kw-2">&amp;</span>world, <span class="kw-2">&amp;</span>config);
+<a href=#74 id=74 data-nosnippet>74</a>        <span class="macro">assert_eq!</span>(res.len(), <span class="number">1</span>);
+<a href=#75 id=75 data-nosnippet>75</a>        <span class="macro">assert_eq!</span>(res[<span class="number">0</span>], <span class="string">"msz 5 5\n"</span>);
+<a href=#76 id=76 data-nosnippet>76</a>    }
+<a href=#77 id=77 data-nosnippet>77</a>
+<a href=#78 id=78 data-nosnippet>78</a>    <span class="attr">#[test]
+<a href=#79 id=79 data-nosnippet>79</a>    </span><span class="kw">fn </span>test_team_names_command() {
+<a href=#80 id=80 data-nosnippet>80</a>        <span class="kw">let </span>(world, config) = setup_world_config();
+<a href=#81 id=81 data-nosnippet>81</a>        <span class="kw">let </span>res = execute(GuiCommand::TeamNames, <span class="kw-2">&amp;</span>world, <span class="kw-2">&amp;</span>config);
+<a href=#82 id=82 data-nosnippet>82</a>        <span class="macro">assert_eq!</span>(res.len(), <span class="number">2</span>);
+<a href=#83 id=83 data-nosnippet>83</a>        <span class="macro">assert_eq!</span>(res[<span class="number">0</span>], <span class="string">"tna TeamA\n"</span>);
+<a href=#84 id=84 data-nosnippet>84</a>        <span class="macro">assert_eq!</span>(res[<span class="number">1</span>], <span class="string">"tna TeamB\n"</span>);
+<a href=#85 id=85 data-nosnippet>85</a>    }
+<a href=#86 id=86 data-nosnippet>86</a>
+<a href=#87 id=87 data-nosnippet>87</a>    <span class="attr">#[test]
+<a href=#88 id=88 data-nosnippet>88</a>    </span><span class="kw">fn </span>test_tile_content_command() {
+<a href=#89 id=89 data-nosnippet>89</a>        <span class="kw">let </span>(world, config) = setup_world_config();
+<a href=#90 id=90 data-nosnippet>90</a>        <span class="kw">let </span>res = execute(GuiCommand::TileContent(<span class="number">0</span>, <span class="number">0</span>), <span class="kw-2">&amp;</span>world, <span class="kw-2">&amp;</span>config);
+<a href=#91 id=91 data-nosnippet>91</a>        <span class="macro">assert_eq!</span>(res.len(), <span class="number">1</span>);
+<a href=#92 id=92 data-nosnippet>92</a>        <span class="macro">assert!</span>(res[<span class="number">0</span>].starts_with(<span class="string">"bct 0 0"</span>));
+<a href=#93 id=93 data-nosnippet>93</a>        
+<a href=#94 id=94 data-nosnippet>94</a>        <span class="kw">let </span>res_out_of_bounds = execute(GuiCommand::TileContent(<span class="number">10</span>, <span class="number">10</span>), <span class="kw-2">&amp;</span>world, <span class="kw-2">&amp;</span>config);
+<a href=#95 id=95 data-nosnippet>95</a>        <span class="macro">assert_eq!</span>(res_out_of_bounds.len(), <span class="number">1</span>);
+<a href=#96 id=96 data-nosnippet>96</a>        <span class="macro">assert_eq!</span>(res_out_of_bounds[<span class="number">0</span>], <span class="string">"sbp\n"</span>);
+<a href=#97 id=97 data-nosnippet>97</a>    }
+<a href=#98 id=98 data-nosnippet>98</a>}
 </code></pre></div></section></main></body></html>
