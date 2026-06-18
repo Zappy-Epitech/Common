@@ -14,26 +14,28 @@
 <a href=#14 id=14 data-nosnippet>14</a>        (sender.x, sender.y)
 <a href=#15 id=15 data-nosnippet>15</a>    };
 <a href=#16 id=16 data-nosnippet>16</a>
-<a href=#17 id=17 data-nosnippet>17</a>    <span class="kw">let </span><span class="kw-2">mut </span>targets = Vec::new();
-<a href=#18 id=18 data-nosnippet>18</a>    <span class="kw">for </span>(<span class="kw-2">&amp;</span>id, player) <span class="kw">in </span>world.players.iter() {
-<a href=#19 id=19 data-nosnippet>19</a>        <span class="kw">if </span>id != player_id {
-<a href=#20 id=20 data-nosnippet>20</a>            targets.push((id, player.x, player.y, player.direction));
-<a href=#21 id=21 data-nosnippet>21</a>        }
-<a href=#22 id=22 data-nosnippet>22</a>    }
-<a href=#23 id=23 data-nosnippet>23</a>
-<a href=#24 id=24 data-nosnippet>24</a>    <span class="kw">for </span>(target_id, target_x, target_y, target_dir) <span class="kw">in </span>targets {
-<a href=#25 id=25 data-nosnippet>25</a>        <span class="kw">let </span>k = <span class="kw">crate</span>::game::commands::compute_direction(
-<a href=#26 id=26 data-nosnippet>26</a>            target_x <span class="kw">as </span>i32, target_y <span class="kw">as </span>i32, target_dir,
-<a href=#27 id=27 data-nosnippet>27</a>            sender_x <span class="kw">as </span>i32, sender_y <span class="kw">as </span>i32,
-<a href=#28 id=28 data-nosnippet>28</a>            world.width <span class="kw">as </span>i32, world.height <span class="kw">as </span>i32
-<a href=#29 id=29 data-nosnippet>29</a>        );
-<a href=#30 id=30 data-nosnippet>30</a>        
-<a href=#31 id=31 data-nosnippet>31</a>        <span class="kw">let </span>msg = <span class="macro">format!</span>(<span class="string">"message {}, {}\n"</span>, k, text);
-<a href=#32 id=32 data-nosnippet>32</a>        <span class="kw">if let </span><span class="prelude-val">Some</span>(player) = world.players.get_mut(<span class="kw-2">&amp;</span>target_id) {
-<a href=#33 id=33 data-nosnippet>33</a>            player.notifications.push_back(msg);
-<a href=#34 id=34 data-nosnippet>34</a>        }
-<a href=#35 id=35 data-nosnippet>35</a>    }
-<a href=#36 id=36 data-nosnippet>36</a>
-<a href=#37 id=37 data-nosnippet>37</a>    <span class="string">"ok\n"</span>.to_string()
-<a href=#38 id=38 data-nosnippet>38</a>}
+<a href=#17 id=17 data-nosnippet>17</a>    world.gui_events.push_back(<span class="macro">format!</span>(<span class="string">"pbc {} {}\n"</span>, player_id, text));
+<a href=#18 id=18 data-nosnippet>18</a>
+<a href=#19 id=19 data-nosnippet>19</a>    <span class="kw">let </span><span class="kw-2">mut </span>targets = Vec::new();
+<a href=#20 id=20 data-nosnippet>20</a>    <span class="kw">for </span>(<span class="kw-2">&amp;</span>id, player) <span class="kw">in </span>world.players.iter() {
+<a href=#21 id=21 data-nosnippet>21</a>        <span class="kw">if </span>id != player_id {
+<a href=#22 id=22 data-nosnippet>22</a>            targets.push((id, player.x, player.y, player.direction));
+<a href=#23 id=23 data-nosnippet>23</a>        }
+<a href=#24 id=24 data-nosnippet>24</a>    }
+<a href=#25 id=25 data-nosnippet>25</a>
+<a href=#26 id=26 data-nosnippet>26</a>    <span class="kw">for </span>(target_id, target_x, target_y, target_dir) <span class="kw">in </span>targets {
+<a href=#27 id=27 data-nosnippet>27</a>        <span class="kw">let </span>k = <span class="kw">crate</span>::game::commands::compute_direction(
+<a href=#28 id=28 data-nosnippet>28</a>            target_x <span class="kw">as </span>i32, target_y <span class="kw">as </span>i32, target_dir,
+<a href=#29 id=29 data-nosnippet>29</a>            sender_x <span class="kw">as </span>i32, sender_y <span class="kw">as </span>i32,
+<a href=#30 id=30 data-nosnippet>30</a>            world.width <span class="kw">as </span>i32, world.height <span class="kw">as </span>i32
+<a href=#31 id=31 data-nosnippet>31</a>        );
+<a href=#32 id=32 data-nosnippet>32</a>        
+<a href=#33 id=33 data-nosnippet>33</a>        <span class="kw">let </span>msg = <span class="macro">format!</span>(<span class="string">"message {}, {}\n"</span>, k, text);
+<a href=#34 id=34 data-nosnippet>34</a>        <span class="kw">if let </span><span class="prelude-val">Some</span>(player) = world.players.get_mut(<span class="kw-2">&amp;</span>target_id) {
+<a href=#35 id=35 data-nosnippet>35</a>            player.notifications.push_back(msg);
+<a href=#36 id=36 data-nosnippet>36</a>        }
+<a href=#37 id=37 data-nosnippet>37</a>    }
+<a href=#38 id=38 data-nosnippet>38</a>
+<a href=#39 id=39 data-nosnippet>39</a>    <span class="string">"ok\n"</span>.to_string()
+<a href=#40 id=40 data-nosnippet>40</a>}
 </code></pre></div></section></main></body></html>
