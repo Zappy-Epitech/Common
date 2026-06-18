@@ -1,2 +1,2 @@
-createSrcSidebar('[["zappy_server",["",[["game",[["commands",[],["incantation.rs","interaction.rs","mod.rs","movement.rs","social.rs"]]],["mod.rs","player.rs","world.rs"]],["network",[],["client.rs","mod.rs","server.rs"]],["protocol",[],["gui.rs","mod.rs"]]],["config.rs","main.rs"]]]]');
-//{"start":19,"fragment_lengths":[265]}
+createSrcSidebar('[["zappy_server",["",[["game",[["commands",[],["incantation.rs","interaction.rs","mod.rs","movement.rs","social.rs"]]],["mod.rs","player.rs","world.rs"]],["gui",[["commands",[],["map.rs","mod.rs"]]],["mod.rs"]],["network",[],["client.rs","mod.rs","server.rs"]],["protocol",[],["gui.rs","mod.rs"]]],["config.rs","main.rs"]]]]');
+//{"start":19,"fragment_lengths":[322]}
