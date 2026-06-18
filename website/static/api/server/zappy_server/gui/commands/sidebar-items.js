@@ -1,1 +1,1 @@
-window.SIDEBAR_ITEMS = {"fn":["execute"],"mod":["map"]};
+window.SIDEBAR_ITEMS = {"fn":["execute"],"mod":["map","player"]};
