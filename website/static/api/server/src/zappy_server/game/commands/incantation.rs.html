@@ -156,17 +156,23 @@
 <a href=#156 id=156 data-nosnippet>156</a>        consume_resources(tile_mut, <span class="kw-2">&amp;</span>req);
 <a href=#157 id=157 data-nosnippet>157</a>
 <a href=#158 id=158 data-nosnippet>158</a>        <span class="kw">let </span>new_level = start_level + <span class="number">1</span>;
-<a href=#159 id=159 data-nosnippet>159</a>        <span class="kw">for </span>p <span class="kw">in </span>world.players.values_mut() {
-<a href=#160 id=160 data-nosnippet>160</a>            <span class="kw">if </span>p.x == x &amp;&amp; p.y == y &amp;&amp; p.level == start_level {
-<a href=#161 id=161 data-nosnippet>161</a>                p.level = new_level;
-<a href=#162 id=162 data-nosnippet>162</a>            }
-<a href=#163 id=163 data-nosnippet>163</a>        }
-<a href=#164 id=164 data-nosnippet>164</a>        world.gui_events.push_back(<span class="macro">format!</span>(<span class="string">"pie {} {} 1\n"</span>, x, y));
-<a href=#165 id=165 data-nosnippet>165</a>
-<a href=#166 id=166 data-nosnippet>166</a>        <span class="macro">format!</span>(<span class="string">"Current level: {}\n"</span>, new_level)
-<a href=#167 id=167 data-nosnippet>167</a>    } <span class="kw">else </span>{
-<a href=#168 id=168 data-nosnippet>168</a>        world.gui_events.push_back(<span class="macro">format!</span>(<span class="string">"pie {} {} 0\n"</span>, x, y));
-<a href=#169 id=169 data-nosnippet>169</a>        <span class="string">"ko\n"</span>.to_string()
-<a href=#170 id=170 data-nosnippet>170</a>    }
-<a href=#171 id=171 data-nosnippet>171</a>}
+<a href=#159 id=159 data-nosnippet>159</a>        <span class="kw">let </span><span class="kw-2">mut </span>participants = Vec::new();
+<a href=#160 id=160 data-nosnippet>160</a>        <span class="kw">for </span>p <span class="kw">in </span>world.players.values_mut() {
+<a href=#161 id=161 data-nosnippet>161</a>            <span class="kw">if </span>p.x == x &amp;&amp; p.y == y &amp;&amp; p.level == start_level {
+<a href=#162 id=162 data-nosnippet>162</a>                p.level = new_level;
+<a href=#163 id=163 data-nosnippet>163</a>                participants.push(p.id);
+<a href=#164 id=164 data-nosnippet>164</a>            }
+<a href=#165 id=165 data-nosnippet>165</a>        }
+<a href=#166 id=166 data-nosnippet>166</a>        world.gui_events.push_back(<span class="macro">format!</span>(<span class="string">"pie {} {} 1\n"</span>, x, y));
+<a href=#167 id=167 data-nosnippet>167</a>        world.gui_events.push_back(<span class="kw">crate</span>::gui::commands::map::format_bct(world, x, y));
+<a href=#168 id=168 data-nosnippet>168</a>        <span class="kw">for </span>pid <span class="kw">in </span>participants {
+<a href=#169 id=169 data-nosnippet>169</a>            world.gui_events.push_back(<span class="macro">format!</span>(<span class="string">"plv {} {}\n"</span>, pid, new_level));
+<a href=#170 id=170 data-nosnippet>170</a>        }
+<a href=#171 id=171 data-nosnippet>171</a>
+<a href=#172 id=172 data-nosnippet>172</a>        <span class="macro">format!</span>(<span class="string">"Current level: {}\n"</span>, new_level)
+<a href=#173 id=173 data-nosnippet>173</a>    } <span class="kw">else </span>{
+<a href=#174 id=174 data-nosnippet>174</a>        world.gui_events.push_back(<span class="macro">format!</span>(<span class="string">"pie {} {} 0\n"</span>, x, y));
+<a href=#175 id=175 data-nosnippet>175</a>        <span class="string">"ko\n"</span>.to_string()
+<a href=#176 id=176 data-nosnippet>176</a>    }
+<a href=#177 id=177 data-nosnippet>177</a>}
 </code></pre></div></section></main></body></html>

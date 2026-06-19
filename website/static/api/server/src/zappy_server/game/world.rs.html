@@ -131,7 +131,7 @@
 <a href=#131 id=131 data-nosnippet>131</a>
 <a href=#132 id=132 data-nosnippet>132</a>        <span class="kw">if let </span><span class="prelude-val">Some</span>(pos) = <span class="self">self</span>.eggs.iter().position(|e| e.team == team_name) {
 <a href=#133 id=133 data-nosnippet>133</a>            <span class="kw">let </span>egg = <span class="self">self</span>.eggs.remove(pos);
-<a href=#134 id=134 data-nosnippet>134</a>            <span class="self">self</span>.gui_events.push_back(<span class="macro">format!</span>(<span class="string">"edi {}\n"</span>, egg.id));
+<a href=#134 id=134 data-nosnippet>134</a>            <span class="self">self</span>.gui_events.push_back(<span class="macro">format!</span>(<span class="string">"ebo {}\n"</span>, egg.id));
 <a href=#135 id=135 data-nosnippet>135</a>            spawn_pos = <span class="prelude-val">Some</span>((egg.x, egg.y));
 <a href=#136 id=136 data-nosnippet>136</a>        } <span class="kw">else </span>{
 <a href=#137 id=137 data-nosnippet>137</a>            <span class="kw">let </span>slots = <span class="self">self</span>.team_slots.get_mut(team_name)<span class="question-mark">?</span>;
