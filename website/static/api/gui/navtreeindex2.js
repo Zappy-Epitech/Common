@@ -1,5 +1,9 @@
 var NAVTREEINDEX2 =
 {
+"group__c__addons__log.html#ga3837960d57937bf10cc2f7b3174a2a0e":[0,0,1,0,92],
+"group__c__addons__log.html#ga3887e1f10ecd5fd48aacfda186ea8937":[0,0,1,0,8],
+"group__c__addons__log.html#ga3975f0ad59fa94ebc3e5a073b6c3bd47":[0,0,1,0,56],
+"group__c__addons__log.html#ga41b15e6c318b17ae883e1b84ab727ab5":[0,0,1,0,31],
 "group__c__addons__log.html#ga4388073e6cc93d9828f64277fa0ef3cc":[0,0,1,0,34],
 "group__c__addons__log.html#ga4c6a594b3bfaec99c6ace702cefa5163":[0,0,1,0,65],
 "group__c__addons__log.html#ga52e3b87d8bbed26b95ab40ed35785a6c":[0,0,1,0,79],
@@ -245,9 +249,5 @@ var NAVTREEINDEX2 =
 "group__c__addons__meta.html#gga38eff97e820c5aa8d2cfc7911b2bbea9a9fe40fc94ec5381170bc5bd94f05490d":[0,0,1,14,99,0],
 "group__c__addons__meta.html#gga38eff97e820c5aa8d2cfc7911b2bbea9ac50058e3b4146142518505cbfb3f5c1d":[0,0,1,14,99,9],
 "group__c__addons__meta.html#gga38eff97e820c5aa8d2cfc7911b2bbea9aff1656c6ef706960864ed11c8609234b":[0,0,1,14,99,1],
-"group__c__addons__meta.html#gga38eff97e820c5aa8d2cfc7911b2bbea9aff92b36a7686a78bf87fcb595f7e3a48":[0,0,1,14,99,7],
-"group__c__addons__meta__c.html":[0,0,1,14,0],
-"group__c__addons__meta__c.html#ga27ee69a43fa56c2a519e99fb3cf82355":[0,0,1,14,0,5],
-"group__c__addons__meta__c.html#ga350fba710182fa8bf9bedb0c7529a9f3":[0,0,1,14,0,2],
-"group__c__addons__meta__c.html#ga8e2836182fbca7e078171a512b643751":[0,0,1,14,0,4]
+"group__c__addons__meta.html#gga38eff97e820c5aa8d2cfc7911b2bbea9aff92b36a7686a78bf87fcb595f7e3a48":[0,0,1,14,99,7]
 };
