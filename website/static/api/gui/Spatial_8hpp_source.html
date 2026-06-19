@@ -102,8 +102,8 @@ $(document).ready(function(){initNavTree('Spatial_8hpp_source.html',''); initRes
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;raylib.h&gt;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> WINDOW_WIDTH = 1920.0f;</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> WINDOW_HEIGHT = 1200.0f;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> WINDOW_WIDTH = 1280.0f;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> WINDOW_HEIGHT = 720.0f;</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span>flecs {</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">struct </span>world;</div>
@@ -149,38 +149,40 @@ $(document).ready(function(){initNavTree('Spatial_8hpp_source.html',''); initRes
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>};</div>
 </div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="foldopen" id="foldopen00076" data-start="{" data-end="};">
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="structRotation3.html">   76</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structRotation3.html">Rotation3</a> {</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordtype">float</span> x, y, z;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keyword">static</span> <a class="code hl_struct" href="structRotation3.html">Rotation3</a> <a class="code hl_function" href="structRotation3.html#a1b84fc1cc05de334a071543308d478f4">zero</a>();</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keyword">static</span> <a class="code hl_struct" href="structRotation3.html">Rotation3</a> <a class="code hl_function" href="structRotation3.html#afc59275f00afab03dc63e8469e34d804">from_xyz</a>(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y, <span class="keywordtype">float</span> z);</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>};</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="keyword">using </span><a class="code hl_struct" href="structPosition3.html">Size3</a> = <a class="code hl_struct" href="structPosition3.html">Position3</a>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="foldopen" id="foldopen00078" data-start="{" data-end="};">
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="structRotation3.html">   78</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structRotation3.html">Rotation3</a> {</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordtype">float</span> x, y, z;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keyword">static</span> <a class="code hl_struct" href="structRotation3.html">Rotation3</a> <a class="code hl_function" href="structRotation3.html#a1b84fc1cc05de334a071543308d478f4">zero</a>();</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keyword">static</span> <a class="code hl_struct" href="structRotation3.html">Rotation3</a> <a class="code hl_function" href="structRotation3.html#afc59275f00afab03dc63e8469e34d804">from_xyz</a>(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y, <span class="keywordtype">float</span> z);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>};</div>
 </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="keyword">enum struct</span> Orientation : <span class="keywordtype">int</span> {</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    NORTH = 1,</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    EAST = 2,</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    SOUTH = 3,</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    WEST = 4,</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>};</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
-<div class="foldopen" id="foldopen00094" data-start="{" data-end="};">
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="structSize2.html">   94</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structSize2.html">Size2</a> {</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keywordtype">float</span> width, height;</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>};</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="keyword">enum struct</span> Orientation : <span class="keywordtype">int</span> {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    NORTH = 1,</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    EAST = 2,</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    SOUTH = 3,</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    WEST = 4,</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>};</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="foldopen" id="foldopen00096" data-start="{" data-end="};">
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="structSize2.html">   96</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structSize2.html">Size2</a> {</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordtype">float</span> width, height;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>};</div>
 </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
-<div class="foldopen" id="foldopen00099" data-start="{" data-end="};">
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="structScale.html">   99</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structScale.html">Scale</a> {</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keywordtype">float</span> value;</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>};</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="foldopen" id="foldopen00101" data-start="{" data-end="};">
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="structScale.html">  101</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structScale.html">Scale</a> {</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keywordtype">float</span> value;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>};</div>
 </div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
-<div class="foldopen" id="foldopen00104" data-start="{" data-end="};">
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="structSpatial.html">  104</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structSpatial.html">Spatial</a> {</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <a class="code hl_struct" href="structSpatial.html">Spatial</a>(flecs::world &amp;world);</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>};</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="foldopen" id="foldopen00106" data-start="{" data-end="};">
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="structSpatial.html">  106</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structSpatial.html">Spatial</a> {</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <a class="code hl_struct" href="structSpatial.html">Spatial</a>(flecs::world &amp;world);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>};</div>
 </div>
 <div class="ttc" id="astructPosition2_html"><div class="ttname"><a href="structPosition2.html">Position2</a></div><div class="ttdoc">Stores a 2D position.</div><div class="ttdef"><b>Definition</b> Spatial.hpp:14</div></div>
 <div class="ttc" id="astructPosition2_html_a10246f3bb787da96def250015d377f4b"><div class="ttname"><a href="structPosition2.html#a10246f3bb787da96def250015d377f4b">Position2::with_y</a></div><div class="ttdeci">Position2 with_y(float y)</div><div class="ttdoc">Returns a copy with a new y value.</div><div class="ttdef"><b>Definition</b> Spatial.cpp:58</div></div>
@@ -207,12 +209,12 @@ $(document).ready(function(){initNavTree('Spatial_8hpp_source.html',''); initRes
 <div class="ttc" id="astructPosition3_html_a9957c5df795e4b565e71a1418700951c"><div class="ttname"><a href="structPosition3.html#a9957c5df795e4b565e71a1418700951c">Position3::with_y</a></div><div class="ttdeci">Position3 with_y(float y) const</div><div class="ttdoc">Returns a copy with a new y value.</div><div class="ttdef"><b>Definition</b> Spatial.cpp:113</div></div>
 <div class="ttc" id="astructPosition3_html_aa00e18a5aa088cba0bb40b057b85ebd0"><div class="ttname"><a href="structPosition3.html#aa00e18a5aa088cba0bb40b057b85ebd0">Position3::add_y</a></div><div class="ttdeci">Position3 add_y(float y) const</div><div class="ttdoc">Returns a copy advanced on y.</div><div class="ttdef"><b>Definition</b> Spatial.cpp:143</div></div>
 <div class="ttc" id="astructPosition3_html_af4acc384fade43f50b1e5697ac19fe56"><div class="ttname"><a href="structPosition3.html#af4acc384fade43f50b1e5697ac19fe56">Position3::sub_z</a></div><div class="ttdeci">Position3 sub_z(float z) const</div><div class="ttdoc">Returns a copy shifted on z.</div><div class="ttdef"><b>Definition</b> Spatial.cpp:133</div></div>
-<div class="ttc" id="astructRotation3_html"><div class="ttname"><a href="structRotation3.html">Rotation3</a></div><div class="ttdoc">Stores Euler rotation values.</div><div class="ttdef"><b>Definition</b> Spatial.hpp:76</div></div>
+<div class="ttc" id="astructRotation3_html"><div class="ttname"><a href="structRotation3.html">Rotation3</a></div><div class="ttdoc">Stores Euler rotation values.</div><div class="ttdef"><b>Definition</b> Spatial.hpp:78</div></div>
 <div class="ttc" id="astructRotation3_html_a1b84fc1cc05de334a071543308d478f4"><div class="ttname"><a href="structRotation3.html#a1b84fc1cc05de334a071543308d478f4">Rotation3::zero</a></div><div class="ttdeci">static Rotation3 zero()</div><div class="ttdoc">Returns a zero rotation.</div><div class="ttdef"><b>Definition</b> Spatial.cpp:153</div></div>
 <div class="ttc" id="astructRotation3_html_afc59275f00afab03dc63e8469e34d804"><div class="ttname"><a href="structRotation3.html#afc59275f00afab03dc63e8469e34d804">Rotation3::from_xyz</a></div><div class="ttdeci">static Rotation3 from_xyz(float x, float y, float z)</div><div class="ttdoc">Creates a rotation from angles.</div><div class="ttdef"><b>Definition</b> Spatial.cpp:158</div></div>
-<div class="ttc" id="astructScale_html"><div class="ttname"><a href="structScale.html">Scale</a></div><div class="ttdoc">Stores a uniform scale.</div><div class="ttdef"><b>Definition</b> Spatial.hpp:99</div></div>
-<div class="ttc" id="astructSize2_html"><div class="ttname"><a href="structSize2.html">Size2</a></div><div class="ttdoc">Stores a 2D size.</div><div class="ttdef"><b>Definition</b> Spatial.hpp:94</div></div>
-<div class="ttc" id="astructSpatial_html"><div class="ttname"><a href="structSpatial.html">Spatial</a></div><div class="ttdoc">Registers spatial components.</div><div class="ttdef"><b>Definition</b> Spatial.hpp:104</div></div>
+<div class="ttc" id="astructScale_html"><div class="ttname"><a href="structScale.html">Scale</a></div><div class="ttdoc">Stores a uniform scale.</div><div class="ttdef"><b>Definition</b> Spatial.hpp:101</div></div>
+<div class="ttc" id="astructSize2_html"><div class="ttname"><a href="structSize2.html">Size2</a></div><div class="ttdoc">Stores a 2D size.</div><div class="ttdef"><b>Definition</b> Spatial.hpp:96</div></div>
+<div class="ttc" id="astructSpatial_html"><div class="ttname"><a href="structSpatial.html">Spatial</a></div><div class="ttdoc">Registers spatial components.</div><div class="ttdef"><b>Definition</b> Spatial.hpp:106</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
