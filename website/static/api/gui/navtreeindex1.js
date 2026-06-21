@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"group__api__types.html#ga918ec0f508fae0ff64bb4d5966ee3262":[0,0,0,3,54],
 "group__api__types.html#ga963e0fe5a690bc71993d4d502d281e97":[0,0,0,3,105],
 "group__api__types.html#ga995e2a852a9c933b57fd6b23f5e227f0":[0,0,0,3,75],
 "group__api__types.html#ga9e9214c482f50a2a2d69a756f9f8d2f3":[0,0,0,3,68],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "group__c__addons__log.html#ga2f263fcc823b66ff71f04b2f703c75c3":[0,0,1,0,17],
 "group__c__addons__log.html#ga305c67b7e33fa5e50ce60c94c7fa1d4e":[0,0,1,0,16],
 "group__c__addons__log.html#ga31b0fc0e79b7ce736f5e8b2866daf446":[0,0,1,0,91],
-"group__c__addons__log.html#ga328ca3a1e02fa775edcbd46452c3a140":[0,0,1,0,23],
-"group__c__addons__log.html#ga36ee980d66e0e89c7fa13af23ccf9c74":[0,0,1,0,18]
+"group__c__addons__log.html#ga328ca3a1e02fa775edcbd46452c3a140":[0,0,1,0,23]
 };

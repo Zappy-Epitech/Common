@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"group__c__addons__log.html#ga36ee980d66e0e89c7fa13af23ccf9c74":[0,0,1,0,18],
 "group__c__addons__log.html#ga3837960d57937bf10cc2f7b3174a2a0e":[0,0,1,0,92],
 "group__c__addons__log.html#ga3887e1f10ecd5fd48aacfda186ea8937":[0,0,1,0,8],
 "group__c__addons__log.html#ga3975f0ad59fa94ebc3e5a073b6c3bd47":[0,0,1,0,56],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "group__c__addons__meta.html#gga38eff97e820c5aa8d2cfc7911b2bbea9a9705081c3c0736e483a647656b2d928b":[0,0,1,14,99,6],
 "group__c__addons__meta.html#gga38eff97e820c5aa8d2cfc7911b2bbea9a9fe40fc94ec5381170bc5bd94f05490d":[0,0,1,14,99,0],
 "group__c__addons__meta.html#gga38eff97e820c5aa8d2cfc7911b2bbea9ac50058e3b4146142518505cbfb3f5c1d":[0,0,1,14,99,9],
-"group__c__addons__meta.html#gga38eff97e820c5aa8d2cfc7911b2bbea9aff1656c6ef706960864ed11c8609234b":[0,0,1,14,99,1],
-"group__c__addons__meta.html#gga38eff97e820c5aa8d2cfc7911b2bbea9aff92b36a7686a78bf87fcb595f7e3a48":[0,0,1,14,99,7]
+"group__c__addons__meta.html#gga38eff97e820c5aa8d2cfc7911b2bbea9aff1656c6ef706960864ed11c8609234b":[0,0,1,14,99,1]
 };

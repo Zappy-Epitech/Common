@@ -172,5 +172,8 @@ var searchData=
   ['egghatched_169',['EggHatched',['../structzappy_1_1EggHatched.html',1,'zappy']]],
   ['eggid_170',['EggId',['../structEggId.html',1,'']]],
   ['eggnew_171',['EggNew',['../structzappy_1_1EggNew.html',1,'zappy']]],
-  ['error_172',['Error',['../structnet_1_1Error.html',1,'net']]]
+  ['endgame_172',['EndGame',['../structEndGame.html',1,'']]],
+  ['endgameplayerstats_173',['EndGamePlayerStats',['../structEndGamePlayerStats.html',1,'']]],
+  ['endgamestate_174',['EndGameState',['../structEndGameState.html',1,'']]],
+  ['error_175',['Error',['../structnet_1_1Error.html',1,'net']]]
 ];
