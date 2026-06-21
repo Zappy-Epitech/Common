@@ -9,7 +9,8 @@ var searchData=
   ['simulationtime_6',['SimulationTime',['../structSimulationTime.html',1,'']]],
   ['size2_7',['Size2',['../structSize2.html',1,'']]],
   ['skinanimation_8',['SkinAnimation',['../structSkinAnimation.html',1,'']]],
-  ['skinpose_9',['SkinPose',['../structSkinPose.html',1,'']]],
-  ['sockethandle_10',['SocketHandle',['../classnet_1_1SocketHandle.html',1,'net']]],
-  ['spatial_11',['Spatial',['../structSpatial.html',1,'']]]
+  ['skinasset_9',['SkinAsset',['../structSkinAsset.html',1,'']]],
+  ['skinpose_10',['SkinPose',['../structSkinPose.html',1,'']]],
+  ['sockethandle_11',['SocketHandle',['../classnet_1_1SocketHandle.html',1,'net']]],
+  ['spatial_12',['Spatial',['../structSpatial.html',1,'']]]
 ];

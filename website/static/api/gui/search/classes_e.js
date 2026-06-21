@@ -13,7 +13,8 @@ var searchData=
   ['playerposition_10',['PlayerPosition',['../structzappy_1_1PlayerPosition.html',1,'zappy']]],
   ['playerresourcecollect_11',['PlayerResourceCollect',['../structzappy_1_1PlayerResourceCollect.html',1,'zappy']]],
   ['playerresourcedrop_12',['PlayerResourceDrop',['../structzappy_1_1PlayerResourceDrop.html',1,'zappy']]],
-  ['position2_13',['Position2',['../structPosition2.html',1,'']]],
-  ['position3_14',['Position3',['../structPosition3.html',1,'']]],
-  ['postrender_15',['PostRender',['../structPostRender.html',1,'']]]
+  ['playerskin_13',['PlayerSkin',['../structPlayerSkin.html',1,'']]],
+  ['position2_14',['Position2',['../structPosition2.html',1,'']]],
+  ['position3_15',['Position3',['../structPosition3.html',1,'']]],
+  ['postrender_16',['PostRender',['../structPostRender.html',1,'']]]
 ];
