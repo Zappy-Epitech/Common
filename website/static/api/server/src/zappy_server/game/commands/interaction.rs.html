@@ -78,7 +78,7 @@
 <a href=#78 id=78 data-nosnippet>78</a>                    Resource::Food =&gt; <span class="number">0</span>, Resource::Linemate =&gt; <span class="number">1</span>, Resource::Deraumere =&gt; <span class="number">2</span>,
 <a href=#79 id=79 data-nosnippet>79</a>                    Resource::Sibur =&gt; <span class="number">3</span>, Resource::Mendiane =&gt; <span class="number">4</span>, Resource::Phiras =&gt; <span class="number">5</span>, Resource::Thystame =&gt; <span class="number">6</span>,
 <a href=#80 id=80 data-nosnippet>80</a>                };
-<a href=#81 id=81 data-nosnippet>81</a>                world.gui_events.push_back(<span class="macro">format!</span>(<span class="string">"pgt {} {}\n"</span>, player_id, resource_id));
+<a href=#81 id=81 data-nosnippet>81</a>                world.gui_events.push_back(<span class="macro">format!</span>(<span class="string">"pgt #{} {}\n"</span>, player_id, resource_id));
 <a href=#82 id=82 data-nosnippet>82</a>
 <a href=#83 id=83 data-nosnippet>83</a>                {
 <a href=#84 id=84 data-nosnippet>84</a>                    <span class="kw">let </span>player = world.players.get_mut(<span class="kw-2">&amp;</span>player_id).unwrap();
@@ -94,7 +94,7 @@
 <a href=#94 id=94 data-nosnippet>94</a>                    <span class="kw">let </span>m = <span class="kw-2">*</span>player.inventory.get(<span class="kw-2">&amp;</span>Resource::Mendiane).unwrap_or(<span class="kw-2">&amp;</span><span class="number">0</span>);
 <a href=#95 id=95 data-nosnippet>95</a>                    <span class="kw">let </span>p = <span class="kw-2">*</span>player.inventory.get(<span class="kw-2">&amp;</span>Resource::Phiras).unwrap_or(<span class="kw-2">&amp;</span><span class="number">0</span>);
 <a href=#96 id=96 data-nosnippet>96</a>                    <span class="kw">let </span>t = <span class="kw-2">*</span>player.inventory.get(<span class="kw-2">&amp;</span>Resource::Thystame).unwrap_or(<span class="kw-2">&amp;</span><span class="number">0</span>);
-<a href=#97 id=97 data-nosnippet>97</a>                    world.gui_events.push_back(<span class="macro">format!</span>(<span class="string">"pin {} {} {} {} {} {} {} {} {} {}\n"</span>, player_id, px, py, f, l, d, s, m, p, t));
+<a href=#97 id=97 data-nosnippet>97</a>                    world.gui_events.push_back(<span class="macro">format!</span>(<span class="string">"pin #{} {} {} {} {} {} {} {} {} {}\n"</span>, player_id, px, py, f, l, d, s, m, p, t));
 <a href=#98 id=98 data-nosnippet>98</a>                }
 <a href=#99 id=99 data-nosnippet>99</a>                world.gui_events.push_back(<span class="kw">crate</span>::gui::commands::map::format_bct(world, px, py));
 <a href=#100 id=100 data-nosnippet>100</a>                <span class="string">"ok\n"</span>.to_string()
@@ -120,7 +120,7 @@
 <a href=#120 id=120 data-nosnippet>120</a>                    Resource::Food =&gt; <span class="number">0</span>, Resource::Linemate =&gt; <span class="number">1</span>, Resource::Deraumere =&gt; <span class="number">2</span>,
 <a href=#121 id=121 data-nosnippet>121</a>                    Resource::Sibur =&gt; <span class="number">3</span>, Resource::Mendiane =&gt; <span class="number">4</span>, Resource::Phiras =&gt; <span class="number">5</span>, Resource::Thystame =&gt; <span class="number">6</span>,
 <a href=#122 id=122 data-nosnippet>122</a>                };
-<a href=#123 id=123 data-nosnippet>123</a>                world.gui_events.push_back(<span class="macro">format!</span>(<span class="string">"pdr {} {}\n"</span>, player_id, resource_id));
+<a href=#123 id=123 data-nosnippet>123</a>                world.gui_events.push_back(<span class="macro">format!</span>(<span class="string">"pdr #{} {}\n"</span>, player_id, resource_id));
 <a href=#124 id=124 data-nosnippet>124</a>
 <a href=#125 id=125 data-nosnippet>125</a>                {
 <a href=#126 id=126 data-nosnippet>126</a>                    <span class="kw">let </span>player = world.players.get_mut(<span class="kw-2">&amp;</span>player_id).unwrap();
@@ -137,7 +137,7 @@
 <a href=#137 id=137 data-nosnippet>137</a>                    <span class="kw">let </span>m = <span class="kw-2">*</span>player.inventory.get(<span class="kw-2">&amp;</span>Resource::Mendiane).unwrap_or(<span class="kw-2">&amp;</span><span class="number">0</span>);
 <a href=#138 id=138 data-nosnippet>138</a>                    <span class="kw">let </span>p = <span class="kw-2">*</span>player.inventory.get(<span class="kw-2">&amp;</span>Resource::Phiras).unwrap_or(<span class="kw-2">&amp;</span><span class="number">0</span>);
 <a href=#139 id=139 data-nosnippet>139</a>                    <span class="kw">let </span>t = <span class="kw-2">*</span>player.inventory.get(<span class="kw-2">&amp;</span>Resource::Thystame).unwrap_or(<span class="kw-2">&amp;</span><span class="number">0</span>);
-<a href=#140 id=140 data-nosnippet>140</a>                    world.gui_events.push_back(<span class="macro">format!</span>(<span class="string">"pin {} {} {} {} {} {} {} {} {} {}\n"</span>, player_id, px, py, f, l, d, s, m, p, t));
+<a href=#140 id=140 data-nosnippet>140</a>                    world.gui_events.push_back(<span class="macro">format!</span>(<span class="string">"pin #{} {} {} {} {} {} {} {} {} {}\n"</span>, player_id, px, py, f, l, d, s, m, p, t));
 <a href=#141 id=141 data-nosnippet>141</a>                }
 <a href=#142 id=142 data-nosnippet>142</a>
 <a href=#143 id=143 data-nosnippet>143</a>                {
@@ -167,7 +167,7 @@
 <a href=#167 id=167 data-nosnippet>167</a>                team: team_name,
 <a href=#168 id=168 data-nosnippet>168</a>            });
 <a href=#169 id=169 data-nosnippet>169</a>
-<a href=#170 id=170 data-nosnippet>170</a>            world.gui_events.push_back(<span class="macro">format!</span>(<span class="string">"enw {} {} {} {}\n"</span>, egg_id, player_id, tx, ty));
+<a href=#170 id=170 data-nosnippet>170</a>            world.gui_events.push_back(<span class="macro">format!</span>(<span class="string">"enw #{} #{} {} {}\n"</span>, egg_id, player_id, tx, ty));
 <a href=#171 id=171 data-nosnippet>171</a>            
 <a href=#172 id=172 data-nosnippet>172</a>            <span class="string">"ok\n"</span>.to_string()
 <a href=#173 id=173 data-nosnippet>173</a>        }

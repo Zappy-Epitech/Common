@@ -217,7 +217,7 @@
 <a href=#217 id=217 data-nosnippet>217</a>        }
 <a href=#218 id=218 data-nosnippet>218</a>
 <a href=#219 id=219 data-nosnippet>219</a>        <span class="kw">for </span>(token, id) <span class="kw">in </span>dead_players {
-<a href=#220 id=220 data-nosnippet>220</a>            <span class="self">self</span>.broadcast_gui(<span class="kw-2">&amp;</span><span class="macro">format!</span>(<span class="string">"pdi {}\n"</span>, id));
+<a href=#220 id=220 data-nosnippet>220</a>            <span class="self">self</span>.broadcast_gui(<span class="kw-2">&amp;</span><span class="macro">format!</span>(<span class="string">"pdi #{}\n"</span>, id));
 <a href=#221 id=221 data-nosnippet>221</a>            <span class="kw">let </span>team = <span class="self">self</span>.world.players.get(<span class="kw-2">&amp;</span>id).map(|p| p.team.clone()).unwrap_or_default();
 <a href=#222 id=222 data-nosnippet>222</a>            <span class="self">self</span>.log(<span class="macro">format!</span>(<span class="string">"Player {} (Team: {}) starved to death."</span>, id, team));
 <a href=#223 id=223 data-nosnippet>223</a>            <span class="self">self</span>.emit_event(ServerEvent::PlayerDied(team));
@@ -325,7 +325,7 @@
 <a href=#325 id=325 data-nosnippet>325</a>            <span class="self">self</span>.emit_event(ServerEvent::ClientDisconnected);
 <a href=#326 id=326 data-nosnippet>326</a>            <span class="self">self</span>.clients.remove(<span class="kw-2">&amp;</span>token);
 <a href=#327 id=327 data-nosnippet>327</a>            <span class="kw">if let </span><span class="prelude-val">Some</span>(id) = player_to_remove {
-<a href=#328 id=328 data-nosnippet>328</a>                <span class="self">self</span>.broadcast_gui(<span class="kw-2">&amp;</span><span class="macro">format!</span>(<span class="string">"pdi {}\n"</span>, id));
+<a href=#328 id=328 data-nosnippet>328</a>                <span class="self">self</span>.broadcast_gui(<span class="kw-2">&amp;</span><span class="macro">format!</span>(<span class="string">"pdi #{}\n"</span>, id));
 <a href=#329 id=329 data-nosnippet>329</a>                <span class="kw">let </span>team = <span class="self">self</span>.world.players.get(<span class="kw-2">&amp;</span>id).map(|p| p.team.clone()).unwrap_or_default();
 <a href=#330 id=330 data-nosnippet>330</a>                <span class="self">self</span>.world.remove_player(id);
 <a href=#331 id=331 data-nosnippet>331</a>                <span class="self">self</span>.emit_event(ServerEvent::PlayerDied(team));
@@ -371,10 +371,10 @@
 <a href=#371 id=371 data-nosnippet>371</a>                                    <span class="kw">crate</span>::game::player::Direction::North =&gt; <span class="number">1</span>, <span class="kw">crate</span>::game::player::Direction::East =&gt; <span class="number">2</span>,
 <a href=#372 id=372 data-nosnippet>372</a>                                    <span class="kw">crate</span>::game::player::Direction::South =&gt; <span class="number">3</span>, <span class="kw">crate</span>::game::player::Direction::West =&gt; <span class="number">4</span>,
 <a href=#373 id=373 data-nosnippet>373</a>                                };
-<a href=#374 id=374 data-nosnippet>374</a>                                client.buffer_out.extend_from_slice(<span class="macro">format!</span>(<span class="string">"pnw {} {} {} {} {} {}\n"</span>, p.id, p.x, p.y, o, p.level, p.team).as_bytes());
+<a href=#374 id=374 data-nosnippet>374</a>                                client.buffer_out.extend_from_slice(<span class="macro">format!</span>(<span class="string">"pnw #{} {} {} {} {} {}\n"</span>, p.id, p.x, p.y, o, p.level, p.team).as_bytes());
 <a href=#375 id=375 data-nosnippet>375</a>                            }
 <a href=#376 id=376 data-nosnippet>376</a>                            <span class="kw">for </span>e <span class="kw">in </span><span class="kw-2">&amp;</span><span class="self">self</span>.world.eggs {
-<a href=#377 id=377 data-nosnippet>377</a>                                client.buffer_out.extend_from_slice(<span class="macro">format!</span>(<span class="string">"enw {} 0 {} {}\n"</span>, e.id, e.x, e.y).as_bytes());
+<a href=#377 id=377 data-nosnippet>377</a>                                client.buffer_out.extend_from_slice(<span class="macro">format!</span>(<span class="string">"enw #{} #0 {} {}\n"</span>, e.id, e.x, e.y).as_bytes());
 <a href=#378 id=378 data-nosnippet>378</a>                            }
 <a href=#379 id=379 data-nosnippet>379</a>                            <span class="self">self</span>.log(<span class="macro">format!</span>(<span class="string">"Graphic client connected (Token: {:?})"</span>, token));
 <a href=#380 id=380 data-nosnippet>380</a>                        } <span class="kw">else if let </span><span class="prelude-val">Some</span>(player_id) = <span class="self">self</span>.world.add_player(<span class="kw-2">&amp;</span>line_str, <span class="self">self</span>.config.freq) {
@@ -392,7 +392,7 @@
 <a href=#392 id=392 data-nosnippet>392</a>                                <span class="kw">crate</span>::game::player::Direction::South =&gt; <span class="number">3</span>,
 <a href=#393 id=393 data-nosnippet>393</a>                                <span class="kw">crate</span>::game::player::Direction::West =&gt; <span class="number">4</span>,
 <a href=#394 id=394 data-nosnippet>394</a>                            };
-<a href=#395 id=395 data-nosnippet>395</a>                            <span class="self">self</span>.broadcast_gui(<span class="kw-2">&amp;</span><span class="macro">format!</span>(<span class="string">"pnw {} {} {} {} {} {}\n"</span>, player_id, player.x, player.y, orientation, player.level, player.team));
+<a href=#395 id=395 data-nosnippet>395</a>                            <span class="self">self</span>.broadcast_gui(<span class="kw-2">&amp;</span><span class="macro">format!</span>(<span class="string">"pnw #{} {} {} {} {} {}\n"</span>, player_id, player.x, player.y, orientation, player.level, player.team));
 <a href=#396 id=396 data-nosnippet>396</a>                            
 <a href=#397 id=397 data-nosnippet>397</a>                            <span class="self">self</span>.log(<span class="macro">format!</span>(<span class="string">"Player {} joined team '{}'"</span>, player_id, line_str));
 <a href=#398 id=398 data-nosnippet>398</a>                            <span class="self">self</span>.emit_event(ServerEvent::PlayerJoinedTeam(line_str.clone()));

@@ -111,7 +111,7 @@
 <a href=#111 id=111 data-nosnippet>111</a>                participants.push(player.id.to_string());
 <a href=#112 id=112 data-nosnippet>112</a>            }
 <a href=#113 id=113 data-nosnippet>113</a>        }
-<a href=#114 id=114 data-nosnippet>114</a>        world.gui_events.push_back(<span class="macro">format!</span>(<span class="string">"pic {} {} {} {}\n"</span>, x, y, level, participants.join(<span class="string">" "</span>)));
+<a href=#114 id=114 data-nosnippet>114</a>        world.gui_events.push_back(<span class="macro">format!</span>(<span class="string">"pic {} {} {} #{}\n"</span>, x, y, level, participants.join(<span class="string">" #"</span>)));
 <a href=#115 id=115 data-nosnippet>115</a>
 <a href=#116 id=116 data-nosnippet>116</a>        <span class="prelude-val">Some</span>(<span class="string">"Elevation underway\n"</span>.to_string())
 <a href=#117 id=117 data-nosnippet>117</a>    } <span class="kw">else </span>{
@@ -166,7 +166,7 @@
 <a href=#166 id=166 data-nosnippet>166</a>        world.gui_events.push_back(<span class="macro">format!</span>(<span class="string">"pie {} {} 1\n"</span>, x, y));
 <a href=#167 id=167 data-nosnippet>167</a>        world.gui_events.push_back(<span class="kw">crate</span>::gui::commands::map::format_bct(world, x, y));
 <a href=#168 id=168 data-nosnippet>168</a>        <span class="kw">for </span>pid <span class="kw">in </span>participants {
-<a href=#169 id=169 data-nosnippet>169</a>            world.gui_events.push_back(<span class="macro">format!</span>(<span class="string">"plv {} {}\n"</span>, pid, new_level));
+<a href=#169 id=169 data-nosnippet>169</a>            world.gui_events.push_back(<span class="macro">format!</span>(<span class="string">"plv #{} {}\n"</span>, pid, new_level));
 <a href=#170 id=170 data-nosnippet>170</a>        }
 <a href=#171 id=171 data-nosnippet>171</a>
 <a href=#172 id=172 data-nosnippet>172</a>        <span class="macro">format!</span>(<span class="string">"Current level: {}\n"</span>, new_level)

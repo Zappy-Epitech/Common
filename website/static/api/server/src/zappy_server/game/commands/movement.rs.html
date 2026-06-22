@@ -15,7 +15,7 @@
 <a href=#15 id=15 data-nosnippet>15</a>            }
 <a href=#16 id=16 data-nosnippet>16</a>            <span class="kw">let </span>o = <span class="kw">match </span>player.direction { Direction::North =&gt; <span class="number">1</span>, Direction::East =&gt; <span class="number">2</span>, Direction::South =&gt; <span class="number">3</span>, Direction::West =&gt; <span class="number">4 </span>};
 <a href=#17 id=17 data-nosnippet>17</a>            <span class="kw">let </span>(x, y) = (player.x, player.y);
-<a href=#18 id=18 data-nosnippet>18</a>            world.gui_events.push_back(<span class="macro">format!</span>(<span class="string">"ppo {} {} {} {}\n"</span>, player_id, x, y, o));
+<a href=#18 id=18 data-nosnippet>18</a>            world.gui_events.push_back(<span class="macro">format!</span>(<span class="string">"ppo #{} {} {} {}\n"</span>, player_id, x, y, o));
 <a href=#19 id=19 data-nosnippet>19</a>            <span class="string">"ok\n"</span>.to_string()
 <a href=#20 id=20 data-nosnippet>20</a>        }
 <a href=#21 id=21 data-nosnippet>21</a>        Command::Right =&gt; {
@@ -23,7 +23,7 @@
 <a href=#23 id=23 data-nosnippet>23</a>            player.direction = player.direction.turn_right();
 <a href=#24 id=24 data-nosnippet>24</a>            <span class="kw">let </span>o = <span class="kw">match </span>player.direction { Direction::North =&gt; <span class="number">1</span>, Direction::East =&gt; <span class="number">2</span>, Direction::South =&gt; <span class="number">3</span>, Direction::West =&gt; <span class="number">4 </span>};
 <a href=#25 id=25 data-nosnippet>25</a>            <span class="kw">let </span>(x, y) = (player.x, player.y);
-<a href=#26 id=26 data-nosnippet>26</a>            world.gui_events.push_back(<span class="macro">format!</span>(<span class="string">"ppo {} {} {} {}\n"</span>, player_id, x, y, o));
+<a href=#26 id=26 data-nosnippet>26</a>            world.gui_events.push_back(<span class="macro">format!</span>(<span class="string">"ppo #{} {} {} {}\n"</span>, player_id, x, y, o));
 <a href=#27 id=27 data-nosnippet>27</a>            <span class="string">"ok\n"</span>.to_string()
 <a href=#28 id=28 data-nosnippet>28</a>        }
 <a href=#29 id=29 data-nosnippet>29</a>        Command::Left =&gt; {
@@ -31,7 +31,7 @@
 <a href=#31 id=31 data-nosnippet>31</a>            player.direction = player.direction.turn_left();
 <a href=#32 id=32 data-nosnippet>32</a>            <span class="kw">let </span>o = <span class="kw">match </span>player.direction { Direction::North =&gt; <span class="number">1</span>, Direction::East =&gt; <span class="number">2</span>, Direction::South =&gt; <span class="number">3</span>, Direction::West =&gt; <span class="number">4 </span>};
 <a href=#33 id=33 data-nosnippet>33</a>            <span class="kw">let </span>(x, y) = (player.x, player.y);
-<a href=#34 id=34 data-nosnippet>34</a>            world.gui_events.push_back(<span class="macro">format!</span>(<span class="string">"ppo {} {} {} {}\n"</span>, player_id, x, y, o));
+<a href=#34 id=34 data-nosnippet>34</a>            world.gui_events.push_back(<span class="macro">format!</span>(<span class="string">"ppo #{} {} {} {}\n"</span>, player_id, x, y, o));
 <a href=#35 id=35 data-nosnippet>35</a>            <span class="string">"ok\n"</span>.to_string()
 <a href=#36 id=36 data-nosnippet>36</a>        }
 <a href=#37 id=37 data-nosnippet>37</a>        Command::Eject =&gt; {
@@ -75,11 +75,11 @@
 <a href=#75 id=75 data-nosnippet>75</a>                    target.notifications.push_back(<span class="macro">format!</span>(<span class="string">"eject {}\n"</span>, k));
 <a href=#76 id=76 data-nosnippet>76</a>                    
 <a href=#77 id=77 data-nosnippet>77</a>                    <span class="kw">let </span>o = <span class="kw">match </span>target.direction { Direction::North =&gt; <span class="number">1</span>, Direction::East =&gt; <span class="number">2</span>, Direction::South =&gt; <span class="number">3</span>, Direction::West =&gt; <span class="number">4 </span>};
-<a href=#78 id=78 data-nosnippet>78</a>                    world.gui_events.push_back(<span class="macro">format!</span>(<span class="string">"ppo {} {} {} {}\n"</span>, target_id, target.x, target.y, o));
+<a href=#78 id=78 data-nosnippet>78</a>                    world.gui_events.push_back(<span class="macro">format!</span>(<span class="string">"ppo #{} {} {} {}\n"</span>, target_id, target.x, target.y, o));
 <a href=#79 id=79 data-nosnippet>79</a>                }
 <a href=#80 id=80 data-nosnippet>80</a>            }
 <a href=#81 id=81 data-nosnippet>81</a>
-<a href=#82 id=82 data-nosnippet>82</a>            world.gui_events.push_back(<span class="macro">format!</span>(<span class="string">"pex {}\n"</span>, player_id));
+<a href=#82 id=82 data-nosnippet>82</a>            world.gui_events.push_back(<span class="macro">format!</span>(<span class="string">"pex #{}\n"</span>, player_id));
 <a href=#83 id=83 data-nosnippet>83</a>
 <a href=#84 id=84 data-nosnippet>84</a>            <span class="string">"ok\n"</span>.to_string()
 <a href=#85 id=85 data-nosnippet>85</a>        }
