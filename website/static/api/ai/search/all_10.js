@@ -6,5 +6,6 @@ var searchData=
   ['socket_5ferror_3',['SOCKET_ERROR',['../Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aad8d4e8b0e41222647ad1b740fe6deb4d',1,'Errors.hpp']]],
   ['splitcompletelines_4',['splitcompletelines',['../Network_8cpp.html#a605adbc7d6cfeb097af55136a97313e2',1,'splitCompleteLines(std::string &amp;buffer):&#160;Network.cpp'],['../Network_8hpp.html#a605adbc7d6cfeb097af55136a97313e2',1,'splitCompleteLines(std::string &amp;buffer):&#160;Network.cpp']]],
   ['start_5',['start',['../classPlayer.html#a76e60ba5596cbc1cb7e76da2b9141a60',1,'Player']]],
-  ['stateswitch_2ecpp_6',['StateSwitch.cpp',['../StateSwitch_8cpp.html',1,'']]]
+  ['stateswitch_2ecpp_6',['StateSwitch.cpp',['../StateSwitch_8cpp.html',1,'']]],
+  ['stonestodropforupgrade_7',['stonestodropforupgrade',['../StateSwitch_8cpp.html#ad3c72729c09b8e962f6d79394f3387ce',1,'stonesToDropForUpgrade(int level, const std::vector&lt; Ressource &gt; &amp;currentTile):&#160;StateSwitch.cpp'],['../Player_8hpp.html#ad3c72729c09b8e962f6d79394f3387ce',1,'stonesToDropForUpgrade(int level, const std::vector&lt; Ressource &gt; &amp;currentTile):&#160;StateSwitch.cpp']]]
 ];

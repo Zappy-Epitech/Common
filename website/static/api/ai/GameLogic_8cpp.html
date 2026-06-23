@@ -153,6 +153,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a1dd14f591eff5dea91185b734b85db43" id="r_a1dd14f591eff5dea91185b734b85db43"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; <a class="el" href="Ressource_8hpp.html#a09526742abc3e0feb0a61b36291e1b8c">Ressource</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GameLogic_8cpp.html#a1dd14f591eff5dea91185b734b85db43">parseLook</a> (const std::string &amp;res)</td></tr>
 <tr class="memdesc:a1dd14f591eff5dea91185b734b85db43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a server <code>Look</code> response into per-tile resource lists.  <br /></td></tr>
 <tr class="separator:a1dd14f591eff5dea91185b734b85db43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50f03cddeaf5722cc9c259332d67156c" id="r_a50f03cddeaf5722cc9c259332d67156c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GameLogic_8cpp.html#a50f03cddeaf5722cc9c259332d67156c">countPlayersOnTile</a> (const std::string &amp;lookResponse)</td></tr>
+<tr class="memdesc:a50f03cddeaf5722cc9c259332d67156c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counts the players standing on the current tile from a <code>Look</code> reply.  <br /></td></tr>
+<tr class="separator:a50f03cddeaf5722cc9c259332d67156c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa02472a024b1e66f94d86e53f8576c9c" id="r_aa02472a024b1e66f94d86e53f8576c9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GameLogic_8cpp.html#aa02472a024b1e66f94d86e53f8576c9c">parseInventory</a> (<a class="el" href="structInventory.html">Inventory</a> &amp;inventory, const std::string &amp;res)</td></tr>
 <tr class="memdesc:aa02472a024b1e66f94d86e53f8576c9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates an inventory in place from a server <code><a class="el" href="structInventory.html" title="The quantity of every resource a player currently holds.">Inventory</a></code> response.  <br /></td></tr>
 <tr class="separator:aa02472a024b1e66f94d86e53f8576c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,6 +171,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a96dfafef50f3f60151a4ceea304c6427" id="r_a96dfafef50f3f60151a4ceea304c6427"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GameLogic_8cpp.html#a96dfafef50f3f60151a4ceea304c6427">parseUpgradeLevel</a> (const std::string &amp;text)</td></tr>
 <tr class="memdesc:a96dfafef50f3f60151a4ceea304c6427"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the level from an "upgrade" broadcast call.  <br /></td></tr>
 <tr class="separator:a96dfafef50f3f60151a4ceea304c6427"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fe409e670d34f18f91b31101e9a0da1" id="r_a6fe409e670d34f18f91b31101e9a0da1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GameLogic_8cpp.html#a6fe409e670d34f18f91b31101e9a0da1">parseUpgradeCall</a> (const std::string &amp;text, long &amp;hostId)</td></tr>
+<tr class="memdesc:a6fe409e670d34f18f91b31101e9a0da1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a team <code>"upgrade N [hostId]"</code> ritual call.  <br /></td></tr>
+<tr class="separator:a6fe409e670d34f18f91b31101e9a0da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f44469e4c857a60feec640818ce595d" id="r_a2f44469e4c857a60feec640818ce595d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GameLogic_8cpp.html#a2f44469e4c857a60feec640818ce595d">parseTaggedBroadcast</a> (const std::string &amp;text, const std::string &amp;verb)</td></tr>
+<tr class="memdesc:a2f44469e4c857a60feec640818ce595d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the single argument of a <code>"&amp;lt;verb&amp;gt; &amp;lt;arg&amp;gt;"</code> broadcast.  <br /></td></tr>
+<tr class="separator:a2f44469e4c857a60feec640818ce595d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a339004e9f208bd0e48d0d12d1f6733bc" id="r_a339004e9f208bd0e48d0d12d1f6733bc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GameLogic_8cpp.html#a339004e9f208bd0e48d0d12d1f6733bc">parseElevationLevel</a> (const std::string &amp;line)</td></tr>
 <tr class="memdesc:a339004e9f208bd0e48d0d12d1f6733bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the new level from an incantation success response.  <br /></td></tr>
 <tr class="separator:a339004e9f208bd0e48d0d12d1f6733bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,6 +184,34 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation of the player's per-tick decision making. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a50f03cddeaf5722cc9c259332d67156c" name="a50f03cddeaf5722cc9c259332d67156c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50f03cddeaf5722cc9c259332d67156c">&#9670;&#160;</a></span>countPlayersOnTile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int countPlayersOnTile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>lookResponse</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Counts the players standing on the current tile from a <code>Look</code> reply. </p>
+<p>Only tile 0 (the player's own tile) is inspected; that tile always lists the player itself, so a lone player counts as one. This is how a ritual host knows whether enough teammates have gathered before it incants.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lookResponse</td><td>The raw <code>Look</code> response line (see <a class="el" href="GameLogic_8cpp.html#a1dd14f591eff5dea91185b734b85db43">parseLook</a>). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of <code>player</code> tokens on tile 0, or 0 if there is no tile. </dd></dl>
+
+</div>
+</div>
 <a id="adb87e1bdd3ab62ebb9c7701c04f70049" name="adb87e1bdd3ab62ebb9c7701c04f70049"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adb87e1bdd3ab62ebb9c7701c04f70049">&#9670;&#160;</a></span>parseBroadcast()</h2>
 
@@ -236,7 +273,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Extracts the level from a <code>"&amp;lt;verb&amp;gt; &amp;lt;level&amp;gt;"</code> broadcast. </p>
-<p>Backs the team's broadcast vocabulary: <code>"upgrade N"</code> (come help me elevate from level N) and <code>"stop N"</code> (the level-N ritual is over). The text must be exactly the verb, a space, then a non-empty run of digits.</p>
+<p>Backs the team's broadcast vocabulary: <code>"upgrade N"</code> (come help me elevate from level N), <code>"stop N"</code> (the level-N ritual succeeded), and <code>"abort N"</code> (the host abandoned the level-N ritual). The text must be exactly the verb, a space, then a non-empty run of digits.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">text</td><td>The decoded broadcast body. </td></tr>
@@ -338,11 +375,11 @@ underway"</code>, <code>"ko"</code>) are not completions.</p>
 </div><div class="memdoc">
 
 <p>Updates an inventory in place from a server <code><a class="el" href="structInventory.html" title="The quantity of every resource a player currently holds.">Inventory</a></code> response. </p>
-<p>Each space-separated token has the form <code>name:quantity</code>. Tokens without a colon are skipped, and an unrecognised resource name is reported on stdout and left out. Fields whose resource does not appear in <code>res</code> keep their previous value.</p>
+<p>The server replies with a bracketed list of <code>code quantity</code> fields, one per resource, e.g. <code>"[ l 0, d 0, s 0, m 0, p 0, t 0, f 10 ]"</code>. Brackets and commas are treated as separators; a recognised one-letter code consumes the following integer as its quantity. Unknown codes and malformed fields are skipped, and resources absent from <code>res</code> keep their previous value.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">inventory</td><td>The inventory to overwrite with the reported quantities. </td></tr>
-    <tr><td class="paramname">res</td><td>The raw response, e.g. <code>"food:5 linemate:2 sibur:0"</code>. </td></tr>
+    <tr><td class="paramname">res</td><td>The raw response, e.g. <code>"[ f 5, l 2, s 0 ]"</code>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -374,6 +411,84 @@ underway"</code>, <code>"ko"</code>) are not completions.</p>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>One entry per tile, in response order, each listing the resources on that tile. Empty if no well-formed <code>[...]</code> block is present. </dd></dl>
+
+</div>
+</div>
+<a id="a2f44469e4c857a60feec640818ce595d" name="a2f44469e4c857a60feec640818ce595d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f44469e4c857a60feec640818ce595d">&#9670;&#160;</a></span>parseTaggedBroadcast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string parseTaggedBroadcast </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>verb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Extracts the single argument of a <code>"&amp;lt;verb&amp;gt; &amp;lt;arg&amp;gt;"</code> broadcast. </p>
+<p>Backs the team-identification vocabulary used by max-level hunters: <code>"ping &amp;lt;team&amp;gt;"</code> (is anyone from &lt;team&gt; on my tile?) and <code>"ack &amp;lt;team&amp;gt;"</code> (yes, a &lt;team&gt; member is here). Only the first token after the verb is returned, so trailing garbage is ignored.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>The decoded broadcast body. </td></tr>
+    <tr><td class="paramname">verb</td><td>The expected leading keyword (e.g. "ping" or "ack"). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The argument token, or an empty string if <code>text</code> does not start with <code>verb</code> followed by a non-empty token. </dd></dl>
+
+</div>
+</div>
+<a id="a6fe409e670d34f18f91b31101e9a0da1" name="a6fe409e670d34f18f91b31101e9a0da1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fe409e670d34f18f91b31101e9a0da1">&#9670;&#160;</a></span>parseUpgradeCall()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int parseUpgradeCall </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long &amp;&#160;</td>
+          <td class="paramname"><em>hostId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parses a team <code>"upgrade N [hostId]"</code> ritual call. </p>
+<p>Extends <a class="el" href="GameLogic_8cpp.html#a96dfafef50f3f60151a4ceea304c6427">parseUpgradeLevel</a> with the optional host tie-break id that lets two would-be hosts elect a single one (higher id wins). The id is omitted by legacy callers, in which case <code>hostId</code> is left at -1.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>The decoded broadcast body. </td></tr>
+    <tr><td class="paramname">hostId</td><td>Set to the caller's host id, or -1 when none is present. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The requested level, or -1 if <code>text</code> is not a well-formed upgrade call. </dd></dl>
 
 </div>
 </div>

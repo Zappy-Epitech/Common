@@ -12,5 +12,5 @@ var classNetwork =
     [ "receiveMessage", "classNetwork.html#a6fca7071e0849e4f04d03a3c521a8011", null ],
     [ "sendMessage", "classNetwork.html#ac2205cbf6d16ff898bc741658113a081", null ],
     [ "setServerMessageHandler", "classNetwork.html#a143d53386c859c9ef78ee19a823a8322", null ],
-    [ "waitResponse", "classNetwork.html#a0052d9f9280e91f7d943e33e1a4f576d", null ]
+    [ "waitResponse", "classNetwork.html#a78123280fd9fc6e5d7e8205576f99d7b", null ]
 ];

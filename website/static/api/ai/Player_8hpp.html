@@ -169,18 +169,60 @@ Enumerations</h2></td></tr>
 , <b>RIGHT</b>
  }</td></tr>
 <tr class="separator:a0b5e764f0ec9a407e9b8789f0259d754"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c730f37b1b3a893159bada67637fdb1" id="r_a3c730f37b1b3a893159bada67637fdb1"><td class="memItemLeft" align="right" valign="top"><a id="a3c730f37b1b3a893159bada67637fdb1" name="a3c730f37b1b3a893159bada67637fdb1"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>PlayerState</b> { <b>SURVIVE</b>
+<tr class="memitem:a3c730f37b1b3a893159bada67637fdb1" id="r_a3c730f37b1b3a893159bada67637fdb1"><td class="memItemLeft" align="right" valign="top"><a id="a3c730f37b1b3a893159bada67637fdb1" name="a3c730f37b1b3a893159bada67637fdb1"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>PlayerState</b> { <br />
+&#160;&#160;<b>SURVIVE</b>
 , <b>EXPLORE</b>
 , <b>UPGRADE</b>
 , <b>COOP</b>
+, <br />
+&#160;&#160;<b>HUNT</b>
+, <b>FORK</b>
+<br />
  }</td></tr>
 <tr class="separator:a3c730f37b1b3a893159bada67637fdb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a660afdb28fde05444bdb4cfa0b46eaf5" id="r_a660afdb28fde05444bdb4cfa0b46eaf5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#a660afdb28fde05444bdb4cfa0b46eaf5">HuntAction</a> { <a class="el" href="Player_8hpp.html#a660afdb28fde05444bdb4cfa0b46eaf5a9722d5fd67d3ad59f7d183a1a6f6e19b">HUNT_ROAM</a>
+, <a class="el" href="Player_8hpp.html#a660afdb28fde05444bdb4cfa0b46eaf5ada43d800cc6837a06209fced7dc58184">HUNT_PING</a>
+, <a class="el" href="Player_8hpp.html#a660afdb28fde05444bdb4cfa0b46eaf5ac858cb6b28a7b271f3ab150d097fb058">HUNT_WAIT</a>
+, <a class="el" href="Player_8hpp.html#a660afdb28fde05444bdb4cfa0b46eaf5a3a48a18c39dfdec082626877233b5568">HUNT_EJECT</a>
+ }</td></tr>
+<tr class="memdesc:a660afdb28fde05444bdb4cfa0b46eaf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">What a max-level player should do this tick while in the <code>HUNT</code> state.  <a href="Player_8hpp.html#a660afdb28fde05444bdb4cfa0b46eaf5">More...</a><br /></td></tr>
+<tr class="separator:a660afdb28fde05444bdb4cfa0b46eaf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94561f2dccf417b245dd6f3a0ed8e76b" id="r_a94561f2dccf417b245dd6f3a0ed8e76b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#a94561f2dccf417b245dd6f3a0ed8e76b">CoopAction</a> { <a class="el" href="Player_8hpp.html#a94561f2dccf417b245dd6f3a0ed8e76ba4326399c0aabac9065ddfeaa991177e0">COOP_MOVE</a>
+, <a class="el" href="Player_8hpp.html#a94561f2dccf417b245dd6f3a0ed8e76ba30191be68fb067e72a0747262ec4164d">COOP_WAIT</a>
+, <a class="el" href="Player_8hpp.html#a94561f2dccf417b245dd6f3a0ed8e76ba3cac9bcf0d89f2d18809740faaa3cb9d">COOP_INCANT</a>
+ }</td></tr>
+<tr class="memdesc:a94561f2dccf417b245dd6f3a0ed8e76b"><td class="mdescLeft">&#160;</td><td class="mdescRight">What a player should do this tick while in the <code>COOP</code> state.  <a href="Player_8hpp.html#a94561f2dccf417b245dd6f3a0ed8e76b">More...</a><br /></td></tr>
+<tr class="separator:a94561f2dccf417b245dd6f3a0ed8e76b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a46de87374858b05a6dc163355aa2d65f" id="r_a46de87374858b05a6dc163355aa2d65f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#a46de87374858b05a6dc163355aa2d65f">canUpgrade</a> (const <a class="el" href="structInventory.html">Inventory</a> &amp;inventory, int currentLevel)</td></tr>
 <tr class="memdesc:a46de87374858b05a6dc163355aa2d65f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether an inventory satisfies the cost to elevate one level.  <br /></td></tr>
 <tr class="separator:a46de87374858b05a6dc163355aa2d65f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f44469e4c857a60feec640818ce595d" id="r_a2f44469e4c857a60feec640818ce595d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#a2f44469e4c857a60feec640818ce595d">parseTaggedBroadcast</a> (const std::string &amp;text, const std::string &amp;verb)</td></tr>
+<tr class="memdesc:a2f44469e4c857a60feec640818ce595d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the single argument of a <code>"&amp;lt;verb&amp;gt; &amp;lt;arg&amp;gt;"</code> broadcast.  <br /></td></tr>
+<tr class="separator:a2f44469e4c857a60feec640818ce595d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3242a41369398c492641223c8139e295" id="r_a3242a41369398c492641223c8139e295"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Player_8hpp.html#a660afdb28fde05444bdb4cfa0b46eaf5">HuntAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#a3242a41369398c492641223c8139e295">decideHuntAction</a> (int playersOnTile, bool allyOnTile, bool pinged, int ticksWaited, int ackWindow)</td></tr>
+<tr class="memdesc:a3242a41369398c492641223c8139e295"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decides the next <code>HUNT</code> action for a max-level player.  <br /></td></tr>
+<tr class="separator:a3242a41369398c492641223c8139e295"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf51dcc1c9d23df7582aa8f3b063d8f4" id="r_aaf51dcc1c9d23df7582aa8f3b063d8f4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#aaf51dcc1c9d23df7582aa8f3b063d8f4">findNearestPlayerTile</a> (const std::string &amp;lookResponse)</td></tr>
+<tr class="memdesc:aaf51dcc1c9d23df7582aa8f3b063d8f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the nearest visible tile (other than the player's own) holding a player.  <br /></td></tr>
+<tr class="separator:aaf51dcc1c9d23df7582aa8f3b063d8f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa359797ae11f8387fa8ae93619dd24cc" id="r_aa359797ae11f8387fa8ae93619dd24cc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#aa359797ae11f8387fa8ae93619dd24cc">playersRequiredToUpgrade</a> (int level)</td></tr>
+<tr class="memdesc:aa359797ae11f8387fa8ae93619dd24cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of players a cooperative elevation needs on the same tile.  <br /></td></tr>
+<tr class="separator:aa359797ae11f8387fa8ae93619dd24cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e2cba273840f9aada2892a243e899cd" id="r_a3e2cba273840f9aada2892a243e899cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Player_8hpp.html#a94561f2dccf417b245dd6f3a0ed8e76b">CoopAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#a3e2cba273840f9aada2892a243e899cd">decideCoopAction</a> (int playersRequired, int playersOnTile, int callDirection)</td></tr>
+<tr class="memdesc:a3e2cba273840f9aada2892a243e899cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decides the next <code>COOP</code> action from the player's own perception.  <br /></td></tr>
+<tr class="separator:a3e2cba273840f9aada2892a243e899cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8bde5407f622364a81567e2a5509498" id="r_ad8bde5407f622364a81567e2a5509498"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#ad8bde5407f622364a81567e2a5509498">decideFork</a> (int playersOnTile, int playersRequired, int ticksWaited, int patience, int food, int forkFoodMin)</td></tr>
+<tr class="memdesc:ad8bde5407f622364a81567e2a5509498"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decides whether a ritual host should fork to grow the team.  <br /></td></tr>
+<tr class="separator:ad8bde5407f622364a81567e2a5509498"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50f03cddeaf5722cc9c259332d67156c" id="r_a50f03cddeaf5722cc9c259332d67156c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#a50f03cddeaf5722cc9c259332d67156c">countPlayersOnTile</a> (const std::string &amp;lookResponse)</td></tr>
+<tr class="memdesc:a50f03cddeaf5722cc9c259332d67156c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counts the players standing on the current tile from a <code>Look</code> reply.  <br /></td></tr>
+<tr class="separator:a50f03cddeaf5722cc9c259332d67156c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3c72729c09b8e962f6d79394f3387ce" id="r_ad3c72729c09b8e962f6d79394f3387ce"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="Ressource_8hpp.html#a09526742abc3e0feb0a61b36291e1b8c">Ressource</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#ad3c72729c09b8e962f6d79394f3387ce">stonesToDropForUpgrade</a> (int level, const std::vector&lt; <a class="el" href="Ressource_8hpp.html#a09526742abc3e0feb0a61b36291e1b8c">Ressource</a> &gt; &amp;currentTile)</td></tr>
+<tr class="memdesc:ad3c72729c09b8e962f6d79394f3387ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes which stones must be dropped to satisfy the next elevation.  <br /></td></tr>
+<tr class="separator:ad3c72729c09b8e962f6d79394f3387ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb87e1bdd3ab62ebb9c7701c04f70049" id="r_adb87e1bdd3ab62ebb9c7701c04f70049"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structBroadcastMessage.html">BroadcastMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#adb87e1bdd3ab62ebb9c7701c04f70049">parseBroadcast</a> (const std::string &amp;line)</td></tr>
 <tr class="memdesc:adb87e1bdd3ab62ebb9c7701c04f70049"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a server broadcast notification into its direction and text.  <br /></td></tr>
 <tr class="separator:adb87e1bdd3ab62ebb9c7701c04f70049"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -190,16 +232,76 @@ Functions</h2></td></tr>
 <tr class="memitem:a96dfafef50f3f60151a4ceea304c6427" id="r_a96dfafef50f3f60151a4ceea304c6427"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#a96dfafef50f3f60151a4ceea304c6427">parseUpgradeLevel</a> (const std::string &amp;text)</td></tr>
 <tr class="memdesc:a96dfafef50f3f60151a4ceea304c6427"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the level from an "upgrade" broadcast call.  <br /></td></tr>
 <tr class="separator:a96dfafef50f3f60151a4ceea304c6427"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fe409e670d34f18f91b31101e9a0da1" id="r_a6fe409e670d34f18f91b31101e9a0da1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#a6fe409e670d34f18f91b31101e9a0da1">parseUpgradeCall</a> (const std::string &amp;text, long &amp;hostId)</td></tr>
+<tr class="memdesc:a6fe409e670d34f18f91b31101e9a0da1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a team <code>"upgrade N [hostId]"</code> ritual call.  <br /></td></tr>
+<tr class="separator:a6fe409e670d34f18f91b31101e9a0da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a339004e9f208bd0e48d0d12d1f6733bc" id="r_a339004e9f208bd0e48d0d12d1f6733bc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#a339004e9f208bd0e48d0d12d1f6733bc">parseElevationLevel</a> (const std::string &amp;line)</td></tr>
 <tr class="memdesc:a339004e9f208bd0e48d0d12d1f6733bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the new level from an incantation success response.  <br /></td></tr>
 <tr class="separator:a339004e9f208bd0e48d0d12d1f6733bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bc7b5fe47328af53f6b0208c35b4a45" id="r_a0bc7b5fe47328af53f6b0208c35b4a45"><td class="memItemLeft" align="right" valign="top">MovementDirection&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#a0bc7b5fe47328af53f6b0208c35b4a45">directionToMovement</a> (int soundDirection)</td></tr>
 <tr class="memdesc:a0bc7b5fe47328af53f6b0208c35b4a45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps a broadcast sound direction to the move that approaches it.  <br /></td></tr>
 <tr class="separator:a0bc7b5fe47328af53f6b0208c35b4a45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a089028a0e4cdd70e3467bb4263c9c047" id="r_a089028a0e4cdd70e3467bb4263c9c047"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#a089028a0e4cdd70e3467bb4263c9c047">findNearestRessourceTile</a> (const std::vector&lt; std::vector&lt; <a class="el" href="Ressource_8hpp.html#a09526742abc3e0feb0a61b36291e1b8c">Ressource</a> &gt; &gt; &amp;visibleTiles, <a class="el" href="Ressource_8hpp.html#a09526742abc3e0feb0a61b36291e1b8c">Ressource</a> ressource)</td></tr>
+<tr class="memdesc:a089028a0e4cdd70e3467bb4263c9c047"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the nearest tile holding a given resource in a <code>Look</code> field of view.  <br /></td></tr>
+<tr class="separator:a089028a0e4cdd70e3467bb4263c9c047"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45e0604f10ac0304639cbc153e7b6b26" id="r_a45e0604f10ac0304639cbc153e7b6b26"><td class="memItemLeft" align="right" valign="top">MovementDirection&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#a45e0604f10ac0304639cbc153e7b6b26">tileIndexToMovement</a> (int index)</td></tr>
+<tr class="memdesc:a45e0604f10ac0304639cbc153e7b6b26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps a <code>Look</code> field-of-view tile index to the move that approaches it.  <br /></td></tr>
+<tr class="separator:a45e0604f10ac0304639cbc153e7b6b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The AI player: its state and main decision loop. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a94561f2dccf417b245dd6f3a0ed8e76b" name="a94561f2dccf417b245dd6f3a0ed8e76b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94561f2dccf417b245dd6f3a0ed8e76b">&#9670;&#160;</a></span>CoopAction</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="Player_8hpp.html#a94561f2dccf417b245dd6f3a0ed8e76b">CoopAction</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>What a player should do this tick while in the <code>COOP</code> state. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a94561f2dccf417b245dd6f3a0ed8e76ba4326399c0aabac9065ddfeaa991177e0" name="a94561f2dccf417b245dd6f3a0ed8e76ba4326399c0aabac9065ddfeaa991177e0"></a>COOP_MOVE&#160;</td><td class="fielddoc"><p>Travel toward the ritual call (not gathered yet). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a94561f2dccf417b245dd6f3a0ed8e76ba30191be68fb067e72a0747262ec4164d" name="a94561f2dccf417b245dd6f3a0ed8e76ba30191be68fb067e72a0747262ec4164d"></a>COOP_WAIT&#160;</td><td class="fielddoc"><p>Hold position on the ritual tile, waiting for more players. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a94561f2dccf417b245dd6f3a0ed8e76ba3cac9bcf0d89f2d18809740faaa3cb9d" name="a94561f2dccf417b245dd6f3a0ed8e76ba3cac9bcf0d89f2d18809740faaa3cb9d"></a>COOP_INCANT&#160;</td><td class="fielddoc"><p>Enough players are gathered here: lay any missing stones and incant. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a660afdb28fde05444bdb4cfa0b46eaf5" name="a660afdb28fde05444bdb4cfa0b46eaf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a660afdb28fde05444bdb4cfa0b46eaf5">&#9670;&#160;</a></span>HuntAction</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="Player_8hpp.html#a660afdb28fde05444bdb4cfa0b46eaf5">HuntAction</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>What a max-level player should do this tick while in the <code>HUNT</code> state. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a660afdb28fde05444bdb4cfa0b46eaf5a9722d5fd67d3ad59f7d183a1a6f6e19b" name="a660afdb28fde05444bdb4cfa0b46eaf5a9722d5fd67d3ad59f7d183a1a6f6e19b"></a>HUNT_ROAM&#160;</td><td class="fielddoc"><p>No enemy to push here: wander to find other players. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a660afdb28fde05444bdb4cfa0b46eaf5ada43d800cc6837a06209fced7dc58184" name="a660afdb28fde05444bdb4cfa0b46eaf5ada43d800cc6837a06209fced7dc58184"></a>HUNT_PING&#160;</td><td class="fielddoc"><p>Others share the tile: broadcast a team challenge first. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a660afdb28fde05444bdb4cfa0b46eaf5ac858cb6b28a7b271f3ab150d097fb058" name="a660afdb28fde05444bdb4cfa0b46eaf5ac858cb6b28a7b271f3ab150d097fb058"></a>HUNT_WAIT&#160;</td><td class="fielddoc"><p>Challenge sent: wait for a teammate ack before deciding. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a660afdb28fde05444bdb4cfa0b46eaf5a3a48a18c39dfdec082626877233b5568" name="a660afdb28fde05444bdb4cfa0b46eaf5a3a48a18c39dfdec082626877233b5568"></a>HUNT_EJECT&#160;</td><td class="fielddoc"><p>No teammate confirmed: push everyone off the tile. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="a46de87374858b05a6dc163355aa2d65f" name="a46de87374858b05a6dc163355aa2d65f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a46de87374858b05a6dc163355aa2d65f">&#9670;&#160;</a></span>canUpgrade()</h2>
 
@@ -238,6 +340,207 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a50f03cddeaf5722cc9c259332d67156c" name="a50f03cddeaf5722cc9c259332d67156c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50f03cddeaf5722cc9c259332d67156c">&#9670;&#160;</a></span>countPlayersOnTile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int countPlayersOnTile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>lookResponse</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Counts the players standing on the current tile from a <code>Look</code> reply. </p>
+<p>Only tile 0 (the player's own tile) is inspected; that tile always lists the player itself, so a lone player counts as one. This is how a ritual host knows whether enough teammates have gathered before it incants.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lookResponse</td><td>The raw <code>Look</code> response line (see <a class="el" href="GameLogic_8cpp.html#a1dd14f591eff5dea91185b734b85db43">parseLook</a>). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of <code>player</code> tokens on tile 0, or 0 if there is no tile. </dd></dl>
+
+</div>
+</div>
+<a id="a3e2cba273840f9aada2892a243e899cd" name="a3e2cba273840f9aada2892a243e899cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e2cba273840f9aada2892a243e899cd">&#9670;&#160;</a></span>decideCoopAction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Player_8hpp.html#a94561f2dccf417b245dd6f3a0ed8e76b">CoopAction</a> decideCoopAction </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>playersRequired</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>playersOnTile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>callDirection</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Decides the next <code>COOP</code> action from the player's own perception. </p>
+<p>The decision is driven by the player's <code>Look</code> (how many players share its tile), not by the lagging broadcast sound direction: once enough players are gathered on the tile the player must incant, even if the last sound direction it heard is stale and non-zero. Relying on the direction alone makes a joiner walk off the tile exactly when the host falls silent to incant, dooming the ritual.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">playersRequired</td><td>Players the elevation needs (see <a class="el" href="StateSwitch_8cpp.html#aa359797ae11f8387fa8ae93619dd24cc">playersRequiredToUpgrade</a>). </td></tr>
+    <tr><td class="paramname">playersOnTile</td><td>Players on the current tile, self included (from <code>Look</code>). </td></tr>
+    <tr><td class="paramname">callDirection</td><td>Latest sound direction of the call (0 = same tile). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Player_8hpp.html#a94561f2dccf417b245dd6f3a0ed8e76ba3cac9bcf0d89f2d18809740faaa3cb9d">COOP_INCANT</a> if enough players are gathered, <a class="el" href="Player_8hpp.html#a94561f2dccf417b245dd6f3a0ed8e76ba30191be68fb067e72a0747262ec4164d">COOP_WAIT</a> if on the ritual tile but short of players, <a class="el" href="Player_8hpp.html#a94561f2dccf417b245dd6f3a0ed8e76ba4326399c0aabac9065ddfeaa991177e0">COOP_MOVE</a> otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="ad8bde5407f622364a81567e2a5509498" name="ad8bde5407f622364a81567e2a5509498"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8bde5407f622364a81567e2a5509498">&#9670;&#160;</a></span>decideFork()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool decideFork </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>playersOnTile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>playersRequired</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ticksWaited</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>patience</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>food</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>forkFoodMin</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Decides whether a ritual host should fork to grow the team. </p>
+<p>A cooperative elevation only resolves when <code>playersRequired</code> players gather on the host's tile (see <a class="el" href="StateSwitch_8cpp.html#aa359797ae11f8387fa8ae93619dd24cc">playersRequiredToUpgrade</a>). When the host has waited <code>patience</code> ticks and its tile is still short of players, the team simply does not have enough bodies, so it lays an egg to add one. Forking is skipped for a solo elevation (<code>playersRequired</code> &le; 1, no reinforcement needed) and while food is below <code>forkFoodMin</code>, since each <code>Fork</code> costs 42 ticks the player spends not eating.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">playersOnTile</td><td>Players on the host's tile, self included (from <code>Look</code>). </td></tr>
+    <tr><td class="paramname">playersRequired</td><td>Players the elevation needs (see <a class="el" href="StateSwitch_8cpp.html#aa359797ae11f8387fa8ae93619dd24cc">playersRequiredToUpgrade</a>). </td></tr>
+    <tr><td class="paramname">ticksWaited</td><td>Ticks the host has stayed understaffed on the ritual tile. </td></tr>
+    <tr><td class="paramname">patience</td><td>Ticks to wait short-handed before forking. </td></tr>
+    <tr><td class="paramname">food</td><td>The player's current food count. </td></tr>
+    <tr><td class="paramname">forkFoodMin</td><td>Minimum food required to afford the fork. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the host should lay an egg this tick, <code>false</code> otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a3242a41369398c492641223c8139e295" name="a3242a41369398c492641223c8139e295"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3242a41369398c492641223c8139e295">&#9670;&#160;</a></span>decideHuntAction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Player_8hpp.html#a660afdb28fde05444bdb4cfa0b46eaf5">HuntAction</a> decideHuntAction </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>playersOnTile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>allyOnTile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>pinged</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ticksWaited</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ackWindow</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Decides the next <code>HUNT</code> action for a max-level player. </p>
+<p>A player capped at the top level can no longer elevate, so its only useful job is to disrupt the enemy by ejecting them. Because <code>Look</code> never reveals team membership and <code>Eject</code> pushes every co-located player, the hunter first challenges the tile with a team-tagged ping and only ejects once the ack window has elapsed with no friendly reply &ndash; never pushing a confirmed teammate.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">playersOnTile</td><td>Players on the current tile, self included (from <code>Look</code>). </td></tr>
+    <tr><td class="paramname">allyOnTile</td><td>Whether a same-tile teammate ack was received since the ping. </td></tr>
+    <tr><td class="paramname">pinged</td><td>Whether the team challenge has already been broadcast. </td></tr>
+    <tr><td class="paramname">ticksWaited</td><td>Ticks elapsed since the challenge was broadcast. </td></tr>
+    <tr><td class="paramname">ackWindow</td><td>Ticks to wait for an ack before deciding to eject. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="Player_8hpp.html#a660afdb28fde05444bdb4cfa0b46eaf5a9722d5fd67d3ad59f7d183a1a6f6e19b">HUNT_ROAM</a> when alone or a teammate is present, <a class="el" href="Player_8hpp.html#a660afdb28fde05444bdb4cfa0b46eaf5ada43d800cc6837a06209fced7dc58184">HUNT_PING</a> to challenge a freshly found group, <a class="el" href="Player_8hpp.html#a660afdb28fde05444bdb4cfa0b46eaf5ac858cb6b28a7b271f3ab150d097fb058">HUNT_WAIT</a> while the ack window is open, or <a class="el" href="Player_8hpp.html#a660afdb28fde05444bdb4cfa0b46eaf5a3a48a18c39dfdec082626877233b5568">HUNT_EJECT</a> once it elapses with no friendly reply. </dd></dl>
+
+</div>
+</div>
 <a id="a0bc7b5fe47328af53f6b0208c35b4a45" name="a0bc7b5fe47328af53f6b0208c35b4a45"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0bc7b5fe47328af53f6b0208c35b4a45">&#9670;&#160;</a></span>directionToMovement()</h2>
 
@@ -269,6 +572,73 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="aaf51dcc1c9d23df7582aa8f3b063d8f4" name="aaf51dcc1c9d23df7582aa8f3b063d8f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf51dcc1c9d23df7582aa8f3b063d8f4">&#9670;&#160;</a></span>findNearestPlayerTile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int findNearestPlayerTile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>lookResponse</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Finds the nearest visible tile (other than the player's own) holding a player. </p>
+<p>Parses a raw <code>Look</code> response and locates the closest tile carrying a <code>player</code> token, ignoring tile 0 (the player itself). "Nearest" uses the same field-of-view layout as findNearestRessourceTile: the closest row first, then the tile most centred on the heading.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lookResponse</td><td>The raw <code>Look</code> response line (see <a class="el" href="GameLogic_8cpp.html#a1dd14f591eff5dea91185b734b85db43">parseLook</a>). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The index of the nearest other tile holding a player, or -1 if none. </dd></dl>
+
+</div>
+</div>
+<a id="a089028a0e4cdd70e3467bb4263c9c047" name="a089028a0e4cdd70e3467bb4263c9c047"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a089028a0e4cdd70e3467bb4263c9c047">&#9670;&#160;</a></span>findNearestRessourceTile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int findNearestRessourceTile </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::vector&lt; <a class="el" href="Ressource_8hpp.html#a09526742abc3e0feb0a61b36291e1b8c">Ressource</a> &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>visibleTiles</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="Ressource_8hpp.html#a09526742abc3e0feb0a61b36291e1b8c">Ressource</a>&#160;</td>
+          <td class="paramname"><em>ressource</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Finds the nearest tile holding a given resource in a <code>Look</code> field of view. </p>
+<p>The field of view is laid out as returned by parseLook: tile 0 is the current tile, then row <code>r</code> (closer first) spans indices <code>[r*r, r*r + 2r]</code>. "Nearest" means the closest row, then the tile most centred on the player's heading.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">visibleTiles</td><td>The per-tile resource lists from the last <code>Look</code>. </td></tr>
+    <tr><td class="paramname">ressource</td><td>The resource to look for. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The index of the nearest tile holding <code>ressource</code>, or -1 if none. </dd></dl>
 
 </div>
 </div>
@@ -333,7 +703,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Extracts the level from a <code>"&amp;lt;verb&amp;gt; &amp;lt;level&amp;gt;"</code> broadcast. </p>
-<p>Backs the team's broadcast vocabulary: <code>"upgrade N"</code> (come help me elevate from level N) and <code>"stop N"</code> (the level-N ritual is over). The text must be exactly the verb, a space, then a non-empty run of digits.</p>
+<p>Backs the team's broadcast vocabulary: <code>"upgrade N"</code> (come help me elevate from level N), <code>"stop N"</code> (the level-N ritual succeeded), and <code>"abort N"</code> (the host abandoned the level-N ritual). The text must be exactly the verb, a space, then a non-empty run of digits.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">text</td><td>The decoded broadcast body. </td></tr>
@@ -374,6 +744,84 @@ underway"</code>, <code>"ko"</code>) are not completions.</p>
 
 </div>
 </div>
+<a id="a2f44469e4c857a60feec640818ce595d" name="a2f44469e4c857a60feec640818ce595d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f44469e4c857a60feec640818ce595d">&#9670;&#160;</a></span>parseTaggedBroadcast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string parseTaggedBroadcast </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>verb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Extracts the single argument of a <code>"&amp;lt;verb&amp;gt; &amp;lt;arg&amp;gt;"</code> broadcast. </p>
+<p>Backs the team-identification vocabulary used by max-level hunters: <code>"ping &amp;lt;team&amp;gt;"</code> (is anyone from &lt;team&gt; on my tile?) and <code>"ack &amp;lt;team&amp;gt;"</code> (yes, a &lt;team&gt; member is here). Only the first token after the verb is returned, so trailing garbage is ignored.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>The decoded broadcast body. </td></tr>
+    <tr><td class="paramname">verb</td><td>The expected leading keyword (e.g. "ping" or "ack"). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The argument token, or an empty string if <code>text</code> does not start with <code>verb</code> followed by a non-empty token. </dd></dl>
+
+</div>
+</div>
+<a id="a6fe409e670d34f18f91b31101e9a0da1" name="a6fe409e670d34f18f91b31101e9a0da1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fe409e670d34f18f91b31101e9a0da1">&#9670;&#160;</a></span>parseUpgradeCall()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int parseUpgradeCall </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long &amp;&#160;</td>
+          <td class="paramname"><em>hostId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parses a team <code>"upgrade N [hostId]"</code> ritual call. </p>
+<p>Extends <a class="el" href="GameLogic_8cpp.html#a96dfafef50f3f60151a4ceea304c6427">parseUpgradeLevel</a> with the optional host tie-break id that lets two would-be hosts elect a single one (higher id wins). The id is omitted by legacy callers, in which case <code>hostId</code> is left at -1.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>The decoded broadcast body. </td></tr>
+    <tr><td class="paramname">hostId</td><td>Set to the caller's host id, or -1 when none is present. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The requested level, or -1 if <code>text</code> is not a well-formed upgrade call. </dd></dl>
+
+</div>
+</div>
 <a id="a96dfafef50f3f60151a4ceea304c6427" name="a96dfafef50f3f60151a4ceea304c6427"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a96dfafef50f3f60151a4ceea304c6427">&#9670;&#160;</a></span>parseUpgradeLevel()</h2>
 
@@ -398,6 +846,106 @@ underway"</code>, <code>"ko"</code>) are not completions.</p>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The requested level, or -1 if <code>text</code> is not a well-formed upgrade call. </dd></dl>
+
+</div>
+</div>
+<a id="aa359797ae11f8387fa8ae93619dd24cc" name="aa359797ae11f8387fa8ae93619dd24cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa359797ae11f8387fa8ae93619dd24cc">&#9670;&#160;</a></span>playersRequiredToUpgrade()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int playersRequiredToUpgrade </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>level</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of players a cooperative elevation needs on the same tile. </p>
+<p>The incantation only resolves when this many players (the host included) are standing on the tile and all send <code>Incantation</code> (see RFC 7.12). </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>The player's current level (1-7); other values cannot elevate. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The required player count, or 0 for a level that cannot elevate. </dd></dl>
+
+</div>
+</div>
+<a id="ad3c72729c09b8e962f6d79394f3387ce" name="ad3c72729c09b8e962f6d79394f3387ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3c72729c09b8e962f6d79394f3387ce">&#9670;&#160;</a></span>stonesToDropForUpgrade()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="Ressource_8hpp.html#a09526742abc3e0feb0a61b36291e1b8c">Ressource</a> &gt; stonesToDropForUpgrade </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="Ressource_8hpp.html#a09526742abc3e0feb0a61b36291e1b8c">Ressource</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>currentTile</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Computes which stones must be dropped to satisfy the next elevation. </p>
+<p>The elevation ritual reads the stones lying on the player's tile, not the ones held in the inventory, so before incanting the player must drop whatever the tile is still missing. This returns one <a class="el" href="Ressource_8hpp.html#a09526742abc3e0feb0a61b36291e1b8c">Ressource</a> entry per stone to drop (a stone needed twice appears twice), counting what is already on the tile so nothing is dropped in excess.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>The player's current level (1-7); other values need no stones. </td></tr>
+    <tr><td class="paramname">currentTile</td><td>The resources already on the player's tile (from <code>Look</code>). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The stones to drop, in elevation-cost order, to meet the tile cost. </dd></dl>
+
+</div>
+</div>
+<a id="a45e0604f10ac0304639cbc153e7b6b26" name="a45e0604f10ac0304639cbc153e7b6b26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45e0604f10ac0304639cbc153e7b6b26">&#9670;&#160;</a></span>tileIndexToMovement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MovementDirection tileIndexToMovement </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maps a <code>Look</code> field-of-view tile index to the move that approaches it. </p>
+<p>Uses the same layout as findNearestFoodTile: tiles left of the heading turn left, right of it turn right, dead ahead advances. Repeated calls as the view refreshes converge onto the tile.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>The field-of-view tile index, strictly greater than 0. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The movement that brings the player closer to the tile. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classZappyException.html" title="Exception carrying a human-readable message for a given ErrorType.">ZappyException</a></td><td>with <a class="el" href="Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aa56189c1e24c9aabb9a2048c9436b7e1a">INVALID_DIRECTION</a> if <code>index</code> is 0 (current tile, no movement) or negative. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

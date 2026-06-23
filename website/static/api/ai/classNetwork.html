@@ -146,9 +146,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>processSendQueue</b> 
 <tr class="memitem:a70d18db9d6b0602b77cc1cee9f9d903e" id="r_a70d18db9d6b0602b77cc1cee9f9d903e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNetwork.html#a70d18db9d6b0602b77cc1cee9f9d903e">addToSendQueue</a> (const std::string &amp;message)</td></tr>
 <tr class="memdesc:a70d18db9d6b0602b77cc1cee9f9d903e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends a message to the outbound queue.  <br /></td></tr>
 <tr class="separator:a70d18db9d6b0602b77cc1cee9f9d903e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0052d9f9280e91f7d943e33e1a4f576d" id="r_a0052d9f9280e91f7d943e33e1a4f576d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNetwork.html#a0052d9f9280e91f7d943e33e1a4f576d">waitResponse</a> ()</td></tr>
-<tr class="memdesc:a0052d9f9280e91f7d943e33e1a4f576d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks until at least one message is in the inbound queue.  <br /></td></tr>
-<tr class="separator:a0052d9f9280e91f7d943e33e1a4f576d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78123280fd9fc6e5d7e8205576f99d7b" id="r_a78123280fd9fc6e5d7e8205576f99d7b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNetwork.html#a78123280fd9fc6e5d7e8205576f99d7b">waitResponse</a> ()</td></tr>
+<tr class="memdesc:a78123280fd9fc6e5d7e8205576f99d7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks until a command response is available, then consumes it.  <br /></td></tr>
+<tr class="separator:a78123280fd9fc6e5d7e8205576f99d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Manages the TCP connection to the Zappy server. </p>
@@ -339,7 +339,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>processSendQueue</b> 
 </div><div class="memdoc">
 
 <p>Registers a handler for server-initiated lines. </p>
-<p>The handler is invoked for every complete inbound line. If it returns <code>true</code> the line is considered handled (e.g. a broadcast or <code>dead</code> notification) and is kept out of the command-response queue; if it returns <code>false</code> the line is queued as a normal command response. Running at the line boundary means asynchronous messages are handled even while a synchronous command is blocked in <a class="el" href="classNetwork.html#a0052d9f9280e91f7d943e33e1a4f576d">waitResponse</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The handler is invoked for every complete inbound line. If it returns <code>true</code> the line is considered handled (e.g. a broadcast or <code>dead</code> notification) and is kept out of the command-response queue; if it returns <code>false</code> the line is queued as a normal command response. Running at the line boundary means asynchronous messages are handled even while a synchronous command is blocked in <a class="el" href="classNetwork.html#a78123280fd9fc6e5d7e8205576f99d7b">waitResponse</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">handler</td><td>The predicate to consult for each inbound line. </td></tr>
   </table>
@@ -348,14 +348,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>processSendQueue</b> 
 
 </div>
 </div>
-<a id="a0052d9f9280e91f7d943e33e1a4f576d" name="a0052d9f9280e91f7d943e33e1a4f576d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0052d9f9280e91f7d943e33e1a4f576d">&#9670;&#160;</a></span>waitResponse()</h2>
+<a id="a78123280fd9fc6e5d7e8205576f99d7b" name="a78123280fd9fc6e5d7e8205576f99d7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78123280fd9fc6e5d7e8205576f99d7b">&#9670;&#160;</a></span>waitResponse()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Network::waitResponse </td>
+          <td class="memname">std::string Network::waitResponse </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -363,8 +363,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>processSendQueue</b> 
       </table>
 </div><div class="memdoc">
 
-<p>Blocks until at least one message is in the inbound queue. </p>
-<p>Repeatedly polls the socket in blocking mode until _messageQueue is non-empty. Used to wait for the reply to a command that was just sent. </p><dl class="exception"><dt>Exceptions</dt><dd>
+<p>Blocks until a command response is available, then consumes it. </p>
+<p>Repeatedly polls the socket in blocking mode until _messageQueue is non-empty, then removes and returns the oldest queued response. Consuming the response keeps every command aligned with its own reply: back-to-back commands (e.g. <code>Look</code> then <code><a class="el" href="structInventory.html" title="The quantity of every resource a player currently holds.">Inventory</a></code>) no longer read each other's response. </p><dl class="section return"><dt>Returns</dt><dd>The oldest command response line, including its trailing newline. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname"><a class="el" href="classZappyException.html" title="Exception carrying a human-readable message for a given ErrorType.">ZappyException</a></td><td>with <a class="el" href="Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aa29422ea3bfa0fde21ed413e6f9d7b0d9">POLL_ERROR</a> or <a class="el" href="Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aa00bc8d8fa2a4ef22ac8d9aa337802707">CONNECTION_LOST</a>, propagated from <a class="el" href="classNetwork.html#a0074dd651e820d131dfe450ef02a3fc0">pollCheck</a>. </td></tr>
   </table>

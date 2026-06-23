@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['errortype_0',['ErrorType',['../Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45a',1,'Errors.hpp']]]
+  ['coopaction_0',['CoopAction',['../Player_8hpp.html#a94561f2dccf417b245dd6f3a0ed8e76b',1,'Player.hpp']]]
 ];
