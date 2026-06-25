@@ -104,11 +104,11 @@ $(document).ready(function(){initNavTree('NetworkModule_8hpp_source.html',''); i
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;client/ZappyClient.hpp&quot;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;cstdint&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;cstring&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;string_view&gt;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span>flecs {</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">struct </span>world;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>}</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>} <span class="comment">// namespace flecs</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="structNetworkConfig.html">   14</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structNetworkConfig.html">NetworkConfig</a> {</div>
@@ -176,6 +176,7 @@ $(document).ready(function(){initNavTree('NetworkModule_8hpp_source.html',''); i
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keywordtype">void</span> connectToServer(flecs::world &amp;world, <span class="keyword">const</span> <a class="code hl_struct" href="structNetworkConfig.html">NetworkConfig</a> &amp;config);</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="keywordtype">void</span> disconnectFromServer(flecs::world &amp;world);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="keywordtype">bool</span> sendServerCommand(<span class="keyword">const</span> flecs::world &amp;world, std::string_view command);</div>
 <div class="ttc" id="astructNetworkClientHandle_html"><div class="ttname"><a href="structNetworkClientHandle.html">NetworkClientHandle</a></div><div class="ttdoc">Flecs singleton that owns the shared threaded client.</div><div class="ttdef"><b>Definition</b> NetworkModule.hpp:62</div></div>
 <div class="ttc" id="astructNetworkClientHandle_html_aa3456fe8fb81816454e9d1f0ed8251ec"><div class="ttname"><a href="structNetworkClientHandle.html#aa3456fe8fb81816454e9d1f0ed8251ec">NetworkClientHandle::client</a></div><div class="ttdeci">net::ZappyClientPtr client</div><div class="ttdoc">Shared client used by network systems and scenes.</div><div class="ttdef"><b>Definition</b> NetworkModule.hpp:64</div></div>
 <div class="ttc" id="astructNetworkConfig_html"><div class="ttname"><a href="structNetworkConfig.html">NetworkConfig</a></div><div class="ttdoc">Host/port chosen by the menu before entering the game scene.</div><div class="ttdef"><b>Definition</b> NetworkModule.hpp:14</div></div>
