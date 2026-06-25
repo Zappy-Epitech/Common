@@ -120,10 +120,12 @@ $(document).ready(function(){initNavTree('GameAssets_8hpp_source.html',''); init
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="structGameAssets.html">   17</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structGameAssets.html">GameAssets</a> {</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    std::vector&lt;SkinAsset&gt; skins;</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    std::array&lt;Model, 7&gt; resourceModels = {};</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    Model eggModel = {};</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="structGameAssets.html#ae721fb51a0ca0e070cb73c217c31dafc">load</a>(flecs::world &amp;world);</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>};</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    std::array&lt;Texture2D, 7&gt; resourceIconTextures = {};</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    Texture2D inventoryGuiTexture = {};</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    Model eggModel = {};</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="structGameAssets.html#ae721fb51a0ca0e070cb73c217c31dafc">load</a>(flecs::world &amp;world);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>};</div>
 </div>
 <div class="ttc" id="astructGameAssets_html"><div class="ttname"><a href="structGameAssets.html">GameAssets</a></div><div class="ttdef"><b>Definition</b> GameAssets.hpp:17</div></div>
 <div class="ttc" id="astructGameAssets_html_ae721fb51a0ca0e070cb73c217c31dafc"><div class="ttname"><a href="structGameAssets.html#ae721fb51a0ca0e070cb73c217c31dafc">GameAssets::load</a></div><div class="ttdeci">static void load(flecs::world &amp;world)</div><div class="ttdoc">Loads shared gameplay assets.</div><div class="ttdef"><b>Definition</b> GameAssets.cpp:9</div></div>
