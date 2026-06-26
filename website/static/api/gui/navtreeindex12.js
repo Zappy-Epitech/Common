@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"structecs__script__t.html#aedd99289a4cc10610624258fd012e9c4":[0,0,1,12,2,2],
 "structecs__script__var__t.html":[0,0,1,12,0],
 "structecs__script__var__t.html#a5ad74c3be3a1e56f991c9ebaf6db6469":[0,0,1,12,0,0],
 "structecs__script__var__t.html#a95d860da0b13bfee05957a9a5cf4821f":[0,0,1,12,0,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "structecs__world__info__t.html#a5a11adc6b0bb92fe5e6d35bd435e0a7a":[0,0,0,3,2,1,16],
 "structecs__world__info__t.html#a69a67fda146fcd79f23232f07a32f443":[0,0,0,3,2,1,36],
 "structecs__world__info__t.html#a7137546174c7ecb2ab211d2bbeedb07b":[0,0,0,3,2,1,18],
-"structecs__world__info__t.html#a7dc7ee53d99274a1f97fceaa3aad1c32":[0,0,0,3,2,1,11],
-"structecs__world__info__t.html#a8903bd78dec7d3e3587449550ce78757":[0,0,0,3,2,1,10]
+"structecs__world__info__t.html#a7dc7ee53d99274a1f97fceaa3aad1c32":[0,0,0,3,2,1,11]
 };

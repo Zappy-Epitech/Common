@@ -268,6 +268,7 @@ var annotated_dup =
     [ "Overloaded", "structOverloaded.html", null ],
     [ "PartUV", "structPartUV.html", null ],
     [ "Player", "structPlayer.html", null ],
+    [ "PlayerBroadcastBubble", "structPlayerBroadcastBubble.html", null ],
     [ "PlayerId", "structPlayerId.html", null ],
     [ "PlayerSkin", "structPlayerSkin.html", null ],
     [ "Position2", "structPosition2.html", "structPosition2" ],

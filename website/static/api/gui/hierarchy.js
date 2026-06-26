@@ -242,6 +242,7 @@ var hierarchy =
     [ "PartUV", "structPartUV.html", null ],
     [ "Player", "structPlayer.html", null ],
     [ "zappy::PlayerBroadcast", "structzappy_1_1PlayerBroadcast.html", null ],
+    [ "PlayerBroadcastBubble", "structPlayerBroadcastBubble.html", null ],
     [ "zappy::PlayerDeath", "structzappy_1_1PlayerDeath.html", null ],
     [ "zappy::PlayerEggLayStart", "structzappy_1_1PlayerEggLayStart.html", null ],
     [ "zappy::PlayerExpelled", "structzappy_1_1PlayerExpelled.html", null ],
