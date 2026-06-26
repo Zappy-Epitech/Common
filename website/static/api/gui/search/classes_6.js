@@ -13,5 +13,6 @@ var searchData=
   ['gridcontainer_10',['GridContainer',['../structGridContainer.html',1,'']]],
   ['gridposition_11',['GridPosition',['../structGridPosition.html',1,'']]],
   ['gui_12',['Gui',['../structGui.html',1,'']]],
-  ['guistyleprop_13',['GuiStyleProp',['../structGuiStyleProp.html',1,'']]]
+  ['guisettings_13',['GuiSettings',['../structGuiSettings.html',1,'']]],
+  ['guistyleprop_14',['GuiStyleProp',['../structGuiStyleProp.html',1,'']]]
 ];

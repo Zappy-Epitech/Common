@@ -28,5 +28,6 @@ var searchData=
   ['group_5fid_25',['group_id',['../structecs__system__t.html#ab31191eadba4bd272f911efc194595f8',1,'ecs_system_t']]],
   ['group_5fid_5fset_26',['group_id_set',['../structecs__system__t.html#a25c7182edf88b74e129872afeac22c75',1,'ecs_system_t']]],
   ['gui_27',['gui',['../structGui.html',1,'Gui'],['../structGui.html#a849e32ceedc028628cecb05d66aa36bf',1,'Gui::Gui()']]],
-  ['guistyleprop_28',['GuiStyleProp',['../structGuiStyleProp.html',1,'']]]
+  ['guisettings_28',['GuiSettings',['../structGuiSettings.html',1,'']]],
+  ['guistyleprop_29',['GuiStyleProp',['../structGuiStyleProp.html',1,'']]]
 ];

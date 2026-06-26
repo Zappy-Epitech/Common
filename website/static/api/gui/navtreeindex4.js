@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"group__c__addons__units__datarate.html#gab2202896473f0960949a9f6e6522cbde":[0,0,1,11,13,8],
 "group__c__addons__units__datarate.html#gabb70573f5856e2aeab61394e85ef59d9":[0,0,1,11,13,2],
 "group__c__addons__units__datarate.html#gaf7986f9b986f44d6b2c669f96f850e47":[0,0,1,11,13,4],
 "group__c__addons__units__duration.html":[0,0,1,11,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "group__core.html#ga362eb86150b310a1b5ba6284ff1f718d":[0,0,0,43],
 "group__core.html#ga37d71c8d97684aa43f7dcda3d8b2f223":[0,0,0,249],
 "group__core.html#ga382c176c59ae5c615b52d44a517d93a6":[0,0,0,219],
-"group__core.html#ga3838c10442de59794468eac87ba641e7":[0,0,0,67],
-"group__core.html#ga38956a8160fc9cb6ff27fef8355f112e":[0,0,0,235]
+"group__core.html#ga3838c10442de59794468eac87ba641e7":[0,0,0,67]
 };

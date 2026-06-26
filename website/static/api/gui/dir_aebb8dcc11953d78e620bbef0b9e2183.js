@@ -4,5 +4,6 @@ var dir_aebb8dcc11953d78e620bbef0b9e2183 =
     [ "Gui.hpp", "Gui_8hpp_source.html", null ],
     [ "Raylib.hpp", "Raylib_8hpp_source.html", null ],
     [ "Scenes.hpp", "Scenes_8hpp_source.html", null ],
+    [ "Settings.hpp", "core_2Settings_8hpp_source.html", null ],
     [ "Spatial.hpp", "Spatial_8hpp_source.html", null ]
 ];

@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"group__options.html#ga61de6267b2712835b0207a1a89a6ee58":[0,0,0,0,10],
 "group__options.html#ga61eb7d2a5782374c19f6cb88ead405db":[0,0,0,0,23],
 "group__options.html#ga64609a5b68ee2663b5d4e51b7d6a7058":[0,0,0,0,40],
 "group__options.html#ga6dd1ec1c11cc8d867a23bd3de0196311":[0,0,0,0,3],
@@ -214,6 +215,7 @@ var NAVTREEINDEX7 =
 "index.html":[],
 "pages.html":[],
 "raygui_8h_source.html":[2,0,0,1,1],
+"scenes_2Settings_8hpp_source.html":[2,0,0,7,6],
 "structAnimPlayer.html":[1,0,4],
 "structAppScenes.html":[1,0,5],
 "structAppScenes.html#a1cb9a28ffce9a7d28d4a32a8ceea188b":[1,0,5,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX7 =
 "structEcsArray.html#a23918d3ee778e37bf6c2a936479ffeb5":[0,0,1,14,13,0],
 "structEcsArray.html#ab3b78e6467f879a418dd18eab352a75c":[0,0,1,14,13,1],
 "structEcsBitmask.html":[0,0,1,14,11],
-"structEcsBitmask.html#a8acbc295f5f06e10c97bf9e7eeaa3c34":[0,0,1,14,11,0],
-"structEcsComponent.html":[0,0,0,3,3,1],
-"structEcsComponent.html#ac987fd7cd89e615dd4761dcba9899945":[0,0,0,3,3,1,1]
+"structEcsBitmask.html#a8acbc295f5f06e10c97bf9e7eeaa3c34":[0,0,1,14,11,0]
 };

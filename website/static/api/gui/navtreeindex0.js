@@ -40,7 +40,7 @@ var NAVTREEINDEX0 =
 "SocketHandle_8hpp_source.html":[2,0,0,4,1,2],
 "SocketOptions_8hpp_source.html":[2,0,0,4,1,3],
 "SocketPoll_8hpp_source.html":[2,0,0,4,1,4],
-"Spatial_8hpp_source.html":[2,0,0,0,4],
+"Spatial_8hpp_source.html":[2,0,0,0,5],
 "TcpClient_8hpp_source.html":[2,0,0,4,1,5],
 "TeamCommand_8hpp_source.html":[2,0,0,6,0,5],
 "Team_8hpp_source.html":[2,0,0,2,8],
@@ -122,6 +122,7 @@ var NAVTREEINDEX0 =
 "classparsing_1_1Scanner.html#ad9b338113a03021466671dac3dd25a0a":[1,0,1,0,7],
 "classparsing_1_1Scanner.html#afca4c47b8db020203f67f3dd24c686ec":[1,0,1,0,11],
 "classzappy_1_1ZappyProtocol.html":[1,0,2,25],
+"core_2Settings_8hpp_source.html":[2,0,0,0,4],
 "dir_026b903d89613d2d50919c0215a7de0b.html":[2,0,0,1],
 "dir_1bab67e0e9893324e92f7ce98fde9362.html":[2,0,0,4,1],
 "dir_3fb67633942bd84f7aa391e58ba835b3.html":[2,0,0,5],
@@ -138,8 +139,8 @@ var NAVTREEINDEX0 =
 "dir_fc4c7f03e1a69a98c370fae55a743828.html":[2,0,0,4],
 "files.html":[2,0],
 "flecs_8h_source.html":[2,0,0,1,0],
-"functions.html":[1,3,0,0],
 "functions.html":[1,3,0],
+"functions.html":[1,3,0,0],
 "functions_a.html":[1,3,0,1],
 "functions_b.html":[1,3,0,2],
 "functions_c.html":[1,3,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "group__api__types.html#ga7f2684cad4e47650012ae8839833e938":[0,0,0,3,39],
 "group__api__types.html#ga8558082590197d96b81411d2415f270b":[0,0,0,3,119],
 "group__api__types.html#ga86acb9fc14af9ef1797d6c6c08209147":[0,0,0,3,78],
-"group__api__types.html#ga8843bf30ad6b0853baed97720f8ede90":[0,0,0,3,76],
-"group__api__types.html#ga917167076c099b357a68613e1f6e3c9f":[0,0,0,3,89]
+"group__api__types.html#ga8843bf30ad6b0853baed97720f8ede90":[0,0,0,3,76]
 };
