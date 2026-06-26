@@ -237,6 +237,7 @@ var NAVTREEINDEX7 =
 "structDirection.html":[1,0,17],
 "structDirection.html#aba0c848f9db9831e6feb64d978e6d019":[1,0,17,0],
 "structDirection.html#ac10c893509c0322e902e69735c7382f0":[1,0,17,1],
+"structDirection.html#afe2e605e1914abdd8e75e31290f9bfad":[1,0,17,2],
 "structDraw3D.html":[1,0,18],
 "structEcsAlertInstance.html":[0,0,1,9,0],
 "structEcsAlertInstance.html#a49c9ae394765991bf99b37fd2b103598":[0,0,1,9,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "structEcsArray.html":[0,0,1,14,13],
 "structEcsArray.html#a23918d3ee778e37bf6c2a936479ffeb5":[0,0,1,14,13,0],
 "structEcsArray.html#ab3b78e6467f879a418dd18eab352a75c":[0,0,1,14,13,1],
-"structEcsBitmask.html":[0,0,1,14,11],
-"structEcsBitmask.html#a8acbc295f5f06e10c97bf9e7eeaa3c34":[0,0,1,14,11,0]
+"structEcsBitmask.html":[0,0,1,14,11]
 };

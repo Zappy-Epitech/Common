@@ -18,7 +18,7 @@ var searchData=
   ['descriptor_20types_15',['Query descriptor types.',['../group__query__types.html',1,'']]],
   ['despawnonenter_16',['DespawnOnEnter',['../structDespawnOnEnter.html',1,'']]],
   ['despawnonexit_17',['DespawnOnExit',['../structDespawnOnExit.html',1,'']]],
-  ['direction_18',['direction',['../structDirection.html#aba0c848f9db9831e6feb64d978e6d019',1,'Direction::Direction()'],['../structDirection.html#ac10c893509c0322e902e69735c7382f0',1,'Direction::Direction(Position3 pos)'],['../structDirection.html',1,'Direction']]],
+  ['direction_18',['direction',['../structDirection.html#aba0c848f9db9831e6feb64d978e6d019',1,'Direction::Direction()'],['../structDirection.html#ac10c893509c0322e902e69735c7382f0',1,'Direction::Direction(Position3 pos)'],['../structDirection.html#afe2e605e1914abdd8e75e31290f9bfad',1,'Direction::Direction(Position3 pos, float speed)'],['../structDirection.html',1,'Direction']]],
   ['disable_5fdynamic_5fvariable_5fbinding_19',['disable_dynamic_variable_binding',['../structecs__expr__eval__desc__t.html#aeb69dff4b5851e29618958a6b182c721',1,'ecs_expr_eval_desc_t']]],
   ['disable_5ffolding_20',['disable_folding',['../structecs__expr__eval__desc__t.html#a07d05d1d9a007abe97a8140e68d8bfe9',1,'ecs_expr_eval_desc_t']]],
   ['disabling_21',['disabling',['../group__flecs__c__enable__disable.html',1,'Enabling &amp; Disabling'],['../group__enabling__disabling.html',1,'Enabling &amp; Disabling']]],

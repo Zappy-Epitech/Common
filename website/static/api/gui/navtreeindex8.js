@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"structEcsBitmask.html#a8acbc295f5f06e10c97bf9e7eeaa3c34":[0,0,1,14,11,0],
 "structEcsComponent.html":[0,0,0,3,3,1],
 "structEcsComponent.html#ac987fd7cd89e615dd4761dcba9899945":[0,0,0,3,3,1,1],
 "structEcsComponent.html#adcbbdbbb3d6c084e278e75c72acccdd0":[0,0,0,3,3,1,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "structRaylib.html#afa1d23674af91c34e07970f7d056839f":[1,0,237,0],
 "structRender2D.html":[1,0,238],
 "structRender3D.html":[1,0,239],
-"structRotation3.html":[1,0,240],
-"structScale.html":[1,0,241]
+"structRotation3.html":[1,0,240]
 };
