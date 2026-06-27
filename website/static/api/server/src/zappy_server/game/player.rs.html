@@ -56,81 +56,84 @@
 <a href=#56 id=56 data-nosnippet>56</a>    </span><span class="kw">pub </span>last_command_end: Instant,
 <a href=#57 id=57 data-nosnippet>57</a>    <span class="doccomment">/// Precise moment of death due to hunger.
 <a href=#58 id=58 data-nosnippet>58</a>    </span><span class="kw">pub </span>death_time: Instant,
-<a href=#59 id=59 data-nosnippet>59</a>    <span class="doccomment">/// Queue of unsolicited messages to be sent to the client.
-<a href=#60 id=60 data-nosnippet>60</a>    </span><span class="kw">pub </span>notifications: VecDeque&lt;String&gt;,
-<a href=#61 id=61 data-nosnippet>61</a>}
-<a href=#62 id=62 data-nosnippet>62</a>
-<a href=#63 id=63 data-nosnippet>63</a><span class="kw">impl </span>Player {
-<a href=#64 id=64 data-nosnippet>64</a>    <span class="doccomment">/// Creates a new player at the given coordinates for a specific team.
-<a href=#65 id=65 data-nosnippet>65</a>    /// 
-<a href=#66 id=66 data-nosnippet>66</a>    /// Initial food is set to 10 units, converting to an expiration `death_time` based on `freq`.
-<a href=#67 id=67 data-nosnippet>67</a>    </span><span class="kw">pub fn </span>new(id: usize, x: u32, y: u32, direction: Direction, team: String, freq: u32) -&gt; <span class="self">Self </span>{
-<a href=#68 id=68 data-nosnippet>68</a>        <span class="kw">let </span>inventory = HashMap::new();
-<a href=#69 id=69 data-nosnippet>69</a>        
-<a href=#70 id=70 data-nosnippet>70</a>        <span class="kw">let </span>now = Instant::now();
-<a href=#71 id=71 data-nosnippet>71</a>        <span class="kw">let </span>life_duration = Duration::from_secs_f64(<span class="number">1260.0 </span>/ freq <span class="kw">as </span>f64);
-<a href=#72 id=72 data-nosnippet>72</a>
-<a href=#73 id=73 data-nosnippet>73</a>        <span class="self">Self </span>{
-<a href=#74 id=74 data-nosnippet>74</a>            id,
-<a href=#75 id=75 data-nosnippet>75</a>            x,
-<a href=#76 id=76 data-nosnippet>76</a>            y,
-<a href=#77 id=77 data-nosnippet>77</a>            direction,
-<a href=#78 id=78 data-nosnippet>78</a>            level: <span class="number">1</span>,
-<a href=#79 id=79 data-nosnippet>79</a>            inventory,
-<a href=#80 id=80 data-nosnippet>80</a>            team,
-<a href=#81 id=81 data-nosnippet>81</a>            commands: VecDeque::new(),
-<a href=#82 id=82 data-nosnippet>82</a>            last_command_end: now,
-<a href=#83 id=83 data-nosnippet>83</a>            death_time: now + life_duration,
-<a href=#84 id=84 data-nosnippet>84</a>            notifications: VecDeque::new(),
-<a href=#85 id=85 data-nosnippet>85</a>        }
-<a href=#86 id=86 data-nosnippet>86</a>    }
-<a href=#87 id=87 data-nosnippet>87</a>
-<a href=#88 id=88 data-nosnippet>88</a>    <span class="doccomment">/// Adds one unit of food (126 time units) to the player's lifespan.
-<a href=#89 id=89 data-nosnippet>89</a>    </span><span class="kw">pub fn </span>add_food(<span class="kw-2">&amp;mut </span><span class="self">self</span>, freq: u32) {
-<a href=#90 id=90 data-nosnippet>90</a>        <span class="kw">let </span>duration = Duration::from_secs_f64(<span class="number">126.0 </span>/ freq <span class="kw">as </span>f64);
-<a href=#91 id=91 data-nosnippet>91</a>        <span class="self">self</span>.death_time += duration;
-<a href=#92 id=92 data-nosnippet>92</a>    }
-<a href=#93 id=93 data-nosnippet>93</a>
-<a href=#94 id=94 data-nosnippet>94</a>    <span class="doccomment">/// Removes one unit of food (126 time units) from the player's lifespan.
-<a href=#95 id=95 data-nosnippet>95</a>    </span><span class="kw">pub fn </span>remove_food(<span class="kw-2">&amp;mut </span><span class="self">self</span>, freq: u32) {
-<a href=#96 id=96 data-nosnippet>96</a>        <span class="kw">let </span>duration = Duration::from_secs_f64(<span class="number">126.0 </span>/ freq <span class="kw">as </span>f64);
-<a href=#97 id=97 data-nosnippet>97</a>        <span class="self">self</span>.death_time -= duration;
-<a href=#98 id=98 data-nosnippet>98</a>    }
-<a href=#99 id=99 data-nosnippet>99</a>
-<a href=#100 id=100 data-nosnippet>100</a>    <span class="doccomment">/// Calculates the remaining integer units of food based on the time left to live.
-<a href=#101 id=101 data-nosnippet>101</a>    </span><span class="kw">pub fn </span>get_food_count(<span class="kw-2">&amp;</span><span class="self">self</span>, freq: u32) -&gt; u32 {
-<a href=#102 id=102 data-nosnippet>102</a>        <span class="kw">let </span>now = Instant::now();
-<a href=#103 id=103 data-nosnippet>103</a>        <span class="kw">if </span>now &gt;= <span class="self">self</span>.death_time { <span class="kw">return </span><span class="number">0</span>; }
-<a href=#104 id=104 data-nosnippet>104</a>        
-<a href=#105 id=105 data-nosnippet>105</a>        <span class="kw">let </span>remaining = <span class="self">self</span>.death_time.duration_since(now).as_secs_f64();
-<a href=#106 id=106 data-nosnippet>106</a>        <span class="kw">let </span>unit_duration = <span class="number">126.0 </span>/ freq <span class="kw">as </span>f64;
+<a href=#59 id=59 data-nosnippet>59</a>    <span class="doccomment">/// Last recorded food count for GUI updates.
+<a href=#60 id=60 data-nosnippet>60</a>    </span><span class="kw">pub </span>last_food_count: u32,
+<a href=#61 id=61 data-nosnippet>61</a>    <span class="doccomment">/// Queue of unsolicited messages to be sent to the client.
+<a href=#62 id=62 data-nosnippet>62</a>    </span><span class="kw">pub </span>notifications: VecDeque&lt;String&gt;,
+<a href=#63 id=63 data-nosnippet>63</a>}
+<a href=#64 id=64 data-nosnippet>64</a>
+<a href=#65 id=65 data-nosnippet>65</a><span class="kw">impl </span>Player {
+<a href=#66 id=66 data-nosnippet>66</a>    <span class="doccomment">/// Creates a new player at the given coordinates for a specific team.
+<a href=#67 id=67 data-nosnippet>67</a>    /// 
+<a href=#68 id=68 data-nosnippet>68</a>    /// Initial food is set to 10 units, converting to an expiration `death_time` based on `freq`.
+<a href=#69 id=69 data-nosnippet>69</a>    </span><span class="kw">pub fn </span>new(id: usize, x: u32, y: u32, direction: Direction, team: String, freq: u32) -&gt; <span class="self">Self </span>{
+<a href=#70 id=70 data-nosnippet>70</a>        <span class="kw">let </span>inventory = HashMap::new();
+<a href=#71 id=71 data-nosnippet>71</a>        
+<a href=#72 id=72 data-nosnippet>72</a>        <span class="kw">let </span>now = Instant::now();
+<a href=#73 id=73 data-nosnippet>73</a>        <span class="kw">let </span>life_duration = Duration::from_secs_f64(<span class="number">1260.0 </span>/ freq <span class="kw">as </span>f64);
+<a href=#74 id=74 data-nosnippet>74</a>
+<a href=#75 id=75 data-nosnippet>75</a>        <span class="self">Self </span>{
+<a href=#76 id=76 data-nosnippet>76</a>            id,
+<a href=#77 id=77 data-nosnippet>77</a>            x,
+<a href=#78 id=78 data-nosnippet>78</a>            y,
+<a href=#79 id=79 data-nosnippet>79</a>            direction,
+<a href=#80 id=80 data-nosnippet>80</a>            level: <span class="number">1</span>,
+<a href=#81 id=81 data-nosnippet>81</a>            inventory,
+<a href=#82 id=82 data-nosnippet>82</a>            team,
+<a href=#83 id=83 data-nosnippet>83</a>            commands: VecDeque::new(),
+<a href=#84 id=84 data-nosnippet>84</a>            last_command_end: now,
+<a href=#85 id=85 data-nosnippet>85</a>            death_time: now + life_duration,
+<a href=#86 id=86 data-nosnippet>86</a>            last_food_count: <span class="number">10</span>,
+<a href=#87 id=87 data-nosnippet>87</a>            notifications: VecDeque::new(),
+<a href=#88 id=88 data-nosnippet>88</a>        }
+<a href=#89 id=89 data-nosnippet>89</a>    }
+<a href=#90 id=90 data-nosnippet>90</a>
+<a href=#91 id=91 data-nosnippet>91</a>    <span class="doccomment">/// Adds one unit of food (126 time units) to the player's lifespan.
+<a href=#92 id=92 data-nosnippet>92</a>    </span><span class="kw">pub fn </span>add_food(<span class="kw-2">&amp;mut </span><span class="self">self</span>, freq: u32) {
+<a href=#93 id=93 data-nosnippet>93</a>        <span class="kw">let </span>duration = Duration::from_secs_f64(<span class="number">126.0 </span>/ freq <span class="kw">as </span>f64);
+<a href=#94 id=94 data-nosnippet>94</a>        <span class="self">self</span>.death_time += duration;
+<a href=#95 id=95 data-nosnippet>95</a>    }
+<a href=#96 id=96 data-nosnippet>96</a>
+<a href=#97 id=97 data-nosnippet>97</a>    <span class="doccomment">/// Removes one unit of food (126 time units) from the player's lifespan.
+<a href=#98 id=98 data-nosnippet>98</a>    </span><span class="kw">pub fn </span>remove_food(<span class="kw-2">&amp;mut </span><span class="self">self</span>, freq: u32) {
+<a href=#99 id=99 data-nosnippet>99</a>        <span class="kw">let </span>duration = Duration::from_secs_f64(<span class="number">126.0 </span>/ freq <span class="kw">as </span>f64);
+<a href=#100 id=100 data-nosnippet>100</a>        <span class="self">self</span>.death_time -= duration;
+<a href=#101 id=101 data-nosnippet>101</a>    }
+<a href=#102 id=102 data-nosnippet>102</a>
+<a href=#103 id=103 data-nosnippet>103</a>    <span class="doccomment">/// Calculates the remaining integer units of food based on the time left to live.
+<a href=#104 id=104 data-nosnippet>104</a>    </span><span class="kw">pub fn </span>get_food_count(<span class="kw-2">&amp;</span><span class="self">self</span>, freq: u32) -&gt; u32 {
+<a href=#105 id=105 data-nosnippet>105</a>        <span class="kw">let </span>now = Instant::now();
+<a href=#106 id=106 data-nosnippet>106</a>        <span class="kw">if </span>now &gt;= <span class="self">self</span>.death_time { <span class="kw">return </span><span class="number">0</span>; }
 <a href=#107 id=107 data-nosnippet>107</a>        
-<a href=#108 id=108 data-nosnippet>108</a>        (remaining / unit_duration).ceil() <span class="kw">as </span>u32
-<a href=#109 id=109 data-nosnippet>109</a>    }
-<a href=#110 id=110 data-nosnippet>110</a>}
-<a href=#111 id=111 data-nosnippet>111</a>
-<a href=#112 id=112 data-nosnippet>112</a><span class="attr">#[cfg(test)]
-<a href=#113 id=113 data-nosnippet>113</a></span><span class="kw">mod </span>tests {
-<a href=#114 id=114 data-nosnippet>114</a>    <span class="kw">use </span>super::<span class="kw-2">*</span>;
-<a href=#115 id=115 data-nosnippet>115</a>
-<a href=#116 id=116 data-nosnippet>116</a>    <span class="attr">#[test]
-<a href=#117 id=117 data-nosnippet>117</a>    </span><span class="kw">fn </span>test_player_initialization() {
-<a href=#118 id=118 data-nosnippet>118</a>        <span class="kw">let </span>player = Player::new(<span class="number">1</span>, <span class="number">5</span>, <span class="number">5</span>, Direction::North, <span class="string">"Team1"</span>.to_string(), <span class="number">100</span>);
-<a href=#119 id=119 data-nosnippet>119</a>        
-<a href=#120 id=120 data-nosnippet>120</a>        <span class="macro">assert_eq!</span>(player.id, <span class="number">1</span>);
-<a href=#121 id=121 data-nosnippet>121</a>        <span class="macro">assert_eq!</span>(player.x, <span class="number">5</span>);
-<a href=#122 id=122 data-nosnippet>122</a>        <span class="macro">assert_eq!</span>(player.y, <span class="number">5</span>);
-<a href=#123 id=123 data-nosnippet>123</a>        <span class="macro">assert_eq!</span>(player.direction, Direction::North);
-<a href=#124 id=124 data-nosnippet>124</a>        <span class="macro">assert_eq!</span>(player.level, <span class="number">1</span>);
-<a href=#125 id=125 data-nosnippet>125</a>    }
-<a href=#126 id=126 data-nosnippet>126</a>
-<a href=#127 id=127 data-nosnippet>127</a>    <span class="attr">#[test]
-<a href=#128 id=128 data-nosnippet>128</a>    </span><span class="kw">fn </span>test_food_count() {
-<a href=#129 id=129 data-nosnippet>129</a>        <span class="kw">let </span><span class="kw-2">mut </span>player = Player::new(<span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>, Direction::North, <span class="string">"T"</span>.to_string(), <span class="number">100</span>);
-<a href=#130 id=130 data-nosnippet>130</a>        <span class="macro">assert_eq!</span>(player.get_food_count(<span class="number">100</span>), <span class="number">10</span>);
-<a href=#131 id=131 data-nosnippet>131</a>        
-<a href=#132 id=132 data-nosnippet>132</a>        player.add_food(<span class="number">100</span>);
-<a href=#133 id=133 data-nosnippet>133</a>        <span class="macro">assert_eq!</span>(player.get_food_count(<span class="number">100</span>), <span class="number">11</span>);
-<a href=#134 id=134 data-nosnippet>134</a>    }
-<a href=#135 id=135 data-nosnippet>135</a>}
+<a href=#108 id=108 data-nosnippet>108</a>        <span class="kw">let </span>remaining = <span class="self">self</span>.death_time.duration_since(now).as_secs_f64();
+<a href=#109 id=109 data-nosnippet>109</a>        <span class="kw">let </span>unit_duration = <span class="number">126.0 </span>/ freq <span class="kw">as </span>f64;
+<a href=#110 id=110 data-nosnippet>110</a>        
+<a href=#111 id=111 data-nosnippet>111</a>        (remaining / unit_duration).ceil() <span class="kw">as </span>u32
+<a href=#112 id=112 data-nosnippet>112</a>    }
+<a href=#113 id=113 data-nosnippet>113</a>}
+<a href=#114 id=114 data-nosnippet>114</a>
+<a href=#115 id=115 data-nosnippet>115</a><span class="attr">#[cfg(test)]
+<a href=#116 id=116 data-nosnippet>116</a></span><span class="kw">mod </span>tests {
+<a href=#117 id=117 data-nosnippet>117</a>    <span class="kw">use </span>super::<span class="kw-2">*</span>;
+<a href=#118 id=118 data-nosnippet>118</a>
+<a href=#119 id=119 data-nosnippet>119</a>    <span class="attr">#[test]
+<a href=#120 id=120 data-nosnippet>120</a>    </span><span class="kw">fn </span>test_player_initialization() {
+<a href=#121 id=121 data-nosnippet>121</a>        <span class="kw">let </span>player = Player::new(<span class="number">1</span>, <span class="number">5</span>, <span class="number">5</span>, Direction::North, <span class="string">"Team1"</span>.to_string(), <span class="number">100</span>);
+<a href=#122 id=122 data-nosnippet>122</a>        
+<a href=#123 id=123 data-nosnippet>123</a>        <span class="macro">assert_eq!</span>(player.id, <span class="number">1</span>);
+<a href=#124 id=124 data-nosnippet>124</a>        <span class="macro">assert_eq!</span>(player.x, <span class="number">5</span>);
+<a href=#125 id=125 data-nosnippet>125</a>        <span class="macro">assert_eq!</span>(player.y, <span class="number">5</span>);
+<a href=#126 id=126 data-nosnippet>126</a>        <span class="macro">assert_eq!</span>(player.direction, Direction::North);
+<a href=#127 id=127 data-nosnippet>127</a>        <span class="macro">assert_eq!</span>(player.level, <span class="number">1</span>);
+<a href=#128 id=128 data-nosnippet>128</a>    }
+<a href=#129 id=129 data-nosnippet>129</a>
+<a href=#130 id=130 data-nosnippet>130</a>    <span class="attr">#[test]
+<a href=#131 id=131 data-nosnippet>131</a>    </span><span class="kw">fn </span>test_food_count() {
+<a href=#132 id=132 data-nosnippet>132</a>        <span class="kw">let </span><span class="kw-2">mut </span>player = Player::new(<span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>, Direction::North, <span class="string">"T"</span>.to_string(), <span class="number">100</span>);
+<a href=#133 id=133 data-nosnippet>133</a>        <span class="macro">assert_eq!</span>(player.get_food_count(<span class="number">100</span>), <span class="number">10</span>);
+<a href=#134 id=134 data-nosnippet>134</a>        
+<a href=#135 id=135 data-nosnippet>135</a>        player.add_food(<span class="number">100</span>);
+<a href=#136 id=136 data-nosnippet>136</a>        <span class="macro">assert_eq!</span>(player.get_food_count(<span class="number">100</span>), <span class="number">11</span>);
+<a href=#137 id=137 data-nosnippet>137</a>    }
+<a href=#138 id=138 data-nosnippet>138</a>}
 </code></pre></div></section></main></body></html>
