@@ -287,6 +287,7 @@ var annotated_dup =
     [ "Raylib", "structRaylib.html", "structRaylib" ],
     [ "Render2D", "structRender2D.html", null ],
     [ "Render3D", "structRender3D.html", null ],
+    [ "RenderPlayer", "structRenderPlayer.html", null ],
     [ "Rotation3", "structRotation3.html", null ],
     [ "Scale", "structScale.html", null ],
     [ "Scenes", "structScenes.html", "structScenes" ],
