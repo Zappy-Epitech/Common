@@ -1,1 +1,1 @@
-window.SIDEBAR_ITEMS = {"constant":["SERVER_TOKEN"],"struct":["Server"]};
+window.SIDEBAR_ITEMS = {"enum":["ClientState"],"struct":["Server"]};
