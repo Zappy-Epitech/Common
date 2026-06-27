@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['main_0',['main',['../main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main.cpp']]]
+  ['loadparamsfromfile_0',['loadparamsfromfile',['../Params_8cpp.html#a3c891c2286234049c56a211046df5b7e',1,'loadParamsFromFile(const std::string &amp;path):&#160;Params.cpp'],['../Player_8hpp.html#a3c891c2286234049c56a211046df5b7e',1,'loadParamsFromFile(const std::string &amp;path):&#160;Params.cpp']]]
 ];

@@ -132,17 +132,19 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="Player_8hpp__dep__incl.png" border="0" usemap="#aalgo_2src_2Player_2Player_8hppdep" alt=""/></div>
 <map name="aalgo_2src_2Player_2Player_8hppdep" id="aalgo_2src_2Player_2Player_8hppdep">
-<area shape="rect" title="The AI player: its state and main decision loop." alt="" coords="421,5,611,31"/>
+<area shape="rect" title="The AI player: its state and main decision loop." alt="" coords="530,5,721,31"/>
 <area shape="rect" href="Actions_8cpp.html" title="Implementation of the player&#39;s action commands." alt="" coords="5,79,176,119"/>
-<area shape="poly" title=" " alt="" coords="439,36,188,81,177,84,176,78,188,76,438,30"/>
+<area shape="poly" title=" " alt="" coords="517,35,188,81,177,83,176,78,188,76,517,30"/>
 <area shape="rect" href="GameLogic_8cpp.html" title="Implementation of the player&#39;s per&#45;tick decision making." alt="" coords="200,79,395,119"/>
-<area shape="poly" title=" " alt="" coords="472,38,351,81,349,76,471,33"/>
+<area shape="poly" title=" " alt="" coords="565,36,377,81,376,76,564,31"/>
 <area shape="rect" href="StateSwitch_8cpp.html" title="Implementation of the player&#39;s state machine." alt="" coords="419,79,613,119"/>
-<area shape="poly" title=" " alt="" coords="519,44,519,79,513,79,513,44"/>
-<area shape="rect" href="Player_8cpp.html" title="Implementation of the Player loop and elevation helpers." alt="" coords="637,86,827,111"/>
-<area shape="poly" title=" " alt="" coords="561,33,701,83,700,88,559,38"/>
-<area shape="rect" href="main_8cpp.html" title="Program entry point: parses CLI arguments and starts the AI." alt="" coords="851,86,989,111"/>
-<area shape="poly" title=" " alt="" coords="597,30,839,76,872,83,871,89,838,81,596,36"/>
+<area shape="poly" title=" " alt="" coords="600,41,544,81,541,76,597,36"/>
+<area shape="rect" href="Params_8cpp.html" title="Dependency&#45;free loader for the AI&#39;s tunable parameters." alt="" coords="637,86,835,111"/>
+<area shape="poly" title=" " alt="" coords="655,37,721,84,718,88,652,41"/>
+<area shape="rect" href="Player_8cpp.html" title="Implementation of the Player loop and elevation helpers." alt="" coords="859,86,1048,111"/>
+<area shape="poly" title=" " alt="" coords="687,31,906,83,905,89,686,36"/>
+<area shape="rect" href="main_8cpp.html" title="Program entry point: parses CLI arguments and starts the AI." alt="" coords="1073,86,1210,111"/>
+<area shape="poly" title=" " alt="" coords="734,29,889,49,1060,76,1096,83,1094,89,1060,81,888,54,734,34"/>
 </map>
 </div>
 </div>
@@ -196,6 +198,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a3c891c2286234049c56a211046df5b7e" id="r_a3c891c2286234049c56a211046df5b7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structParams.html">Params</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#a3c891c2286234049c56a211046df5b7e">loadParamsFromFile</a> (const std::string &amp;path)</td></tr>
+<tr class="memdesc:a3c891c2286234049c56a211046df5b7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads tunable <a class="el" href="structParams.html">Params</a> from a flat JSON file of integer values.  <br /></td></tr>
+<tr class="separator:a3c891c2286234049c56a211046df5b7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46de87374858b05a6dc163355aa2d65f" id="r_a46de87374858b05a6dc163355aa2d65f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#a46de87374858b05a6dc163355aa2d65f">canUpgrade</a> (const <a class="el" href="structInventory.html">Inventory</a> &amp;inventory, int currentLevel)</td></tr>
 <tr class="memdesc:a46de87374858b05a6dc163355aa2d65f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether an inventory satisfies the cost to elevate one level.  <br /></td></tr>
 <tr class="separator:a46de87374858b05a6dc163355aa2d65f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -235,6 +240,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a6fe409e670d34f18f91b31101e9a0da1" id="r_a6fe409e670d34f18f91b31101e9a0da1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#a6fe409e670d34f18f91b31101e9a0da1">parseUpgradeCall</a> (const std::string &amp;text, long &amp;hostId)</td></tr>
 <tr class="memdesc:a6fe409e670d34f18f91b31101e9a0da1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a team <code>"upgrade N [hostId]"</code> ritual call.  <br /></td></tr>
 <tr class="separator:a6fe409e670d34f18f91b31101e9a0da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad584299bebe588aa7f1720c013e6017c" id="r_ad584299bebe588aa7f1720c013e6017c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#ad584299bebe588aa7f1720c013e6017c">parseLevelHost</a> (const std::string &amp;text, const std::string &amp;verb, long &amp;hostId)</td></tr>
+<tr class="memdesc:ad584299bebe588aa7f1720c013e6017c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a <code>"&amp;lt;verb&amp;gt; &amp;lt;level&amp;gt; [hostId]"</code> broadcast.  <br /></td></tr>
+<tr class="separator:ad584299bebe588aa7f1720c013e6017c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a339004e9f208bd0e48d0d12d1f6733bc" id="r_a339004e9f208bd0e48d0d12d1f6733bc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#a339004e9f208bd0e48d0d12d1f6733bc">parseElevationLevel</a> (const std::string &amp;line)</td></tr>
 <tr class="memdesc:a339004e9f208bd0e48d0d12d1f6733bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the new level from an incantation success response.  <br /></td></tr>
 <tr class="separator:a339004e9f208bd0e48d0d12d1f6733bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -332,7 +340,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">inventory</td><td>The resources currently held by the player. </td></tr>
-    <tr><td class="paramname">currentLevel</td><td>The player's current level; only 1 to 6 can elevate. </td></tr>
+    <tr><td class="paramname">currentLevel</td><td>The player's current level; only 1 to 7 can elevate. </td></tr>
   </table>
   </dd>
 </dl>
@@ -642,6 +650,33 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a3c891c2286234049c56a211046df5b7e" name="a3c891c2286234049c56a211046df5b7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c891c2286234049c56a211046df5b7e">&#9670;&#160;</a></span>loadParamsFromFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structParams.html">Params</a> loadParamsFromFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Loads tunable <a class="el" href="structParams.html">Params</a> from a flat JSON file of integer values. </p>
+<p>The file is a flat object such as <code>{"foodSurviveMin": 14, "minFoodToUpgrade": 50, "forkPatience": 10, "huntAckWindow": 2}</code>. Unknown keys are ignored; any key that is absent or whose value is not a valid integer keeps the field's default. A missing or unreadable file yields all defaults, so this never throws. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Path to the JSON file. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The parsed parameters, with defaults for anything not provided. </dd></dl>
+
+</div>
+</div>
 <a id="adb87e1bdd3ab62ebb9c7701c04f70049" name="adb87e1bdd3ab62ebb9c7701c04f70049"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adb87e1bdd3ab62ebb9c7701c04f70049">&#9670;&#160;</a></span>parseBroadcast()</h2>
 
@@ -741,6 +776,52 @@ underway"</code>, <code>"ko"</code>) are not completions.</p>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The new level, or -1 if <code>line</code> is not a completion notice. </dd></dl>
+
+</div>
+</div>
+<a id="ad584299bebe588aa7f1720c013e6017c" name="ad584299bebe588aa7f1720c013e6017c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad584299bebe588aa7f1720c013e6017c">&#9670;&#160;</a></span>parseLevelHost()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int parseLevelHost </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>verb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long &amp;&#160;</td>
+          <td class="paramname"><em>hostId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parses a <code>"&amp;lt;verb&amp;gt; &amp;lt;level&amp;gt; [hostId]"</code> broadcast. </p>
+<p>Generalises <a class="el" href="GameLogic_8cpp.html#a6fe409e670d34f18f91b31101e9a0da1">parseUpgradeCall</a> to any verb, so <code>"abort"</code> and <code>"stop"</code> can name the host that issued them. A follower then drops its call only when the id matches the host it is actually backing, instead of every player at that level bailing because one unrelated host gave up. A legacy id-less form leaves <code>hostId</code> at -1.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>The decoded broadcast body. </td></tr>
+    <tr><td class="paramname">verb</td><td>The expected leading keyword (e.g. "abort" or "stop"). </td></tr>
+    <tr><td class="paramname">hostId</td><td>Set to the issuer's host id, or -1 when none is present. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The level, or -1 if <code>text</code> does not match <code>verb + " " + digits</code>. </dd></dl>
 
 </div>
 </div>
