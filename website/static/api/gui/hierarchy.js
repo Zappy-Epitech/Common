@@ -233,6 +233,7 @@ var hierarchy =
     [ "Lifetime", "structLifetime.html", null ],
     [ "LimbTrack", "structLimbTrack.html", null ],
     [ "net::LineBuffer", "classnet_1_1LineBuffer.html", null ],
+    [ "LogPanelMessage", "structLogPanelMessage.html", null ],
     [ "zappy::MapSize", "structzappy_1_1MapSize.html", null ],
     [ "Minecraft", "structMinecraft.html", null ],
     [ "MinecraftAnimation", "structMinecraftAnimation.html", null ],

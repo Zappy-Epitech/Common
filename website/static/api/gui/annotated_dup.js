@@ -257,6 +257,7 @@ var annotated_dup =
     [ "Keyframe", "structKeyframe.html", null ],
     [ "Lifetime", "structLifetime.html", null ],
     [ "LimbTrack", "structLimbTrack.html", null ],
+    [ "LogPanelMessage", "structLogPanelMessage.html", null ],
     [ "Minecraft", "structMinecraft.html", "structMinecraft" ],
     [ "MinecraftAnimation", "structMinecraftAnimation.html", "structMinecraftAnimation" ],
     [ "MinecraftRenderer", "structMinecraftRenderer.html", "structMinecraftRenderer" ],
