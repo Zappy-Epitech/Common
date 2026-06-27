@@ -151,24 +151,25 @@ $(document).ready(function(){initNavTree('MinecraftAnimation_8hpp_source.html','
 <div class="foldopen" id="foldopen00051" data-start="{" data-end="};">
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="structSkinPose.html">   51</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structSkinPose.html">SkinPose</a> {</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordtype">float</span> angles[4] = {};</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>};</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">float</span> bodyPitch = 0.0f;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>};</div>
 </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="foldopen" id="foldopen00056" data-start="{" data-end="};">
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="structMinecraftAnimation.html">   56</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structMinecraftAnimation.html">MinecraftAnimation</a> {</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <a class="code hl_struct" href="structMinecraftAnimation.html">MinecraftAnimation</a>(flecs::world &amp;world);</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>};</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="foldopen" id="foldopen00057" data-start="{" data-end="};">
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="structMinecraftAnimation.html">   57</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structMinecraftAnimation.html">MinecraftAnimation</a> {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <a class="code hl_struct" href="structMinecraftAnimation.html">MinecraftAnimation</a>(flecs::world &amp;world);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>};</div>
 </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="keyword">inline</span> <span class="keyword">const</span> <a class="code hl_struct" href="structSkinAnimation.html">SkinAnimation</a> Walking = <a class="code hl_function" href="structSkinAnimation.html#a5fb31636fb8469a6de2c9f49d1eff284">SkinAnimation::build</a>(0.8f)</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                                         .<a class="code hl_function" href="structSkinAnimation.html#a85ce33810c2ea27d06f8d0e368d2a876">limb</a>(Limb::LeftArm, { { 0.0f, 0 }, { 0.4f, 45 }, { 0.8f, 0 } })</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                                         .limb(Limb::RightArm, { { 0.0f, 0 }, { 0.4f, -45 }, { 0.8f, 0 } })</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                                         .limb(Limb::LeftLeg, { { 0.0f, -30 }, { 0.4f, 30 }, { 0.8f, -30 } })</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                                         .limb(Limb::RightLeg, { { 0.0f, 30 }, { 0.4f, -30 }, { 0.8f, 30 } });</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">inline</span> <span class="keyword">const</span> <a class="code hl_struct" href="structSkinAnimation.html">SkinAnimation</a> Walking = <a class="code hl_function" href="structSkinAnimation.html#a5fb31636fb8469a6de2c9f49d1eff284">SkinAnimation::build</a>(0.8f)</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                                         .<a class="code hl_function" href="structSkinAnimation.html#a85ce33810c2ea27d06f8d0e368d2a876">limb</a>(Limb::LeftArm, { { 0.0f, 0 }, { 0.4f, 45 }, { 0.8f, 0 } })</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                                         .limb(Limb::RightArm, { { 0.0f, 0 }, { 0.4f, -45 }, { 0.8f, 0 } })</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                                         .limb(Limb::LeftLeg, { { 0.0f, -30 }, { 0.4f, 30 }, { 0.8f, -30 } })</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                                         .limb(Limb::RightLeg, { { 0.0f, 30 }, { 0.4f, -30 }, { 0.8f, 30 } });</div>
 <div class="ttc" id="astructAnimPlayer_html"><div class="ttname"><a href="structAnimPlayer.html">AnimPlayer</a></div><div class="ttdoc">Stores animation playback state.</div><div class="ttdef"><b>Definition</b> MinecraftAnimation.hpp:45</div></div>
 <div class="ttc" id="astructKeyframe_html"><div class="ttname"><a href="structKeyframe.html">Keyframe</a></div><div class="ttdoc">Stores one animation keyframe.</div><div class="ttdef"><b>Definition</b> MinecraftAnimation.hpp:21</div></div>
 <div class="ttc" id="astructLimbTrack_html"><div class="ttname"><a href="structLimbTrack.html">LimbTrack</a></div><div class="ttdoc">Stores keyframes for one limb.</div><div class="ttdef"><b>Definition</b> MinecraftAnimation.hpp:27</div></div>
-<div class="ttc" id="astructMinecraftAnimation_html"><div class="ttname"><a href="structMinecraftAnimation.html">MinecraftAnimation</a></div><div class="ttdoc">Registers skin animation systems.</div><div class="ttdef"><b>Definition</b> MinecraftAnimation.hpp:56</div></div>
+<div class="ttc" id="astructMinecraftAnimation_html"><div class="ttname"><a href="structMinecraftAnimation.html">MinecraftAnimation</a></div><div class="ttdoc">Registers skin animation systems.</div><div class="ttdef"><b>Definition</b> MinecraftAnimation.hpp:57</div></div>
 <div class="ttc" id="astructSkinAnimation_html"><div class="ttname"><a href="structSkinAnimation.html">SkinAnimation</a></div><div class="ttdoc">Stores a skin animation clip.</div><div class="ttdef"><b>Definition</b> MinecraftAnimation.hpp:33</div></div>
 <div class="ttc" id="astructSkinAnimation_html_a5fb31636fb8469a6de2c9f49d1eff284"><div class="ttname"><a href="structSkinAnimation.html#a5fb31636fb8469a6de2c9f49d1eff284">SkinAnimation::build</a></div><div class="ttdeci">static SkinAnimation build(float duration, bool loop=true)</div><div class="ttdoc">Creates an animation clip.</div><div class="ttdef"><b>Definition</b> MinecraftAnimation.cpp:8</div></div>
 <div class="ttc" id="astructSkinAnimation_html_a85ce33810c2ea27d06f8d0e368d2a876"><div class="ttname"><a href="structSkinAnimation.html#a85ce33810c2ea27d06f8d0e368d2a876">SkinAnimation::limb</a></div><div class="ttdeci">SkinAnimation &amp; limb(Limb l, std::initializer_list&lt; Keyframe &gt; keys)</div><div class="ttdoc">Adds keyframes for one limb.</div><div class="ttdef"><b>Definition</b> MinecraftAnimation.cpp:16</div></div>

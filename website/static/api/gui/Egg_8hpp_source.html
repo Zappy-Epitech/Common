@@ -122,13 +122,25 @@ $(document).ready(function(){initNavTree('Egg_8hpp_source.html',''); initResizab
 </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="foldopen" id="foldopen00022" data-start="{" data-end="};">
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="structEggs.html">   22</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structEggs.html">Eggs</a> {</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_struct" href="structEggs.html">Eggs</a>(flecs::world &amp;world);</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>};</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="structEggLayingAnimation.html">   22</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structEggLayingAnimation.html">EggLayingAnimation</a> {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_struct" href="structPosition3.html">Position3</a> basePosition;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">float</span> elapsed;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">float</span> duration;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordtype">bool</span> previewStarted;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>};</div>
+</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keywordtype">void</span> startEggLayingAnimation(<span class="keyword">const</span> flecs::world &amp;world, <span class="keywordtype">int</span> playerId);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="foldopen" id="foldopen00033" data-start="{" data-end="};">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="structEggs.html">   33</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structEggs.html">Eggs</a> {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_struct" href="structEggs.html">Eggs</a>(flecs::world &amp;world);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>};</div>
 </div>
 <div class="ttc" id="astructEggId_html"><div class="ttname"><a href="structEggId.html">EggId</a></div><div class="ttdoc">Stores a server egg id.</div><div class="ttdef"><b>Definition</b> Egg.hpp:10</div></div>
+<div class="ttc" id="astructEggLayingAnimation_html"><div class="ttname"><a href="structEggLayingAnimation.html">EggLayingAnimation</a></div><div class="ttdoc">Animates a player during egg laying.</div><div class="ttdef"><b>Definition</b> Egg.hpp:22</div></div>
 <div class="ttc" id="astructEggSpawnAnimation_html"><div class="ttname"><a href="structEggSpawnAnimation.html">EggSpawnAnimation</a></div><div class="ttdoc">Animates a newly spawned egg with a short pop effect.</div><div class="ttdef"><b>Definition</b> Egg.hpp:15</div></div>
-<div class="ttc" id="astructEggs_html"><div class="ttname"><a href="structEggs.html">Eggs</a></div><div class="ttdoc">Registers egg gameplay visuals.</div><div class="ttdef"><b>Definition</b> Egg.hpp:22</div></div>
+<div class="ttc" id="astructEggs_html"><div class="ttname"><a href="structEggs.html">Eggs</a></div><div class="ttdoc">Registers egg gameplay visuals.</div><div class="ttdef"><b>Definition</b> Egg.hpp:33</div></div>
 <div class="ttc" id="astructPosition3_html"><div class="ttname"><a href="structPosition3.html">Position3</a></div><div class="ttdoc">Stores a 3D position.</div><div class="ttdef"><b>Definition</b> Spatial.hpp:48</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

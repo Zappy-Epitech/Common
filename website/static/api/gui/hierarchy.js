@@ -191,6 +191,7 @@ var hierarchy =
     [ "zappy::EggDeath", "structzappy_1_1EggDeath.html", null ],
     [ "zappy::EggHatched", "structzappy_1_1EggHatched.html", null ],
     [ "EggId", "structEggId.html", null ],
+    [ "EggLayingAnimation", "structEggLayingAnimation.html", null ],
     [ "zappy::EggNew", "structzappy_1_1EggNew.html", null ],
     [ "Eggs", "structEggs.html", null ],
     [ "EggSpawnAnimation", "structEggSpawnAnimation.html", null ],

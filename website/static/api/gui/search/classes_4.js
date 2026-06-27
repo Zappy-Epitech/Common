@@ -171,11 +171,12 @@ var searchData=
   ['eggdeath_168',['EggDeath',['../structzappy_1_1EggDeath.html',1,'zappy']]],
   ['egghatched_169',['EggHatched',['../structzappy_1_1EggHatched.html',1,'zappy']]],
   ['eggid_170',['EggId',['../structEggId.html',1,'']]],
-  ['eggnew_171',['EggNew',['../structzappy_1_1EggNew.html',1,'zappy']]],
-  ['eggs_172',['Eggs',['../structEggs.html',1,'']]],
-  ['eggspawnanimation_173',['EggSpawnAnimation',['../structEggSpawnAnimation.html',1,'']]],
-  ['endgame_174',['EndGame',['../structEndGame.html',1,'']]],
-  ['endgameplayerstats_175',['EndGamePlayerStats',['../structEndGamePlayerStats.html',1,'']]],
-  ['endgamestate_176',['EndGameState',['../structEndGameState.html',1,'']]],
-  ['error_177',['Error',['../structnet_1_1Error.html',1,'net']]]
+  ['egglayinganimation_171',['EggLayingAnimation',['../structEggLayingAnimation.html',1,'']]],
+  ['eggnew_172',['EggNew',['../structzappy_1_1EggNew.html',1,'zappy']]],
+  ['eggs_173',['Eggs',['../structEggs.html',1,'']]],
+  ['eggspawnanimation_174',['EggSpawnAnimation',['../structEggSpawnAnimation.html',1,'']]],
+  ['endgame_175',['EndGame',['../structEndGame.html',1,'']]],
+  ['endgameplayerstats_176',['EndGamePlayerStats',['../structEndGamePlayerStats.html',1,'']]],
+  ['endgamestate_177',['EndGameState',['../structEndGameState.html',1,'']]],
+  ['error_178',['Error',['../structnet_1_1Error.html',1,'net']]]
 ];
