@@ -160,18 +160,20 @@
 <a href=#160 id=160 data-nosnippet>160</a>            <span class="kw">let </span>egg_id = world.next_egg_id;
 <a href=#161 id=161 data-nosnippet>161</a>            world.next_egg_id += <span class="number">1</span>;
 <a href=#162 id=162 data-nosnippet>162</a>
-<a href=#163 id=163 data-nosnippet>163</a>            world.eggs.push(<span class="kw">crate</span>::game::world::Egg {
-<a href=#164 id=164 data-nosnippet>164</a>                id: egg_id,
-<a href=#165 id=165 data-nosnippet>165</a>                x: tx,
-<a href=#166 id=166 data-nosnippet>166</a>                y: ty,
-<a href=#167 id=167 data-nosnippet>167</a>                team: team_name,
-<a href=#168 id=168 data-nosnippet>168</a>            });
-<a href=#169 id=169 data-nosnippet>169</a>
-<a href=#170 id=170 data-nosnippet>170</a>            world.gui_events.push_back(<span class="macro">format!</span>(<span class="string">"enw #{} #{} {} {}\n"</span>, egg_id, player_id, tx, ty));
-<a href=#171 id=171 data-nosnippet>171</a>            
-<a href=#172 id=172 data-nosnippet>172</a>            <span class="string">"ok\n"</span>.to_string()
-<a href=#173 id=173 data-nosnippet>173</a>        }
-<a href=#174 id=174 data-nosnippet>174</a>        <span class="kw">_ </span>=&gt; <span class="string">"ko\n"</span>.to_string(),
-<a href=#175 id=175 data-nosnippet>175</a>    }
-<a href=#176 id=176 data-nosnippet>176</a>}
+<a href=#163 id=163 data-nosnippet>163</a>            <span class="kw">let </span>life_duration = std::time::Duration::from_secs_f64(<span class="number">1260.0 </span>/ world.freq <span class="kw">as </span>f64);
+<a href=#164 id=164 data-nosnippet>164</a>            world.eggs.push(<span class="kw">crate</span>::game::world::Egg {
+<a href=#165 id=165 data-nosnippet>165</a>                id: egg_id,
+<a href=#166 id=166 data-nosnippet>166</a>                x: tx,
+<a href=#167 id=167 data-nosnippet>167</a>                y: ty,
+<a href=#168 id=168 data-nosnippet>168</a>                team: team_name,
+<a href=#169 id=169 data-nosnippet>169</a>                death_time: std::time::Instant::now() + life_duration,
+<a href=#170 id=170 data-nosnippet>170</a>            });
+<a href=#171 id=171 data-nosnippet>171</a>
+<a href=#172 id=172 data-nosnippet>172</a>            world.gui_events.push_back(<span class="macro">format!</span>(<span class="string">"enw #{} #{} {} {}\n"</span>, egg_id, player_id, tx, ty));
+<a href=#173 id=173 data-nosnippet>173</a>            
+<a href=#174 id=174 data-nosnippet>174</a>            <span class="string">"ok\n"</span>.to_string()
+<a href=#175 id=175 data-nosnippet>175</a>        }
+<a href=#176 id=176 data-nosnippet>176</a>        <span class="kw">_ </span>=&gt; <span class="string">"ko\n"</span>.to_string(),
+<a href=#177 id=177 data-nosnippet>177</a>    }
+<a href=#178 id=178 data-nosnippet>178</a>}
 </code></pre></div></section></main></body></html>
