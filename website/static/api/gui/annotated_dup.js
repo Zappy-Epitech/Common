@@ -226,6 +226,8 @@ var annotated_dup =
     [ "EcsWorldStats", "structEcsWorldStats.html", "structEcsWorldStats" ],
     [ "EcsWorldSummary", "structEcsWorldSummary.html", "structEcsWorldSummary" ],
     [ "EggId", "structEggId.html", null ],
+    [ "Eggs", "structEggs.html", "structEggs" ],
+    [ "EggSpawnAnimation", "structEggSpawnAnimation.html", null ],
     [ "EndGame", "structEndGame.html", "structEndGame" ],
     [ "EndGamePlayerStats", "structEndGamePlayerStats.html", null ],
     [ "EndGameState", "structEndGameState.html", null ],

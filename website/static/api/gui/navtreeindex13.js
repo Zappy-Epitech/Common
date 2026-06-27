@@ -1,5 +1,8 @@
 var NAVTREEINDEX13 =
 {
+"structecs__world__info__t.html":[0,0,0,3,2,1],
+"structecs__world__info__t.html#a00d084fb66128a3a5ffb3f75992faff0":[0,0,0,3,2,1,24],
+"structecs__world__info__t.html#a0ca484d9e66a188f8c134e188af1fa01":[0,0,0,3,2,1,34],
 "structecs__world__info__t.html#a0d0dd99156addb94db2300b8f635fccf":[0,0,0,3,2,1,39],
 "structecs__world__info__t.html#a199919dd6a4c1f72a210b34f2babc7f8":[0,0,0,3,2,1,32],
 "structecs__world__info__t.html#a1f7e9758f03d588621b5e6bf8b39d14c":[0,0,0,3,2,1,41],
