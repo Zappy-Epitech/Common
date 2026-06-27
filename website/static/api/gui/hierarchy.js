@@ -240,6 +240,7 @@ var hierarchy =
     [ "zappy::MapSize", "structzappy_1_1MapSize.html", null ],
     [ "Minecraft", "structMinecraft.html", null ],
     [ "MinecraftAnimation", "structMinecraftAnimation.html", null ],
+    [ "MinecraftCrowdMember", "structMinecraftCrowdMember.html", null ],
     [ "MinecraftRenderer", "structMinecraftRenderer.html", null ],
     [ "MinecraftSkin", "structMinecraftSkin.html", null ],
     [ "Movement", "structMovement.html", null ],

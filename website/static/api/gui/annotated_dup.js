@@ -263,6 +263,7 @@ var annotated_dup =
     [ "LogPanelMessage", "structLogPanelMessage.html", null ],
     [ "Minecraft", "structMinecraft.html", "structMinecraft" ],
     [ "MinecraftAnimation", "structMinecraftAnimation.html", "structMinecraftAnimation" ],
+    [ "MinecraftCrowdMember", "structMinecraftCrowdMember.html", null ],
     [ "MinecraftRenderer", "structMinecraftRenderer.html", "structMinecraftRenderer" ],
     [ "MinecraftSkin", "structMinecraftSkin.html", null ],
     [ "Movement", "structMovement.html", "structMovement" ],

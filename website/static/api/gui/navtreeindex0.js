@@ -23,7 +23,9 @@ var NAVTREEINDEX0 =
 "LineBuffer_8hpp_source.html":[2,0,0,4,2,1],
 "MapCommand_8hpp_source.html":[2,0,0,6,0,2],
 "MinecraftAnimation_8hpp_source.html":[2,0,0,3,1],
-"MinecraftRenderer_8hpp_source.html":[2,0,0,3,2],
+"MinecraftCrowdLayout_8hpp_source.html":[2,0,0,3,2],
+"MinecraftRenderer_8hpp_source.html":[2,0,0,3,3],
+"MinecraftSkinRender_8hpp_source.html":[2,0,0,3,4],
 "Minecraft_8hpp_source.html":[2,0,0,3,0],
 "Movement_8hpp_source.html":[2,0,0,2,5],
 "Net_8hpp_source.html":[2,0,0,4,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX0 =
 "group__api__types.html#ga6e30410efd53750b83050aeb29cba331":[0,0,0,3,118],
 "group__api__types.html#ga74aee794d5768ed224edf9cc41166fa8":[0,0,0,3,66],
 "group__api__types.html#ga7d4e438685634ce482a40efab92ff60c":[0,0,0,3,116],
-"group__api__types.html#ga7f2684cad4e47650012ae8839833e938":[0,0,0,3,39],
-"group__api__types.html#ga8558082590197d96b81411d2415f270b":[0,0,0,3,119],
-"group__api__types.html#ga86acb9fc14af9ef1797d6c6c08209147":[0,0,0,3,78]
+"group__api__types.html#ga7f2684cad4e47650012ae8839833e938":[0,0,0,3,39]
 };

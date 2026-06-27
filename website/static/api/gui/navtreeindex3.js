@@ -1,5 +1,7 @@
 var NAVTREEINDEX3 =
 {
+"group__c__addons__meta.html#gga38eff97e820c5aa8d2cfc7911b2bbea9a9705081c3c0736e483a647656b2d928b":[0,0,1,14,99,6],
+"group__c__addons__meta.html#gga38eff97e820c5aa8d2cfc7911b2bbea9a9fe40fc94ec5381170bc5bd94f05490d":[0,0,1,14,99,0],
 "group__c__addons__meta.html#gga38eff97e820c5aa8d2cfc7911b2bbea9ac50058e3b4146142518505cbfb3f5c1d":[0,0,1,14,99,9],
 "group__c__addons__meta.html#gga38eff97e820c5aa8d2cfc7911b2bbea9aff1656c6ef706960864ed11c8609234b":[0,0,1,14,99,1],
 "group__c__addons__meta.html#gga38eff97e820c5aa8d2cfc7911b2bbea9aff92b36a7686a78bf87fcb595f7e3a48":[0,0,1,14,99,7],
@@ -247,7 +249,5 @@ var NAVTREEINDEX3 =
 "group__c__addons__units__datarate.html":[0,0,1,11,13],
 "group__c__addons__units__datarate.html#ga09d6a0a87e5ef7707d5ce6543f6196d4":[0,0,1,11,13,3],
 "group__c__addons__units__datarate.html#ga12afc69ebe0214987eb89d32c318a19a":[0,0,1,11,13,7],
-"group__c__addons__units__datarate.html#ga200fd29c399ea24761a6df481d4c317a":[0,0,1,11,13,1],
-"group__c__addons__units__datarate.html#ga2b38c6bce8673aee295dc30e81c0528d":[0,0,1,11,13,0],
-"group__c__addons__units__datarate.html#ga596afcf18b6f2f67d653ee23115a9c8a":[0,0,1,11,13,6]
+"group__c__addons__units__datarate.html#ga200fd29c399ea24761a6df481d4c317a":[0,0,1,11,13,1]
 };
