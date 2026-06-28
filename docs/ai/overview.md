@@ -5,133 +5,92 @@ sidebar_position: 1
 
 # AI Client
 
-> **Language**: No constraint — Python, Rust, C, Go, anything that can open a TCP socket.
+The AI client is a C++ binary that drives a single player autonomously on the Trantor map. Multiple instances of the binary can connect for the same team simultaneously, each managing its own player independently.
 
-The AI client drives one player (drone) on the Trantor map. Once launched, it is fully autonomous — the user has no further influence. Multiple instances connect as separate players for the same team.
+## Usage
 
-## Connection & Handshake
-
-```text
-Server → Client : WELCOME
-Client → Server : TEAM-NAME
-Server → Client : CLIENT-NUM    (available slots)
-Server → Client : X Y           (world width × height)
+```sh
+./zappy_ai -p port -n name -h machine [-c config.json]
 ```
 
-`CLIENT-NUM` indicates how many more clients can still connect for this team. If ≥ 1, a new client may connect. The newly connected player hatches from a randomly selected egg and starts facing a random direction.
-
-## Command Queue
-
-The client can pipeline up to **10 commands** without waiting for responses. The server processes them in order. Commands beyond 10 are silently dropped.
-
-All commands end with `\n`. Bad/unknown commands receive `ko`.
-
-## Command Reference
-
-| Command | Time | Response |
+| Flag | Required | Description |
 |---|---|---|
-| `Forward` | 7/f | `ok` |
-| `Right` | 7/f | `ok` |
-| `Left` | 7/f | `ok` |
-| `Look` | 7/f | `[tile1, tile2, ...]` |
-| `Inventory` | 1/f | `[food n, linemate n, ...]` |
-| `Broadcast text` | 7/f | `ok` |
-| `Connect_nbr` | — | `value` |
-| `Fork` | 42/f | `ok` |
-| `Eject` | 7/f | `ok` / `ko` |
-| `Take object` | 7/f | `ok` / `ko` |
-| `Set object` | 7/f | `ok` / `ko` |
-| `Incantation` | 300/f | `Elevation underway` → `Current level: k` / `ko` |
+| `-p` | yes | Server port |
+| `-n` | yes | Team name |
+| `-h` | yes | Server hostname (default: `localhost`) |
+| `-c` | no | Path to a JSON configuration file |
 
-> `f` is the frequency set at server launch (`-f` flag). Default: `f = 100`.
+Exits with `0` on success, `84` on error.
 
-## Survival
+## Architecture
 
-- Players start with **10 food** = 1 260 time units of life.
-- 1 food unit = **126 time units**.
-- Running out of food → server sends `dead\n` → client is disconnected.
-- Food is found on tiles and picked up with `Take food`.
+Two core classes handle all runtime logic:
 
-## Vision (Look)
+- **`Network`** — owns the TCP socket (non-copyable). Manages a send queue, a receive buffer, and server-initiated message dispatch.
+- **`Player`** — holds the game state machine and drives the main loop.
 
-The `Look` command returns a flat, comma-separated list of tile contents. The first element of tile 0 always contains `player` (the current player).
+### Network
 
-```text
-[player, object1 object2, , object3, ...]
-```
-
-Vision range increases with elevation:
-
-| Level | Tiles visible (lines in front) |
+| Method | Description |
 |---|---|
-| 1 | 1 |
-| 2 | 2 |
-| 3 | 3 |
-| … | … |
-| 8 | 8 |
+| `pollCheck(bool block)` | Polls the socket; flushes the send queue if writable, reads if data is available |
+| `waitResponse()` | Blocks until a complete response line is available in the queue |
+| `addToSendQueue()` / `processSendQueue()` | Enqueue and flush outgoing commands |
+| `setServerMessageHandler()` | Register an async handler for server-initiated messages (`message K, ...`, `dead`). Returns `true` if the message was consumed, `false` to let it pass as a normal command response |
+| `splitCompleteLines()` | Splits the receive buffer into complete lines; incomplete trailing bytes remain buffered |
 
-Each new level adds one line in front and widens the cone by one tile on each side.
+### Player — State Machine
 
-## Broadcast
+The `Player` class cycles through the following states (`PlayerState`):
 
-```text
-Broadcast text\n
-```
-
-The server relays it to **all clients** (including the sender):
-
-```text
-message K, text\n
-```
-
-`K` is the tile number indicating the direction the sound comes from. `K = 0` means the sender is on the same tile.
-
-## Ejection
-
-When another player ejects you:
-
-```text
-eject: K\n
-```
-
-`K` is the direction of the tile the push came from. Ejection also destroys any eggs on the tile.
-
-## Reproduction (Fork)
-
-`Fork` lays an egg, adding one available slot to the team. When a new client connects, it hatches from a random egg.
-
-## Incantation (Elevation Ritual)
-
-To level up, the initiating player calls `Incantation`. Requirements (stones + players of the same level) must be met on the tile at **both the start and the end** of the ritual (300/f seconds). Conditions checked:
-
-- Correct number of players **of the same level** (not necessarily same team)
-- Correct stones present
-
-On success: all participating players level up, stones are consumed, server broadcasts the result. On failure: `ko`.
-
-## API Reference
-
-Since the AI has no language constraint, the doc generator depends on the language chosen by the team.
-Add the appropriate tool call to `scripts/gen-docs.sh` once the language is decided.
-
-Common options:
-
-| Language | Tool | Command |
+| State | Trigger | Behaviour |
 |---|---|---|
-| Python | `pdoc` | `pdoc ./ai -o ../static/api/ai` |
-| Go | `godoc` | `godoc -http :6060` then export |
-| C/C++ | Doxygen | same approach as the GUI |
-| Rust | `cargo doc` | same approach as the server |
-| TypeScript | `typedoc` | `typedoc --out ../static/api/ai` |
+| `SURVIVE` | `food < foodSurviveMin` | Finds the nearest food tile via `Look`, moves to it and picks it up |
+| `EXPLORE` | Default / not enough resources | Collects the stones required for the next elevation |
+| `UPGRADE` | Has all required stones alone | Places the missing stones on the tile, then calls `Incantation` (solo ritual) |
+| `COOP` | Needs teammates for the ritual | Broadcasts a rally, waits for enough players on the tile, then incants cooperatively |
+| `HUNT` | Level 8 (max) | Roams looking for players to eject; sends a `ping` before ejecting to avoid hitting teammates (expects an `ack`) |
+| `FORK` | Team slot count too low | Lays an egg with `Fork` |
 
-Once configured, the reference will be served at [/api/ai/](pathname:///api/ai/).
+### Game Loop
 
----
+Each tick runs `processGameLogic()` in this order:
 
-### Elevation Table
+```
+look() → inventory() → nextState() → action(state) → waitResponse() × nbCmds → flushBroadcasts()
+```
+
+## Internal Broadcast Protocol
+
+Coordination between AI instances uses plain-text `Broadcast` messages. The messages are hookable for an encoding layer.
+
+| Message | Direction | Meaning |
+|---|---|---|
+| `upgrade N [hostId] [target]` | Host → teammates | Invite players to a level-N ritual |
+| `stop N [hostId]` | Host → teammates | Ritual over, stand down |
+| `ping teamName` | Hunter → all | Challenge before ejecting (HUNT state) |
+| `ack teamName` | Teammate → hunter | Confirms presence on the same tile; prevents ejection |
+
+## Configuration (`Params`)
+
+Parameters are loaded from a flat JSON file supplied via `-c`. All fields are optional; the defaults below apply when the file is absent or a key is missing.
+
+| Parameter | Default | Description |
+|---|---|---|
+| `foodSurviveMin` | `14` | Food threshold below which the player enters `SURVIVE` |
+| `minFoodToUpgrade` | `50` | Minimum food required before attempting an upgrade |
+| `forkPatience` | `10` | Ticks to wait before forking |
+| `huntAckWindow` | `2` | Ticks to wait for a teammate `ack` before ejecting |
+| `coopTargetPlayers` | `6` | Target number of players for a `COOP` rally |
+| `gatherPatience` | `30` | Patience ticks during resource collection |
+| `grazeFoodMin` | `35` | Food threshold below which the player eats while waiting in `COOP` |
+| `poolDeficitMax` | `0` | Maximum stone deficit allowed to attempt being the ritual host |
+| `coopPatience` | `0` | Extra patience ticks in `COOP` state |
+
+## Elevation Table
 
 | Transition | Players | linemate | deraumere | sibur | mendiane | phiras | thystame |
-|---|---|---|---|---|---|---|---|
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | 1 → 2 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 | 2 → 3 | 2 | 1 | 1 | 1 | 0 | 0 | 0 |
 | 3 → 4 | 2 | 2 | 0 | 1 | 0 | 2 | 0 |
@@ -139,3 +98,13 @@ Once configured, the reference will be served at [/api/ai/](pathname:///api/ai/)
 | 5 → 6 | 4 | 1 | 2 | 1 | 3 | 0 | 0 |
 | 6 → 7 | 6 | 1 | 2 | 3 | 0 | 1 | 0 |
 | 7 → 8 | 6 | 2 | 2 | 2 | 2 | 2 | 1 |
+
+## Error Handling
+
+Errors are reported through `ZappyException` with the following codes:
+
+`SOCKET_ERROR` · `HOST_RESOLUTION_ERROR` · `CONNECTION_FAILED` · `POLL_ERROR` · `CONNECTION_LOST` · `NO_WELCOME` · `NO_REMAINING_SLOTS` · `INVALID_DIRECTION` · `INVALID_CONNECT_NBR` · `INVALID_BROADCAST`
+
+## API Reference
+
+The codebase is documented with Doxygen. A `Doxyfile` is located at the root of the AI source tree. Generated output is served at [/api/ai/](pathname:///api/ai/).
