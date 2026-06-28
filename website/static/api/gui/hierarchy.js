@@ -10,8 +10,6 @@ var hierarchy =
     [ "Button", "structButton.html", null ],
     [ "CameraController", "structCameraController.html", null ],
     [ "CloseRender3D", "structCloseRender3D.html", null ],
-    [ "Command", "structCommand.html", null ],
-    [ "CommandInput", "structCommandInput.html", null ],
     [ "zappy::CommandParser", "structzappy_1_1CommandParser.html", null ],
     [ "Core", "structCore.html", null ],
     [ "Cube", "structCube.html", null ],

@@ -48,8 +48,6 @@ var annotated_dup =
     [ "Button", "structButton.html", "structButton" ],
     [ "CameraController", "structCameraController.html", "structCameraController" ],
     [ "CloseRender3D", "structCloseRender3D.html", null ],
-    [ "Command", "structCommand.html", null ],
-    [ "CommandInput", "structCommandInput.html", null ],
     [ "Core", "structCore.html", "structCore" ],
     [ "Cube", "structCube.html", null ],
     [ "CurrentScene", "structCurrentScene.html", null ],
