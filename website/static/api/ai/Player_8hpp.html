@@ -267,6 +267,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>tileCompletableForUpg
 <tr class="memitem:a3bfa7ff27aa7653df7194bf27b4785d7" id="r_a3bfa7ff27aa7653df7194bf27b4785d7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#a3bfa7ff27aa7653df7194bf27b4785d7">parseUpgradeCall</a> (const std::string &amp;text, long &amp;hostId, int &amp;target)</td></tr>
 <tr class="memdesc:a3bfa7ff27aa7653df7194bf27b4785d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a team <code>"upgrade N hostId target"</code> ritual call.  <br /></td></tr>
 <tr class="separator:a3bfa7ff27aa7653df7194bf27b4785d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad584299bebe588aa7f1720c013e6017c" id="r_ad584299bebe588aa7f1720c013e6017c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#ad584299bebe588aa7f1720c013e6017c">parseLevelHost</a> (const std::string &amp;text, const std::string &amp;verb, long &amp;hostId)</td></tr>
+<tr class="memdesc:ad584299bebe588aa7f1720c013e6017c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a team <code>"stop N [hostId]"</code> or <code>"abort N [hostId]"</code> ritual call.  <br /></td></tr>
+<tr class="separator:ad584299bebe588aa7f1720c013e6017c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a339004e9f208bd0e48d0d12d1f6733bc" id="r_a339004e9f208bd0e48d0d12d1f6733bc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#a339004e9f208bd0e48d0d12d1f6733bc">parseElevationLevel</a> (const std::string &amp;line)</td></tr>
 <tr class="memdesc:a339004e9f208bd0e48d0d12d1f6733bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the new level from an incantation success response.  <br /></td></tr>
 <tr class="separator:a339004e9f208bd0e48d0d12d1f6733bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -929,6 +932,52 @@ underway"</code>, <code>"ko"</code>) are not completions.</p>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The new level, or -1 if <code>line</code> is not a completion notice. </dd></dl>
+
+</div>
+</div>
+<a id="ad584299bebe588aa7f1720c013e6017c" name="ad584299bebe588aa7f1720c013e6017c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad584299bebe588aa7f1720c013e6017c">&#9670;&#160;</a></span>parseLevelHost()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int parseLevelHost </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>verb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long &amp;&#160;</td>
+          <td class="paramname"><em>hostId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parses a team <code>"stop N [hostId]"</code> or <code>"abort N [hostId]"</code> ritual call. </p>
+<p>Reads the level after <code>verb</code> and the optional host tie-break id used to match the stop/abort against the host of a pending upgrade call. The id is omitted by legacy callers, in which case <code>hostId</code> is left at -1 (matching any host).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>The decoded broadcast body. </td></tr>
+    <tr><td class="paramname">verb</td><td>The expected leading keyword (e.g. "stop" or "abort"). </td></tr>
+    <tr><td class="paramname">hostId</td><td>Set to the caller's host id, or -1 when none is present. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The level, or -1 if <code>text</code> is not a well-formed <code>verb</code> call. </dd></dl>
 
 </div>
 </div>

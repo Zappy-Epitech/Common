@@ -30,6 +30,7 @@ var Player_8hpp =
     [ "parseBroadcast", "Player_8hpp.html#adb87e1bdd3ab62ebb9c7701c04f70049", null ],
     [ "parseBroadcastLevel", "Player_8hpp.html#a6268365ee53de05ac3aa834d813a2e3e", null ],
     [ "parseElevationLevel", "Player_8hpp.html#a339004e9f208bd0e48d0d12d1f6733bc", null ],
+    [ "parseLevelHost", "Player_8hpp.html#ad584299bebe588aa7f1720c013e6017c", null ],
     [ "parseTaggedBroadcast", "Player_8hpp.html#a2f44469e4c857a60feec640818ce595d", null ],
     [ "parseUpgradeCall", "Player_8hpp.html#a6fe409e670d34f18f91b31101e9a0da1", null ],
     [ "parseUpgradeCall", "Player_8hpp.html#a3bfa7ff27aa7653df7194bf27b4785d7", null ],
