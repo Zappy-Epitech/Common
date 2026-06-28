@@ -1,9 +1,15 @@
 var searchData=
 [
-  ['_7eaddresslist_0',['~AddressList',['../classAddressList.html#a601a92b0d8c11e8ed424c13566c63c30',1,'AddressList']]],
-  ['_7enetworkconfig_1',['~NetworkConfig',['../structNetworkConfig.html#ad605e4f83595f176c1aabfdb3e166416',1,'NetworkConfig']]],
-  ['_7enetworkstate_2',['~NetworkState',['../structNetworkState.html#afe789dc6a1794451eb0a83545094b7b6',1,'NetworkState']]],
-  ['_7esockethandle_3',['~SocketHandle',['../classnet_1_1SocketHandle.html#a9026a016f1d751279df163f1b11dd7e3',1,'net::SocketHandle']]],
-  ['_7etcpclient_4',['~TcpClient',['../classnet_1_1TcpClient.html#a1ac3bc29508208135d83771ca5ddc44f',1,'net::TcpClient']]],
-  ['_7ezappyclient_5',['~ZappyClient',['../classnet_1_1ZappyClient.html#a73e1639a2a975e205a2cbabf0c95f58a',1,'net::ZappyClient']]]
+  ['zappyclient_0',['zappyclient',['../classnet_1_1ZappyClient.html',1,'net::ZappyClient'],['../classnet_1_1ZappyClient.html#ab4435801e2bda7983383214351d08d06',1,'net::ZappyClient::ZappyClient()=default'],['../classnet_1_1ZappyClient.html#a52165fac299a1cfe6e6e7de578347dd4',1,'net::ZappyClient::ZappyClient(const ZappyClient &amp;)=delete']]],
+  ['zappyclient_2ecpp_1',['ZappyClient.cpp',['../ZappyClient_8cpp.html',1,'']]],
+  ['zappyclient_2ehpp_2',['ZappyClient.hpp',['../ZappyClient_8hpp.html',1,'']]],
+  ['zappyclientptr_3',['ZappyClientPtr',['../ZappyClient_8hpp.html#a81ea2db0d13ceb789e97f31b282ea84e',1,'net']]],
+  ['zappylineaction_4',['ZappyLineAction',['../ZappySession_8hpp.html#a3db0d05bf01f58f3961b9899e216ab96',1,'net']]],
+  ['zappyprotocol_5',['ZappyProtocol',['../classzappy_1_1ZappyProtocol.html',1,'zappy']]],
+  ['zappyprotocol_2ecpp_6',['ZappyProtocol.cpp',['../ZappyProtocol_8cpp.html',1,'']]],
+  ['zappyprotocol_2ehpp_7',['ZappyProtocol.hpp',['../ZappyProtocol_8hpp.html',1,'']]],
+  ['zappysession_8',['ZappySession',['../classnet_1_1ZappySession.html',1,'net']]],
+  ['zappysession_2ecpp_9',['ZappySession.cpp',['../ZappySession_8cpp.html',1,'']]],
+  ['zappysession_2ehpp_10',['ZappySession.hpp',['../ZappySession_8hpp.html',1,'']]],
+  ['zero_11',['zero',['../structPosition3.html#a23025b4000298aac67504d5ee4f3a252',1,'Position3::zero()'],['../structRotation3.html#a1b84fc1cc05de334a071543308d478f4',1,'Rotation3::zero()']]]
 ];

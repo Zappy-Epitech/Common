@@ -1,0 +1,17 @@
+<map id="src/gameplay/Team.hpp" name="src/gameplay/Team.hpp">
+<area shape="rect" id="Node000001" title="Team components and the team registration module." alt="" coords="725,5,903,31"/>
+<area shape="rect" id="Node000002" href="$GamePlay_8cpp.html" title="Imports the gameplay sub&#45;modules and loads shared assets." alt="" coords="5,86,212,111"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="712,30,488,51,225,81,175,89,174,83,224,76,487,46,711,25"/>
+<area shape="rect" id="Node000003" href="$Team_8cpp.html" title="Implements registration of team components." alt="" coords="237,86,413,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="721,35,425,81,384,89,383,83,424,76,720,30"/>
+<area shape="rect" id="Node000004" href="$WorldLookup_8cpp.html" title="Implements gameplay entity lookup queries by id, coordinate or name." alt="" coords="437,86,661,111"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="763,37,588,89,587,83,762,32"/>
+<area shape="rect" id="Node000005" href="$MinecraftRenderer_8cpp.html" title="Implements UV&#45;mapped cuboid skin drawing, crowd layout and the SkinRender system." alt="" coords="685,86,943,111"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="817,44,817,86,811,86,811,44"/>
+<area shape="rect" id="Node000006" href="$PlayerCommand_8cpp.html" title="Spawns and updates player entities from player protocol events." alt="" coords="967,79,1133,119"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="862,32,994,76,992,81,860,37"/>
+<area shape="rect" id="Node000007" href="$ServerCommand_8cpp.html" title="Applies time&#45;unit, game&#45;end and server&#45;message protocol events." alt="" coords="1157,79,1324,119"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="893,30,1146,76,1158,78,1157,83,1146,81,893,36"/>
+<area shape="rect" id="Node000008" href="$GameUi_8cpp.html" title="Implements the in&#45;game HUD: broadcast bubbles, team/player panels, inventory modal and frequency slid..." alt="" coords="1348,86,1523,111"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="917,26,1112,47,1337,76,1380,83,1379,89,1336,81,1112,52,917,31"/>
+</map>

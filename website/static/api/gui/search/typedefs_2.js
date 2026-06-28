@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['view_0',['View',['../classparsing_1_1Scanner.html#a37877e730c28764b8d2f250ef109672b',1,'parsing::Scanner']]]
+  ['flecs_5fpoly_5fdtor_5ft_0',['flecs_poly_dtor_t',['../group__function__types.html#gabeafa99c69592b1794ff6b15af1bad36',1,'flecs.h']]]
 ];

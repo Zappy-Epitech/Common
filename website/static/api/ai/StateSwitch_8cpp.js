@@ -13,5 +13,6 @@ var StateSwitch_8cpp =
     [ "playersTargetToUpgrade", "StateSwitch_8cpp.html#ad548b1a98114c8634be24bb4ef65e1af", null ],
     [ "shouldGrazeWhileWaiting", "StateSwitch_8cpp.html#a1b21b9dbe1318e109c4b40da5900c42d", null ],
     [ "stonesToDropForUpgrade", "StateSwitch_8cpp.html#ad3c72729c09b8e962f6d79394f3387ce", null ],
+    [ "tileCompletableForUpgrade", "StateSwitch_8cpp.html#a80fbcdb584055d0f01b1c27e6acd7af1", null ],
     [ "tileIndexToMovement", "StateSwitch_8cpp.html#a45e0604f10ac0304639cbc153e7b6b26", null ]
 ];

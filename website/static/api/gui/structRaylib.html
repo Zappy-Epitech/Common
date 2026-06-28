@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('structRaylib.html',''); initResizable(
 </div><!--header-->
 <div class="contents">
 
-<p>Registers <a class="el" href="structRaylib.html" title="Registers Raylib rendering systems.">Raylib</a> rendering systems.  
+<p>ECS module wiring <a class="el" href="structRaylib.html" title="ECS module wiring Raylib into the render pipeline.">Raylib</a> into the render pipeline.  
  <a href="structRaylib.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="Raylib_8hpp_source.html">Raylib.hpp</a>&gt;</code></p>
@@ -106,11 +106,12 @@ $(document).ready(function(){initNavTree('structRaylib.html',''); initResizable(
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:afa1d23674af91c34e07970f7d056839f" id="r_afa1d23674af91c34e07970f7d056839f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRaylib.html#afa1d23674af91c34e07970f7d056839f">Raylib</a> (flecs::world &amp;world)</td></tr>
-<tr class="memdesc:afa1d23674af91c34e07970f7d056839f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imports the <a class="el" href="structRaylib.html" title="Registers Raylib rendering systems.">Raylib</a> module.  <br /></td></tr>
+<tr class="memdesc:afa1d23674af91c34e07970f7d056839f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imports the <a class="el" href="structRaylib.html" title="ECS module wiring Raylib into the render pipeline.">Raylib</a> module.  <br /></td></tr>
 <tr class="separator:afa1d23674af91c34e07970f7d056839f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Registers <a class="el" href="structRaylib.html" title="Registers Raylib rendering systems.">Raylib</a> rendering systems. </p>
+<div class="textblock"><p>ECS module wiring <a class="el" href="structRaylib.html" title="ECS module wiring Raylib into the render pipeline.">Raylib</a> into the render pipeline. </p>
+<p>Registers the Color, <a class="el" href="structCube.html" title="Marks an entity rendered as a cube.">Cube</a>, Model and Texture2D components and the ordered render phases (<a class="el" href="structRender3D.html" title="Phase for starting 3D rendering.">Render3D</a>, <a class="el" href="structDraw3D.html" title="Phase for drawing 3D content.">Draw3D</a>, <a class="el" href="structCloseRender3D.html" title="Phase for closing 3D rendering.">CloseRender3D</a>, <a class="el" href="structRenderWorld2D.html" title="Phase for screen-space overlays attached to 3D world positions.">RenderWorld2D</a>, <a class="el" href="structRender2D.html" title="Phase for drawing 2D content.">Render2D</a>, <a class="el" href="structPostRender.html" title="Phase for finishing a frame.">PostRender</a>). Adds systems that open the window and audio device, begin/end each frame and 3D mode, and draw cubes and (rotated) models within render distance. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="afa1d23674af91c34e07970f7d056839f" name="afa1d23674af91c34e07970f7d056839f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afa1d23674af91c34e07970f7d056839f">&#9670;&#160;</a></span>Raylib()</h2>
@@ -128,14 +129,14 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Imports the <a class="el" href="structRaylib.html" title="Registers Raylib rendering systems.">Raylib</a> module. </p>
-<p>Registers <a class="el" href="structRaylib.html" title="Registers Raylib rendering systems.">Raylib</a> phases and render systems. </p>
+<p>Imports the <a class="el" href="structRaylib.html" title="ECS module wiring Raylib into the render pipeline.">Raylib</a> module. </p>
+<p>Registers <a class="el" href="structRaylib.html" title="ECS module wiring Raylib into the render pipeline.">Raylib</a> phases and render systems. </p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li>src/core/<a class="el" href="Raylib_8hpp_source.html">Raylib.hpp</a></li>
-<li>src/core/<b>Raylib.cpp</b></li>
+<li>src/core/<a class="el" href="Raylib_8cpp.html">Raylib.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

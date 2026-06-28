@@ -1,0 +1,23 @@
+<map id="src/network/core/SocketOptions.cpp" name="src/network/core/SocketOptions.cpp">
+<area shape="rect" id="Node000001" title="Implements non&#45;blocking mode and TCP_NODELAY/SO_KEEPALIVE configuration." alt="" coords="270,5,525,31"/>
+<area shape="rect" id="Node000002" href="$SocketOptions_8hpp.html" title="Helpers to set non&#45;blocking mode and TCP socket options." alt="" coords="95,79,238,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="361,33,218,77,216,72,359,28"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="262,79,325,104"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="382,33,323,73,320,68,379,28"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="349,79,445,104"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="400,31,400,65,395,65,395,31"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="469,79,573,104"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="419,28,491,69,488,74,416,33"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="598,79,701,104"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="439,28,596,72,594,77,437,33"/>
+<area shape="rect" id="Node000003" href="$Result_8hpp.html" title="Alias of std::expected&lt;T, Error&gt; used as the network result type." alt="" coords="30,152,165,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="157,106,120,144,116,140,153,102"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="189,152,286,177"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="180,102,218,140,214,144,176,106"/>
+<area shape="rect" id="Node000004" href="$Error_8hpp.html" title="Error type, error categories, and factory helpers for the network layer." alt="" coords="5,225,85,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="91,179,64,216,60,213,87,176"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="109,225,192,251"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="108,176,136,213,132,216,104,179"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="16,299,75,324"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="48,251,48,285,43,285,43,251"/>
+</map>

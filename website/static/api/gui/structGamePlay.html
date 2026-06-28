@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('structGamePlay.html',''); initResizabl
 </div><!--header-->
 <div class="contents">
 
-<p>Registers gameplay modules.  
+<p>Root flecs module for the gameplay scene.  
  <a href="structGamePlay.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="GamePlay_8hpp_source.html">GamePlay.hpp</a>&gt;</code></p>
@@ -110,7 +110,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab16cd4e6e3da78707b50180b53d7099a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Registers gameplay modules. </p>
+<div class="textblock"><p>Root flecs module for the gameplay scene. </p>
+<p>Imports and parents the <a class="el" href="structGrid.html" title="Registers grid systems and helpers.">Grid</a>, <a class="el" href="structTeams.html" title="Registers team components.">Teams</a>, <a class="el" href="structPlayers.html" title="Registers player gameplay visuals.">Players</a> and <a class="el" href="structEggs.html" title="Registers egg gameplay visuals.">Eggs</a> modules, imports the <a class="el" href="structMovement.html" title="Registers movement interpolation systems.">Movement</a> and (disabled) <a class="el" href="structCameraController.html" title="Controls the shared gameplay camera.">CameraController</a> modules, and loads the shared <a class="el" href="structGameAssets.html" title="Holds loaded gameplay assets shared across the scene.">GameAssets</a> singleton. Acts as the parent entity for every gameplay component and system. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab16cd4e6e3da78707b50180b53d7099a" name="ab16cd4e6e3da78707b50180b53d7099a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab16cd4e6e3da78707b50180b53d7099a">&#9670;&#160;</a></span>GamePlay()</h2>
@@ -135,7 +136,7 @@ Public Member Functions</h2></td></tr>
 </div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li>src/gameplay/<a class="el" href="GamePlay_8hpp_source.html">GamePlay.hpp</a></li>
-<li>src/gameplay/<b>GamePlay.cpp</b></li>
+<li>src/gameplay/<a class="el" href="GamePlay_8cpp.html">GamePlay.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

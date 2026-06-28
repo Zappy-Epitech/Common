@@ -98,25 +98,28 @@ $(document).ready(function(){initNavTree('structnet_1_1Error.html',''); initResi
 </div><!--header-->
 <div class="contents">
 
+<p><a class="el" href="structnet_1_1Error.html" title="Error value used by Result&lt;T&gt;.">Error</a> value used by Result&lt;T&gt;.  
+ <a href="structnet_1_1Error.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Error_8hpp_source.html">Error.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a7244d21b55ce4db831467e2722fa3972" id="r_a7244d21b55ce4db831467e2722fa3972"><td class="memItemLeft" align="right" valign="top"><a id="a7244d21b55ce4db831467e2722fa3972" name="a7244d21b55ce4db831467e2722fa3972"></a>
-ErrorCode&#160;</td><td class="memItemRight" valign="bottom"><b>code</b> = ErrorCode::System</td></tr>
+<a class="el" href="Error_8hpp.html#a844a4396572905a10aad0c40a041b0ab">ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>code</b> = <a class="el" href="Error_8hpp.html#a844a4396572905a10aad0c40a041b0abaa45da96d0bf6575970f2d27af22be28a">ErrorCode::System</a></td></tr>
 <tr class="memdesc:a7244d21b55ce4db831467e2722fa3972"><td class="mdescLeft">&#160;</td><td class="mdescRight">High-level error category. <br /></td></tr>
 <tr class="separator:a7244d21b55ce4db831467e2722fa3972"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a476a23c671195bdc4da9788eae011307" id="r_a476a23c671195bdc4da9788eae011307"><td class="memItemLeft" align="right" valign="top"><a id="a476a23c671195bdc4da9788eae011307" name="a476a23c671195bdc4da9788eae011307"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>nativeCode</b> = 0</td></tr>
-<tr class="memdesc:a476a23c671195bdc4da9788eae011307"><td class="mdescLeft">&#160;</td><td class="mdescRight">errno or getaddrinfo() code, depending on category. <br /></td></tr>
+<tr class="memdesc:a476a23c671195bdc4da9788eae011307"><td class="mdescLeft">&#160;</td><td class="mdescRight">errno (System) or getaddrinfo() code (Dns); 0 otherwise. <br /></td></tr>
 <tr class="separator:a476a23c671195bdc4da9788eae011307"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9792b53c693315ed7135ca914d12b3a" id="r_ac9792b53c693315ed7135ca914d12b3a"><td class="memItemLeft" align="right" valign="top"><a id="ac9792b53c693315ed7135ca914d12b3a" name="ac9792b53c693315ed7135ca914d12b3a"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>message</b></td></tr>
-<tr class="memdesc:ac9792b53c693315ed7135ca914d12b3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display-ready error message. <br /></td></tr>
+<tr class="memdesc:ac9792b53c693315ed7135ca914d12b3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display-ready error message, prefixed with the failing context. <br /></td></tr>
 <tr class="separator:ac9792b53c693315ed7135ca914d12b3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="structnet_1_1Error.html">Error</a> value used by Result&lt;T&gt;.</p>
+<div class="textblock"><p><a class="el" href="structnet_1_1Error.html" title="Error value used by Result&lt;T&gt;.">Error</a> value used by Result&lt;T&gt;. </p>
 <p>nativeCode stores errno for system errors or getaddrinfo()'s return code for DNS errors. message is ready to display or log. </p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>src/network/utils/<a class="el" href="Error_8hpp_source.html">Error.hpp</a></li>

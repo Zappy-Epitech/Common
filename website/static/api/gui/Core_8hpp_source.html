@@ -99,31 +99,33 @@ $(document).ready(function(){initNavTree('Core_8hpp_source.html',''); initResiza
   <div class="headertitle"><div class="title">Core.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">namespace </span>flecs {</div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">struct </span>world;</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>}</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="foldopen" id="foldopen00008" data-start="{" data-end="};">
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="structLifetime.html">    8</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structLifetime.html">Lifetime</a> {</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keywordtype">float</span> remaining = 0.0f;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>};</div>
-</div>
+<a href="Core_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span>flecs {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">struct </span>world;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>}</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
 <div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="structCore.html">   13</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structCore.html">Core</a> {</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <a class="code hl_struct" href="structCore.html">Core</a>(flecs::world &amp;world);</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>};</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="structLifetime.html">   13</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structLifetime.html">Lifetime</a> {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="structLifetime.html#a2087d6e99e53b9d420d332a1f35b1ec7">   14</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="structLifetime.html#a2087d6e99e53b9d420d332a1f35b1ec7">remaining</a> = 0.0f; </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>};</div>
 </div>
-<div class="ttc" id="astructCore_html"><div class="ttname"><a href="structCore.html">Core</a></div><div class="ttdoc">Registers the core ECS module.</div><div class="ttdef"><b>Definition</b> Core.hpp:13</div></div>
-<div class="ttc" id="astructLifetime_html"><div class="ttname"><a href="structLifetime.html">Lifetime</a></div><div class="ttdoc">Marks an entity for timed destruction.</div><div class="ttdef"><b>Definition</b> Core.hpp:8</div></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="structCore.html">   24</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structCore.html">Core</a> {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <a class="code hl_struct" href="structCore.html">Core</a>(flecs::world &amp;world);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>};</div>
+</div>
+<div class="ttc" id="astructCore_html"><div class="ttname"><a href="structCore.html">Core</a></div><div class="ttdoc">Root ECS module of the GUI client.</div><div class="ttdef"><b>Definition</b> Core.hpp:24</div></div>
+<div class="ttc" id="astructLifetime_html"><div class="ttname"><a href="structLifetime.html">Lifetime</a></div><div class="ttdoc">Marks an entity for timed destruction.</div><div class="ttdef"><b>Definition</b> Core.hpp:13</div></div>
+<div class="ttc" id="astructLifetime_html_a2087d6e99e53b9d420d332a1f35b1ec7"><div class="ttname"><a href="structLifetime.html#a2087d6e99e53b9d420d332a1f35b1ec7">Lifetime::remaining</a></div><div class="ttdeci">float remaining</div><div class="ttdoc">Seconds left before the entity is destroyed.</div><div class="ttdef"><b>Definition</b> Core.hpp:14</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li><li class="navelem"><b>Core.hpp</b></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li><li class="navelem"><a class="el" href="Core_8hpp.html">Core.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

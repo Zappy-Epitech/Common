@@ -1,0 +1,5 @@
+<map id="src/minecraft/MinecraftCrowdLayout.hpp" name="src/minecraft/MinecraftCrowdLayout.hpp">
+<area shape="rect" id="Node000001" title="Spreads players standing on the same tile into a stable ring with scaling." alt="" coords="5,5,219,45"/>
+<area shape="rect" id="Node000002" href="$MinecraftCrowdLayout_8cpp.html" title="Implements same&#45;tile grouping and ring offset/scale computation for crowded tiles." alt="" coords="5,93,219,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,59,115,93,109,93,109,59"/>
+</map>

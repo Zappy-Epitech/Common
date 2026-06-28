@@ -1,0 +1,7 @@
+<map id="src/minecraft/MinecraftCrowdLayout.hpp" name="src/minecraft/MinecraftCrowdLayout.hpp">
+<area shape="rect" id="Node000001" title="Spreads players standing on the same tile into a stable ring with scaling." alt="" coords="5,5,219,45"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="31,93,102,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,47,83,83,78,80,99,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="126,93,189,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="125,44,146,80,141,83,121,47"/>
+</map>

@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('structnet_1_1TcpClientOptions.html',''
 </div><!--header-->
 <div class="contents">
 
-<p>Configuration used by <a class="el" href="classnet_1_1TcpClient.html">TcpClient</a> for connect/read/write operations.  
+<p>Configuration used by <a class="el" href="classnet_1_1TcpClient.html" title="Small RAII wrapper around a POSIX TCP socket.">TcpClient</a> for connect/read/write operations.  
  <a href="structnet_1_1TcpClientOptions.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="TcpClient_8hpp_source.html">TcpClient.hpp</a>&gt;</code></p>
@@ -107,23 +107,23 @@ $(document).ready(function(){initNavTree('structnet_1_1TcpClientOptions.html',''
 Public Attributes</h2></td></tr>
 <tr class="memitem:a64cf66605d28f7bda2c19afe26b43267" id="r_a64cf66605d28f7bda2c19afe26b43267"><td class="memItemLeft" align="right" valign="top"><a id="a64cf66605d28f7bda2c19afe26b43267" name="a64cf66605d28f7bda2c19afe26b43267"></a>
 std::chrono::milliseconds&#160;</td><td class="memItemRight" valign="bottom"><b>connectTimeout</b> { std::chrono::seconds{ 5 } }</td></tr>
-<tr class="memdesc:a64cf66605d28f7bda2c19afe26b43267"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum time spent waiting for a TCP connection attempt. <br /></td></tr>
+<tr class="memdesc:a64cf66605d28f7bda2c19afe26b43267"><td class="mdescLeft">&#160;</td><td class="mdescRight">Max wait for a connect() attempt (milliseconds). <br /></td></tr>
 <tr class="separator:a64cf66605d28f7bda2c19afe26b43267"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ede7abf053a9de326131bd96de2a535" id="r_a1ede7abf053a9de326131bd96de2a535"><td class="memItemLeft" align="right" valign="top"><a id="a1ede7abf053a9de326131bd96de2a535" name="a1ede7abf053a9de326131bd96de2a535"></a>
 std::chrono::milliseconds&#160;</td><td class="memItemRight" valign="bottom"><b>ioTimeout</b> { std::chrono::seconds{ 5 } }</td></tr>
-<tr class="memdesc:a1ede7abf053a9de326131bd96de2a535"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum time spent waiting for socket readability/writability. <br /></td></tr>
+<tr class="memdesc:a1ede7abf053a9de326131bd96de2a535"><td class="mdescLeft">&#160;</td><td class="mdescRight">Max wait per send/receive readiness poll (milliseconds). <br /></td></tr>
 <tr class="separator:a1ede7abf053a9de326131bd96de2a535"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b608e73673e8ed511e495c71b562d49" id="r_a6b608e73673e8ed511e495c71b562d49"><td class="memItemLeft" align="right" valign="top"><a id="a6b608e73673e8ed511e495c71b562d49" name="a6b608e73673e8ed511e495c71b562d49"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>tcpNoDelay</b> { true }</td></tr>
-<tr class="memdesc:a6b608e73673e8ed511e495c71b562d49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disables Nagle's algorithm for lower latency protocol commands. <br /></td></tr>
+<tr class="memdesc:a6b608e73673e8ed511e495c71b562d49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable Nagle's algorithm (TCP_NODELAY) for lower latency. <br /></td></tr>
 <tr class="separator:a6b608e73673e8ed511e495c71b562d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25b6444771a573252a25ebc1eaac93bd" id="r_a25b6444771a573252a25ebc1eaac93bd"><td class="memItemLeft" align="right" valign="top"><a id="a25b6444771a573252a25ebc1eaac93bd" name="a25b6444771a573252a25ebc1eaac93bd"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>keepAlive</b> { true }</td></tr>
-<tr class="memdesc:a25b6444771a573252a25ebc1eaac93bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables TCP keepalive at the OS level. <br /></td></tr>
+<tr class="memdesc:a25b6444771a573252a25ebc1eaac93bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable OS-level TCP keepalive (SO_KEEPALIVE). <br /></td></tr>
 <tr class="separator:a25b6444771a573252a25ebc1eaac93bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Configuration used by <a class="el" href="classnet_1_1TcpClient.html">TcpClient</a> for connect/read/write operations. </p>
+<div class="textblock"><p>Configuration used by <a class="el" href="classnet_1_1TcpClient.html" title="Small RAII wrapper around a POSIX TCP socket.">TcpClient</a> for connect/read/write operations. </p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>src/network/core/<a class="el" href="TcpClient_8hpp_source.html">TcpClient.hpp</a></li>
 </ul>

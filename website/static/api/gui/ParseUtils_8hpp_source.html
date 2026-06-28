@@ -99,31 +99,41 @@ $(document).ready(function(){initNavTree('ParseUtils_8hpp_source.html',''); init
   <div class="headertitle"><div class="title">ParseUtils.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;../parsing/Scanner.hpp&quot;</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;ZappyProtocol.hpp&quot;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span>zappy {</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">using </span>ProtocolScanner = <a class="code hl_class" href="classparsing_1_1Scanner.html">parsing::Scanner&lt;&gt;</a>;</div>
+<a href="ParseUtils_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;../parsing/Scanner.hpp&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="ZappyProtocol_8hpp.html">ZappyProtocol.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>std::string_view trimLine(std::string_view line);</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>std::optional&lt;std::string_view&gt; takeToken(ProtocolScanner &amp;scanner);</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>std::optional&lt;int&gt; takeInt(ProtocolScanner &amp;scanner);</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>std::optional&lt;int&gt; takeId(ProtocolScanner &amp;scanner);</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>std::optional&lt;std::string&gt; takeString(ProtocolScanner &amp;scanner);</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>std::optional&lt;std::string&gt; takeMessage(ProtocolScanner &amp;scanner);</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>std::optional&lt;Resources&gt; takeResources(ProtocolScanner &amp;scanner);</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keywordtype">bool</span> isDone(ProtocolScanner &amp;scanner);</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>} <span class="comment">// namespace zappy</span></div>
-<div class="ttc" id="aclassparsing_1_1Scanner_html"><div class="ttname"><a href="classparsing_1_1Scanner.html">parsing::Scanner</a></div><div class="ttdoc">Reads tokens from a string view.</div><div class="ttdef"><b>Definition</b> Scanner.hpp:12</div></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span>zappy {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="ParseUtils_8hpp.html#a8f1fa51e2de4dff7c9b587dae9ae6b70">   13</a></span><span class="keyword">using </span><a class="code hl_class" href="classparsing_1_1Scanner.html">ProtocolScanner</a> = <a class="code hl_class" href="classparsing_1_1Scanner.html">parsing::Scanner&lt;&gt;</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>std::string_view <a class="code hl_function" href="ParseUtils_8cpp.html#ac006daf2bb61e0b599b96cc3f693d176">trimLine</a>(std::string_view line);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>std::optional&lt;std::string_view&gt; <a class="code hl_function" href="ParseUtils_8cpp.html#a402e80454b0c875d92f24b34c2d7715c">takeToken</a>(<a class="code hl_class" href="classparsing_1_1Scanner.html">ProtocolScanner</a> &amp;scanner);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>std::optional&lt;int&gt; <a class="code hl_function" href="ParseUtils_8cpp.html#a3a02e97f0307be337ef63409e7fdf824">takeInt</a>(<a class="code hl_class" href="classparsing_1_1Scanner.html">ProtocolScanner</a> &amp;scanner);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>std::optional&lt;int&gt; <a class="code hl_function" href="ParseUtils_8cpp.html#a34df73b7c309f82adc51c6e547cb3526">takeId</a>(<a class="code hl_class" href="classparsing_1_1Scanner.html">ProtocolScanner</a> &amp;scanner);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>std::optional&lt;std::string&gt; <a class="code hl_function" href="ParseUtils_8cpp.html#a43766beed4e12576158fbb4c20724c6d">takeString</a>(<a class="code hl_class" href="classparsing_1_1Scanner.html">ProtocolScanner</a> &amp;scanner);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>std::optional&lt;std::string&gt; <a class="code hl_function" href="ParseUtils_8cpp.html#ab7b44917a4ef1d68ba1a2d2166dd94e2">takeMessage</a>(<a class="code hl_class" href="classparsing_1_1Scanner.html">ProtocolScanner</a> &amp;scanner);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>std::optional&lt;Resources&gt; <a class="code hl_function" href="ParseUtils_8cpp.html#a97ca2e408bba47d0a200a6613673bfb8">takeResources</a>(<a class="code hl_class" href="classparsing_1_1Scanner.html">ProtocolScanner</a> &amp;scanner);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="keywordtype">bool</span> <a class="code hl_function" href="ParseUtils_8cpp.html#a824dc87093621cb2ef7a06f597c9a660">isDone</a>(<a class="code hl_class" href="classparsing_1_1Scanner.html">ProtocolScanner</a> &amp;scanner);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>} <span class="comment">// namespace zappy</span></div>
+<div class="ttc" id="aParseUtils_8cpp_html_a34df73b7c309f82adc51c6e547cb3526"><div class="ttname"><a href="ParseUtils_8cpp.html#a34df73b7c309f82adc51c6e547cb3526">zappy::takeId</a></div><div class="ttdeci">std::optional&lt; int &gt; takeId(ProtocolScanner &amp;scanner)</div><div class="ttdoc">Reads the next player id.</div><div class="ttdef"><b>Definition</b> ParseUtils.cpp:37</div></div>
+<div class="ttc" id="aParseUtils_8cpp_html_a3a02e97f0307be337ef63409e7fdf824"><div class="ttname"><a href="ParseUtils_8cpp.html#a3a02e97f0307be337ef63409e7fdf824">zappy::takeInt</a></div><div class="ttdeci">std::optional&lt; int &gt; takeInt(ProtocolScanner &amp;scanner)</div><div class="ttdoc">Reads the next integer.</div><div class="ttdef"><b>Definition</b> ParseUtils.cpp:31</div></div>
+<div class="ttc" id="aParseUtils_8cpp_html_a402e80454b0c875d92f24b34c2d7715c"><div class="ttname"><a href="ParseUtils_8cpp.html#a402e80454b0c875d92f24b34c2d7715c">zappy::takeToken</a></div><div class="ttdeci">std::optional&lt; std::string_view &gt; takeToken(ProtocolScanner &amp;scanner)</div><div class="ttdoc">Reads the next token.</div><div class="ttdef"><b>Definition</b> ParseUtils.cpp:19</div></div>
+<div class="ttc" id="aParseUtils_8cpp_html_a43766beed4e12576158fbb4c20724c6d"><div class="ttname"><a href="ParseUtils_8cpp.html#a43766beed4e12576158fbb4c20724c6d">zappy::takeString</a></div><div class="ttdeci">std::optional&lt; std::string &gt; takeString(ProtocolScanner &amp;scanner)</div><div class="ttdoc">Reads the next token as a string.</div><div class="ttdef"><b>Definition</b> ParseUtils.cpp:43</div></div>
+<div class="ttc" id="aParseUtils_8cpp_html_a824dc87093621cb2ef7a06f597c9a660"><div class="ttname"><a href="ParseUtils_8cpp.html#a824dc87093621cb2ef7a06f597c9a660">zappy::isDone</a></div><div class="ttdeci">bool isDone(ProtocolScanner &amp;scanner)</div><div class="ttdoc">Checks for trailing arguments.</div><div class="ttdef"><b>Definition</b> ParseUtils.cpp:60</div></div>
+<div class="ttc" id="aParseUtils_8cpp_html_a97ca2e408bba47d0a200a6613673bfb8"><div class="ttname"><a href="ParseUtils_8cpp.html#a97ca2e408bba47d0a200a6613673bfb8">zappy::takeResources</a></div><div class="ttdeci">std::optional&lt; Resources &gt; takeResources(ProtocolScanner &amp;scanner)</div><div class="ttdoc">Reads all resource values.</div><div class="ttdef"><b>Definition</b> ParseUtils.cpp:66</div></div>
+<div class="ttc" id="aParseUtils_8cpp_html_ab7b44917a4ef1d68ba1a2d2166dd94e2"><div class="ttname"><a href="ParseUtils_8cpp.html#ab7b44917a4ef1d68ba1a2d2166dd94e2">zappy::takeMessage</a></div><div class="ttdeci">std::optional&lt; std::string &gt; takeMessage(ProtocolScanner &amp;scanner)</div><div class="ttdoc">Reads the remaining message text.</div><div class="ttdef"><b>Definition</b> ParseUtils.cpp:52</div></div>
+<div class="ttc" id="aParseUtils_8cpp_html_ac006daf2bb61e0b599b96cc3f693d176"><div class="ttname"><a href="ParseUtils_8cpp.html#ac006daf2bb61e0b599b96cc3f693d176">zappy::trimLine</a></div><div class="ttdeci">std::string_view trimLine(std::string_view line)</div><div class="ttdoc">Removes trailing line endings.</div><div class="ttdef"><b>Definition</b> ParseUtils.cpp:11</div></div>
+<div class="ttc" id="aZappyProtocol_8hpp_html"><div class="ttname"><a href="ZappyProtocol_8hpp.html">ZappyProtocol.hpp</a></div><div class="ttdoc">Protocol event types and the line parser for the Zappy server feed.</div></div>
+<div class="ttc" id="aclassparsing_1_1Scanner_html"><div class="ttname"><a href="classparsing_1_1Scanner.html">parsing::Scanner</a></div><div class="ttdoc">Reads tokens from a string view using a forward-only cursor.</div><div class="ttdef"><b>Definition</b> Scanner.hpp:26</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_5903c71b979204ea1ce2d27420efeaa9.html">protocol</a></li><li class="navelem"><b>ParseUtils.hpp</b></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_5903c71b979204ea1ce2d27420efeaa9.html">protocol</a></li><li class="navelem"><a class="el" href="ParseUtils_8hpp.html">ParseUtils.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

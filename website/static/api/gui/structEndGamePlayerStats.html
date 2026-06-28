@@ -108,7 +108,7 @@ Collaboration diagram for EndGamePlayerStats:</div>
 <div class="center"><img src="structEndGamePlayerStats__coll__graph.png" border="0" usemap="#aEndGamePlayerStats_coll__map" alt="Collaboration graph"/></div>
 <map name="aEndGamePlayerStats_coll__map" id="aEndGamePlayerStats_coll__map">
 <area shape="rect" title="Stores one winning player snapshot for the end&#45;game scene." alt="" coords="5,93,164,119"/>
-<area shape="rect" href="structzappy_1_1Resources.html" title="Stores resource counts." alt="" coords="17,5,152,31"/>
+<area shape="rect" href="structzappy_1_1Resources.html" title="Stores the seven Zappy resource counts." alt="" coords="17,5,152,31"/>
 <area shape="poly" title=" " alt="" coords="87,45,87,93,82,93,82,45"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
@@ -117,18 +117,23 @@ Collaboration diagram for EndGamePlayerStats:</div>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a28c49f40b39b099e0159a1b15baa905c" id="r_a28c49f40b39b099e0159a1b15baa905c"><td class="memItemLeft" align="right" valign="top"><a id="a28c49f40b39b099e0159a1b15baa905c" name="a28c49f40b39b099e0159a1b15baa905c"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
+<tr class="memdesc:a28c49f40b39b099e0159a1b15baa905c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display name of the player. <br /></td></tr>
 <tr class="separator:a28c49f40b39b099e0159a1b15baa905c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a759b3601368bd39d0684dc2541cf3173" id="r_a759b3601368bd39d0684dc2541cf3173"><td class="memItemLeft" align="right" valign="top"><a id="a759b3601368bd39d0684dc2541cf3173" name="a759b3601368bd39d0684dc2541cf3173"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>id</b> = 0</td></tr>
+<tr class="memdesc:a759b3601368bd39d0684dc2541cf3173"><td class="mdescLeft">&#160;</td><td class="mdescRight">Server-assigned player id. <br /></td></tr>
 <tr class="separator:a759b3601368bd39d0684dc2541cf3173"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a022e50b8c0e9f2a9cab1f46dd22eb2e1" id="r_a022e50b8c0e9f2a9cab1f46dd22eb2e1"><td class="memItemLeft" align="right" valign="top"><a id="a022e50b8c0e9f2a9cab1f46dd22eb2e1" name="a022e50b8c0e9f2a9cab1f46dd22eb2e1"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>level</b> = 0</td></tr>
+<tr class="memdesc:a022e50b8c0e9f2a9cab1f46dd22eb2e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Elevation level reached by the player. <br /></td></tr>
 <tr class="separator:a022e50b8c0e9f2a9cab1f46dd22eb2e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04ba5a1c136194fdac435cdde4d72f15" id="r_a04ba5a1c136194fdac435cdde4d72f15"><td class="memItemLeft" align="right" valign="top"><a id="a04ba5a1c136194fdac435cdde4d72f15" name="a04ba5a1c136194fdac435cdde4d72f15"></a>
 <a class="el" href="structzappy_1_1Resources.html">zappy::Resources</a>&#160;</td><td class="memItemRight" valign="bottom"><b>resources</b> = {}</td></tr>
+<tr class="memdesc:a04ba5a1c136194fdac435cdde4d72f15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inventory (food and stone counts) at game end. <br /></td></tr>
 <tr class="separator:a04ba5a1c136194fdac435cdde4d72f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acac53b987cd556d9ac9db35b2714f393" id="r_acac53b987cd556d9ac9db35b2714f393"><td class="memItemLeft" align="right" valign="top"><a id="acac53b987cd556d9ac9db35b2714f393" name="acac53b987cd556d9ac9db35b2714f393"></a>
 Texture2D&#160;</td><td class="memItemRight" valign="bottom"><b>skin</b> = {}</td></tr>
+<tr class="memdesc:acac53b987cd556d9ac9db35b2714f393"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cached <a class="el" href="structMinecraft.html" title="Top-level flecs module for Minecraft-style player rendering.">Minecraft</a> skin texture used to draw the player's head. <br /></td></tr>
 <tr class="separator:acac53b987cd556d9ac9db35b2714f393"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>

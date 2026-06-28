@@ -1,0 +1,25 @@
+<map id="src/network/core/SocketPoll.cpp" name="src/network/core/SocketPoll.cpp">
+<area shape="rect" id="Node000001" title="Implements poll()&#45;based readiness waits and SO_ERROR checks." alt="" coords="309,5,537,31"/>
+<area shape="rect" id="Node000002" href="$SocketPoll_8hpp.html" title="poll()&#45;based readiness waits and asynchronous socket error checks." alt="" coords="164,79,281,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="391,33,269,76,268,71,390,28"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="306,79,369,104"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="411,33,363,72,360,68,407,29"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="393,79,452,104"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="425,31,425,65,420,65,420,31"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="476,79,535,104"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="438,29,483,67,480,72,434,33"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="559,79,662,104"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="454,28,568,71,566,76,452,33"/>
+<area shape="rect" id="Node000003" href="$Result_8hpp.html" title="Alias of std::expected&lt;T, Error&gt; used as the network result type." alt="" coords="30,152,165,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="204,106,131,147,128,143,201,102"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="189,152,256,177"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="225,104,225,138,220,138,220,104"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="281,152,378,177"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="241,102,302,142,299,147,238,106"/>
+<area shape="rect" id="Node000004" href="$Error_8hpp.html" title="Error type, error categories, and factory helpers for the network layer." alt="" coords="5,225,85,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="91,179,64,216,60,213,87,176"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="109,225,192,251"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="108,176,136,213,132,216,104,179"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="16,299,75,324"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="48,251,48,285,43,285,43,251"/>
+</map>

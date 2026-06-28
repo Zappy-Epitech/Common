@@ -1,0 +1,26 @@
+<map id="src/protocol/ParseUtils.hpp" name="src/protocol/ParseUtils.hpp">
+<area shape="rect" id="Node000001" title="Low&#45;level token helpers for parsing Zappy server protocol lines." alt="" coords="291,5,486,31"/>
+<area shape="rect" id="Node000002" href="$Scanner_8hpp.html" title="Cursor&#45;based scanner for tokenising string views." alt="" coords="182,79,347,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="370,33,298,74,295,69,367,28"/>
+<area shape="rect" id="Node000007" href="$ZappyProtocol_8hpp.html" title="Protocol event types and the line parser for the Zappy server feed." alt="" coords="505,79,649,104"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="420,28,534,71,532,76,418,33"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,152,87,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="230,107,95,150,94,145,229,101"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="111,152,191,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="248,106,183,147,180,142,245,102"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="338,152,413,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="284,102,347,142,344,147,281,106"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="216,152,313,177"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="267,104,267,138,262,138,262,104"/>
+<area shape="poly" id="edge9_Node000007_Node000005" title=" " alt="" coords="545,107,422,150,420,145,543,102"/>
+<area shape="rect" id="Node000008" href="$Spatial_8hpp.html" title="Spatial component definitions (positions, sizes, rotation, scale, orientation) and module." alt="" coords="437,152,588,177"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="568,106,534,144,530,140,564,103"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="613,152,671,177"/>
+<area shape="poly" id="edge10_Node000007_Node000010" title=" " alt="" coords="589,103,624,140,620,144,585,106"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="696,152,764,177"/>
+<area shape="poly" id="edge11_Node000007_Node000011" title=" " alt="" coords="602,102,694,144,692,149,600,106"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="788,152,851,177"/>
+<area shape="poly" id="edge12_Node000007_Node000012" title=" " alt="" coords="616,101,775,148,774,153,615,107"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="477,225,548,251"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="515,178,515,212,510,212,510,178"/>
+</map>

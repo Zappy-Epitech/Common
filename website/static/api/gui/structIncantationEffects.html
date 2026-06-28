@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('structIncantationEffects.html',''); in
 </div><!--header-->
 <div class="contents">
 
-<p>Registers incantation visual components and systems.  
+<p>ECS module rendering incantation visual effects.  
  <a href="structIncantationEffects.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="IncantationEffect_8hpp_source.html">IncantationEffect.hpp</a>&gt;</code></p>
@@ -110,7 +110,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5a98ab31299e688f8ea5b621a7df30cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Registers incantation visual components and systems. </p>
+<div class="textblock"><p>ECS module rendering incantation visual effects. </p>
+<p>Registers the <a class="el" href="structIncantationEffect.html" title="Stores the visual state of an incantation on a tile.">IncantationEffect</a> and <a class="el" href="structIncantationParticipant.html" title="Links a player to the incantation visual it participates in.">IncantationParticipant</a> components and adds systems that advance each effect's timers (destroying it and clearing participants when finished) and draw the 3D tile rings, particles, result bursts and participant markers within render distance. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5a98ab31299e688f8ea5b621a7df30cf" name="a5a98ab31299e688f8ea5b621a7df30cf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5a98ab31299e688f8ea5b621a7df30cf">&#9670;&#160;</a></span>IncantationEffects()</h2>
@@ -135,7 +136,7 @@ Public Member Functions</h2></td></tr>
 </div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li>src/core/<a class="el" href="IncantationEffect_8hpp_source.html">IncantationEffect.hpp</a></li>
-<li>src/core/<b>IncantationEffect.cpp</b></li>
+<li>src/core/<a class="el" href="IncantationEffect_8cpp.html">IncantationEffect.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

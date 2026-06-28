@@ -1,0 +1,13 @@
+<map id="src/network/core/SocketOptions.hpp" name="src/network/core/SocketOptions.hpp">
+<area shape="rect" id="Node000001" title="Helpers to set non&#45;blocking mode and TCP socket options." alt="" coords="39,5,294,31"/>
+<area shape="rect" id="Node000002" href="$Result_8hpp.html" title="Alias of std::expected&lt;T, Error&gt; used as the network result type." alt="" coords="30,79,165,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,33,120,71,116,67,153,29"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="189,79,286,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="180,29,218,67,214,71,176,33"/>
+<area shape="rect" id="Node000003" href="$Error_8hpp.html" title="Error type, error categories, and factory helpers for the network layer." alt="" coords="5,152,85,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="91,106,64,142,60,139,87,103"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="109,152,192,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="108,103,136,140,132,143,104,106"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="16,225,75,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="48,178,48,212,43,212,43,178"/>
+</map>

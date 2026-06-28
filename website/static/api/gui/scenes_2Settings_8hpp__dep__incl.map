@@ -1,0 +1,11 @@
+<map id="src/scenes/Settings.hpp" name="src/scenes/Settings.hpp">
+<area shape="rect" id="Node000001" title="Settings modal overlay state, control helpers and its flecs module." alt="" coords="350,5,525,31"/>
+<area shape="rect" id="Node000002" href="$AppScenes_8cpp.html" title="Imports the Home, Game, EndGame and SettingsModal modules and enters the Home scene." alt="" coords="5,79,197,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="371,36,156,81,155,76,369,31"/>
+<area shape="rect" id="Node000003" href="$GameLifecycle_8cpp.html" title="Implements the game scene enter/exit observers and their UI buttons." alt="" coords="221,79,440,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="410,40,350,81,347,76,408,36"/>
+<area shape="rect" id="Node000004" href="$Home_8cpp.html" title="Implements the home scene: server connection form and port parsing." alt="" coords="464,79,624,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="467,36,528,76,525,81,464,40"/>
+<area shape="rect" id="Node000005" href="$scenes_2Settings_8cpp.html" title="Implements the settings modal overlay and its open/close/toggle helpers." alt="" coords="649,79,823,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="499,31,688,76,687,81,498,36"/>
+</map>

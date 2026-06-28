@@ -153,6 +153,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structParams.html">Params</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tunable thresholds that shape the player's decisions (see <a class="el" href="Player_8hpp.html#a3c891c2286234049c56a211046df5b7e">loadParamsFromFile</a>).  <a href="structParams.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structposition.html">position</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tile coordinate on the map.  <a href="structposition.html#details">More...</a><br /></td></tr>
@@ -166,21 +167,23 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a0b5e764f0ec9a407e9b8789f0259d754" id="r_a0b5e764f0ec9a407e9b8789f0259d754"><td class="memItemLeft" align="right" valign="top"><a id="a0b5e764f0ec9a407e9b8789f0259d754" name="a0b5e764f0ec9a407e9b8789f0259d754"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>MovementDirection</b> { <b>FORWARD</b>
-, <b>LEFT</b>
-, <b>RIGHT</b>
+<tr class="memitem:a0b5e764f0ec9a407e9b8789f0259d754" id="r_a0b5e764f0ec9a407e9b8789f0259d754"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#a0b5e764f0ec9a407e9b8789f0259d754">MovementDirection</a> { <a class="el" href="Player_8hpp.html#a0b5e764f0ec9a407e9b8789f0259d754aa26736999186daf8146f809e863712a1">FORWARD</a>
+, <a class="el" href="Player_8hpp.html#a0b5e764f0ec9a407e9b8789f0259d754adb45120aafd37a973140edee24708065">LEFT</a>
+, <a class="el" href="Player_8hpp.html#a0b5e764f0ec9a407e9b8789f0259d754aec8379af7490bb9eaaf579cf17876f38">RIGHT</a>
  }</td></tr>
+<tr class="memdesc:a0b5e764f0ec9a407e9b8789f0259d754"><td class="mdescLeft">&#160;</td><td class="mdescRight">A relative move the player can make from its current tile.  <a href="Player_8hpp.html#a0b5e764f0ec9a407e9b8789f0259d754">More...</a><br /></td></tr>
 <tr class="separator:a0b5e764f0ec9a407e9b8789f0259d754"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c730f37b1b3a893159bada67637fdb1" id="r_a3c730f37b1b3a893159bada67637fdb1"><td class="memItemLeft" align="right" valign="top"><a id="a3c730f37b1b3a893159bada67637fdb1" name="a3c730f37b1b3a893159bada67637fdb1"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>PlayerState</b> { <br />
-&#160;&#160;<b>SURVIVE</b>
-, <b>EXPLORE</b>
-, <b>UPGRADE</b>
-, <b>COOP</b>
+<tr class="memitem:a3c730f37b1b3a893159bada67637fdb1" id="r_a3c730f37b1b3a893159bada67637fdb1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#a3c730f37b1b3a893159bada67637fdb1">PlayerState</a> { <br />
+&#160;&#160;<a class="el" href="Player_8hpp.html#a3c730f37b1b3a893159bada67637fdb1ae17b54d5b0630eba24dadbbb2ff50ebd">SURVIVE</a>
+, <a class="el" href="Player_8hpp.html#a3c730f37b1b3a893159bada67637fdb1a9a80539c326b5f07cbdc2c4f6c0766d9">EXPLORE</a>
+, <a class="el" href="Player_8hpp.html#a3c730f37b1b3a893159bada67637fdb1a7622ad012d4fa19b71427f2edfb2560b">UPGRADE</a>
+, <a class="el" href="Player_8hpp.html#a3c730f37b1b3a893159bada67637fdb1af4306af1972d5a780d56e269ed29c9d6">COOP</a>
 , <br />
-&#160;&#160;<b>HUNT</b>
-, <b>FORK</b>
+&#160;&#160;<a class="el" href="Player_8hpp.html#a3c730f37b1b3a893159bada67637fdb1a901c4adf422bb3fb42f7aaa88bc9561a">HUNT</a>
+, <a class="el" href="Player_8hpp.html#a3c730f37b1b3a893159bada67637fdb1aeb5838b12f5849b4544c2d9d10dc6548">FORK</a>
 <br />
  }</td></tr>
+<tr class="memdesc:a3c730f37b1b3a893159bada67637fdb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The behaviour the player is currently pursuing (see Player::nextState).  <a href="Player_8hpp.html#a3c730f37b1b3a893159bada67637fdb1">More...</a><br /></td></tr>
 <tr class="separator:a3c730f37b1b3a893159bada67637fdb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a660afdb28fde05444bdb4cfa0b46eaf5" id="r_a660afdb28fde05444bdb4cfa0b46eaf5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#a660afdb28fde05444bdb4cfa0b46eaf5">HuntAction</a> { <a class="el" href="Player_8hpp.html#a660afdb28fde05444bdb4cfa0b46eaf5a9722d5fd67d3ad59f7d183a1a6f6e19b">HUNT_ROAM</a>
 , <a class="el" href="Player_8hpp.html#a660afdb28fde05444bdb4cfa0b46eaf5ada43d800cc6837a06209fced7dc58184">HUNT_PING</a>
@@ -204,11 +207,11 @@ Functions</h2></td></tr>
 <tr class="memitem:a46de87374858b05a6dc163355aa2d65f" id="r_a46de87374858b05a6dc163355aa2d65f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#a46de87374858b05a6dc163355aa2d65f">canUpgrade</a> (const <a class="el" href="structInventory.html">Inventory</a> &amp;inventory, int currentLevel)</td></tr>
 <tr class="memdesc:a46de87374858b05a6dc163355aa2d65f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether an inventory satisfies the cost to elevate one level.  <br /></td></tr>
 <tr class="separator:a46de87374858b05a6dc163355aa2d65f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd09095651170def69dc0cf6998044df" id="r_acd09095651170def69dc0cf6998044df"><td class="memItemLeft" align="right" valign="top"><a id="acd09095651170def69dc0cf6998044df" name="acd09095651170def69dc0cf6998044df"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>stonesHeldDeficit</b> (const <a class="el" href="structInventory.html">Inventory</a> &amp;inventory, int level)</td></tr>
+<tr class="memitem:acd09095651170def69dc0cf6998044df" id="r_acd09095651170def69dc0cf6998044df"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#acd09095651170def69dc0cf6998044df">stonesHeldDeficit</a> (const <a class="el" href="structInventory.html">Inventory</a> &amp;inventory, int level)</td></tr>
+<tr class="memdesc:acd09095651170def69dc0cf6998044df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counts how many required stones are still missing from the inventory.  <br /></td></tr>
 <tr class="separator:acd09095651170def69dc0cf6998044df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada4fbd475377b41034050c8e8b48270e" id="r_ada4fbd475377b41034050c8e8b48270e"><td class="memItemLeft" align="right" valign="top"><a id="ada4fbd475377b41034050c8e8b48270e" name="ada4fbd475377b41034050c8e8b48270e"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>canHostPooledUpgrade</b> (const <a class="el" href="structInventory.html">Inventory</a> &amp;inventory, int level, int poolDeficitMax)</td></tr>
+<tr class="memitem:ada4fbd475377b41034050c8e8b48270e" id="r_ada4fbd475377b41034050c8e8b48270e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#ada4fbd475377b41034050c8e8b48270e">canHostPooledUpgrade</a> (const <a class="el" href="structInventory.html">Inventory</a> &amp;inventory, int level, int poolDeficitMax)</td></tr>
+<tr class="memdesc:ada4fbd475377b41034050c8e8b48270e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether a player may host an elevation while pooling stones with teammates.  <br /></td></tr>
 <tr class="separator:ada4fbd475377b41034050c8e8b48270e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f44469e4c857a60feec640818ce595d" id="r_a2f44469e4c857a60feec640818ce595d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#a2f44469e4c857a60feec640818ce595d">parseTaggedBroadcast</a> (const std::string &amp;text, const std::string &amp;verb)</td></tr>
 <tr class="memdesc:a2f44469e4c857a60feec640818ce595d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the single argument of a <code>"&amp;lt;verb&amp;gt; &amp;lt;arg&amp;gt;"</code> broadcast.  <br /></td></tr>
@@ -249,8 +252,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>canHostPooledUpgrade<
 <tr class="memitem:ad3c72729c09b8e962f6d79394f3387ce" id="r_ad3c72729c09b8e962f6d79394f3387ce"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="Ressource_8hpp.html#a09526742abc3e0feb0a61b36291e1b8c">Ressource</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#ad3c72729c09b8e962f6d79394f3387ce">stonesToDropForUpgrade</a> (int level, const std::vector&lt; <a class="el" href="Ressource_8hpp.html#a09526742abc3e0feb0a61b36291e1b8c">Ressource</a> &gt; &amp;currentTile)</td></tr>
 <tr class="memdesc:ad3c72729c09b8e962f6d79394f3387ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes which stones must be dropped to satisfy the next elevation.  <br /></td></tr>
 <tr class="separator:ad3c72729c09b8e962f6d79394f3387ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80fbcdb584055d0f01b1c27e6acd7af1" id="r_a80fbcdb584055d0f01b1c27e6acd7af1"><td class="memItemLeft" align="right" valign="top"><a id="a80fbcdb584055d0f01b1c27e6acd7af1" name="a80fbcdb584055d0f01b1c27e6acd7af1"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>tileCompletableForUpgrade</b> (const <a class="el" href="structInventory.html">Inventory</a> &amp;inventory, int level, const std::vector&lt; <a class="el" href="Ressource_8hpp.html#a09526742abc3e0feb0a61b36291e1b8c">Ressource</a> &gt; &amp;tileStones)</td></tr>
+<tr class="memitem:a80fbcdb584055d0f01b1c27e6acd7af1" id="r_a80fbcdb584055d0f01b1c27e6acd7af1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#a80fbcdb584055d0f01b1c27e6acd7af1">tileCompletableForUpgrade</a> (const <a class="el" href="structInventory.html">Inventory</a> &amp;inventory, int level, const std::vector&lt; <a class="el" href="Ressource_8hpp.html#a09526742abc3e0feb0a61b36291e1b8c">Ressource</a> &gt; &amp;tileStones)</td></tr>
+<tr class="memdesc:a80fbcdb584055d0f01b1c27e6acd7af1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the held stones plus those on the tile cover the elevation cost.  <br /></td></tr>
 <tr class="separator:a80fbcdb584055d0f01b1c27e6acd7af1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb87e1bdd3ab62ebb9c7701c04f70049" id="r_adb87e1bdd3ab62ebb9c7701c04f70049"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structBroadcastMessage.html">BroadcastMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#adb87e1bdd3ab62ebb9c7701c04f70049">parseBroadcast</a> (const std::string &amp;line)</td></tr>
 <tr class="memdesc:adb87e1bdd3ab62ebb9c7701c04f70049"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a server broadcast notification into its direction and text.  <br /></td></tr>
@@ -273,13 +276,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>tileCompletableForUpg
 <tr class="memitem:a339004e9f208bd0e48d0d12d1f6733bc" id="r_a339004e9f208bd0e48d0d12d1f6733bc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#a339004e9f208bd0e48d0d12d1f6733bc">parseElevationLevel</a> (const std::string &amp;line)</td></tr>
 <tr class="memdesc:a339004e9f208bd0e48d0d12d1f6733bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the new level from an incantation success response.  <br /></td></tr>
 <tr class="separator:a339004e9f208bd0e48d0d12d1f6733bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bc7b5fe47328af53f6b0208c35b4a45" id="r_a0bc7b5fe47328af53f6b0208c35b4a45"><td class="memItemLeft" align="right" valign="top">MovementDirection&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#a0bc7b5fe47328af53f6b0208c35b4a45">directionToMovement</a> (int soundDirection)</td></tr>
+<tr class="memitem:a0bc7b5fe47328af53f6b0208c35b4a45" id="r_a0bc7b5fe47328af53f6b0208c35b4a45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Player_8hpp.html#a0b5e764f0ec9a407e9b8789f0259d754">MovementDirection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#a0bc7b5fe47328af53f6b0208c35b4a45">directionToMovement</a> (int soundDirection)</td></tr>
 <tr class="memdesc:a0bc7b5fe47328af53f6b0208c35b4a45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps a broadcast sound direction to the move that approaches it.  <br /></td></tr>
 <tr class="separator:a0bc7b5fe47328af53f6b0208c35b4a45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a089028a0e4cdd70e3467bb4263c9c047" id="r_a089028a0e4cdd70e3467bb4263c9c047"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#a089028a0e4cdd70e3467bb4263c9c047">findNearestRessourceTile</a> (const std::vector&lt; std::vector&lt; <a class="el" href="Ressource_8hpp.html#a09526742abc3e0feb0a61b36291e1b8c">Ressource</a> &gt; &gt; &amp;visibleTiles, <a class="el" href="Ressource_8hpp.html#a09526742abc3e0feb0a61b36291e1b8c">Ressource</a> ressource)</td></tr>
 <tr class="memdesc:a089028a0e4cdd70e3467bb4263c9c047"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the nearest tile holding a given resource in a <code>Look</code> field of view.  <br /></td></tr>
 <tr class="separator:a089028a0e4cdd70e3467bb4263c9c047"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45e0604f10ac0304639cbc153e7b6b26" id="r_a45e0604f10ac0304639cbc153e7b6b26"><td class="memItemLeft" align="right" valign="top">MovementDirection&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#a45e0604f10ac0304639cbc153e7b6b26">tileIndexToMovement</a> (int index)</td></tr>
+<tr class="memitem:a45e0604f10ac0304639cbc153e7b6b26" id="r_a45e0604f10ac0304639cbc153e7b6b26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Player_8hpp.html#a0b5e764f0ec9a407e9b8789f0259d754">MovementDirection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8hpp.html#a45e0604f10ac0304639cbc153e7b6b26">tileIndexToMovement</a> (int index)</td></tr>
 <tr class="memdesc:a45e0604f10ac0304639cbc153e7b6b26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps a <code>Look</code> field-of-view tile index to the move that approaches it.  <br /></td></tr>
 <tr class="separator:a45e0604f10ac0304639cbc153e7b6b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -336,6 +339,60 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>tileCompletableForUpg
 
 </div>
 </div>
+<a id="a0b5e764f0ec9a407e9b8789f0259d754" name="a0b5e764f0ec9a407e9b8789f0259d754"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b5e764f0ec9a407e9b8789f0259d754">&#9670;&#160;</a></span>MovementDirection</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="Player_8hpp.html#a0b5e764f0ec9a407e9b8789f0259d754">MovementDirection</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A relative move the player can make from its current tile. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0b5e764f0ec9a407e9b8789f0259d754aa26736999186daf8146f809e863712a1" name="a0b5e764f0ec9a407e9b8789f0259d754aa26736999186daf8146f809e863712a1"></a>FORWARD&#160;</td><td class="fielddoc"><p>Step one tile straight ahead. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0b5e764f0ec9a407e9b8789f0259d754adb45120aafd37a973140edee24708065" name="a0b5e764f0ec9a407e9b8789f0259d754adb45120aafd37a973140edee24708065"></a>LEFT&#160;</td><td class="fielddoc"><p>Turn 90 degrees left (no tile change). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0b5e764f0ec9a407e9b8789f0259d754aec8379af7490bb9eaaf579cf17876f38" name="a0b5e764f0ec9a407e9b8789f0259d754aec8379af7490bb9eaaf579cf17876f38"></a>RIGHT&#160;</td><td class="fielddoc"><p>Turn 90 degrees right (no tile change). </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a3c730f37b1b3a893159bada67637fdb1" name="a3c730f37b1b3a893159bada67637fdb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c730f37b1b3a893159bada67637fdb1">&#9670;&#160;</a></span>PlayerState</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="Player_8hpp.html#a3c730f37b1b3a893159bada67637fdb1">PlayerState</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The behaviour the player is currently pursuing (see Player::nextState). </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3c730f37b1b3a893159bada67637fdb1ae17b54d5b0630eba24dadbbb2ff50ebd" name="a3c730f37b1b3a893159bada67637fdb1ae17b54d5b0630eba24dadbbb2ff50ebd"></a>SURVIVE&#160;</td><td class="fielddoc"><p>Food is low: head for food and eat to stay alive. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3c730f37b1b3a893159bada67637fdb1a9a80539c326b5f07cbdc2c4f6c0766d9" name="a3c730f37b1b3a893159bada67637fdb1a9a80539c326b5f07cbdc2c4f6c0766d9"></a>EXPLORE&#160;</td><td class="fielddoc"><p>Roam the map gathering the stones needed to elevate. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3c730f37b1b3a893159bada67637fdb1a7622ad012d4fa19b71427f2edfb2560b" name="a3c730f37b1b3a893159bada67637fdb1a7622ad012d4fa19b71427f2edfb2560b"></a>UPGRADE&#160;</td><td class="fielddoc"><p>Hold enough stones: lay them and incant solo. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3c730f37b1b3a893159bada67637fdb1af4306af1972d5a780d56e269ed29c9d6" name="a3c730f37b1b3a893159bada67637fdb1af4306af1972d5a780d56e269ed29c9d6"></a>COOP&#160;</td><td class="fielddoc"><p>Gather with teammates on one tile for a shared elevation. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3c730f37b1b3a893159bada67637fdb1a901c4adf422bb3fb42f7aaa88bc9561a" name="a3c730f37b1b3a893159bada67637fdb1a901c4adf422bb3fb42f7aaa88bc9561a"></a>HUNT&#160;</td><td class="fielddoc"><p>Max level: roam and eject other players off their tiles. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3c730f37b1b3a893159bada67637fdb1aeb5838b12f5849b4544c2d9d10dc6548" name="a3c730f37b1b3a893159bada67637fdb1aeb5838b12f5849b4544c2d9d10dc6548"></a>FORK&#160;</td><td class="fielddoc"><p>Lay an egg to add a player slot to the team. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="af31c02a806e745c972beeb929ad8c01c" name="af31c02a806e745c972beeb929ad8c01c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af31c02a806e745c972beeb929ad8c01c">&#9670;&#160;</a></span>advertisedTargetForHost()</h2>
@@ -386,6 +443,51 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>tileCompletableForUpg
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><code>target</code> while gathering, <code>minimum</code> once patience elapses. </dd></dl>
+
+</div>
+</div>
+<a id="ada4fbd475377b41034050c8e8b48270e" name="ada4fbd475377b41034050c8e8b48270e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada4fbd475377b41034050c8e8b48270e">&#9670;&#160;</a></span>canHostPooledUpgrade()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool canHostPooledUpgrade </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structInventory.html">Inventory</a> &amp;&#160;</td>
+          <td class="paramname"><em>inventory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>poolDeficitMax</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether a player may host an elevation while pooling stones with teammates. </p>
+<p>From level 2 up, a host need not hold the full stone set itself: teammates gathering on the tile can lay the rest. This allows hosting when the combined stone shortfall (see <a class="el" href="Player_8cpp.html#acd09095651170def69dc0cf6998044df">stonesHeldDeficit</a>) does not exceed <code>poolDeficitMax</code>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inventory</td><td>The resources currently held by the player. </td></tr>
+    <tr><td class="paramname">level</td><td>The player's current level; only 2 to 7 can host a pooled upgrade. </td></tr>
+    <tr><td class="paramname">poolDeficitMax</td><td>The largest stone deficit a host is allowed to start with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the player may host the pooled upgrade, <code>false</code> otherwise. </dd></dl>
 
 </div>
 </div>
@@ -712,7 +814,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>tileCompletableForUpg
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">MovementDirection directionToMovement </td>
+          <td class="memname"><a class="el" href="Player_8hpp.html#a0b5e764f0ec9a407e9b8789f0259d754">MovementDirection</a> directionToMovement </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>soundDirection</em></td><td>)</td>
@@ -1188,7 +1290,7 @@ underway"</code>, <code>"ko"</code>) are not completions.</p>
 <p>Keeping bands large and level-synchronized lets the min-4 rituals carry the whole band up together (an incantation elevates every same-level player on the tile). Returns 1 for the solo level 1, 0 for levels that cannot elevate, the per-level minimum for levels 2-3 (a cheap pair climb — forcing a 6-band this early just starves low players), and <code>coopTarget</code> (clamped up to the minimum) for levels 4-7, where the 6-band forms and rides 4-&gt;5 and 5-&gt;6 up to reach level 6 six-strong. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">level</td><td>The player's current level (1-7). </td></tr>
-    <tr><td class="paramname">coopTarget</td><td>The desired band size (e.g. Params::coopTargetPlayers). </td></tr>
+    <tr><td class="paramname">coopTarget</td><td>The desired band size (e.g. <a class="el" href="structParams.html#ad464f39839ef052cbe440b0db081fb54" title="Desired cooperative band size to gather toward.">Params::coopTargetPlayers</a>). </td></tr>
   </table>
   </dd>
 </dl>
@@ -1241,6 +1343,44 @@ underway"</code>, <code>"ko"</code>) are not completions.</p>
 
 </div>
 </div>
+<a id="acd09095651170def69dc0cf6998044df" name="acd09095651170def69dc0cf6998044df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd09095651170def69dc0cf6998044df">&#9670;&#160;</a></span>stonesHeldDeficit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int stonesHeldDeficit </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structInventory.html">Inventory</a> &amp;&#160;</td>
+          <td class="paramname"><em>inventory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>level</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Counts how many required stones are still missing from the inventory. </p>
+<p>Sums, across the six stone types, the shortfall between what the next elevation costs (see <a class="el" href="Ressource_8hpp.html#aac34434cb1098468cfd9404af533e6ca">upgradeCosts</a>) and what is currently held; a stone already in surplus contributes nothing. Used to decide whether a player may host a pooled upgrade (see <a class="el" href="Player_8cpp.html#ada4fbd475377b41034050c8e8b48270e">canHostPooledUpgrade</a>). </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inventory</td><td>The resources currently held by the player. </td></tr>
+    <tr><td class="paramname">level</td><td>The player's current level; only 1 to 7 can elevate. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The total stone deficit (0 when the inventory already suffices), or -1 for an out-of-range level. </dd></dl>
+
+</div>
+</div>
 <a id="ad3c72729c09b8e962f6d79394f3387ce" name="ad3c72729c09b8e962f6d79394f3387ce"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad3c72729c09b8e962f6d79394f3387ce">&#9670;&#160;</a></span>stonesToDropForUpgrade()</h2>
 
@@ -1280,6 +1420,51 @@ underway"</code>, <code>"ko"</code>) are not completions.</p>
 
 </div>
 </div>
+<a id="a80fbcdb584055d0f01b1c27e6acd7af1" name="a80fbcdb584055d0f01b1c27e6acd7af1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80fbcdb584055d0f01b1c27e6acd7af1">&#9670;&#160;</a></span>tileCompletableForUpgrade()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool tileCompletableForUpgrade </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structInventory.html">Inventory</a> &amp;&#160;</td>
+          <td class="paramname"><em>inventory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="Ressource_8hpp.html#a09526742abc3e0feb0a61b36291e1b8c">Ressource</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>tileStones</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether the held stones plus those on the tile cover the elevation cost. </p>
+<p>The ritual reads the stones lying on the tile, but a player can still drop the missing ones from its inventory first. This checks, per stone type, that the tile's stones combined with what is held meet the level's cost (see <a class="el" href="Ressource_8hpp.html#aac34434cb1098468cfd9404af533e6ca">upgradeCosts</a>), so the tile can be completed this tick. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inventory</td><td>The resources currently held by the player. </td></tr>
+    <tr><td class="paramname">level</td><td>The player's current level (1-7); other values cannot elevate. </td></tr>
+    <tr><td class="paramname">tileStones</td><td>The stones already lying on the player's tile (from <code>Look</code>). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if every required stone is covered by held + on-tile counts, <code>false</code> otherwise (including out-of-range levels). </dd></dl>
+
+</div>
+</div>
 <a id="a45e0604f10ac0304639cbc153e7b6b26" name="a45e0604f10ac0304639cbc153e7b6b26"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a45e0604f10ac0304639cbc153e7b6b26">&#9670;&#160;</a></span>tileIndexToMovement()</h2>
 
@@ -1287,7 +1472,7 @@ underway"</code>, <code>"ko"</code>) are not completions.</p>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">MovementDirection tileIndexToMovement </td>
+          <td class="memname"><a class="el" href="Player_8hpp.html#a0b5e764f0ec9a407e9b8789f0259d754">MovementDirection</a> tileIndexToMovement </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>

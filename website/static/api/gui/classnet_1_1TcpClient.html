@@ -99,6 +99,9 @@ $(document).ready(function(){initNavTree('classnet_1_1TcpClient.html',''); initR
 </div><!--header-->
 <div class="contents">
 
+<p>Small RAII wrapper around a POSIX TCP socket.  
+ <a href="classnet_1_1TcpClient.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="TcpClient_8hpp_source.html">TcpClient.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -133,16 +136,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aeb0c68c3088a87114a227d1fc37236cb" id="r_aeb0c68c3088a87114a227d1fc37236cb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1TcpClient.html#aeb0c68c3088a87114a227d1fc37236cb">nativeHandle</a> () const noexcept</td></tr>
 <tr class="memdesc:aeb0c68c3088a87114a227d1fc37236cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exposes the underlying file descriptor for integration code.  <br /></td></tr>
 <tr class="separator:aeb0c68c3088a87114a227d1fc37236cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8a2eeb7ae6dbc4a5c62937136be64bd" id="r_aa8a2eeb7ae6dbc4a5c62937136be64bd"><td class="memItemLeft" align="right" valign="top">Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1TcpClient.html#aa8a2eeb7ae6dbc4a5c62937136be64bd">send</a> (std::span&lt; const std::byte &gt; data)</td></tr>
+<tr class="memitem:aa8a2eeb7ae6dbc4a5c62937136be64bd" id="r_aa8a2eeb7ae6dbc4a5c62937136be64bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Result_8hpp.html#afc8b4c58f87fe38ee8660641cd5d746f">Result</a>&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1TcpClient.html#aa8a2eeb7ae6dbc4a5c62937136be64bd">send</a> (std::span&lt; const std::byte &gt; data)</td></tr>
 <tr class="memdesc:aa8a2eeb7ae6dbc4a5c62937136be64bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends all bytes before returning, unless an error or timeout occurs.  <br /></td></tr>
 <tr class="separator:aa8a2eeb7ae6dbc4a5c62937136be64bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2ee5d7b3c46f74ee7a86e3f6905f81a" id="r_af2ee5d7b3c46f74ee7a86e3f6905f81a"><td class="memItemLeft" align="right" valign="top">Result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1TcpClient.html#af2ee5d7b3c46f74ee7a86e3f6905f81a">send</a> (std::string_view text)</td></tr>
+<tr class="memitem:af2ee5d7b3c46f74ee7a86e3f6905f81a" id="r_af2ee5d7b3c46f74ee7a86e3f6905f81a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Result_8hpp.html#afc8b4c58f87fe38ee8660641cd5d746f">Result</a>&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1TcpClient.html#af2ee5d7b3c46f74ee7a86e3f6905f81a">send</a> (std::string_view text)</td></tr>
 <tr class="memdesc:af2ee5d7b3c46f74ee7a86e3f6905f81a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends UTF-8/text protocol data as raw bytes.  <br /></td></tr>
 <tr class="separator:af2ee5d7b3c46f74ee7a86e3f6905f81a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aceac8605f5002f81e641e6ee623d6173" id="r_aceac8605f5002f81e641e6ee623d6173"><td class="memItemLeft" align="right" valign="top">Result&lt; std::vector&lt; std::byte &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1TcpClient.html#aceac8605f5002f81e641e6ee623d6173">receive</a> (std::size_t maxBytes=64 *1024)</td></tr>
+<tr class="memitem:aceac8605f5002f81e641e6ee623d6173" id="r_aceac8605f5002f81e641e6ee623d6173"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Result_8hpp.html#afc8b4c58f87fe38ee8660641cd5d746f">Result</a>&lt; std::vector&lt; std::byte &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1TcpClient.html#aceac8605f5002f81e641e6ee623d6173">receive</a> (std::size_t maxBytes=64 *1024)</td></tr>
 <tr class="memdesc:aceac8605f5002f81e641e6ee623d6173"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives one available chunk, up to maxBytes.  <br /></td></tr>
 <tr class="separator:aceac8605f5002f81e641e6ee623d6173"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a989c0b8e59cac9ec473e30ff3b9989be" id="r_a989c0b8e59cac9ec473e30ff3b9989be"><td class="memItemLeft" align="right" valign="top">Result&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1TcpClient.html#a989c0b8e59cac9ec473e30ff3b9989be">receiveString</a> (std::size_t maxBytes=64 *1024)</td></tr>
+<tr class="memitem:a989c0b8e59cac9ec473e30ff3b9989be" id="r_a989c0b8e59cac9ec473e30ff3b9989be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Result_8hpp.html#afc8b4c58f87fe38ee8660641cd5d746f">Result</a>&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1TcpClient.html#a989c0b8e59cac9ec473e30ff3b9989be">receiveString</a> (std::size_t maxBytes=64 *1024)</td></tr>
 <tr class="memdesc:a989c0b8e59cac9ec473e30ff3b9989be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives one available chunk and converts it to std::string.  <br /></td></tr>
 <tr class="separator:a989c0b8e59cac9ec473e30ff3b9989be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a184f65dc7c3d26690e4f2d4eb27ef803" id="r_a184f65dc7c3d26690e4f2d4eb27ef803"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1TcpClient.html#a184f65dc7c3d26690e4f2d4eb27ef803">disconnect</a> () noexcept</td></tr>
@@ -151,12 +154,12 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a38a300b756060a6ce987601f8a65f5c2" id="r_a38a300b756060a6ce987601f8a65f5c2"><td class="memItemLeft" align="right" valign="top">static Result&lt; <a class="el" href="classnet_1_1TcpClient.html">TcpClient</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1TcpClient.html#a38a300b756060a6ce987601f8a65f5c2">connect</a> (std::string_view host, std::uint16_t port, <a class="el" href="structnet_1_1TcpClientOptions.html">TcpClientOptions</a> options={})</td></tr>
+<tr class="memitem:a38a300b756060a6ce987601f8a65f5c2" id="r_a38a300b756060a6ce987601f8a65f5c2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="Result_8hpp.html#afc8b4c58f87fe38ee8660641cd5d746f">Result</a>&lt; <a class="el" href="classnet_1_1TcpClient.html">TcpClient</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1TcpClient.html#a38a300b756060a6ce987601f8a65f5c2">connect</a> (std::string_view host, std::uint16_t port, <a class="el" href="structnet_1_1TcpClientOptions.html">TcpClientOptions</a> options={})</td></tr>
 <tr class="memdesc:a38a300b756060a6ce987601f8a65f5c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolves every address for host:port and tries them until one connects.  <br /></td></tr>
 <tr class="separator:a38a300b756060a6ce987601f8a65f5c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Small RAII wrapper around a POSIX TCP socket.</p>
+<div class="textblock"><p>Small RAII wrapper around a POSIX TCP socket. </p>
 <p>The socket is configured as non-blocking, but public send/receive methods still wait with poll() up to the configured timeout. Use it from a worker thread when the caller must never block rendering. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a38a300b756060a6ce987601f8a65f5c2" name="a38a300b756060a6ce987601f8a65f5c2"></a>
@@ -169,7 +172,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Result&lt; <a class="el" href="classnet_1_1TcpClient.html">TcpClient</a> &gt; net::TcpClient::connect </td>
+          <td class="memname"><a class="el" href="Result_8hpp.html#afc8b4c58f87fe38ee8660641cd5d746f">Result</a>&lt; <a class="el" href="classnet_1_1TcpClient.html">TcpClient</a> &gt; net::TcpClient::connect </td>
           <td>(</td>
           <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>host</em>, </td>
@@ -200,7 +203,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Resolves every address for host:port and tries them until one connects. </p>
-<p>Resolves host, connects to port, configures socket options, and returns a connected <a class="el" href="classnet_1_1TcpClient.html">TcpClient</a> on success. </p>
+<p>Resolves host, connects to port, configures socket options, and returns a connected <a class="el" href="classnet_1_1TcpClient.html" title="Small RAII wrapper around a POSIX TCP socket.">TcpClient</a> on success. </p>
 
 </div>
 </div>
@@ -295,7 +298,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Result&lt; std::vector&lt; std::byte &gt; &gt; net::TcpClient::receive </td>
+          <td class="memname"><a class="el" href="Result_8hpp.html#afc8b4c58f87fe38ee8660641cd5d746f">Result</a>&lt; std::vector&lt; std::byte &gt; &gt; net::TcpClient::receive </td>
           <td>(</td>
           <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>maxBytes</em> = <code>64&#160;*&#160;1024</code></td><td>)</td>
@@ -317,7 +320,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Result&lt; std::string &gt; net::TcpClient::receiveString </td>
+          <td class="memname"><a class="el" href="Result_8hpp.html#afc8b4c58f87fe38ee8660641cd5d746f">Result</a>&lt; std::string &gt; net::TcpClient::receiveString </td>
           <td>(</td>
           <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>maxBytes</em> = <code>64&#160;*&#160;1024</code></td><td>)</td>
@@ -338,7 +341,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Result&lt; void &gt; net::TcpClient::send </td>
+          <td class="memname"><a class="el" href="Result_8hpp.html#afc8b4c58f87fe38ee8660641cd5d746f">Result</a>&lt; void &gt; net::TcpClient::send </td>
           <td>(</td>
           <td class="paramtype">std::span&lt; const std::byte &gt;&#160;</td>
           <td class="paramname"><em>data</em></td><td>)</td>
@@ -359,7 +362,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Result&lt; void &gt; net::TcpClient::send </td>
+          <td class="memname"><a class="el" href="Result_8hpp.html#afc8b4c58f87fe38ee8660641cd5d746f">Result</a>&lt; void &gt; net::TcpClient::send </td>
           <td>(</td>
           <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>text</em></td><td>)</td>
@@ -375,7 +378,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/network/core/<a class="el" href="TcpClient_8hpp_source.html">TcpClient.hpp</a></li>
-<li>src/network/core/<b>TcpClient.cpp</b></li>
+<li>src/network/core/<a class="el" href="TcpClient_8cpp.html">TcpClient.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

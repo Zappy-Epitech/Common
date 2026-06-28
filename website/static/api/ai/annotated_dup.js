@@ -17,7 +17,7 @@ var annotated_dup =
     [ "BroadcastMessage", "structBroadcastMessage.html", "structBroadcastMessage" ],
     [ "Inventory", "structInventory.html", "structInventory" ],
     [ "Network", "classNetwork.html", "classNetwork" ],
-    [ "Params", "structParams.html", null ],
+    [ "Params", "structParams.html", "structParams" ],
     [ "Player", "classPlayer.html", "classPlayer" ],
     [ "position", "structposition.html", "structposition" ],
     [ "TestServer", "structTestServer.html", null ],

@@ -1,6 +1,6 @@
 var Player_8hpp =
 [
-    [ "Params", "structParams.html", null ],
+    [ "Params", "structParams.html", "structParams" ],
     [ "position", "structposition.html", "structposition" ],
     [ "BroadcastMessage", "structBroadcastMessage.html", "structBroadcastMessage" ],
     [ "Player", "classPlayer.html", "classPlayer" ],
@@ -15,7 +15,21 @@ var Player_8hpp =
       [ "HUNT_WAIT", "Player_8hpp.html#a660afdb28fde05444bdb4cfa0b46eaf5ac858cb6b28a7b271f3ab150d097fb058", null ],
       [ "HUNT_EJECT", "Player_8hpp.html#a660afdb28fde05444bdb4cfa0b46eaf5a3a48a18c39dfdec082626877233b5568", null ]
     ] ],
+    [ "MovementDirection", "Player_8hpp.html#a0b5e764f0ec9a407e9b8789f0259d754", [
+      [ "FORWARD", "Player_8hpp.html#a0b5e764f0ec9a407e9b8789f0259d754aa26736999186daf8146f809e863712a1", null ],
+      [ "LEFT", "Player_8hpp.html#a0b5e764f0ec9a407e9b8789f0259d754adb45120aafd37a973140edee24708065", null ],
+      [ "RIGHT", "Player_8hpp.html#a0b5e764f0ec9a407e9b8789f0259d754aec8379af7490bb9eaaf579cf17876f38", null ]
+    ] ],
+    [ "PlayerState", "Player_8hpp.html#a3c730f37b1b3a893159bada67637fdb1", [
+      [ "SURVIVE", "Player_8hpp.html#a3c730f37b1b3a893159bada67637fdb1ae17b54d5b0630eba24dadbbb2ff50ebd", null ],
+      [ "EXPLORE", "Player_8hpp.html#a3c730f37b1b3a893159bada67637fdb1a9a80539c326b5f07cbdc2c4f6c0766d9", null ],
+      [ "UPGRADE", "Player_8hpp.html#a3c730f37b1b3a893159bada67637fdb1a7622ad012d4fa19b71427f2edfb2560b", null ],
+      [ "COOP", "Player_8hpp.html#a3c730f37b1b3a893159bada67637fdb1af4306af1972d5a780d56e269ed29c9d6", null ],
+      [ "HUNT", "Player_8hpp.html#a3c730f37b1b3a893159bada67637fdb1a901c4adf422bb3fb42f7aaa88bc9561a", null ],
+      [ "FORK", "Player_8hpp.html#a3c730f37b1b3a893159bada67637fdb1aeb5838b12f5849b4544c2d9d10dc6548", null ]
+    ] ],
     [ "advertisedTargetForHost", "Player_8hpp.html#af31c02a806e745c972beeb929ad8c01c", null ],
+    [ "canHostPooledUpgrade", "Player_8hpp.html#ada4fbd475377b41034050c8e8b48270e", null ],
     [ "canUpgrade", "Player_8hpp.html#a46de87374858b05a6dc163355aa2d65f", null ],
     [ "coopHomingTileIndex", "Player_8hpp.html#a945166a498ce6e5f51f4d4cf988e8148", null ],
     [ "countPlayersOnTile", "Player_8hpp.html#a50f03cddeaf5722cc9c259332d67156c", null ],
@@ -38,6 +52,8 @@ var Player_8hpp =
     [ "playersRequiredToUpgrade", "Player_8hpp.html#aa359797ae11f8387fa8ae93619dd24cc", null ],
     [ "playersTargetToUpgrade", "Player_8hpp.html#ad548b1a98114c8634be24bb4ef65e1af", null ],
     [ "shouldGrazeWhileWaiting", "Player_8hpp.html#a1b21b9dbe1318e109c4b40da5900c42d", null ],
+    [ "stonesHeldDeficit", "Player_8hpp.html#acd09095651170def69dc0cf6998044df", null ],
     [ "stonesToDropForUpgrade", "Player_8hpp.html#ad3c72729c09b8e962f6d79394f3387ce", null ],
+    [ "tileCompletableForUpgrade", "Player_8hpp.html#a80fbcdb584055d0f01b1c27e6acd7af1", null ],
     [ "tileIndexToMovement", "Player_8hpp.html#a45e0604f10ac0304639cbc153e7b6b26", null ]
 ];

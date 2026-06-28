@@ -1,0 +1,14 @@
+<map id="src/network/client/ZappySession.hpp" name="src/network/client/ZappySession.hpp">
+<area shape="rect" id="Node000001" title="Handles the Zappy GUI WELCOME/GRAPHIC handshake before forwarding lines." alt="" coords="157,5,302,45"/>
+<area shape="rect" id="Node000002" href="$Result_8hpp.html" title="Alias of std::expected&lt;T, Error&gt; used as the network result type." alt="" coords="57,93,191,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="205,48,152,87,149,83,202,43"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="108,240,167,265"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="233,46,230,113,222,154,206,193,190,216,169,234,166,230,186,212,202,191,217,153,225,113,228,46"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="267,93,365,119"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="252,44,295,82,291,86,249,48"/>
+<area shape="rect" id="Node000003" href="$Error_8hpp.html" title="Error type, error categories, and factory helpers for the network layer." alt="" coords="5,167,85,192"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="113,121,70,159,66,156,110,117"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="109,167,192,192"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="131,118,144,153,139,155,126,120"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="62,190,113,229,110,234,58,194"/>
+</map>

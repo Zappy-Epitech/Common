@@ -99,27 +99,33 @@ $(document).ready(function(){initNavTree('MinecraftCrowdLayout_8hpp_source.html'
   <div class="headertitle"><div class="title">MinecraftCrowdLayout.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;raylib.h&gt;</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="structMinecraftCrowdMember.html">    6</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structMinecraftCrowdMember.html">MinecraftCrowdMember</a> {</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keywordtype">int</span> playerId;</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    Vector3 position;</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    Vector3 offset = {};</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keywordtype">float</span> scale = 1.0f;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>};</div>
+<a href="MinecraftCrowdLayout_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;raylib.h&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="structMinecraftCrowdMember.html">   14</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structMinecraftCrowdMember.html">MinecraftCrowdMember</a> {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="structMinecraftCrowdMember.html#a48a2b901c63516422fea53c9072aef52">   15</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structMinecraftCrowdMember.html#a48a2b901c63516422fea53c9072aef52">playerId</a>;          </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="structMinecraftCrowdMember.html#aa09dee1618a1e53bd1fb76c8b3baa3c3">   16</a></span>    Vector3 <a class="code hl_variable" href="structMinecraftCrowdMember.html#aa09dee1618a1e53bd1fb76c8b3baa3c3">position</a>;      </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="structMinecraftCrowdMember.html#a8d18664009579652e4b2a6c22c0a9503">   17</a></span>    Vector3 <a class="code hl_variable" href="structMinecraftCrowdMember.html#a8d18664009579652e4b2a6c22c0a9503">offset</a> = {};   </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="structMinecraftCrowdMember.html#ae81b9e1cfa027c162bcf073c0d23c973">   18</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="structMinecraftCrowdMember.html#ae81b9e1cfa027c162bcf073c0d23c973">scale</a> = 1.0f;    </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>};</div>
 </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keywordtype">void</span> ApplyMinecraftCrowdLayout(std::vector&lt;MinecraftCrowdMember&gt; &amp;members);</div>
-<div class="ttc" id="astructMinecraftCrowdMember_html"><div class="ttname"><a href="structMinecraftCrowdMember.html">MinecraftCrowdMember</a></div><div class="ttdoc">Stores one player entry participating in same-tile render layout.</div><div class="ttdef"><b>Definition</b> MinecraftCrowdLayout.hpp:6</div></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keywordtype">void</span> <a class="code hl_function" href="MinecraftCrowdLayout_8hpp.html#aef68ff34de3c5ea7f0352b54f1418436">ApplyMinecraftCrowdLayout</a>(std::vector&lt;MinecraftCrowdMember&gt; &amp;members);</div>
+<div class="ttc" id="aMinecraftCrowdLayout_8hpp_html_aef68ff34de3c5ea7f0352b54f1418436"><div class="ttname"><a href="MinecraftCrowdLayout_8hpp.html#aef68ff34de3c5ea7f0352b54f1418436">ApplyMinecraftCrowdLayout</a></div><div class="ttdeci">void ApplyMinecraftCrowdLayout(std::vector&lt; MinecraftCrowdMember &gt; &amp;members)</div><div class="ttdoc">Applies stable same-tile offsets and scale factors to the members.</div><div class="ttdef"><b>Definition</b> MinecraftCrowdLayout.cpp:75</div></div>
+<div class="ttc" id="astructMinecraftCrowdMember_html"><div class="ttname"><a href="structMinecraftCrowdMember.html">MinecraftCrowdMember</a></div><div class="ttdoc">One player entry participating in same-tile render layout.</div><div class="ttdef"><b>Definition</b> MinecraftCrowdLayout.hpp:14</div></div>
+<div class="ttc" id="astructMinecraftCrowdMember_html_a48a2b901c63516422fea53c9072aef52"><div class="ttname"><a href="structMinecraftCrowdMember.html#a48a2b901c63516422fea53c9072aef52">MinecraftCrowdMember::playerId</a></div><div class="ttdeci">int playerId</div><div class="ttdoc">Stable player identifier used to order ring slots deterministically.</div><div class="ttdef"><b>Definition</b> MinecraftCrowdLayout.hpp:15</div></div>
+<div class="ttc" id="astructMinecraftCrowdMember_html_a8d18664009579652e4b2a6c22c0a9503"><div class="ttname"><a href="structMinecraftCrowdMember.html#a8d18664009579652e4b2a6c22c0a9503">MinecraftCrowdMember::offset</a></div><div class="ttdeci">Vector3 offset</div><div class="ttdoc">Computed horizontal offset from the tile centre (output).</div><div class="ttdef"><b>Definition</b> MinecraftCrowdLayout.hpp:17</div></div>
+<div class="ttc" id="astructMinecraftCrowdMember_html_aa09dee1618a1e53bd1fb76c8b3baa3c3"><div class="ttname"><a href="structMinecraftCrowdMember.html#aa09dee1618a1e53bd1fb76c8b3baa3c3">MinecraftCrowdMember::position</a></div><div class="ttdeci">Vector3 position</div><div class="ttdoc">World position used to group members onto tiles (input).</div><div class="ttdef"><b>Definition</b> MinecraftCrowdLayout.hpp:16</div></div>
+<div class="ttc" id="astructMinecraftCrowdMember_html_ae81b9e1cfa027c162bcf073c0d23c973"><div class="ttname"><a href="structMinecraftCrowdMember.html#ae81b9e1cfa027c162bcf073c0d23c973">MinecraftCrowdMember::scale</a></div><div class="ttdeci">float scale</div><div class="ttdoc">Computed render scale shrinking crowded tiles (output).</div><div class="ttdef"><b>Definition</b> MinecraftCrowdLayout.hpp:18</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_d36229ec282710cd9bcc2afbc435b6b9.html">minecraft</a></li><li class="navelem"><b>MinecraftCrowdLayout.hpp</b></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_d36229ec282710cd9bcc2afbc435b6b9.html">minecraft</a></li><li class="navelem"><a class="el" href="MinecraftCrowdLayout_8hpp.html">MinecraftCrowdLayout.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

@@ -99,26 +99,29 @@ $(document).ready(function(){initNavTree('SocketConnector_8hpp_source.html','');
   <div class="headertitle"><div class="title">SocketConnector.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;../utils/Result.hpp&quot;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;SocketHandle.hpp&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">struct </span>addrinfo;</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span>net {</div>
+<a href="SocketConnector_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;../utils/Result.hpp&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="SocketHandle_8hpp.html">SocketHandle.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">struct </span>TcpClientOptions;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">struct </span>addrinfo;</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>Result&lt;SocketHandle&gt; connectSocket(<span class="keyword">const</span> addrinfo &amp;address, <span class="keyword">const</span> TcpClientOptions &amp;options);</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>} <span class="comment">// namespace net</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span>net {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">struct </span>TcpClientOptions;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>Result&lt;SocketHandle&gt; <a class="code hl_function" href="SocketConnector_8cpp.html#a21f3cc18edc673792dba30c957321559">connectSocket</a>(<span class="keyword">const</span> addrinfo &amp;address, <span class="keyword">const</span> TcpClientOptions &amp;options);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>} <span class="comment">// namespace net</span></div>
+<div class="ttc" id="aSocketConnector_8cpp_html_a21f3cc18edc673792dba30c957321559"><div class="ttname"><a href="SocketConnector_8cpp.html#a21f3cc18edc673792dba30c957321559">net::connectSocket</a></div><div class="ttdeci">Result&lt; SocketHandle &gt; connectSocket(const addrinfo &amp;address, const TcpClientOptions &amp;options)</div><div class="ttdoc">Opens, configures, and connects a socket for one resolved address.</div><div class="ttdef"><b>Definition</b> SocketConnector.cpp:18</div></div>
+<div class="ttc" id="aSocketHandle_8hpp_html"><div class="ttname"><a href="SocketHandle_8hpp.html">SocketHandle.hpp</a></div><div class="ttdoc">RAII owner for a POSIX socket file descriptor.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_fc4c7f03e1a69a98c370fae55a743828.html">network</a></li><li class="navelem"><a class="el" href="dir_1bab67e0e9893324e92f7ce98fde9362.html">core</a></li><li class="navelem"><b>SocketConnector.hpp</b></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_fc4c7f03e1a69a98c370fae55a743828.html">network</a></li><li class="navelem"><a class="el" href="dir_1bab67e0e9893324e92f7ce98fde9362.html">core</a></li><li class="navelem"><a class="el" href="SocketConnector_8hpp.html">SocketConnector.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

@@ -1,0 +1,7 @@
+<map id="src/network/io/LineBuffer.hpp" name="src/network/io/LineBuffer.hpp">
+<area shape="rect" id="Node000001" title="Reassembles newline&#45;terminated protocol lines from TCP stream chunks." alt="" coords="5,5,216,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="31,79,89,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,33,78,69,74,66,100,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="114,79,211,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="121,29,148,66,144,69,117,33"/>
+</map>

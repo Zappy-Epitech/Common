@@ -1,0 +1,7 @@
+<map id="src/minecraft/MinecraftAnimation.hpp" name="src/minecraft/MinecraftAnimation.hpp">
+<area shape="rect" id="Node000001" title="Skin animation data (keyframe tracks, poses) and the flecs module that updates them." alt="" coords="5,5,272,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="49,79,116,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,33,102,69,98,66,127,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="141,79,251,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="150,29,180,66,176,70,146,33"/>
+</map>

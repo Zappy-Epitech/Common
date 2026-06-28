@@ -1,0 +1,33 @@
+<map id="src/minecraft/Minecraft.cpp" name="src/minecraft/Minecraft.cpp">
+<area shape="rect" id="Node000001" title="Implements the top&#45;level Minecraft module by importing its child modules." alt="" coords="559,5,758,31"/>
+<area shape="rect" id="Node000002" href="$Minecraft_8hpp.html" title="Top&#45;level flecs module aggregating the Minecraft&#45;style player rendering subsystems." alt="" coords="277,79,387,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="607,33,399,78,398,73,606,28"/>
+<area shape="rect" id="Node000003" href="$flecs_8h_source.html" title=" " alt="" coords="412,79,545,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="631,33,522,76,520,71,629,28"/>
+<area shape="rect" id="Node000012" href="$MinecraftAnimation_8hpp.html" title="Skin animation data (keyframe tracks, poses) and the flecs module that updates them." alt="" coords="655,79,921,104"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="681,28,756,69,753,74,678,33"/>
+<area shape="rect" id="Node000015" href="$MinecraftRenderer_8hpp.html" title="flecs module and entry points for drawing animated 3D Minecraft&#45;style players." alt="" coords="945,79,1204,104"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="726,28,995,74,994,79,725,33"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,152,80,177"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="412,105,94,154,93,149,411,100"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="104,152,179,177"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="422,107,193,154,192,149,421,101"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="203,152,274,177"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="441,107,288,152,287,146,439,101"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="298,152,369,177"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="456,106,370,148,368,144,454,102"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="393,152,463,177"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="472,106,446,142,442,139,468,103"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="488,152,571,177"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="489,103,515,139,511,142,485,106"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="595,152,669,177"/>
+<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="504,102,596,144,594,149,502,106"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="693,152,760,177"/>
+<area shape="poly" id="edge10_Node000003_Node000011" title=" " alt="" coords="519,101,681,148,680,153,518,107"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="784,152,851,177"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="795,103,810,138,805,140,790,105"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="875,152,986,177"/>
+<area shape="poly" id="edge13_Node000012_Node000014" title=" " alt="" coords="812,102,896,143,894,148,810,106"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="1039,152,1110,177"/>
+<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="1077,104,1077,138,1072,138,1072,104"/>
+</map>

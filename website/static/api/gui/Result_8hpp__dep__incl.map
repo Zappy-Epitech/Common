@@ -1,0 +1,51 @@
+<map id="src/network/utils/Result.hpp" name="src/network/utils/Result.hpp">
+<area shape="rect" id="Node000001" title="Alias of std::expected&lt;T, Error&gt; used as the network result type." alt="" coords="583,5,786,31"/>
+<area shape="rect" id="Node000002" href="$Net_8hpp.html" title="Convenience umbrella header pulling in the low&#45;level network API." alt="" coords="348,174,501,199"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="570,35,484,53,450,65,429,80,419,103,416,128,423,173,418,174,411,129,413,101,425,77,448,61,482,48,569,29"/>
+<area shape="rect" id="Node000003" href="$ZappySession_8hpp.html" title="Handles the Zappy GUI WELCOME/GRAPHIC handshake before forwarding lines." alt="" coords="179,79,324,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="609,36,325,87,324,82,608,30"/>
+<area shape="rect" id="Node000006" href="$SocketConnector_8hpp.html" title="Opens, configures, and connects a socket for one resolved address." alt="" coords="685,86,956,111"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="718,35,802,83,799,88,715,40"/>
+<area shape="rect" id="Node000009" href="$SocketOptions_8hpp.html" title="Helpers to set non&#45;blocking mode and TCP socket options." alt="" coords="1235,86,1489,111"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="800,29,1222,76,1279,83,1279,89,1222,81,800,34"/>
+<area shape="rect" id="Node000011" href="$SocketPoll_8hpp.html" title="poll()&#45;based readiness waits and asynchronous socket error checks." alt="" coords="981,86,1210,111"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="758,31,1036,83,1035,89,757,36"/>
+<area shape="rect" id="Node000013" href="$TcpClient_8hpp.html" title="RAII non&#45;blocking TCP client with poll&#45;based timeouts and byte helpers." alt="" coords="439,86,661,111"/>
+<area shape="poly" id="edge15_Node000001_Node000013" title=" " alt="" coords="654,40,571,88,569,83,652,35"/>
+<area shape="rect" id="Node000004" href="$ZappyClient_8cpp.html" title="Implements the threaded Zappy client worker loop and queue handling." alt="" coords="194,255,333,295"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="205,129,185,146,170,168,164,187,170,205,192,233,221,252,218,257,188,236,165,208,159,187,165,166,181,143,201,125"/>
+<area shape="rect" id="Node000005" href="$ZappySession_8cpp.html" title="Implements the GUI WELCOME handshake and bootstrap command sequence." alt="" coords="179,167,323,207"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="254,133,254,166,249,166,249,133"/>
+<area shape="rect" id="Node000007" href="$SocketConnector_8cpp.html" title="Implements non&#45;blocking connect with timeout for one resolved address." alt="" coords="934,174,1203,199"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="868,113,1036,171,1034,176,866,119"/>
+<area shape="rect" id="Node000008" href="$TcpClient_8cpp.html" title="Implements TCP connect, send/receive with poll timeouts, and byte helpers." alt="" coords="689,174,909,199"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="817,125,805,174,800,173,812,124"/>
+<area shape="poly" id="edge9_Node000009_Node000007" title=" " alt="" coords="1310,118,1109,176,1107,171,1309,113"/>
+<area shape="rect" id="Node000010" href="$SocketOptions_8cpp.html" title="Implements non&#45;blocking mode and TCP_NODELAY/SO_KEEPALIVE configuration." alt="" coords="1480,174,1735,199"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="1409,113,1575,171,1574,176,1407,119"/>
+<area shape="poly" id="edge12_Node000011_Node000007" title=" " alt="" coords="1090,125,1075,174,1070,173,1085,123"/>
+<area shape="poly" id="edge14_Node000011_Node000008" title=" " alt="" coords="1043,118,840,176,838,171,1042,113"/>
+<area shape="rect" id="Node000012" href="$SocketPoll_8cpp.html" title="Implements poll()&#45;based readiness waits and SO_ERROR checks." alt="" coords="1228,174,1456,199"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="1142,113,1310,171,1308,176,1141,119"/>
+<area shape="poly" id="edge16_Node000013_Node000002" title=" " alt="" coords="523,121,443,176,440,172,520,117"/>
+<area shape="poly" id="edge26_Node000013_Node000005" title=" " alt="" coords="497,118,318,169,316,164,496,113"/>
+<area shape="poly" id="edge27_Node000013_Node000007" title=" " alt="" coords="633,111,1000,171,999,177,632,116"/>
+<area shape="poly" id="edge28_Node000013_Node000008" title=" " alt="" coords="598,113,767,171,765,176,596,119"/>
+<area shape="rect" id="Node000014" href="$ZappyClient_8hpp.html" title="Threaded Zappy GUI client exchanging protocol lines via queues." alt="" coords="526,167,665,207"/>
+<area shape="poly" id="edge17_Node000013_Node000014" title=" " alt="" coords="565,122,588,165,583,167,560,125"/>
+<area shape="poly" id="edge25_Node000014_Node000004" title=" " alt="" coords="513,212,334,258,332,253,512,207"/>
+<area shape="rect" id="Node000015" href="$NetworkModule_8hpp.html" title="Flecs module and helpers bridging the threaded client into the ECS world." alt="" coords="479,262,712,287"/>
+<area shape="poly" id="edge18_Node000014_Node000015" title=" " alt="" coords="598,221,598,262,593,262,593,221"/>
+<area shape="rect" id="Node000016" href="$main_8cpp.html" title="Application entry point: builds the flecs world, imports modules, and runs the app loop." alt="" coords="5,343,111,368"/>
+<area shape="poly" id="edge19_Node000015_Node000016" title=" " alt="" coords="496,292,124,345,111,347,110,342,123,340,495,287"/>
+<area shape="rect" id="Node000017" href="$NetworkModule_8cpp.html" title="Implements the network Flecs module, drain system, and connect/disconnect helpers." alt="" coords="135,343,367,368"/>
+<area shape="poly" id="edge20_Node000015_Node000017" title=" " alt="" coords="533,293,302,345,301,340,532,288"/>
+<area shape="rect" id="Node000018" href="$EndGame_8cpp.html" title="Implements the end&#45;game scene: winner summary panel and &quot;Back home&quot; button." alt="" coords="391,343,575,368"/>
+<area shape="poly" id="edge21_Node000015_Node000018" title=" " alt="" coords="569,298,501,345,498,340,566,293"/>
+<area shape="rect" id="Node000019" href="$GameLifecycle_8cpp.html" title="Implements the game scene enter/exit observers and their UI buttons." alt="" coords="599,343,818,368"/>
+<area shape="poly" id="edge22_Node000015_Node000019" title=" " alt="" coords="625,293,693,340,690,345,622,297"/>
+<area shape="rect" id="Node000020" href="$GameUi_8cpp.html" title="Implements the in&#45;game HUD: broadcast bubbles, team/player panels, inventory modal and frequency slid..." alt="" coords="843,343,1017,368"/>
+<area shape="poly" id="edge23_Node000015_Node000020" title=" " alt="" coords="658,288,882,340,881,345,657,293"/>
+<area shape="rect" id="Node000021" href="$Home_8cpp.html" title="Implements the home scene: server connection form and port parsing." alt="" coords="1042,343,1202,368"/>
+<area shape="poly" id="edge24_Node000015_Node000021" title=" " alt="" coords="686,287,1046,340,1045,345,685,292"/>
+</map>

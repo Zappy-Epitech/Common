@@ -1,0 +1,7 @@
+<map id="src/network/client/ZappySession.hpp" name="src/network/client/ZappySession.hpp">
+<area shape="rect" id="Node000001" title="Handles the Zappy GUI WELCOME/GRAPHIC handshake before forwarding lines." alt="" coords="85,5,230,45"/>
+<area shape="rect" id="Node000002" href="$ZappyClient_8cpp.html" title="Implements the threaded Zappy client worker loop and queue handling." alt="" coords="5,93,144,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,57,95,95,91,91,127,54"/>
+<area shape="rect" id="Node000003" href="$ZappySession_8cpp.html" title="Implements the GUI WELCOME handshake and bootstrap command sequence." alt="" coords="168,93,312,133"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="187,54,224,91,220,95,183,57"/>
+</map>

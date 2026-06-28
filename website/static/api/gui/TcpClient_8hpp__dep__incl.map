@@ -1,0 +1,29 @@
+<map id="src/network/core/TcpClient.hpp" name="src/network/core/TcpClient.hpp">
+<area shape="rect" id="Node000001" title="RAII non&#45;blocking TCP client with poll&#45;based timeouts and byte helpers." alt="" coords="755,5,977,31"/>
+<area shape="rect" id="Node000002" href="$Net_8hpp.html" title="Convenience umbrella header pulling in the low&#45;level network API." alt="" coords="453,86,607,111"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="804,36,580,89,578,83,803,31"/>
+<area shape="rect" id="Node000003" href="$ZappyClient_8hpp.html" title="Threaded Zappy GUI client exchanging protocol lines via queues." alt="" coords="631,79,770,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="831,39,742,81,740,76,829,34"/>
+<area shape="rect" id="Node000012" href="$ZappySession_8cpp.html" title="Implements the GUI WELCOME handshake and bootstrap command sequence." alt="" coords="794,79,938,119"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="869,44,869,79,863,79,863,44"/>
+<area shape="rect" id="Node000013" href="$SocketConnector_8cpp.html" title="Implements non&#45;blocking connect with timeout for one resolved address." alt="" coords="962,86,1231,111"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="913,33,1064,83,1062,89,912,38"/>
+<area shape="rect" id="Node000014" href="$TcpClient_8cpp.html" title="Implements TCP connect, send/receive with poll timeouts, and byte helpers." alt="" coords="1256,86,1476,111"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="952,30,1294,83,1293,89,951,35"/>
+<area shape="rect" id="Node000004" href="$NetworkModule_8hpp.html" title="Flecs module and helpers bridging the threaded client into the ECS world." alt="" coords="479,174,712,199"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="668,130,612,176,608,171,665,126"/>
+<area shape="rect" id="Node000011" href="$ZappyClient_8cpp.html" title="Implements the threaded Zappy client worker loop and queue handling." alt="" coords="737,167,875,207"/>
+<area shape="poly" id="edge10_Node000003_Node000011" title=" " alt="" coords="736,125,784,164,781,169,733,129"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html" title="Application entry point: builds the flecs world, imports modules, and runs the app loop." alt="" coords="5,255,111,280"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="496,204,124,257,111,259,110,254,123,252,495,199"/>
+<area shape="rect" id="Node000006" href="$NetworkModule_8cpp.html" title="Implements the network Flecs module, drain system, and connect/disconnect helpers." alt="" coords="135,255,367,280"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="533,205,302,257,301,252,532,200"/>
+<area shape="rect" id="Node000007" href="$EndGame_8cpp.html" title="Implements the end&#45;game scene: winner summary panel and &quot;Back home&quot; button." alt="" coords="391,255,575,280"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="569,210,501,257,498,252,566,205"/>
+<area shape="rect" id="Node000008" href="$GameLifecycle_8cpp.html" title="Implements the game scene enter/exit observers and their UI buttons." alt="" coords="599,255,818,280"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="625,205,693,252,690,257,622,209"/>
+<area shape="rect" id="Node000009" href="$GameUi_8cpp.html" title="Implements the in&#45;game HUD: broadcast bubbles, team/player panels, inventory modal and frequency slid..." alt="" coords="843,255,1017,280"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="658,200,882,252,881,257,657,205"/>
+<area shape="rect" id="Node000010" href="$Home_8cpp.html" title="Implements the home scene: server connection form and port parsing." alt="" coords="1042,255,1202,280"/>
+<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="686,199,1046,252,1045,257,685,204"/>
+</map>

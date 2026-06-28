@@ -1,0 +1,9 @@
+<map id="src/scenes/EndGame.hpp" name="src/scenes/EndGame.hpp">
+<area shape="rect" id="Node000001" title="End&#45;game scene state and the flecs module that registers it." alt="" coords="200,5,385,31"/>
+<area shape="rect" id="Node000002" href="$ServerCommand_8cpp.html" title="Applies time&#45;unit, game&#45;end and server&#45;message protocol events." alt="" coords="5,79,172,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="251,38,139,81,137,76,249,33"/>
+<area shape="rect" id="Node000003" href="$AppScenes_8cpp.html" title="Imports the Home, Game, EndGame and SettingsModal modules and enters the Home scene." alt="" coords="197,86,389,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="295,44,295,86,290,86,290,44"/>
+<area shape="rect" id="Node000004" href="$EndGame_8cpp.html" title="Implements the end&#45;game scene: winner summary panel and &quot;Back home&quot; button." alt="" coords="413,86,597,111"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="337,33,475,83,473,88,335,38"/>
+</map>

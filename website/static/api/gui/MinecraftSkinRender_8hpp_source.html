@@ -99,22 +99,27 @@ $(document).ready(function(){initNavTree('MinecraftSkinRender_8hpp_source.html',
   <div class="headertitle"><div class="title">MinecraftSkinRender.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;src/minecraft/MinecraftAnimation.hpp&quot;</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;raylib.h&gt;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keywordtype">void</span> DrawMinecraftHead(Texture2D skin, Rectangle bounds);</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keywordtype">void</span> DrawMinecraftPlayer(Texture2D skin, Vector3 position, <span class="keywordtype">float</span> scale, <span class="keywordtype">float</span> yaw, <span class="keyword">const</span> <a class="code hl_struct" href="structSkinPose.html">SkinPose</a> &amp;pose, Color tint);</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keywordtype">void</span> DrawMinecraftPlayerPreview3D(Texture2D skin, Rectangle bounds, Vector2 mouse);</div>
-<div class="ttc" id="astructSkinPose_html"><div class="ttname"><a href="structSkinPose.html">SkinPose</a></div><div class="ttdoc">Stores current limb angles.</div><div class="ttdef"><b>Definition</b> MinecraftAnimation.hpp:51</div></div>
+<a href="MinecraftSkinRender_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="MinecraftAnimation_8hpp.html">src/minecraft/MinecraftAnimation.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;raylib.h&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keywordtype">void</span> <a class="code hl_function" href="MinecraftSkinRender_8hpp.html#a950a6d2446054ba36f802a1cfab80996">DrawMinecraftHead</a>(Texture2D skin, Rectangle bounds);</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keywordtype">void</span> <a class="code hl_function" href="MinecraftSkinRender_8hpp.html#af4e98513a59de057f9fa5e34e9a7b083">DrawMinecraftPlayer</a>(Texture2D skin, Vector3 position, <span class="keywordtype">float</span> scale, <span class="keywordtype">float</span> yaw, <span class="keyword">const</span> <a class="code hl_struct" href="structSkinPose.html">SkinPose</a> &amp;pose, Color tint);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keywordtype">void</span> <a class="code hl_function" href="MinecraftSkinRender_8hpp.html#a4bb33334595bde84396e355c315064d1">DrawMinecraftPlayerPreview3D</a>(Texture2D skin, Rectangle bounds, Vector2 mouse);</div>
+<div class="ttc" id="aMinecraftAnimation_8hpp_html"><div class="ttname"><a href="MinecraftAnimation_8hpp.html">MinecraftAnimation.hpp</a></div><div class="ttdoc">Skin animation data (keyframe tracks, poses) and the flecs module that updates them.</div></div>
+<div class="ttc" id="aMinecraftSkinRender_8hpp_html_a4bb33334595bde84396e355c315064d1"><div class="ttname"><a href="MinecraftSkinRender_8hpp.html#a4bb33334595bde84396e355c315064d1">DrawMinecraftPlayerPreview3D</a></div><div class="ttdeci">void DrawMinecraftPlayerPreview3D(Texture2D skin, Rectangle bounds, Vector2 mouse)</div><div class="ttdoc">Draws a 3D inventory player preview whose head tracks the mouse.</div><div class="ttdef"><b>Definition</b> MinecraftSkinRender.cpp:200</div></div>
+<div class="ttc" id="aMinecraftSkinRender_8hpp_html_a950a6d2446054ba36f802a1cfab80996"><div class="ttname"><a href="MinecraftSkinRender_8hpp.html#a950a6d2446054ba36f802a1cfab80996">DrawMinecraftHead</a></div><div class="ttdeci">void DrawMinecraftHead(Texture2D skin, Rectangle bounds)</div><div class="ttdoc">Draws the front face of a Minecraft skin head in 2D.</div><div class="ttdef"><b>Definition</b> MinecraftSkinRender.cpp:142</div></div>
+<div class="ttc" id="aMinecraftSkinRender_8hpp_html_af4e98513a59de057f9fa5e34e9a7b083"><div class="ttname"><a href="MinecraftSkinRender_8hpp.html#af4e98513a59de057f9fa5e34e9a7b083">DrawMinecraftPlayer</a></div><div class="ttdeci">void DrawMinecraftPlayer(Texture2D skin, Vector3 position, float scale, float yaw, const SkinPose &amp;pose, Color tint)</div><div class="ttdoc">Draws a full 3D Minecraft player.</div><div class="ttdef"><b>Definition</b> MinecraftSkinRender.cpp:161</div></div>
+<div class="ttc" id="astructSkinPose_html"><div class="ttname"><a href="structSkinPose.html">SkinPose</a></div><div class="ttdoc">Stores current limb angles.</div><div class="ttdef"><b>Definition</b> MinecraftAnimation.hpp:56</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_d36229ec282710cd9bcc2afbc435b6b9.html">minecraft</a></li><li class="navelem"><b>MinecraftSkinRender.hpp</b></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_d36229ec282710cd9bcc2afbc435b6b9.html">minecraft</a></li><li class="navelem"><a class="el" href="MinecraftSkinRender_8hpp.html">MinecraftSkinRender.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

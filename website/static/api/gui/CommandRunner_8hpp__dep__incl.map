@@ -1,0 +1,13 @@
+<map id="src/protocol/command/CommandRunner.hpp" name="src/protocol/command/CommandRunner.hpp">
+<area shape="rect" id="Node000001" title="Entry point that parses a server command and applies it to the world." alt="" coords="392,5,559,45"/>
+<area shape="rect" id="Node000002" href="$main_8cpp.html" title="Application entry point: builds the flecs world, imports modules, and runs the app loop." alt="" coords="5,101,111,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="379,45,257,68,124,96,96,103,95,98,123,91,256,62,378,40"/>
+<area shape="rect" id="Node000003" href="$NetworkModule_8cpp.html" title="Implements the network Flecs module, drain system, and connect/disconnect helpers." alt="" coords="135,101,367,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="414,53,282,103,280,98,412,48"/>
+<area shape="rect" id="Node000004" href="$CommandRunner_8cpp.html" title="Visits the parsed protocol event and dispatches to the apply* handlers." alt="" coords="392,93,559,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="478,59,478,93,473,93,473,59"/>
+<area shape="rect" id="Node000005" href="$Game_8cpp.html" title="Implements the game scene module: registers gameplay components and imports its sub&#45;modules." alt="" coords="583,101,743,126"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="530,49,639,98,637,103,528,53"/>
+<area shape="rect" id="Node000006" href="$GameLifecycle_8cpp.html" title="Implements the game scene enter/exit observers and their UI buttons." alt="" coords="767,101,986,126"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="573,45,824,98,823,103,572,50"/>
+</map>

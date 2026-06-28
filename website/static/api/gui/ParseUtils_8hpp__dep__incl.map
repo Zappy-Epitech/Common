@@ -1,0 +1,12 @@
+<map id="src/protocol/ParseUtils.hpp" name="src/protocol/ParseUtils.hpp">
+<area shape="rect" id="Node000001" title="Low&#45;level token helpers for parsing Zappy server protocol lines." alt="" coords="287,5,481,31"/>
+<area shape="rect" id="Node000002" href="$CommandParsers_8hpp.html" title="Table mapping Zappy command names to their argument parsers." alt="" coords="102,79,346,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="347,39,251,81,249,76,345,34"/>
+<area shape="rect" id="Node000004" href="$ZappyProtocol_8cpp.html" title="Implements line dispatch to per&#45;command parsers for the Zappy protocol." alt="" coords="273,152,495,177"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="387,45,387,152,381,152,381,45"/>
+<area shape="rect" id="Node000005" href="$ParseUtils_8cpp.html" title="Implementations of the low&#45;level protocol token helpers." alt="" coords="421,79,616,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="419,35,498,76,495,81,416,39"/>
+<area shape="rect" id="Node000003" href="$CommandParsers_8cpp.html" title="Per&#45;command argument parsers and the command dispatch table." alt="" coords="5,152,248,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="199,114,144,154,141,150,196,110"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="263,107,359,149,357,154,261,112"/>
+</map>

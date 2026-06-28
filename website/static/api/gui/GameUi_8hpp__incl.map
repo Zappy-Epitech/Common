@@ -1,0 +1,37 @@
+<map id="src/scenes/GameUi.hpp" name="src/scenes/GameUi.hpp">
+<area shape="rect" id="Node000001" title="In&#45;game UI state singleton and the flecs module that draws the HUD." alt="" coords="830,5,1005,31"/>
+<area shape="rect" id="Node000002" href="$flecs_8h_source.html" title=" " alt="" coords="361,79,495,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="839,33,509,81,508,76,838,28"/>
+<area shape="rect" id="Node000011" href="$ZappyProtocol_8hpp.html" title="Protocol event types and the line parser for the Zappy server feed." alt="" coords="940,79,1164,104"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="940,28,1019,70,1017,74,938,33"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="784,152,859,177"/>
+<area shape="poly" id="edge17_Node000001_Node000014" title=" " alt="" coords="912,33,839,142,834,139,907,30"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="1237,152,1296,177"/>
+<area shape="poly" id="edge18_Node000001_Node000015" title=" " alt="" coords="1006,25,1091,43,1135,57,1177,76,1219,106,1251,139,1247,143,1215,110,1175,81,1133,62,1090,48,1005,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,152,80,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="361,106,94,154,93,149,360,101"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="104,152,179,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="383,107,193,153,191,148,381,101"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="203,152,274,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="399,107,283,149,282,144,397,102"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="298,152,369,177"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="414,106,361,146,358,141,411,102"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="393,152,463,177"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="431,104,431,138,425,138,425,104"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="488,152,571,177"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="446,102,503,142,500,146,443,106"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="595,152,669,177"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="462,102,587,145,585,150,460,107"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="693,152,760,177"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="477,101,681,149,681,150,680,155,679,155,476,107"/>
+<area shape="rect" id="Node000012" href="$Spatial_8hpp.html" title="Spatial component definitions (positions, sizes, rotation, scale, orientation) and module." alt="" coords="883,152,1034,177"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="1039,106,986,146,983,141,1035,102"/>
+<area shape="poly" id="edge13_Node000011_Node000014" title=" " alt="" coords="1016,107,872,151,871,145,1014,101"/>
+<area shape="poly" id="edge14_Node000011_Node000015" title=" " alt="" coords="1087,101,1225,147,1223,152,1086,107"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="1058,152,1126,177"/>
+<area shape="poly" id="edge15_Node000011_Node000016" title=" " alt="" coords="1061,103,1081,139,1076,141,1056,106"/>
+<area shape="rect" id="Node000017" title=" " alt="" coords="1150,152,1213,177"/>
+<area shape="poly" id="edge16_Node000011_Node000017" title=" " alt="" coords="1074,102,1149,143,1147,147,1072,106"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="923,225,994,251"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="961,178,961,212,956,212,956,178"/>
+</map>

@@ -120,14 +120,14 @@ Collaboration diagram for SkinAnimation:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a85ce33810c2ea27d06f8d0e368d2a876" id="r_a85ce33810c2ea27d06f8d0e368d2a876"><td class="memItemLeft" align="right" valign="top"><a id="a85ce33810c2ea27d06f8d0e368d2a876" name="a85ce33810c2ea27d06f8d0e368d2a876"></a>
-<a class="el" href="structSkinAnimation.html">SkinAnimation</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>limb</b> (Limb l, std::initializer_list&lt; <a class="el" href="structKeyframe.html">Keyframe</a> &gt; keys)</td></tr>
+<a class="el" href="structSkinAnimation.html">SkinAnimation</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>limb</b> (<a class="el" href="MinecraftAnimation_8hpp.html#a8d2157208a1a044e5d152dfd6470386c">Limb</a> l, std::initializer_list&lt; <a class="el" href="structKeyframe.html">Keyframe</a> &gt; keys)</td></tr>
 <tr class="memdesc:a85ce33810c2ea27d06f8d0e368d2a876"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds keyframes for one limb. <br /></td></tr>
 <tr class="separator:a85ce33810c2ea27d06f8d0e368d2a876"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a5fb31636fb8469a6de2c9f49d1eff284" id="r_a5fb31636fb8469a6de2c9f49d1eff284"><td class="memItemLeft" align="right" valign="top"><a id="a5fb31636fb8469a6de2c9f49d1eff284" name="a5fb31636fb8469a6de2c9f49d1eff284"></a>
-static <a class="el" href="structSkinAnimation.html">SkinAnimation</a>&#160;</td><td class="memItemRight" valign="bottom"><b>build</b> (float duration, bool loop=true)</td></tr>
+static <a class="el" href="structSkinAnimation.html">SkinAnimation</a>&#160;</td><td class="memItemRight" valign="bottom"><b>build</b> (float <a class="el" href="structSkinAnimation.html#a830619d11e7d93d880f1eafbc188104e">duration</a>, bool <a class="el" href="structSkinAnimation.html#a16be50a750bf186ed76f3e763eb3f840">loop</a>=true)</td></tr>
 <tr class="memdesc:a5fb31636fb8469a6de2c9f49d1eff284"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an animation clip. <br /></td></tr>
 <tr class="separator:a5fb31636fb8469a6de2c9f49d1eff284"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -135,19 +135,22 @@ static <a class="el" href="structSkinAnimation.html">SkinAnimation</a>&#160;</td
 Public Attributes</h2></td></tr>
 <tr class="memitem:a14a97617185b33f083b4e48ff1330b17" id="r_a14a97617185b33f083b4e48ff1330b17"><td class="memItemLeft" align="right" valign="top"><a id="a14a97617185b33f083b4e48ff1330b17" name="a14a97617185b33f083b4e48ff1330b17"></a>
 <a class="el" href="structLimbTrack.html">LimbTrack</a>&#160;</td><td class="memItemRight" valign="bottom"><b>tracks</b> [4]</td></tr>
+<tr class="memdesc:a14a97617185b33f083b4e48ff1330b17"><td class="mdescLeft">&#160;</td><td class="mdescRight">One keyframe track per limb, indexed by <a class="el" href="MinecraftAnimation_8hpp.html#a8d2157208a1a044e5d152dfd6470386c" title="Identifies an animated limb.">Limb</a>. <br /></td></tr>
 <tr class="separator:a14a97617185b33f083b4e48ff1330b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a830619d11e7d93d880f1eafbc188104e" id="r_a830619d11e7d93d880f1eafbc188104e"><td class="memItemLeft" align="right" valign="top"><a id="a830619d11e7d93d880f1eafbc188104e" name="a830619d11e7d93d880f1eafbc188104e"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>duration</b> = 1.0f</td></tr>
+<tr class="memdesc:a830619d11e7d93d880f1eafbc188104e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total clip length, in seconds. <br /></td></tr>
 <tr class="separator:a830619d11e7d93d880f1eafbc188104e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16be50a750bf186ed76f3e763eb3f840" id="r_a16be50a750bf186ed76f3e763eb3f840"><td class="memItemLeft" align="right" valign="top"><a id="a16be50a750bf186ed76f3e763eb3f840" name="a16be50a750bf186ed76f3e763eb3f840"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>loop</b> = true</td></tr>
+<tr class="memdesc:a16be50a750bf186ed76f3e763eb3f840"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether playback wraps around at <a class="el" href="structSkinAnimation.html#a830619d11e7d93d880f1eafbc188104e">duration</a>. <br /></td></tr>
 <tr class="separator:a16be50a750bf186ed76f3e763eb3f840"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Stores a skin animation clip. </p>
 </div><hr/>The documentation for this struct was generated from the following files:<ul>
 <li>src/minecraft/<a class="el" href="MinecraftAnimation_8hpp_source.html">MinecraftAnimation.hpp</a></li>
-<li>src/minecraft/<b>MinecraftAnimation.cpp</b></li>
+<li>src/minecraft/<a class="el" href="MinecraftAnimation_8cpp.html">MinecraftAnimation.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -98,6 +98,9 @@ $(document).ready(function(){initNavTree('classnet_1_1ZappyClient.html',''); ini
 </div><!--header-->
 <div class="contents">
 
+<p>Threaded Zappy GUI client.  
+ <a href="classnet_1_1ZappyClient.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="ZappyClient_8hpp_source.html">ZappyClient.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -118,21 +121,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a34b5392468ac0a2c510105f8cdc4ebc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prevents assigning the thread and queues. <br /></td></tr>
 <tr class="separator:a34b5392468ac0a2c510105f8cdc4ebc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab48337b2c68729addf6f31ae049626a" id="r_aab48337b2c68729addf6f31ae049626a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1ZappyClient.html#aab48337b2c68729addf6f31ae049626a">start</a> (std::string host, std::uint16_t port)</td></tr>
-<tr class="memdesc:aab48337b2c68729addf6f31ae049626a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a worker that connects to the given server.  <br /></td></tr>
+<tr class="memdesc:aab48337b2c68729addf6f31ae049626a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a worker thread that connects to the given server.  <br /></td></tr>
 <tr class="separator:aab48337b2c68729addf6f31ae049626a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a185b54a0bbfd1772ef23cf4d371bce7c" id="r_a185b54a0bbfd1772ef23cf4d371bce7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1ZappyClient.html#a185b54a0bbfd1772ef23cf4d371bce7c">stop</a> ()</td></tr>
 <tr class="memdesc:a185b54a0bbfd1772ef23cf4d371bce7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops the worker and marks the client disconnected.  <br /></td></tr>
 <tr class="separator:a185b54a0bbfd1772ef23cf4d371bce7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7f8ce1be88c94346ae7155dfd453c61" id="r_ac7f8ce1be88c94346ae7155dfd453c61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1ZappyClient.html#ac7f8ce1be88c94346ae7155dfd453c61">send</a> (std::string command)</td></tr>
-<tr class="memdesc:ac7f8ce1be88c94346ae7155dfd453c61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queues a command for the network thread.  <br /></td></tr>
+<tr class="memdesc:ac7f8ce1be88c94346ae7155dfd453c61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queues a command for the network thread to send.  <br /></td></tr>
 <tr class="separator:ac7f8ce1be88c94346ae7155dfd453c61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9adfe5db4b94970c26017575e6138c18" id="r_a9adfe5db4b94970c26017575e6138c18"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1ZappyClient.html#a9adfe5db4b94970c26017575e6138c18">pollLine</a> (std::string &amp;out)</td></tr>
 <tr class="memdesc:a9adfe5db4b94970c26017575e6138c18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pops one complete server line, if available.  <br /></td></tr>
 <tr class="separator:a9adfe5db4b94970c26017575e6138c18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45eb4c37ba452af19ce8e65d553fb69e" id="r_a45eb4c37ba452af19ce8e65d553fb69e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1ZappyClient.html#a45eb4c37ba452af19ce8e65d553fb69e">pollError</a> (std::string &amp;out)</td></tr>
-<tr class="memdesc:a45eb4c37ba452af19ce8e65d553fb69e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pops one network error message, if available.  <br /></td></tr>
+<tr class="memdesc:a45eb4c37ba452af19ce8e65d553fb69e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pops one network/transport error message, if available.  <br /></td></tr>
 <tr class="separator:a45eb4c37ba452af19ce8e65d553fb69e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f7fcc00fb90e3dc9b946da3b7f6130a" id="r_a4f7fcc00fb90e3dc9b946da3b7f6130a"><td class="memItemLeft" align="right" valign="top">ClientStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1ZappyClient.html#a4f7fcc00fb90e3dc9b946da3b7f6130a">getStatus</a> () const</td></tr>
+<tr class="memitem:a4f7fcc00fb90e3dc9b946da3b7f6130a" id="r_a4f7fcc00fb90e3dc9b946da3b7f6130a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ZappyClient_8hpp.html#aa6faa9f5977e867db9cc133d4641ee53">ClientStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1ZappyClient.html#a4f7fcc00fb90e3dc9b946da3b7f6130a">getStatus</a> () const</td></tr>
 <tr class="memdesc:a4f7fcc00fb90e3dc9b946da3b7f6130a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the last known connection status.  <br /></td></tr>
 <tr class="separator:a4f7fcc00fb90e3dc9b946da3b7f6130a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6e28474a5a6c20e58c09eddfb0f95c0" id="r_af6e28474a5a6c20e58c09eddfb0f95c0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnet_1_1ZappyClient.html#af6e28474a5a6c20e58c09eddfb0f95c0">getStatusMessage</a> () const</td></tr>
@@ -140,8 +143,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af6e28474a5a6c20e58c09eddfb0f95c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Threaded Zappy GUI client.</p>
-<p>This class owns the TCP client on a worker thread. The main/Flecs thread communicates with it by queueing outgoing commands and polling complete incoming protocol lines. </p>
+<div class="textblock"><p>Threaded Zappy GUI client. </p>
+<p>This class owns the TCP client on a worker thread. The main/Flecs thread communicates with it by queueing outgoing commands and polling complete incoming protocol lines. All public methods are safe to call from the main thread; access to the shared queues and status is guarded by an internal mutex. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a73e1639a2a975e205a2cbabf0c95f58a" name="a73e1639a2a975e205a2cbabf0c95f58a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a73e1639a2a975e205a2cbabf0c95f58a">&#9670;&#160;</a></span>~ZappyClient()</h2>
@@ -171,7 +174,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">ClientStatus net::ZappyClient::getStatus </td>
+          <td class="memname"><a class="el" href="ZappyClient_8hpp.html#aa6faa9f5977e867db9cc133d4641ee53">ClientStatus</a> net::ZappyClient::getStatus </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -180,7 +183,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the last known connection status. </p>
-<p>Reads the last known worker status in a thread-safe way. </p>
+<p>Reads the last known worker status in a thread-safe way.</p>
+<dl class="section return"><dt>Returns</dt><dd>The current ClientStatus, read under the internal mutex. </dd></dl>
 
 </div>
 </div>
@@ -200,7 +204,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the last known connection status message. </p>
-<p>Reads the last known worker status message in a thread-safe way. </p>
+<p>Reads the last known worker status message in a thread-safe way.</p>
+<dl class="section return"><dt>Returns</dt><dd>A copy of the display-ready status string, read under the internal mutex. </dd></dl>
 
 </div>
 </div>
@@ -220,8 +225,15 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Pops one network error message, if available. </p>
-<p>Pops one network/protocol transport error for the ECS thread. </p>
+<p>Pops one network/transport error message, if available. </p>
+<p>Pops one network/protocol transport error for the ECS thread.</p>
+<p>Non-blocking. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td>Receives the next error message on success. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if an error was dequeued into <code>out</code>, false if none is available. </dd></dl>
 
 </div>
 </div>
@@ -242,7 +254,14 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Pops one complete server line, if available. </p>
-<p>Pops one complete server line for the ECS thread. </p>
+<p>Pops one complete server line for the ECS thread.</p>
+<p>Non-blocking. Intended to be polled every frame by the ECS thread. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td>Receives the next complete protocol line on success. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if a line was dequeued into <code>out</code>, false if none is available. </dd></dl>
 
 </div>
 </div>
@@ -262,8 +281,14 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Queues a command for the network thread. </p>
-<p>Queues a command that will be sent by the network thread. </p>
+<p>Queues a command for the network thread to send. </p>
+<p>Queues a command that will be sent by the network thread.</p>
+<p>Non-blocking; the command is newline-terminated and enqueued, then sent by the worker on its next loop iteration. The outgoing queue is bounded, so the oldest command is dropped if it is full. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">command</td><td>Protocol command to send (a trailing newline is added if missing). </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -293,7 +318,14 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Starts a worker that connects to the given server. </p>
+<p>Starts a worker thread that connects to the given server. </p>
+<p>Stops any previous worker, clears the queues, sets status to Connecting, then spawns the worker that owns the socket. Returns immediately; the connection result is reported asynchronously through <a class="el" href="classnet_1_1ZappyClient.html#a4f7fcc00fb90e3dc9b946da3b7f6130a" title="Returns the last known connection status.">getStatus()</a>/pollError(). </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">host</td><td>Server hostname or IP to resolve and connect to. </td></tr>
+    <tr><td class="paramname">port</td><td>Server TCP port.</td></tr>
+  </table>
+  </dd>
+</dl>
 <p>Starts a fresh network worker.</p>
 <p>The socket is owned by the worker thread, not by Flecs. The render/ECS thread only communicates with it through the incoming/outgoing/error queues. </p>
 
@@ -315,13 +347,14 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Stops the worker and marks the client disconnected. </p>
-<p>Requests the worker thread to stop and waits for it to exit. </p>
+<p>Requests the worker thread to stop and waits for it to exit.</p>
+<p>Requests the worker to stop and joins it (blocking until it exits), then sets status to Disconnected. Safe to call when no worker is running. </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/network/client/<a class="el" href="ZappyClient_8hpp_source.html">ZappyClient.hpp</a></li>
-<li>src/network/client/<b>ZappyClient.cpp</b></li>
+<li>src/network/client/<a class="el" href="ZappyClient_8cpp.html">ZappyClient.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

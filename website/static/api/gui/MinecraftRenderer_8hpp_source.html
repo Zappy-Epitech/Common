@@ -99,36 +99,40 @@ $(document).ready(function(){initNavTree('MinecraftRenderer_8hpp_source.html',''
   <div class="headertitle"><div class="title">MinecraftRenderer.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;raylib.h&gt;</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span>flecs {</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">struct </span>world;</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>}</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="foldopen" id="foldopen00009" data-start="{" data-end="};">
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="structMinecraftSkin.html">    9</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structMinecraftSkin.html">MinecraftSkin</a> {</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keywordtype">float</span> scale = 1.0f;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>};</div>
-</div>
+<a href="MinecraftRenderer_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;raylib.h&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span>flecs {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">struct </span>world;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>}</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keywordtype">void</span> DrawMinecraftHead(Texture2D skin, Rectangle bounds);</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keywordtype">void</span> DrawMinecraftPlayerPreview3D(Texture2D skin, Rectangle bounds, Vector2 mouse);</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="foldopen" id="foldopen00020" data-start="{" data-end="};">
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="structMinecraftRenderer.html">   20</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structMinecraftRenderer.html">MinecraftRenderer</a> {</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_struct" href="structMinecraftRenderer.html">MinecraftRenderer</a>(flecs::world &amp;world);</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>};</div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="structMinecraftSkin.html">   14</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structMinecraftSkin.html">MinecraftSkin</a> {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="structMinecraftSkin.html#a5e9ec016873a62554626de78ba54aaf2">   15</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="structMinecraftSkin.html#a5e9ec016873a62554626de78ba54aaf2">scale</a> = 1.0f; </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>};</div>
 </div>
-<div class="ttc" id="astructMinecraftRenderer_html"><div class="ttname"><a href="structMinecraftRenderer.html">MinecraftRenderer</a></div><div class="ttdoc">Registers Minecraft skin rendering.</div><div class="ttdef"><b>Definition</b> MinecraftRenderer.hpp:20</div></div>
-<div class="ttc" id="astructMinecraftSkin_html"><div class="ttname"><a href="structMinecraftSkin.html">MinecraftSkin</a></div><div class="ttdoc">Stores Minecraft skin render settings.</div><div class="ttdef"><b>Definition</b> MinecraftRenderer.hpp:9</div></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keywordtype">void</span> <a class="code hl_function" href="MinecraftRenderer_8hpp.html#a950a6d2446054ba36f802a1cfab80996">DrawMinecraftHead</a>(Texture2D skin, Rectangle bounds);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keywordtype">void</span> <a class="code hl_function" href="MinecraftRenderer_8hpp.html#a4bb33334595bde84396e355c315064d1">DrawMinecraftPlayerPreview3D</a>(Texture2D skin, Rectangle bounds, Vector2 mouse);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="foldopen" id="foldopen00031" data-start="{" data-end="};">
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="structMinecraftRenderer.html">   31</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structMinecraftRenderer.html">MinecraftRenderer</a> {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_struct" href="structMinecraftRenderer.html">MinecraftRenderer</a>(flecs::world &amp;world);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>};</div>
+</div>
+<div class="ttc" id="aMinecraftRenderer_8hpp_html_a4bb33334595bde84396e355c315064d1"><div class="ttname"><a href="MinecraftRenderer_8hpp.html#a4bb33334595bde84396e355c315064d1">DrawMinecraftPlayerPreview3D</a></div><div class="ttdeci">void DrawMinecraftPlayerPreview3D(Texture2D skin, Rectangle bounds, Vector2 mouse)</div><div class="ttdoc">Draws a 3D inventory player preview whose head tracks the mouse.</div><div class="ttdef"><b>Definition</b> MinecraftSkinRender.cpp:200</div></div>
+<div class="ttc" id="aMinecraftRenderer_8hpp_html_a950a6d2446054ba36f802a1cfab80996"><div class="ttname"><a href="MinecraftRenderer_8hpp.html#a950a6d2446054ba36f802a1cfab80996">DrawMinecraftHead</a></div><div class="ttdeci">void DrawMinecraftHead(Texture2D skin, Rectangle bounds)</div><div class="ttdoc">Draws the front face of a Minecraft skin head in 2D.</div><div class="ttdef"><b>Definition</b> MinecraftSkinRender.cpp:142</div></div>
+<div class="ttc" id="astructMinecraftRenderer_html"><div class="ttname"><a href="structMinecraftRenderer.html">MinecraftRenderer</a></div><div class="ttdoc">flecs module that registers the Minecraft skin rendering system.</div><div class="ttdef"><b>Definition</b> MinecraftRenderer.hpp:31</div></div>
+<div class="ttc" id="astructMinecraftSkin_html"><div class="ttname"><a href="structMinecraftSkin.html">MinecraftSkin</a></div><div class="ttdoc">Stores Minecraft skin render settings.</div><div class="ttdef"><b>Definition</b> MinecraftRenderer.hpp:14</div></div>
+<div class="ttc" id="astructMinecraftSkin_html_a5e9ec016873a62554626de78ba54aaf2"><div class="ttname"><a href="structMinecraftSkin.html#a5e9ec016873a62554626de78ba54aaf2">MinecraftSkin::scale</a></div><div class="ttdeci">float scale</div><div class="ttdoc">World-space height scale of the rendered player model.</div><div class="ttdef"><b>Definition</b> MinecraftRenderer.hpp:15</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_d36229ec282710cd9bcc2afbc435b6b9.html">minecraft</a></li><li class="navelem"><b>MinecraftRenderer.hpp</b></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_d36229ec282710cd9bcc2afbc435b6b9.html">minecraft</a></li><li class="navelem"><a class="el" href="MinecraftRenderer_8hpp.html">MinecraftRenderer.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

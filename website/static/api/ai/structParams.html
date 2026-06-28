@@ -97,38 +97,54 @@ $(document).ready(function(){initNavTree('structParams.html',''); initResizable(
   <div class="headertitle"><div class="title">Params Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Tunable thresholds that shape the player's decisions (see <a class="el" href="Player_8hpp.html#a3c891c2286234049c56a211046df5b7e">loadParamsFromFile</a>).  
+ <a href="structParams.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Player_8hpp_source.html">Player.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:aed26994bb8d24bf95bbdb15a5caf94c0" id="r_aed26994bb8d24bf95bbdb15a5caf94c0"><td class="memItemLeft" align="right" valign="top"><a id="aed26994bb8d24bf95bbdb15a5caf94c0" name="aed26994bb8d24bf95bbdb15a5caf94c0"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>foodSurviveMin</b> = 14</td></tr>
+<tr class="memdesc:aed26994bb8d24bf95bbdb15a5caf94c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Food units at or below which the player drops to <code>SURVIVE</code>. <br /></td></tr>
 <tr class="separator:aed26994bb8d24bf95bbdb15a5caf94c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bcecf4ed22c8fe2cf05ca185c28ddba" id="r_a5bcecf4ed22c8fe2cf05ca185c28ddba"><td class="memItemLeft" align="right" valign="top"><a id="a5bcecf4ed22c8fe2cf05ca185c28ddba" name="a5bcecf4ed22c8fe2cf05ca185c28ddba"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>minFoodToUpgrade</b> = 50</td></tr>
+<tr class="memdesc:a5bcecf4ed22c8fe2cf05ca185c28ddba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimum food required before committing to an elevation. <br /></td></tr>
 <tr class="separator:a5bcecf4ed22c8fe2cf05ca185c28ddba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c6896464ee2746dbd05582a1c2124cc" id="r_a5c6896464ee2746dbd05582a1c2124cc"><td class="memItemLeft" align="right" valign="top"><a id="a5c6896464ee2746dbd05582a1c2124cc" name="a5c6896464ee2746dbd05582a1c2124cc"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>forkPatience</b> = 10</td></tr>
+<tr class="memdesc:a5c6896464ee2746dbd05582a1c2124cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ticks a host waits short-handed before forking. <br /></td></tr>
 <tr class="separator:a5c6896464ee2746dbd05582a1c2124cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a338a0af16a5f2a29e99b913fc67fcf93" id="r_a338a0af16a5f2a29e99b913fc67fcf93"><td class="memItemLeft" align="right" valign="top"><a id="a338a0af16a5f2a29e99b913fc67fcf93" name="a338a0af16a5f2a29e99b913fc67fcf93"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>huntAckWindow</b> = 2</td></tr>
+<tr class="memdesc:a338a0af16a5f2a29e99b913fc67fcf93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ticks a hunter waits for a teammate ack before ejecting. <br /></td></tr>
 <tr class="separator:a338a0af16a5f2a29e99b913fc67fcf93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad464f39839ef052cbe440b0db081fb54" id="r_ad464f39839ef052cbe440b0db081fb54"><td class="memItemLeft" align="right" valign="top"><a id="ad464f39839ef052cbe440b0db081fb54" name="ad464f39839ef052cbe440b0db081fb54"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>coopTargetPlayers</b> = 6</td></tr>
+<tr class="memdesc:ad464f39839ef052cbe440b0db081fb54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Desired cooperative band size to gather toward. <br /></td></tr>
 <tr class="separator:ad464f39839ef052cbe440b0db081fb54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3360797d8cbcccdbbe9202f8acac34bf" id="r_a3360797d8cbcccdbbe9202f8acac34bf"><td class="memItemLeft" align="right" valign="top"><a id="a3360797d8cbcccdbbe9202f8acac34bf" name="a3360797d8cbcccdbbe9202f8acac34bf"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>gatherPatience</b> = 30</td></tr>
+<tr class="memdesc:a3360797d8cbcccdbbe9202f8acac34bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ticks to gather toward the target before falling back to the minimum. <br /></td></tr>
 <tr class="separator:a3360797d8cbcccdbbe9202f8acac34bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7102dc4501bfa5a043bd2b9dc9d76a0" id="r_ab7102dc4501bfa5a043bd2b9dc9d76a0"><td class="memItemLeft" align="right" valign="top"><a id="ab7102dc4501bfa5a043bd2b9dc9d76a0" name="ab7102dc4501bfa5a043bd2b9dc9d76a0"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>grazeFoodMin</b> = 35</td></tr>
+<tr class="memdesc:ab7102dc4501bfa5a043bd2b9dc9d76a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Food comfort floor below which a waiting player grazes underfoot. <br /></td></tr>
 <tr class="separator:ab7102dc4501bfa5a043bd2b9dc9d76a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab2001bdfad4453b839a0b4d748f5981" id="r_aab2001bdfad4453b839a0b4d748f5981"><td class="memItemLeft" align="right" valign="top"><a id="aab2001bdfad4453b839a0b4d748f5981" name="aab2001bdfad4453b839a0b4d748f5981"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>poolDeficitMax</b> = 0</td></tr>
+<tr class="memdesc:aab2001bdfad4453b839a0b4d748f5981"><td class="mdescLeft">&#160;</td><td class="mdescRight">Max combined stone deficit tolerated to host a pooled upgrade. <br /></td></tr>
 <tr class="separator:aab2001bdfad4453b839a0b4d748f5981"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a307204691e5a37c191138a9a40c1c151" id="r_a307204691e5a37c191138a9a40c1c151"><td class="memItemLeft" align="right" valign="top"><a id="a307204691e5a37c191138a9a40c1c151" name="a307204691e5a37c191138a9a40c1c151"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>coopPatience</b> = 0</td></tr>
+<tr class="memdesc:a307204691e5a37c191138a9a40c1c151"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ticks a stalled host tolerates before abandoning the rally (0 = never). <br /></td></tr>
 <tr class="separator:a307204691e5a37c191138a9a40c1c151"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Tunable thresholds that shape the player's decisions (see <a class="el" href="Player_8hpp.html#a3c891c2286234049c56a211046df5b7e">loadParamsFromFile</a>). </p>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>algo/src/Player/<a class="el" href="Player_8hpp_source.html">Player.hpp</a></li>
 </ul>
 </div><!-- contents -->

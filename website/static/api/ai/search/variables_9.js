@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x_0',['x',['../structposition.html#aad0117268685890818989a6c0112ab8a',1,'position']]]
+  ['sibur_0',['sibur',['../structInventory.html#a3e9bdd95eb7844da7ec7c41af8cb11d9',1,'Inventory::sibur'],['../structUpgradeCost.html#a38bd5e593e228516e75bfa046c06474f',1,'UpgradeCost::sibur']]]
 ];

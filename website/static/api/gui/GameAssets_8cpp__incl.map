@@ -1,0 +1,39 @@
+<map id="src/gameplay/GameAssets.cpp" name="src/gameplay/GameAssets.cpp">
+<area shape="rect" id="Node000001" title="Loads skins, resource models, icons, and the egg model on startup." alt="" coords="473,5,696,31"/>
+<area shape="rect" id="Node000002" href="$GameAssets_8hpp.html" title="Shared gameplay assets singleton (skins, resource models, icons)." alt="" coords="144,79,276,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="525,33,284,79,283,73,524,28"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,152,76,177"/>
+<area shape="poly" id="edge18_Node000001_Node000004" title=" " alt="" coords="473,29,282,48,194,63,132,81,111,94,91,110,60,143,56,139,87,106,108,89,130,76,193,57,281,43,473,23"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="264,152,327,177"/>
+<area shape="poly" id="edge19_Node000001_Node000006" title=" " alt="" coords="563,33,332,148,329,143,560,28"/>
+<area shape="rect" id="Node000007" href="$flecs_8h_source.html" title=" " alt="" coords="518,79,651,104"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="587,31,587,65,582,65,582,31"/>
+<area shape="rect" id="Node000016" href="$GamePlay_8hpp.html" title="Root flecs module aggregating all gameplay sub&#45;modules." alt="" coords="676,79,883,104"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="617,28,736,71,734,76,615,33"/>
+<area shape="rect" id="Node000017" title=" " alt="" coords="907,79,993,104"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="647,28,894,76,893,81,646,33"/>
+<area shape="rect" id="Node000018" title=" " alt="" coords="1017,79,1107,104"/>
+<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="676,28,1004,76,1003,81,675,33"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="101,152,157,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="199,106,154,145,150,141,195,102"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="184,106,82,149,80,144,182,102"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="181,152,239,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="213,104,213,138,207,138,207,104"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="225,102,273,141,269,145,222,106"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="351,152,426,177"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="554,107,434,150,433,145,552,102"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="450,152,525,177"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="571,106,516,146,513,141,567,102"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="549,152,620,177"/>
+<area shape="poly" id="edge9_Node000007_Node000010" title=" " alt="" coords="587,104,587,138,582,138,582,104"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="644,152,715,177"/>
+<area shape="poly" id="edge10_Node000007_Node000011" title=" " alt="" coords="601,102,654,141,651,146,598,106"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="739,152,809,177"/>
+<area shape="poly" id="edge11_Node000007_Node000012" title=" " alt="" coords="616,102,731,144,729,149,614,107"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="834,152,917,177"/>
+<area shape="poly" id="edge12_Node000007_Node000013" title=" " alt="" coords="632,101,821,147,820,153,631,107"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="941,152,1015,177"/>
+<area shape="poly" id="edge13_Node000007_Node000014" title=" " alt="" coords="652,100,928,149,927,155,651,106"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="1039,152,1106,177"/>
+<area shape="poly" id="edge14_Node000007_Node000015" title=" " alt="" coords="652,100,665,101,844,122,924,132,1026,149,1025,155,923,137,844,127,664,107,651,105"/>
+</map>

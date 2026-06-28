@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('structCore.html',''); initResizable();
 </div><!--header-->
 <div class="contents">
 
-<p>Registers the core ECS module.  
+<p>Root ECS module of the GUI client.  
  <a href="structCore.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="Core_8hpp_source.html">Core.hpp</a>&gt;</code></p>
@@ -110,7 +110,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4c20bec5f23007ef9ad94db85ed30cbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Registers the core ECS module. </p>
+<div class="textblock"><p>Root ECS module of the GUI client. </p>
+<p>Imports the <a class="el" href="structSpatial.html" title="ECS module registering the spatial components.">Spatial</a>, <a class="el" href="structRaylib.html" title="ECS module wiring Raylib into the render pipeline.">Raylib</a>, <a class="el" href="structSettings.html" title="ECS module managing user-configurable GUI settings.">Settings</a>, <a class="el" href="structIncantationEffects.html" title="ECS module rendering incantation visual effects.">IncantationEffects</a>, <a class="el" href="structGui.html" title="ECS module providing the 2D GUI widgets and their render systems.">Gui</a> and <a class="el" href="structScenes.html" title="ECS module providing the generic scene lifecycle infrastructure.">Scenes</a> sub-modules, registers the <a class="el" href="structLifetime.html" title="Marks an entity for timed destruction.">Lifetime</a> component, and runs the LifetimeSystem that destroys entities once their <a class="el" href="structLifetime.html" title="Marks an entity for timed destruction.">Lifetime</a> expires. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4c20bec5f23007ef9ad94db85ed30cbe" name="a4c20bec5f23007ef9ad94db85ed30cbe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4c20bec5f23007ef9ad94db85ed30cbe">&#9670;&#160;</a></span>Core()</h2>
@@ -135,7 +136,7 @@ Public Member Functions</h2></td></tr>
 </div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li>src/core/<a class="el" href="Core_8hpp_source.html">Core.hpp</a></li>
-<li>src/core/<b>Core.cpp</b></li>
+<li>src/core/<a class="el" href="Core_8cpp.html">Core.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

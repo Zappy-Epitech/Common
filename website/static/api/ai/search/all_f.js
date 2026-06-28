@@ -5,5 +5,6 @@ var searchData=
   ['ressource_2',['Ressource',['../Ressource_8hpp.html#a09526742abc3e0feb0a61b36291e1b8c',1,'Ressource.hpp']]],
   ['ressource_2ehpp_3',['Ressource.hpp',['../Ressource_8hpp.html',1,'']]],
   ['ressourcefromname_4',['ressourceFromName',['../GameLogic_8cpp.html#a342a66c469c6ac363230afcee7bbcfff',1,'GameLogic.cpp']]],
-  ['run_5fga_5',['run_ga',['../namespacezappy__ga_1_1ga.html#ac94feb207344030baacc7b641d36917a',1,'zappy_ga::ga']]]
+  ['right_5',['RIGHT',['../Player_8hpp.html#a0b5e764f0ec9a407e9b8789f0259d754aec8379af7490bb9eaaf579cf17876f38',1,'Player.hpp']]],
+  ['run_5fga_6',['run_ga',['../namespacezappy__ga_1_1ga.html#ac94feb207344030baacc7b641d36917a',1,'zappy_ga::ga']]]
 ];

@@ -1,0 +1,9 @@
+<map id="src/protocol/command/PlayerCommand.hpp" name="src/protocol/command/PlayerCommand.hpp">
+<area shape="rect" id="Node000001" title="Handlers that apply player&#45;related protocol events to the world." alt="" coords="196,5,363,45"/>
+<area shape="rect" id="Node000002" href="$CommandRunner_8cpp.html" title="Visits the parsed protocol event and dispatches to the apply* handlers." alt="" coords="5,93,172,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="226,53,132,96,129,91,224,49"/>
+<area shape="rect" id="Node000003" href="$PlayerCommand_8cpp.html" title="Spawns and updates player entities from player protocol events." alt="" coords="196,93,363,133"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="282,59,282,93,277,93,277,59"/>
+<area shape="rect" id="Node000004" href="$GameLifecycle_8cpp.html" title="Implements the game scene enter/exit observers and their UI buttons." alt="" coords="387,101,606,126"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="341,48,469,98,467,103,339,53"/>
+</map>

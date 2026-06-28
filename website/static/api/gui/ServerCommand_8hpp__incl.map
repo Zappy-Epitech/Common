@@ -1,0 +1,17 @@
+<map id="src/protocol/command/ServerCommand.hpp" name="src/protocol/command/ServerCommand.hpp">
+<area shape="rect" id="Node000001" title="Handlers that apply server&#45;level protocol events to the world." alt="" coords="225,5,392,45"/>
+<area shape="rect" id="Node000002" href="$ZappyProtocol_8hpp.html" title="Protocol event types and the line parser for the Zappy server feed." alt="" coords="231,93,387,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="311,46,311,79,306,79,306,46"/>
+<area shape="rect" id="Node000003" href="$Spatial_8hpp.html" title="Spatial component definitions (positions, sizes, rotation, scale, orientation) and module." alt="" coords="5,167,156,192"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="273,121,132,165,130,160,271,116"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="181,167,255,192"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="296,121,245,160,242,156,292,117"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="279,167,338,192"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="311,119,311,153,306,153,306,119"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="363,167,431,192"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="324,117,373,156,370,160,321,121"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="455,167,517,192"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="338,116,446,159,444,164,336,121"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="45,240,116,265"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="83,192,83,226,78,226,78,192"/>
+</map>

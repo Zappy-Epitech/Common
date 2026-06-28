@@ -1,0 +1,21 @@
+<map id="src/network/io/UnboundedQueue.hpp" name="src/network/io/UnboundedQueue.hpp">
+<area shape="rect" id="Node000001" title="FIFO queue that retains every value until it is consumed." alt="" coords="605,5,797,45"/>
+<area shape="rect" id="Node000002" href="$ZappyClient_8hpp.html" title="Threaded Zappy GUI client exchanging protocol lines via queues." alt="" coords="631,93,770,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="703,59,703,93,698,93,698,59"/>
+<area shape="rect" id="Node000003" href="$NetworkModule_8hpp.html" title="Flecs module and helpers bridging the threaded client into the ECS world." alt="" coords="479,189,712,214"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="668,144,612,190,608,186,665,140"/>
+<area shape="rect" id="Node000010" href="$ZappyClient_8cpp.html" title="Implements the threaded Zappy client worker loop and queue handling." alt="" coords="737,181,875,221"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="736,140,784,179,781,183,733,144"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html" title="Application entry point: builds the flecs world, imports modules, and runs the app loop." alt="" coords="5,269,111,295"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="496,218,124,272,111,274,110,269,123,267,495,213"/>
+<area shape="rect" id="Node000005" href="$NetworkModule_8cpp.html" title="Implements the network Flecs module, drain system, and connect/disconnect helpers." alt="" coords="135,269,367,295"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="533,220,302,272,301,267,532,214"/>
+<area shape="rect" id="Node000006" href="$EndGame_8cpp.html" title="Implements the end&#45;game scene: winner summary panel and &quot;Back home&quot; button." alt="" coords="391,269,575,295"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="569,224,501,271,498,267,566,220"/>
+<area shape="rect" id="Node000007" href="$GameLifecycle_8cpp.html" title="Implements the game scene enter/exit observers and their UI buttons." alt="" coords="599,269,818,295"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="625,220,693,267,690,271,622,224"/>
+<area shape="rect" id="Node000008" href="$GameUi_8cpp.html" title="Implements the in&#45;game HUD: broadcast bubbles, team/player panels, inventory modal and frequency slid..." alt="" coords="843,269,1017,295"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="658,214,882,267,881,272,657,220"/>
+<area shape="rect" id="Node000009" href="$Home_8cpp.html" title="Implements the home scene: server connection form and port parsing." alt="" coords="1042,269,1202,295"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="686,213,1046,267,1045,272,685,219"/>
+</map>

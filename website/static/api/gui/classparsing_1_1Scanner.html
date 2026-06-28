@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('classparsing_1_1Scanner.html',''); ini
 </div><!--header-->
 <div class="contents">
 
-<p>Reads tokens from a string view.  
+<p>Reads tokens from a string view using a forward-only cursor.  
  <a href="classparsing_1_1Scanner.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="Scanner_8hpp_source.html">Scanner.hpp</a>&gt;</code></p>
@@ -133,23 +133,19 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>position</b> () con
 std::optional&lt; Char &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>peek</b> () const</td></tr>
 <tr class="memdesc:a96de33990be89a63ad43beae5434e22c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current character. <br /></td></tr>
 <tr class="separator:a96de33990be89a63ad43beae5434e22c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9b338113a03021466671dac3dd25a0a" id="r_ad9b338113a03021466671dac3dd25a0a"><td class="memItemLeft" align="right" valign="top"><a id="ad9b338113a03021466671dac3dd25a0a" name="ad9b338113a03021466671dac3dd25a0a"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>take</b> (Char expected)</td></tr>
-<tr class="memdesc:ad9b338113a03021466671dac3dd25a0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consumes one expected character. <br /></td></tr>
+<tr class="memitem:ad9b338113a03021466671dac3dd25a0a" id="r_ad9b338113a03021466671dac3dd25a0a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparsing_1_1Scanner.html#ad9b338113a03021466671dac3dd25a0a">take</a> (Char expected)</td></tr>
+<tr class="memdesc:ad9b338113a03021466671dac3dd25a0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consumes one character if it matches the expected one.  <br /></td></tr>
 <tr class="separator:ad9b338113a03021466671dac3dd25a0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a623b67e35a90842b95035373e3c53523" id="r_a623b67e35a90842b95035373e3c53523"><td class="memItemLeft" align="right" valign="top"><a id="a623b67e35a90842b95035373e3c53523" name="a623b67e35a90842b95035373e3c53523"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>takeLiteral</b> (<a class="el" href="classparsing_1_1Scanner.html#a37877e730c28764b8d2f250ef109672b">View</a> expected)</td></tr>
-<tr class="memdesc:a623b67e35a90842b95035373e3c53523"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consumes an expected literal. <br /></td></tr>
+<tr class="memitem:a623b67e35a90842b95035373e3c53523" id="r_a623b67e35a90842b95035373e3c53523"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classparsing_1_1Scanner.html#a623b67e35a90842b95035373e3c53523">takeLiteral</a> (<a class="el" href="classparsing_1_1Scanner.html#a37877e730c28764b8d2f250ef109672b">View</a> expected)</td></tr>
+<tr class="memdesc:a623b67e35a90842b95035373e3c53523"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consumes an exact literal sequence starting at the cursor.  <br /></td></tr>
 <tr class="separator:a623b67e35a90842b95035373e3c53523"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4de7cc6f0159d2d3d47fa7ff87f9d23b" id="r_a4de7cc6f0159d2d3d47fa7ff87f9d23b"><td class="memTemplParams" colspan="2"><a id="a4de7cc6f0159d2d3d47fa7ff87f9d23b" name="a4de7cc6f0159d2d3d47fa7ff87f9d23b"></a>
-template&lt;typename Predicate &gt; </td></tr>
-<tr class="memitem:a4de7cc6f0159d2d3d47fa7ff87f9d23b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classparsing_1_1Scanner.html#a37877e730c28764b8d2f250ef109672b">View</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>takeWhile</b> (Predicate predicate)</td></tr>
-<tr class="memdesc:a4de7cc6f0159d2d3d47fa7ff87f9d23b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consumes characters while a predicate matches. <br /></td></tr>
+<tr class="memitem:a4de7cc6f0159d2d3d47fa7ff87f9d23b" id="r_a4de7cc6f0159d2d3d47fa7ff87f9d23b"><td class="memTemplParams" colspan="2">template&lt;typename Predicate &gt; </td></tr>
+<tr class="memitem:a4de7cc6f0159d2d3d47fa7ff87f9d23b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classparsing_1_1Scanner.html#a37877e730c28764b8d2f250ef109672b">View</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classparsing_1_1Scanner.html#a4de7cc6f0159d2d3d47fa7ff87f9d23b">takeWhile</a> (Predicate predicate)</td></tr>
+<tr class="memdesc:a4de7cc6f0159d2d3d47fa7ff87f9d23b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consumes consecutive characters for which a predicate holds.  <br /></td></tr>
 <tr class="separator:a4de7cc6f0159d2d3d47fa7ff87f9d23b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2a7244aecd6d9531e59a45b5254fc26" id="r_aa2a7244aecd6d9531e59a45b5254fc26"><td class="memTemplParams" colspan="2"><a id="aa2a7244aecd6d9531e59a45b5254fc26" name="aa2a7244aecd6d9531e59a45b5254fc26"></a>
-template&lt;typename Predicate &gt; </td></tr>
-<tr class="memitem:aa2a7244aecd6d9531e59a45b5254fc26"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classparsing_1_1Scanner.html#a37877e730c28764b8d2f250ef109672b">View</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>takeUntil</b> (Predicate predicate)</td></tr>
-<tr class="memdesc:aa2a7244aecd6d9531e59a45b5254fc26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consumes characters until a predicate matches. <br /></td></tr>
+<tr class="memitem:aa2a7244aecd6d9531e59a45b5254fc26" id="r_aa2a7244aecd6d9531e59a45b5254fc26"><td class="memTemplParams" colspan="2">template&lt;typename Predicate &gt; </td></tr>
+<tr class="memitem:aa2a7244aecd6d9531e59a45b5254fc26"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classparsing_1_1Scanner.html#a37877e730c28764b8d2f250ef109672b">View</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classparsing_1_1Scanner.html#aa2a7244aecd6d9531e59a45b5254fc26">takeUntil</a> (Predicate predicate)</td></tr>
+<tr class="memdesc:aa2a7244aecd6d9531e59a45b5254fc26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consumes characters until a predicate first holds.  <br /></td></tr>
 <tr class="separator:aa2a7244aecd6d9531e59a45b5254fc26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afca4c47b8db020203f67f3dd24c686ec" id="r_afca4c47b8db020203f67f3dd24c686ec"><td class="memItemLeft" align="right" valign="top"><a id="afca4c47b8db020203f67f3dd24c686ec" name="afca4c47b8db020203f67f3dd24c686ec"></a>
 <a class="el" href="classparsing_1_1Scanner.html#a37877e730c28764b8d2f250ef109672b">View</a>&#160;</td><td class="memItemRight" valign="bottom"><b>takeRest</b> ()</td></tr>
@@ -163,21 +159,274 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>skipSpaces</b> ()</td
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>takeSpace</b> ()</td></tr>
 <tr class="memdesc:a29b99e7362dd0a8c824566a1f3d25e1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consumes at least one space or tab. <br /></td></tr>
 <tr class="separator:a29b99e7362dd0a8c824566a1f3d25e1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61d8230885ef338ef96ad3bef19d380e" id="r_a61d8230885ef338ef96ad3bef19d380e"><td class="memTemplParams" colspan="2"><a id="a61d8230885ef338ef96ad3bef19d380e" name="a61d8230885ef338ef96ad3bef19d380e"></a>
-template&lt;std::integral Number&gt; </td></tr>
-<tr class="memitem:a61d8230885ef338ef96ad3bef19d380e"><td class="memTemplItemLeft" align="right" valign="top">std::optional&lt; Number &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>takeInteger</b> ()</td></tr>
-<tr class="memdesc:a61d8230885ef338ef96ad3bef19d380e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads an integer value. <br /></td></tr>
+<tr class="memitem:a61d8230885ef338ef96ad3bef19d380e" id="r_a61d8230885ef338ef96ad3bef19d380e"><td class="memTemplParams" colspan="2">template&lt;std::integral Number&gt; </td></tr>
+<tr class="memitem:a61d8230885ef338ef96ad3bef19d380e"><td class="memTemplItemLeft" align="right" valign="top">std::optional&lt; Number &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classparsing_1_1Scanner.html#a61d8230885ef338ef96ad3bef19d380e">takeInteger</a> ()</td></tr>
+<tr class="memdesc:a61d8230885ef338ef96ad3bef19d380e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads an integer literal at the cursor.  <br /></td></tr>
 <tr class="separator:a61d8230885ef338ef96ad3bef19d380e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad86ba22ed57f363ed3ebecf5b82a6254" id="r_ad86ba22ed57f363ed3ebecf5b82a6254"><td class="memTemplParams" colspan="2"><a id="ad86ba22ed57f363ed3ebecf5b82a6254" name="ad86ba22ed57f363ed3ebecf5b82a6254"></a>
-template&lt;std::integral Number&gt; </td></tr>
-<tr class="memitem:ad86ba22ed57f363ed3ebecf5b82a6254"><td class="memTemplItemLeft" align="right" valign="top">std::optional&lt; Number &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>takePrefixedInteger</b> (Char prefix)</td></tr>
-<tr class="memdesc:ad86ba22ed57f363ed3ebecf5b82a6254"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads an integer with a prefix. <br /></td></tr>
+<tr class="memitem:ad86ba22ed57f363ed3ebecf5b82a6254" id="r_ad86ba22ed57f363ed3ebecf5b82a6254"><td class="memTemplParams" colspan="2">template&lt;std::integral Number&gt; </td></tr>
+<tr class="memitem:ad86ba22ed57f363ed3ebecf5b82a6254"><td class="memTemplItemLeft" align="right" valign="top">std::optional&lt; Number &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classparsing_1_1Scanner.html#ad86ba22ed57f363ed3ebecf5b82a6254">takePrefixedInteger</a> (Char prefix)</td></tr>
+<tr class="memdesc:ad86ba22ed57f363ed3ebecf5b82a6254"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads an integer that must be preceded by a given prefix character.  <br /></td></tr>
 <tr class="separator:ad86ba22ed57f363ed3ebecf5b82a6254"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename Char = char&gt;<br />
-class parsing::Scanner&lt; Char &gt;</div><p>Reads tokens from a string view. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+class parsing::Scanner&lt; Char &gt;</div><p>Reads tokens from a string view using a forward-only cursor. </p>
+<p>Maintains a position into an immutable input view and exposes primitives to consume characters, literals and integers. Consuming operations advance the cursor; on failure the cursor is left unchanged (or restored).</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Char</td><td>Character type the scanner operates on (defaults to <code>char</code>). </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad9b338113a03021466671dac3dd25a0a" name="ad9b338113a03021466671dac3dd25a0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9b338113a03021466671dac3dd25a0a">&#9670;&#160;</a></span>take()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Char  = char&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classparsing_1_1Scanner.html">parsing::Scanner</a>&lt; Char &gt;::take </td>
+          <td>(</td>
+          <td class="paramtype">Char&#160;</td>
+          <td class="paramname"><em>expected</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Consumes one character if it matches the expected one. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">expected</td><td>Character that must be at the current cursor position. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> and advances the cursor by one when the current character equals <code>expected</code>; <code>false</code> with the cursor unchanged otherwise (including when the input is already exhausted). </dd></dl>
+
+</div>
+</div>
+<a id="a61d8230885ef338ef96ad3bef19d380e" name="a61d8230885ef338ef96ad3bef19d380e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61d8230885ef338ef96ad3bef19d380e">&#9670;&#160;</a></span>takeInteger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Char  = char&gt; </div>
+<div class="memtemplate">
+template&lt;std::integral Number&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; Number &gt; <a class="el" href="classparsing_1_1Scanner.html">parsing::Scanner</a>&lt; Char &gt;::takeInteger </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reads an integer literal at the cursor. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Number</td><td>Integral target type; for signed types an optional leading <code>-</code> sign is accepted. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The parsed value on success, with the cursor advanced past the digits (and sign). Returns <code>std::nullopt</code> and restores the cursor to its starting position when no digits are present or the value does not fully parse (e.g. out of range for <code>Number</code>). </dd></dl>
+
+</div>
+</div>
+<a id="a623b67e35a90842b95035373e3c53523" name="a623b67e35a90842b95035373e3c53523"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a623b67e35a90842b95035373e3c53523">&#9670;&#160;</a></span>takeLiteral()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Char  = char&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classparsing_1_1Scanner.html">parsing::Scanner</a>&lt; Char &gt;::takeLiteral </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classparsing_1_1Scanner.html#a37877e730c28764b8d2f250ef109672b">View</a>&#160;</td>
+          <td class="paramname"><em>expected</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Consumes an exact literal sequence starting at the cursor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">expected</td><td>Literal that must appear at the current cursor position. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> and advances the cursor by <code>expected.size()</code> when the input at the cursor starts with <code>expected</code>; <code>false</code> with the cursor unchanged otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="ad86ba22ed57f363ed3ebecf5b82a6254" name="ad86ba22ed57f363ed3ebecf5b82a6254"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad86ba22ed57f363ed3ebecf5b82a6254">&#9670;&#160;</a></span>takePrefixedInteger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Char  = char&gt; </div>
+<div class="memtemplate">
+template&lt;std::integral Number&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; Number &gt; <a class="el" href="classparsing_1_1Scanner.html">parsing::Scanner</a>&lt; Char &gt;::takePrefixedInteger </td>
+          <td>(</td>
+          <td class="paramtype">Char&#160;</td>
+          <td class="paramname"><em>prefix</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reads an integer that must be preceded by a given prefix character. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Number</td><td>Integral target type passed through to <a class="el" href="classparsing_1_1Scanner.html#a61d8230885ef338ef96ad3bef19d380e" title="Reads an integer literal at the cursor.">takeInteger()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prefix</td><td>Character that must immediately precede the integer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The parsed value on success, with the cursor advanced past the prefix and the integer. Returns <code>std::nullopt</code> and restores the cursor to its starting position when the prefix is absent or no valid integer follows it. </dd></dl>
+
+</div>
+</div>
+<a id="aa2a7244aecd6d9531e59a45b5254fc26" name="aa2a7244aecd6d9531e59a45b5254fc26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2a7244aecd6d9531e59a45b5254fc26">&#9670;&#160;</a></span>takeUntil()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Char  = char&gt; </div>
+<div class="memtemplate">
+template&lt;typename Predicate &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classparsing_1_1Scanner.html#a37877e730c28764b8d2f250ef109672b">View</a> <a class="el" href="classparsing_1_1Scanner.html">parsing::Scanner</a>&lt; Char &gt;::takeUntil </td>
+          <td>(</td>
+          <td class="paramtype">Predicate&#160;</td>
+          <td class="paramname"><em>predicate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Consumes characters until a predicate first holds. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Predicate</td><td>Callable invocable as <code>bool(Char)</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">predicate</td><td>Consumption stops at the first character for which it returns <code>true</code> (that character is left unconsumed) or at end of input. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>View over the consumed characters (empty if the first character already satisfies <code>predicate</code>). The cursor is advanced past the returned characters. </dd></dl>
+
+</div>
+</div>
+<a id="a4de7cc6f0159d2d3d47fa7ff87f9d23b" name="a4de7cc6f0159d2d3d47fa7ff87f9d23b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4de7cc6f0159d2d3d47fa7ff87f9d23b">&#9670;&#160;</a></span>takeWhile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Char  = char&gt; </div>
+<div class="memtemplate">
+template&lt;typename Predicate &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classparsing_1_1Scanner.html#a37877e730c28764b8d2f250ef109672b">View</a> <a class="el" href="classparsing_1_1Scanner.html">parsing::Scanner</a>&lt; Char &gt;::takeWhile </td>
+          <td>(</td>
+          <td class="paramtype">Predicate&#160;</td>
+          <td class="paramname"><em>predicate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Consumes consecutive characters for which a predicate holds. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Predicate</td><td>Callable invocable as <code>bool(Char)</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">predicate</td><td>Tested against each character; consumption stops at the first character for which it returns <code>false</code> or at end of input. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>View over the consumed characters (empty if none matched). The cursor is advanced past the returned characters. </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/parsing/<a class="el" href="Scanner_8hpp_source.html">Scanner.hpp</a></li>
 </ul>
 </div><!-- contents -->

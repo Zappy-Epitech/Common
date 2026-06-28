@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('structGui.html',''); initResizable(); 
 </div><!--header-->
 <div class="contents">
 
-<p>Registers GUI components and systems.  
+<p>ECS module providing the 2D GUI widgets and their render systems.  
  <a href="structGui.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="Gui_8hpp_source.html">Gui.hpp</a>&gt;</code></p>
@@ -110,7 +110,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a849e32ceedc028628cecb05d66aa36bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Registers GUI components and systems. </p>
+<div class="textblock"><p>ECS module providing the 2D GUI widgets and their render systems. </p>
+<p>Registers the <a class="el" href="structButton.html" title="Stores a button label.">Button</a>, <a class="el" href="structTextInput.html" title="Stores editable text input state.">TextInput</a>, <a class="el" href="structOnClick.html" title="Stores a button click callback.">OnClick</a>, <a class="el" href="structOnEnter.html" title="Stores a text submit callback.">OnEnter</a>, <a class="el" href="structOnTextUpdate.html" title="Stores a text change callback.">OnTextUpdate</a>, <a class="el" href="structHasInputActive.html" title="Tracks whether an input is active.">HasInputActive</a> and <a class="el" href="structScreenMessage.html" title="Stores a temporary screen message.">ScreenMessage</a> components. Adds systems that load the button click sound and, in the <a class="el" href="structRender2D.html" title="Phase for drawing 2D content.">Render2D</a> phase, draw and handle buttons, text inputs (with enter/change callbacks), and the on-screen log message panel. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a849e32ceedc028628cecb05d66aa36bf" name="a849e32ceedc028628cecb05d66aa36bf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a849e32ceedc028628cecb05d66aa36bf">&#9670;&#160;</a></span>Gui()</h2>
@@ -135,7 +136,7 @@ Public Member Functions</h2></td></tr>
 </div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li>src/core/<a class="el" href="Gui_8hpp_source.html">Gui.hpp</a></li>
-<li>src/core/<b>Gui.cpp</b></li>
+<li>src/core/<a class="el" href="Gui_8cpp.html">Gui.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

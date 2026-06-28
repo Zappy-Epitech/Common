@@ -5,9 +5,9 @@ var indexSectionsWithContent =
   2: "z",
   3: "aegmnprs",
   4: "_acdefglmnoprstwz~",
-  5: "_dflmpstuxy",
-  6: "cehr",
-  7: "cdfhilmnpst"
+  5: "_cdfghlmpstuxy",
+  6: "cehmpr",
+  7: "cdefhilmnprstu"
 };
 
 var indexSectionNames =

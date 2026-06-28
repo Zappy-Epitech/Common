@@ -99,33 +99,38 @@ $(document).ready(function(){initNavTree('CommandParsers_8hpp_source.html',''); 
   <div class="headertitle"><div class="title">CommandParsers.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;ParseUtils.hpp&quot;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;array&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span>zappy {</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">using </span>CommandParserFn = std::optional&lt;Event&gt; (*)(ProtocolScanner &amp;);</div>
+<a href="CommandParsers_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="ParseUtils_8hpp.html">ParseUtils.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;array&gt;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="structzappy_1_1CommandParser.html">   13</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structzappy_1_1CommandParser.html">CommandParser</a> {</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    std::string_view name;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    CommandParserFn parse;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>};</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">namespace </span>zappy {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="CommandParsers_8hpp.html#a89cc3c03d7d823c700c68dc87b8c2923">   15</a></span><span class="keyword">using </span><a class="code hl_typedef" href="CommandParsers_8hpp.html#a89cc3c03d7d823c700c68dc87b8c2923">CommandParserFn</a> = std::optional&lt;Event&gt; (*)(<a class="code hl_class" href="classparsing_1_1Scanner.html">ProtocolScanner</a> &amp;);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="foldopen" id="foldopen00021" data-start="{" data-end="};">
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="structzappy_1_1CommandParser.html">   21</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structzappy_1_1CommandParser.html">CommandParser</a> {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    std::string_view name;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_typedef" href="CommandParsers_8hpp.html#a89cc3c03d7d823c700c68dc87b8c2923">CommandParserFn</a> parse;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>};</div>
 </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">extern</span> <span class="keyword">const</span> std::array&lt;CommandParser, 24&gt; commandParsers;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>} <span class="comment">// namespace zappy</span></div>
-<div class="ttc" id="astructzappy_1_1CommandParser_html"><div class="ttname"><a href="structzappy_1_1CommandParser.html">zappy::CommandParser</a></div><div class="ttdoc">Maps a command name to its parser.</div><div class="ttdef"><b>Definition</b> CommandParsers.hpp:13</div></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">extern</span> <span class="keyword">const</span> std::array&lt;CommandParser, 24&gt; <a class="code hl_variable" href="CommandParsers_8cpp.html#a669278b051dbf8e0af34998bc2ad54bf">commandParsers</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>} <span class="comment">// namespace zappy</span></div>
+<div class="ttc" id="aCommandParsers_8cpp_html_a669278b051dbf8e0af34998bc2ad54bf"><div class="ttname"><a href="CommandParsers_8cpp.html#a669278b051dbf8e0af34998bc2ad54bf">zappy::commandParsers</a></div><div class="ttdeci">const std::array&lt; CommandParser, 24 &gt; commandParsers</div><div class="ttdoc">Lists all supported command parsers.</div><div class="ttdef"><b>Definition</b> CommandParsers.cpp:215</div></div>
+<div class="ttc" id="aCommandParsers_8hpp_html_a89cc3c03d7d823c700c68dc87b8c2923"><div class="ttname"><a href="CommandParsers_8hpp.html#a89cc3c03d7d823c700c68dc87b8c2923">zappy::CommandParserFn</a></div><div class="ttdeci">std::optional&lt; Event &gt;(*)(ProtocolScanner &amp;) CommandParserFn</div><div class="ttdoc">Parses command arguments into an event.</div><div class="ttdef"><b>Definition</b> CommandParsers.hpp:15</div></div>
+<div class="ttc" id="aParseUtils_8hpp_html"><div class="ttname"><a href="ParseUtils_8hpp.html">ParseUtils.hpp</a></div><div class="ttdoc">Low-level token helpers for parsing Zappy server protocol lines.</div></div>
+<div class="ttc" id="aclassparsing_1_1Scanner_html"><div class="ttname"><a href="classparsing_1_1Scanner.html">parsing::Scanner</a></div><div class="ttdoc">Reads tokens from a string view using a forward-only cursor.</div><div class="ttdef"><b>Definition</b> Scanner.hpp:26</div></div>
+<div class="ttc" id="astructzappy_1_1CommandParser_html"><div class="ttname"><a href="structzappy_1_1CommandParser.html">zappy::CommandParser</a></div><div class="ttdoc">Maps a command name to its argument parser.</div><div class="ttdef"><b>Definition</b> CommandParsers.hpp:21</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_5903c71b979204ea1ce2d27420efeaa9.html">protocol</a></li><li class="navelem"><b>CommandParsers.hpp</b></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_5903c71b979204ea1ce2d27420efeaa9.html">protocol</a></li><li class="navelem"><a class="el" href="CommandParsers_8hpp.html">CommandParsers.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

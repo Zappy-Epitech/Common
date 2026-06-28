@@ -1,0 +1,28 @@
+<map id="src/protocol/ParseUtils.cpp" name="src/protocol/ParseUtils.cpp">
+<area shape="rect" id="Node000001" title="Implementations of the low&#45;level protocol token helpers." alt="" coords="291,5,486,31"/>
+<area shape="rect" id="Node000002" href="$ParseUtils_8hpp.html" title="Low&#45;level token helpers for parsing Zappy server protocol lines." alt="" coords="331,79,446,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="391,31,391,65,386,65,386,31"/>
+<area shape="rect" id="Node000003" href="$Scanner_8hpp.html" title="Cursor&#45;based scanner for tokenising string views." alt="" coords="182,152,347,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="370,106,298,147,295,143,367,102"/>
+<area shape="rect" id="Node000008" href="$ZappyProtocol_8hpp.html" title="Protocol event types and the line parser for the Zappy server feed." alt="" coords="505,152,649,177"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="420,102,534,144,532,149,418,107"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,225,87,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="230,180,95,224,94,218,229,175"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="111,225,191,251"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="248,180,183,220,180,216,245,175"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="338,225,413,251"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="284,175,347,215,344,220,281,180"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="216,225,313,251"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="267,178,267,212,262,212,262,178"/>
+<area shape="poly" id="edge10_Node000008_Node000006" title=" " alt="" coords="545,180,422,223,420,218,543,175"/>
+<area shape="rect" id="Node000009" href="$Spatial_8hpp.html" title="Spatial component definitions (positions, sizes, rotation, scale, orientation) and module." alt="" coords="437,225,588,251"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="568,179,534,217,530,213,564,176"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="613,225,671,251"/>
+<area shape="poly" id="edge11_Node000008_Node000011" title=" " alt="" coords="589,176,624,213,620,217,585,179"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="696,225,764,251"/>
+<area shape="poly" id="edge12_Node000008_Node000012" title=" " alt="" coords="602,175,694,217,692,222,600,180"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="788,225,851,251"/>
+<area shape="poly" id="edge13_Node000008_Node000013" title=" " alt="" coords="616,175,775,221,774,226,615,180"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="477,299,548,324"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="515,251,515,285,510,285,510,251"/>
+</map>

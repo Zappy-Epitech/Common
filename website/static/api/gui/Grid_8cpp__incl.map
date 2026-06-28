@@ -1,0 +1,52 @@
+<map id="src/gameplay/Grid.cpp" name="src/gameplay/Grid.cpp">
+<area shape="rect" id="Node000001" title="Implements grid registration, tile spawning and coordinate mapping." alt="" coords="439,5,607,31"/>
+<area shape="rect" id="Node000002" href="$Grid_8hpp.html" title="Grid components and the grid module with coordinate helpers." alt="" coords="101,79,178,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="455,33,192,81,191,76,454,28"/>
+<area shape="rect" id="Node000003" href="$Spatial_8hpp.html" title="Spatial component definitions (positions, sizes, rotation, scale, orientation) and module." alt="" coords="21,152,172,177"/>
+<area shape="poly" id="edge17_Node000001_Node000003" title=" " alt="" coords="439,21,343,23,239,32,190,40,147,50,113,64,91,80,84,93,82,108,88,139,83,140,77,108,79,92,87,77,111,59,146,45,189,35,238,27,343,18,439,16"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,225,76,251"/>
+<area shape="poly" id="edge27_Node000001_Node000004" title=" " alt="" coords="439,26,239,44,143,60,105,70,76,81,52,95,35,109,23,127,11,153,9,168,11,184,25,213,20,215,6,185,3,168,6,151,18,125,31,106,49,91,74,76,103,65,142,55,238,39,439,21"/>
+<area shape="rect" id="Node000005" href="$Raylib_8hpp.html" title="Raylib render pipeline: render phase tags, render&#45;distance helper and module." alt="" coords="450,79,597,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="526,31,526,65,521,65,521,31"/>
+<area shape="rect" id="Node000006" href="$Scenes_8hpp.html" title="Generic scene lifecycle: scene tags, current&#45;scene tracking and enter/exit helpers." alt="" coords="672,79,823,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="560,28,699,72,697,77,559,33"/>
+<area shape="rect" id="Node000007" href="$flecs_8h_source.html" title=" " alt="" coords="567,152,701,177"/>
+<area shape="poly" id="edge18_Node000001_Node000007" title=" " alt="" coords="550,28,581,48,611,77,626,108,634,138,628,139,621,109,607,80,578,53,547,33"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="819,152,886,177"/>
+<area shape="poly" id="edge26_Node000001_Node000016" title=" " alt="" coords="608,22,673,29,741,40,799,56,821,65,837,77,847,90,853,106,857,138,852,138,848,108,843,93,833,81,819,70,797,61,740,45,673,35,607,28"/>
+<area shape="rect" id="Node000018" href="$ZappyProtocol_8hpp.html" title="Protocol event types and the line parser for the Zappy server feed." alt="" coords="202,79,426,104"/>
+<area shape="poly" id="edge19_Node000001_Node000018" title=" " alt="" coords="491,33,362,77,360,72,489,28"/>
+<area shape="rect" id="Node000023" href="$Game_8hpp.html" title="flecs module that registers the main in&#45;game scene." alt="" coords="899,79,1060,104"/>
+<area shape="poly" id="edge25_Node000001_Node000023" title=" " alt="" coords="597,28,893,74,892,79,596,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="135,106,113,142,108,139,130,103"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="90,179,60,216,56,213,85,176"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="731,106,665,147,662,142,728,102"/>
+<area shape="poly" id="edge15_Node000006_Node000016" title=" " alt="" coords="766,102,826,142,823,147,763,106"/>
+<area shape="rect" id="Node000017" title=" " alt="" coords="725,152,785,177"/>
+<area shape="poly" id="edge16_Node000006_Node000017" title=" " alt="" coords="751,104,755,138,750,139,746,105"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="258,225,333,251"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="577,180,347,228,346,222,576,175"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="357,225,431,251"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="596,180,446,224,444,219,595,175"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="456,225,527,251"/>
+<area shape="poly" id="edge9_Node000007_Node000010" title=" " alt="" coords="612,180,528,221,526,217,610,175"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="551,225,621,251"/>
+<area shape="poly" id="edge10_Node000007_Node000011" title=" " alt="" coords="628,179,604,216,599,213,624,176"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="645,225,716,251"/>
+<area shape="poly" id="edge11_Node000007_Node000012" title=" " alt="" coords="644,176,668,212,663,215,639,179"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="741,225,823,251"/>
+<area shape="poly" id="edge12_Node000007_Node000013" title=" " alt="" coords="659,175,747,217,744,222,657,180"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="848,225,921,251"/>
+<area shape="poly" id="edge13_Node000007_Node000014" title=" " alt="" coords="675,175,835,220,834,225,674,180"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="946,225,1013,251"/>
+<area shape="poly" id="edge14_Node000007_Node000015" title=" " alt="" coords="697,175,933,223,932,228,696,180"/>
+<area shape="poly" id="edge20_Node000018_Node000003" title=" " alt="" coords="280,107,146,150,144,145,278,101"/>
+<area shape="rect" id="Node000019" title=" " alt="" coords="197,152,271,177"/>
+<area shape="poly" id="edge21_Node000018_Node000019" title=" " alt="" coords="303,106,259,145,255,141,299,102"/>
+<area shape="rect" id="Node000020" title=" " alt="" coords="295,152,354,177"/>
+<area shape="poly" id="edge22_Node000018_Node000020" title=" " alt="" coords="318,104,324,138,318,139,313,105"/>
+<area shape="rect" id="Node000021" title=" " alt="" coords="379,152,447,177"/>
+<area shape="poly" id="edge23_Node000018_Node000021" title=" " alt="" coords="331,102,387,142,384,146,328,106"/>
+<area shape="rect" id="Node000022" title=" " alt="" coords="471,152,533,177"/>
+<area shape="poly" id="edge24_Node000018_Node000022" title=" " alt="" coords="345,102,459,144,458,149,343,107"/>
+</map>

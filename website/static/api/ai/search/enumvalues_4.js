@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['invalid_5fbroadcast_0',['INVALID_BROADCAST',['../Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aabea8a7c8e024e2080d2359bd0cf09efc',1,'Errors.hpp']]],
-  ['invalid_5fconnect_5fnbr_1',['INVALID_CONNECT_NBR',['../Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aa35534217aed6bd53b42b47e31c5f0aff',1,'Errors.hpp']]],
-  ['invalid_5fdirection_2',['INVALID_DIRECTION',['../Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aa56189c1e24c9aabb9a2048c9436b7e1a',1,'Errors.hpp']]]
+  ['host_5fresolution_5ferror_0',['HOST_RESOLUTION_ERROR',['../Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aacc6fddadc193d1b00dcd1d4c3c567e86',1,'Errors.hpp']]],
+  ['hunt_1',['HUNT',['../Player_8hpp.html#a3c730f37b1b3a893159bada67637fdb1a901c4adf422bb3fb42f7aaa88bc9561a',1,'Player.hpp']]],
+  ['hunt_5feject_2',['HUNT_EJECT',['../Player_8hpp.html#a660afdb28fde05444bdb4cfa0b46eaf5a3a48a18c39dfdec082626877233b5568',1,'Player.hpp']]],
+  ['hunt_5fping_3',['HUNT_PING',['../Player_8hpp.html#a660afdb28fde05444bdb4cfa0b46eaf5ada43d800cc6837a06209fced7dc58184',1,'Player.hpp']]],
+  ['hunt_5froam_4',['HUNT_ROAM',['../Player_8hpp.html#a660afdb28fde05444bdb4cfa0b46eaf5a9722d5fd67d3ad59f7d183a1a6f6e19b',1,'Player.hpp']]],
+  ['hunt_5fwait_5',['HUNT_WAIT',['../Player_8hpp.html#a660afdb28fde05444bdb4cfa0b46eaf5ac858cb6b28a7b271f3ab150d097fb058',1,'Player.hpp']]]
 ];

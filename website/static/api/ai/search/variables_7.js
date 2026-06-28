@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['text_0',['text',['../structBroadcastMessage.html#a1dd4101ab2a05efd470baca296a01596',1,'BroadcastMessage']]],
-  ['thystame_1',['thystame',['../structInventory.html#a17127c6dcb3af44357e0924350c56853',1,'Inventory::thystame'],['../structUpgradeCost.html#a3f51c55d824c2a84741ecc4e9dce341e',1,'UpgradeCost::thystame']]]
+  ['mendiane_0',['mendiane',['../structInventory.html#a7de1ccfae4ca75c92aa53b9fd2532065',1,'Inventory::mendiane'],['../structUpgradeCost.html#af832bc772c8d997c92562979af0569b0',1,'UpgradeCost::mendiane']]],
+  ['minfoodtoupgrade_1',['minFoodToUpgrade',['../structParams.html#a5bcecf4ed22c8fe2cf05ca185c28ddba',1,'Params']]]
 ];

@@ -112,15 +112,14 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a36dde5434360e6dabf85f113d8c4ca18" id="r_a36dde5434360e6dabf85f113d8c4ca18"><td class="memItemLeft" align="right" valign="top"><a id="a36dde5434360e6dabf85f113d8c4ca18" name="a36dde5434360e6dabf85f113d8c4ca18"></a>
-static <a class="el" href="structPosition3.html">Position3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>position</b> (int x, int y)</td></tr>
-<tr class="memdesc:a36dde5434360e6dabf85f113d8c4ca18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a world position for grid coordinates. <br /></td></tr>
+<tr class="memitem:a36dde5434360e6dabf85f113d8c4ca18" id="r_a36dde5434360e6dabf85f113d8c4ca18"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structPosition3.html">Position3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGrid.html#a36dde5434360e6dabf85f113d8c4ca18">position</a> (int x, int y)</td></tr>
+<tr class="memdesc:a36dde5434360e6dabf85f113d8c4ca18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps grid coordinates to a world-space position at ground level.  <br /></td></tr>
 <tr class="separator:a36dde5434360e6dabf85f113d8c4ca18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04012e74decf95288b290a47169bddf9" id="r_a04012e74decf95288b290a47169bddf9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structPosition3.html">Position3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGrid.html#a04012e74decf95288b290a47169bddf9">topPosition</a> (int x, int y)</td></tr>
-<tr class="memdesc:a04012e74decf95288b290a47169bddf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the top position of a grid tile.  <br /></td></tr>
+<tr class="memdesc:a04012e74decf95288b290a47169bddf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the world-space position just above a grid tile's surface.  <br /></td></tr>
 <tr class="separator:a04012e74decf95288b290a47169bddf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabc4029bf4a8e0dfc75ceb203500af78" id="r_aabc4029bf4a8e0dfc75ceb203500af78"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGrid.html#aabc4029bf4a8e0dfc75ceb203500af78">spawn</a> (const flecs::world &amp;world, int width, int height)</td></tr>
-<tr class="memdesc:aabc4029bf4a8e0dfc75ceb203500af78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spawns a grid with the given size.  <br /></td></tr>
+<tr class="memdesc:aabc4029bf4a8e0dfc75ceb203500af78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spawns the grid container and all of its tile entities.  <br /></td></tr>
 <tr class="separator:aabc4029bf4a8e0dfc75ceb203500af78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -148,6 +147,53 @@ static <a class="el" href="structPosition3.html">Position3</a>&#160;</td><td cla
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a36dde5434360e6dabf85f113d8c4ca18" name="a36dde5434360e6dabf85f113d8c4ca18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36dde5434360e6dabf85f113d8c4ca18">&#9670;&#160;</a></span>position()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structPosition3.html">Position3</a> Grid::position </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Maps grid coordinates to a world-space position at ground level. </p>
+<p>Returns a world position for grid coordinates.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td><a class="el" href="structGrid.html" title="Registers grid systems and helpers.">Grid</a> column index. </td></tr>
+    <tr><td class="paramname">y</td><td><a class="el" href="structGrid.html" title="Registers grid systems and helpers.">Grid</a> row index (mapped onto the world Z axis). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>World-space position with y = 0, spacing each cell by its size plus padding. </dd></dl>
+
+</div>
+</div>
 <a id="aabc4029bf4a8e0dfc75ceb203500af78" name="aabc4029bf4a8e0dfc75ceb203500af78"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aabc4029bf4a8e0dfc75ceb203500af78">&#9670;&#160;</a></span>spawn()</h2>
 
@@ -188,8 +234,16 @@ static <a class="el" href="structPosition3.html">Position3</a>&#160;</td><td cla
 </table>
 </div><div class="memdoc">
 
-<p>Spawns a grid with the given size. </p>
-<p>Spawns all grid tiles. </p>
+<p>Spawns the grid container and all of its tile entities. </p>
+<p>Spawns all grid tiles.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">world</td><td>ECS world that receives the spawned entities. </td></tr>
+    <tr><td class="paramname">width</td><td>Number of tile columns. </td></tr>
+    <tr><td class="paramname">height</td><td>Number of tile rows. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -227,14 +281,22 @@ static <a class="el" href="structPosition3.html">Position3</a>&#160;</td><td cla
 </table>
 </div><div class="memdoc">
 
-<p>Returns the top position of a grid tile. </p>
-<p>Returns a position above a grid tile. </p>
+<p>Returns the world-space position just above a grid tile's surface. </p>
+<p>Returns a position above a grid tile.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td><a class="el" href="structGrid.html" title="Registers grid systems and helpers.">Grid</a> column index. </td></tr>
+    <tr><td class="paramname">y</td><td><a class="el" href="structGrid.html" title="Registers grid systems and helpers.">Grid</a> row index (mapped onto the world Z axis). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Same horizontal position as <a class="el" href="structGrid.html#a36dde5434360e6dabf85f113d8c4ca18" title="Maps grid coordinates to a world-space position at ground level.">position()</a> but raised to y = 0.45, suitable for placing entities on top of the tile. </dd></dl>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li>src/gameplay/<a class="el" href="Grid_8hpp_source.html">Grid.hpp</a></li>
-<li>src/gameplay/<b>Grid.cpp</b></li>
+<li>src/gameplay/<a class="el" href="Grid_8cpp.html">Grid.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

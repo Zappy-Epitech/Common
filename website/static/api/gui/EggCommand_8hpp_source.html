@@ -99,27 +99,31 @@ $(document).ready(function(){initNavTree('EggCommand_8hpp_source.html',''); init
   <div class="headertitle"><div class="title">EggCommand.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;../ZappyProtocol.hpp&quot;</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span>flecs {</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">struct </span>world;</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>}</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keywordtype">void</span> applyEggNew(<span class="keyword">const</span> flecs::world &amp;world, <a class="code hl_struct" href="structzappy_1_1EggNew.html">zappy::EggNew</a> &amp;evt);</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keywordtype">void</span> applyEggHatched(<span class="keyword">const</span> flecs::world &amp;world, <a class="code hl_struct" href="structzappy_1_1EggHatched.html">zappy::EggHatched</a> &amp;evt);</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keywordtype">void</span> applyEggDeath(<span class="keyword">const</span> flecs::world &amp;world, <a class="code hl_struct" href="structzappy_1_1EggDeath.html">zappy::EggDeath</a> &amp;evt);</div>
-<div class="ttc" id="astructzappy_1_1EggDeath_html"><div class="ttname"><a href="structzappy_1_1EggDeath.html">zappy::EggDeath</a></div><div class="ttdoc">Stores an egg death event.</div><div class="ttdef"><b>Definition</b> ZappyProtocol.hpp:136</div></div>
-<div class="ttc" id="astructzappy_1_1EggHatched_html"><div class="ttname"><a href="structzappy_1_1EggHatched.html">zappy::EggHatched</a></div><div class="ttdoc">Stores an egg hatch event.</div><div class="ttdef"><b>Definition</b> ZappyProtocol.hpp:131</div></div>
-<div class="ttc" id="astructzappy_1_1EggNew_html"><div class="ttname"><a href="structzappy_1_1EggNew.html">zappy::EggNew</a></div><div class="ttdoc">Stores a new egg event.</div><div class="ttdef"><b>Definition</b> ZappyProtocol.hpp:123</div></div>
+<a href="EggCommand_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;../ZappyProtocol.hpp&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span>flecs {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">struct </span>world;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>}</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keywordtype">void</span> <a class="code hl_function" href="EggCommand_8hpp.html#affcea936e1a690ee5a1c3578438b4e49">applyEggNew</a>(<span class="keyword">const</span> flecs::world &amp;world, <a class="code hl_struct" href="structzappy_1_1EggNew.html">zappy::EggNew</a> &amp;evt);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keywordtype">void</span> <a class="code hl_function" href="EggCommand_8hpp.html#a27d368bc052789f9126f1e5097265ee5">applyEggHatched</a>(<span class="keyword">const</span> flecs::world &amp;world, <a class="code hl_struct" href="structzappy_1_1EggHatched.html">zappy::EggHatched</a> &amp;evt);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keywordtype">void</span> <a class="code hl_function" href="EggCommand_8hpp.html#a44b0383dc0dc0cb16611fd957eca6f9c">applyEggDeath</a>(<span class="keyword">const</span> flecs::world &amp;world, <a class="code hl_struct" href="structzappy_1_1EggDeath.html">zappy::EggDeath</a> &amp;evt);</div>
+<div class="ttc" id="aEggCommand_8hpp_html_a27d368bc052789f9126f1e5097265ee5"><div class="ttname"><a href="EggCommand_8hpp.html#a27d368bc052789f9126f1e5097265ee5">applyEggHatched</a></div><div class="ttdeci">void applyEggHatched(const flecs::world &amp;world, zappy::EggHatched &amp;evt)</div><div class="ttdoc">Applies an egg hatched event.</div><div class="ttdef"><b>Definition</b> EggCommand.cpp:64</div></div>
+<div class="ttc" id="aEggCommand_8hpp_html_a44b0383dc0dc0cb16611fd957eca6f9c"><div class="ttname"><a href="EggCommand_8hpp.html#a44b0383dc0dc0cb16611fd957eca6f9c">applyEggDeath</a></div><div class="ttdeci">void applyEggDeath(const flecs::world &amp;world, zappy::EggDeath &amp;evt)</div><div class="ttdoc">Applies an egg death event.</div><div class="ttdef"><b>Definition</b> EggCommand.cpp:73</div></div>
+<div class="ttc" id="aEggCommand_8hpp_html_affcea936e1a690ee5a1c3578438b4e49"><div class="ttname"><a href="EggCommand_8hpp.html#affcea936e1a690ee5a1c3578438b4e49">applyEggNew</a></div><div class="ttdeci">void applyEggNew(const flecs::world &amp;world, zappy::EggNew &amp;evt)</div><div class="ttdoc">Applies a new egg event.</div><div class="ttdef"><b>Definition</b> EggCommand.cpp:39</div></div>
+<div class="ttc" id="astructzappy_1_1EggDeath_html"><div class="ttname"><a href="structzappy_1_1EggDeath.html">zappy::EggDeath</a></div><div class="ttdoc">Stores an egg death event.</div><div class="ttdef"><b>Definition</b> ZappyProtocol.hpp:144</div></div>
+<div class="ttc" id="astructzappy_1_1EggHatched_html"><div class="ttname"><a href="structzappy_1_1EggHatched.html">zappy::EggHatched</a></div><div class="ttdoc">Stores an egg hatch event.</div><div class="ttdef"><b>Definition</b> ZappyProtocol.hpp:139</div></div>
+<div class="ttc" id="astructzappy_1_1EggNew_html"><div class="ttname"><a href="structzappy_1_1EggNew.html">zappy::EggNew</a></div><div class="ttdoc">Stores a new egg event.</div><div class="ttdef"><b>Definition</b> ZappyProtocol.hpp:131</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_5903c71b979204ea1ce2d27420efeaa9.html">protocol</a></li><li class="navelem"><a class="el" href="dir_9af5e20c3b1c532d33866677e221eaac.html">command</a></li><li class="navelem"><b>EggCommand.hpp</b></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_5903c71b979204ea1ce2d27420efeaa9.html">protocol</a></li><li class="navelem"><a class="el" href="dir_9af5e20c3b1c532d33866677e221eaac.html">command</a></li><li class="navelem"><a class="el" href="EggCommand_8hpp.html">EggCommand.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

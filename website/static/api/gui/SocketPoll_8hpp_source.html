@@ -99,26 +99,30 @@ $(document).ready(function(){initNavTree('SocketPoll_8hpp_source.html',''); init
   <div class="headertitle"><div class="title">SocketPoll.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;../utils/Result.hpp&quot;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;chrono&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;string_view&gt;</span></div>
+<a href="SocketPoll_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span>net {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;../utils/Result.hpp&quot;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>Result&lt;void&gt; checkSocketError(<span class="keywordtype">int</span> fd, std::string_view context);</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>Result&lt;void&gt; waitReadable(<span class="keywordtype">int</span> fd, std::chrono::milliseconds timeout, std::string_view context);</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>Result&lt;void&gt; waitWritable(<span class="keywordtype">int</span> fd, std::chrono::milliseconds timeout, std::string_view context);</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>} <span class="comment">// namespace net</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;chrono&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;string_view&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span>net {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>Result&lt;void&gt; <a class="code hl_function" href="SocketPoll_8cpp.html#a26e9e6312182079702987f847a686444">checkSocketError</a>(<span class="keywordtype">int</span> fd, std::string_view context);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>Result&lt;void&gt; <a class="code hl_function" href="SocketPoll_8cpp.html#a1fc5a54e9b906a2ca936789ab203e083">waitReadable</a>(<span class="keywordtype">int</span> fd, std::chrono::milliseconds timeout, std::string_view context);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>Result&lt;void&gt; <a class="code hl_function" href="SocketPoll_8cpp.html#aa4ac2d1e8a5516fbf65afdd9d2ef04e3">waitWritable</a>(<span class="keywordtype">int</span> fd, std::chrono::milliseconds timeout, std::string_view context);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>} <span class="comment">// namespace net</span></div>
+<div class="ttc" id="aSocketPoll_8cpp_html_a1fc5a54e9b906a2ca936789ab203e083"><div class="ttname"><a href="SocketPoll_8cpp.html#a1fc5a54e9b906a2ca936789ab203e083">net::waitReadable</a></div><div class="ttdeci">Result&lt; void &gt; waitReadable(int fd, std::chrono::milliseconds timeout, std::string_view context)</div><div class="ttdoc">Waits until a socket can be read.</div><div class="ttdef"><b>Definition</b> SocketPoll.cpp:80</div></div>
+<div class="ttc" id="aSocketPoll_8cpp_html_a26e9e6312182079702987f847a686444"><div class="ttname"><a href="SocketPoll_8cpp.html#a26e9e6312182079702987f847a686444">net::checkSocketError</a></div><div class="ttdeci">Result&lt; void &gt; checkSocketError(int fd, std::string_view context)</div><div class="ttdoc">Returns any pending asynchronous socket error.</div><div class="ttdef"><b>Definition</b> SocketPoll.cpp:63</div></div>
+<div class="ttc" id="aSocketPoll_8cpp_html_aa4ac2d1e8a5516fbf65afdd9d2ef04e3"><div class="ttname"><a href="SocketPoll_8cpp.html#aa4ac2d1e8a5516fbf65afdd9d2ef04e3">net::waitWritable</a></div><div class="ttdeci">Result&lt; void &gt; waitWritable(int fd, std::chrono::milliseconds timeout, std::string_view context)</div><div class="ttdoc">Waits until a socket can be written.</div><div class="ttdef"><b>Definition</b> SocketPoll.cpp:85</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_fc4c7f03e1a69a98c370fae55a743828.html">network</a></li><li class="navelem"><a class="el" href="dir_1bab67e0e9893324e92f7ce98fde9362.html">core</a></li><li class="navelem"><b>SocketPoll.hpp</b></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_fc4c7f03e1a69a98c370fae55a743828.html">network</a></li><li class="navelem"><a class="el" href="dir_1bab67e0e9893324e92f7ce98fde9362.html">core</a></li><li class="navelem"><a class="el" href="SocketPoll_8hpp.html">SocketPoll.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

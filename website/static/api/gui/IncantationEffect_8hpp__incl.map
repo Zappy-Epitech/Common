@@ -1,0 +1,23 @@
+<map id="src/core/IncantationEffect.hpp" name="src/core/IncantationEffect.hpp">
+<area shape="rect" id="Node000001" title="Incantation visual effect components, lifecycle helpers and module." alt="" coords="334,5,549,31"/>
+<area shape="rect" id="Node000002" href="$flecs_8h_source.html" title=" " alt="" coords="313,79,447,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="433,33,401,70,397,66,429,29"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="471,79,534,104"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="453,29,486,66,482,70,449,33"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,152,80,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="323,107,94,154,93,149,322,101"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="104,152,179,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="342,107,193,151,191,146,341,101"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="203,152,274,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="358,106,275,148,273,143,356,102"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="298,152,369,177"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="375,106,351,142,346,139,370,103"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="393,152,463,177"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="390,103,415,139,410,142,386,106"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="488,152,571,177"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="405,102,494,144,491,148,403,106"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="595,152,669,177"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="421,101,583,147,581,152,420,107"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="693,152,760,177"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="443,101,680,149,679,154,442,107"/>
+</map>

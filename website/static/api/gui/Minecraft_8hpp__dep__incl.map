@@ -1,0 +1,7 @@
+<map id="src/minecraft/Minecraft.hpp" name="src/minecraft/Minecraft.hpp">
+<area shape="rect" id="Node000001" title="Top&#45;level flecs module aggregating the Minecraft&#45;style player rendering subsystems." alt="" coords="46,5,246,31"/>
+<area shape="rect" id="Node000002" href="$main_8cpp.html" title="Application entry point: builds the flecs world, imports modules, and runs the app loop." alt="" coords="5,79,111,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,41,74,81,71,76,120,37"/>
+<area shape="rect" id="Node000003" href="$Minecraft_8cpp.html" title="Implements the top&#45;level Minecraft module by importing its child modules." alt="" coords="135,79,333,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="172,37,221,76,218,81,169,41"/>
+</map>

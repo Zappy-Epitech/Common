@@ -1,0 +1,35 @@
+<map id="src/network/client/ZappySession.cpp" name="src/network/client/ZappySession.cpp">
+<area shape="rect" id="Node000001" title="Implements the GUI WELCOME handshake and bootstrap command sequence." alt="" coords="415,5,559,45"/>
+<area shape="rect" id="Node000002" href="$ZappySession_8hpp.html" title="Handles the Zappy GUI WELCOME/GRAPHIC handshake before forwarding lines." alt="" coords="91,93,233,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="416,47,223,93,222,88,415,41"/>
+<area shape="rect" id="Node000008" href="$TcpClient_8hpp.html" title="RAII non&#45;blocking TCP client with poll&#45;based timeouts and byte helpers." alt="" coords="411,93,564,119"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="490,46,490,79,485,79,485,46"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="589,93,645,119"/>
+<area shape="poly" id="edge18_Node000001_Node000015" title=" " alt="" coords="520,43,587,84,585,88,517,48"/>
+<area shape="rect" id="Node000003" href="$Result_8hpp.html" title="Alias of std::expected&lt;T, Error&gt; used as the network result type." alt="" coords="24,167,159,192"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="152,121,114,159,111,155,149,117"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="47,313,106,339"/>
+<area shape="poly" id="edge6_Node000002_Node000005" title=" " alt="" coords="92,120,48,137,29,151,14,168,9,185,10,210,16,237,27,264,40,284,55,302,51,305,36,287,22,267,11,239,5,210,3,185,9,165,26,147,46,133,90,115"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="183,167,280,192"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="175,117,213,155,209,159,172,121"/>
+<area shape="rect" id="Node000004" href="$Error_8hpp.html" title="Error type, error categories, and factory helpers for the network layer." alt="" coords="37,240,117,265"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="92,193,85,227,79,226,86,192"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="141,240,223,265"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="108,190,158,229,155,233,104,194"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="79,266,79,300,74,300,74,266"/>
+<area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="424,121,169,167,169,162,423,116"/>
+<area shape="poly" id="edge15_Node000008_Node000005" title=" " alt="" coords="451,121,399,141,345,169,313,194,292,218,270,242,237,268,177,297,120,316,118,311,175,292,234,263,266,239,288,215,309,190,342,164,397,136,449,116"/>
+<area shape="poly" id="edge16_Node000008_Node000007" title=" " alt="" coords="447,121,287,166,285,160,446,116"/>
+<area shape="rect" id="Node000009" href="$SocketHandle_8hpp.html" title="RAII owner for a POSIX socket file descriptor." alt="" coords="355,167,494,192"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="479,121,446,158,442,154,475,117"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="518,167,585,192"/>
+<area shape="poly" id="edge11_Node000008_Node000010" title=" " alt="" coords="500,117,534,155,530,158,496,121"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="609,167,680,192"/>
+<area shape="poly" id="edge12_Node000008_Node000011" title=" " alt="" coords="514,116,608,159,606,163,512,121"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="705,167,771,192"/>
+<area shape="poly" id="edge13_Node000008_Node000012" title=" " alt="" coords="528,116,692,162,691,167,527,121"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="795,167,849,192"/>
+<area shape="poly" id="edge14_Node000008_Node000013" title=" " alt="" coords="553,116,657,136,782,164,781,169,656,141,552,121"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="873,167,936,192"/>
+<area shape="poly" id="edge17_Node000008_Node000014" title=" " alt="" coords="565,115,699,135,861,164,860,169,698,140,564,120"/>
+</map>

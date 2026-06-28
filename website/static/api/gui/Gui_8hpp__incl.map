@@ -1,0 +1,9 @@
+<map id="src/core/Gui.hpp" name="src/core/Gui.hpp">
+<area shape="rect" id="Node000001" title="2D GUI building blocks: buttons, text inputs, callbacks, screen messages and module." alt="" coords="88,5,215,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,92,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,33,78,73,75,68,133,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="116,79,187,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="154,31,154,65,149,65,149,31"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="211,79,270,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="167,29,217,68,214,72,164,33"/>
+</map>

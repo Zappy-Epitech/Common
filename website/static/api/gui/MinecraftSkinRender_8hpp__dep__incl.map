@@ -1,0 +1,5 @@
+<map id="src/minecraft/MinecraftSkinRender.hpp" name="src/minecraft/MinecraftSkinRender.hpp">
+<area shape="rect" id="Node000001" title="Standalone helpers to draw Minecraft skins: 2D head, full 3D player, and inventory preview." alt="" coords="5,5,205,45"/>
+<area shape="rect" id="Node000002" href="$MinecraftSkinRender_8cpp.html" title="Implements 2D head, full 3D player and mouse&#45;tracking inventory preview skin drawing." alt="" coords="5,93,205,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,59,108,93,103,93,103,59"/>
+</map>

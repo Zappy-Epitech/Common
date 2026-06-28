@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('structScenes.html',''); initResizable(
 </div><!--header-->
 <div class="contents">
 
-<p>Registers generic scene lifecycle components and systems.  
+<p>ECS module providing the generic scene lifecycle infrastructure.  
  <a href="structScenes.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="Scenes_8hpp_source.html">Scenes.hpp</a>&gt;</code></p>
@@ -110,7 +110,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa52fca246f7f011d46519f27b540f918"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Registers generic scene lifecycle components and systems. </p>
+<div class="textblock"><p>ECS module providing the generic scene lifecycle infrastructure. </p>
+<p>Registers the <a class="el" href="structDespawnOnEnter.html">DespawnOnEnter</a>, <a class="el" href="structDespawnOnExit.html">DespawnOnExit</a>, <a class="el" href="structInScene.html">InScene</a> and <a class="el" href="structCurrentScene.html">CurrentScene</a> components, and adds observers that, on scene changes, despawn tagged entities and enable/disable entities according to the scene they belong to. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa52fca246f7f011d46519f27b540f918" name="aa52fca246f7f011d46519f27b540f918"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa52fca246f7f011d46519f27b540f918">&#9670;&#160;</a></span>Scenes()</h2>
@@ -135,7 +136,7 @@ Public Member Functions</h2></td></tr>
 </div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li>src/core/<a class="el" href="Scenes_8hpp_source.html">Scenes.hpp</a></li>
-<li>src/core/<b>Scenes.cpp</b></li>
+<li>src/core/<a class="el" href="Scenes_8cpp.html">Scenes.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -19,9 +19,11 @@ var searchData=
   ['players_16',['players',['../structUpgradeCost.html#a5b0eb21e83b9d536468a723de1c9c4c5',1,'UpgradeCost']]],
   ['playersrequiredtoupgrade_17',['playersrequiredtoupgrade',['../StateSwitch_8cpp.html#aa359797ae11f8387fa8ae93619dd24cc',1,'playersRequiredToUpgrade(int level):&#160;StateSwitch.cpp'],['../Player_8hpp.html#aa359797ae11f8387fa8ae93619dd24cc',1,'playersRequiredToUpgrade(int level):&#160;StateSwitch.cpp']]],
   ['playerstargettoupgrade_18',['playerstargettoupgrade',['../StateSwitch_8cpp.html#ad548b1a98114c8634be24bb4ef65e1af',1,'playersTargetToUpgrade(int level, int coopTarget):&#160;StateSwitch.cpp'],['../Player_8hpp.html#ad548b1a98114c8634be24bb4ef65e1af',1,'playersTargetToUpgrade(int level, int coopTarget):&#160;StateSwitch.cpp']]],
-  ['poll_5ferror_19',['POLL_ERROR',['../Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aa29422ea3bfa0fde21ed413e6f9d7b0d9',1,'Errors.hpp']]],
-  ['pollcheck_20',['pollCheck',['../classNetwork.html#a0074dd651e820d131dfe450ef02a3fc0',1,'Network']]],
-  ['position_21',['position',['../structposition.html',1,'']]],
-  ['processgamelogic_22',['processGameLogic',['../classPlayer.html#a44e3fd5212cffab67dba097a984732ef',1,'Player']]],
-  ['processsendqueue_23',['processSendQueue',['../classNetwork.html#ab8d838ca7365828935c8bfebc95a6c0b',1,'Network']]]
+  ['playerstate_19',['PlayerState',['../Player_8hpp.html#a3c730f37b1b3a893159bada67637fdb1',1,'Player.hpp']]],
+  ['poll_5ferror_20',['POLL_ERROR',['../Errors_8hpp.html#ab0df38968e4f03a3f1f6d6df0f31f45aa29422ea3bfa0fde21ed413e6f9d7b0d9',1,'Errors.hpp']]],
+  ['pollcheck_21',['pollCheck',['../classNetwork.html#a0074dd651e820d131dfe450ef02a3fc0',1,'Network']]],
+  ['pooldeficitmax_22',['poolDeficitMax',['../structParams.html#aab2001bdfad4453b839a0b4d748f5981',1,'Params']]],
+  ['position_23',['position',['../structposition.html',1,'']]],
+  ['processgamelogic_24',['processGameLogic',['../classPlayer.html#a44e3fd5212cffab67dba097a984732ef',1,'Player']]],
+  ['processsendqueue_25',['processSendQueue',['../classNetwork.html#ab8d838ca7365828935c8bfebc95a6c0b',1,'Network']]]
 ];

@@ -1,0 +1,54 @@
+<map id="src/network/NetworkModule.hpp" name="src/network/NetworkModule.hpp">
+<area shape="rect" id="Node000001" title="Flecs module and helpers bridging the threaded client into the ECS world." alt="" coords="722,5,955,31"/>
+<area shape="rect" id="Node000002" href="$ZappyClient_8hpp.html" title="Threaded Zappy GUI client exchanging protocol lines via queues." alt="" coords="822,79,991,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="852,29,888,67,884,70,848,33"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="5,225,72,251"/>
+<area shape="poly" id="edge28_Node000001_Node000015" title=" " alt="" coords="783,33,562,82,421,116,281,155,173,190,82,223,80,218,171,185,279,149,420,111,561,77,782,28"/>
+<area shape="rect" id="Node000017" title=" " alt="" coords="725,225,822,251"/>
+<area shape="poly" id="edge30_Node000001_Node000017" title=" " alt="" coords="834,32,812,80,792,151,780,212,774,211,786,150,807,78,830,30"/>
+<area shape="rect" id="Node000022" title=" " alt="" coords="1016,79,1083,104"/>
+<area shape="poly" id="edge29_Node000001_Node000022" title=" " alt="" coords="873,28,1004,72,1002,77,872,33"/>
+<area shape="rect" id="Node000003" href="$BoundedQueue_8hpp.html" title="Fixed&#45;capacity FIFO queue that drops the oldest value when full." alt="" coords="1222,152,1399,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="972,101,1233,147,1232,152,971,107"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="898,225,969,251"/>
+<area shape="poly" id="edge22_Node000002_Node000004" title=" " alt="" coords="911,104,931,211,926,212,906,105"/>
+<area shape="rect" id="Node000007" href="$UnboundedQueue_8hpp.html" title="FIFO queue that retains every value until it is consumed." alt="" coords="1424,152,1619,177"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="992,100,1004,101,1410,148,1410,153,1004,107,991,105"/>
+<area shape="rect" id="Node000008" href="$TcpClient_8hpp.html" title="RAII non&#45;blocking TCP client with poll&#45;based timeouts and byte helpers." alt="" coords="422,152,575,177"/>
+<area shape="poly" id="edge9_Node000002_Node000008" title=" " alt="" coords="842,107,578,152,577,147,841,101"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="657,372,716,397"/>
+<area shape="poly" id="edge26_Node000002_Node000011" title=" " alt="" coords="906,105,881,170,861,212,835,252,807,286,775,318,716,366,713,362,771,314,803,283,831,249,856,210,876,168,901,103"/>
+<area shape="poly" id="edge23_Node000002_Node000015" title=" " alt="" coords="822,103,633,123,410,155,249,187,86,228,85,222,248,182,409,149,632,118,822,97"/>
+<area shape="rect" id="Node000019" title=" " alt="" coords="944,152,1021,177"/>
+<area shape="poly" id="edge24_Node000002_Node000019" title=" " alt="" coords="921,102,962,141,958,144,917,106"/>
+<area shape="rect" id="Node000020" title=" " alt="" coords="1045,152,1109,177"/>
+<area shape="poly" id="edge25_Node000002_Node000020" title=" " alt="" coords="935,102,1038,144,1036,149,933,106"/>
+<area shape="rect" id="Node000021" title=" " alt="" coords="1133,152,1197,177"/>
+<area shape="poly" id="edge27_Node000002_Node000021" title=" " alt="" coords="949,101,1121,148,1120,154,948,107"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1251,180,983,230,982,225,1250,175"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="1311,225,1374,251"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="1318,177,1334,212,1330,214,1314,179"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="1461,225,1521,251"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="1341,175,1450,218,1448,223,1339,180"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="1494,180,1385,223,1383,218,1492,175"/>
+<area shape="poly" id="edge8_Node000007_Node000006" title=" " alt="" coords="1519,179,1503,214,1499,212,1514,177"/>
+<area shape="poly" id="edge16_Node000008_Node000004" title=" " alt="" coords="569,175,884,226,884,231,568,180"/>
+<area shape="rect" id="Node000009" href="$Result_8hpp.html" title="Alias of std::expected&lt;T, Error&gt; used as the network result type." alt="" coords="351,225,486,251"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="488,179,444,218,440,214,484,175"/>
+<area shape="poly" id="edge19_Node000008_Node000011" title=" " alt="" coords="577,174,623,192,645,206,663,224,682,256,691,293,694,328,693,358,687,358,688,329,686,294,677,258,659,227,642,210,621,197,575,179"/>
+<area shape="rect" id="Node000013" href="$SocketHandle_8hpp.html" title="RAII owner for a POSIX socket file descriptor." alt="" coords="511,225,649,251"/>
+<area shape="poly" id="edge14_Node000008_Node000013" title=" " alt="" coords="513,175,558,214,555,218,510,179"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="96,225,163,251"/>
+<area shape="poly" id="edge15_Node000008_Node000014" title=" " alt="" coords="430,180,177,228,176,223,429,175"/>
+<area shape="poly" id="edge17_Node000008_Node000015" title=" " alt="" coords="422,177,271,197,86,228,85,223,270,192,421,172"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="187,225,240,251"/>
+<area shape="poly" id="edge18_Node000008_Node000016" title=" " alt="" coords="449,180,254,228,253,223,447,175"/>
+<area shape="poly" id="edge20_Node000008_Node000017" title=" " alt="" coords="543,175,716,219,715,224,542,180"/>
+<area shape="rect" id="Node000018" title=" " alt="" coords="265,225,327,251"/>
+<area shape="poly" id="edge21_Node000008_Node000018" title=" " alt="" coords="467,180,341,224,340,219,465,175"/>
+<area shape="rect" id="Node000010" href="$Error_8hpp.html" title="Error type, error categories, and factory helpers for the network layer." alt="" coords="379,299,459,324"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="421,251,421,285,416,285,416,251"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="483,299,565,324"/>
+<area shape="poly" id="edge13_Node000009_Node000012" title=" " alt="" coords="437,248,497,289,494,293,434,253"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="459,321,644,369,643,375,458,326"/>
+</map>

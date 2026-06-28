@@ -150,16 +150,61 @@ Functions</h2></td></tr>
 <tr class="memitem:a46de87374858b05a6dc163355aa2d65f" id="r_a46de87374858b05a6dc163355aa2d65f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8cpp.html#a46de87374858b05a6dc163355aa2d65f">canUpgrade</a> (const <a class="el" href="structInventory.html">Inventory</a> &amp;inventory, int currentLevel)</td></tr>
 <tr class="memdesc:a46de87374858b05a6dc163355aa2d65f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether an inventory satisfies the cost to elevate one level.  <br /></td></tr>
 <tr class="separator:a46de87374858b05a6dc163355aa2d65f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd09095651170def69dc0cf6998044df" id="r_acd09095651170def69dc0cf6998044df"><td class="memItemLeft" align="right" valign="top"><a id="acd09095651170def69dc0cf6998044df" name="acd09095651170def69dc0cf6998044df"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>stonesHeldDeficit</b> (const <a class="el" href="structInventory.html">Inventory</a> &amp;inventory, int level)</td></tr>
+<tr class="memitem:acd09095651170def69dc0cf6998044df" id="r_acd09095651170def69dc0cf6998044df"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8cpp.html#acd09095651170def69dc0cf6998044df">stonesHeldDeficit</a> (const <a class="el" href="structInventory.html">Inventory</a> &amp;inventory, int level)</td></tr>
+<tr class="memdesc:acd09095651170def69dc0cf6998044df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counts how many required stones are still missing from the inventory.  <br /></td></tr>
 <tr class="separator:acd09095651170def69dc0cf6998044df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada4fbd475377b41034050c8e8b48270e" id="r_ada4fbd475377b41034050c8e8b48270e"><td class="memItemLeft" align="right" valign="top"><a id="ada4fbd475377b41034050c8e8b48270e" name="ada4fbd475377b41034050c8e8b48270e"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>canHostPooledUpgrade</b> (const <a class="el" href="structInventory.html">Inventory</a> &amp;inventory, int level, int poolDeficitMax)</td></tr>
+<tr class="memitem:ada4fbd475377b41034050c8e8b48270e" id="r_ada4fbd475377b41034050c8e8b48270e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8cpp.html#ada4fbd475377b41034050c8e8b48270e">canHostPooledUpgrade</a> (const <a class="el" href="structInventory.html">Inventory</a> &amp;inventory, int level, int poolDeficitMax)</td></tr>
+<tr class="memdesc:ada4fbd475377b41034050c8e8b48270e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether a player may host an elevation while pooling stones with teammates.  <br /></td></tr>
 <tr class="separator:ada4fbd475377b41034050c8e8b48270e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation of the <a class="el" href="classPlayer.html">Player</a> loop and elevation helpers. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="ada4fbd475377b41034050c8e8b48270e" name="ada4fbd475377b41034050c8e8b48270e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada4fbd475377b41034050c8e8b48270e">&#9670;&#160;</a></span>canHostPooledUpgrade()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool canHostPooledUpgrade </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structInventory.html">Inventory</a> &amp;&#160;</td>
+          <td class="paramname"><em>inventory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>poolDeficitMax</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether a player may host an elevation while pooling stones with teammates. </p>
+<p>From level 2 up, a host need not hold the full stone set itself: teammates gathering on the tile can lay the rest. This allows hosting when the combined stone shortfall (see <a class="el" href="Player_8cpp.html#acd09095651170def69dc0cf6998044df">stonesHeldDeficit</a>) does not exceed <code>poolDeficitMax</code>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inventory</td><td>The resources currently held by the player. </td></tr>
+    <tr><td class="paramname">level</td><td>The player's current level; only 2 to 7 can host a pooled upgrade. </td></tr>
+    <tr><td class="paramname">poolDeficitMax</td><td>The largest stone deficit a host is allowed to start with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the player may host the pooled upgrade, <code>false</code> otherwise. </dd></dl>
+
+</div>
+</div>
 <a id="a46de87374858b05a6dc163355aa2d65f" name="a46de87374858b05a6dc163355aa2d65f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a46de87374858b05a6dc163355aa2d65f">&#9670;&#160;</a></span>canUpgrade()</h2>
 
@@ -195,6 +240,44 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>canHostPooledUpgrade<
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if the inventory meets or exceeds the cost for the next elevation, <code>false</code> otherwise (including out-of-range levels). </dd></dl>
+
+</div>
+</div>
+<a id="acd09095651170def69dc0cf6998044df" name="acd09095651170def69dc0cf6998044df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd09095651170def69dc0cf6998044df">&#9670;&#160;</a></span>stonesHeldDeficit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int stonesHeldDeficit </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structInventory.html">Inventory</a> &amp;&#160;</td>
+          <td class="paramname"><em>inventory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>level</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Counts how many required stones are still missing from the inventory. </p>
+<p>Sums, across the six stone types, the shortfall between what the next elevation costs (see <a class="el" href="Ressource_8hpp.html#aac34434cb1098468cfd9404af533e6ca">upgradeCosts</a>) and what is currently held; a stone already in surplus contributes nothing. Used to decide whether a player may host a pooled upgrade (see <a class="el" href="Player_8cpp.html#ada4fbd475377b41034050c8e8b48270e">canHostPooledUpgrade</a>). </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inventory</td><td>The resources currently held by the player. </td></tr>
+    <tr><td class="paramname">level</td><td>The player's current level; only 1 to 7 can elevate. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The total stone deficit (0 when the inventory already suffices), or -1 for an out-of-range level. </dd></dl>
 
 </div>
 </div>

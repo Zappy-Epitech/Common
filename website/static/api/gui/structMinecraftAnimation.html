@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('structMinecraftAnimation.html',''); in
 </div><!--header-->
 <div class="contents">
 
-<p>Registers skin animation systems.  
+<p>flecs module that registers the skin animation components and update system.  
  <a href="structMinecraftAnimation.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="MinecraftAnimation_8hpp_source.html">MinecraftAnimation.hpp</a>&gt;</code></p>
@@ -110,7 +110,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a13d7defe3d8057329b6f4db7645104ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Registers skin animation systems. </p>
+<div class="textblock"><p>flecs module that registers the skin animation components and update system. </p>
+<p>Registers the <a class="el" href="structSkinAnimation.html" title="Stores a skin animation clip.">SkinAnimation</a>, <a class="el" href="structAnimPlayer.html" title="Stores animation playback state.">AnimPlayer</a> and <a class="el" href="structSkinPose.html" title="Stores current limb angles.">SkinPose</a> components and the <code>AnimUpdate</code> system which advances each player's timer and interpolates its limb keyframe tracks into the current <a class="el" href="structSkinPose.html" title="Stores current limb angles.">SkinPose</a> every frame. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a13d7defe3d8057329b6f4db7645104ce" name="a13d7defe3d8057329b6f4db7645104ce"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a13d7defe3d8057329b6f4db7645104ce">&#9670;&#160;</a></span>MinecraftAnimation()</h2>
@@ -135,7 +136,7 @@ Public Member Functions</h2></td></tr>
 </div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li>src/minecraft/<a class="el" href="MinecraftAnimation_8hpp_source.html">MinecraftAnimation.hpp</a></li>
-<li>src/minecraft/<b>MinecraftAnimation.cpp</b></li>
+<li>src/minecraft/<a class="el" href="MinecraftAnimation_8cpp.html">MinecraftAnimation.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

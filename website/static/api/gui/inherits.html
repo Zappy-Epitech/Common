@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('hierarchy.html',''); initResizable(); 
 </td></tr>
 <tr><td><img src="inherit_graph_7.png" border="0" usemap="#aCore" alt=""/>
 <map name="aCore" id="aCore">
-<area shape="rect" href="structCore.html" title="Registers the core ECS module." alt="" coords="5,5,57,31"/>
+<area shape="rect" href="structCore.html" title="Root ECS module of the GUI client." alt="" coords="5,5,57,31"/>
 </map>
 </td></tr>
 <tr><td><img src="inherit_graph_8.png" border="0" usemap="#aCube" alt=""/>
@@ -1064,7 +1064,7 @@ $(document).ready(function(){initNavTree('hierarchy.html',''); initResizable(); 
 </td></tr>
 <tr><td><img src="inherit_graph_193.png" border="0" usemap="#aGameAssets" alt=""/>
 <map name="aGameAssets" id="aGameAssets">
-<area shape="rect" href="structGameAssets.html" title=" " alt="" coords="5,5,109,31"/>
+<area shape="rect" href="structGameAssets.html" title="Holds loaded gameplay assets shared across the scene." alt="" coords="5,5,109,31"/>
 </map>
 </td></tr>
 <tr><td><img src="inherit_graph_194.png" border="0" usemap="#aGameLifecycle" alt=""/>
@@ -1074,7 +1074,7 @@ $(document).ready(function(){initNavTree('hierarchy.html',''); initResizable(); 
 </td></tr>
 <tr><td><img src="inherit_graph_195.png" border="0" usemap="#aGamePlay" alt=""/>
 <map name="aGamePlay" id="aGamePlay">
-<area shape="rect" href="structGamePlay.html" title="Registers gameplay modules." alt="" coords="5,5,95,31"/>
+<area shape="rect" href="structGamePlay.html" title="Root flecs module for the gameplay scene." alt="" coords="5,5,95,31"/>
 </map>
 </td></tr>
 <tr><td><img src="inherit_graph_196.png" border="0" usemap="#aGameResult" alt=""/>
@@ -1114,7 +1114,7 @@ $(document).ready(function(){initNavTree('hierarchy.html',''); initResizable(); 
 </td></tr>
 <tr><td><img src="inherit_graph_203.png" border="0" usemap="#aGui" alt=""/>
 <map name="aGui" id="aGui">
-<area shape="rect" href="structGui.html" title="Registers GUI components and systems." alt="" coords="5,5,49,31"/>
+<area shape="rect" href="structGui.html" title="ECS module providing the 2D GUI widgets and their render systems." alt="" coords="5,5,49,31"/>
 </map>
 </td></tr>
 <tr><td><img src="inherit_graph_204.png" border="0" usemap="#aGuiSettings" alt=""/>
@@ -1154,7 +1154,7 @@ $(document).ready(function(){initNavTree('hierarchy.html',''); initResizable(); 
 </td></tr>
 <tr><td><img src="inherit_graph_211.png" border="0" usemap="#aIncantationEffects" alt=""/>
 <map name="aIncantationEffects" id="aIncantationEffects">
-<area shape="rect" href="structIncantationEffects.html" title="Registers incantation visual components and systems." alt="" coords="5,5,144,31"/>
+<area shape="rect" href="structIncantationEffects.html" title="ECS module rendering incantation visual effects." alt="" coords="5,5,144,31"/>
 </map>
 </td></tr>
 <tr><td><img src="inherit_graph_212.png" border="0" usemap="#aIncantationParticipant" alt=""/>
@@ -1189,22 +1189,22 @@ $(document).ready(function(){initNavTree('hierarchy.html',''); initResizable(); 
 </td></tr>
 <tr><td><img src="inherit_graph_218.png" border="0" usemap="#aMinecraft" alt=""/>
 <map name="aMinecraft" id="aMinecraft">
-<area shape="rect" href="structMinecraft.html" title="Registers Minecraft&#45;style rendering modules." alt="" coords="5,5,88,31"/>
+<area shape="rect" href="structMinecraft.html" title="Top&#45;level flecs module for Minecraft&#45;style player rendering." alt="" coords="5,5,88,31"/>
 </map>
 </td></tr>
 <tr><td><img src="inherit_graph_219.png" border="0" usemap="#aMinecraftAnimation" alt=""/>
 <map name="aMinecraftAnimation" id="aMinecraftAnimation">
-<area shape="rect" href="structMinecraftAnimation.html" title="Registers skin animation systems." alt="" coords="5,5,156,31"/>
+<area shape="rect" href="structMinecraftAnimation.html" title="flecs module that registers the skin animation components and update system." alt="" coords="5,5,156,31"/>
 </map>
 </td></tr>
 <tr><td><img src="inherit_graph_220.png" border="0" usemap="#aMinecraftCrowdMember" alt=""/>
 <map name="aMinecraftCrowdMember" id="aMinecraftCrowdMember">
-<area shape="rect" href="structMinecraftCrowdMember.html" title="Stores one player entry participating in same&#45;tile render layout." alt="" coords="5,5,184,31"/>
+<area shape="rect" href="structMinecraftCrowdMember.html" title="One player entry participating in same&#45;tile render layout." alt="" coords="5,5,184,31"/>
 </map>
 </td></tr>
 <tr><td><img src="inherit_graph_221.png" border="0" usemap="#aMinecraftRenderer" alt=""/>
 <map name="aMinecraftRenderer" id="aMinecraftRenderer">
-<area shape="rect" href="structMinecraftRenderer.html" title="Registers Minecraft skin rendering." alt="" coords="5,5,148,31"/>
+<area shape="rect" href="structMinecraftRenderer.html" title="flecs module that registers the Minecraft skin rendering system." alt="" coords="5,5,148,31"/>
 </map>
 </td></tr>
 <tr><td><img src="inherit_graph_222.png" border="0" usemap="#aMinecraftSkin" alt=""/>
@@ -1214,7 +1214,7 @@ $(document).ready(function(){initNavTree('hierarchy.html',''); initResizable(); 
 </td></tr>
 <tr><td><img src="inherit_graph_223.png" border="0" usemap="#aMovement" alt=""/>
 <map name="aMovement" id="aMovement">
-<area shape="rect" href="structMovement.html" title="Registers movement systems." alt="" coords="5,5,97,31"/>
+<area shape="rect" href="structMovement.html" title="Registers movement interpolation systems." alt="" coords="5,5,97,31"/>
 </map>
 </td></tr>
 <tr><td><img src="inherit_graph_224.png" border="0" usemap="#anet_1_1BoundedQueue_3_01std_1_1string_00_01maxQueueSize_01_4" alt=""/>
@@ -1229,7 +1229,7 @@ $(document).ready(function(){initNavTree('hierarchy.html',''); initResizable(); 
 </td></tr>
 <tr><td><img src="inherit_graph_226.png" border="0" usemap="#anet_1_1Error" alt=""/>
 <map name="anet_1_1Error" id="anet_1_1Error">
-<area shape="rect" href="structnet_1_1Error.html" title=" " alt="" coords="5,5,88,31"/>
+<area shape="rect" href="structnet_1_1Error.html" title="Error value used by Result&lt;T&gt;." alt="" coords="5,5,88,31"/>
 </map>
 </td></tr>
 <tr><td><img src="inherit_graph_227.png" border="0" usemap="#anet_1_1LineBuffer" alt=""/>
@@ -1244,7 +1244,7 @@ $(document).ready(function(){initNavTree('hierarchy.html',''); initResizable(); 
 </td></tr>
 <tr><td><img src="inherit_graph_229.png" border="0" usemap="#anet_1_1TcpClient" alt=""/>
 <map name="anet_1_1TcpClient" id="anet_1_1TcpClient">
-<area shape="rect" href="classnet_1_1TcpClient.html" title=" " alt="" coords="5,5,116,31"/>
+<area shape="rect" href="classnet_1_1TcpClient.html" title="Small RAII wrapper around a POSIX TCP socket." alt="" coords="5,5,116,31"/>
 </map>
 </td></tr>
 <tr><td><img src="inherit_graph_230.png" border="0" usemap="#anet_1_1TcpClientOptions" alt=""/>
@@ -1264,7 +1264,7 @@ $(document).ready(function(){initNavTree('hierarchy.html',''); initResizable(); 
 </td></tr>
 <tr><td><img src="inherit_graph_233.png" border="0" usemap="#anet_1_1ZappyClient" alt=""/>
 <map name="anet_1_1ZappyClient" id="anet_1_1ZappyClient">
-<area shape="rect" href="classnet_1_1ZappyClient.html" title=" " alt="" coords="5,5,136,31"/>
+<area shape="rect" href="classnet_1_1ZappyClient.html" title="Threaded Zappy GUI client." alt="" coords="5,5,136,31"/>
 </map>
 </td></tr>
 <tr><td><img src="inherit_graph_234.png" border="0" usemap="#anet_1_1ZappySession" alt=""/>
@@ -1284,7 +1284,7 @@ $(document).ready(function(){initNavTree('hierarchy.html',''); initResizable(); 
 </td></tr>
 <tr><td><img src="inherit_graph_237.png" border="0" usemap="#aNetworkModule" alt=""/>
 <map name="aNetworkModule" id="aNetworkModule">
-<area shape="rect" href="structNetworkModule.html" title="Registers network components and systems." alt="" coords="5,5,131,31"/>
+<area shape="rect" href="structNetworkModule.html" title="Flecs module bridging the threaded ZappyClient into the ECS world." alt="" coords="5,5,131,31"/>
 </map>
 </td></tr>
 <tr><td><img src="inherit_graph_238.png" border="0" usemap="#aNetworkState" alt=""/>
@@ -1294,7 +1294,7 @@ $(document).ready(function(){initNavTree('hierarchy.html',''); initResizable(); 
 </td></tr>
 <tr><td><img src="inherit_graph_239.png" border="0" usemap="#aparsing_1_1Scanner_3_01Char_01_4" alt=""/>
 <map name="aparsing_1_1Scanner_3_01Char_01_4" id="aparsing_1_1Scanner_3_01Char_01_4">
-<area shape="rect" href="classparsing_1_1Scanner.html" title="Reads tokens from a string view." alt="" coords="5,5,196,31"/>
+<area shape="rect" href="classparsing_1_1Scanner.html" title="Reads tokens from a string view using a forward&#45;only cursor." alt="" coords="5,5,196,31"/>
 </map>
 </td></tr>
 <tr><td><img src="inherit_graph_240.png" border="0" usemap="#aPartUV" alt=""/>
@@ -1349,7 +1349,7 @@ $(document).ready(function(){initNavTree('hierarchy.html',''); initResizable(); 
 </td></tr>
 <tr><td><img src="inherit_graph_250.png" border="0" usemap="#aRaylib" alt=""/>
 <map name="aRaylib" id="aRaylib">
-<area shape="rect" href="structRaylib.html" title="Registers Raylib rendering systems." alt="" coords="5,5,68,31"/>
+<area shape="rect" href="structRaylib.html" title="ECS module wiring Raylib into the render pipeline." alt="" coords="5,5,68,31"/>
 </map>
 </td></tr>
 <tr><td><img src="inherit_graph_251.png" border="0" usemap="#aRender2D" alt=""/>
@@ -1384,7 +1384,7 @@ $(document).ready(function(){initNavTree('hierarchy.html',''); initResizable(); 
 </td></tr>
 <tr><td><img src="inherit_graph_257.png" border="0" usemap="#aScenes" alt=""/>
 <map name="aScenes" id="aScenes">
-<area shape="rect" href="structScenes.html" title="Registers generic scene lifecycle components and systems." alt="" coords="5,5,73,31"/>
+<area shape="rect" href="structScenes.html" title="ECS module providing the generic scene lifecycle infrastructure." alt="" coords="5,5,73,31"/>
 </map>
 </td></tr>
 <tr><td><img src="inherit_graph_258.png" border="0" usemap="#aSceneTag_3_01T_01_4" alt=""/>
@@ -1399,7 +1399,7 @@ $(document).ready(function(){initNavTree('hierarchy.html',''); initResizable(); 
 </td></tr>
 <tr><td><img src="inherit_graph_260.png" border="0" usemap="#aSettings" alt=""/>
 <map name="aSettings" id="aSettings">
-<area shape="rect" href="structSettings.html" title="Registers GUI settings state and systems." alt="" coords="5,5,80,31"/>
+<area shape="rect" href="structSettings.html" title="ECS module managing user&#45;configurable GUI settings." alt="" coords="5,5,80,31"/>
 </map>
 </td></tr>
 <tr><td><img src="inherit_graph_261.png" border="0" usemap="#aSettingsModal" alt=""/>
@@ -1439,7 +1439,7 @@ $(document).ready(function(){initNavTree('hierarchy.html',''); initResizable(); 
 </td></tr>
 <tr><td><img src="inherit_graph_268.png" border="0" usemap="#aSpatial" alt=""/>
 <map name="aSpatial" id="aSpatial">
-<area shape="rect" href="structSpatial.html" title="Registers spatial components." alt="" coords="5,5,72,31"/>
+<area shape="rect" href="structSpatial.html" title="ECS module registering the spatial components." alt="" coords="5,5,72,31"/>
 </map>
 </td></tr>
 <tr><td><img src="inherit_graph_269.png" border="0" usemap="#astd_1_1function" alt=""/>
@@ -1482,7 +1482,7 @@ $(document).ready(function(){initNavTree('hierarchy.html',''); initResizable(); 
 </td></tr>
 <tr><td><img src="inherit_graph_275.png" border="0" usemap="#azappy_1_1CommandParser" alt=""/>
 <map name="azappy_1_1CommandParser" id="azappy_1_1CommandParser">
-<area shape="rect" href="structzappy_1_1CommandParser.html" title="Maps a command name to its parser." alt="" coords="5,5,180,31"/>
+<area shape="rect" href="structzappy_1_1CommandParser.html" title="Maps a command name to its argument parser." alt="" coords="5,5,180,31"/>
 </map>
 </td></tr>
 <tr><td><img src="inherit_graph_276.png" border="0" usemap="#azappy_1_1EggDeath" alt=""/>
@@ -1572,7 +1572,7 @@ $(document).ready(function(){initNavTree('hierarchy.html',''); initResizable(); 
 </td></tr>
 <tr><td><img src="inherit_graph_293.png" border="0" usemap="#azappy_1_1Resources" alt=""/>
 <map name="azappy_1_1Resources" id="azappy_1_1Resources">
-<area shape="rect" href="structzappy_1_1Resources.html" title="Stores resource counts." alt="" coords="5,5,140,31"/>
+<area shape="rect" href="structzappy_1_1Resources.html" title="Stores the seven Zappy resource counts." alt="" coords="5,5,140,31"/>
 </map>
 </td></tr>
 <tr><td><img src="inherit_graph_294.png" border="0" usemap="#azappy_1_1ServerMessage" alt=""/>
@@ -1602,7 +1602,7 @@ $(document).ready(function(){initNavTree('hierarchy.html',''); initResizable(); 
 </td></tr>
 <tr><td><img src="inherit_graph_299.png" border="0" usemap="#azappy_1_1ZappyProtocol" alt=""/>
 <map name="azappy_1_1ZappyProtocol" id="azappy_1_1ZappyProtocol">
-<area shape="rect" href="classzappy_1_1ZappyProtocol.html" title="Parses Zappy server protocol lines." alt="" coords="5,5,168,31"/>
+<area shape="rect" href="classzappy_1_1ZappyProtocol.html" title="Parses Zappy server protocol lines into typed events." alt="" coords="5,5,168,31"/>
 </map>
 </td></tr>
 </table>

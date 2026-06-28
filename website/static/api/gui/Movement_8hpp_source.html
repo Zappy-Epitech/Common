@@ -99,55 +99,58 @@ $(document).ready(function(){initNavTree('Movement_8hpp_source.html',''); initRe
   <div class="headertitle"><div class="title">Movement.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;src/core/Spatial.hpp&quot;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span>flecs {</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">struct </span>world;</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>}</div>
+<a href="Movement_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="foldopen" id="foldopen00009" data-start="{" data-end="};">
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="structMovement.html">    9</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structMovement.html">Movement</a> {</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <a class="code hl_struct" href="structMovement.html">Movement</a>(flecs::world &amp;world);</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>};</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="Spatial_8hpp.html">src/core/Spatial.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span>flecs {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">struct </span>world;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>}</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="structMovement.html">   17</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structMovement.html">Movement</a> {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_struct" href="structMovement.html">Movement</a>(flecs::world &amp;world);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>};</div>
 </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="foldopen" id="foldopen00015" data-start="{" data-end="};">
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="structDirection.html">   15</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structDirection.html">Direction</a> {</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">float</span> x;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">float</span> y;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">float</span> speed;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="foldopen" id="foldopen00021" data-start="{" data-end="}">
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="structDirection.html#aba0c848f9db9831e6feb64d978e6d019">   21</a></span>    <a class="code hl_function" href="structDirection.html#aba0c848f9db9831e6feb64d978e6d019">Direction</a>() : x(0), y(0), speed(1.0f) {</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    }</div>
-</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="foldopen" id="foldopen00025" data-start="{" data-end="}">
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="structDirection.html#ac10c893509c0322e902e69735c7382f0">   25</a></span>    <a class="code hl_function" href="structDirection.html#ac10c893509c0322e902e69735c7382f0">Direction</a>(<a class="code hl_struct" href="structPosition3.html">Position3</a> pos) : x(pos.x), y(pos.z), speed(1.0f) {</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    }</div>
-</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="structDirection.html">   23</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structDirection.html">Direction</a> {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">float</span> x;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">float</span> y;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordtype">float</span> speed;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
 <div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="structDirection.html#afe2e605e1914abdd8e75e31290f9bfad">   29</a></span>    <a class="code hl_function" href="structDirection.html#afe2e605e1914abdd8e75e31290f9bfad">Direction</a>(<a class="code hl_struct" href="structPosition3.html">Position3</a> pos, <span class="keywordtype">float</span> speed) : x(pos.x), y(pos.z), speed(speed) {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="structDirection.html#aba0c848f9db9831e6feb64d978e6d019">   29</a></span>    <a class="code hl_function" href="structDirection.html#aba0c848f9db9831e6feb64d978e6d019">Direction</a>() : x(0), y(0), speed(1.0f) {</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    }</div>
 </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>};</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="foldopen" id="foldopen00033" data-start="{" data-end="}">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="structDirection.html#ac10c893509c0322e902e69735c7382f0">   33</a></span>    <a class="code hl_function" href="structDirection.html#ac10c893509c0322e902e69735c7382f0">Direction</a>(<a class="code hl_struct" href="structPosition3.html">Position3</a> pos) : x(pos.x), y(pos.z), speed(1.0f) {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    }</div>
 </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keywordtype">float</span> movementSpeedForFrequency(<span class="keywordtype">float</span> distance, <span class="keywordtype">int</span> frequency);</div>
-<div class="ttc" id="astructDirection_html"><div class="ttname"><a href="structDirection.html">Direction</a></div><div class="ttdoc">Stores a movement target direction.</div><div class="ttdef"><b>Definition</b> Movement.hpp:15</div></div>
-<div class="ttc" id="astructDirection_html_aba0c848f9db9831e6feb64d978e6d019"><div class="ttname"><a href="structDirection.html#aba0c848f9db9831e6feb64d978e6d019">Direction::Direction</a></div><div class="ttdeci">Direction()</div><div class="ttdoc">Creates a zero direction.</div><div class="ttdef"><b>Definition</b> Movement.hpp:21</div></div>
-<div class="ttc" id="astructDirection_html_ac10c893509c0322e902e69735c7382f0"><div class="ttname"><a href="structDirection.html#ac10c893509c0322e902e69735c7382f0">Direction::Direction</a></div><div class="ttdeci">Direction(Position3 pos)</div><div class="ttdoc">Creates a direction from a 3D position.</div><div class="ttdef"><b>Definition</b> Movement.hpp:25</div></div>
-<div class="ttc" id="astructDirection_html_afe2e605e1914abdd8e75e31290f9bfad"><div class="ttname"><a href="structDirection.html#afe2e605e1914abdd8e75e31290f9bfad">Direction::Direction</a></div><div class="ttdeci">Direction(Position3 pos, float speed)</div><div class="ttdoc">Creates a direction from a 3D position and movement speed.</div><div class="ttdef"><b>Definition</b> Movement.hpp:29</div></div>
-<div class="ttc" id="astructMovement_html"><div class="ttname"><a href="structMovement.html">Movement</a></div><div class="ttdoc">Registers movement systems.</div><div class="ttdef"><b>Definition</b> Movement.hpp:9</div></div>
-<div class="ttc" id="astructPosition3_html"><div class="ttname"><a href="structPosition3.html">Position3</a></div><div class="ttdoc">Stores a 3D position.</div><div class="ttdef"><b>Definition</b> Spatial.hpp:48</div></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="foldopen" id="foldopen00037" data-start="{" data-end="}">
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="structDirection.html#afe2e605e1914abdd8e75e31290f9bfad">   37</a></span>    <a class="code hl_function" href="structDirection.html#afe2e605e1914abdd8e75e31290f9bfad">Direction</a>(<a class="code hl_struct" href="structPosition3.html">Position3</a> pos, <span class="keywordtype">float</span> speed) : x(pos.x), y(pos.z), speed(speed) {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    }</div>
+</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>};</div>
+</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keywordtype">float</span> <a class="code hl_function" href="Movement_8hpp.html#ac923ff8e5c808f47ce9096191dc3606b">movementSpeedForFrequency</a>(<span class="keywordtype">float</span> distance, <span class="keywordtype">int</span> frequency);</div>
+<div class="ttc" id="aMovement_8hpp_html_ac923ff8e5c808f47ce9096191dc3606b"><div class="ttname"><a href="Movement_8hpp.html#ac923ff8e5c808f47ce9096191dc3606b">movementSpeedForFrequency</a></div><div class="ttdeci">float movementSpeedForFrequency(float distance, int frequency)</div><div class="ttdoc">Returns the player interpolation speed for a movement distance and server frequency.</div><div class="ttdef"><b>Definition</b> Movement.cpp:25</div></div>
+<div class="ttc" id="aSpatial_8hpp_html"><div class="ttname"><a href="Spatial_8hpp.html">Spatial.hpp</a></div><div class="ttdoc">Spatial component definitions (positions, sizes, rotation, scale, orientation) and module.</div></div>
+<div class="ttc" id="astructDirection_html"><div class="ttname"><a href="structDirection.html">Direction</a></div><div class="ttdoc">Stores a movement target direction.</div><div class="ttdef"><b>Definition</b> Movement.hpp:23</div></div>
+<div class="ttc" id="astructDirection_html_aba0c848f9db9831e6feb64d978e6d019"><div class="ttname"><a href="structDirection.html#aba0c848f9db9831e6feb64d978e6d019">Direction::Direction</a></div><div class="ttdeci">Direction()</div><div class="ttdoc">Creates a zero direction.</div><div class="ttdef"><b>Definition</b> Movement.hpp:29</div></div>
+<div class="ttc" id="astructDirection_html_ac10c893509c0322e902e69735c7382f0"><div class="ttname"><a href="structDirection.html#ac10c893509c0322e902e69735c7382f0">Direction::Direction</a></div><div class="ttdeci">Direction(Position3 pos)</div><div class="ttdoc">Creates a direction from a 3D position.</div><div class="ttdef"><b>Definition</b> Movement.hpp:33</div></div>
+<div class="ttc" id="astructDirection_html_afe2e605e1914abdd8e75e31290f9bfad"><div class="ttname"><a href="structDirection.html#afe2e605e1914abdd8e75e31290f9bfad">Direction::Direction</a></div><div class="ttdeci">Direction(Position3 pos, float speed)</div><div class="ttdoc">Creates a direction from a 3D position and movement speed.</div><div class="ttdef"><b>Definition</b> Movement.hpp:37</div></div>
+<div class="ttc" id="astructMovement_html"><div class="ttname"><a href="structMovement.html">Movement</a></div><div class="ttdoc">Registers movement interpolation systems.</div><div class="ttdef"><b>Definition</b> Movement.hpp:17</div></div>
+<div class="ttc" id="astructPosition3_html"><div class="ttname"><a href="structPosition3.html">Position3</a></div><div class="ttdoc">Stores a 3D position.</div><div class="ttdef"><b>Definition</b> Spatial.hpp:53</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_6425294c249cc3d9e7adb2f34254d0c5.html">gameplay</a></li><li class="navelem"><b>Movement.hpp</b></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_6425294c249cc3d9e7adb2f34254d0c5.html">gameplay</a></li><li class="navelem"><a class="el" href="Movement_8hpp.html">Movement.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

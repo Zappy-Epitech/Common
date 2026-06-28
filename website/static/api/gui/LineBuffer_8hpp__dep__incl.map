@@ -1,0 +1,7 @@
+<map id="src/network/io/LineBuffer.hpp" name="src/network/io/LineBuffer.hpp">
+<area shape="rect" id="Node000001" title="Reassembles newline&#45;terminated protocol lines from TCP stream chunks." alt="" coords="68,5,279,31"/>
+<area shape="rect" id="Node000002" href="$ZappyClient_8cpp.html" title="Implements the threaded Zappy client worker loop and queue handling." alt="" coords="5,79,144,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,41,100,81,97,76,146,37"/>
+<area shape="rect" id="Node000003" href="$LineBuffer_8cpp.html" title="Implements newline splitting and CRLF trimming of buffered stream data." alt="" coords="168,86,379,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="201,37,260,84,257,88,197,41"/>
+</map>

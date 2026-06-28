@@ -1,0 +1,9 @@
+<map id="src/network/core/SocketPoll.hpp" name="src/network/core/SocketPoll.hpp">
+<area shape="rect" id="Node000001" title="poll()&#45;based readiness waits and asynchronous socket error checks." alt="" coords="299,5,528,31"/>
+<area shape="rect" id="Node000002" href="$SocketConnector_8cpp.html" title="Implements non&#45;blocking connect with timeout for one resolved address." alt="" coords="5,79,275,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="357,37,185,81,184,76,356,32"/>
+<area shape="rect" id="Node000003" href="$SocketPoll_8cpp.html" title="Implements poll()&#45;based readiness waits and SO_ERROR checks." alt="" coords="299,79,527,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="416,44,416,79,411,79,411,44"/>
+<area shape="rect" id="Node000004" href="$TcpClient_8cpp.html" title="Implements TCP connect, send/receive with poll timeouts, and byte helpers." alt="" coords="551,79,771,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="467,32,622,76,620,81,466,37"/>
+</map>

@@ -1,0 +1,27 @@
+<map id="src/core/Settings.cpp" name="src/core/Settings.cpp">
+<area shape="rect" id="Node000001" title="Implements the Settings module: GuiSettings singleton and master&#45;volume system." alt="" coords="221,5,379,31"/>
+<area shape="rect" id="Node000002" href="$core_2Settings_8hpp.html" title="User&#45;configurable GUI settings component and its module." alt="" coords="27,79,130,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="265,33,128,77,126,72,264,28"/>
+<area shape="rect" id="Node000003" href="$Core_8hpp.html" title="Root ECS module that aggregates the core sub&#45;modules and the Lifetime component." alt="" coords="154,79,289,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="289,33,246,71,242,68,286,29"/>
+<area shape="rect" id="Node000004" href="$flecs_8h_source.html" title=" " alt="" coords="313,79,447,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="315,29,359,68,355,72,311,33"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="471,79,542,104"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="334,28,461,72,459,77,332,33"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,152,80,177"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="323,107,94,154,93,149,322,101"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="104,152,179,177"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="342,107,193,151,191,146,341,101"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="203,152,274,177"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="358,106,275,148,273,143,356,102"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="298,152,369,177"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="375,106,351,142,346,139,370,103"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="393,152,463,177"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="390,103,415,139,410,142,386,106"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="488,152,571,177"/>
+<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="405,102,494,144,491,148,403,106"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="595,152,669,177"/>
+<area shape="poly" id="edge10_Node000004_Node000011" title=" " alt="" coords="421,101,583,147,581,152,420,107"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="693,152,760,177"/>
+<area shape="poly" id="edge11_Node000004_Node000012" title=" " alt="" coords="443,101,680,149,679,154,442,107"/>
+</map>

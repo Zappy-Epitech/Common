@@ -1,0 +1,26 @@
+<map id="src/network/core/TcpClient.hpp" name="src/network/core/TcpClient.hpp">
+<area shape="rect" id="Node000001" title="RAII non&#45;blocking TCP client with poll&#45;based timeouts and byte helpers." alt="" coords="445,5,667,31"/>
+<area shape="rect" id="Node000002" href="$Result_8hpp.html" title="Alias of std::expected&lt;T, Error&gt; used as the network result type." alt="" coords="57,79,191,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="487,33,206,79,205,74,486,28"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="108,225,167,251"/>
+<area shape="poly" id="edge10_Node000001_Node000004" title=" " alt="" coords="448,33,335,52,288,65,256,81,237,102,228,125,222,151,206,179,166,219,162,215,202,176,217,149,223,124,232,100,253,77,286,60,334,47,447,28"/>
+<area shape="rect" id="Node000006" href="$SocketHandle_8hpp.html" title="RAII owner for a POSIX socket file descriptor." alt="" coords="267,79,405,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="521,33,385,77,384,72,520,28"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="429,79,496,104"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="543,33,490,72,487,68,539,29"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="521,79,591,104"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="559,31,559,65,553,65,553,31"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="616,79,683,104"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="573,29,625,68,622,72,569,33"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="707,79,760,104"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="585,28,695,72,693,77,584,33"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="785,79,882,104"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="601,28,776,73,774,78,600,33"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="906,79,969,104"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="632,28,751,48,893,76,892,81,750,53,631,33"/>
+<area shape="rect" id="Node000003" href="$Error_8hpp.html" title="Error type, error categories, and factory helpers for the network layer." alt="" coords="5,152,85,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="113,106,70,145,66,141,110,102"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="109,152,192,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="131,103,144,138,139,140,126,105"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="62,175,113,215,110,219,58,179"/>
+</map>

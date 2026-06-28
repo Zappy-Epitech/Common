@@ -98,19 +98,19 @@ $(document).ready(function(){initNavTree('classzappy_1_1ZappyProtocol.html','');
 </div><!--header-->
 <div class="contents">
 
-<p>Parses Zappy server protocol lines.  
+<p>Parses Zappy server protocol lines into typed events.  
  <a href="classzappy_1_1ZappyProtocol.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="ZappyProtocol_8hpp_source.html">ZappyProtocol.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a532102f007d6332c5b1b402c7b77ab5a" id="r_a532102f007d6332c5b1b402c7b77ab5a"><td class="memItemLeft" align="right" valign="top">static std::optional&lt; Event &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classzappy_1_1ZappyProtocol.html#a532102f007d6332c5b1b402c7b77ab5a">parseLine</a> (std::string_view line)</td></tr>
-<tr class="memdesc:a532102f007d6332c5b1b402c7b77ab5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses one protocol line.  <br /></td></tr>
+<tr class="memitem:a532102f007d6332c5b1b402c7b77ab5a" id="r_a532102f007d6332c5b1b402c7b77ab5a"><td class="memItemLeft" align="right" valign="top">static std::optional&lt; <a class="el" href="ZappyProtocol_8hpp.html#aeb62727f28e37b28f4fa6f20dc70031f">Event</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classzappy_1_1ZappyProtocol.html#a532102f007d6332c5b1b402c7b77ab5a">parseLine</a> (std::string_view line)</td></tr>
+<tr class="memdesc:a532102f007d6332c5b1b402c7b77ab5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses one server protocol line into an Event.  <br /></td></tr>
 <tr class="separator:a532102f007d6332c5b1b402c7b77ab5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Parses Zappy server protocol lines. </p>
+<div class="textblock"><p>Parses Zappy server protocol lines into typed events. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a532102f007d6332c5b1b402c7b77ab5a" name="a532102f007d6332c5b1b402c7b77ab5a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a532102f007d6332c5b1b402c7b77ab5a">&#9670;&#160;</a></span>parseLine()</h2>
@@ -122,7 +122,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::optional&lt; Event &gt; zappy::ZappyProtocol::parseLine </td>
+          <td class="memname">std::optional&lt; <a class="el" href="ZappyProtocol_8hpp.html#aeb62727f28e37b28f4fa6f20dc70031f">Event</a> &gt; zappy::ZappyProtocol::parseLine </td>
           <td>(</td>
           <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>line</em></td><td>)</td>
@@ -136,14 +136,21 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Parses one protocol line. </p>
-<p>Parses one server protocol line. </p>
+<p>Parses one server protocol line into an Event. </p>
+<p>Parses one server protocol line.</p>
+<p>Trims line endings, reads the leading command token and dispatches to the matching command parser, which validates the arguments. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">line</td><td>A single protocol line (with or without trailing <code>\n</code>/<code>\r</code>). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The parsed <a class="el" href="ZappyProtocol_8hpp.html#aeb62727f28e37b28f4fa6f20dc70031f" title="Groups all protocol events.">zappy::Event</a> variant on success; <code>std::nullopt</code> if the line is empty, the command is unknown, or its arguments are invalid. </dd></dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/protocol/<a class="el" href="ZappyProtocol_8hpp_source.html">ZappyProtocol.hpp</a></li>
-<li>src/protocol/<b>ZappyProtocol.cpp</b></li>
+<li>src/protocol/<a class="el" href="ZappyProtocol_8cpp.html">ZappyProtocol.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

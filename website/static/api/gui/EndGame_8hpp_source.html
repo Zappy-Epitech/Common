@@ -99,48 +99,56 @@ $(document).ready(function(){initNavTree('EndGame_8hpp_source.html',''); initRes
   <div class="headertitle"><div class="title">EndGame.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;src/protocol/ZappyProtocol.hpp&quot;</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;raylib.h&gt;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span>flecs {</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">struct </span>world;</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>}</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="structEndGamePlayerStats.html">   12</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structEndGamePlayerStats.html">EndGamePlayerStats</a> {</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    std::string name;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordtype">int</span> <span class="keywordtype">id</span> = 0;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordtype">int</span> level = 0;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <a class="code hl_struct" href="structzappy_1_1Resources.html">zappy::Resources</a> resources = {};</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    Texture2D skin = {};</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>};</div>
+<a href="EndGame_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="ZappyProtocol_8hpp.html">src/protocol/ZappyProtocol.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;raylib.h&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">namespace </span>flecs {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">struct </span>world;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>}</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="foldopen" id="foldopen00020" data-start="{" data-end="};">
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="structEndGamePlayerStats.html">   20</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structEndGamePlayerStats.html">EndGamePlayerStats</a> {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="structEndGamePlayerStats.html#a28c49f40b39b099e0159a1b15baa905c">   21</a></span>    std::string <a class="code hl_variable" href="structEndGamePlayerStats.html#a28c49f40b39b099e0159a1b15baa905c">name</a>;             </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="structEndGamePlayerStats.html#a759b3601368bd39d0684dc2541cf3173">   22</a></span>    <span class="keywordtype">int</span> <span class="keywordtype">id</span> = 0;                   </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="structEndGamePlayerStats.html#a022e50b8c0e9f2a9cab1f46dd22eb2e1">   23</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structEndGamePlayerStats.html#a022e50b8c0e9f2a9cab1f46dd22eb2e1">level</a> = 0;                </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="structEndGamePlayerStats.html#a04ba5a1c136194fdac435cdde4d72f15">   24</a></span>    <a class="code hl_struct" href="structzappy_1_1Resources.html">zappy::Resources</a> <a class="code hl_variable" href="structEndGamePlayerStats.html#a04ba5a1c136194fdac435cdde4d72f15">resources</a> = {}; </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="structEndGamePlayerStats.html#acac53b987cd556d9ac9db35b2714f393">   25</a></span>    Texture2D <a class="code hl_variable" href="structEndGamePlayerStats.html#acac53b987cd556d9ac9db35b2714f393">skin</a> = {};          </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>};</div>
 </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="foldopen" id="foldopen00021" data-start="{" data-end="};">
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="structEndGameState.html">   21</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structEndGameState.html">EndGameState</a> {</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    std::string winner;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    std::vector&lt;EndGamePlayerStats&gt; players;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>};</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="foldopen" id="foldopen00032" data-start="{" data-end="};">
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="structEndGameState.html">   32</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structEndGameState.html">EndGameState</a> {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="structEndGameState.html#a33ea7fd3273dbd6d78ae4a483c804cbe">   33</a></span>    std::string <a class="code hl_variable" href="structEndGameState.html#a33ea7fd3273dbd6d78ae4a483c804cbe">winner</a>;                      </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="structEndGameState.html#a3c541eb65ac9c2f79c365934b43f761a">   34</a></span>    std::vector&lt;EndGamePlayerStats&gt; <a class="code hl_variable" href="structEndGameState.html#a3c541eb65ac9c2f79c365934b43f761a">players</a>; </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>};</div>
 </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="foldopen" id="foldopen00027" data-start="{" data-end="};">
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="structEndGame.html">   27</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structEndGame.html">EndGame</a> {</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_struct" href="structEndGame.html">EndGame</a>(flecs::world &amp;world);</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>};</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="foldopen" id="foldopen00044" data-start="{" data-end="};">
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="structEndGame.html">   44</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structEndGame.html">EndGame</a> {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <a class="code hl_struct" href="structEndGame.html">EndGame</a>(flecs::world &amp;world);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>};</div>
 </div>
-<div class="ttc" id="astructEndGamePlayerStats_html"><div class="ttname"><a href="structEndGamePlayerStats.html">EndGamePlayerStats</a></div><div class="ttdoc">Stores one winning player snapshot for the end-game scene.</div><div class="ttdef"><b>Definition</b> EndGame.hpp:12</div></div>
-<div class="ttc" id="astructEndGameState_html"><div class="ttname"><a href="structEndGameState.html">EndGameState</a></div><div class="ttdoc">Stores the winner and player stats shown on the end-game scene.</div><div class="ttdef"><b>Definition</b> EndGame.hpp:21</div></div>
-<div class="ttc" id="astructEndGame_html"><div class="ttname"><a href="structEndGame.html">EndGame</a></div><div class="ttdoc">Registers the end-game scene.</div><div class="ttdef"><b>Definition</b> EndGame.hpp:27</div></div>
-<div class="ttc" id="astructzappy_1_1Resources_html"><div class="ttname"><a href="structzappy_1_1Resources.html">zappy::Resources</a></div><div class="ttdoc">Stores resource counts.</div><div class="ttdef"><b>Definition</b> ZappyProtocol.hpp:11</div></div>
+<div class="ttc" id="aZappyProtocol_8hpp_html"><div class="ttname"><a href="ZappyProtocol_8hpp.html">ZappyProtocol.hpp</a></div><div class="ttdoc">Protocol event types and the line parser for the Zappy server feed.</div></div>
+<div class="ttc" id="astructEndGamePlayerStats_html"><div class="ttname"><a href="structEndGamePlayerStats.html">EndGamePlayerStats</a></div><div class="ttdoc">Stores one winning player snapshot for the end-game scene.</div><div class="ttdef"><b>Definition</b> EndGame.hpp:20</div></div>
+<div class="ttc" id="astructEndGamePlayerStats_html_a022e50b8c0e9f2a9cab1f46dd22eb2e1"><div class="ttname"><a href="structEndGamePlayerStats.html#a022e50b8c0e9f2a9cab1f46dd22eb2e1">EndGamePlayerStats::level</a></div><div class="ttdeci">int level</div><div class="ttdoc">Elevation level reached by the player.</div><div class="ttdef"><b>Definition</b> EndGame.hpp:23</div></div>
+<div class="ttc" id="astructEndGamePlayerStats_html_a04ba5a1c136194fdac435cdde4d72f15"><div class="ttname"><a href="structEndGamePlayerStats.html#a04ba5a1c136194fdac435cdde4d72f15">EndGamePlayerStats::resources</a></div><div class="ttdeci">zappy::Resources resources</div><div class="ttdoc">Inventory (food and stone counts) at game end.</div><div class="ttdef"><b>Definition</b> EndGame.hpp:24</div></div>
+<div class="ttc" id="astructEndGamePlayerStats_html_a28c49f40b39b099e0159a1b15baa905c"><div class="ttname"><a href="structEndGamePlayerStats.html#a28c49f40b39b099e0159a1b15baa905c">EndGamePlayerStats::name</a></div><div class="ttdeci">std::string name</div><div class="ttdoc">Display name of the player.</div><div class="ttdef"><b>Definition</b> EndGame.hpp:21</div></div>
+<div class="ttc" id="astructEndGamePlayerStats_html_acac53b987cd556d9ac9db35b2714f393"><div class="ttname"><a href="structEndGamePlayerStats.html#acac53b987cd556d9ac9db35b2714f393">EndGamePlayerStats::skin</a></div><div class="ttdeci">Texture2D skin</div><div class="ttdoc">Cached Minecraft skin texture used to draw the player's head.</div><div class="ttdef"><b>Definition</b> EndGame.hpp:25</div></div>
+<div class="ttc" id="astructEndGameState_html"><div class="ttname"><a href="structEndGameState.html">EndGameState</a></div><div class="ttdoc">Stores the winner and player stats shown on the end-game scene.</div><div class="ttdef"><b>Definition</b> EndGame.hpp:32</div></div>
+<div class="ttc" id="astructEndGameState_html_a33ea7fd3273dbd6d78ae4a483c804cbe"><div class="ttname"><a href="structEndGameState.html#a33ea7fd3273dbd6d78ae4a483c804cbe">EndGameState::winner</a></div><div class="ttdeci">std::string winner</div><div class="ttdoc">Name of the winning team.</div><div class="ttdef"><b>Definition</b> EndGame.hpp:33</div></div>
+<div class="ttc" id="astructEndGameState_html_a3c541eb65ac9c2f79c365934b43f761a"><div class="ttname"><a href="structEndGameState.html#a3c541eb65ac9c2f79c365934b43f761a">EndGameState::players</a></div><div class="ttdeci">std::vector&lt; EndGamePlayerStats &gt; players</div><div class="ttdoc">Snapshots of the winning team's players.</div><div class="ttdef"><b>Definition</b> EndGame.hpp:34</div></div>
+<div class="ttc" id="astructEndGame_html"><div class="ttname"><a href="structEndGame.html">EndGame</a></div><div class="ttdoc">Registers the end-game scene.</div><div class="ttdef"><b>Definition</b> EndGame.hpp:44</div></div>
+<div class="ttc" id="astructzappy_1_1Resources_html"><div class="ttname"><a href="structzappy_1_1Resources.html">zappy::Resources</a></div><div class="ttdoc">Stores the seven Zappy resource counts.</div><div class="ttdef"><b>Definition</b> ZappyProtocol.hpp:19</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_ecc8d4550b7fd15fd45b6c26299430bf.html">scenes</a></li><li class="navelem"><b>EndGame.hpp</b></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_ecc8d4550b7fd15fd45b6c26299430bf.html">scenes</a></li><li class="navelem"><a class="el" href="EndGame_8hpp.html">EndGame.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

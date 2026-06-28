@@ -99,27 +99,32 @@ $(document).ready(function(){initNavTree('MapCommand_8hpp_source.html',''); init
   <div class="headertitle"><div class="title">MapCommand.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;src/protocol/ZappyProtocol.hpp&quot;</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span>flecs {</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">struct </span>world;</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>}</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keywordtype">void</span> applyMapNew(<span class="keyword">const</span> flecs::world &amp;world, <a class="code hl_struct" href="structzappy_1_1MapSize.html">zappy::MapSize</a> &amp;evt);</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keywordtype">void</span> applyTileContent(<span class="keyword">const</span> flecs::world &amp;world, <a class="code hl_struct" href="structzappy_1_1TileContent.html">zappy::TileContent</a> &amp;evt);</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keywordtype">void</span> applyIncantationEnd(<span class="keyword">const</span> flecs::world &amp;world, <a class="code hl_struct" href="structzappy_1_1IncantationEnd.html">zappy::IncantationEnd</a> &amp;evt);</div>
-<div class="ttc" id="astructzappy_1_1IncantationEnd_html"><div class="ttname"><a href="structzappy_1_1IncantationEnd.html">zappy::IncantationEnd</a></div><div class="ttdoc">Stores an incantation end event.</div><div class="ttdef"><b>Definition</b> ZappyProtocol.hpp:94</div></div>
-<div class="ttc" id="astructzappy_1_1MapSize_html"><div class="ttname"><a href="structzappy_1_1MapSize.html">zappy::MapSize</a></div><div class="ttdoc">Stores map dimensions.</div><div class="ttdef"><b>Definition</b> ZappyProtocol.hpp:22</div></div>
-<div class="ttc" id="astructzappy_1_1TileContent_html"><div class="ttname"><a href="structzappy_1_1TileContent.html">zappy::TileContent</a></div><div class="ttdoc">Stores tile resources.</div><div class="ttdef"><b>Definition</b> ZappyProtocol.hpp:28</div></div>
+<a href="MapCommand_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="ZappyProtocol_8hpp.html">src/protocol/ZappyProtocol.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span>flecs {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">struct </span>world;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>}</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keywordtype">void</span> <a class="code hl_function" href="MapCommand_8hpp.html#a5e877322a57fde90ca74053ecb5657ad">applyMapNew</a>(<span class="keyword">const</span> flecs::world &amp;world, <a class="code hl_struct" href="structzappy_1_1MapSize.html">zappy::MapSize</a> &amp;evt);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keywordtype">void</span> <a class="code hl_function" href="MapCommand_8hpp.html#a61e538cc843155955a638352dfbe8b19">applyTileContent</a>(<span class="keyword">const</span> flecs::world &amp;world, <a class="code hl_struct" href="structzappy_1_1TileContent.html">zappy::TileContent</a> &amp;evt);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keywordtype">void</span> <a class="code hl_function" href="MapCommand_8hpp.html#ad9f32a57c174c4e5f4f2d9ec50c90a40">applyIncantationEnd</a>(<span class="keyword">const</span> flecs::world &amp;world, <a class="code hl_struct" href="structzappy_1_1IncantationEnd.html">zappy::IncantationEnd</a> &amp;evt);</div>
+<div class="ttc" id="aMapCommand_8hpp_html_a5e877322a57fde90ca74053ecb5657ad"><div class="ttname"><a href="MapCommand_8hpp.html#a5e877322a57fde90ca74053ecb5657ad">applyMapNew</a></div><div class="ttdeci">void applyMapNew(const flecs::world &amp;world, zappy::MapSize &amp;evt)</div><div class="ttdoc">Applies a new map size event.</div><div class="ttdef"><b>Definition</b> MapCommand.cpp:91</div></div>
+<div class="ttc" id="aMapCommand_8hpp_html_a61e538cc843155955a638352dfbe8b19"><div class="ttname"><a href="MapCommand_8hpp.html#a61e538cc843155955a638352dfbe8b19">applyTileContent</a></div><div class="ttdeci">void applyTileContent(const flecs::world &amp;world, zappy::TileContent &amp;evt)</div><div class="ttdoc">Applies a tile content event.</div><div class="ttdef"><b>Definition</b> MapCommand.cpp:96</div></div>
+<div class="ttc" id="aMapCommand_8hpp_html_ad9f32a57c174c4e5f4f2d9ec50c90a40"><div class="ttname"><a href="MapCommand_8hpp.html#ad9f32a57c174c4e5f4f2d9ec50c90a40">applyIncantationEnd</a></div><div class="ttdeci">void applyIncantationEnd(const flecs::world &amp;world, zappy::IncantationEnd &amp;evt)</div><div class="ttdoc">Applies an incantation end event.</div><div class="ttdef"><b>Definition</b> MapCommand.cpp:117</div></div>
+<div class="ttc" id="aZappyProtocol_8hpp_html"><div class="ttname"><a href="ZappyProtocol_8hpp.html">ZappyProtocol.hpp</a></div><div class="ttdoc">Protocol event types and the line parser for the Zappy server feed.</div></div>
+<div class="ttc" id="astructzappy_1_1IncantationEnd_html"><div class="ttname"><a href="structzappy_1_1IncantationEnd.html">zappy::IncantationEnd</a></div><div class="ttdoc">Stores an incantation end event.</div><div class="ttdef"><b>Definition</b> ZappyProtocol.hpp:102</div></div>
+<div class="ttc" id="astructzappy_1_1MapSize_html"><div class="ttname"><a href="structzappy_1_1MapSize.html">zappy::MapSize</a></div><div class="ttdoc">Stores map dimensions.</div><div class="ttdef"><b>Definition</b> ZappyProtocol.hpp:30</div></div>
+<div class="ttc" id="astructzappy_1_1TileContent_html"><div class="ttname"><a href="structzappy_1_1TileContent.html">zappy::TileContent</a></div><div class="ttdoc">Stores tile resources.</div><div class="ttdef"><b>Definition</b> ZappyProtocol.hpp:36</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_5903c71b979204ea1ce2d27420efeaa9.html">protocol</a></li><li class="navelem"><a class="el" href="dir_9af5e20c3b1c532d33866677e221eaac.html">command</a></li><li class="navelem"><b>MapCommand.hpp</b></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_5903c71b979204ea1ce2d27420efeaa9.html">protocol</a></li><li class="navelem"><a class="el" href="dir_9af5e20c3b1c532d33866677e221eaac.html">command</a></li><li class="navelem"><a class="el" href="MapCommand_8hpp.html">MapCommand.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

@@ -38,27 +38,35 @@ var NAVTREE =
       ] ]
     ] ],
     [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ]
+      [ "File List", "files.html", "files_dup" ],
+      [ "File Members", "globals.html", [
+        [ "All", "globals.html", null ],
+        [ "Functions", "globals_func.html", null ],
+        [ "Variables", "globals_vars.html", null ],
+        [ "Enumerations", "globals_enum.html", null ]
+      ] ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"AdressList_8hpp_source.html",
-"group__api__types.html#ga6adbffbc50378674b018e4930403f32a",
-"group__c__addons__log.html#ga11eb2506eeb4be2511b767cf9f6771c2",
-"group__c__addons__meta.html#gga38eff97e820c5aa8d2cfc7911b2bbea9a6e38735e84fd9ddac83f52fc70525aa6",
-"group__c__addons__units__data.html#gae656ad2082320a2b20a61a2ed028a570",
-"group__core.html#ga3435c5daa5e82aa1215ea8b01b3166c6",
-"group__flecs__c__components.html#ga3ced6ec49831a3916bd270eb9904c8f9",
-"group__options.html#ga21ee4a576e7dcc90c10ec6fec8b2fe39",
-"structEcsAlertsActive.html#aa48c90f14b4a8babdaaabcd5fed5cb2f",
-"structPosition2.html#ac19b1e1a7b0d4986f072ad68fb117d0d",
-"structecs__event__desc__t.html#a47e3cfee9d887504adf89bca8a1b35ac",
-"structecs__meta__op__t.html#ad5ba10a67e6d82f71ef0c504987bcb60",
-"structecs__query__t.html#af542037e0a07eede95866cb788dadb63",
-"structecs__value__t.html#a55cc5c8da4ce5ac25ddc75c8a987224c"
+"AdressList_8cpp.html",
+"SocketPoll_8cpp.html#a1fc5a54e9b906a2ca936789ab203e083",
+"group__api__types.html#ga35f243d5f176ab4591a7510b8d041a16",
+"group__c__addons__json.html#ga7207b557ae32a4b8a5713e0c986ba388",
+"group__c__addons__meta.html#gad22d1d972f1626d7494410a6487f6770",
+"group__c__addons__units__amount.html#ga476d35f741fb2883f8797f0a49629861",
+"group__core.html#ga1f4c9e7b42a75d174df7845a115d03b9",
+"group__entity__info.html#ga3a023c51aa5c47bbe18261314510d5fc",
+"group__liveliness.html#gada377428885f747c1a2f6c7793c4dc9d",
+"scenes_2Settings_8cpp.html#ab40ef32ea20e06cdcf582bddb65e7fa5",
+"structIncantating.html",
+"structecs__counter__t.html",
+"structecs__iter__t.html#af041f8af422103821cf54d965d3af3b6",
+"structecs__query__desc__t.html#a380d3df39d3eb78f9e6c269047661a2e",
+"structecs__table__record__t.html#aabc80aedd9d9db97f1c3b9406b1eb85c",
+"unionecs__metric__t.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

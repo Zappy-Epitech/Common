@@ -99,33 +99,39 @@ $(document).ready(function(){initNavTree('ServerCommand_8hpp_source.html',''); i
   <div class="headertitle"><div class="title">ServerCommand.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;../ZappyProtocol.hpp&quot;</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span>flecs {</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">struct </span>world;</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>}</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keywordtype">void</span> applyTimeUnit(<span class="keyword">const</span> flecs::world &amp;world, <a class="code hl_struct" href="structzappy_1_1TimeUnit.html">zappy::TimeUnit</a> &amp;evt);</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keywordtype">void</span> applyGameEnd(<span class="keyword">const</span> flecs::world &amp;world, <a class="code hl_struct" href="structzappy_1_1GameEnd.html">zappy::GameEnd</a> &amp;evt);</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keywordtype">void</span> applyServerMessage(<span class="keyword">const</span> flecs::world &amp;world, <a class="code hl_struct" href="structzappy_1_1ServerMessage.html">zappy::ServerMessage</a> &amp;evt);</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keywordtype">void</span> applyUnknownCommand(<span class="keyword">const</span> flecs::world &amp;world, <a class="code hl_struct" href="structzappy_1_1UnknownCommand.html">zappy::UnknownCommand</a> &amp;evt);</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keywordtype">void</span> applyBadParameter(<span class="keyword">const</span> flecs::world &amp;world, <a class="code hl_struct" href="structzappy_1_1BadParameter.html">zappy::BadParameter</a> &amp;evt);</div>
-<div class="ttc" id="astructzappy_1_1BadParameter_html"><div class="ttname"><a href="structzappy_1_1BadParameter.html">zappy::BadParameter</a></div><div class="ttdoc">Marks a bad parameter event.</div><div class="ttdef"><b>Definition</b> ZappyProtocol.hpp:159</div></div>
-<div class="ttc" id="astructzappy_1_1GameEnd_html"><div class="ttname"><a href="structzappy_1_1GameEnd.html">zappy::GameEnd</a></div><div class="ttdoc">Stores a game end event.</div><div class="ttdef"><b>Definition</b> ZappyProtocol.hpp:146</div></div>
-<div class="ttc" id="astructzappy_1_1ServerMessage_html"><div class="ttname"><a href="structzappy_1_1ServerMessage.html">zappy::ServerMessage</a></div><div class="ttdoc">Stores a server message event.</div><div class="ttdef"><b>Definition</b> ZappyProtocol.hpp:151</div></div>
-<div class="ttc" id="astructzappy_1_1TimeUnit_html"><div class="ttname"><a href="structzappy_1_1TimeUnit.html">zappy::TimeUnit</a></div><div class="ttdoc">Stores a time unit event.</div><div class="ttdef"><b>Definition</b> ZappyProtocol.hpp:141</div></div>
-<div class="ttc" id="astructzappy_1_1UnknownCommand_html"><div class="ttname"><a href="structzappy_1_1UnknownCommand.html">zappy::UnknownCommand</a></div><div class="ttdoc">Marks an unknown command event.</div><div class="ttdef"><b>Definition</b> ZappyProtocol.hpp:156</div></div>
+<a href="ServerCommand_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;../ZappyProtocol.hpp&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span>flecs {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">struct </span>world;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>}</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keywordtype">void</span> <a class="code hl_function" href="ServerCommand_8hpp.html#a1ba5775ef492301c8867d0eb21104801">applyTimeUnit</a>(<span class="keyword">const</span> flecs::world &amp;world, <a class="code hl_struct" href="structzappy_1_1TimeUnit.html">zappy::TimeUnit</a> &amp;evt);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keywordtype">void</span> <a class="code hl_function" href="ServerCommand_8hpp.html#a13e1d8d7ecf7d8c3d1d0f5f1365e1a38">applyGameEnd</a>(<span class="keyword">const</span> flecs::world &amp;world, <a class="code hl_struct" href="structzappy_1_1GameEnd.html">zappy::GameEnd</a> &amp;evt);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keywordtype">void</span> <a class="code hl_function" href="ServerCommand_8hpp.html#a128ca28a13adab6642dbf0243c190b72">applyServerMessage</a>(<span class="keyword">const</span> flecs::world &amp;world, <a class="code hl_struct" href="structzappy_1_1ServerMessage.html">zappy::ServerMessage</a> &amp;evt);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keywordtype">void</span> <a class="code hl_function" href="ServerCommand_8hpp.html#a02abfbaeba4eb28e52dbca59b95ebfed">applyUnknownCommand</a>(<span class="keyword">const</span> flecs::world &amp;world, <a class="code hl_struct" href="structzappy_1_1UnknownCommand.html">zappy::UnknownCommand</a> &amp;evt);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keywordtype">void</span> <a class="code hl_function" href="ServerCommand_8hpp.html#a7844cc0fd167aa030697345b891cd24e">applyBadParameter</a>(<span class="keyword">const</span> flecs::world &amp;world, <a class="code hl_struct" href="structzappy_1_1BadParameter.html">zappy::BadParameter</a> &amp;evt);</div>
+<div class="ttc" id="aServerCommand_8hpp_html_a02abfbaeba4eb28e52dbca59b95ebfed"><div class="ttname"><a href="ServerCommand_8hpp.html#a02abfbaeba4eb28e52dbca59b95ebfed">applyUnknownCommand</a></div><div class="ttdeci">void applyUnknownCommand(const flecs::world &amp;world, zappy::UnknownCommand &amp;evt)</div><div class="ttdoc">Applies an unknown command event.</div><div class="ttdef"><b>Definition</b> ServerCommand.cpp:91</div></div>
+<div class="ttc" id="aServerCommand_8hpp_html_a128ca28a13adab6642dbf0243c190b72"><div class="ttname"><a href="ServerCommand_8hpp.html#a128ca28a13adab6642dbf0243c190b72">applyServerMessage</a></div><div class="ttdeci">void applyServerMessage(const flecs::world &amp;world, zappy::ServerMessage &amp;evt)</div><div class="ttdoc">Applies a server message event.</div><div class="ttdef"><b>Definition</b> ServerCommand.cpp:86</div></div>
+<div class="ttc" id="aServerCommand_8hpp_html_a13e1d8d7ecf7d8c3d1d0f5f1365e1a38"><div class="ttname"><a href="ServerCommand_8hpp.html#a13e1d8d7ecf7d8c3d1d0f5f1365e1a38">applyGameEnd</a></div><div class="ttdeci">void applyGameEnd(const flecs::world &amp;world, zappy::GameEnd &amp;evt)</div><div class="ttdoc">Applies a game end event.</div><div class="ttdef"><b>Definition</b> ServerCommand.cpp:77</div></div>
+<div class="ttc" id="aServerCommand_8hpp_html_a1ba5775ef492301c8867d0eb21104801"><div class="ttname"><a href="ServerCommand_8hpp.html#a1ba5775ef492301c8867d0eb21104801">applyTimeUnit</a></div><div class="ttdeci">void applyTimeUnit(const flecs::world &amp;world, zappy::TimeUnit &amp;evt)</div><div class="ttdoc">Applies a time unit event.</div><div class="ttdef"><b>Definition</b> ServerCommand.cpp:62</div></div>
+<div class="ttc" id="aServerCommand_8hpp_html_a7844cc0fd167aa030697345b891cd24e"><div class="ttname"><a href="ServerCommand_8hpp.html#a7844cc0fd167aa030697345b891cd24e">applyBadParameter</a></div><div class="ttdeci">void applyBadParameter(const flecs::world &amp;world, zappy::BadParameter &amp;evt)</div><div class="ttdoc">Applies a bad parameter event.</div><div class="ttdef"><b>Definition</b> ServerCommand.cpp:96</div></div>
+<div class="ttc" id="astructzappy_1_1BadParameter_html"><div class="ttname"><a href="structzappy_1_1BadParameter.html">zappy::BadParameter</a></div><div class="ttdoc">Marks a bad parameter event.</div><div class="ttdef"><b>Definition</b> ZappyProtocol.hpp:167</div></div>
+<div class="ttc" id="astructzappy_1_1GameEnd_html"><div class="ttname"><a href="structzappy_1_1GameEnd.html">zappy::GameEnd</a></div><div class="ttdoc">Stores a game end event.</div><div class="ttdef"><b>Definition</b> ZappyProtocol.hpp:154</div></div>
+<div class="ttc" id="astructzappy_1_1ServerMessage_html"><div class="ttname"><a href="structzappy_1_1ServerMessage.html">zappy::ServerMessage</a></div><div class="ttdoc">Stores a server message event.</div><div class="ttdef"><b>Definition</b> ZappyProtocol.hpp:159</div></div>
+<div class="ttc" id="astructzappy_1_1TimeUnit_html"><div class="ttname"><a href="structzappy_1_1TimeUnit.html">zappy::TimeUnit</a></div><div class="ttdoc">Stores a time unit event.</div><div class="ttdef"><b>Definition</b> ZappyProtocol.hpp:149</div></div>
+<div class="ttc" id="astructzappy_1_1UnknownCommand_html"><div class="ttname"><a href="structzappy_1_1UnknownCommand.html">zappy::UnknownCommand</a></div><div class="ttdoc">Marks an unknown command event.</div><div class="ttdef"><b>Definition</b> ZappyProtocol.hpp:164</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_5903c71b979204ea1ce2d27420efeaa9.html">protocol</a></li><li class="navelem"><a class="el" href="dir_9af5e20c3b1c532d33866677e221eaac.html">command</a></li><li class="navelem"><b>ServerCommand.hpp</b></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_5903c71b979204ea1ce2d27420efeaa9.html">protocol</a></li><li class="navelem"><a class="el" href="dir_9af5e20c3b1c532d33866677e221eaac.html">command</a></li><li class="navelem"><a class="el" href="ServerCommand_8hpp.html">ServerCommand.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
