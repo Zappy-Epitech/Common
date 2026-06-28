@@ -270,6 +270,7 @@ var hierarchy =
     [ "Render2D", "structRender2D.html", null ],
     [ "Render3D", "structRender3D.html", null ],
     [ "RenderPlayer", "structRenderPlayer.html", null ],
+    [ "RenderWorld2D", "structRenderWorld2D.html", null ],
     [ "zappy::Resources", "structzappy_1_1Resources.html", null ],
     [ "Rotation3", "structRotation3.html", null ],
     [ "Scale", "structScale.html", null ],

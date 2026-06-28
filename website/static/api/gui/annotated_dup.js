@@ -288,6 +288,7 @@ var annotated_dup =
     [ "Render2D", "structRender2D.html", null ],
     [ "Render3D", "structRender3D.html", null ],
     [ "RenderPlayer", "structRenderPlayer.html", null ],
+    [ "RenderWorld2D", "structRenderWorld2D.html", null ],
     [ "Rotation3", "structRotation3.html", null ],
     [ "Scale", "structScale.html", null ],
     [ "Scenes", "structScenes.html", "structScenes" ],
