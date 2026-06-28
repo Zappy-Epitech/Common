@@ -7,6 +7,7 @@ var annotated_dup =
       [ "SocketHandle", "classnet_1_1SocketHandle.html", "classnet_1_1SocketHandle" ],
       [ "TcpClient", "classnet_1_1TcpClient.html", "classnet_1_1TcpClient" ],
       [ "TcpClientOptions", "structnet_1_1TcpClientOptions.html", "structnet_1_1TcpClientOptions" ],
+      [ "UnboundedQueue", "classnet_1_1UnboundedQueue.html", "classnet_1_1UnboundedQueue" ],
       [ "ZappyClient", "classnet_1_1ZappyClient.html", "classnet_1_1ZappyClient" ],
       [ "ZappySession", "classnet_1_1ZappySession.html", "classnet_1_1ZappySession" ]
     ] ],

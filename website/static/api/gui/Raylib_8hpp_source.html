@@ -104,30 +104,34 @@ $(document).ready(function(){initNavTree('Raylib_8hpp_source.html',''); initResi
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">struct </span>world;</div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>}</div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="structCube.html">    7</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structCube.html">Cube</a> {};</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="structRender3D.html">   10</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structRender3D.html">Render3D</a> {};</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="structDraw3D.html">   13</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structDraw3D.html">Draw3D</a> {};</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="structCloseRender3D.html">   16</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structCloseRender3D.html">CloseRender3D</a> {};</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="structRender2D.html">   19</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structRender2D.html">Render2D</a> {};</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="structPostRender.html">   22</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structPostRender.html">PostRender</a> {};</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="structRaylib.html">   25</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structRaylib.html">Raylib</a> {</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_struct" href="structRaylib.html">Raylib</a>(flecs::world &amp;world);</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>};</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">struct </span>Vector3;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="structCube.html">    9</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structCube.html">Cube</a> {};</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="structRender3D.html">   12</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structRender3D.html">Render3D</a> {};</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="structDraw3D.html">   15</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structDraw3D.html">Draw3D</a> {};</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="structCloseRender3D.html">   18</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structCloseRender3D.html">CloseRender3D</a> {};</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="structRender2D.html">   21</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structRender2D.html">Render2D</a> {};</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="structPostRender.html">   24</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structPostRender.html">PostRender</a> {};</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keywordtype">bool</span> isWithinRenderDistance(<span class="keyword">const</span> flecs::world &amp;world, Vector3 position);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="};">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="structRaylib.html">   30</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structRaylib.html">Raylib</a> {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_struct" href="structRaylib.html">Raylib</a>(flecs::world &amp;world);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>};</div>
 </div>
-<div class="ttc" id="astructCloseRender3D_html"><div class="ttname"><a href="structCloseRender3D.html">CloseRender3D</a></div><div class="ttdoc">Phase for closing 3D rendering.</div><div class="ttdef"><b>Definition</b> Raylib.hpp:16</div></div>
-<div class="ttc" id="astructCube_html"><div class="ttname"><a href="structCube.html">Cube</a></div><div class="ttdoc">Marks an entity rendered as a cube.</div><div class="ttdef"><b>Definition</b> Raylib.hpp:7</div></div>
-<div class="ttc" id="astructDraw3D_html"><div class="ttname"><a href="structDraw3D.html">Draw3D</a></div><div class="ttdoc">Phase for drawing 3D content.</div><div class="ttdef"><b>Definition</b> Raylib.hpp:13</div></div>
-<div class="ttc" id="astructPostRender_html"><div class="ttname"><a href="structPostRender.html">PostRender</a></div><div class="ttdoc">Phase for finishing a frame.</div><div class="ttdef"><b>Definition</b> Raylib.hpp:22</div></div>
-<div class="ttc" id="astructRaylib_html"><div class="ttname"><a href="structRaylib.html">Raylib</a></div><div class="ttdoc">Registers Raylib rendering systems.</div><div class="ttdef"><b>Definition</b> Raylib.hpp:25</div></div>
-<div class="ttc" id="astructRender2D_html"><div class="ttname"><a href="structRender2D.html">Render2D</a></div><div class="ttdoc">Phase for drawing 2D content.</div><div class="ttdef"><b>Definition</b> Raylib.hpp:19</div></div>
-<div class="ttc" id="astructRender3D_html"><div class="ttname"><a href="structRender3D.html">Render3D</a></div><div class="ttdoc">Phase for starting 3D rendering.</div><div class="ttdef"><b>Definition</b> Raylib.hpp:10</div></div>
+<div class="ttc" id="astructCloseRender3D_html"><div class="ttname"><a href="structCloseRender3D.html">CloseRender3D</a></div><div class="ttdoc">Phase for closing 3D rendering.</div><div class="ttdef"><b>Definition</b> Raylib.hpp:18</div></div>
+<div class="ttc" id="astructCube_html"><div class="ttname"><a href="structCube.html">Cube</a></div><div class="ttdoc">Marks an entity rendered as a cube.</div><div class="ttdef"><b>Definition</b> Raylib.hpp:9</div></div>
+<div class="ttc" id="astructDraw3D_html"><div class="ttname"><a href="structDraw3D.html">Draw3D</a></div><div class="ttdoc">Phase for drawing 3D content.</div><div class="ttdef"><b>Definition</b> Raylib.hpp:15</div></div>
+<div class="ttc" id="astructPostRender_html"><div class="ttname"><a href="structPostRender.html">PostRender</a></div><div class="ttdoc">Phase for finishing a frame.</div><div class="ttdef"><b>Definition</b> Raylib.hpp:24</div></div>
+<div class="ttc" id="astructRaylib_html"><div class="ttname"><a href="structRaylib.html">Raylib</a></div><div class="ttdoc">Registers Raylib rendering systems.</div><div class="ttdef"><b>Definition</b> Raylib.hpp:30</div></div>
+<div class="ttc" id="astructRender2D_html"><div class="ttname"><a href="structRender2D.html">Render2D</a></div><div class="ttdoc">Phase for drawing 2D content.</div><div class="ttdef"><b>Definition</b> Raylib.hpp:21</div></div>
+<div class="ttc" id="astructRender3D_html"><div class="ttname"><a href="structRender3D.html">Render3D</a></div><div class="ttdoc">Phase for starting 3D rendering.</div><div class="ttdef"><b>Definition</b> Raylib.hpp:12</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

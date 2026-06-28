@@ -5,8 +5,8 @@ var searchData=
   ['players_2',['Players',['../structPlayers.html#a1920377b9b9625b38a5fa6e23a8cab74',1,'Players']]],
   ['pollerror_3',['pollError',['../classnet_1_1ZappyClient.html#a45eb4c37ba452af19ce8e65d553fb69e',1,'net::ZappyClient']]],
   ['pollline_4',['pollLine',['../classnet_1_1ZappyClient.html#a9adfe5db4b94970c26017575e6138c18',1,'net::ZappyClient']]],
-  ['pop_5',['pop',['../classnet_1_1BoundedQueue.html#ae8bf39ac4d2434127170bd90ec336b04',1,'net::BoundedQueue']]],
+  ['pop_5',['pop',['../classnet_1_1BoundedQueue.html#ae8bf39ac4d2434127170bd90ec336b04',1,'net::BoundedQueue::pop()'],['../classnet_1_1UnboundedQueue.html#a39c8d228e9b5aebecfddec6b54daae10',1,'net::UnboundedQueue::pop()']]],
   ['popline_6',['popLine',['../classnet_1_1LineBuffer.html#a855cfc2614d909eac2bea4bb3a420b77',1,'net::LineBuffer']]],
   ['position_7',['position',['../structGrid.html#a36dde5434360e6dabf85f113d8c4ca18',1,'Grid::position()'],['../classparsing_1_1Scanner.html#a0bd4d2e40de64d9ad152b2413757771b',1,'parsing::Scanner::position()']]],
-  ['push_8',['push',['../classnet_1_1BoundedQueue.html#ad1aeb3545ef40a775fcb526a42860c75',1,'net::BoundedQueue']]]
+  ['push_8',['push',['../classnet_1_1BoundedQueue.html#ad1aeb3545ef40a775fcb526a42860c75',1,'net::BoundedQueue::push()'],['../classnet_1_1UnboundedQueue.html#a0b2e2861a8ca0a92bb3a3f4834ba0513',1,'net::UnboundedQueue::push()']]]
 ];

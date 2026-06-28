@@ -296,6 +296,8 @@ var hierarchy =
     [ "TextInput", "structTextInput.html", null ],
     [ "zappy::TileContent", "structzappy_1_1TileContent.html", null ],
     [ "zappy::TimeUnit", "structzappy_1_1TimeUnit.html", null ],
+    [ "net::UnboundedQueue< T >", "classnet_1_1UnboundedQueue.html", null ],
+    [ "net::UnboundedQueue< std::string >", "classnet_1_1UnboundedQueue.html", null ],
     [ "zappy::UnknownCommand", "structzappy_1_1UnknownCommand.html", null ],
     [ "net::ZappyClient", "classnet_1_1ZappyClient.html", null ],
     [ "zappy::ZappyProtocol", "classzappy_1_1ZappyProtocol.html", null ],

@@ -1,5 +1,10 @@
 var NAVTREEINDEX13 =
 {
+"structecs__var__t.html":[0,0,0,3,9],
+"structecs__vec__t.html":[0,0,0,15],
+"structecs__vec__t.html#a85495e85e320651ab692232c21b94579":[0,0,0,15,0],
+"structecs__vec__t.html#a8ac3fa403cd0f7017e32a39b1acfd389":[0,0,0,15,1],
+"structecs__vec__t.html#adf9ca5f57b1abced74e81da6e50e9429":[0,0,0,15,2],
 "structecs__vector__desc__t.html":[0,0,1,14,28],
 "structecs__vector__desc__t.html#a33717c9f5d4c562a6445d3646da2e851":[0,0,1,14,28,0],
 "structecs__vector__desc__t.html#a94c2a796c629648e7554aabe9d2d471a":[0,0,1,14,28,1],
