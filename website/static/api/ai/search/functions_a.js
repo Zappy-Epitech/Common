@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['receivemessage_0',['receiveMessage',['../classNetwork.html#a6fca7071e0849e4f04d03a3c521a8011',1,'Network']]],
-  ['ressourcefromname_1',['ressourceFromName',['../GameLogic_8cpp.html#a342a66c469c6ac363230afcee7bbcfff',1,'GameLogic.cpp']]]
+  ['observe_5fgame_0',['observe_game',['../namespacezappy__ga_1_1observer.html#a0d0363910de0556db13c3273742ee2f2',1,'zappy_ga::observer']]],
+  ['operator_3d_1',['operator=',['../classNetwork.html#a8e77568bdabe6af92481a663bccdc40f',1,'Network']]]
 ];

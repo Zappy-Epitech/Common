@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['zappyexception_0',['ZappyException',['../classZappyException.html',1,'']]]
+  ['observer_0',['Observer',['../classzappy__ga_1_1observer_1_1Observer.html',1,'zappy_ga::observer']]]
 ];

@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['params_0',['Params',['../structParams.html',1,'']]],
-  ['player_1',['Player',['../classPlayer.html',1,'']]],
-  ['position_2',['position',['../structposition.html',1,'']]]
+  ['gameoutcome_0',['GameOutcome',['../classzappy__ga_1_1observer_1_1GameOutcome.html',1,'zappy_ga::observer']]]
 ];

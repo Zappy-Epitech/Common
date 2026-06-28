@@ -155,9 +155,18 @@ Functions</h2></td></tr>
 <tr class="memitem:aa359797ae11f8387fa8ae93619dd24cc" id="r_aa359797ae11f8387fa8ae93619dd24cc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="StateSwitch_8cpp.html#aa359797ae11f8387fa8ae93619dd24cc">playersRequiredToUpgrade</a> (int level)</td></tr>
 <tr class="memdesc:aa359797ae11f8387fa8ae93619dd24cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of players a cooperative elevation needs on the same tile.  <br /></td></tr>
 <tr class="separator:aa359797ae11f8387fa8ae93619dd24cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e2cba273840f9aada2892a243e899cd" id="r_a3e2cba273840f9aada2892a243e899cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Player_8hpp.html#a94561f2dccf417b245dd6f3a0ed8e76b">CoopAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="StateSwitch_8cpp.html#a3e2cba273840f9aada2892a243e899cd">decideCoopAction</a> (int playersRequired, int playersOnTile, int callDirection)</td></tr>
-<tr class="memdesc:a3e2cba273840f9aada2892a243e899cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decides the next <code>COOP</code> action from the player's own perception.  <br /></td></tr>
-<tr class="separator:a3e2cba273840f9aada2892a243e899cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad548b1a98114c8634be24bb4ef65e1af" id="r_ad548b1a98114c8634be24bb4ef65e1af"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="StateSwitch_8cpp.html#ad548b1a98114c8634be24bb4ef65e1af">playersTargetToUpgrade</a> (int level, int coopTarget)</td></tr>
+<tr class="memdesc:ad548b1a98114c8634be24bb4ef65e1af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Players a cooperative elevation should gather toward (not the bare minimum).  <br /></td></tr>
+<tr class="separator:ad548b1a98114c8634be24bb4ef65e1af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af31c02a806e745c972beeb929ad8c01c" id="r_af31c02a806e745c972beeb929ad8c01c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="StateSwitch_8cpp.html#af31c02a806e745c972beeb929ad8c01c">advertisedTargetForHost</a> (int target, int minimum, int ticksWaited, int gatherPatience)</td></tr>
+<tr class="memdesc:af31c02a806e745c972beeb929ad8c01c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The target a ritual host advertises this tick (with anti-freeze fallback).  <br /></td></tr>
+<tr class="separator:af31c02a806e745c972beeb929ad8c01c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b913eeb6c968c9c8e03b689ca41c13a" id="r_a9b913eeb6c968c9c8e03b689ca41c13a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="StateSwitch_8cpp.html#a9b913eeb6c968c9c8e03b689ca41c13a">decideAbandonCoop</a> (int ticksWaited, int coopPatience)</td></tr>
+<tr class="memdesc:a9b913eeb6c968c9c8e03b689ca41c13a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether a stalled ritual host should abandon its rally.  <br /></td></tr>
+<tr class="separator:a9b913eeb6c968c9c8e03b689ca41c13a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20965d3ed82a9b62fefe2e029828e333" id="r_a20965d3ed82a9b62fefe2e029828e333"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Player_8hpp.html#a94561f2dccf417b245dd6f3a0ed8e76b">CoopAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="StateSwitch_8cpp.html#a20965d3ed82a9b62fefe2e029828e333">decideCoopAction</a> (int target, int playersOnTile, int callDirection)</td></tr>
+<tr class="memdesc:a20965d3ed82a9b62fefe2e029828e333"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decides the next <code>COOP</code> action from the player's own perception.  <br /></td></tr>
+<tr class="separator:a20965d3ed82a9b62fefe2e029828e333"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8bde5407f622364a81567e2a5509498" id="r_ad8bde5407f622364a81567e2a5509498"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="StateSwitch_8cpp.html#ad8bde5407f622364a81567e2a5509498">decideFork</a> (int playersOnTile, int playersRequired, int ticksWaited, int patience, int food, int forkFoodMin)</td></tr>
 <tr class="memdesc:ad8bde5407f622364a81567e2a5509498"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decides whether a ritual host should fork to grow the team.  <br /></td></tr>
 <tr class="separator:ad8bde5407f622364a81567e2a5509498"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,15 +176,153 @@ Functions</h2></td></tr>
 <tr class="memitem:aaf51dcc1c9d23df7582aa8f3b063d8f4" id="r_aaf51dcc1c9d23df7582aa8f3b063d8f4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="StateSwitch_8cpp.html#aaf51dcc1c9d23df7582aa8f3b063d8f4">findNearestPlayerTile</a> (const std::string &amp;lookResponse)</td></tr>
 <tr class="memdesc:aaf51dcc1c9d23df7582aa8f3b063d8f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the nearest visible tile (other than the player's own) holding a player.  <br /></td></tr>
 <tr class="separator:aaf51dcc1c9d23df7582aa8f3b063d8f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a945166a498ce6e5f51f4d4cf988e8148" id="r_a945166a498ce6e5f51f4d4cf988e8148"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="StateSwitch_8cpp.html#a945166a498ce6e5f51f4d4cf988e8148">coopHomingTileIndex</a> (const std::string &amp;lookResponse, int soundDirection)</td></tr>
+<tr class="memdesc:a945166a498ce6e5f51f4d4cf988e8148"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the visible player tile to step onto when homing to a ritual host.  <br /></td></tr>
+<tr class="separator:a945166a498ce6e5f51f4d4cf988e8148"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b21b9dbe1318e109c4b40da5900c42d" id="r_a1b21b9dbe1318e109c4b40da5900c42d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="StateSwitch_8cpp.html#a1b21b9dbe1318e109c4b40da5900c42d">shouldGrazeWhileWaiting</a> (const std::vector&lt; std::vector&lt; <a class="el" href="Ressource_8hpp.html#a09526742abc3e0feb0a61b36291e1b8c">Ressource</a> &gt; &gt; &amp;visibleTiles, int food, int grazeFoodMin)</td></tr>
+<tr class="memdesc:a1b21b9dbe1318e109c4b40da5900c42d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether a player waiting on the ritual tile should eat food underfoot.  <br /></td></tr>
+<tr class="separator:a1b21b9dbe1318e109c4b40da5900c42d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3c72729c09b8e962f6d79394f3387ce" id="r_ad3c72729c09b8e962f6d79394f3387ce"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="Ressource_8hpp.html#a09526742abc3e0feb0a61b36291e1b8c">Ressource</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="StateSwitch_8cpp.html#ad3c72729c09b8e962f6d79394f3387ce">stonesToDropForUpgrade</a> (int level, const std::vector&lt; <a class="el" href="Ressource_8hpp.html#a09526742abc3e0feb0a61b36291e1b8c">Ressource</a> &gt; &amp;currentTile)</td></tr>
 <tr class="memdesc:ad3c72729c09b8e962f6d79394f3387ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes which stones must be dropped to satisfy the next elevation.  <br /></td></tr>
 <tr class="separator:ad3c72729c09b8e962f6d79394f3387ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80fbcdb584055d0f01b1c27e6acd7af1" id="r_a80fbcdb584055d0f01b1c27e6acd7af1"><td class="memItemLeft" align="right" valign="top"><a id="a80fbcdb584055d0f01b1c27e6acd7af1" name="a80fbcdb584055d0f01b1c27e6acd7af1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>tileCompletableForUpgrade</b> (const <a class="el" href="structInventory.html">Inventory</a> &amp;inventory, int level, const std::vector&lt; <a class="el" href="Ressource_8hpp.html#a09526742abc3e0feb0a61b36291e1b8c">Ressource</a> &gt; &amp;tileStones)</td></tr>
+<tr class="separator:a80fbcdb584055d0f01b1c27e6acd7af1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation of the player's state machine. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a3e2cba273840f9aada2892a243e899cd" name="a3e2cba273840f9aada2892a243e899cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e2cba273840f9aada2892a243e899cd">&#9670;&#160;</a></span>decideCoopAction()</h2>
+<a id="af31c02a806e745c972beeb929ad8c01c" name="af31c02a806e745c972beeb929ad8c01c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af31c02a806e745c972beeb929ad8c01c">&#9670;&#160;</a></span>advertisedTargetForHost()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int advertisedTargetForHost </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>minimum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ticksWaited</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gatherPatience</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The target a ritual host advertises this tick (with anti-freeze fallback). </p>
+<p>The host gathers toward <code>target</code> until it has waited <code>gatherPatience</code> ticks without filling the band, then falls back to <code>minimum</code> so a short-handed band still incants instead of freezing forever. Host-only: the patience counter (Player::_coopWaitTicks) advances only for the host, so band members never desync — they all read the host's single advertised value. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target</td><td>The desired band size (see <a class="el" href="StateSwitch_8cpp.html#ad548b1a98114c8634be24bb4ef65e1af">playersTargetToUpgrade</a>). </td></tr>
+    <tr><td class="paramname">minimum</td><td>The elevation's hard minimum (see <a class="el" href="StateSwitch_8cpp.html#aa359797ae11f8387fa8ae93619dd24cc">playersRequiredToUpgrade</a>). </td></tr>
+    <tr><td class="paramname">ticksWaited</td><td>Ticks the host has waited short-handed. </td></tr>
+    <tr><td class="paramname">gatherPatience</td><td>Ticks to wait before falling back to the minimum. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>target</code> while gathering, <code>minimum</code> once patience elapses. </dd></dl>
+
+</div>
+</div>
+<a id="a945166a498ce6e5f51f4d4cf988e8148" name="a945166a498ce6e5f51f4d4cf988e8148"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a945166a498ce6e5f51f4d4cf988e8148">&#9670;&#160;</a></span>coopHomingTileIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int coopHomingTileIndex </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>lookResponse</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>soundDirection</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Finds the visible player tile to step onto when homing to a ritual host. </p>
+<p>The sound bearing (1-8) is coarse and lagging, so a joiner near the host orbits the tile instead of landing on it. When the host is in view, <code>Look</code> gives its exact tile: this returns the nearest other visible player tile whose movement hemisphere (<a class="el" href="StateSwitch_8cpp.html#a45e0604f10ac0304639cbc153e7b6b26">tileIndexToMovement</a>) agrees with the sound bearing's (<a class="el" href="StateSwitch_8cpp.html#a0bc7b5fe47328af53f6b0208c35b4a45">directionToMovement</a>), so the joiner steps precisely toward the host and not toward an enemy walking the other way. Returns -1 when no agreeing player is visible (caller then falls back to the sound bearing), when no other player is in view, or when <code>soundDirection</code> is not in 1-8.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lookResponse</td><td>The raw <code>Look</code> response line. </td></tr>
+    <tr><td class="paramname">soundDirection</td><td>The host's last sound bearing, 1-8 (0/other -&gt; -1). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The field-of-view index to step toward, or -1. </dd></dl>
+
+</div>
+</div>
+<a id="a9b913eeb6c968c9c8e03b689ca41c13a" name="a9b913eeb6c968c9c8e03b689ca41c13a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b913eeb6c968c9c8e03b689ca41c13a">&#9670;&#160;</a></span>decideAbandonCoop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool decideAbandonCoop </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ticksWaited</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>coopPatience</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether a stalled ritual host should abandon its rally. </p>
+<p>A deficit-host (formed without the full stone set) can stall forever if the rare stones never arrive; without an escape it camps and fork-loops. This returns true once the host has waited <code>ticksWaited</code> &gt;= <code>coopPatience</code>, so it aborts and goes back to gathering. A <code>coopPatience</code> of 0 disables abandoning (never give up). </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ticksWaited</td><td>Ticks the host has waited understaffed/incomplete (<code>_coopWaitTicks</code>). </td></tr>
+    <tr><td class="paramname">coopPatience</td><td>Ticks to tolerate before abandoning; 0 = never. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the host should abandon this tick. </dd></dl>
+
+</div>
+</div>
+<a id="a20965d3ed82a9b62fefe2e029828e333" name="a20965d3ed82a9b62fefe2e029828e333"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20965d3ed82a9b62fefe2e029828e333">&#9670;&#160;</a></span>decideCoopAction()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -184,7 +331,7 @@ Functions</h2></td></tr>
           <td class="memname"><a class="el" href="Player_8hpp.html#a94561f2dccf417b245dd6f3a0ed8e76b">CoopAction</a> decideCoopAction </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>playersRequired</em>, </td>
+          <td class="paramname"><em>target</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -210,7 +357,7 @@ Functions</h2></td></tr>
 <p>The decision is driven by the player's <code>Look</code> (how many players share its tile), not by the lagging broadcast sound direction: once enough players are gathered on the tile the player must incant, even if the last sound direction it heard is stale and non-zero. Relying on the direction alone makes a joiner walk off the tile exactly when the host falls silent to incant, dooming the ritual.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">playersRequired</td><td>Players the elevation needs (see <a class="el" href="StateSwitch_8cpp.html#aa359797ae11f8387fa8ae93619dd24cc">playersRequiredToUpgrade</a>). </td></tr>
+    <tr><td class="paramname">target</td><td>Players to gather before incanting &ndash; the band target advertised by the host (see <a class="el" href="StateSwitch_8cpp.html#ad548b1a98114c8634be24bb4ef65e1af">playersTargetToUpgrade</a> / <a class="el" href="StateSwitch_8cpp.html#af31c02a806e745c972beeb929ad8c01c">advertisedTargetForHost</a>), which may exceed the bare <a class="el" href="StateSwitch_8cpp.html#aa359797ae11f8387fa8ae93619dd24cc">playersRequiredToUpgrade</a> minimum. </td></tr>
     <tr><td class="paramname">playersOnTile</td><td>Players on the current tile, self included (from <code>Look</code>). </td></tr>
     <tr><td class="paramname">callDirection</td><td>Latest sound direction of the call (0 = same tile). </td></tr>
   </table>
@@ -472,6 +619,89 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The required player count, or 0 for a level that cannot elevate. </dd></dl>
+
+</div>
+</div>
+<a id="ad548b1a98114c8634be24bb4ef65e1af" name="ad548b1a98114c8634be24bb4ef65e1af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad548b1a98114c8634be24bb4ef65e1af">&#9670;&#160;</a></span>playersTargetToUpgrade()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int playersTargetToUpgrade </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>coopTarget</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Players a cooperative elevation should gather toward (not the bare minimum). </p>
+<p>Keeping bands large and level-synchronized lets the min-4 rituals carry the whole band up together (an incantation elevates every same-level player on the tile). Returns 1 for the solo level 1, 0 for levels that cannot elevate, the per-level minimum for levels 2-3 (a cheap pair climb — forcing a 6-band this early just starves low players), and <code>coopTarget</code> (clamped up to the minimum) for levels 4-7, where the 6-band forms and rides 4-&gt;5 and 5-&gt;6 up to reach level 6 six-strong. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>The player's current level (1-7). </td></tr>
+    <tr><td class="paramname">coopTarget</td><td>The desired band size (e.g. Params::coopTargetPlayers). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The player count to gather toward. </dd></dl>
+
+</div>
+</div>
+<a id="a1b21b9dbe1318e109c4b40da5900c42d" name="a1b21b9dbe1318e109c4b40da5900c42d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b21b9dbe1318e109c4b40da5900c42d">&#9670;&#160;</a></span>shouldGrazeWhileWaiting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool shouldGrazeWhileWaiting </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::vector&lt; <a class="el" href="Ressource_8hpp.html#a09526742abc3e0feb0a61b36291e1b8c">Ressource</a> &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>visibleTiles</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>food</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>grazeFoodMin</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether a player waiting on the ritual tile should eat food underfoot. </p>
+<p>Camping 6 players on one tile risks starvation, which would pull members off the tile (SURVIVE) and undo the gather. When food has dipped below <code>grazeFoodMin</code> and there is food on the player's own tile (index 0), the player takes it without moving, topping up before the SURVIVE hard floor ever triggers. Underfoot-only: it never sends the player off the rally tile to forage. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">visibleTiles</td><td>The per-tile resource lists from the last <code>Look</code>. </td></tr>
+    <tr><td class="paramname">food</td><td>The player's current food count. </td></tr>
+    <tr><td class="paramname">grazeFoodMin</td><td>The comfort floor below which to graze. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> to take food from the current tile this tick, <code>false</code> to hold. </dd></dl>
 
 </div>
 </div>
