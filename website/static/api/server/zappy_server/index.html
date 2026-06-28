@@ -5,7 +5,7 @@ rituals to climb from level 1 to level 8. A team wins once six of its players
 reach the maximum level.</p>
 <h3 id="design-at-a-glance"><a class="doc-anchor" href="#design-at-a-glance">§</a>Design at a glance</h3>
 <p>The whole simulation runs in one thread on top of a <a href="https://docs.rs/mio">Mio</a>
-<code>Poll</code> event loop (provided by the [<code>zappy_network</code>] crate). There is no
+<code>Poll</code> event loop (provided by the <a href="../zappy_network/index.html" title="mod zappy_network"><code>zappy_network</code></a> crate). There is no
 per-client thread and no blocking I/O: sockets are line-buffered and serviced
 as they become readable/writable, and time progresses through a <code>freq</code>-scaled
 command queue rather than real wall-clock ticks.</p>
