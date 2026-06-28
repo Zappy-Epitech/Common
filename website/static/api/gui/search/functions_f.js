@@ -4,7 +4,7 @@ var searchData=
   ['scenes_1',['Scenes',['../structScenes.html#aa52fca246f7f011d46519f27b540f918',1,'Scenes']]],
   ['send_2',['send',['../classnet_1_1ZappyClient.html#ac7f8ce1be88c94346ae7155dfd453c61',1,'net::ZappyClient::send()'],['../classnet_1_1TcpClient.html#aa8a2eeb7ae6dbc4a5c62937136be64bd',1,'net::TcpClient::send(std::span&lt; const std::byte &gt; data)'],['../classnet_1_1TcpClient.html#af2ee5d7b3c46f74ee7a86e3f6905f81a',1,'net::TcpClient::send(std::string_view text)']]],
   ['settings_3',['Settings',['../structSettings.html#aa5bf86b5ed548fa491e0f24c35bd6414',1,'Settings']]],
-  ['settingsscene_4',['SettingsScene',['../structSettingsScene.html#a7d1d76ca4bf4c814ab03f9a19529c7e0',1,'SettingsScene']]],
+  ['settingsmodal_4',['SettingsModal',['../structSettingsModal.html#a35e49c7e7d7540bab9ed0f5f83ab0b7e',1,'SettingsModal']]],
   ['skipspaces_5',['skipSpaces',['../classparsing_1_1Scanner.html#a9313ade866d1ee7678b7766a5e41942e',1,'parsing::Scanner']]],
   ['sockethandle_6',['sockethandle',['../classnet_1_1SocketHandle.html#ae988db24d7b9d9f8e57ea9b0ec78077e',1,'net::SocketHandle::SocketHandle(const SocketHandle &amp;)=delete'],['../classnet_1_1SocketHandle.html#afa702ada1a7700a32d4f5c1cfebebf57',1,'net::SocketHandle::SocketHandle(SocketHandle &amp;&amp;other) noexcept'],['../classnet_1_1SocketHandle.html#ad2ea32513a08d8762590655aedcf9ae9',1,'net::SocketHandle::SocketHandle(int fd) noexcept'],['../classnet_1_1SocketHandle.html#a82d9282e09722710f1dd05b4ebed0c98',1,'net::SocketHandle::SocketHandle()=default']]],
   ['spatial_7',['Spatial',['../structSpatial.html#ab067de07f633c5ca172d91325bc7774f',1,'Spatial']]],

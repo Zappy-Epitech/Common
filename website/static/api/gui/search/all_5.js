@@ -41,7 +41,7 @@ var searchData=
   ['ecs_5fauto_5foverride_5fid_38',['ecs_auto_override_id',['../group__adding__removing.html#ga059ea0c8814c1e7de4dc4cd9f3228d2f',1,'flecs.h']]],
   ['ecs_5fauto_5foverride_5fpair_39',['ecs_auto_override_pair',['../group__flecs__c__adding__removing.html#ga5170b411c33a3eea009e39fe4f1be08c',1,'flecs.h']]],
   ['ecs_5fbit_5fset_40',['ECS_BIT_SET',['../group__api__types.html#ga64235d66f88dcfb92f6bd18f9d66cb48',1,'flecs.h']]],
-  ['ecs_5fbitmask_41',['ecs_bitmask',['../group__c__addons__meta.html#ga79bd0dfc3fa8605f4e2eacb337d46f0f',1,'ecs_bitmask:&#160;flecs.h'],['../group__c__addons__meta__c.html#gad8c7be54ed6e9de7a4d833e7fc6f117f',1,'ECS_BITMASK:&#160;flecs.h']]],
+  ['ecs_5fbitmask_41',['ecs_bitmask',['../group__c__addons__meta__c.html#gad8c7be54ed6e9de7a4d833e7fc6f117f',1,'ECS_BITMASK:&#160;flecs.h'],['../group__c__addons__meta.html#ga79bd0dfc3fa8605f4e2eacb337d46f0f',1,'ecs_bitmask:&#160;flecs.h']]],
   ['ecs_5fbitmask_5fconstant_5ft_42',['ecs_bitmask_constant_t',['../structecs__bitmask__constant__t.html',1,'ecs_bitmask_constant_t'],['../group__c__addons__meta.html#ga34b253fa48f24239e786be0f57666c06',1,'ecs_bitmask_constant_t:&#160;flecs.h']]],
   ['ecs_5fbitmask_5fdesc_5ft_43',['ecs_bitmask_desc_t',['../structecs__bitmask__desc__t.html',1,'ecs_bitmask_desc_t'],['../group__c__addons__meta.html#gaf8dcf4061d512c7cb97be2664b27d438',1,'ecs_bitmask_desc_t:&#160;flecs.h']]],
   ['ecs_5fbitmask_5finit_44',['ecs_bitmask_init',['../group__c__addons__meta.html#ga276cc84d223a6917424b10d9a4b32e2b',1,'flecs.h']]],
